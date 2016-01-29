@@ -1,2 +1,2 @@
 # RDA_TDS
-Components of the RDA THREDDDS Data Server
+Unique Components of the RDA THREDDS Data Server version 4.6 running on Tomcat 7
