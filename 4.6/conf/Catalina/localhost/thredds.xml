@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/thredds">
+
+    <!-- maxActive: Maximum number of database connections in pool. Make sure you
+         configure your mysqld max_connections large enough to handle
+         all of your db connections. Set to -1 for no limit.
+         -->
+
+    <!-- maxIdle: Maximum number of idle database connections to retain in pool.
+         Set to -1 for no limit.  See also the DBCP documentation on this
+         and the minEvictableIdleTimeMillis configuration parameter.
+         -->
+
+    <!-- maxWait: Maximum time to wait for a database connection to become available
+         in ms, in this example 10 seconds. An Exception is thrown if
+         this timeout is exceeded.  Set to -1 to wait indefinitely.
+         -->
+
+    <!-- username and password: MySQL username and password for database connections  -->
+
+    <!-- driverClassName: Class name for the old mm.mysql JDBC driver is
+         org.gjt.mm.mysql.Driver - we recommend using Connector/J though.
+         Class name for the official MySQL Connector/J driver is com.mysql.jdbc.Driver.
+         -->
+
+    <!-- url: The JDBC connection url for connecting to your MySQL database.
+         -->
+
+    <Realm className="org.apache.catalina.realm.CombinedRealm" >
+       <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+             resourceName="UserDatabase"/>
+       <Realm className="edu.ucar.rda.RDARealms.RDA_DataSourceRealm" debug="9"
+               dataSourceName="jdbc/dsslogin"
+               userCredCol="password" userNameCol="email" userTable="ruser"
+               roleNameCol="acode" userRoleTable="ruser_access"
+               localDataSource="true"
+       />
+    </Realm>
+
+
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+
+
+
+  <!-- 
+       Note, testOnBorrow="true" and validationQuery="/* ping */ SELECT 1"
+       were added on 20130730 via http://tomcat.10.x6.nabble.com/DataSourceRealm-failed-to-retrieve-password-after-tomcat-server-being-idle-overnight-td2159311.html
+       in an attempt to stop the issue of requiring multiple logins after 
+       server was idle for a while 
+       See also: http://www.mail-archive.com/users@tomcat.apache.org/msg101157.html
+  -->
+  <Resource name="jdbc/dsslogin" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="xxxxx" password="xxxxx" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://rda-db.ucar.edu:3306/dssdb"
+               testOnBorrow="true"
+               validationQuery="/* ping */ SELECT 1" 
+               factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+  />
+
+  <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" fileDateFormat="yyyy-MM"
+         prefix="thredds_access." suffix=".log" pattern="%h %l %u %t &quot;%r&quot; %s %b &quot;%{Referer}i&quot; &quot;%{User-Agent}i&quot; %D" resolveHosts="false"/>
+
+</Context>
