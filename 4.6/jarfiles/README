@@ -1,0 +1,1 @@
+Jarfiles are compiled for tomcat7 and java7.  Copy to $CATALINA_HOME/lib
