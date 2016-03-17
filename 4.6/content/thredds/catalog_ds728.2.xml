@@ -39,11 +39,11 @@
             <name vocabulary="DIF">NCAR/RDA</name>   
             <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
           </publisher>   
-          <keywords>GPCP</keywords>   
-          <keywords>NASA</keywords>   
-          <keywords>GSFC</keywords>   
-          <keywords>Precipitation</keywords>
-          <keywords>Precipitation Analysis</keywords>
+          <keyword>GPCP</keyword>   
+          <keyword>NASA</keyword>   
+          <keyword>GSFC</keyword>   
+          <keyword>Precipitation</keyword>
+          <keyword>Precipitation Analysis</keyword>
 
         </metadata>
 
