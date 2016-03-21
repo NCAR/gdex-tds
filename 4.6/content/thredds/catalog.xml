@@ -8,7 +8,10 @@
     <catalogRef xlink:href="catalog_ds084.1.xml" xlink:title="ds084.1 NCEP GFS 0.25 Degree Global Forecast Grids" name="" />
     <catalogRef xlink:href="catalog_ds084.3.xml" xlink:title="ds084.3 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive" name="" />
     <catalogRef xlink:href="catalog_ds084.4.xml" xlink:title="ds084.4 NCEP GDAS/FNL Surface Flux Grids" name="" />
+    <catalogRef xlink:href="catalog_ds093.0.xml" xlink:title="ds093.0 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010" name="" />
     <catalogRef xlink:href="catalog_ds093.1.xml" xlink:title="ds093.1 NCEP Climate Forecast System Reanalysis (CFSR) Selected Hourly Time-Series Products, January 1979 to December 2010" name="" />
+    <catalogRef xlink:href="catalog_ds093.2.xml" xlink:title="ds093.2 NCEP Climate Forecast System Reanalysis (CFSR) Monthly Products, January 1979 to December 2010" name="" />
+    <catalogRef xlink:href="catalog_ds094.0.xml" xlink:title="ds094.0 NCEP Climate Forecast System Version 2 (CFSv2) 6-hourly Products" name="" />
     <catalogRef xlink:href="catalog_ds094.1.xml" xlink:title="ds094.1 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products" name="" />
     <catalogRef xlink:href="catalog_ds094.2.xml" xlink:title="ds094.2 NCEP Climate Forecast System Version 2 (CFSv2) Monthly Products" name="" />
     <catalogRef xlink:href="catalog_ds113.0.xml" xlink:title="ds113.0 ECMWF's Operational Model Analysis, starting in 2011" name="" />
@@ -21,6 +24,8 @@
     <catalogRef xlink:href="catalog_ds314.0.xml" xlink:title="ds314.0 Global Meteorological Forcing Dataset for Land Surface Modeling" name="" />
     <catalogRef xlink:href="catalog_ds316.0.xml" xlink:title="ds316.0 NCAR Community Earth System Model, EaSM Project Dataset" name=" NCAR Community Earth System Model, EaSM Project Dataset" />
     <catalogRef xlink:href="catalog_ds335.0.xml" xlink:title="ds335.0 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
+    <catalogRef xlink:href="catalog_ds336.0.xml" xlink:title="ds336.0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
+    <catalogRef xlink:href="catalog_ds463.4.xml" xlink:title="ds463.4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
     <catalogRef xlink:href="catalog_ds502.0.xml" xlink:title="ds502.0 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" />
     <catalogRef xlink:href="catalog_ds601.0.xml" xlink:title="ds601.0 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
