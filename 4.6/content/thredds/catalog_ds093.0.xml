@@ -68,7 +68,7 @@
 
     <!-- Aggregations -->
 
-
+    <!--
     <featureCollection name="ds093.0 Aggregations"
                        featureType="GRIB2"
                        harvest="true"
@@ -90,6 +90,8 @@
       </gribConfig>
 
     </featureCollection>
+    -->
+
   </dataset>
 
 </catalog>

@@ -68,6 +68,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
     </datasetScan>
 
     <!-- Aggregations -->
+    <!--
     <featureCollection name="ds094.0 Aggregation"
                        featureType="GRIB2"
                        harvest="true"
@@ -90,6 +91,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
       </gribConfig>
 
     </featureCollection>
+    -->
 
   </dataset>
 
