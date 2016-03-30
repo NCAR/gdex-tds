@@ -68,7 +68,6 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
     </datasetScan>
 
     <!-- Aggregations -->
-    <!--
     <featureCollection name="ds094.0 Aggregation"
                        featureType="GRIB2"
                        harvest="true"
@@ -78,20 +77,12 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds094.0" spec="/glade/p/rda/data/ds094.0/**/.*.tar$"
-                      dateFormatMark="#ds094.0/#yyyy"
-                      timePartition="year" />
+      <collection name="ds094.0" spec="/glade/p/rda/data/ds094.0/**/.*tar$"
+                      timePartition="directory" />
       <tdm rewrite="test"/>
 
-      <gribConfig>
-        <pdsHash>
-          <useGenType>true</useGenType>
-        </pdsHash>
-        <option name="runtimeCoordinate" value="union"/>
-      </gribConfig>
 
     </featureCollection>
-    -->
 
   </dataset>
 

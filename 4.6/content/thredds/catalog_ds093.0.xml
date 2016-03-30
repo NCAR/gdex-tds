@@ -68,7 +68,7 @@
 
     <!-- Aggregations -->
 
-    <!--
+
     <featureCollection name="ds093.0 Aggregations"
                        featureType="GRIB2"
                        harvest="true"
@@ -82,16 +82,7 @@
                       timePartition="year" />
       <tdm rewrite="test"/>
 
-      <gribConfig>
-        <pdsHash>
-          <useGenType>true</useGenType>
-        </pdsHash>
-        <option name="runtimeCoordinate" value="union"/>
-      </gribConfig>
-
     </featureCollection>
-    -->
-
   </dataset>
 
 </catalog>

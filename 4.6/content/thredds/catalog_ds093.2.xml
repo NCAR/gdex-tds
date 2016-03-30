@@ -68,7 +68,6 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
     </datasetScan>
 
     <!-- Aggregations -->
-    <!--
     <featureCollection name="ds093.2 diurnal_timeseries Aggregation"
                        featureType="GRIB2"
                        harvest="true"
@@ -78,16 +77,10 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds093.2_dt" spec="/glade/p/rda/data/ds093.2/diurnal/.*.tar$" />
+      <collection name="ds093.2_dt" spec="/glade/p/rda/data/ds093.2/diurnal/.*.tar$" 
+                       dateFormatMark="#.gdas.#yyyy"
+                       timePartition="year" />
       <tdm rewrite="test"/>
-
-      <gribConfig>
-        <pdsHash>
-          <useGenType>true</useGenType>
-        </pdsHash>
-        <option name="runtimeCoordinate" value="union"/>
-      </gribConfig>
-
     </featureCollection>
 
     <featureCollection name="ds093.2 Regular Timeseries Aggregation"
@@ -99,18 +92,13 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds093.2_t" spec="/glade/p/rda/data/ds093.2/regular/.*.tar$" />
+      <collection name="ds093.2_t" spec="/glade/p/rda/data/ds093.2/regular/.*.tar$" 
+                       dateFormatMark="#.gdas.#yyyy"
+                       timePartition="year" />
+  
       <tdm rewrite="test"/>
 
-      <gribConfig>
-        <pdsHash>
-          <useGenType>true</useGenType>
-        </pdsHash>
-        <option name="runtimeCoordinate" value="union"/>
-      </gribConfig>
-
     </featureCollection>
-    -->
 
   </dataset>
 
