@@ -55,7 +55,7 @@
   -->
   <Resource name="jdbc/dsslogin" auth="Container" type="javax.sql.DataSource"
                maxActive="100" maxIdle="30" maxWait="10000"
-               username="dssdb" password="dssdb" driverClassName="com.mysql.jdbc.Driver"
+               username="" password="" driverClassName="com.mysql.jdbc.Driver"
                url="jdbc:mysql://rda-db.ucar.edu:3306/dssdb"
                testOnBorrow="true"
                validationQuery="/* ping */ SELECT 1" 
