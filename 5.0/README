@@ -1,5 +1,5 @@
 This directory contains all of the subdirectories that include files unique to the RDA TDS 5.0 instance running on Tomcat8.
-Typically $CATALINA_HOME=/usr/local/tomcat on a linux system.
+Typically $CATALINA_HOME=/usr/share/tomcat on a linux system.
 
 conf/Catalina/localhost/thredds.xml -RDA TDS specific DB access config to support RDA user access recording
 
