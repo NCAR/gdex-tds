@@ -43,6 +43,7 @@
     <catalogRef xlink:href="catalog_ds502.0.xml" xlink:title="ds502.0 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" />
     <catalogRef xlink:href="catalog_ds601.0.xml" xlink:title="ds601.0 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
+    <catalogRef xlink:href="catalog_ds608.0.xml" xlink:title="ds608.0 NCEP North American Regional Reanalysis (NARR)" name="" />
     <catalogRef xlink:href="catalog_ds626.0.xml" xlink:title="ds626.0 ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)" name="" />
     <catalogRef xlink:href="catalog_ds627.0.xml" xlink:title="ds627.0 ERA-Interim Project" name="" />
     <catalogRef xlink:href="catalog_ds627.1.xml" xlink:title="ds627.1 ERA-Interim Project, Monthly Means" name="" />
@@ -60,5 +61,6 @@
     <catalogRef xlink:href="catalog_ds629.6.xml" xlink:title="ds629.6 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid, Dynamical Parameters Only" name="" />
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
+    <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
 
 </catalog>
