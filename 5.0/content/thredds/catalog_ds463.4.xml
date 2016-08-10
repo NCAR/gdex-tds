@@ -3,6 +3,11 @@
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
+    <service name="all" serviceType="Compound" base="">
+        <service name="opendap" serviceType="OPENDAP" base="/thredds/dodsC/"/>
+        <service name="ncssPoint" serviceType="NetcdfSubset" base="/thredds/ncss/point/"/>
+        <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
+    </service>
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
@@ -10,7 +15,7 @@
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>
-          <dataType>GRID</dataType>
+          <dataType>Point</dataType>
           <documentation type="Rights">Freely Available</documentation>
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds463.4/" xlink:title="U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD) (ds463.4)" />
           <documentation type="summary">

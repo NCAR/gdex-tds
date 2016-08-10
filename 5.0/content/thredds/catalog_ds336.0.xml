@@ -3,13 +3,21 @@
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
+    <service name="all" serviceType="Compound" base="">
+        <service name="opendap" serviceType="OPENDAP" base="/thredds/dodsC/"/>
+        <service name="ncssPoint" serviceType="NetcdfSubset" base="/thredds/ncss/point/"/>
+        <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
+    </service>
+
+
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
     <dataset name="ds336.0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current">
         <metadata inherited="true">
+          
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>
-          <dataType>GRID</dataType>
+          <dataType>Station</dataType>
           <documentation type="Rights">Freely Available</documentation>
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds336.0/" xlink:title="Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current (ds336.0)" />
           <documentation type="summary">
@@ -40,6 +48,8 @@ Historical Unidata Internet Data Distribution (IDD) Global Observational Data ar
          </metadata>
          <filter>
              <exclude wildcard="*.html"/>
+             <exclude wildcard="ddplus*" atomic="false" collection="true"/>
+             <exclude wildcard="old*" atomic="false" collection="true"/>
          </filter>
          <addDatasetSize/>
      </datasetScan>
