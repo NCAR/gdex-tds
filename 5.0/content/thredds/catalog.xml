@@ -40,6 +40,8 @@
     <catalogRef xlink:href="catalog_ds335.0.xml" xlink:title="ds335.0 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
     <catalogRef xlink:href="catalog_ds336.0.xml" xlink:title="ds336.0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
     <catalogRef xlink:href="catalog_ds463.4.xml" xlink:title="ds463.4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
+    <catalogRef xlink:href="catalog_ds496.0.xml" xlink:title="ds496.0 GPCC Full Data Reanalysis Version 7.0: Monthly Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
+    <catalogRef xlink:href="catalog_ds497.0.xml" xlink:title="ds497.0 GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
     <catalogRef xlink:href="catalog_ds502.0.xml" xlink:title="ds502.0 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" />
     <catalogRef xlink:href="catalog_ds601.0.xml" xlink:title="ds601.0 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
