@@ -32,6 +32,7 @@
     <catalogRef xlink:href="catalog_ds131.2.xml" xlink:title="ds131.2 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
     <catalogRef xlink:href="catalog_ds193.0.xml" xlink:title="ds193.0 Global Hourly 0.5-degree Land Surface Air Temperature Datasets" name="" />
     <catalogRef xlink:href="catalog_ds260.4.xml" xlink:title="ds260.4 SAMOS Air-Sea Fluxes: 2005-2014" name="" />
+    <catalogRef xlink:href="catalog_ds262.0.xml" xlink:title="ds262.0 Coordinated Ocean-ice Reference Experiments - Phase II" name="" />
     <catalogRef xlink:href="catalog_ds277.6.xml" xlink:title="ds277.6 NCEP Global Ocean Data Assimilation System (GODAS)" name="" />
     <catalogRef xlink:href="catalog_ds285.3.xml" xlink:title="ds285.3 Subsurface Temperature And Salinity Analyses by Ishii et al." name="" />
     <catalogRef xlink:href="catalog_ds298.0.xml" xlink:title="ds298.0 Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" name=" Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" />
@@ -46,6 +47,7 @@
     <catalogRef xlink:href="catalog_ds601.0.xml" xlink:title="ds601.0 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
     <catalogRef xlink:href="catalog_ds608.0.xml" xlink:title="ds608.0 NCEP North American Regional Reanalysis (NARR)" name="" />
+    <catalogRef xlink:href="catalog_ds609.2.xml" xlink:title="ds609.2 GCIP NCEP Eta model output" name="" />
     <catalogRef xlink:href="catalog_ds626.0.xml" xlink:title="ds626.0 ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)" name="" />
     <catalogRef xlink:href="catalog_ds627.0.xml" xlink:title="ds627.0 ERA-Interim Project" name="" />
     <catalogRef xlink:href="catalog_ds627.1.xml" xlink:title="ds627.1 ERA-Interim Project, Monthly Means" name="" />
