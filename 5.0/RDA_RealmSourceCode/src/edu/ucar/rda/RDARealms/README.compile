@@ -1,7 +1,6 @@
-setenv CLASSPATH /usr/local/tomcat/lib/catalina.jar:/usr/local/tomcat/lib/tomcat-juli.jar:/usr/local/tomcat/lib/tomcat-util.jar:/usr/local/tomcat/lib/commons-codec-1.10.jar
+Need to install commons-codec-1.10.jar under /usr/local/tomcat/lib
 
-No longer need this.  Use system library for Crypt
-#javac UnixCrypt.java RDA_DataSourceRealm.java RDA_JDBCRealm.java
+setenv CLASSPATH /usr/local/tomcat/lib/catalina.jar:/usr/local/tomcat/lib/tomcat-juli.jar:/usr/local/tomcat/lib/tomcat-util.jar:/usr/local/tomcat/lib/commons-codec-1.10.jar
 
 Use this instead:
 javac RDA_DataSourceRealm.java
@@ -15,3 +14,7 @@ jar cf edu.ucar.rda.RDARealms.jar edu
 sudo -u tomcat cp edu.ucar.rda.RDARealms.jar /usr/local/tomcat/lib
 
 sudo systemctl restart tomcat8
+
+No longer need this.  Use system library found in commons-codec-1.10.jar for Crypt
+#javac UnixCrypt.java RDA_DataSourceRealm.java RDA_JDBCRealm.java
+
