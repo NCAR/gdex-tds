@@ -1,6 +1,10 @@
-setenv CLASSPATH /usr/local/tomcat/lib/catalina.jar:/usr/local/tomcat/lib/tomcat-juli.jar:/usr/local/tomcat/lib/tomcat-util.jar
+setenv CLASSPATH /usr/local/tomcat/lib/catalina.jar:/usr/local/tomcat/lib/tomcat-juli.jar:/usr/local/tomcat/lib/tomcat-util.jar:/usr/local/tomcat/lib/commons-codec-1.10.jar
 
-javac UnixCrypt.java RDA_DataSourceRealm.java RDA_JDBCRealm.java
+No longer need this.  Use system library for Crypt
+#javac UnixCrypt.java RDA_DataSourceRealm.java RDA_JDBCRealm.java
+
+Use this instead:
+javac RDA_DataSourceRealm.java
 
 cp *.class ../../../../../build/classes/edu/ucar/rda/RDARealms/
 
@@ -8,6 +12,6 @@ cd ../../../../../build/classes
 
 jar cf edu.ucar.rda.RDARealms.jar edu
 
-sudo cp edu.ucar.rda.RDARealms.jar $CATALINA_HOME/lib
+sudo -u tomcat cp edu.ucar.rda.RDARealms.jar /usr/local/tomcat/lib
 
-/etc/init.d/tomcat6 restart
+sudo systemctl restart tomcat8

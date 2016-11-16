@@ -6,10 +6,14 @@ package edu.ucar.rda.RDARealms;
 import java.security.Principal;
 import java.sql.SQLException;
 import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.DriverManager;
 import java.util.ArrayList;
 
 import org.apache.catalina.realm.DataSourceRealm;
 import org.apache.catalina.realm.GenericPrincipal;
+import org.apache.commons.codec.digest.Crypt;
 import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 
@@ -131,9 +135,28 @@ public class RDA_DataSourceRealm extends DataSourceRealm {
 		
 //		log.info( "222 Second 222: " +
 //				"U: " + username +
-//				"P: " + credentials);
-		
-        String dbCredentials = getPassword(dbConnection, username);
+//				" P: " + credentials);
+	
+        String dbCredentials = null;	
+//        String dbCredentials = getPassword(dbConnection, username);
+
+
+//  Use the below code for RDA specific DB authentication        
+        Statement stmt = null;
+        String query = "select password FROM ruser where email=\'" + username + "\' AND end_date IS NULL";
+//        log.info("query: " + query); 
+ 
+        try {
+          stmt = dbConnection.createStatement();
+          ResultSet rs= stmt.executeQuery(query);
+          while (rs.next()) {
+            dbCredentials = rs.getString("password");
+          }
+        } catch (SQLException e ) {
+           log.info(e); 
+        } finally {
+         //  if (stmt != null) { stmt.close(); }
+        } 
 
         // Get NullString error if we fail to get password
 		if (dbCredentials == null){
@@ -146,26 +169,30 @@ public class RDA_DataSourceRealm extends DataSourceRealm {
 		// We need to grab the first two characters to use as the salt for the crypt method to compare
 		// passwords
 		String salt = dbCredentials.substring(0,2);
-		
+//                log.info( "Salt! " + salt);
+//	        String saltCredentials = UnixCrypt.crypt(salt, (credentials));
+	        String saltCredentials = Crypt.crypt(credentials,salt);
+//                log.info( "SaltCredentials!! " + saltCredentials);	
 		// Validate the user's credentials
 		boolean validated = false;
 		if (hasMessageDigest()) {
 			// This is where we incorporate Unix Crypt to match Bob's C implementation
-			validated = (UnixCrypt.crypt(salt, (credentials)).equalsIgnoreCase(dbCredentials));
+			validated = (Crypt.crypt(credentials,salt).equalsIgnoreCase(dbCredentials));
 		} else {
 			// This is where we incorporate Unix Crypt to match Bob's C implementation
-			validated = (UnixCrypt.crypt(salt, (credentials)).equals(dbCredentials));
+			validated = (Crypt.crypt(credentials,salt).equals(dbCredentials));
 		}
 
-//        log.info( "Validated " + validated);
+//        log.info( "Validated !" + validated);
         if (validated) {
-//            log.info( "Validated2 " + validated); 
+            log.info( "dataSourceRealm.authenticateSuccessL:  " + username); 
             if (containerLog.isTraceEnabled())
                 containerLog.trace(
                     sm.getString("dataSourceRealm.authenticateSuccess",
                                  username));
 //            log.info( "Validated3 " + validated);   
         } else {
+            log.info("dataSourceRealm.authenticateFailure:  " + username);
             if (containerLog.isTraceEnabled())
                 containerLog.trace(
                     sm.getString("dataSourceRealm.authenticateFailure",
@@ -176,7 +203,7 @@ public class RDA_DataSourceRealm extends DataSourceRealm {
 
         ArrayList<String> roles = getRoles(dbConnection,username);
         roles.add("odap");
-        log.info ( "added odap role:" + roles);	
+//        log.info ( "added odap role:" + roles);	
 		/** 
 		 * Need to define a role to match with web.xml <auth-constraint><role-name>
 		 * Hardwiring odap for now. 
@@ -190,13 +217,13 @@ public class RDA_DataSourceRealm extends DataSourceRealm {
 //					"U: " + username +
 //					"\nP: " + credentials +
 //					"\nS: " + salt +
-//					"\nC: " + UnixCrypt.crypt(salt, (credentials)) +
+//					"\nC: " + Crypt.crypt(credentials,salt) +
 //					"\nD: " + dbCredentials +
-//					"\nV: " + validated +
+//					"\nV: " + validated  
 //					"\nG: " + new GenericPrincipal(this, username, credentials, roles)
 //					);
-//      log.info("Create new generic Principal for this user");
-//      log.info("G:" + new GenericPrincipal(username, credentials,  roles));
+//     log.info("Create new generic Principal for this user");
+      log.info("G:" + new GenericPrincipal(username, credentials,  roles));
 
         // Create and return a suitable Principal for this user
         return (new GenericPrincipal(username, credentials, roles));

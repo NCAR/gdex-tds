@@ -46,9 +46,9 @@ public class RDA_JDBCRealm extends JDBCRealm {
 
     	
     	
-//    	log.info( "First: " +
-//				"U: " + username +
-//				"P: " + credentials);
+    	log.info( "First: " +
+				"U: " + username +
+				"P: " + credentials);
     	
        // No user or no credentials
         // Can't possibly authenticate, don't bother the database then
@@ -103,9 +103,9 @@ public class RDA_JDBCRealm extends JDBCRealm {
             String credentials) {
 
 		
-//		log.info( "Second: " +
- //					"U: " + username +
-//					"P: " + credentials);
+		log.info( "Second: " +
+ 					"U: " + username +
+					"P: " + credentials);
 		
 		// No user or no credentials
 		// Can't possibly authenticate, don't bother the database then
@@ -119,9 +119,9 @@ public class RDA_JDBCRealm extends JDBCRealm {
 		}
 		
 		
-//		log.info( "222 Second 222: " +
-//				"U: " + username +
-//				"P: " + credentials);
+		log.info( "222 Second 222: " +
+				"U: " + username +
+				"P: " + credentials);
 		
 		
 		// Look up the user's credentials
@@ -132,7 +132,7 @@ public class RDA_JDBCRealm extends JDBCRealm {
 			return null;
 		}
 		
-  		//log.info( "Credentials! " + dbCredentials);
+  		log.info( "Credentials! " + dbCredentials);
 		
 		// User's credentials stored via Unix Crypt with first two characters being a random "salt"
 		// We need to grab the first two characters to use as the salt for the crypt method to compare
@@ -170,15 +170,15 @@ public class RDA_JDBCRealm extends JDBCRealm {
 		 */
 //		 ArrayList<String> roles = new ArrayList<String>() {{ add("odap"); }};
 		
-//			log.info(
-//					"U: " + username +
-//					"\nP: " + credentials +
-//					"\nS: " + salt +
-//					"\nC: " + UnixCrypt.crypt(salt, (credentials)) +
-//					"\nD: " + dbCredentials +
-//					"\nV: " + validated +
-//					"\nG: " + new GenericPrincipal(username, credentials, roles)
-//					);
+			log.info(
+					"U: " + username +
+					"\nP: " + credentials +
+					"\nS: " + salt +
+					"\nC: " + UnixCrypt.crypt(salt, (credentials)) +
+					"\nD: " + dbCredentials +
+					"\nV: " + validated +
+					"\nG: " + new GenericPrincipal(username, credentials, roles)
+					);
 		
 		// Create and return a suitable Principal for this user
 		return (new GenericPrincipal(username, credentials, roles));
