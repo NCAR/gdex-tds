@@ -185,7 +185,7 @@ public class RDA_DataSourceRealm extends DataSourceRealm {
 
 //        log.info( "Validated !" + validated);
         if (validated) {
-            log.info( "dataSourceRealm.authenticateSuccessL:  " + username); 
+            log.info( "dataSourceRealm.authenticateSuccess:  " + username); 
             if (containerLog.isTraceEnabled())
                 containerLog.trace(
                     sm.getString("dataSourceRealm.authenticateSuccess",
