@@ -9,9 +9,6 @@
         <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
         <service name="cdmrFeatureGrid" serviceType="CdmrFeature" base="/thredds/cdmrfeature/grid/"/>
 
-        <service name="wcs" serviceType="WCS" base="/thredds/wcs/"/>
-        <service name="wms" serviceType="WMS" base="/thredds/wms/"/>
-
         <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
         <service name="ncml" serviceType="NCML" base="/thredds/ncml/"/>
         <service name="uddc" serviceType="UDDC" base="/thredds/uddc/"/>
@@ -64,6 +61,7 @@
     <catalogRef xlink:href="catalog_ds629.5.xml" xlink:title="ds629.5 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_ds629.6.xml" xlink:title="ds629.6 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid, Dynamical Parameters Only" name="" />
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
+    <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
     <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
 
