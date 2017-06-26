@@ -19,6 +19,7 @@
     <catalogRef xlink:href="catalog_ds084.1.xml" xlink:title="ds084.1 NCEP GFS 0.25 Degree Global Forecast Grids" name="" />
     <catalogRef xlink:href="catalog_ds084.3.xml" xlink:title="ds084.3 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive" name="" />
     <catalogRef xlink:href="catalog_ds084.4.xml" xlink:title="ds084.4 NCEP GDAS/FNL Surface Flux Grids" name="" />
+    <catalogRef xlink:href="catalog_ds091.0.xml" xlink:title="ds091.0 NCEP/DOE Reanalysis 2 (R2)" name="" />
     <catalogRef xlink:href="catalog_ds093.0.xml" xlink:title="ds093.0 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010" name="" />
     <catalogRef xlink:href="catalog_ds093.1.xml" xlink:title="ds093.1 NCEP Climate Forecast System Reanalysis (CFSR) Selected Hourly Time-Series Products, January 1979 to December 2010" name="" />
     <catalogRef xlink:href="catalog_ds093.2.xml" xlink:title="ds093.2 NCEP Climate Forecast System Reanalysis (CFSR) Monthly Products, January 1979 to December 2010" name="" />
@@ -64,5 +65,14 @@
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
     <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
+
+
+<datasetScan name="Data From LAS" path="las" location="/usr/local/tomcat/content/las/conf/server/data" serviceName="all">
+      <filter>
+         <include wildcard="*.nc"/>
+         <include wildcard="*.fds"/>
+         <include wildcard="*.jnl"/>
+      </filter>
+</datasetScan>
 
 </catalog>
