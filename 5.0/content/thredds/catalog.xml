@@ -36,6 +36,7 @@
     <catalogRef xlink:href="catalog_ds298.0.xml" xlink:title="ds298.0 Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" name=" Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" />
     <catalogRef xlink:href="catalog_ds314.0.xml" xlink:title="ds314.0 Global Meteorological Forcing Dataset for Land Surface Modeling" name="" />
     <catalogRef xlink:href="catalog_ds316.0.xml" xlink:title="ds316.0 NCAR Community Earth System Model, EaSM Project Dataset" name=" NCAR Community Earth System Model, EaSM Project Dataset" />
+    <catalogRef xlink:href="catalog_ds300.0.xml" xlink:title="ds300.0 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" /> 
     <catalogRef xlink:href="catalog_ds335.0.xml" xlink:title="ds335.0 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
     <catalogRef xlink:href="catalog_ds336.0.xml" xlink:title="ds336.0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
     <catalogRef xlink:href="catalog_ds463.4.xml" xlink:title="ds463.4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
@@ -46,6 +47,7 @@
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
     <catalogRef xlink:href="catalog_ds608.0.xml" xlink:title="ds608.0 NCEP North American Regional Reanalysis (NARR)" name="" />
     <catalogRef xlink:href="catalog_ds609.2.xml" xlink:title="ds609.2 GCIP NCEP Eta model output" name="" />
+    <catalogRef xlink:href="catalog_ds612.0.xml" xlink:title="ds612.0 High Resolution WRF Simulations of the Current and Future Climate of North America" name="" />
     <catalogRef xlink:href="catalog_ds626.0.xml" xlink:title="ds626.0 ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)" name="" />
     <catalogRef xlink:href="catalog_ds627.0.xml" xlink:title="ds627.0 ERA-Interim Project" name="" />
     <catalogRef xlink:href="catalog_ds627.1.xml" xlink:title="ds627.1 ERA-Interim Project, Monthly Means" name="" />
