@@ -201,13 +201,13 @@
       <url-pattern>/ncss/grid/g/*</url-pattern>
       <url-pattern>/cdmremote/g/*</url-pattern>
       <url-pattern>/ncml/g/*</url-pattern-->
-      <!--url-pattern>/dodsC/aggregations/g/*</url-pattern-->
+      <url-pattern>/dodsC/aggregations/g/*</url-pattern>
       <url-pattern>/fileServer/aggregations/g/*</url-pattern>
       <url-pattern>/wcs/aggregations/g/*</url-pattern>
       <url-pattern>/ncss/grid/aggregations/g/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/g/*</url-pattern>
       <url-pattern>/ncml/aggregations/g/*</url-pattern>
-      <!--url-pattern>/dodsC/files/g/*</url-pattern-->
+      <url-pattern>/dodsC/files/g/*</url-pattern>
       <url-pattern>/fileServer/files/g/*</url-pattern>
       <url-pattern>/wcs/files/g/*</url-pattern>
       <url-pattern>/ncss/grid/files/g/*</url-pattern>
