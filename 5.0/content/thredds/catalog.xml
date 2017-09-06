@@ -39,6 +39,7 @@
     <catalogRef xlink:href="catalog_ds300.0.xml" xlink:title="ds300.0 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" /> 
     <catalogRef xlink:href="catalog_ds335.0.xml" xlink:title="ds335.0 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
     <catalogRef xlink:href="catalog_ds336.0.xml" xlink:title="ds336.0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
+    <catalogRef xlink:href="catalog_ds342.0.xml" xlink:title="ds342.0 NCAR/MOPITT Reanalysis" />
     <catalogRef xlink:href="catalog_ds463.4.xml" xlink:title="ds463.4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
     <catalogRef xlink:href="catalog_ds496.0.xml" xlink:title="ds496.0 GPCC Full Data Reanalysis Version 7.0: Monthly Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
     <catalogRef xlink:href="catalog_ds497.0.xml" xlink:title="ds497.0 GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
@@ -63,6 +64,7 @@
     <catalogRef xlink:href="catalog_ds629.3.xml" xlink:title="ds629.3 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_ds629.5.xml" xlink:title="ds629.5 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_ds629.6.xml" xlink:title="ds629.6 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid, Dynamical Parameters Only" name="" />
+    <catalogRef xlink:href="catalog_ds630.0.xml" xlink:title="ds630.0 ERA5 Reanalysis" name="" />
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
