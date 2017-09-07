@@ -43,7 +43,7 @@ ds629.6 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
 
       <!--  Files -->
 
-     <datasetScan name="ds629.6i Files" 
+     <datasetScan name="ds629.6 Files" 
                   path="files/e/ds629.6" 
                   location="/glade/p/rda/data/ds629.6">
          <metadata inherited="true">
@@ -51,6 +51,7 @@ ds629.6 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
          </metadata>
          <filter>
              <exclude wildcard="*.html"/>
+             <exclude wildcard="*.htaccess"/>
          </filter>
          <addDatasetSize/>
      </datasetScan>
