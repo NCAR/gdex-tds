@@ -69,14 +69,7 @@
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
     <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
+    <catalogRef xlink:href="catalog_ds841.0.xml" xlink:title="ds841.0 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" />
 
-
-<datasetScan name="Data From LAS" path="las" location="/usr/local/tomcat/content/las/conf/server/data" serviceName="all">
-      <filter>
-         <include wildcard="*.nc"/>
-         <include wildcard="*.fds"/>
-         <include wildcard="*.jnl"/>
-      </filter>
-</datasetScan>
 
 </catalog>
