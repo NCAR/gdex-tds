@@ -44,6 +44,7 @@
     <catalogRef xlink:href="catalog_ds496.0.xml" xlink:title="ds496.0 GPCC Full Data Reanalysis Version 7.0: Monthly Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
     <catalogRef xlink:href="catalog_ds497.0.xml" xlink:title="ds497.0 GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
     <catalogRef xlink:href="catalog_ds502.0.xml" xlink:title="ds502.0 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" />
+    <catalogRef xlink:href="catalog_ds526.0.xml" xlink:title="ds526.0 Daily Gridded North American Snowfall" />
     <catalogRef xlink:href="catalog_ds601.0.xml" xlink:title="ds601.0 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
     <catalogRef xlink:href="catalog_ds608.0.xml" xlink:title="ds608.0 NCEP North American Regional Reanalysis (NARR)" name="" />
@@ -65,6 +66,7 @@
     <catalogRef xlink:href="catalog_ds629.5.xml" xlink:title="ds629.5 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_ds629.6.xml" xlink:title="ds629.6 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid, Dynamical Parameters Only" name="" />
     <catalogRef xlink:href="catalog_ds630.0.xml" xlink:title="ds630.0 ERA5 Reanalysis" name="" />
+    <catalogRef xlink:href="catalog_ds630.1.xml" xlink:title="ds630.1 ERA5 Reanalysis Monthly Means" name="" />
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
