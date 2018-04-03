@@ -41,7 +41,7 @@ Online archives include 1 year of data, and are populated daily with model outpu
 
       <datasetScan name="ds335.0 Files"
                   path="files/g/ds335.0"
-                  location="/glade/p/rda/data/ds335.0">
+                  location="/data/rda/data/ds335.0">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -61,7 +61,7 @@ Online archives include 1 year of data, and are populated daily with model outpu
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds335.0 GFS0p5 Degree Global Analysis Aggregation" spec="/glade/p/rda/data/ds335.0/GFS0p5/**/.*grib2$" 
+         <collection name = "ds335.0 GFS0p5 Degree Global Analysis Aggregation" spec="/data/rda/data/ds335.0/GFS0p5/**/.*grib2$" 
          dateFormatMark="yyyy#/GFS_Global_0p5deg_#"
                            timePartition="directory" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />

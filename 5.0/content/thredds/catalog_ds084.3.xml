@@ -35,7 +35,7 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
 
       <datasetScan name="ds084.3 Files"
                   path="files/g/ds084.3"
-                  location="/glade/p/rda/data/ds084.3">
+                  location="/data/rda/data/ds084.3">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -46,7 +46,7 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
      </datasetScan>
 
      <!--  Aggregations  -->
-
+<!--
      <featureCollection name="ds084.3 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
@@ -55,7 +55,7 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds084.3" spec="/glade/p/rda/data/ds084.3/**/.*grib2$" 
+         <collection name = "ds084.3" spec="/data/rda/data/ds084.3/**/.*grib2$" 
          dateFormatMark="yyyyMMdd#/gfs.0p25b#"
                            timePartition="directory" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
@@ -63,6 +63,7 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
            <option name="runtimeCoordinate" value="union" />
         </gribConfig>
      </featureCollection>
+-->
 
   </dataset>
 

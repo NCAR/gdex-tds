@@ -37,7 +37,7 @@ CMORPH (CPC MORPHing technique) produces global precipitation analyses at very h
 
      <datasetScan name="ds502.0 Files" 
                   path="files/g/ds502.0" 
-                  location="/glade/p/rda/data/ds502.0/netcdf/">
+                  location="/data/rda/data/ds502.0/netcdf/">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

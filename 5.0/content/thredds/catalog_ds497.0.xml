@@ -40,7 +40,7 @@ This GPCC product is recommended to be used when the daily precipitation informa
 
      <datasetScan name="ds497.0 Files" 
                   path="files/g/ds497.0" 
-                  location="/glade/p/rda/data/ds497.0/full_data_daily_v1/">
+                  location="/data/rda/data/ds497.0/full_data_daily_v1/">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

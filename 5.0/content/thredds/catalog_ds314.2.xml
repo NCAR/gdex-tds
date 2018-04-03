@@ -36,7 +36,7 @@ The WFDEI meteorological forcing data set has been generated using the same meth
 
      <datasetScan name="ds314.2 Files" 
                   path="files/g/ds314.2" 
-                  location="/glade/p/rda/data/ds314.2">
+                  location="/data/rda/data/ds314.2">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

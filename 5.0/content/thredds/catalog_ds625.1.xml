@@ -46,7 +46,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
      <!--  Files -->
      <datasetScan name="ds625.1 Files" 
                   path="files/jra25/ds625.1" 
-                  location="/glade/p/rda/data/ds625.1">
+                  location="/data/rda/data/ds625.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -74,7 +74,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
            
                <collection name="ds625.1_anl_chipsi" 
-                           spec="/glade/p/rda/data/ds625.1/anl_column_chipsi/**/anl_column_chipsi\..*"
+                           spec="/data/rda/data/ds625.1/anl_column_chipsi/**/anl_column_chipsi\..*"
                            olderThan="0 min"/>
            
                   <gribConfig datasetTypes="Best">
@@ -102,7 +102,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_chipsi25"
-                           spec="/glade/p/rda/data/ds625.1/anl_chipsi25/anl_chipsi25\..*.nc"
+                           spec="/data/rda/data/ds625.1/anl_chipsi25/anl_chipsi25\..*.nc"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -124,7 +124,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_isentrop" 
-                           spec="/glade/p/rda/data/ds625.1/anl_isentrop/anl_isentrop\..*"
+                           spec="/data/rda/data/ds625.1/anl_isentrop/anl_isentrop\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -146,7 +146,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_column125_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_column125_var/**/anl_column125_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_column125_var/**/anl_column125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -168,7 +168,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_isentrop"
-                           spec="/glade/p/rda/data/ds625.1/anl_isentrop/**/anl_isentrop\..*"
+                           spec="/data/rda/data/ds625.1/anl_isentrop/**/anl_isentrop\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -191,7 +191,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_isentrop_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_isentrop_var/**/anl_isentrop_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_isentrop_var/**/anl_isentrop_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -213,7 +213,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_isentrop125"
-                           spec="/glade/p/rda/data/ds625.1/anl_isentrop125/**/anl_isentrop125\..*"
+                           spec="/data/rda/data/ds625.1/anl_isentrop125/**/anl_isentrop125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -235,7 +235,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_isentrop125_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_isentrop125_var/**/anl_isentrop125_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_isentrop125_var/**/anl_isentrop125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -258,7 +258,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>      
 
                <collection name="ds625.1_anl_land"
-                           spec="/glade/p/rda/data/ds625.1/anl_land/**/anl_land\..*"
+                           spec="/data/rda/data/ds625.1/anl_land/**/anl_land\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -280,7 +280,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_land_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_land_var/**/anl_land_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_land_var/**/anl_land_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -303,7 +303,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_land125"
-                           spec="/glade/p/rda/data/ds625.1/anl_land125/**/anl_land125\..*"
+                           spec="/data/rda/data/ds625.1/anl_land125/**/anl_land125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -325,7 +325,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_land125_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_land125_var/**/anl_land125_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_land125_var/**/anl_land125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -347,7 +347,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_mdl"
-                           spec="/glade/p/rda/data/ds625.1/anl_mdl/**/anl_mdl\..*"
+                           spec="/data/rda/data/ds625.1/anl_mdl/**/anl_mdl\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -369,7 +369,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_mdl_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_mdl_var/**/anl_mdl_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_mdl_var/**/anl_mdl_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -391,7 +391,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_p125"
-                           spec="/glade/p/rda/data/ds625.1/anl_p125/**/anl_p125\..*"
+                           spec="/data/rda/data/ds625.1/anl_p125/**/anl_p125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -413,7 +413,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_p125_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_p125_var/**/anl_p125_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_p125_var/**/anl_p125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -436,7 +436,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
              
                <collection name="ds625.1_anl_p25"
-                           spec="/glade/p/rda/data/ds625.1/anl_p25/**/anl_p25\..*"
+                           spec="/data/rda/data/ds625.1/anl_p25/**/anl_p25\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -458,7 +458,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_p25_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_p25_var/**/anl_p25_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_p25_var/**/anl_p25_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -480,7 +480,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_snow"
-                           spec="/glade/p/rda/data/ds625.1/anl_snow/**/anl_snow\..*"
+                           spec="/data/rda/data/ds625.1/anl_snow/**/anl_snow\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -502,7 +502,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_snow_var"
-                           spec="/glade/p/rda/data/ds625.1/anl_snow_var/**/anl_snow_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_snow_var/**/anl_snow_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -525,7 +525,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_snow125"
-                           spec="/glade/p/rda/data/ds625.1/anl_snow125/**/anl_snow125\..*"
+                           spec="/data/rda/data/ds625.1/anl_snow125/**/anl_snow125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -547,7 +547,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_snow125"
-                           spec="/glade/p/rda/data/ds625.1/anl_snow125_var/**/anl_snow125_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_snow125_var/**/anl_snow125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -570,7 +570,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_surf"
-                           spec="/glade/p/rda/data/ds625.1/anl_surf/**/anl_surf\..*"
+                           spec="/data/rda/data/ds625.1/anl_surf/**/anl_surf\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -592,7 +592,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_surf"
-                           spec="/glade/p/rda/data/ds625.1/anl_surf_var/**/anl_surf_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_surf_var/**/anl_surf_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -614,7 +614,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_surf125"
-                           spec="/glade/p/rda/data/ds625.1/anl_surf125/**/anl_surf125\..*"
+                           spec="/data/rda/data/ds625.1/anl_surf125/**/anl_surf125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -637,7 +637,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_anl_surf125"
-                           spec="/glade/p/rda/data/ds625.1/anl_surf125_var/**/anl_surf125_var\..*"
+                           spec="/data/rda/data/ds625.1/anl_surf125_var/**/anl_surf125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -664,7 +664,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
            
                <collection name="ds625.1_fcst_column" 
-                           spec="/glade/p/rda/data/ds625.1/fcst_column/**/fcst_column\..*"
+                           spec="/data/rda/data/ds625.1/fcst_column/**/fcst_column\..*"
                            olderThan="0 min"/>
            
                   <gribConfig datasetTypes="Best">
@@ -686,7 +686,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_column"
-                           spec="/glade/p/rda/data/ds625.1/fcst_column_var/**/fcst_column_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_column_var/**/fcst_column_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -708,7 +708,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_column125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_column125/**/fcst_column125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_column125/**/fcst_column125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -730,7 +730,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_column125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_column125_var/**/fcst_column125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_column125_var/**/fcst_column125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -752,7 +752,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_land"
-                           spec="/glade/p/rda/data/ds625.1/fcst_land/**/fcst_land\..*"
+                           spec="/data/rda/data/ds625.1/fcst_land/**/fcst_land\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -774,7 +774,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_land_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_land_var/**/fcst_land_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_land_var/**/fcst_land_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -796,7 +796,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_land125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_land125/**/fcst_land125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_land125/**/fcst_land125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -818,7 +818,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_land125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_land125_var/**/fcst_land125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_land125_var/**/fcst_land125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -840,7 +840,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_mdl"
-                           spec="/glade/p/rda/data/ds625.1/fcst_mdl/**/fcst_mdl\..*"
+                           spec="/data/rda/data/ds625.1/fcst_mdl/**/fcst_mdl\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -862,7 +862,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
                
                <collection name="ds625.1_fcst_mdl_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_mdl_var/**/fcst_mdl_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_mdl_var/**/fcst_mdl_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -883,7 +883,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                     <serviceName>all</serviceName>
                </metadata>
                <collection name="ds625.1_fcst_p125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_p125/**/fcst_p125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_p125/**/fcst_p125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -904,7 +904,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                     <serviceName>all</serviceName>
                </metadata>
                <collection name="ds625.1_fcst_p125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_p125_var/**/fcst_p125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_p125_var/**/fcst_p125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -926,7 +926,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_p25"
-                           spec="/glade/p/rda/data/ds625.1/fcst_p25/**/fcst_p25\..*"
+                           spec="/data/rda/data/ds625.1/fcst_p25/**/fcst_p25\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -948,7 +948,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_p25_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_p25_var/**/fcst_p25_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_p25_var/**/fcst_p25_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -975,7 +975,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy2m"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy2m/**/fcst_phy2m\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy2m/**/fcst_phy2m\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -997,7 +997,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy2m_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy2m_var/**/fcst_phy2m_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy2m_var/**/fcst_phy2m_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1020,7 +1020,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy2m125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy2m125/**/fcst_phy2m125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy2m125/**/fcst_phy2m125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1042,7 +1042,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy2m125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy2m125_var/**/fcst_phy2m125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy2m125_var/**/fcst_phy2m125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1064,7 +1064,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy3m"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy3m/**/fcst_phy3m\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy3m/**/fcst_phy3m\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1086,7 +1086,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy3m_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy3m_var/**/fcst_phy3m_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy3m_var/**/fcst_phy3m_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1108,7 +1108,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy3m125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy3m125/**/fcst_phy3m125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy3m125/**/fcst_phy3m125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1130,7 +1130,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phy3m125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phy3m125_var/**/fcst_phy3m125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phy3m125_var/**/fcst_phy3m125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1152,7 +1152,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phyland"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phyland/**/fcst_phyland\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phyland/**/fcst_phyland\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1174,7 +1174,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phyland_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phyland_var/**/fcst_phyland_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phyland_var/**/fcst_phyland_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1196,7 +1196,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phyland125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phyland125/**/fcst_phyland125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phyland125/**/fcst_phyland125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1218,7 +1218,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_phyland125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_phyland125_var/**/fcst_phyland125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_phyland125_var/**/fcst_phyland125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1240,7 +1240,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_surf"
-                           spec="/glade/p/rda/data/ds625.1/fcst_surf/**/fcst_surf\..*"
+                           spec="/data/rda/data/ds625.1/fcst_surf/**/fcst_surf\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1262,7 +1262,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_surf_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_surf_var/**/fcst_surf_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_surf_var/**/fcst_surf_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1284,7 +1284,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_surf125"
-                           spec="/glade/p/rda/data/ds625.1/fcst_surf125/**/fcst_surf125\..*"
+                           spec="/data/rda/data/ds625.1/fcst_surf125/**/fcst_surf125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1306,7 +1306,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_fcst_surf125_var"
-                           spec="/glade/p/rda/data/ds625.1/fcst_surf125_var/**/fcst_surf125_var\..*"
+                           spec="/data/rda/data/ds625.1/fcst_surf125_var/**/fcst_surf125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1328,7 +1328,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_ice"
-                           spec="/glade/p/rda/data/ds625.1/ice/**/ice\..*"
+                           spec="/data/rda/data/ds625.1/ice/**/ice\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1350,7 +1350,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_ice_var"
-                           spec="/glade/p/rda/data/ds625.1/ice_var/**/ice_var\..*"
+                           spec="/data/rda/data/ds625.1/ice_var/**/ice_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1372,7 +1372,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_ice125"
-                           spec="/glade/p/rda/data/ds625.1/ice125/**/ice125\..*"
+                           spec="/data/rda/data/ds625.1/ice125/**/ice125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1394,7 +1394,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_ice125_var"
-                           spec="/glade/p/rda/data/ds625.1/ice125_var/**/ice125_var\..*"
+                           spec="/data/rda/data/ds625.1/ice125_var/**/ice125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1416,7 +1416,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_minmax_surf"
-                           spec="/glade/p/rda/data/ds625.1/minmax_surf/**/minmax_surf\..*"
+                           spec="/data/rda/data/ds625.1/minmax_surf/**/minmax_surf\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1438,7 +1438,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_minmax_surf"
-                           spec="/glade/p/rda/data/ds625.1/minmax_surf_var/**/minmax_surf_var\..*"
+                           spec="/data/rda/data/ds625.1/minmax_surf_var/**/minmax_surf_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1465,7 +1465,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_ll125"
-                           spec="/glade/p/rda/data/ds625.1/ll125/**/ll125\..*"
+                           spec="/data/rda/data/ds625.1/ll125/**/ll125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1487,7 +1487,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_ll25"
-                           spec="/glade/p/rda/data/ds625.1/ll25/**/ll25\..*"
+                           spec="/data/rda/data/ds625.1/ll25/**/ll25\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1509,7 +1509,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                </metadata>
 
                <collection name="ds625.1_tl319"
-                           spec="/glade/p/rda/data/ds625.1/tl319/**/tl319\..*"
+                           spec="/data/rda/data/ds625.1/tl319/**/tl319\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">

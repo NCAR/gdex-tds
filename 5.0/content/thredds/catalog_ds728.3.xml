@@ -44,7 +44,7 @@ Request to users from the data authors: The GPCP datasets are developed and main
 
      <datasetScan name="ds728.3 Files" 
                   path="files/g/ds728.3" 
-                  location="/glade/p/rda/data/ds728.3/p1d/netcdf">
+                  location="/data/rda/data/ds728.3/p1d/netcdf">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

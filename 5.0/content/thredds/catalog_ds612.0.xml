@@ -40,7 +40,7 @@ The dataset is from a high resolution climate change simulation that permits con
 
      <datasetScan name="ds612.0 Files" 
                   path="files/g/ds612.0" 
-                  location="/glade/p/rda/data/ds612.0">
+                  location="/data/rda/data/ds612.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

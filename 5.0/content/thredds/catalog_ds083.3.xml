@@ -41,7 +41,7 @@ The archive time series is continuously extended to a near-current date. It is n
 
       <datasetScan name="ds083.3 Files"
                   path="files/g/ds083.3"
-                  location="/glade/p/rda/data/ds083.3">
+                  location="/data/rda/data/ds083.3">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -61,7 +61,7 @@ The archive time series is continuously extended to a near-current date. It is n
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds083.3" spec="/glade/p/rda/data/ds083.3/**/.*grib2$" 
+         <collection name = "ds083.3" spec="/data/rda/data/ds083.3/**/.*grib2$" 
          dateFormatMark="yyyyMM#/gdas1.fnl0p25#"
                            timePartition="directory" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />

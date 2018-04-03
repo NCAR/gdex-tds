@@ -43,7 +43,7 @@ ds629.5 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
 
      <datasetScan name="ds629.5 Files" 
                   path="files/e/ds629.5" 
-                  location="/glade/p/rda/data/ds629.5">
+                  location="/data/rda/data/ds629.5">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -69,7 +69,7 @@ ds629.5 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
            </metadata>
        
            <collection name="YOTC atmospheric model forecast for surface, single parameter 3-hourly time series" 
-                       spec="/glade/p/rda/data/ds629.5/yt.oper.fc.sfc/**/yt\.oper\.fc\.sfc\..*"
+                       spec="/data/rda/data/ds629.5/yt.oper.fc.sfc/**/yt\.oper\.fc\.sfc\..*"
                        dateFormatMark="#yt.oper.fc.sfc/#yyyy" />
       
            <tdm rewrite="test"/> 

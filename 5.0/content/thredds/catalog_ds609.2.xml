@@ -44,7 +44,7 @@ Starting from January 1, 2013, NCEP's operational NAM (40 km, grid 212) 6-hourly
 
      <datasetScan name="ds609.2 Files" 
                   path="files/g/ds609.2" 
-                  location="/glade/p/rda/data/ds609.2">
+                  location="/data/rda/data/ds609.2">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>

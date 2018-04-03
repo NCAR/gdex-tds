@@ -47,7 +47,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
 
      <datasetScan name="ds627.1 Files" 
                   path="files/e/ds627.1" 
-                  location="/glade/p/rda/data/ds627.1">
+                  location="/data/rda/data/ds627.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -74,7 +74,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
            
                <collection name="Monthly Mean ERA Interim atmospheric model analysis on model levels" 
-                           spec="/glade/p/rda/data/ds627.1/ei.moda.an.ml/ei\.moda\.an\.ml\..*" />
+                           spec="/data/rda/data/ds627.1/ei.moda.an.ml/ei\.moda\.an\.ml\..*" />
                   
                   <tdm rewrite="test"/> 
              </featureCollection>
@@ -89,7 +89,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
 
                <collection name="Monthly Mean ERA Interim atmospheric model analysis interpolated to pressure levels" 
-                           spec="/glade/p/rda/data/ds627.1/ei.moda.an.pl/ei\.moda\.an\.pl\..*" />
+                           spec="/data/rda/data/ds627.1/ei.moda.an.pl/ei\.moda\.an\.pl\..*" />
                 
                   <tdm rewrite="test"/>
              </featureCollection>
@@ -104,7 +104,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
 
                <collection name="Monthly Mean ERA Interim atmospheric model analysis interpolated to isentropic levels"
-                           spec="/glade/p/rda/data/ds627.1/ei.moda.an.pt/ei\.moda\.an\.pt\..*"
+                           spec="/data/rda/data/ds627.1/ei.moda.an.pt/ei\.moda\.an\.pt\..*"
                            olderThan="0 min"/>
              
                   <tdm rewrite="test"/>
@@ -120,7 +120,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
 
                <collection name="Monthly Mean ERA Interim atmospheric model analysis interpolated to 2 pvu level"
-                           spec="/glade/p/rda/data/ds627.1/ei.moda.an.pv/ei\.moda\.an\.pv\.regn128sc\..*"
+                           spec="/data/rda/data/ds627.1/ei.moda.an.pv/ei\.moda\.an\.pv\.regn128sc\..*"
                            dateFormatMark="#ei.moda.an.pv.regn128sc.#yyyyMMddHH" />
    
                   <tdm rewrite="test"/>
@@ -136,7 +136,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>      
 
                <collection name="Monthly Mean ERA Interim atmospheric model analysis for surface"
-                           spec="/glade/p/rda/data/ds627.1/ei.moda.an.sfc/ei\.moda\.an\.sfc\.regn128sc\..*"
+                           spec="/data/rda/data/ds627.1/ei.moda.an.sfc/ei\.moda\.an\.sfc\.regn128sc\..*"
                            dateFormatMark="#ei.moda.an.sfc.regn128sc.#yyyyMMddHH" />
 
                   <tdm rewrite="test"/>
@@ -155,7 +155,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
            
                <collection name="Monthly Mean ERA Interim atmospheric model forecast for surface (at 12 hours)" 
-                           spec="/glade/p/rda/data/ds627.1/ei.mdfa.fc12hr.sfc/ei\.mdfa\.fc12hr\.sfc\.regn128sc\..*"
+                           spec="/data/rda/data/ds627.1/ei.mdfa.fc12hr.sfc/ei\.mdfa\.fc12hr\.sfc\.regn128sc\..*"
                            dateFormatMark="#ei.mdfa.fc12hr.sfc.regn128sc.#yyyyMMddHH" />
           
                   <tdm rewrite="test"/> 

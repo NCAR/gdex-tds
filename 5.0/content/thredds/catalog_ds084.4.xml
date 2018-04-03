@@ -35,7 +35,7 @@ The NCEP operational Global Data Assimilation System surface flux grids are on a
 
       <datasetScan name="ds084.4 Files"
                   path="files/g/ds084.4"
-                  location="/glade/p/rda/data/ds084.4">
+                  location="/data/rda/data/ds084.4">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -55,7 +55,7 @@ The NCEP operational Global Data Assimilation System surface flux grids are on a
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds084.4" spec="/glade/p/rda/data/ds084.4/**/.*grib2$" 
+         <collection name = "ds084.4" spec="/data/rda/data/ds084.4/**/.*grib2$" 
          dateFormatMark="yyyyMM#/gdas1.sflux#"
                            timePartition="directory" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />

@@ -44,7 +44,7 @@
     <!--  Files -->
     <datasetScan name="ds093.1 Files"
                  path="files/g/ds093.1"
-                 location="/glade/p/rda/data/ds093.1">
+                 location="/data/rda/data/ds093.1">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -55,7 +55,7 @@
     </datasetScan>
 
     <!-- Aggregations -->
-
+<!--
 
     <featureCollection name="ds093.1 Aggregations"
                        featureType="GRIB2"
@@ -65,7 +65,7 @@
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds093.1" spec="/glade/p/rda/data/ds093.1/**/.*.grb2$"
+      <collection name="ds093.1" spec="/data/rda/data/ds093.1/**/.*.grb2$"
                       dateFormatMark="yyyyMM#.grb2#"
                       timePartition="year" />
       <tdm rewrite="test"/>
@@ -78,6 +78,9 @@
       </gribConfig>
 
     </featureCollection>
+
+-->
+
   </dataset>
 
 </catalog>

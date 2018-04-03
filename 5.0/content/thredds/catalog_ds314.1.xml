@@ -36,7 +36,7 @@ New global sub-daily meteorological forcing data are provided for use with land 
 
      <datasetScan name="ds314.1 Files" 
                   path="files/g/ds314.1" 
-                  location="/glade/p/rda/data/ds314.1">
+                  location="/data/rda/data/ds314.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

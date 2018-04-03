@@ -42,7 +42,7 @@
 
     <datasetScan name="ds277.6 Files"
                  path="files/g/ds277.6"
-                 location="/glade/p/rda/data/ds277.6">
+                 location="/data/rda/data/ds277.6">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -64,7 +64,7 @@
       </metadata>
 
       <collection name="ds277.6"
-                  spec="/glade/p/rda/data/ds277.6/monthly/godas\.M\..*\.grb$"
+                  spec="/data/rda/data/ds277.6/monthly/godas\.M\..*\.grb$"
                   dateFormatMark="#godas.M.#yyyyMM"
                   timePartition="directory"/>
 

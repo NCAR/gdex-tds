@@ -37,7 +37,7 @@
 
       <datasetScan name="ds084.1 Files"
                   path="files/g/ds084.1"
-                  location="/glade/p/rda/data/ds084.1">
+                  location="/data/rda/data/ds084.1">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -48,7 +48,7 @@
      </datasetScan>
 
      <!--  Aggregations  -->
-
+<!--
      <featureCollection name="ds084.1 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
@@ -57,7 +57,7 @@
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds084.1" spec="/glade/p/rda/data/ds084.1/**/gfs.0p25.*grib2$" 
+         <collection name = "ds084.1" spec="/data/rda/data/ds084.1/**/gfs.0p25.*grib2$" 
          dateFormatMark="yyyyMMdd#/gfs.0p25#"
                            timePartition="directory" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
@@ -65,6 +65,7 @@
            <option name="runtimeCoordinate" value="union" />
         </gribConfig>
      </featureCollection>
+-->
 
   </dataset>
 

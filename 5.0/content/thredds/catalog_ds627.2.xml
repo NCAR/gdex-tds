@@ -46,7 +46,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
       <!--  Files -->
      <datasetScan name="ds627.2 Files" 
                   path="files/e/ds627.2" 
-                  location="/glade/p/rda/data/ds627.2">
+                  location="/data/rda/data/ds627.2">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

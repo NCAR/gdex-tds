@@ -39,7 +39,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
      <!--  Files -->
      <datasetScan name="ds628.3 Files" 
                   path="files/JRA55/ds628.3" 
-                  location="/glade/p/rda/data/ds628.3">
+                  location="/data/rda/data/ds628.3">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -67,7 +67,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
            
                <collection name="JRA-55C Monthly Mean Model Resolution Total Column Analysis Fields" 
-                           spec="/glade/p/rda/data/ds628.3/anl_column/**/anl_column\..*" />
+                           spec="/data/rda/data/ds628.3/anl_column/**/anl_column\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
          
@@ -81,7 +81,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Total Column Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_column_var/**/anl_column_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_column_var/**/anl_column_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -96,7 +96,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Total Column Analysis Fields" 
-                           spec="/glade/p/rda/data/ds628.3/anl_column125/**/anl_column125\..*" />
+                           spec="/data/rda/data/ds628.3/anl_column125/**/anl_column125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -110,7 +110,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Total Column Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_column125_var/**/anl_column125_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_column125_var/**/anl_column125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -125,7 +125,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Isentropic Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_isentrop/**/anl_isentrop\..*" />
+                           spec="/data/rda/data/ds628.3/anl_isentrop/**/anl_isentrop\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -139,7 +139,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Isentropic Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_isentrop_var/**/anl_isentrop_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_isentrop_var/**/anl_isentrop_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -154,7 +154,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Isentropic Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_isentrop125/**/anl_isentrop125\..*"  />
+                           spec="/data/rda/data/ds628.3/anl_isentrop125/**/anl_isentrop125\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -168,7 +168,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Isentropic Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_isentrop125_var/**/anl_isentrop125_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_isentrop125_var/**/anl_isentrop125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -183,7 +183,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>      
 
                <collection name="JRA-55C Monthly Mean Model Resolution Land Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_land/**/anl_land\..*" />
+                           spec="/data/rda/data/ds628.3/anl_land/**/anl_land\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -197,7 +197,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Land Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_land_var/**/anl_land_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_land_var/**/anl_land_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -212,7 +212,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Land Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_land125/**/anl_land125\..*" />
+                           spec="/data/rda/data/ds628.3/anl_land125/**/anl_land125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -226,7 +226,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Land Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_land125_var/**/anl_land125_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_land125_var/**/anl_land125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -241,7 +241,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Model Level Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_mdl/**/anl_mdl\..*"  />
+                           spec="/data/rda/data/ds628.3/anl_mdl/**/anl_mdl\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -255,7 +255,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Model Level Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_mdl_var/**/anl_mdl_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_mdl_var/**/anl_mdl_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -270,7 +270,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Isobaric Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_p125/**/anl_p125\..*" />
+                           spec="/data/rda/data/ds628.3/anl_p125/**/anl_p125\..*" />
                <tdm rewrite="test"/>
             </featureCollection>
 
@@ -284,7 +284,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Isobaric Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_p125_var/**/anl_p125_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_p125_var/**/anl_p125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -299,7 +299,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
              
                <collection name="JRA-55C Monthly Mean 2.5 Degree Isobaric Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_p25/**/anl_p25\..*" />
+                           spec="/data/rda/data/ds628.3/anl_p25/**/anl_p25\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -313,7 +313,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 2.5 Degree Isobaric Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_p25_var/**/anl_p25_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_p25_var/**/anl_p25_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -328,7 +328,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Snow Depth Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_snow/**/anl_snow\..*" />
+                           spec="/data/rda/data/ds628.3/anl_snow/**/anl_snow\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -342,7 +342,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Snow Depth Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_snow_var/**/anl_snow_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_snow_var/**/anl_snow_var\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -356,7 +356,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Snow Depth Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_snow125/**/anl_snow125\..*" />
+                           spec="/data/rda/data/ds628.3/anl_snow125/**/anl_snow125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -370,7 +370,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Snow Depth Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_snow125_var/**/anl_snow125_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_snow125_var/**/anl_snow125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -385,7 +385,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_surf/**/anl_surf\..*" />
+                           spec="/data/rda/data/ds628.3/anl_surf/**/anl_surf\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -399,7 +399,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_surf_var/**/anl_surf_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_surf_var/**/anl_surf_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -414,7 +414,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_surf125/**/anl_surf125\..*" />
+                           spec="/data/rda/data/ds628.3/anl_surf125/**/anl_surf125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -428,7 +428,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.3/anl_surf125_var/**/anl_surf125_var\..*" />
+                           spec="/data/rda/data/ds628.3/anl_surf125_var/**/anl_surf125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -447,7 +447,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
            
                <collection name="JRA-55C Monthly Mean Model Resolution Total Column Forecast Fields" 
-                           spec="/glade/p/rda/data/ds628.3/fcst_column/**/fcst_column\..*"  />
+                           spec="/data/rda/data/ds628.3/fcst_column/**/fcst_column\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -461,7 +461,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Total Column Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_column_var/**/fcst_column_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_column_var/**/fcst_column_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -476,7 +476,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Total Column Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_column125/**/fcst_column125\..*"  />
+                           spec="/data/rda/data/ds628.3/fcst_column125/**/fcst_column125\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -490,7 +490,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Total Column Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_column125_var/**/fcst_column125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_column125_var/**/fcst_column125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -505,7 +505,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_land/**/fcst_land\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_land/**/fcst_land\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -519,7 +519,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_land_var/**/fcst_land_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_land_var/**/fcst_land_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -534,7 +534,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_land125/**/fcst_land125\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_land125/**/fcst_land125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -548,7 +548,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_land125_var/**/fcst_land125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_land125_var/**/fcst_land125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -563,7 +563,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Model Level Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_mdl/**/fcst_mdl\..*"  />
+                           spec="/data/rda/data/ds628.3/fcst_mdl/**/fcst_mdl\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -577,7 +577,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
                
                <collection name="JRA-55C Monthly Variance of Model Resolution Model Level Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_mdl_var/**/fcst_mdl_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_mdl_var/**/fcst_mdl_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -591,7 +591,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                     <serviceName>all</serviceName>
                </metadata>
                <collection name="JRA-55C Monthly Mean 1.25 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_p125/**/fcst_p125\..*"  />
+                           spec="/data/rda/data/ds628.3/fcst_p125/**/fcst_p125\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -604,7 +604,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                     <serviceName>all</serviceName>
                </metadata>
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_p125_var/**/fcst_p125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_p125_var/**/fcst_p125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -619,7 +619,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 2.5 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_p25/**/fcst_p25\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_p25/**/fcst_p25\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -633,7 +633,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 2.5 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_p25_var/**/fcst_p25_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_p25_var/**/fcst_p25_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -655,7 +655,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy2m/**/fcst_phy2m\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy2m/**/fcst_phy2m\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -671,7 +671,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy2m_var/**/fcst_phy2m_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy2m_var/**/fcst_phy2m_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -688,7 +688,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy2m125/**/fcst_phy2m125\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy2m125/**/fcst_phy2m125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -705,7 +705,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy2m125_var/**/fcst_phy2m125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy2m125_var/**/fcst_phy2m125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -724,7 +724,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
 
 
                <collection name="JRA-55C Monthly Mean Model Resolution Model Level Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy3m/**/fcst_phy3m\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy3m/**/fcst_phy3m\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -742,7 +742,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Model Level Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy3m_var/**/fcst_phy3m_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy3m_var/**/fcst_phy3m_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -759,7 +759,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Isobaric Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy3m125/**/fcst_phy3m125\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy3m125/**/fcst_phy3m125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -775,7 +775,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Isobaric Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phy3m125_var/**/fcst_phy3m125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phy3m125_var/**/fcst_phy3m125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -792,7 +792,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phyland/**/fcst_phyland\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phyland/**/fcst_phyland\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -810,7 +810,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phyland_var/**/fcst_phyland_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phyland_var/**/fcst_phyland_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -828,7 +828,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phyland125/**/fcst_phyland125\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phyland125/**/fcst_phyland125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -844,7 +844,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_phyland125_var/**/fcst_phyland125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_phyland125_var/**/fcst_phyland125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -860,7 +860,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_surf/**/fcst_surf\..*"  />
+                           spec="/data/rda/data/ds628.3/fcst_surf/**/fcst_surf\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -875,7 +875,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_surf_var/**/fcst_surf_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_surf_var/**/fcst_surf_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -890,7 +890,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_surf125/**/fcst_surf125\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_surf125/**/fcst_surf125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -904,7 +904,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/fcst_surf125_var/**/fcst_surf125_var\..*" />
+                           spec="/data/rda/data/ds628.3/fcst_surf125_var/**/fcst_surf125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -919,7 +919,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution Sea Ice Fields"
-                           spec="/glade/p/rda/data/ds628.3/ice/**/ice\..*" />
+                           spec="/data/rda/data/ds628.3/ice/**/ice\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -933,7 +933,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution Sea Ice Fields"
-                           spec="/glade/p/rda/data/ds628.3/ice_var/**/ice_var\..*" />
+                           spec="/data/rda/data/ds628.3/ice_var/**/ice_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -948,7 +948,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean 1.25 Degree Sea Ice Fields"
-                           spec="/glade/p/rda/data/ds628.3/ice125/**/ice125\..*" />
+                           spec="/data/rda/data/ds628.3/ice125/**/ice125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -962,7 +962,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of 1.25 Degree Sea Ice Fields"
-                           spec="/glade/p/rda/data/ds628.3/ice125_var/**/ice125_var\..*" />
+                           spec="/data/rda/data/ds628.3/ice125_var/**/ice125_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -978,7 +978,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Mean Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/minmax_surf/**/minmax_surf\..*" />
+                           spec="/data/rda/data/ds628.3/minmax_surf/**/minmax_surf\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>     
@@ -993,7 +993,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C Monthly Variance of Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.3/minmax_surf_var/**/minmax_surf_var\..*" />
+                           spec="/data/rda/data/ds628.3/minmax_surf_var/**/minmax_surf_var\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>

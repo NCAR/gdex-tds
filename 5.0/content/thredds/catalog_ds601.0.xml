@@ -40,7 +40,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
 
      <datasetScan name="ds601.0 Files" 
                   path="files/g/ds601.0" 
-                  location="/glade/p/rda/data/ds601.0">
+                  location="/data/rda/data/ds601.0">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>
@@ -100,7 +100,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/glw/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/glw/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -111,7 +111,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/graupel/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/graupel/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -121,7 +121,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/olr/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/olr/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -131,7 +131,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/psfc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/psfc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -141,7 +141,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/pvo/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/pvo/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -151,7 +151,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/pvoK/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/pvoK/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -161,7 +161,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/pw/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/pw/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -171,7 +171,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/q2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/q2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -181,7 +181,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/qfx/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/qfx/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -191,7 +191,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/rainc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/rainc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -201,7 +201,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/rainnc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/rainnc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -211,7 +211,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/rh/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/rh/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -221,7 +221,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/rh2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/rh2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -231,7 +231,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/sfroff/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/sfroff/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -241,7 +241,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/slp/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/slp/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -251,7 +251,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/smois/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/smois/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -261,7 +261,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/snow/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/snow/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -272,7 +272,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/snowh/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/snowh/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -283,7 +283,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/snownc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/snownc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -294,7 +294,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/swdown/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/swdown/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -305,7 +305,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/t2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/t2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -316,7 +316,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/tk/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/tk/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -327,7 +327,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/tsk/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/tsk/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -338,7 +338,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/u/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/u/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -349,7 +349,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/u10/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/u10/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -360,7 +360,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/udroff/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/udroff/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -371,7 +371,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/v/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/v/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -382,7 +382,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/v10/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/v10/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -393,7 +393,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/1995_2005/z/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/1995_2005/z/" suffix=".nc" subdirs="true"/>
              </aggregation>
         </netcdf>
       </dataset>
@@ -446,7 +446,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/glw/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/glw/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -458,7 +458,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/graupel/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/graupel/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -469,7 +469,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/olr/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/olr/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -480,7 +480,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/psfc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/psfc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -491,7 +491,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/pvo/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/pvo/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -502,7 +502,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/pvoK/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/pvoK/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -513,7 +513,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/pw/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/pw/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -524,7 +524,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/q2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/q2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -535,7 +535,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/qfx/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/qfx/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -546,7 +546,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/rainc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/rainc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -557,7 +557,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/rainnc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/rainnc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -568,7 +568,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/rh/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/rh/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -579,7 +579,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/rh2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/rh2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -590,7 +590,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/sfroff/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/sfroff/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -601,7 +601,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/slp/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/slp/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -612,7 +612,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/smois/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/smois/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -623,7 +623,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/snow/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/snow/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -635,7 +635,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/snowh/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/snowh/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -646,7 +646,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/snownc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/snownc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -657,7 +657,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/swdown/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/swdown/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -668,7 +668,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/t2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/t2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -679,7 +679,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/tk/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/tk/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -690,7 +690,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/tsk/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/tsk/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -701,7 +701,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/u/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/u/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -712,7 +712,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/u10/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/u10/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -723,7 +723,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/udroff/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/udroff/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -734,7 +734,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/v/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/v/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -745,7 +745,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/v10/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/v10/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -756,7 +756,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2020_2030/z/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2020_2030/z/" suffix=".nc" subdirs="true"/>
              </aggregation>
         </netcdf>
       </dataset>
@@ -809,7 +809,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/glw/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/glw/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -821,7 +821,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/graupel/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/graupel/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -832,7 +832,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/olr/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/olr/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -843,7 +843,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/psfc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/psfc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -854,7 +854,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/pvo/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/pvo/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -865,7 +865,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/pvoK/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/pvoK/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -876,7 +876,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/pw/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/pw/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -887,7 +887,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/q2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/q2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -898,7 +898,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/qfx/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/qfx/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -909,7 +909,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/rainc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/rainc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -920,7 +920,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/rainnc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/rainnc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -931,7 +931,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/rh/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/rh/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -942,7 +942,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/rh2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/rh2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -953,7 +953,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/sfroff/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/sfroff/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -964,7 +964,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/slp/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/slp/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -975,7 +975,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/smois/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/smois/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -986,7 +986,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/snow/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/snow/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -997,7 +997,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/snowh/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/snowh/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1008,7 +1008,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/snownc/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/snownc/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1019,7 +1019,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/swdown/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/swdown/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1030,7 +1030,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/t2/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/t2/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1041,7 +1041,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/tk/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/tk/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1052,7 +1052,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/tsk/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/tsk/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1063,7 +1063,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/u/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/u/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1074,7 +1074,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/u10/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/u10/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1085,7 +1085,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/udroff/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/udroff/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1096,7 +1096,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/v/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/v/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1107,7 +1107,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/v10/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/v10/" suffix=".nc" subdirs="true"/>
              </aggregation>
            </netcdf>
        </dataset>
@@ -1117,7 +1117,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
              <aggregation dimName="time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds601.0/RCPP/2045_2055/z/" suffix=".nc" subdirs="true"/>
+                <scan location="/data/rda/data/ds601.0/RCPP/2045_2055/z/" suffix=".nc" subdirs="true"/>
              </aggregation>
         </netcdf>
       </dataset>

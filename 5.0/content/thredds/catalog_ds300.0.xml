@@ -39,7 +39,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
       <datasetScan name="ds300.0 Files"
                   path="files/g/ds300.0"
-                  location="/glade/p/rda/data/ds300.0">
+                  location="/data/rda/data/ds300.0">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>

@@ -42,7 +42,7 @@ Historical Unidata Internet Data Distribution (IDD) Global Observational Data ar
 
      <datasetScan name="ds336.0 Files" 
                   path="files/g/ds336.0" 
-                  location="/glade/p/rda/data/ds336.0">
+                  location="/data/rda/data/ds336.0">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>

@@ -20,7 +20,7 @@
         </metadata>
     
         <collection name="ds629.1_an_sfc" 
-                    spec="/glade/p/rda/data/ds629.1/yt.oper.an.sfc/**/yt\.oper\.an\.sfc\..*"
+                    spec="/data/rda/data/ds629.1/yt.oper.an.sfc/**/yt\.oper\.an\.sfc\..*"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -50,7 +50,7 @@
         </metadata>
     
         <collection name="ds629.1_fc_sfc" 
-                    spec="/glade/p/rda/data/ds629.1/yt.oper.fc.sfc/**/yt\.oper\.fc\.sfc\..*"
+                    spec="/data/rda/data/ds629.1/yt.oper.fc.sfc/**/yt\.oper\.fc\.sfc\..*"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">

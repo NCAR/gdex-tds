@@ -39,7 +39,7 @@ This product is a reanalysis of MOPITT CO observations within the Community Atmo
 
      <datasetScan name="ds342.0 Files" 
                   path="files/g/ds342.0" 
-                  location="/glade/p/rda/data/ds342.0">
+                  location="/data/rda/data/ds342.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

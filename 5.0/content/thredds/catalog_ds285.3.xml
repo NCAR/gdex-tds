@@ -40,7 +40,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
 
      <datasetScan name="ds285.3 Files" 
                   path="files/g/ds285.3" 
-                  location="/glade/p/rda/data/ds285.3">
+                  location="/data/rda/data/ds285.3">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -64,7 +64,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
            </metadata>
        
            <collection name="SST Analyses for V6.9, 1945-2010" 
-                       spec="/glade/p/rda/data/ds285.3/temp6.9/temp\..*\.grb$" />
+                       spec="/data/rda/data/ds285.3/temp6.9/temp\..*\.grb$" />
               
               <tdm rewrite="test"/>  
          </featureCollection>
@@ -79,7 +79,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
            </metadata>
        
            <collection name="Salinity Analyses for V6.9, 1945-2010" 
-                       spec="/glade/p/rda/data/ds285.3/sal6.9/sal\..*\.grb$" />
+                       spec="/data/rda/data/ds285.3/sal6.9/sal\..*\.grb$" />
 
               <tdm rewrite="test"/> 
          </featureCollection>
@@ -98,7 +98,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
            </metadata>
        
            <collection name="Subsurface Temperature Analyses for V6.12, 1945-2011" 
-                       spec="/glade/p/rda/data/ds285.3/temp6.12/temp\..*\.grb$" />
+                       spec="/data/rda/data/ds285.3/temp6.12/temp\..*\.grb$" />
       
               <tdm rewrite="test"/>
          </featureCollection>
@@ -113,7 +113,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
            </metadata>
        
            <collection name="Subsurface Salinity Analyses for V6.12, 1945-2011" 
-                       spec="/glade/p/rda/data/ds285.3/sal6.12/sal\..*\.grb$" />
+                       spec="/data/rda/data/ds285.3/sal6.12/sal\..*\.grb$" />
       
               <tdm rewrite="test"/> 
          </featureCollection>
@@ -132,7 +132,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
            </metadata>
        
            <collection name="Subsurface Temperature Analyses for V6.13, 1945-2012" 
-                       spec="/glade/p/rda/data/ds285.3/temp6.13/temp\..*\.grb$" />
+                       spec="/data/rda/data/ds285.3/temp6.13/temp\..*\.grb$" />
               
               <tdm rewrite="test"/> 
          </featureCollection>
@@ -147,7 +147,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( ds28
            </metadata>
        
            <collection name="Subsurface Salinity Analyses for V6.13, 1945-2012" 
-                       spec="/glade/p/rda/data/ds285.3/sal6.13/sal\..*\.grb$" />
+                       spec="/data/rda/data/ds285.3/sal6.13/sal\..*\.grb$" />
          
               <tdm rewrite="test"/> 
          </featureCollection>

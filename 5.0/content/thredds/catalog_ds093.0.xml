@@ -41,7 +41,7 @@
     <!--  Files -->
     <datasetScan name="ds093.0 Files"
                  path="files/g/ds093.0"
-                 location="/glade/p/rda/data/ds093.0">
+                 location="/data/rda/data/ds093.0">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -53,7 +53,7 @@
 
     <!-- Aggregations -->
 
-
+<!--
     <featureCollection name="ds093.0 Aggregations"
                        featureType="GRIB2"
                        harvest="true"
@@ -62,12 +62,14 @@
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds093.0" spec="/glade/p/rda/data/ds093.0/**/.*.tar$"
+      <collection name="ds093.0" spec="/data/rda/data/ds093.0/**/.*.tar$"
                       dateFormatMark="yyyyMMdd#.tar#"
                       timePartition="year" />
       <tdm rewrite="test"/>
 
     </featureCollection>
+-->
+
   </dataset>
 
 </catalog>

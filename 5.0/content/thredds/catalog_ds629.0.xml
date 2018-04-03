@@ -20,7 +20,7 @@
 
       <datasetScan name="ds083.2" 
                   path="files/ds083.2" 
-                  location="/data/glade/p/rda/data/ds083.2">
+                  location="/data/data/rda/data/ds083.2">
          <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
@@ -59,7 +59,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds093.1" 
                   path="files/ds093.1" 
-                  location="/data/glade/p/rda/data/ds093.1">
+                  location="/data/data/rda/data/ds093.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -70,7 +70,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds094.1" 
                   path="files/ds094.1" 
-                  location="/data/glade/p/rda/data/ds094.1">
+                  location="/data/data/rda/data/ds094.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -81,7 +81,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds131.1" 
                   path="files/ds131.1" 
-                  location="/data/glade/p/rda/data/ds131.1">
+                  location="/data/data/rda/data/ds131.1">
          <metadata inherited="true">
          <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
@@ -110,7 +110,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds277.6" 
                   path="files/ds277.6" 
-                  location="/data/glade/p/rda/data/ds277.6">
+                  location="/data/data/rda/data/ds277.6">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -121,7 +121,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds285.3" 
                   path="files/ds285.3" 
-                  location="/data/glade/p/rda/data/ds285.3">
+                  location="/data/data/rda/data/ds285.3">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -132,7 +132,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds316.0" 
                   path="files/ds316.0" 
-                  location="/data/glade/p/rda/data/ds316.0">
+                  location="/data/data/rda/data/ds316.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -143,7 +143,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds502.0" 
                   path="files/ds502.0" 
-                  location="/data/glade/p/rda/data/ds502.0">
+                  location="/data/data/rda/data/ds502.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -154,7 +154,7 @@ The archive time series is continuously extended to a near-current date. It is n
      </datasetScan>
      <datasetScan name="ds601.0" 
                   path="files/ds601.0" 
-                  location="/data/glade/p/rda/data/ds601.0">
+                  location="/data/data/rda/data/ds601.0">
          <metadata inherited="true">
          <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>
@@ -183,7 +183,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
 
      <datasetScan name="ds629.1" 
                   path="files/ds629.1" 
-                  location="/data/glade/p/rda/data/ds629.1">
+                  location="/data/data/rda/data/ds629.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -194,7 +194,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
      </datasetScan>
      <datasetScan name="ds629.2" 
                   path="files/ds629.2" 
-                  location="/data/glade/p/rda/data/ds629.2">
+                  location="/data/data/rda/data/ds629.2">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -205,7 +205,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
      </datasetScan>
      <datasetScan name="ds629.3" 
                   path="files/ds629.3" 
-                  location="/data/glade/p/rda/data/ds629.3">
+                  location="/data/data/rda/data/ds629.3">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -216,7 +216,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
      </datasetScan>
      <datasetScan name="ds629.5" 
                   path="files/ds629.5" 
-                  location="/data/glade/p/rda/data/ds629.5">
+                  location="/data/data/rda/data/ds629.5">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -227,7 +227,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
      </datasetScan>
      <datasetScan name="ds629.6" 
                   path="files/ds629.6" 
-                  location="/data/glade/p/rda/data/ds629.6">
+                  location="/data/data/rda/data/ds629.6">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -238,7 +238,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
      </datasetScan>
      <datasetScan name="ds631.0" 
                   path="files/ds631.0" 
-                  location="/data/glade/p/rda/data/ds631.0">
+                  location="/data/data/rda/data/ds631.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -290,7 +290,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
         </metadata>
     
         <collection name="ds629.0_an_ml" 
-                    spec="/glade/p/rda/data/ds629.0/yt.oper.an.ml/**/.*400\.yt\.oper\.an\.ml$"
+                    spec="/data/rda/data/ds629.0/yt.oper.an.ml/**/.*400\.yt\.oper\.an\.ml$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -316,7 +316,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
         </metadata>
     
         <collection name="ds629.0_an_pl" 
-                    spec="/glade/p/rda/data/ds629.0/yt.oper.an.pl/**/.*400\.yt\.oper\.an\.pl$"
+                    spec="/data/rda/data/ds629.0/yt.oper.an.pl/**/.*400\.yt\.oper\.an\.pl$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -342,7 +342,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
         </metadata>
     
         <collection name="ds629.0_an_sfc" 
-                    spec="/glade/p/rda/data/ds629.0/yt.oper.an.sfc/**/.*\.sfc$"
+                    spec="/data/rda/data/ds629.0/yt.oper.an.sfc/**/.*\.sfc$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -372,7 +372,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
         </metadata>
     
         <collection name="ds629.0_fc_pl" 
-                    spec="/glade/p/rda/data/ds629.0/yt.oper.fc.pl/**/.*400\.yt\.oper\.fc\.pl$"
+                    spec="/data/rda/data/ds629.0/yt.oper.fc.pl/**/.*400\.yt\.oper\.fc\.pl$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -398,7 +398,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
         </metadata>
     
         <collection name="ds629.0_fc_sfc" 
-                    spec="/glade/p/rda/data/ds629.0/yt.oper.fc.sfc/**/.*\.sfc$"
+                    spec="/data/rda/data/ds629.0/yt.oper.fc.sfc/**/.*\.sfc$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">

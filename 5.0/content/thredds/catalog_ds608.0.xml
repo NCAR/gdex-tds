@@ -40,7 +40,7 @@ NARR reruns from 20090311 to 20091214 are updated on February 4, 2010. In April 
 
      <datasetScan name="ds608.0 Files" 
                   path="files/g/ds608.0" 
-                  location="/glade/p/rda/data/ds608.0">
+                  location="/data/rda/data/ds608.0">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>

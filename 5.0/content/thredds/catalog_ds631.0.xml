@@ -38,7 +38,7 @@ The Arctic System Reanalysis (ASR) is produced using a high-resolution version o
 
      <datasetScan name="ds631.0 Files" 
                   path="files/g/ds631.0" 
-                  location="/glade/p/rda/data/ds631.0">
+                  location="/data/rda/data/ds631.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -63,7 +63,7 @@ The Arctic System Reanalysis (ASR) is produced using a high-resolution version o
              </metadata>
             <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
               <aggregation dimName="Time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds631.0/asr30fnl.anl.3D/" suffix=".nc" subdirs="false"/>
+                <scan location="/data/rda/data/ds631.0/asr30fnl.anl.3D/" suffix=".nc" subdirs="false"/>
               </aggregation>
               <variable name="PRES" shape="num_metgrid_levels" type="float">
                 <attribute name="units" value="Pa" />
@@ -85,7 +85,7 @@ The Arctic System Reanalysis (ASR) is produced using a high-resolution version o
              </metadata>
             <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
               <aggregation dimName="Time" type="joinExisting">
-                <scan location="/glade/p/rda/data/ds631.0/asr30fnl.anl.2d/" suffix=".nc" subdirs="false"/>
+                <scan location="/data/rda/data/ds631.0/asr30fnl.anl.2d/" suffix=".nc" subdirs="false"/>
               </aggregation>
               <variable name="ZS" shape="soil_layers_stag" type="float">
                 <attribute name="units" value="m" />

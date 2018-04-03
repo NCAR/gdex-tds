@@ -39,7 +39,7 @@
 
      <datasetScan name="ds728.2 Files" 
                   path="files/g/ds728.2" 
-                  location="/glade/p/rda/data/ds728.2">
+                  location="/data/rda/data/ds728.2">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

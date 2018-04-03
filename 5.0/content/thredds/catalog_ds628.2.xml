@@ -39,7 +39,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
      <!--  Files -->
      <datasetScan name="ds628.2 Files" 
                   path="files/JRA55/ds628.2" 
-                  location="/glade/p/rda/data/ds628.2">
+                  location="/data/rda/data/ds628.2">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -67,7 +67,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Total Column Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_column/**/anl_column\..*" />
+                           spec="/data/rda/data/ds628.2/anl_column/**/anl_column\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -81,7 +81,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Total Column Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_column125/**/anl_column125\..*" />
+                           spec="/data/rda/data/ds628.2/anl_column125/**/anl_column125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -96,7 +96,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Isentropic Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_isentrop/**/anl_isentrop\..*" />
+                           spec="/data/rda/data/ds628.2/anl_isentrop/**/anl_isentrop\..*" />
                <tdm rewrite="test"/> 
 
              </featureCollection>
@@ -111,7 +111,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Isentropic Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_isentrop125/**/anl_isentrop125\..*" />
+                           spec="/data/rda/data/ds628.2/anl_isentrop125/**/anl_isentrop125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -126,7 +126,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Land Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_land/**/anl_land\..*" />
+                           spec="/data/rda/data/ds628.2/anl_land/**/anl_land\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -141,7 +141,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Land Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_land125/**/anl_land125\..*" />
+                           spec="/data/rda/data/ds628.2/anl_land125/**/anl_land125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -157,7 +157,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Model Level Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_mdl/**/anl_mdl\..*" />
+                           spec="/data/rda/data/ds628.2/anl_mdl/**/anl_mdl\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -172,7 +172,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Isobaric Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_p125/**/anl_p125\..*" />
+                           spec="/data/rda/data/ds628.2/anl_p125/**/anl_p125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -187,7 +187,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 2.5 Degree Isobaric Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_p25/**/anl_p25\..*" />
+                           spec="/data/rda/data/ds628.2/anl_p25/**/anl_p25\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -202,7 +202,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Snow Depth Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_snow/**/anl_snow\..*" />
+                           spec="/data/rda/data/ds628.2/anl_snow/**/anl_snow\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -217,7 +217,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Snow Depth Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_snow125/**/anl_snow125\..*" />
+                           spec="/data/rda/data/ds628.2/anl_snow125/**/anl_snow125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -231,7 +231,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_surf/**/anl_surf\..*" />
+                           spec="/data/rda/data/ds628.2/anl_surf/**/anl_surf\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -246,7 +246,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Surface Analysis Fields"
-                           spec="/glade/p/rda/data/ds628.2/anl_surf125/**/anl_surf125\..*" />
+                           spec="/data/rda/data/ds628.2/anl_surf125/**/anl_surf125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -264,7 +264,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution Total Column Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_column/**/fcst_column\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_column/**/fcst_column\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -279,7 +279,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly 1.25 Degree Total Column Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_column125/**/fcst_column125\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_column125/**/fcst_column125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -293,7 +293,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_land/**/fcst_land\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_land/**/fcst_land\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -308,7 +308,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly 1.25 Degree Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_land125/**/fcst_land125\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_land125/**/fcst_land125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -322,7 +322,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Model Level Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_mdl/**/fcst_mdl\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_mdl/**/fcst_mdl\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
               
@@ -337,7 +337,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_p125/**/fcst_p125\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_p125/**/fcst_p125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -352,7 +352,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 2.5 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_p25/**/fcst_p25\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_p25/**/fcst_p25\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -371,7 +371,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_phy2m/**/fcst_phy2m\..*"  />
+                           spec="/data/rda/data/ds628.2/fcst_phy2m/**/fcst_phy2m\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -385,7 +385,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly 1.25 Degree 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_phy2m125/**/fcst_phy2m125\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_phy2m125/**/fcst_phy2m125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -399,7 +399,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly Model Resolution Model Level Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_phy3m/**/fcst_phy3m\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_phy3m/**/fcst_phy3m\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -414,7 +414,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 6-Hourly 1.25 Degree Isobaric Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_phy3m125/**/fcst_phy3m125\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_phy3m125/**/fcst_phy3m125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -429,7 +429,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_phyland/**/fcst_phyland\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_phyland/**/fcst_phyland\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -443,7 +443,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly 1.25 Degree Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_phyland125/**/fcst_phyland125\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_phyland125/**/fcst_phyland125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -457,7 +457,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_surf/**/fcst_surf\..*" />
+                           spec="/data/rda/data/ds628.2/fcst_surf/**/fcst_surf\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -471,7 +471,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/fcst_surf125/**/fcst_surf125\..*"  />
+                           spec="/data/rda/data/ds628.2/fcst_surf125/**/fcst_surf125\..*"  />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -485,7 +485,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution Sea Ice Fields"
-                           spec="/glade/p/rda/data/ds628.2/ice/**/ice\..*" />
+                           spec="/data/rda/data/ds628.2/ice/**/ice\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -499,7 +499,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly 1.25 Degree Sea Ice Fields"
-                           spec="/glade/p/rda/data/ds628.2/ice125/**/ice125\..*" />
+                           spec="/data/rda/data/ds628.2/ice125/**/ice125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -513,7 +513,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
                </metadata>
 
                <collection name="JRA-55C 3-Hourly Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.2/minmax_surf/**/minmax_surf\..*" />
+                           spec="/data/rda/data/ds628.2/minmax_surf/**/minmax_surf\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 

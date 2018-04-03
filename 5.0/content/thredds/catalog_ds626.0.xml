@@ -50,7 +50,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
 
       <datasetScan name="ds626.0 Files"
                   path="files/e/ds626.0"
-                  location="/glade/p/rda/data/ds626.0">
+                  location="/data/rda/data/ds626.0">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -74,7 +74,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric model analysis" spec="/glade/p/rda/data/ds626.0/e20c.oper.an.ml.3hr/**/.*grib2$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric model analysis" spec="/data/rda/data/ds626.0/e20c.oper.an.ml.3hr/**/.*grib2$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -88,7 +88,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric analysis" spec="/glade/p/rda/data/ds626.0/e20c.oper.an.pl.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric analysis" spec="/data/rda/data/ds626.0/e20c.oper.an.pl.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -102,7 +102,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric isentropic analysis" spec="/glade/p/rda/data/ds626.0/e20c.oper.an.pt.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric isentropic analysis" spec="/data/rda/data/ds626.0/e20c.oper.an.pt.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -116,7 +116,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric 2 pvu analysis" spec="/glade/p/rda/data/ds626.0/e20c.oper.an.pv.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric 2 pvu analysis" spec="/data/rda/data/ds626.0/e20c.oper.an.pv.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -130,7 +130,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric surface analysis" spec="/glade/p/rda/data/ds626.0/e20c.oper.an.sfc.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric surface analysis" spec="/data/rda/data/ds626.0/e20c.oper.an.sfc.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -144,7 +144,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 6 hourly atmospheric surface analysis" spec="/glade/p/rda/data/ds626.0/e20c.oper.an.sfc.6hr/**/.*grb$"
+          <collection name = "ERA 20th Century 6 hourly atmospheric surface analysis" spec="/data/rda/data/ds626.0/e20c.oper.an.sfc.6hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -158,7 +158,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric model forecast" spec="/glade/p/rda/data/ds626.0/e20c.oper.fc.ml.3hr/**/.*grib2$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric model forecast" spec="/data/rda/data/ds626.0/e20c.oper.fc.ml.3hr/**/.*grib2$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -172,7 +172,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
            
-          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric forecast" spec="/glade/p/rda/data/ds626.0/e20c.oper.fc.pl.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric forecast" spec="/data/rda/data/ds626.0/e20c.oper.fc.pl.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -186,7 +186,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric surface forecast" spec="/glade/p/rda/data/ds626.0/e20c.oper.fc.sfc.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric surface forecast" spec="/data/rda/data/ds626.0/e20c.oper.fc.sfc.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -201,7 +201,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century atmospheric invariant fields" spec="/glade/p/rda/data/ds626.0/e20c.oper.invariant/1900_2010/.*grb$" timePartition="directory" />
+          <collection name = "ERA 20th Century atmospheric invariant fields" spec="/data/rda/data/ds626.0/e20c.oper.invariant/1900_2010/.*grb$" timePartition="directory" />
           <tdm rewrite="test"  />
       </featureCollection>
     
@@ -214,7 +214,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly ocean wave analysis" spec="/glade/p/rda/data/ds626.0/e20c.owav.an.sfc.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly ocean wave analysis" spec="/data/rda/data/ds626.0/e20c.owav.an.sfc.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -228,7 +228,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century ocean wave invariant fields" spec="/glade/p/rda/data/ds626.0/e20c.owav.invariant/1900_2010/.*grb$" timePartition="directory" />
+          <collection name = "ERA 20th Century ocean wave invariant fields" spec="/data/rda/data/ds626.0/e20c.owav.invariant/1900_2010/.*grb$" timePartition="directory" />
           <tdm rewrite="test"  />
       </featureCollection>
 -->

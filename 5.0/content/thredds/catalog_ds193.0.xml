@@ -41,7 +41,7 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
 
      <datasetScan name="ds193.0 Files" 
                   path="files/g/ds193.0" 
-                  location="/glade/p/rda/data/ds193.0">
+                  location="/data/rda/data/ds193.0">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>
@@ -63,7 +63,7 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
              </metadata> 
            <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation dimName="time" type="joinExisting">
-            <scan location="/glade/p/rda/data/ds193.0/MERRA" suffix=".nc" subdirs="false"/>
+            <scan location="/data/rda/data/ds193.0/MERRA" suffix=".nc" subdirs="false"/>
            </aggregation>
            <variable name="T2M" type="float">
              <attribute name="long_name" value="2 meter air temperature"/>
@@ -81,7 +81,7 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
              </metadata>
            <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation dimName="time" type="joinExisting">
-            <scan location="/glade/p/rda/data/ds193.0/ERAInt" suffix=".nc" subdirs="false"/>
+            <scan location="/data/rda/data/ds193.0/ERAInt" suffix=".nc" subdirs="false"/>
            </aggregation>
            <variable name="T2M" type="float">
              <attribute name="long_name" value="2 meter air temperature"/>
@@ -99,7 +99,7 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
              </metadata>
            <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation dimName="time" type="joinExisting">
-            <scan location="/glade/p/rda/data/ds193.0/ERA40" suffix=".nc" subdirs="false"/>
+            <scan location="/data/rda/data/ds193.0/ERA40" suffix=".nc" subdirs="false"/>
            </aggregation>
            <variable name="T2M" type="float">
              <attribute name="long_name" value="2 meter air temperature"/>
@@ -117,7 +117,7 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
              </metadata>
            <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation dimName="time" type="joinExisting">
-            <scan location="/glade/p/rda/data/ds193.0/NRA" suffix=".nc" subdirs="false"/>
+            <scan location="/data/rda/data/ds193.0/NRA" suffix=".nc" subdirs="false"/>
            </aggregation>
            <variable name="T2M" type="float">
              <attribute name="long_name" value="2 meter air temperature"/>

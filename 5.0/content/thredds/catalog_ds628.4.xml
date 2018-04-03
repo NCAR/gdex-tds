@@ -37,7 +37,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
      <!--  Files -->
      <datasetScan name="ds628.4 Files" 
                   path="files/JRA55/ds628.4" 
-                  location="/glade/p/rda/data/ds628.4">
+                  location="/data/rda/data/ds628.4">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -63,7 +63,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 3-Hourly 1.25 Degree Total Column Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_column125/**/fcst_column125\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_column125/**/fcst_column125\..*" />
                <tdm rewrite="test"/>
              </featureCollection>
 
@@ -77,7 +77,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 3-Hourly 1.25 Degree Land Surface Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_land125/**/fcst_land125\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_land125/**/fcst_land125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -92,7 +92,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 6-Hourly 1.25 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_p125/**/fcst_p125\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_p125/**/fcst_p125\..*" />
                <tdm rewrite="test"/> 
 
              </featureCollection>
@@ -107,7 +107,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 6-Hourly 2.5 Degree Isobaric Forecast Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_p25/**/fcst_p25\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_p25/**/fcst_p25\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -122,7 +122,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 3-Hourly 1.25 Degree 2-Dimensional Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_phy2m125/**/fcst_phy2m125\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_phy2m125/**/fcst_phy2m125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -137,7 +137,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 3-Hourly 1.25 Degree Land Surface Average Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_phyland125/**/fcst_phyland125\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_phyland125/**/fcst_phyland125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -153,7 +153,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 3-Hourly 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
-                           spec="/glade/p/rda/data/ds628.4/fcst_surf125/**/fcst_surf125\..*" />
+                           spec="/data/rda/data/ds628.4/fcst_surf125/**/fcst_surf125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -168,7 +168,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 1.25 Degree Constant Fields"
-                           spec="/glade/p/rda/data/ds628.4/ll125/**/ll125\..*" />
+                           spec="/data/rda/data/ds628.4/ll125/**/ll125\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>
@@ -183,7 +183,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
                </metadata>
 
                <collection name="JRA-55AMIP 2.5 Degree Constant Fields"
-                           spec="/glade/p/rda/data/ds628.4/ll25/**/ll25\..*" />
+                           spec="/data/rda/data/ds628.4/ll25/**/ll25\..*" />
                <tdm rewrite="test"/>
 
              </featureCollection>

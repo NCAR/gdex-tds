@@ -43,7 +43,7 @@ ds629.3 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
 
      <datasetScan name="ds629.3 Files" 
                   path="files/e/ds629.3" 
-                  location="/glade/p/rda/data/ds629.3">
+                  location="/data/rda/data/ds629.3">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -68,7 +68,7 @@ ds629.3 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
            </metadata>
       
            <collection name="YOTC atmospheric model forecast interpolated to pressure levels, single parameter 6-hourly time series" 
-                       spec="/glade/p/rda/data/ds629.3/yt.oper.fc.pl/**/yt\.oper\.fc\.pl\..*" 
+                       spec="/data/rda/data/ds629.3/yt.oper.fc.pl/**/yt\.oper\.fc\.pl\..*" 
                        dateFormatMark="#yt.oper.fc.pl/#yyyyMM" />
       
            <tdm rewrite="test"/>

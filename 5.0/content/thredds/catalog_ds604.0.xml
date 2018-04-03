@@ -53,7 +53,7 @@ The dataset contains three-dimensional hourly analyses in netCDF format for the 
 
      <datasetScan name="ds604.0 Files" 
                   path="files/g/ds604.0" 
-                  location="/glade/p/rda/data/ds604.0">
+                  location="/data/rda/data/ds604.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

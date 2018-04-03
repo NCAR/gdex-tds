@@ -38,7 +38,7 @@ Interannual variability in atmospheric carbon monoxide (CO) between 2001 and 201
 
      <datasetScan name="ds682.0 Files" 
                   path="files/g/ds682.0" 
-                  location="/glade/p/rda/data/ds682.0">
+                  location="/data/rda/data/ds682.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

@@ -30,7 +30,7 @@
            Attempting the netCDF version of BUFR ADPSFC - METAR
            </documentation>
          </metadata>
-       <collection name="ds461.0_SYNOP" spec="/glade/p/rda/data/ds461.0/ADPSFC/Category-0.1/2e112ba1\.#yyyy-MM-dd#.nc$"
+       <collection name="ds461.0_SYNOP" spec="/data/rda/data/ds461.0/ADPSFC/Category-0.1/2e112ba1\.#yyyy-MM-dd#.nc$"
                    olderThan="0 min"/>
        <pointConfig datasetTypes="cdmrFeature Files"/>
        <update startup="false" trigger="allow"/>
@@ -49,7 +49,7 @@
            Attempting the netCDF version of BUFR ADPSFC - METAR
            </documentation>
          </metadata>
-       <collection name="ds461.0_METAR" spec="/glade/p/rda/data/ds461.0/ADPSFC/Category-0.7/b8ac5837\.#yyyy-MM-dd#.nc$"
+       <collection name="ds461.0_METAR" spec="/data/rda/data/ds461.0/ADPSFC/Category-0.7/b8ac5837\.#yyyy-MM-dd#.nc$"
                    olderThan="0 min"/>
        <pointConfig datasetTypes="cdmrFeature Files"/>
        <update startup="false" trigger="allow"/>

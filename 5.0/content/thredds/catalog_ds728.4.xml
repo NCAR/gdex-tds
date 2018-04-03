@@ -39,7 +39,7 @@ This dataset contains Version 2.3 of the Global Precipitation Climatology Projec
 
      <datasetScan name="ds728.4 Files" 
                   path="files/g/ds728.4" 
-                  location="/glade/p/rda/data/ds728.4/netcdf">
+                  location="/data/rda/data/ds728.4/netcdf">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

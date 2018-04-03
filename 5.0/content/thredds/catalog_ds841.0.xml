@@ -39,7 +39,7 @@ Following conventional nomenclature, the NEXRAD volume scan files are referred t
 
      <datasetScan name="ds841.0 Files" 
                   path="files/g/ds841.0" 
-                  location="/glade/p/rda/data/ds841.0">
+                  location="/data/rda/data/ds841.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

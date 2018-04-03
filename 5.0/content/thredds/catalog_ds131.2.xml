@@ -44,7 +44,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
 
      <datasetScan name="ds131.2 Files" 
                   path="files/g/ds131.2" 
-                  location="/glade/p/rda/data/ds131.2">
+                  location="/data/rda/data/ds131.2">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>
@@ -71,7 +71,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
                  <serviceName>all</serviceName>
                </metadata>
                <collection name="ds131.2_pgrbanl_ensemble_mean"
-                           spec="/glade/p/rda/data/ds131.2/pgrbanl/pgrbanl_mean_.*.grib$"
+                           spec="/data/rda/data/ds131.2/pgrbanl/pgrbanl_mean_.*.grib$"
                            dateFormatMark="#pgrbanl_mean_#yyyy"
                            timePartition="year" />
 
@@ -86,7 +86,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
                  <serviceName>all</serviceName>
                </metadata>
                <collection name="ds131.2_pgrbanl_ensemble_sprd"
-                           spec="/glade/p/rda/data/ds131.2/pgrbanl/pgrbanl_sprd_.*.grib$"
+                           spec="/data/rda/data/ds131.2/pgrbanl/pgrbanl_sprd_.*.grib$"
                            dateFormatMark="#pgrbanl_sprd_#yyyy"
                            timePartition="year" />
 
@@ -109,7 +109,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
                  <serviceName>all</serviceName>
                </metadata>
                <collection name="ds131.2_sflxgrbfg_ensemble_mean"
-                           spec="/glade/p/rda/data/ds131.2/sflxgrbfg/sflxgrbfg_mean_.*.grib$"
+                           spec="/data/rda/data/ds131.2/sflxgrbfg/sflxgrbfg_mean_.*.grib$"
                            dateFormatMark="#sflxgrbfg_mean_#yyyy"
                            timePartition="year" />
 
@@ -129,7 +129,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
                  <serviceName>all</serviceName>
                </metadata>
                <collection name="ds131.2_sflxgrbfg_ensemble_sprd"
-                           spec="/glade/p/rda/data/ds131.2/sflxgrbfg/sflxgrbfg_sprd_.*.grib$"
+                           spec="/data/rda/data/ds131.2/sflxgrbfg/sflxgrbfg_sprd_.*.grib$"
                            dateFormatMark="#sflxgrbfg_sprd_#yyyy"
                            timePartition="year" />
 

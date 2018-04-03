@@ -42,7 +42,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
 
     <datasetScan name="ds093.2 Files"
                  path="files/g/ds093.2"
-                 location="/glade/p/rda/data/ds093.2">
+                 location="/data/rda/data/ds093.2">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -53,6 +53,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
     </datasetScan>
 
     <!-- Aggregations -->
+<!--
     <featureCollection name="ds093.2 diurnal_timeseries Aggregation"
                        featureType="GRIB2"
                        harvest="true"
@@ -62,7 +63,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds093.2_dt" spec="/glade/p/rda/data/ds093.2/diurnal/.*.tar$" 
+      <collection name="ds093.2_dt" spec="/data/rda/data/ds093.2/diurnal/.*.tar$" 
                        dateFormatMark="#.gdas.#yyyy"
                        timePartition="year" />
       <tdm rewrite="test"/>
@@ -77,13 +78,14 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="ds093.2_t" spec="/glade/p/rda/data/ds093.2/regular/.*.tar$" 
+      <collection name="ds093.2_t" spec="/data/rda/data/ds093.2/regular/.*.tar$" 
                        dateFormatMark="#.gdas.#yyyy"
                        timePartition="year" />
   
       <tdm rewrite="test"/>
 
     </featureCollection>
+-->
 
   </dataset>
 

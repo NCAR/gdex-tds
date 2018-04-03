@@ -46,7 +46,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
       <!--  Files -->
      <datasetScan name="ds627.0 Files" 
                   path="files/e/ds627.0" 
-                  location="/glade/p/rda/data/ds627.0">
+                  location="/data/rda/data/ds627.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -73,7 +73,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
            
                <collection name="ERA Interim atmospheric model analysis on model levels" 
-                           spec="/glade/p/rda/data/ds627.0/ei.oper.an.ml/**/ei\.oper\.an\.ml\..*"
+                           spec="/data/rda/data/ds627.0/ei.oper.an.ml/**/ei\.oper\.an\.ml\..*"
                            dateFormatMark="#ei.oper.an.ml/#yyyyMM"
                            timePartition="directory" /> 
 
@@ -90,7 +90,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
 
                <collection name="ERA Interim atmospheric model analysis interpolated to pressure levels" 
-                           spec="/glade/p/rda/data/ds627.0/ei.oper.an.pl/**/ei\.oper\.an\.pl\..*"
+                           spec="/data/rda/data/ds627.0/ei.oper.an.pl/**/ei\.oper\.an\.pl\..*"
                            dateFormatMark="#ei.oper.an.pl/#yyyyMM"
                            timePartition="directory" />
 
@@ -107,7 +107,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
 
                <collection name="ERA Interim atmospheric model analysis interpolated to isentropic levels"
-                           spec="/glade/p/rda/data/ds627.0/ei.oper.an.pt/**/ei\.oper\.an\.pt\..*"
+                           spec="/data/rda/data/ds627.0/ei.oper.an.pt/**/ei\.oper\.an\.pt\..*"
                            dateFormatMark="#ei.oper.an.pt/#yyyyMM"
                            timePartition="directory" />
 
@@ -124,7 +124,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
 
                <collection name="ERA Interim atmospheric model analysis interpolated to 2 pvu level"
-                           spec="/glade/p/rda/data/ds627.0/ei.oper.an.pv/**/ei\.oper\.an\.pv\..*"
+                           spec="/data/rda/data/ds627.0/ei.oper.an.pv/**/ei\.oper\.an\.pv\..*"
                            dateFormatMark="#ei.oper.an.pv/#yyyyMM"
                            timePartition="directory" />
 
@@ -141,7 +141,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>      
 
                <collection name="ERA Interim atmospheric model analysis for surface"
-                           spec="/glade/p/rda/data/ds627.0/ei.oper.an.sfc/**/ei\.oper\.an\.sfc\..*"
+                           spec="/data/rda/data/ds627.0/ei.oper.an.sfc/**/ei\.oper\.an\.sfc\..*"
                            dateFormatMark="#ei.oper.an.sfc/#yyyyMM"
                            timePartition="directory" />
 
@@ -160,7 +160,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
                </metadata>
            
                <collection name="ERA Interim atmospheric model forecast for surface" 
-                           spec="/glade/p/rda/data/ds627.0/ei.oper.fc.sfc/**/ei\.oper\.fc\.sfc\..*"
+                           spec="/data/rda/data/ds627.0/ei.oper.fc.sfc/**/ei\.oper\.fc\.sfc\..*"
                            dateFormatMark="#ei.oper.fc.sfc/#yyyyMM"
                            timePartition="directory" />
 

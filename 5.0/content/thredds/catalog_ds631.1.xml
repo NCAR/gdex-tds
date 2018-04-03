@@ -37,7 +37,7 @@ The Arctic System Reanalysis version 2(ASRv2) is produced using a new high-resol
 
      <datasetScan name="ds631.1 Files" 
                   path="files/g/ds631.1" 
-                  location="/glade/p/rda/data/ds631.1">
+                  location="/data/rda/data/ds631.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
