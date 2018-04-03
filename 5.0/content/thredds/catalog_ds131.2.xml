@@ -55,7 +55,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
      </datasetScan>
 
      <!-- Aggregations -->
-
+<!--
      <dataset name="ds131.2 Aggregations">
 
          <dataset name="Analysis Fields (2x2 degree Lat/Lon)">
@@ -142,8 +142,8 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
              </featureCollection>
            
          </dataset>
-       
      </dataset>
+-->
 
   </dataset>
 
