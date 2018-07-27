@@ -479,19 +479,19 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>General RDA Lockdown of OPeNDAP access</web-resource-name>
-      <!--url-pattern>/dodsC/g/*</url-pattern>
+      <url-pattern>/dodsC/g/*</url-pattern>
       <url-pattern>/fileServer/g/*</url-pattern>
       <url-pattern>/wcs/g/*</url-pattern>
       <url-pattern>/ncss/g/*</url-pattern>
       <url-pattern>/cdmremote/g/*</url-pattern>
-      <url-pattern>/ncml/g/*</url-pattern-->
-      <!--url-pattern>/dodsC/aggregations/g/*</url-pattern-->
+      <url-pattern>/ncml/g/*</url-pattern>
+      <url-pattern>/dodsC/aggregations/g/*</url-pattern>
       <url-pattern>/fileServer/aggregations/g/*</url-pattern>
       <url-pattern>/wcs/aggregations/g/*</url-pattern>
       <url-pattern>/ncss/aggregations/g/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/g/*</url-pattern>
       <url-pattern>/ncml/aggregations/g/*</url-pattern>
-      <!--url-pattern>/dodsC/files/g/*</url-pattern-->
+      <url-pattern>/dodsC/files/g/*</url-pattern>
       <url-pattern>/fileServer/files/g/*</url-pattern>
       <url-pattern>/wcs/files/g/*</url-pattern>
       <url-pattern>/ncss/files/g/*</url-pattern>
@@ -517,12 +517,12 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>RDA Lockdown of OPeNDAP access to ecmwf reanalyses</web-resource-name>
-      <!--url-pattern>/dodsC/e/*</url-pattern>
+      <url-pattern>/dodsC/e/*</url-pattern>
       <url-pattern>/fileServer/e/*</url-pattern>
       <url-pattern>/wcs/e/*</url-pattern>
       <url-pattern>/ncss/e/*</url-pattern>
       <url-pattern>/cdmremote/e/*</url-pattern>
-      <url-pattern>/ncml/e/*</url-pattern-->
+      <url-pattern>/ncml/e/*</url-pattern>
       <url-pattern>/dodsC/aggregations/e/*</url-pattern>
       <url-pattern>/fileServer/aggregations/e/*</url-pattern>
       <url-pattern>/wcs/aggregations/e/*</url-pattern>
@@ -555,12 +555,12 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>RDA Lockdown of OPeNDAP access to ecoper</web-resource-name>
-      <!--url-pattern>/dodsC/ecoper/*</url-pattern>
+      <url-pattern>/dodsC/ecoper/*</url-pattern>
       <url-pattern>/fileServer/ecoper/*</url-pattern>
       <url-pattern>/wcs/ecoper/*</url-pattern>
       <url-pattern>/ncss/ecoper/*</url-pattern>
       <url-pattern>/cdmremote/ecoper/*</url-pattern>
-      <url-pattern>/ncml/ecoper/*</url-pattern-->
+      <url-pattern>/ncml/ecoper/*</url-pattern>
       <url-pattern>/dodsC/aggregations/ecoper/*</url-pattern>
       <url-pattern>/fileServer/aggregations/ecoper/*</url-pattern>
       <url-pattern>/wcs/aggregations/ecoper/*</url-pattern>
@@ -593,12 +593,12 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>RDA Lockdown of OPeNDAP access to jra 25</web-resource-name>
-      <!--url-pattern>/dodsC/jra25/*</url-pattern>
+      <url-pattern>/dodsC/jra25/*</url-pattern>
       <url-pattern>/fileServer/jra25/*</url-pattern>
       <url-pattern>/wcs/jra25/*</url-pattern>
       <url-pattern>/ncss/jra25/*</url-pattern>
       <url-pattern>/cdmremote/jra25/*</url-pattern>
-      <url-pattern>/ncml/jra25/*</url-pattern-->
+      <url-pattern>/ncml/jra25/*</url-pattern>
       <url-pattern>/dodsC/aggregations/jra25/*</url-pattern>
       <url-pattern>/fileServer/aggregations/jra25/*</url-pattern>
       <url-pattern>/wcs/aggregations/jra25/*</url-pattern>
@@ -631,12 +631,12 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>RDA Lockdown of OPeNDAP access to jra 55</web-resource-name>
-      <!--url-pattern>/dodsC/JRA55/*</url-pattern>
+      <url-pattern>/dodsC/JRA55/*</url-pattern>
       <url-pattern>/fileServer/JRA55/*</url-pattern>
       <url-pattern>/wcs/JRA55/*</url-pattern>
       <url-pattern>/ncss/JRA55/*</url-pattern>
       <url-pattern>/cdmremote/JRA55/*</url-pattern>
-      <url-pattern>/ncml/JRA55/*</url-pattern-->
+      <url-pattern>/ncml/JRA55/*</url-pattern>
       <url-pattern>/dodsC/aggregations/JRA55/*</url-pattern>
       <url-pattern>/fileServer/aggregations/JRA55/*</url-pattern>
       <url-pattern>/wcs/aggregations/JRA55/*</url-pattern>
