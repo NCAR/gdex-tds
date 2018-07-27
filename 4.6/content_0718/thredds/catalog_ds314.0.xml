@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="THREDDS Server Default Catalog : You must change this to fit your server!"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<service name="all" serviceType="Compound" base="">
+
+    <service name="opendap" serviceType="OPENDAP" base="/thredds/dodsC/"/>
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/"/>
+    <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+    <service name="ncml" serviceType="NCML" base="/thredds/ncml/"/>
+    <service name="uddc" serviceType="UDDC" base="/thredds/uddc/"/>
+</service>
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="ds314.0 NCAR RDA - Global Meteorological Forcing Dataset for Land Surface Modeling">
+        <metadata inherited="true">
+          <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/ds314.0/" 
+                         xlink:title="NCAR RDA - Global Meteorological Forcing Dataset for Land Surface Modeling (ds314.0)"/>   
+          <documentation type="summary">   
+A global, 50-year, dataset of meteorological forcings has been developed that can be used to drive models of land surface hydrology. The dataset is constructed by combining a suite of global observation-based datasets with the NCEP/NCAR reanalysis. Known biases in the reanalysis precipitation and near-surface meteorology have been shown to exert an erroneous effect on modeled land surface water and energy budgets and are thus corrected using observation-based datasets of precipitation, air temperature and radiation. Corrections are also made to the rain day statistics of the reanalysis precipitation which have been found to exhibit a spurious wave-like pattern in high-latitude wintertime. Wind-induced undercatch of solid precipitation is removed using the results from the World Meteorological Organization (WMO) Solid Precipitation Measurement Intercomparison. Precipitation is disaggregated in space to 1.0 degree by statistical downscaling using relationships developed with the Global Precipitation Climatology Project (GPCP) daily product. Disaggregation in time from daily to 3-hourly is accomplished similarly, using the Tropical Rainfall Measuring Mission (TRMM) 3-hourly real-time dataset. Other meteorological variables (downward short- and longwave, specific humidity, surface air pressure and wind speed) are downscaled in space with account for changes in elevation. The dataset is evaluated against the bias-corrected forcing dataset of the second Global Soil Wetness Project (GSWP-2). The final product provides a long-term, globally-consistent dataset of near-surface meteorological variables that can be used to drive models of the terrestrial hydrologic and ecological processes for the study of seasonal and inter-annual variability and for the evaluation of coupled models and other land surface prediction schemes.
+          </documentation> 
+          <documentation xlink:href="http://hydrology.princeton.edu/data.pgf.php" xlink:title="Land Surface Hydrology Research Group, Princeton University" />   
+          <creator>   
+            <name vocabulary="DIF">PRINCETON/CEE</name>   
+            <contact url="http://hydrology.princeton.edu/data.pgf.php" email="justin@Princeton.EDU" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>Hydrology</keyword>   
+          <keyword>Precipitation</keyword>
+          <keyword>Precipitation Analysis</keyword>
+
+        </metadata>
+
+      <!--  Files -->
+
+     <datasetScan name="ds314.0 Files" 
+                  path="files/g/ds314.0" 
+                  location="/data/rda/data/ds314.0">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+             <exclude wildcard="Readme.*"/>
+             <exclude wildcard="Readme_*"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+ </dataset>
+</catalog>
