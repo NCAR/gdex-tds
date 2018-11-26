@@ -4,7 +4,7 @@ Typically $CATALINA_HOME=/usr/share/tomcat on a linux system.
 
 
 | File                                   |          Description  |
-|:--------------------------------------:|:----------------------|
+|:--------------------------------------|:----------------------|
 |`conf/Catalina/localhost/thredds.xml`   | RDA TDS specific DB access config to support RDA user access recording |
 |`content/tdm/` | Contains script to run tdm which is used to index metadata in support of feature collections |
 |`content/thredds/` | Contains RDA TDS threddds catalogs | 
