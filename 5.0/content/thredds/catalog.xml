@@ -4,11 +4,12 @@
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <service name="all" serviceType="Compound" base="">
-        <service name="opendap" serviceType="OPENDAP" base="/thredds/dodsC/"/>
+        <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/"/>
         <service name="ncssGrid" serviceType="NetcdfSubset" base="/thredds/ncss/grid/"/>
         <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
         <service name="cdmrFeatureGrid" serviceType="CdmrFeature" base="/thredds/cdmrfeature/grid/"/>
-
+        <service name="wcs" serviceType="WCS" base="/thredds/wcs/"/>
+        <service name="wms" serviceType="WMS" base="/thredds/wms/"/> 
         <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
         <service name="ncml" serviceType="NCML" base="/thredds/ncml/"/>
         <service name="uddc" serviceType="UDDC" base="/thredds/uddc/"/>
@@ -27,6 +28,7 @@
     <catalogRef xlink:href="catalog_ds094.1.xml" xlink:title="ds094.1 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products" name="" />
     <catalogRef xlink:href="catalog_ds094.2.xml" xlink:title="ds094.2 NCEP Climate Forecast System Version 2 (CFSv2) Monthly Products" name="" />
     <catalogRef xlink:href="catalog_ds113.0.xml" xlink:title="ds113.0 ECMWF's Operational Model Analysis, starting in 2011" name="" />
+    <catalogRef xlink:href="catalog_ds113.1.xml" xlink:title="ds113.1 ECMWF IFS CY41r2 High-Resolution Operational Forecasts, staring in 2016 " name="" />
     <catalogRef xlink:href="catalog_ds131.2.xml" xlink:title="ds131.2 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
     <catalogRef xlink:href="catalog_ds193.0.xml" xlink:title="ds193.0 Global Hourly 0.5-degree Land Surface Air Temperature Datasets" name="" />
     <catalogRef xlink:href="catalog_ds260.4.xml" xlink:title="ds260.4 SAMOS Air-Sea Fluxes: 2005-2014" name="" />
@@ -50,6 +52,8 @@
     <catalogRef xlink:href="catalog_ds496.0.xml" xlink:title="ds496.0 GPCC Full Data Reanalysis Version 7.0: Monthly Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
     <catalogRef xlink:href="catalog_ds497.0.xml" xlink:title="ds497.0 GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data" name="" />
     <catalogRef xlink:href="catalog_ds502.0.xml" xlink:title="ds502.0 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses" />
+    <catalogRef xlink:href="catalog_ds502.1.xml" xlink:title="ds502.1 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses Version 0.x" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses Version 0.x" />
+    <catalogRef xlink:href="catalog_ds502.3.xml" xlink:title="ds502.3 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses Version 1.0" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses Version 1.0" />
     <catalogRef xlink:href="catalog_ds526.0.xml" xlink:title="ds526.0 Daily Gridded North American Snowfall" />
     <catalogRef xlink:href="catalog_ds601.0.xml" xlink:title="ds601.0 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_ds604.0.xml" xlink:title="ds604.0 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />

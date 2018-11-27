@@ -3,6 +3,7 @@
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
+
     <service name="all" serviceType="Compound" base="">
         <service name="opendap" serviceType="OPENDAP" base="/thredds/dodsC/"/>
         <service name="ncssPoint" serviceType="NetcdfSubset" base="/thredds/ncss/point/"/>

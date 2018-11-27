@@ -8,7 +8,7 @@
     <dataset name="ds630.0 NCAR RDA - ERA5 Reanalysis">
         <metadata inherited="true">
           <serviceName>all</serviceName>
-          <dataFormat>GRIB-1</dataFormat>  
+          <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Some Restrictions Apply</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds630.0/" 

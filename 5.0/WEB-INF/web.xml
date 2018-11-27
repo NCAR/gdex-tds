@@ -198,20 +198,26 @@
       <!--url-pattern>/dodsC/g/*</url-pattern>
       <url-pattern>/fileServer/g/*</url-pattern>
       <url-pattern>/wcs/g/*</url-pattern>
+      <url-pattern>/wms/g/*</url-pattern>
       <url-pattern>/ncss/grid/g/*</url-pattern>
       <url-pattern>/cdmremote/g/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/g/*</url-pattern>
       <url-pattern>/ncml/g/*</url-pattern-->
       <url-pattern>/dodsC/aggregations/g/*</url-pattern>
       <url-pattern>/fileServer/aggregations/g/*</url-pattern>
       <url-pattern>/wcs/aggregations/g/*</url-pattern>
+      <url-pattern>/wms/aggregations/g/*</url-pattern>
       <url-pattern>/ncss/grid/aggregations/g/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/g/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/aggregations/g/*</url-pattern>
       <url-pattern>/ncml/aggregations/g/*</url-pattern>
       <url-pattern>/dodsC/files/g/*</url-pattern>
       <url-pattern>/fileServer/files/g/*</url-pattern>
       <url-pattern>/wcs/files/g/*</url-pattern>
+      <url-pattern>/wms/files/g/*</url-pattern>
       <url-pattern>/ncss/grid/files/g/*</url-pattern>
       <url-pattern>/cdmremote/files/g/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/files/g/*</url-pattern>
       <url-pattern>/ncml/files/g/*</url-pattern>
       <!--
            If we want to expose catalog AND G2, need to also expose WMS.
@@ -236,20 +242,26 @@
       <!--url-pattern>/dodsC/e/*</url-pattern>
       <url-pattern>/fileServer/e/*</url-pattern>
       <url-pattern>/wcs/e/*</url-pattern>
+      <url-pattern>/wms/e/*</url-pattern>
       <url-pattern>/ncss/grid/e/*</url-pattern>
       <url-pattern>/cdmremote/e/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/e/*</url-pattern>
       <url-pattern>/ncml/e/*</url-pattern-->
       <url-pattern>/dodsC/aggregations/e/*</url-pattern>
       <url-pattern>/fileServer/aggregations/e/*</url-pattern>
       <url-pattern>/wcs/aggregations/e/*</url-pattern>
+      <url-pattern>/wms/aggregations/e/*</url-pattern>
       <url-pattern>/ncss/grid/aggregations/e/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/e/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/aggregations/e/*</url-pattern>
       <url-pattern>/ncml/aggregations/e/*</url-pattern>
       <url-pattern>/dodsC/files/e/*</url-pattern>
       <url-pattern>/fileServer/files/e/*</url-pattern>
       <url-pattern>/wcs/files/e/*</url-pattern>
+      <url-pattern>/wms/files/e/*</url-pattern>
       <url-pattern>/ncss/grid/files/e/*</url-pattern>
       <url-pattern>/cdmremote/files/e/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/files/e/*</url-pattern>
       <url-pattern>/ncml/files/e/*</url-pattern>
       <!--
            If we want to expose catalog AND G2, need to also expose WMS.
@@ -274,20 +286,26 @@
       <!--url-pattern>/dodsC/ecoper/*</url-pattern>
       <url-pattern>/fileServer/ecoper/*</url-pattern>
       <url-pattern>/wcs/ecoper/*</url-pattern>
+      <url-pattern>/wms/ecoper/*</url-pattern>
       <url-pattern>/ncss/grid/ecoper/*</url-pattern>
       <url-pattern>/cdmremote/ecoper/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/ecoper/*</url-pattern>
       <url-pattern>/ncml/ecoper/*</url-pattern-->
       <url-pattern>/dodsC/aggregations/ecoper/*</url-pattern>
       <url-pattern>/fileServer/aggregations/ecoper/*</url-pattern>
       <url-pattern>/wcs/aggregations/ecoper/*</url-pattern>
+      <url-pattern>/wms/aggregations/ecoper/*</url-pattern>
       <url-pattern>/ncss/grid/aggregations/ecoper/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/ecoper/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/aggregations/ecoper/*</url-pattern>
       <url-pattern>/ncml/aggregations/ecoper/*</url-pattern>
       <url-pattern>/dodsC/files/ecoper/*</url-pattern>
       <url-pattern>/fileServer/files/ecoper/*</url-pattern>
       <url-pattern>/wcs/files/ecoper/*</url-pattern>
+      <url-pattern>/wms/files/ecoper/*</url-pattern>
       <url-pattern>/ncss/grid/files/ecoper/*</url-pattern>
       <url-pattern>/cdmremote/files/ecoper/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/files/ecoper/*</url-pattern>
       <url-pattern>/ncml/files/ecoper/*</url-pattern>
       <!--
            If we want to expose catalog AND G2, need to also expose WMS.
@@ -312,20 +330,26 @@
       <!--url-pattern>/dodsC/jra25/*</url-pattern>
       <url-pattern>/fileServer/jra25/*</url-pattern>
       <url-pattern>/wcs/jra25/*</url-pattern>
+      <url-pattern>/wms/jra25/*</url-pattern>
       <url-pattern>/ncss/grid/jra25/*</url-pattern>
       <url-pattern>/cdmremote/jra25/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/jra25/*</url-pattern>
       <url-pattern>/ncml/jra25/*</url-pattern-->
       <url-pattern>/dodsC/aggregations/jra25/*</url-pattern>
       <url-pattern>/fileServer/aggregations/jra25/*</url-pattern>
       <url-pattern>/wcs/aggregations/jra25/*</url-pattern>
+      <url-pattern>/wms/aggregations/jra25/*</url-pattern>
       <url-pattern>/ncss/grid/aggregations/jra25/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/jra25/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/aggregations/jra25/*</url-pattern>
       <url-pattern>/ncml/aggregations/jra25/*</url-pattern>
       <url-pattern>/dodsC/files/jra25/*</url-pattern>
       <url-pattern>/fileServer/files/jra25/*</url-pattern>
       <url-pattern>/wcs/files/jra25/*</url-pattern>
+      <url-pattern>/wms/files/jra25/*</url-pattern>
       <url-pattern>/ncss/grid/files/jra25/*</url-pattern>
       <url-pattern>/cdmremote/files/jra25/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/files/jra25/*</url-pattern>
       <url-pattern>/ncml/files/jra25/*</url-pattern>
       <!--
            If we want to expose catalog AND G2, need to also expose WMS.
@@ -350,20 +374,26 @@
       <!--url-pattern>/dodsC/JRA55/*</url-pattern>
       <url-pattern>/fileServer/JRA55/*</url-pattern>
       <url-pattern>/wcs/JRA55/*</url-pattern>
+      <url-pattern>/wms/JRA55/*</url-pattern>
       <url-pattern>/ncss/grid/JRA55/*</url-pattern>
       <url-pattern>/cdmremote/JRA55/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/JRA55/*</url-pattern>
       <url-pattern>/ncml/JRA55/*</url-pattern-->
       <url-pattern>/dodsC/aggregations/JRA55/*</url-pattern>
       <url-pattern>/fileServer/aggregations/JRA55/*</url-pattern>
       <url-pattern>/wcs/aggregations/JRA55/*</url-pattern>
+      <url-pattern>/wms/aggregations/JRA55/*</url-pattern>
       <url-pattern>/ncss/grid/aggregations/JRA55/*</url-pattern>
       <url-pattern>/cdmremote/aggregations/JRA55/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/aggregations/JRA55/*</url-pattern>
       <url-pattern>/ncml/aggregations/JRA55/*</url-pattern>
       <url-pattern>/dodsC/files/JRA55/*</url-pattern>
       <url-pattern>/fileServer/files/JRA55/*</url-pattern>
       <url-pattern>/wcs/files/JRA55/*</url-pattern>
+      <url-pattern>/wms/files/JRA55/*</url-pattern>
       <url-pattern>/ncss/grid/files/JRA55/*</url-pattern>
       <url-pattern>/cdmremote/files/JRA55/*</url-pattern>
+      <url-pattern>/cdmrfeature/grid/files/JRA55/*</url-pattern>
       <url-pattern>/ncml/files/JRA55/*</url-pattern>
       <!--
            If we want to expose catalog AND G2, need to also expose WMS.
