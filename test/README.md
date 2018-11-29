@@ -6,8 +6,11 @@ Use this from anywhere that has access to the internet.
 Will fail if something is amiss (return code != 0).
 
 `./testTDSexternal.py` for prod.
+
 or 
-`./testTDSexternal.py DEV` for dev.
+
+`./testTDSexternal.py DEV` for rda-web-dev.
 
 Put expected services here:
+
 ```expectedServices.yaml```
