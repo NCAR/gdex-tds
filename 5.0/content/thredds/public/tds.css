@@ -250,7 +250,12 @@ div#footer {
     margin-left: 75px;
     padding-top: 3px;
 }
-
+.footer-message
+{
+color:white;
+text-align:center;
+padding : 5px;
+}
 #footer-buffer, #header-buffer {
     background-color:  #E3E4E6;
     margin-top: 4px;
