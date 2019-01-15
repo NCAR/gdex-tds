@@ -217,8 +217,9 @@ div#header, div#footer {
     position: absolute;
     left: 0px;
     right: 0px;
-    background-color: #06778F;
-    padding: 3px 20px;
+    background: linear-gradient(#656aae,#656baf, #595aa1);
+    /*background-color: #06778F;*/
+    /*padding: 3px 20px;*/
     border: 1px solid #CFCFCF;
     border-style: outset;
     box-sizing: border-box;
@@ -236,7 +237,13 @@ div#footer {
 
 .header-logo {
     float: left;
-    padding-top: 8px;
+    /*padding-top: 8px;*/
+}
+.header-logo-nsf > a > img{
+    height : 100px;
+}
+.header-logo-nsf {
+    float : right;
 }
 
 .header-info {
