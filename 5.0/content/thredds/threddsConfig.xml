@@ -5,9 +5,11 @@
   <!-- see http://www.unidata.ucar.edu/projects/THREDDS/tech/reference/ThreddsConfigXMLFile.html -->
   <serverInformation>
     <name>NCAR RDA TDS Installation</name>
-    <!--<logoUrl>/thredds/threddsIcon.gif</logoUrl>-->
-    <!--logoUrl>/thredds/newlogo_trans_small.png</logoUrl-->
+    <logoUrl>/thredds/rda-logo-header.png</logoUrl>
+    <nsfLogo>/thredds/NCAR-Sponsored-NSF-White.png</nsfLogo>
+    <installUrl>http://rda.ucar.edu/thredds/</installUrl>
     <logoAltText>NCAR RDA TDS Installation</logoAltText>
+    <test>a test</test>
 
     <abstract>Scientific Data</abstract>
     <keywords>meteorology, atmosphere, climate, ocean, earth science</keywords>
