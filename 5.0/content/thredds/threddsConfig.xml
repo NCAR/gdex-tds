@@ -102,6 +102,12 @@
     <scour>11 min</scour>
   </NetcdfFileCache>
 
+  <RandomAccessFile>
+    <minFiles>0</minFiles>
+    <maxFiles>0</maxFiles>
+    <scour>0 min</scour>
+  </RandomAccessFile>
+
   <GribCollection>
     <minFiles>9500</minFiles>
     <maxFiles>10000</maxFiles>
