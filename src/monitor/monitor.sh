@@ -23,7 +23,7 @@ fi
 #Check internal server errors
 logDate=`date +%Y-%m-%d`
 linesInLastHour=300 # Estimate
-ISE=`tail -$linesInLastHour /data/logs/tomcat/localhost_access_log.${logDate}.txt | grep "500 "`
+ISE=`tail -$linesInLastHour /data/logs/tomcat/localhost_access_log.${logDate}.txt | grep " 500 "`
 if [[ $? -eq 0 ]]; then
 
     errorMsg="Internal server error in last hour:\n\n$ISE"
