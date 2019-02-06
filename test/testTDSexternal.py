@@ -9,7 +9,7 @@ import yaml
 
 
 def get_value(in_dict, key):
-    """Gets the value of key while ignoring namepaces
+    """Gets the value of key while ignoring namepaces.
     """
     for k in in_dict.keys():
         split_key = k.split('}')[-1]
@@ -38,33 +38,37 @@ def check_catalog(catalog_url):
     root = ET.fromstring(xml_str)
     print("Good")
 
-domain = "https://rda.ucar.edu/"
-if len(sys.argv) > 1:
-    if sys.argv[1] == 'DEV':
-        domain = "https://rda-web-dev.ucar.edu/"
+def check_catalog_services(domain):
 
-thredds_root = "thredds/catalog/"
-catURL = domain + thredds_root + "catalog.xml"
-datasetName = "fnl_20010306_18_00.grib1"
+    thredds_root = "thredds/catalog/"
+    catURL = domain + thredds_root + "catalog.xml"
 
-print("downloading root catalog: " + catURL)
-rq = requests.get(catURL)
-xml_str = rq.content
-root = ET.fromstring(xml_str)
-namespace = root.tag.split('}')[0]+'}'
-print("Iterating through catalog")
+    print("downloading root catalog: " + catURL)
+    rq = requests.get(catURL)
+    assert rq.status_code == 200
+    xml_str = rq.content
+    root = ET.fromstring(xml_str)
+    namespace = root.tag.split('}')[0]+'}'
+    print("Iterating through catalog")
 
-# Find services defined in the catalog
-serviceEle = root.findall(namespace+'service')
-print("Checking there's only one service element")
-assert len(serviceEle) == 1
-print("Good")
-serviceEles = serviceEle[0].findall(namespace+'service')
-check_services(serviceEles)
+    # Find services defined in the catalog
+    serviceEle = root.findall(namespace+'service')
+    print("Checking there's only one service element")
+    assert len(serviceEle) == 1
+    print("Good")
+    serviceEles = serviceEle[0].findall(namespace+'service')
+    check_services(serviceEles)
 
-for cat in root.findall(namespace+'catalogRef'):
-    catalog = get_value(cat.attrib, 'href')
-    catalog_url = domain + thredds_root + catalog
-    check_catalog(catalog_url)
+    for cat in root.findall(namespace+'catalogRef'):
+        catalog = get_value(cat.attrib, 'href')
+        catalog_url = domain + thredds_root + catalog
+        check_catalog(catalog_url)
+
+if __name__ == "__main__":
+    domain = "https://rda.ucar.edu/"
+    if len(sys.argv) > 1:
+        if sys.argv[1] == 'DEV':
+            domain = "https://rda-web-dev.ucar.edu/"
+    check_catalog_services(domain)
 
 
