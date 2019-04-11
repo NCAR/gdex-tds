@@ -118,6 +118,11 @@ if __name__ == '__main__':
     cursor.execute(query)
     creators = cursor.fetchall()
 
+    # Get keywords
+    query = 'select g.path from projects_new as c left join GCMD_projects as g on g.uuid = c.keyword where c.dsid = '+dsid+' and c.vocabulary = "GCMD"'
+    cursor.execute(query)
+    keywords = cursor.fetchall()
+
     conn.close()
 
     ## New Connection to dssdb
@@ -201,6 +206,14 @@ if __name__ == '__main__':
     publisher_name.attrib['url'] = 'http://rda.ucar.edu/'
     publisher_name.attrib['email'] = 'rdahelp@ucar.edu'
 
+    # Get keywords
+    for keyword in keywords:
+        keyword_parts = keyword[0].split('>')
+        for part in keyword_parts:
+            keyword_ele = ET.SubElement(metadata, 'keyword')
+            keyword_ele.text = part.strip()
+
+    dataset.append(ET.Comment('Files'))
     datasetScan = ET.SubElement(dataset, 'datasetScan')
     datasetScan.attrib['path'] = 'files/g/ds'+dsid
     datasetScan.attrib['location'] = '/data/rda/data/ds'+dsid+'/'
