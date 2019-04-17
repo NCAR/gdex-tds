@@ -163,7 +163,7 @@ if __name__ == '__main__':
     data_format = ET.SubElement(metadata, 'dataFormat')
     data_format.text = formt
 
-    data_type = ET.SubElement(metadata, 'dataFormat')
+    data_type = ET.SubElement(metadata, 'dataType')
     data_type.text = datatype
 
     doc_rights = ET.SubElement(metadata, 'documentation')
@@ -225,6 +225,13 @@ if __name__ == '__main__':
     exclude = ET.SubElement(scan_filter, 'exclude')
     exclude.attrib['wildcard'] = '*.html'
     ET.SubElement(datasetScan, 'addDatasetSize')
+
+    # Create Feature Collections
+    #FC = ET.SubElement(dataset,'featureCollection')#ds2
+    #FC.attrib['name'] = 'None'
+    #FC.attrib['featureType'] = 'None'
+    #FC.attrib['harvest'] = 'true'
+    #FC.attrib['path'] = 'None'
 
 
 
