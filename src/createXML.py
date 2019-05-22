@@ -148,10 +148,10 @@ if __name__ == '__main__':
     ## Begin to build xml
     root = ET.Element('catalog')
     root.attrib['name'] = title
-    root.attrib['xmlns'] = 'http://www/unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0'
-    root.attrib['xmlns:xlink'] = 'http://www/w3.org/1999/xlink'
+    root.attrib['xmlns'] = 'http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0'
+    root.attrib['xmlns:xlink'] = 'http://www.w3.org/1999/xlink'
 
-    comment = 'Top level dataset: Needed to set metadata for Files & Aggregations -->'
+    comment = 'Top level dataset: Needed to set metadata for Files & Aggregations'
     root.append(ET.Comment(comment))
 
     dataset = ET.SubElement(root, 'dataset')
@@ -162,7 +162,7 @@ if __name__ == '__main__':
     metadata.attrib['inherited'] = 'true'
 
     service_name = ET.SubElement(metadata, 'serviceName')
-    service_name.text = 'Freely Available'
+    service_name.text = 'all'
 
     data_format = ET.SubElement(metadata, 'dataFormat')
     data_format.text = formt
@@ -207,8 +207,8 @@ if __name__ == '__main__':
     publisher_name.attrib['vocabulary'] = 'DIF'
     publisher_name.text = 'NCAR/RDA'
     publisher_contact = ET.SubElement(publisher, 'contact')
-    publisher_name.attrib['url'] = 'http://rda.ucar.edu/'
-    publisher_name.attrib['email'] = 'rdahelp@ucar.edu'
+    publisher_contact.attrib['url'] = 'http://rda.ucar.edu/'
+    publisher_contact.attrib['email'] = 'rdahelp@ucar.edu'
 
     # Get keywords
     for keyword in keywords:
@@ -219,6 +219,7 @@ if __name__ == '__main__':
 
     dataset.append(ET.Comment('Files'))
     datasetScan = ET.SubElement(dataset, 'datasetScan')
+    datasetScan.attrib['name'] = dsid + ' Files'
     datasetScan.attrib['path'] = 'files/g/ds'+dsid
     datasetScan.attrib['location'] = '/data/rda/data/ds'+dsid+'/'
     scan_metadata = ET.SubElement(datasetScan, 'metadata')
