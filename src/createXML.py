@@ -52,7 +52,8 @@ def get_format(formt):
     if 'grib2' in formt:
         return 'GRIB-2'
     sys.stderr.write('Format:' +formt+ ' doesn\'t have a mapping')
-    exit(1)
+    #exit(1)
+    return 'NetCDF'
 
 def get_dsOverview_xml(dsid):
     try: # Try using filesystem
@@ -110,7 +111,10 @@ if __name__ == '__main__':
     cursor.execute(query)
     datatypes = cursor.fetchall()
     check_same(datatypes)
-    datatype, = datatypes[0]
+    try:
+        datatype, = datatypes[0]
+    except:
+        datatype = 'GRID'
     datatype = datatype.upper()
 
     # Get creator
