@@ -8,6 +8,7 @@
         <service name="ncssGrid" serviceType="NetcdfSubset" base="/thredds/ncss/grid/"/>
         <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
         <service name="cdmrFeatureGrid" serviceType="CdmrFeature" base="/thredds/cdmrfeature/grid/"/>
+        <service name="notebook" serviceType="JupyterNotebook" base="/thredds/notebook/"/>
         <service name="wcs" serviceType="WCS" base="/thredds/wcs/"/>
         <service name="wms" serviceType="WMS" base="/thredds/wms/"/> 
         <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
@@ -35,7 +36,9 @@
     <catalogRef xlink:href="catalog_ds262.0.xml" xlink:title="ds262.0 Coordinated Ocean-ice Reference Experiments - Phase II" name="" />
     <catalogRef xlink:href="catalog_ds277.6.xml" xlink:title="ds277.6 NCEP Global Ocean Data Assimilation System (GODAS)" name="" />
     <catalogRef xlink:href="catalog_ds277.8.xml" xlink:title="ds277.8 RSS Optimally Interpolated Microwave and Infrared Daily Sea Surface Temperature Analysis" name="" />
+    <catalogRef xlink:href="catalog_ds277.9.xml" xlink:title="ds277.9 NOAA NCEI Extended Reconstructed Sea Surface Temperature" name="" />
     <catalogRef xlink:href="catalog_ds285.3.xml" xlink:title="ds285.3 Subsurface Temperature And Salinity Analyses by Ishii et al." name="" />
+    <catalogRef xlink:href="catalog_ds285.5.xml" xlink:title="ds285.5 RSS SMAP Sea Surface Salinity Analysis" name="" />
     <catalogRef xlink:href="catalog_ds298.0.xml" xlink:title="ds298.0 Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" name=" Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" />
     <catalogRef xlink:href="catalog_ds300.0.xml" xlink:title="ds300.0 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" />
     <catalogRef xlink:href="catalog_ds313.0.xml" xlink:title="ds313.0 GEOS5 Global Atmosphere Forcing Data" />
@@ -79,12 +82,15 @@
     <catalogRef xlink:href="catalog_ds630.1.xml" xlink:title="ds630.1 ERA5 Reanalysis Monthly Means" name="" />
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
+    <catalogRef xlink:href="catalog_ds633.0.xml" xlink:title="ds633.0 ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid)" name="" />
+    <catalogRef xlink:href="catalog_ds650.0.xml" xlink:title="ds650.0 SODA Project: SODA3 Ensemble Means and Standard Deviations" name="SODA Project: SODA3 Ensemble Means and Standard Deviations" />
     <catalogRef xlink:href="catalog_ds682.0.xml" xlink:title="ds682.0 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
     <catalogRef xlink:href="catalog_ds728.3.xml" xlink:title="ds728.3 GPCP Version 1.2 One-Degree Daily Precipitation Data Set" />
     <catalogRef xlink:href="catalog_ds728.4.xml" xlink:title="ds728.4 GPCP Version 2.3 Monthly Analysis Product" />
     <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
     <catalogRef xlink:href="catalog_ds841.0.xml" xlink:title="ds841.0 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" />
+    <catalogRef xlink:href="catalog_ds898.0.xml" xlink:title="ds898.0 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
 
 
 </catalog>

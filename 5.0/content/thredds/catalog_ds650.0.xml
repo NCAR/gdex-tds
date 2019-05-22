@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ds650.0 SODA Project: SODA3 Ensemble Means and Standard Deviations"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="ds650.0 SODA Project: SODA3 Ensemble Means and Standard Deviations">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/ds650.0/" 
+                         xlink:title="SODA Project: SODA3 Ensemble Means and Standard Deviations (ds650.0)"/>   
+          <documentation type="summary">   
+The goal of SODA is to reconstruct the historical physical (and eventually biogeochemical) history of the ocean since the beginning of the 20th century. SODA3 (SODA Version 3) is the latest release of SODA. The model has been switched to GFDL MOM5/SIS1 with eddy permitting 0.25 degree by 0.25 degree by 50 level resolution (28 kilometers at the Equator down to less than 10 kilometers at polar latitudes). One of the focuses for SODA3 has been to identify, quantify, and limit sources of bias. A major source of bias is in the forward model that predicts the evolution of the flow. The temporal range of tSODA3 starts 1980 and ends 2017.
+          </documentation> 
+          <documentation xlink:href="http://www.atmos.umd.edu/~ocean/" xlink:title="SODA3 A reanalysis of ocean climate" />   
+          <creator>   
+            <name vocabulary="DIF">UMD/ATMOS</name>   
+            <contact url="http://www.atmos.umd.edu/~ocean/" email="" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>Numerical Weather Prediction</keyword>   
+          <keyword>Model data</keyword>   
+
+
+        </metadata>
+
+
+      <!--  Files -->
+
+     <datasetScan name="ds650.0 Files" 
+                  path="files/g/ds650.0" 
+                  location="/data/rda/data/ds650.0">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+
+   </dataset>
+
+</catalog>
