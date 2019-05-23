@@ -137,7 +137,9 @@ if __name__ == '__main__':
     query = "select access_type from dataset where dsid='ds"+ dsid + "';"
     cursor.execute(query)
     rights, = cursor.fetchall()[0]
+    access_type = 'g'
     if rights is not None:
+        access_type = rights
         rights = 'Some Restrictions Apply'
     else:
         rights = 'Freely Available'
@@ -220,7 +222,7 @@ if __name__ == '__main__':
     dataset.append(ET.Comment('Files'))
     datasetScan = ET.SubElement(dataset, 'datasetScan')
     datasetScan.attrib['name'] = dsid + ' Files'
-    datasetScan.attrib['path'] = 'files/g/ds'+dsid
+    datasetScan.attrib['path'] = 'files/'+access_rights+'/ds'+dsid
     datasetScan.attrib['location'] = '/data/rda/data/ds'+dsid+'/'
     scan_metadata = ET.SubElement(datasetScan, 'metadata')
     scan_metadata.attrib['inherited'] = 'true'
