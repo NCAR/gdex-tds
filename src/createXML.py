@@ -222,7 +222,7 @@ if __name__ == '__main__':
     dataset.append(ET.Comment('Files'))
     datasetScan = ET.SubElement(dataset, 'datasetScan')
     datasetScan.attrib['name'] = dsid + ' Files'
-    datasetScan.attrib['path'] = 'files/'+access_rights+'/ds'+dsid
+    datasetScan.attrib['path'] = 'files/'+access_type+'/ds'+dsid
     datasetScan.attrib['location'] = '/data/rda/data/ds'+dsid+'/'
     scan_metadata = ET.SubElement(datasetScan, 'metadata')
     scan_metadata.attrib['inherited'] = 'true'
