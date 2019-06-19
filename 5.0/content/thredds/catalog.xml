@@ -83,6 +83,7 @@
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds633.0.xml" xlink:title="ds633.0 ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid)" name="" />
+    <catalogRef xlink:href="catalog_ds645.0.xml" xlink:title="ds645.0 CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry" name="" />
     <catalogRef xlink:href="catalog_ds650.0.xml" xlink:title="ds650.0 SODA Project: SODA3 Ensemble Means and Standard Deviations" name="SODA Project: SODA3 Ensemble Means and Standard Deviations" />
     <catalogRef xlink:href="catalog_ds682.0.xml" xlink:title="ds682.0 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
