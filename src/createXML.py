@@ -8,7 +8,7 @@ import sys
 
 def usage():
     sys.stderr.write('Usage:\n')
-    sys.stderr.write('    ' + sys.argv[0] + ' [dsid]\n')
+    sys.stderr.write('    ' + sys.argv[0] + ' [dsid] [out dir]\n')
     exit(1)
 
 def prettify(element, indent='  '):
@@ -79,10 +79,15 @@ def check_same(arr):
     return True
 
 if __name__ == '__main__':
-    if len(sys.argv) > 2 or len(sys.argv) == 1:
+    if len(sys.argv) > 3 or len(sys.argv) == 1:
         usage()
 
     dsid = get_dsid()
+    output_filename = None
+    if len(sys.argv) == 3:
+        directory = sys.argv[2]
+        output_filename = directory+'catalog_'+dsid+'.xml'
+
 
     ## New Connection to search db
     conn = sql.connect(user = 'metadata', password='metadata', host = 'rda-db.ucar.edu', database='search')
@@ -249,4 +254,8 @@ if __name__ == '__main__':
     xml_str = ET.tostring(root)
     xml_str = '<?xml version="1.0" encoding="UTF-8"?>\n'+xml_str
 
-    print(xml_str)
+    if output_filename is None:
+        print(xml_str)
+    else:
+        with open(output_filename, 'w') as fh:
+            fh.write(xml_str)
