@@ -39,6 +39,7 @@ The NCEP operational Global Data Assimilation System surface flux grids are on a
                   location="/data/rda/data/ds084.4">
          <metadata inherited="true">
           <serviceName>all</serviceName>
+	  <dataFormat>GRIB2</dataFormat>
         </metadata>
         <filter>
             <exclude wildcard="*.html"/>
@@ -56,13 +57,13 @@ The NCEP operational Global Data Assimilation System surface flux grids are on a
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds084.4" spec="/data/rda/data/ds084.4/**/.*grib2$" 
-         dateFormatMark="yyyyMM#/gdas1.sflux#"
-                           timePartition="directory" />
-         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
-         <gribConfig>
+         <collection name = "ds084.4" spec="/data/rda/data/ds084.4/**/gdas1.sflux.#yyyMMdd#.*grib2$" 
+        		dateFormatMark="yyyyMM#/gdas1.sflux#"
+                           timePartition="1 year" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
            <option name="runtimeCoordinate" value="union" />
-        </gribConfig>
+        </gribConfig> 
      </featureCollection>
 
   </dataset>
