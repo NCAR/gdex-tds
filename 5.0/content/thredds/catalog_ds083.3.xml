@@ -61,9 +61,9 @@ The archive time series is continuously extended to a near-current date. It is n
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "ds083.3" spec="/data/rda/data/ds083.3/**/.*grib2$" 
+         <collection name = "ds083.3" spec="/data/rda/data/ds083.3/**/gdas1.fnl0p25\.#yyyMMdd#.*grib2$" 
          dateFormatMark="yyyyMM#/gdas1.fnl0p25#"
-                           timePartition="directory" />
+                           timePartition="1 year" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
          <gribConfig>
            <option name="runtimeCoordinate" value="union" />
