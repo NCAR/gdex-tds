@@ -1,5 +1,10 @@
-# Source code
+# THREDDS helper scripts and monitoring
 
-This directory contains all relevant code related to 
+### createCTL.py
+Used to create a rda control file for dsrqst
 
-rda-tds
+### createXML.py
+Creates a THREDDS XML file for a given dataset. Does not update `catalog.xml`.
+
+### createAllXMLS.bash
+Calls `createXML.py` for each dataset
