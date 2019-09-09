@@ -1,10 +1,15 @@
 #!/usr/bin/env python
+"""
+Creates Thredds xml file for a given dataset.
+"""
 import xml.etree.ElementTree as ET
 import mysql.connector as sql
-from HTMLParser import HTMLParser
 import pdb
 import sys
-
+try:
+    from HTMLParser import HTMLParser
+except:
+    from html.parser import HTMLParser
 
 def usage():
     sys.stderr.write('Usage:\n')
