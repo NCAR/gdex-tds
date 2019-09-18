@@ -5,6 +5,7 @@
 
     <service name="all" serviceType="Compound" base="">
         <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/"/>
+        <service name="dap4" serviceType="DAP4" base="/thredds/dap4/"/>
         <service name="ncssGrid" serviceType="NetcdfSubset" base="/thredds/ncss/grid/"/>
         <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/"/>
         <service name="cdmrFeatureGrid" serviceType="CdmrFeature" base="/thredds/cdmrfeature/grid/"/>
@@ -15,6 +16,13 @@
         <service name="ncml" serviceType="NCML" base="/thredds/ncml/"/>
         <service name="uddc" serviceType="UDDC" base="/thredds/uddc/"/>
     </service>
+    <!-- May want to add compound service for dap 
+    <service name="dap" base="" serviceType="compound">
+        <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+        <service name="dap4" serviceType="DAP4" base="/thredds/dap4/" />
+    </service>
+     -->
+    
 
     <catalogRef xlink:href="catalog_ds083.2.xml" xlink:title="ds083.2 NCEP FNL Operational Model Global Tropospheric Analyses" name="" />
     <catalogRef xlink:href="catalog_ds083.3.xml" xlink:title="ds083.3 NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Grids" name="" />
@@ -31,6 +39,7 @@
     <catalogRef xlink:href="catalog_ds113.0.xml" xlink:title="ds113.0 ECMWF's Operational Model Analysis, starting in 2011" name="" />
     <catalogRef xlink:href="catalog_ds113.1.xml" xlink:title="ds113.1 ECMWF IFS CY41r2 High-Resolution Operational Forecasts, staring in 2016 " name="" />
     <catalogRef xlink:href="catalog_ds131.2.xml" xlink:title="ds131.2 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
+    <catalogRef xlink:href="catalog_ds131.3.xml" xlink:title="ds131.3 NOAA/CIRES Twentieth Century Global Reanalysis Version 3" name="" />
     <catalogRef xlink:href="catalog_ds193.0.xml" xlink:title="ds193.0 Global Hourly 0.5-degree Land Surface Air Temperature Datasets" name="" />
     <catalogRef xlink:href="catalog_ds197.0.xml" xlink:title="ds197.0 Great Plains Low-Level Jet Occurrence and Upper-Level Coupling in CERA-20C" name="" />
     <catalogRef xlink:href="catalog_ds260.4.xml" xlink:title="ds260.4 SAMOS Air-Sea Fluxes: 2005-2014" name="" />
@@ -79,7 +88,6 @@
     <catalogRef xlink:href="catalog_ds629.3.xml" xlink:title="ds629.3 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_ds629.5.xml" xlink:title="ds629.5 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_ds629.6.xml" xlink:title="ds629.6 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid, Dynamical Parameters Only" name="" />
-    <catalogRef xlink:href="catalog_ds630.0.xml" xlink:title="ds630.0 ERA5 Reanalysis" name="" />
     <catalogRef xlink:href="catalog_ds630.1.xml" xlink:title="ds630.1 ERA5 Reanalysis Monthly Means" name="" />
     <catalogRef xlink:href="catalog_ds631.0.xml" xlink:title="ds631.0 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
