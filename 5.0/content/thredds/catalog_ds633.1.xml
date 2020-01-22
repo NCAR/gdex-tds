@@ -27,7 +27,7 @@
       <keyword>ECWMF ERA5 Reanalysis</keyword>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 GRIB Files" path="files/g/ds633.1">
+    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 GRIB Files" path="files/g/ds633.1_grb">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -37,7 +37,7 @@
       </filter>
       <addDatasetSize />
     </datasetScan>
-    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 NetCDF Files" path="files/g/ds633.1">
+    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 NetCDF Files" path="files/g/ds633.1_nc">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
