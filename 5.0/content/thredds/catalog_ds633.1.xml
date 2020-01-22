@@ -4,7 +4,7 @@
   <dataset name="ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)">
     <metadata inherited="true">
       <serviceName>all</serviceName>
-      <dataFormat>NetCDF</dataFormat>
+      <!--<dataFormat>NetCDF</dataFormat>-->
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
       <documentation xlink:href="http://rda.ucar.edu/datasets/ds633.1/" xlink:title="NCAR RDA - ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)(ds633.1)" />
@@ -27,11 +27,22 @@
       <keyword>ECWMF ERA5 Reanalysis</keyword>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 Files" path="files/g/ds633.1">
+    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 GRIB Files" path="files/g/ds633.1">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
       <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.nc" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+    <datasetScan location="/data/rda/data/ds633.1/" name="633.1 NetCDF Files" path="files/g/ds633.1">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.grb" />
         <exclude wildcard="*.html" />
       </filter>
       <addDatasetSize />
