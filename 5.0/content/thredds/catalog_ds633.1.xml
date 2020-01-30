@@ -47,6 +47,125 @@
       </filter>
       <addDatasetSize />
     </datasetScan>
-  </dataset>
+
+     <!--  Aggregations  -->
+     <dataset name="ds633.1 Dataset Aggregations">
+     
+     <featureCollection name="ds633.1 e5.moda.an.pl Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/ds633.1/1">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="ds633.1 e5.moda.an.pl Grib1" spec="/data/rda/data/ds633.1/e5.moda.an.pl/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.an.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+ 
+     <featureCollection name="ds633.1 e5.moda.an.sfc Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/ds633.1/2">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="ds633.1 e5.moda.an.sfc Grib1" spec="/data/rda/data/ds633.1/e5.moda.an.sfc/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.an.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+   
+     <featureCollection name="ds633.1 e5.moda.an.vinteg Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/ds633.1/3">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="ds633.1 e5.moda.an.vinteg Grib1" spec="/data/rda/data/ds633.1/e5.moda.an.vinteg/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.an.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+<!--
+     <featureCollection name="ds633.1 e5.moda.fc.sfc.accumu Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/ds633.1/4">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="ds633.1 e5.moda.fc.sfc.accumu Grib1" spec="/data/rda/data/ds633.1/e5.moda.fc.sfc.accumu/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.fc.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+     <featureCollection name="ds633.1 e5.moda.fc.sfc.instan Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/ds633.1/5">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="ds633.1 e5.moda.fc.sfc.instan Grib1" spec="/data/rda/data/ds633.1/e5.moda.fc.sfc.instan/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.fc.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+     <featureCollection name="ds633.1 e5.moda.fc.sfc.meanflux Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/ds633.1/6">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="ds633.1 e5.moda.fc.sfc.meanflux Grib1" spec="/data/rda/data/ds633.1/e5.moda.fc.sfc.meanflux/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.fc.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+-->
+ </dataset>
+
+</dataset>
+
 </catalog>
 
