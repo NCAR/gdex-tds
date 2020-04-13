@@ -54,6 +54,7 @@
     <catalogRef xlink:href="catalog_ds300.0.xml" xlink:title="ds300.0 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" />
     <catalogRef xlink:href="catalog_ds313.0.xml" xlink:title="ds313.0 GEOS5 Global Atmosphere Forcing Data" />
     <catalogRef xlink:href="catalog_ds313.3.xml" xlink:title="ds313.3 MERRA2 Global Atmosphere Forcing Data" />
+    <catalogRef xlink:href="catalog_ds313.6.xml" xlink:title="ds313.6 Whole Atmosphere Community Climate Model (WACCM) Model Output" />
     <catalogRef xlink:href="catalog_ds314.0.xml" xlink:title="ds314.0 Global Meteorological Forcing Dataset for Land Surface Modeling" name="" />
     <catalogRef xlink:href="catalog_ds314.1.xml" xlink:title="ds314.1 WATer and global CHange (WATCH) Forcing Data (WFD) - 20th Century" name="" />
     <catalogRef xlink:href="catalog_ds314.2.xml" xlink:title="ds314.2 The WFDEI Meteorological Forcing Data" name="" />
@@ -94,6 +95,7 @@
     <catalogRef xlink:href="catalog_ds631.1.xml" xlink:title="ds631.1 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
     <catalogRef xlink:href="catalog_ds633.0.xml" xlink:title="ds633.0 ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid)" name="" />
     <catalogRef xlink:href="catalog_ds633.1.xml" xlink:title="ds633.1 ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)" name="" />
+    <catalogRef xlink:href="catalog_ds633.3.xml" xlink:title="ds633.3 ERA5 Modes of Interannual Variability" name="" />
     <catalogRef xlink:href="catalog_ds645.0.xml" xlink:title="ds645.0 CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry" name="" />
     <catalogRef xlink:href="catalog_ds650.0.xml" xlink:title="ds650.0 SODA Project: SODA3 Ensemble Means and Standard Deviations" name="SODA Project: SODA3 Ensemble Means and Standard Deviations" />
     <catalogRef xlink:href="catalog_ds682.0.xml" xlink:title="ds682.0 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
