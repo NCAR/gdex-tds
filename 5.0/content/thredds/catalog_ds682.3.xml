@@ -22,15 +22,15 @@
         <contact url="none" />
       </creator>
       <creator>
-        <name vocabulary="DIF">CA/CSA/ST/SP</name>
+        <name vocabulary="DIF" />
         <contact url="none" />
       </creator>
       <creator>
-        <name vocabulary="DIF">NASA/JPL/AIRS</name>
+        <name vocabulary="DIF" />
         <contact url="none" />
       </creator>
       <creator>
-        <name vocabulary="DIF">FR/CNRS/IPSL/LATMOS</name>
+        <name vocabulary="DIF" />
         <contact url="none" />
       </creator>
       <authority>edu.ucar.rda</authority>

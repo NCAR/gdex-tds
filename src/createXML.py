@@ -205,7 +205,11 @@ if __name__ == '__main__':
 
         creator_name = ET.SubElement(creator_ele, 'name')
         creator_name.attrib['vocabulary'] = vocabulary
-        creator_name.text = creator[0].split(' ')[0]
+        try:
+            creator_name.text = creator[0].split(' ')[0]
+        except:
+            pass
+
 
         #TODO
         contact = ET.SubElement(creator_ele, 'contact')

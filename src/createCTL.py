@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import xml.etree.ElementTree as ET
 import mysql.connector as sql
-from HTMLParser import HTMLParser
 import pdb
 import sys
 
