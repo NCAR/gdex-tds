@@ -11,7 +11,7 @@
             <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>
-          <documentation type="Rights">Some Restrictions Apply</documentation>
+          <documentation type="Rights">Freely Available</documentation>
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds113.0/"
                          xlink:title="ECMWF's Operational Model Analysis, starting in 2011 (ds113.0)"/>
           <documentation type="summary">
@@ -38,7 +38,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
 
 
       <datasetScan name="ds113.0 Files"
-                  path="files/ecoper/ds113.0"
+                  path="files/g/ds113.0"
                   location="/data/rda/data/ds113.0">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -58,7 +58,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="ds113.0 Surface"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/ecoper/ds113.0/1">
+                      path="aggregations/g/ds113.0/1">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -72,7 +72,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="ds113.0 Pressure Level"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/ecoper/ds113.0/2">
+                      path="aggregations/g/ds113.0/2">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -86,7 +86,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="ds113.0 Supplementary Fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/ecoper/ds113.0/3">
+                      path="aggregations/g/ds113.0/3">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -100,7 +100,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="ds113.0 Extension"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/ecoper/ds113.0/4">
+                      path="aggregations/g/ds113.0/4">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
