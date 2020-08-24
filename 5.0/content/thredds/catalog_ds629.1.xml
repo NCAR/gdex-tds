@@ -11,7 +11,7 @@
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>  
           <dataType>GRID</dataType>   
-          <documentation type="Rights">Some Restrictions Apply</documentation>   
+          <documentation type="Rights">Freely Available</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds629.1/" 
                          xlink:title="NCAR RDA - WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid (ds629.1)"/>   
           <documentation type="summary">   
@@ -42,7 +42,7 @@ ds629.1 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
       <!--  Files -->
 
      <datasetScan name="ds629.1 Files" 
-                  path="files/e/ds629.1" 
+                  path="files/g/ds629.1" 
                   location="/data/rda/data/ds629.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -63,7 +63,7 @@ ds629.1 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
              <featureCollection name="YOTC atmospheric model analysis for surface, single parameter 6-hourly time series"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/e/ds629.1/9">
+                                path="aggregations/g/ds629.1/9">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -83,7 +83,7 @@ ds629.1 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
              <featureCollection name="YOTC atmospheric model forecast for surface, single parameter 6-hourly time series"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/e/ds629.1/15">
+                                path="aggregations/g/ds629.1/15">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>

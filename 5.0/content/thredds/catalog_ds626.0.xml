@@ -11,7 +11,7 @@
             <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>
-          <documentation type="Rights">Some Restrictions Apply</documentation>
+          <documentation type="Rights">Freely Available</documentation>
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds626.0/"
                          xlink:title="ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century) (ds626.0)"/>
           <documentation type="summary">
@@ -50,7 +50,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
 
 
       <datasetScan name="ds626.0 Files"
-                  path="files/e/ds626.0"
+                  path="files/g/ds626.0"
                   location="/data/rda/data/ds626.0">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -70,7 +70,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric model analysis"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/e/ds626.0/5">
+                      path="aggregations/g/ds626.0/5">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -84,7 +84,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isobaric analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/6">
+                      path="aggregations/g/ds626.0/6">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -98,7 +98,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isentropic analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/7">
+                      path="aggregations/g/ds626.0/7">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -112,7 +112,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric 2 pvu analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/8">
+                      path="aggregations/g/ds626.0/8">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -126,7 +126,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric surface analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/9">
+                      path="aggregations/g/ds626.0/9">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -140,7 +140,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 6 hourly atmospheric surface analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/10">
+                      path="aggregations/g/ds626.0/10">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -154,7 +154,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric model forecast"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/e/ds626.0/13">
+                      path="aggregations/g/ds626.0/13">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -168,7 +168,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isobaric forecast"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/14">
+                      path="aggregations/g/ds626.0/14">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -182,7 +182,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric surface forecast"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/15">
+                      path="aggregations/g/ds626.0/15">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -197,7 +197,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century atmospheric invariant fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/16">
+                      path="aggregations/g/ds626.0/16">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -210,7 +210,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly ocean wave analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/17">
+                      path="aggregations/g/ds626.0/17">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -224,7 +224,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century ocean wave invariant fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/e/ds626.0/18">
+                      path="aggregations/g/ds626.0/18">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
