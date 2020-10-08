@@ -11,7 +11,7 @@
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>   
-          <documentation type="Rights">Some Restrictions Apply</documentation>   
+          <documentation type="Rights">Freely Available</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds628.0/" 
                          xlink:title="JRA-55: Japanese 55-year Reanalysis, Daily 3-Hourly and 6-Hourly Data"/>   
           <documentation type="summary">  
@@ -45,7 +45,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
 
      <!--  Files -->
      <datasetScan name="ds628.0 Files" 
-                  path="files/JRA55/ds628.0" 
+                  path="files/g/ds628.0" 
                   location="/data/rda/data/ds628.0">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -67,7 +67,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/1">
+                                path="aggregations/g/ds628.0/1">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -81,7 +81,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/2">
+                                path="aggregations/g/ds628.0/2">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -96,7 +96,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/3">
+                                path="aggregations/g/ds628.0/3">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -111,7 +111,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/4">
+                                path="aggregations/g/ds628.0/4">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -126,7 +126,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/5">
+                                path="aggregations/g/ds628.0/5">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -141,7 +141,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/6">
+                                path="aggregations/g/ds628.0/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -157,7 +157,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Model Level Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/7">
+                                path="aggregations/g/ds628.0/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -172,7 +172,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/8">
+                                path="aggregations/g/ds628.0/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -187,7 +187,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 2.5 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/9">
+                                path="aggregations/g/ds628.0/9">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -202,7 +202,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/10">
+                                path="aggregations/g/ds628.0/10">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -217,7 +217,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/11">
+                                path="aggregations/g/ds628.0/11">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -231,7 +231,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/12">
+                                path="aggregations/g/ds628.0/12">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -246,7 +246,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/13">
+                                path="aggregations/g/ds628.0/13">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -264,7 +264,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/14">
+                                path="aggregations/g/ds628.0/14">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -279,7 +279,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/15">
+                                path="aggregations/g/ds628.0/15">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -293,7 +293,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/16">
+                                path="aggregations/g/ds628.0/16">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -308,7 +308,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/17">
+                                path="aggregations/g/ds628.0/17">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -322,7 +322,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Model Level Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/18">
+                                path="aggregations/g/ds628.0/18">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -337,7 +337,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/19">
+                                path="aggregations/g/ds628.0/19">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -352,7 +352,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/20">
+                                path="aggregations/g/ds628.0/20">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -371,7 +371,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/21">
+                                path="aggregations/g/ds628.0/21">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -385,7 +385,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/22">
+                                path="aggregations/g/ds628.0/22">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -399,7 +399,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly Model Resolution Model Level Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/23">
+                                path="aggregations/g/ds628.0/23">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -414,7 +414,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 6-Hourly 1.25 Degree Isobaric Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/24">
+                                path="aggregations/g/ds628.0/24">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -429,7 +429,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/25">
+                                path="aggregations/g/ds628.0/25">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -443,7 +443,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/26">
+                                path="aggregations/g/ds628.0/26">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -457,7 +457,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/27">
+                                path="aggregations/g/ds628.0/27">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -471,7 +471,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/28">
+                                path="aggregations/g/ds628.0/28">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -485,7 +485,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/29">
+                                path="aggregations/g/ds628.0/29">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -499,7 +499,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly 1.25 Degree Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/30">
+                                path="aggregations/g/ds628.0/30">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -513,7 +513,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 3-Hourly Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/31">
+                                path="aggregations/g/ds628.0/31">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -532,7 +532,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 1.25 Degree Constant Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/32">
+                                path="aggregations/g/ds628.0/32">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -546,7 +546,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 2.5 Degree Constant Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/33">
+                                path="aggregations/g/ds628.0/33">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -560,7 +560,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Model Resolution Constant Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.0/34">
+                                path="aggregations/g/ds628.0/34">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>

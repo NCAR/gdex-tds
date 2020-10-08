@@ -55,6 +55,7 @@
     <catalogRef xlink:href="catalog_ds313.0.xml" xlink:title="ds313.0 GEOS5 Global Atmosphere Forcing Data" />
     <catalogRef xlink:href="catalog_ds313.3.xml" xlink:title="ds313.3 MERRA2 Global Atmosphere Forcing Data" />
     <catalogRef xlink:href="catalog_ds313.6.xml" xlink:title="ds313.6 Whole Atmosphere Community Climate Model (WACCM) Model Output" />
+    <catalogRef xlink:href="catalog_ds313.7.xml" xlink:title="ds313.7 CESM2.1 The Community Atmosphere Model with Chemistry (CAM-chem) Outputs as Boundary Conditions" />
     <catalogRef xlink:href="catalog_ds314.0.xml" xlink:title="ds314.0 Global Meteorological Forcing Dataset for Land Surface Modeling" name="" />
     <catalogRef xlink:href="catalog_ds314.1.xml" xlink:title="ds314.1 WATer and global CHange (WATCH) Forcing Data (WFD) - 20th Century" name="" />
     <catalogRef xlink:href="catalog_ds314.2.xml" xlink:title="ds314.2 The WFDEI Meteorological Forcing Data" name="" />

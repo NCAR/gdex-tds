@@ -11,7 +11,7 @@
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>   
-          <documentation type="Rights">Some Restrictions Apply</documentation>   
+          <documentation type="Rights">Freely Available</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds628.5/" 
                          xlink:title="JRA-55AMIP: Monthly Means and Variances Including Diurnal Statistics"/>   
           <documentation type="summary">  
@@ -36,7 +36,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
 
      <!--  Files -->
      <datasetScan name="ds628.5 Files" 
-                  path="files/JRA55/ds628.5" 
+                  path="files/g/ds628.5" 
                   location="/data/rda/data/ds628.5">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -56,7 +56,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/57">
+                                path="aggregations/g/ds628.5/57">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -70,7 +70,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/58">
+                                path="aggregations/g/ds628.5/58">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -85,7 +85,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/59">
+                                path="aggregations/g/ds628.5/59">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -100,7 +100,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/60">
+                                path="aggregations/g/ds628.5/60">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -116,7 +116,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/65">
+                                path="aggregations/g/ds628.5/65">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -132,7 +132,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/66">
+                                path="aggregations/g/ds628.5/66">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -147,7 +147,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/67">
+                                path="aggregations/g/ds628.5/67">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -162,7 +162,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/68">
+                                path="aggregations/g/ds628.5/68">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -177,7 +177,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/73">
+                                path="aggregations/g/ds628.5/73">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -192,7 +192,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/74">
+                                path="aggregations/g/ds628.5/74">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -207,7 +207,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/75">
+                                path="aggregations/g/ds628.5/75">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -222,7 +222,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/76">
+                                path="aggregations/g/ds628.5/76">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -237,7 +237,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/77">
+                                path="aggregations/g/ds628.5/77">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -252,7 +252,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/78">
+                                path="aggregations/g/ds628.5/78">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -267,7 +267,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/79">
+                                path="aggregations/g/ds628.5/79">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -282,7 +282,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/80">
+                                path="aggregations/g/ds628.5/80">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -298,7 +298,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/85">
+                                path="aggregations/g/ds628.5/85">
       
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -313,7 +313,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/86">
+                                path="aggregations/g/ds628.5/86">
  
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -328,7 +328,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/87">
+                                path="aggregations/g/ds628.5/87">
  
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -344,7 +344,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/88">
+                                path="aggregations/g/ds628.5/88">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -359,7 +359,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/101">
+                                path="aggregations/g/ds628.5/101">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -374,7 +374,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/102">
+                                path="aggregations/g/ds628.5/102">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -389,7 +389,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/103">
+                                path="aggregations/g/ds628.5/103">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -404,7 +404,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/104">
+                                path="aggregations/g/ds628.5/104">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -419,7 +419,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Mean 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/109">
+                                path="aggregations/g/ds628.5/109">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -435,7 +435,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Mean 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/110">
+                                path="aggregations/g/ds628.5/110">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -450,7 +450,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Variance of 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/111">
+                                path="aggregations/g/ds628.5/111">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -465,7 +465,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP Monthly Diurnal Variance of 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/112">
+                                path="aggregations/g/ds628.5/112">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -480,7 +480,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP 1.25 Degree Constant Fields 628.5"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/125">
+                                path="aggregations/g/ds628.5/125">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -495,7 +495,7 @@ As a subset of the Japanese 55-year Reanalysis (JRA-55) project, an experiment u
              <featureCollection name="JRA-55AMIP 2.5 Degree Constant Fields 628.5"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.5/126">
+                                path="aggregations/g/ds628.5/126">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>

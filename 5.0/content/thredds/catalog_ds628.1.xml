@@ -11,7 +11,7 @@
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>  
           <dataType>GRID</dataType>   
-          <documentation type="Rights">Some Restrictions Apply</documentation>   
+          <documentation type="Rights">Freely Available</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds628.1/" 
                          xlink:title="JRA-55: Japanese 55-year Reanalysis, Monthly Means and Variances"/>   
           <documentation type="summary">  
@@ -45,7 +45,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
 
      <!--  Files -->
      <datasetScan name="ds628.1 Files" 
-                  path="files/JRA55/ds628.1" 
+                  path="files/g/ds628.1" 
                   location="/data/rda/data/ds628.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -67,7 +67,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/1">
+                                path="aggregations/g/ds628.1/1">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -81,7 +81,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/2">
+                                path="aggregations/g/ds628.1/2">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -96,7 +96,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/3">
+                                path="aggregations/g/ds628.1/3">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -110,7 +110,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/4">
+                                path="aggregations/g/ds628.1/4">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -125,7 +125,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/5">
+                                path="aggregations/g/ds628.1/5">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -139,7 +139,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/6">
+                                path="aggregations/g/ds628.1/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -154,7 +154,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/7">
+                                path="aggregations/g/ds628.1/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -168,7 +168,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
             <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/8">
+                                path="aggregations/g/ds628.1/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -183,7 +183,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/9">
+                                path="aggregations/g/ds628.1/9">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -197,7 +197,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/10">
+                                path="aggregations/g/ds628.1/10">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -212,7 +212,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/11">
+                                path="aggregations/g/ds628.1/11">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -226,7 +226,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/12">
+                                path="aggregations/g/ds628.1/12">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -241,7 +241,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Model Level Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/13">
+                                path="aggregations/g/ds628.1/13">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -255,7 +255,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Model Level Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/14">
+                                path="aggregations/g/ds628.1/14">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -270,7 +270,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/15">
+                                path="aggregations/g/ds628.1/15">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -284,7 +284,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
             <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/16">
+                                path="aggregations/g/ds628.1/16">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -299,7 +299,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 2.5 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/17">
+                                path="aggregations/g/ds628.1/17">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -313,7 +313,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 2.5 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/18">
+                                path="aggregations/g/ds628.1/18">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -328,7 +328,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/19">
+                                path="aggregations/g/ds628.1/19">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -342,7 +342,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/20">
+                                path="aggregations/g/ds628.1/20">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -356,7 +356,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/21">
+                                path="aggregations/g/ds628.1/21">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -370,7 +370,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/22">
+                                path="aggregations/g/ds628.1/22">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -385,7 +385,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/23">
+                                path="aggregations/g/ds628.1/23">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -399,7 +399,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/24">
+                                path="aggregations/g/ds628.1/24">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -414,7 +414,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/25">
+                                path="aggregations/g/ds628.1/25">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -428,7 +428,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/26">
+                                path="aggregations/g/ds628.1/26">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -447,7 +447,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/27">
+                                path="aggregations/g/ds628.1/27">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -461,7 +461,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/28">
+                                path="aggregations/g/ds628.1/28">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -476,7 +476,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/29">
+                                path="aggregations/g/ds628.1/29">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -490,7 +490,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/30">
+                                path="aggregations/g/ds628.1/30">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -505,7 +505,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/31">
+                                path="aggregations/g/ds628.1/31">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -519,7 +519,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/32">
+                                path="aggregations/g/ds628.1/32">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -534,7 +534,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/33">
+                                path="aggregations/g/ds628.1/33">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -548,7 +548,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/34">
+                                path="aggregations/g/ds628.1/34">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -563,7 +563,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Model Level Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/35">
+                                path="aggregations/g/ds628.1/35">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -577,7 +577,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Model Level Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/36">
+                                path="aggregations/g/ds628.1/36">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -592,7 +592,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/37">
+                                path="aggregations/g/ds628.1/37">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -605,7 +605,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/38">
+                                path="aggregations/g/ds628.1/38">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -619,7 +619,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/39">
+                                path="aggregations/g/ds628.1/39">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -633,7 +633,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/40">
+                                path="aggregations/g/ds628.1/40">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -655,7 +655,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/41">
+                                path="aggregations/g/ds628.1/41">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -671,7 +671,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/42">
+                                path="aggregations/g/ds628.1/42">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -688,7 +688,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/43">
+                                path="aggregations/g/ds628.1/43">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -705,7 +705,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/44">
+                                path="aggregations/g/ds628.1/44">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -723,7 +723,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Model Level Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/45">
+                                path="aggregations/g/ds628.1/45">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -742,7 +742,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Model Level Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/46">
+                                path="aggregations/g/ds628.1/46">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -759,7 +759,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Isobaric Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/47">
+                                path="aggregations/g/ds628.1/47">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -775,7 +775,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Isobaric Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/48">
+                                path="aggregations/g/ds628.1/48">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -792,7 +792,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/49">
+                                path="aggregations/g/ds628.1/49">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -810,7 +810,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/50">
+                                path="aggregations/g/ds628.1/50">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -828,7 +828,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/51">
+                                path="aggregations/g/ds628.1/51">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -844,7 +844,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/52">
+                                path="aggregations/g/ds628.1/52">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -860,7 +860,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/53">
+                                path="aggregations/g/ds628.1/53">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -875,7 +875,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/54">
+                                path="aggregations/g/ds628.1/54">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -890,7 +890,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/55">
+                                path="aggregations/g/ds628.1/55">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -904,7 +904,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/56">
+                                path="aggregations/g/ds628.1/56">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -919,7 +919,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/57">
+                                path="aggregations/g/ds628.1/57">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -933,7 +933,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/58">
+                                path="aggregations/g/ds628.1/58">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -948,7 +948,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean 1.25 Degree Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/59">
+                                path="aggregations/g/ds628.1/59">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -962,7 +962,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of 1.25 Degree Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/60">
+                                path="aggregations/g/ds628.1/60">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -978,7 +978,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Mean Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/61">
+                                path="aggregations/g/ds628.1/61">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -993,7 +993,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="JRA-55 Monthly Variance of Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/62">
+                                path="aggregations/g/ds628.1/62">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1014,7 +1014,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="ds628.1 JRA-55 1.25 Degree Constant Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/63">
+                                path="aggregations/g/ds628.1/63">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1028,7 +1028,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="ds628.1 JRA-55 2.5 Degree Constant Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/64">
+                                path="aggregations/g/ds628.1/64">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1042,7 +1042,7 @@ The Data Support Section (DSS) at NCAR has processed the 1.25 degree version of 
              <featureCollection name="ds628.1 JRA-55 Model Resolution Constant Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/JRA55/ds628.1/65">
+                                path="aggregations/g/ds628.1/65">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>

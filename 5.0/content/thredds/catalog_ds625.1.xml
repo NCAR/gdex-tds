@@ -11,7 +11,7 @@
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>  
           <dataType>GRID</dataType>   
-          <documentation type="Rights">Some Restrictions Apply</documentation>   
+          <documentation type="Rights">Freely Available</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds625.1/" 
                          xlink:title="Japanese 25-year Reanalysis Project, Monthly Means"/>   
           <documentation type="summary">  
@@ -46,7 +46,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
 
      <!--  Files -->
      <datasetScan name="ds625.1 Files" 
-                  path="files/jra25/ds625.1" 
+                  path="files/g/ds625.1" 
                   location="/data/rda/data/ds625.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -68,7 +68,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_chipsi"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/1">
+                                path="aggregations/g/ds625.1/1">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -87,7 +87,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_chipsi25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/2"/>
+                                path="aggregations/g/ds625.1/2"/>
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -96,7 +96,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_chipsi25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/2">
+                                path="aggregations/g/ds625.1/2">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -118,7 +118,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_isentrop"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/3">
+                                path="aggregations/g/ds625.1/3">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -140,7 +140,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_column125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/4">
+                                path="aggregations/g/ds625.1/4">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -162,7 +162,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_isentrop"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/5">
+                                path="aggregations/g/ds625.1/5">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -185,7 +185,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_isentrop_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/6">
+                                path="aggregations/g/ds625.1/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -207,7 +207,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_isentrop125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/7">
+                                path="aggregations/g/ds625.1/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -229,7 +229,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
             <featureCollection name="ds625.1_anl_isentrop125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/8">
+                                path="aggregations/g/ds625.1/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -252,7 +252,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_land"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/9">
+                                path="aggregations/g/ds625.1/9">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -274,7 +274,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_land_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/10">
+                                path="aggregations/g/ds625.1/10">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -297,7 +297,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_land125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/11">
+                                path="aggregations/g/ds625.1/11">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -319,7 +319,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_land125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/12">
+                                path="aggregations/g/ds625.1/12">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -341,7 +341,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_mdl"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/13">
+                                path="aggregations/g/ds625.1/13">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -363,7 +363,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_mdl_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/14">
+                                path="aggregations/g/ds625.1/14">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -385,7 +385,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_p125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/15">
+                                path="aggregations/g/ds625.1/15">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -407,7 +407,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
             <featureCollection name="ds625.1_anl_p125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/16">
+                                path="aggregations/g/ds625.1/16">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -430,7 +430,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_p25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/17">
+                                path="aggregations/g/ds625.1/17">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -452,7 +452,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_p25_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/18">
+                                path="aggregations/g/ds625.1/18">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -474,7 +474,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_snow"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/19">
+                                path="aggregations/g/ds625.1/19">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -496,7 +496,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_snow_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/20">
+                                path="aggregations/g/ds625.1/20">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -519,7 +519,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_snow125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/21">
+                                path="aggregations/g/ds625.1/21">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -541,7 +541,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_snow125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/22">
+                                path="aggregations/g/ds625.1/22">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -564,7 +564,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_surf"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/23">
+                                path="aggregations/g/ds625.1/23">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -586,7 +586,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_surf_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/24">
+                                path="aggregations/g/ds625.1/24">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -608,7 +608,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_surf125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/25">
+                                path="aggregations/g/ds625.1/25">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -631,7 +631,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_anl_surf125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/26">
+                                path="aggregations/g/ds625.1/26">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -658,7 +658,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_column"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/27">
+                                path="aggregations/g/ds625.1/27">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -680,7 +680,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_column_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/28">
+                                path="aggregations/g/ds625.1/28">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -702,7 +702,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_column125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/29">
+                                path="aggregations/g/ds625.1/29">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -724,7 +724,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_column125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/30">
+                                path="aggregations/g/ds625.1/30">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -746,7 +746,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_land"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/31">
+                                path="aggregations/g/ds625.1/31">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -768,7 +768,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_land_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/32">
+                                path="aggregations/g/ds625.1/32">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -790,7 +790,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_land125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/33">
+                                path="aggregations/g/ds625.1/33">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -812,7 +812,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_land125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/34">
+                                path="aggregations/g/ds625.1/34">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -834,7 +834,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_mdl"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/35">
+                                path="aggregations/g/ds625.1/35">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -856,7 +856,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_mdl_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/36">
+                                path="aggregations/g/ds625.1/36">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -878,7 +878,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_p125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/37">
+                                path="aggregations/g/ds625.1/37">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -899,7 +899,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_p125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/38">
+                                path="aggregations/g/ds625.1/38">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -920,7 +920,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_p25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/39">
+                                path="aggregations/g/ds625.1/39">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -942,7 +942,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_p25_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/40">
+                                path="aggregations/g/ds625.1/40">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -969,7 +969,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy2m"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/41">
+                                path="aggregations/g/ds625.1/41">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -991,7 +991,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy2m_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/42">
+                                path="aggregations/g/ds625.1/42">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1014,7 +1014,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy2m125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/43">
+                                path="aggregations/g/ds625.1/43">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1036,7 +1036,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy2m125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/44">
+                                path="aggregations/g/ds625.1/44">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1058,7 +1058,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy3m"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/45">
+                                path="aggregations/g/ds625.1/45">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1080,7 +1080,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy3m_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/46">
+                                path="aggregations/g/ds625.1/46">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1102,7 +1102,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy3m125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/47">
+                                path="aggregations/g/ds625.1/47">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1124,7 +1124,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phy3m125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/48">
+                                path="aggregations/g/ds625.1/48">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1146,7 +1146,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phyland"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/49">
+                                path="aggregations/g/ds625.1/49">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1168,7 +1168,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phyland_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/50">
+                                path="aggregations/g/ds625.1/50">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1190,7 +1190,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phyland125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/51">
+                                path="aggregations/g/ds625.1/51">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1212,7 +1212,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_phyland125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/52">
+                                path="aggregations/g/ds625.1/52">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1234,7 +1234,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_surf"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/53">
+                                path="aggregations/g/ds625.1/53">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1256,7 +1256,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_surf_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/54">
+                                path="aggregations/g/ds625.1/54">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1278,7 +1278,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_surf125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/55">
+                                path="aggregations/g/ds625.1/55">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1300,7 +1300,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_fcst_surf125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/56">
+                                path="aggregations/g/ds625.1/56">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1322,7 +1322,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_ice"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/57">
+                                path="aggregations/g/ds625.1/57">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1344,7 +1344,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_ice_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/58">
+                                path="aggregations/g/ds625.1/58">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1366,7 +1366,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_ice125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/59">
+                                path="aggregations/g/ds625.1/59">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1388,7 +1388,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_ice125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/60">
+                                path="aggregations/g/ds625.1/60">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1410,7 +1410,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_minmax_surf"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/61">
+                                path="aggregations/g/ds625.1/61">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1432,7 +1432,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_minmax_surf_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/62">
+                                path="aggregations/g/ds625.1/62">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1459,7 +1459,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_ll125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/63">
+                                path="aggregations/g/ds625.1/63">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1481,7 +1481,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_ll25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/64">
+                                path="aggregations/g/ds625.1/64">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -1503,7 +1503,7 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              <featureCollection name="ds625.1_tl319"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/jra25/ds625.1/65">
+                                path="aggregations/g/ds625.1/65">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
