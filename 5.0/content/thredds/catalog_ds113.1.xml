@@ -10,7 +10,7 @@
             <serviceName>all</serviceName>
           <dataFormat>NETCDF</dataFormat>
           <dataType>GRID</dataType>
-          <documentation type="Rights">Some Restrictions Apply</documentation>
+          <documentation type="Rights">Freely Available</documentation>
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds113.1/"
                          xlink:title="ECMWF IFS CY41r2 High-Resolution Operational Forecasts (ds113.1)"/>
           <documentation type="summary">
@@ -35,7 +35,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
 
 
       <datasetScan name="ds113.1 Files"
-                  path="files/ecoper/ds113.1"
+                  path="files/g/ds113.1"
                   location="/data/rda/data/ds113.1">
          <metadata inherited="true">
           <serviceName>all</serviceName>

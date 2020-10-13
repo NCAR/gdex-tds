@@ -10,7 +10,7 @@
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
-          <documentation type="Rights">Some Restrictions Apply</documentation>   
+          <documentation type="Rights">Freely Available</documentation>   
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds630.1/" 
                          xlink:title="ERA5 Reanalysis Monthly Means"/>   
           <documentation type="summary">  
@@ -43,7 +43,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
 
       <!--  Files -->
      <datasetScan name="ds630.1 Files" 
-                  path="files/e/ds630.1" 
+                  path="files/g/ds630.1" 
                   location="/data/rda/data/ds630.1">
          <metadata inherited="true">
              <serviceName>all</serviceName>

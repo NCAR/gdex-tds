@@ -10,7 +10,7 @@
             <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>
-          <documentation type="Rights">Some Restrictions Apply</documentation>
+          <documentation type="Rights">Freely Available</documentation>
           <documentation xlink:href="http://rda.ucar.edu/datasets/ds629.5/" 
                          xlink:title="NCAR RDA - WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid (ds629.5)"/>
           <documentation type="summary">
@@ -42,7 +42,7 @@ ds629.5 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
       <!--  Files -->
 
      <datasetScan name="ds629.5 Files" 
-                  path="files/e/ds629.5" 
+                  path="files/g/ds629.5" 
                   location="/data/rda/data/ds629.5">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -62,7 +62,7 @@ ds629.5 represents a transformed version of the raw ECMWF YOTC archive (ds629.0)
          <featureCollection name="YOTC atmospheric model forecast for surface, single parameter 3-hourly time series"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/e/ds629.5/0">
+                            path="aggregations/g/ds629.5/0">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
