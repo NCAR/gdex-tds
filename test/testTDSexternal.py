@@ -33,10 +33,36 @@ def check_catalog(catalog_url):
     """Checks catalog to see if things are working
     """
     print("Checking ", catalog_url)
-    rq = requests.get(catURL)
+    rq = requests.get(catalog_url)
     xml_str = rq.content
     root = ET.fromstring(xml_str)
+    find_example_catalog(root)
     print("Good")
+
+def find_catalog_in_xml(root, tag='catalogRef'):
+    for i in root.iter():
+        if i.tag == namespace+tag:
+            return i
+    return None
+
+def find_example_catalog(url):
+    """recursive function to find some terminating catalog"""
+    rq = requests.get(url)
+    xml_str = rq.content
+    root = ET.fromstring(xml_str)
+    namespace = root.tag.split('}')[0]+'}'
+    cat = find_catalog_in_xml(root)
+    if cat is None:
+        find_catalog_in_xml('dataset')
+        return cat
+    href = get_value(cat.attrib,'href')
+
+    rq = requests.get(domain+href)
+    xml_str = rq.content
+    new_cat_root = ET.fromstring(xml_str)
+    return find_example_catalog(new_cat_root)
+
+    return root
 
 def check_catalog_services(domain):
 
@@ -67,8 +93,10 @@ def check_catalog_services(domain):
 if __name__ == "__main__":
     domain = "https://rda.ucar.edu/"
     if len(sys.argv) > 1:
-        if sys.argv[1] == 'DEV':
+        if sys.argv[1].lower() == 'dev':
             domain = "https://rda-web-dev.ucar.edu/"
+        if sys.argv[1].lower() == 'test':
+            domain = "https://rda-web-test.ucar.edu/"
     check_catalog_services(domain)
 
 
