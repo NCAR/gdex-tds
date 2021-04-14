@@ -261,6 +261,8 @@ if __name__ == '__main__':
 
     prettify(root)
     xml_str = ET.tostring(root)
+    if isinstance(xml_str,bytes):
+        xml_str = xml_str.decode("utf-8")
     xml_str = '<?xml version="1.0" encoding="UTF-8"?>\n'+xml_str
 
     if output_filename is None:

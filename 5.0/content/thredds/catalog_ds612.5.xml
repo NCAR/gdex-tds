@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CONUS (Continental U.S.) II High Resolution Present and Future Climate Simulation" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CONUS (Continental U.S.) II High Resolution Present and Future Climate Simulation">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/ds612.5/" xlink:title="NCAR RDA - CONUS (Continental U.S.) II High Resolution Present and Future Climate Simulation(ds612.5)" />
+      <documentation type="summary">The CONUS II simulations aim to partially address both the need to capture inherent climate internal variability and greenhouse gas induced atmospheric variability by using the mean of the CMIP5 model for both present and historical mean climate as the CONUS boundary forcing. This forcing is applied to a 4km horizontal resolution Weather Research and Forecasting (WRF) model to produce a mesoscale hydro-climate of two 20-year runs covering a current period from 1996-2015 and a future period from 2080-2099 over the CONUS domain.
+    The characteristics of these simulations are: 1) more realistic depiction of the mesoscale terrain features, critical to the successful simulation of mountainous precipitation, 2) the ability to realistically simulate the major summer precipitation producer in the central U.S. without the need of conventional cumulus parameterizations.</documentation>
+      <creator>
+        <name vocabulary="DIF">SUNY-ALBANY/CAS/DAES</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/HAP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/ds612.5/" name="612.5 Files" path="files/g/ds612.5">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+
