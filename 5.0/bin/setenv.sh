@@ -1,7 +1,7 @@
 #!/bin/sh
 
-  #JAVA_HOME="/usr/lib/jvm/jre"
-  #export JAVA_HOME
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el7_9.x86_64/"
+export JAVA_HOME
 
 export UMASK='0022'
 
