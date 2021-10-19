@@ -109,6 +109,7 @@
     <catalogRef xlink:href="catalog_ds728.4.xml" xlink:title="ds728.4 GPCP Version 2.3 Monthly Analysis Product" />
     <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
     <catalogRef xlink:href="catalog_ds841.0.xml" xlink:title="ds841.0 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" />
+    <catalogRef xlink:href="catalog_ds841.1.xml" xlink:title="ds841.0 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Reflectivity and Spectrum Width" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Reflectivity and Spectrum Width" />
     <catalogRef xlink:href="catalog_ds898.0.xml" xlink:title="ds898.0 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
 
 
