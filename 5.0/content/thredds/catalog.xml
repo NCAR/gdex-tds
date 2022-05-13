@@ -53,6 +53,7 @@
     <catalogRef xlink:href="catalog_ds299.0.xml" xlink:title="ds299.0 Dai Global Palmer Drought Severity Index (PDSI)" name="Dai Global Palmer Drought Severity Index (PDSI)" />
     <catalogRef xlink:href="catalog_ds300.0.xml" xlink:title="ds300.0 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" />
     <catalogRef xlink:href="catalog_ds313.0.xml" xlink:title="ds313.0 GEOS5 Global Atmosphere Forcing Data" />
+    <catalogRef xlink:href="catalog_ds313.2.xml" xlink:title="ds313.2 MERRA2 Global Forcing data for CESM2 Applications" />
     <catalogRef xlink:href="catalog_ds313.3.xml" xlink:title="ds313.3 MERRA2 Global Atmosphere Forcing Data" />
     <catalogRef xlink:href="catalog_ds313.6.xml" xlink:title="ds313.6 Whole Atmosphere Community Climate Model (WACCM) Model Output" />
     <catalogRef xlink:href="catalog_ds313.7.xml" xlink:title="ds313.7 CESM2.1 The Community Atmosphere Model with Chemistry (CAM-chem) Outputs as Boundary Conditions" />
@@ -63,6 +64,7 @@
     <catalogRef xlink:href="catalog_ds316.0.xml" xlink:title="ds316.0 NCAR Community Earth System Model, EaSM Project Dataset" name=" NCAR Community Earth System Model, EaSM Project Dataset" />
     <catalogRef xlink:href="catalog_ds335.0.xml" xlink:title="ds335.0 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
     <catalogRef xlink:href="catalog_ds336.0.xml" xlink:title="ds336.0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
+    <catalogRef xlink:href="catalog_ds340.0.xml" xlink:title="ds340.0 The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS" />
     <catalogRef xlink:href="catalog_ds342.0.xml" xlink:title="ds342.0 NCAR/MOPITT Reanalysis" />
     <catalogRef xlink:href="catalog_ds345.0.xml" xlink:title="ds345.0 CAM6 Data Assimilation Research Testbed (DART) Reanalysis" />
     <catalogRef xlink:href="catalog_ds463.4.xml" xlink:title="ds463.4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
@@ -77,6 +79,7 @@
     <catalogRef xlink:href="catalog_ds608.0.xml" xlink:title="ds608.0 NCEP North American Regional Reanalysis (NARR)" name="" />
     <catalogRef xlink:href="catalog_ds609.2.xml" xlink:title="ds609.2 GCIP NCEP Eta model output" name="" />
     <catalogRef xlink:href="catalog_ds612.0.xml" xlink:title="ds612.0 High Resolution WRF Simulations of the Current and Future Climate of North America" name="" />
+    <catalogRef xlink:href="catalog_ds613.0.xml" xlink:title="ds613.0 Ensemble Dressing of North American Land Data Assimilation version 2 (EDN2)" name="" />
     <catalogRef xlink:href="catalog_ds612.5.xml" xlink:title="ds612.5 CONUS (Continental U.S.) II High Resolution Present and Future Climate Simulation" name="" />
     <catalogRef xlink:href="catalog_ds626.0.xml" xlink:title="ds626.0 ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)" name="" />
     <catalogRef xlink:href="catalog_ds627.0.xml" xlink:title="ds627.0 ERA-Interim Project" name="" />
@@ -109,7 +112,7 @@
     <catalogRef xlink:href="catalog_ds728.4.xml" xlink:title="ds728.4 GPCP Version 2.3 Monthly Analysis Product" />
     <catalogRef xlink:href="catalog_ds745.1.xml" xlink:title="ds745.1 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
     <catalogRef xlink:href="catalog_ds841.0.xml" xlink:title="ds841.0 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" />
-    <catalogRef xlink:href="catalog_ds841.1.xml" xlink:title="ds841.0 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Reflectivity and Spectrum Width" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Reflectivity and Spectrum Width" />
+    <catalogRef xlink:href="catalog_ds841.1.xml" xlink:title="ds841.1 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Reflectivity and Spectrum Width" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Reflectivity and Spectrum Width" />
     <catalogRef xlink:href="catalog_ds898.0.xml" xlink:title="ds898.0 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
 
 
