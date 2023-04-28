@@ -1,0 +1,3 @@
+    
+   The line below needs to be in server.xml to run tomcat v.8.5.66+ does not have this included by default
+    <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" secretRequired="false"/>
