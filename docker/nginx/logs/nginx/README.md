@@ -1,0 +1,1 @@
+Location for nginx logs
