@@ -3,7 +3,7 @@
 Creates Thredds xml file for a given dataset.
 """
 import xml.etree.ElementTree as ET
-import mysql.connector as sql
+import psycopg2 as sql
 import pdb
 import sys
 try:
@@ -95,29 +95,28 @@ if __name__ == '__main__':
 
 
     ## New Connection to search db
-    conn = sql.connect(user = 'metadata', password='metadata', host = 'rda-db.ucar.edu', database='search')
+    conn = sql.connect(user = 'metadata', password='metadata', host = 'rda-db.ucar.edu', database='rdadb')
     cursor = conn.cursor()
 
     # Get title
-    query = 'select title from datasets where dsid=' + dsid
+    query = "select title from search.datasets where dsid='" + dsid +"'"
     cursor.execute(query)
     title, = cursor.fetchall()[0]
 
     # Get summary
-    query = 'select summary from datasets where dsid='+dsid
+    query = "select summary from search.datasets where dsid='"+dsid+"'"
     cursor.execute(query)
     summary, = cursor.fetchall()[0]
     summary = strip_html(summary)
 
     # Get format
-    query = 'select keyword from formats where dsid='+dsid
+    query = "select keyword from search.formats where dsid='"+dsid+"'"
     cursor.execute(query)
     formt, = cursor.fetchall()[0]
     formt = get_format(formt)
-    cursor.reset()
 
     # Get Datatype
-    query = 'select keyword from data_types where dsid='+dsid
+    query = "select keyword from search.data_types where dsid='"+dsid+"'"
     cursor.execute(query)
     datatypes = cursor.fetchall()
     check_same(datatypes)
@@ -128,23 +127,18 @@ if __name__ == '__main__':
     datatype = datatype.upper()
 
     # Get creator
-    query = 'select g.path from contributors_new as c left join GCMD_providers as g on g.uuid = c.keyword where c.dsid = '+dsid+' and c.vocabulary = "GCMD"'
+    query = "select g.path from search.contributors_new as c left join search.GCMD_providers as g on g.uuid = c.keyword where c.dsid='"+dsid+"' and c.vocabulary = 'GCMD'"
     cursor.execute(query)
     creators = cursor.fetchall()
 
     # Get keywords
-    query = 'select g.path from projects_new as c left join GCMD_projects as g on g.uuid = c.keyword where c.dsid = '+dsid+' and c.vocabulary = "GCMD"'
+    query = "select g.path from search.projects_new as c left join search.GCMD_projects as g on g.uuid = c.keyword where c.dsid='"+dsid+"' and c.vocabulary = 'GCMD'"
     cursor.execute(query)
     keywords = cursor.fetchall()
 
-    conn.close()
-
-    ## New Connection to dssdb
-    conn = sql.connect(user = 'metadata', password='metadata', host = 'rda-db.ucar.edu', database='dssdb')
-    cursor = conn.cursor()
 
     # Get Access rights
-    query = "select access_type from dataset where dsid='ds"+ dsid + "';"
+    query = "select access_type from dssdb.dataset where dsid='ds"+ dsid + "';"
     cursor.execute(query)
     rights, = cursor.fetchall()[0]
     access_type = 'g'

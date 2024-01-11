@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import xml.etree.ElementTree as ET
-import mysql.connector as sql
+import psycopg2 as sql
 import pdb
 import sys
 
@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
 
     ## New Connection to dssdb
-    conn = sql.connect(user = 'metadata', password='metadata', host = 'rda-db.ucar.edu', database='dssdb')
+    conn = sql.connect(user = 'dssdb', password='dssdb', host = 'rda-db.ucar.edu', database='rdadb')
     cursor = conn.cursor()
 
     # Get Specialist
