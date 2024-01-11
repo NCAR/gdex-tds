@@ -1,4 +1,3 @@
-(venv) (base) (10:28 rpconroy src) > ./createXML.py 640.0
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog name="Japanese Reanalysis for Three Quarters of a Century (JRA-3Q)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
   <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
