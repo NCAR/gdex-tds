@@ -11,12 +11,12 @@ services:
     #  - '443'
     container_name: nginx
     volumes:
-      - /gpfs/fs1/collections/rda/data:/gpfs/fs1/collections/rda/data
-      - /gpfs/fs1/collections/rda/transfer:/gpfs/fs1/collections/rda/transfer
+      - /gpfs/csfs1/collections/rda/data:/gpfs/csfs1/collections/rda/data
+      - /gpfs/csfs1/collections/rda/transfer:/gpfs/csfs1/collections/rda/transfer
       - /etc/letsencrypt/live/rda-tds.ucar.edu/:/etc/letsencrypt/live/rda-tds.ucar.edu/
       - /etc/letsencrypt/archive/rda-tds.ucar.edu:/etc/letsencrypt/archive/rda-tds.ucar.edu
       - /data/rda/data/:/data/rda/data
-      - /usr/local/nginx/logs/nginx:/var/log/nginx/
+      - /data/logs/nginx/:/var/log/nginx/
     env_file:
       - "compose.env"
 
@@ -34,7 +34,7 @@ services:
     container_name: thredds
     hostname: tds-host
     volumes:
-      - ./logs/:/usr/local/tomcat/logs/
+      - /data/logs/tomcat:/usr/local/tomcat/logs
       - ./content/thredds/logs/:/usr/local/tomcat/content/thredds/logs/
       - ./conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
       - ./conf/server.xml:/usr/local/tomcat/conf/server.xml
@@ -44,7 +44,7 @@ services:
       #- /etc/letsencrypt/live/rda-tds.ucar.edu/:/etc/letsencrypt/live/rda-tds.ucar.edu/
       #- /etc/letsencrypt/archive/rda-tds.ucar.edu/:/etc/letsencrypt/archive/rda-tds.ucar.edu/
       - ./content/thredds:/usr/local/tomcat/content/thredds
-      - /gpfs/fs1/collections/rda/data:/gpfs/fs1/collections/rda/data
+      - /gpfs/csfs1/collections/rda/data:/gpfs/csfs1/collections/rda/data
       - /data/rda/data/:/data/rda/data
       - /data/TDSIndexFiles:/data/TDSIndexFiles
     env_file:

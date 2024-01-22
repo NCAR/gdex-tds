@@ -19,3 +19,12 @@ That's it! you should now have the container running
 If for whatever reason you want to take a look inside the container, you can execute,
 `podman exec -it nginx bash`
 which will start a shell within the nginx container. Replace 'nginx' with 'thredds' to view the thredds container.
+
+
+## Creating systemd unit files
+
+Once the containers are up and running:
+```
+podman generate systemd --new --files --name thredds
+podman generate systemd --new --files --name nginx
+```
