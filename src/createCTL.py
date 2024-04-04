@@ -51,7 +51,7 @@ def create_ctl_entry(dsid, specialist, access_type, dirname="", gindex=None):
     write_seperator()
     sys.stdout.write('N')
     write_seperator()
-    sys.stdout.write('https://rda.ucar.edu/thredds/catalog/files/'+access_type+'/ds'+dsid+'/'+dirname)
+    sys.stdout.write('https://thredds.rda.ucar.edu/thredds/catalog/files/'+access_type+'/ds'+dsid+'/'+dirname)
     write_seperator()
     write_seperator()
     sys.stdout.write('\n')
