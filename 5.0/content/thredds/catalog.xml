@@ -113,6 +113,7 @@
     <catalogRef xlink:href="catalog_ds645.0.xml" xlink:title="ds645.0 CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry" name="" />
     <catalogRef xlink:href="catalog_ds650.0.xml" xlink:title="ds650.0 SODA Project: SODA3 Ensemble Means and Standard Deviations" name="SODA Project: SODA3 Ensemble Means and Standard Deviations" />
     <catalogRef xlink:href="catalog_ds651.0.xml" xlink:title="ds651.0 CESM1 CAM5 BGC Medium Ensemble" name="CESM1 CAM5 BGC Medium Ensemble" />
+    <catalogRef xlink:href="catalog_ds651.1.xml" xlink:title="ds651.1 CESM2 Perfect Model Predictions for 2010" name="CESM2 Perfect Model Predictions for 2010" />
     <catalogRef xlink:href="catalog_ds682.0.xml" xlink:title="ds682.0 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
     <catalogRef xlink:href="catalog_ds682.3.xml" xlink:title="ds682.3 Hemispheric and regional monthly average carbon monoxide from satellite instruments" name="Hemispheric and regional monthly average carbon monoxide from satellite instruments" />
     <catalogRef xlink:href="catalog_ds728.2.xml" xlink:title="ds728.2 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
