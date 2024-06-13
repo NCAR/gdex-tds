@@ -28,3 +28,10 @@ Once the containers are up and running:
 podman generate systemd --new --files --name thredds
 podman generate systemd --new --files --name nginx
 ```
+
+## Restarting the services
+Once the unit files have been loaded, one can restart as root:
+```
+systemctl restart container-thredds.service
+systemctl restart container-nginx.service
+```
