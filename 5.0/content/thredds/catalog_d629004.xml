@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="629.1 Catalog"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+  <dataset name="Analysis">
+
+      <featureCollection name="Surface"
+                         featureType="GRIB"
+                         harvest="true"
+                         path="aggregations/d@1/9">
+    
+        <metadata inherited="true">
+             <serviceName>all</serviceName>
+             <dataFormat>GRIB-1</dataFormat>
+               <documentation type="summary">
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@1 for original RDA Dataset Page]
+              </documentation>
+        </metadata>
+    
+        <collection name="d@1_an_sfc" 
+                    spec="/data/rda/data/d@1/yt.oper.an.sfc/**/yt\.oper\.an\.sfc\..*"
+                    olderThan="0 min"/>
+    
+           <gribConfig datasetTypes="Best">
+             <bestNamer name="Timeseries Aggregation"/>
+             <pdsHash>
+               <useTableVersion>false</useTableVersion>
+             </pdsHash>
+           </gribConfig>
+           <update startup="false" trigger="allow"/>
+      </featureCollection>
+    
+  </dataset>
+
+  <dataset name="Forecast">
+
+      <featureCollection name="Surface"
+                         featureType="GRIB"
+                         harvest="true"
+                         path="aggregations/d@1/15">
+    
+        <metadata inherited="true">
+             <serviceName>all</serviceName>
+             <dataFormat>GRIB-1</dataFormat>
+               <documentation type="summary">
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@1 for original RDA Dataset Page]
+              </documentation>
+        </metadata>
+    
+        <collection name="d@1_fc_sfc" 
+                    spec="/data/rda/data/d@1/yt.oper.fc.sfc/**/yt\.oper\.fc\.sfc\..*"
+                    olderThan="0 min"/>
+    
+           <gribConfig datasetTypes="Best">
+             <bestNamer name="Timeseries Aggregation"/>
+             <pdsHash>
+               <useTableVersion>false</useTableVersion>
+             </pdsHash>
+           </gribConfig>
+           <update startup="false" trigger="allow"/>
+      </featureCollection>
+
+
+
+  </dataset>
+
+
+
+</catalog>

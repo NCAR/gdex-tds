@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="d@0 NCAR RDA - Historical Unidata Internet Data Distribution (IDD) Gridded Model Data"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <dataset name="d@0 NCAR RDA - Historical Unidata Internet Data Distribution (IDD) Gridded Model Data">
+        <metadata inherited="true">
+          <serviceName>all</serviceName>
+          <dataFormat>GRIB-1</dataFormat>
+          <dataFormat>GRIB-2</dataFormat>
+          <dataType>GRID</dataType>
+          <documentation type="Rights">Freely Available</documentation>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/"
+                         xlink:title="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data (d@0)"/>
+          <documentation type="summary">
+Historical Unidata Internet Data Distribution (IDD) Gridded Model Data are obtained via the Unidata Internet Data Distribution System (IDD). Data includes gridded analyses and forecasts from US National Centers for Environmental Prediction (NCEP) and European Centre for Medium-Range Weather Forecasts (ECMWF) models. Models include NCEP ETA, NAM and RUC covering the Continental US, NCEP Ensemble and GFS covering North America and the globe, and GFS Extended and ECMWF covering the globe, at various spatial and temporal resolutions. Potential variables found in the model output include pressure, relative humidity, temperature, geopotential height, zonal component wind speed, and V-component wind speed.
+          </documentation>
+          <documentation type="summary">
+Online archives include 1 year of data, and are populated daily with model output generated two days prior to the current date. Additionally, GFS Global 0.5 degree analysis fields from November 2006 to near the present are available online for web download. Older historical files, beginning in December 2002, are available upon request.
+          </documentation>
+          <documentation xlink:href="http://www.emc.ncep.noaa.gov/modelinfo/index.html" xlink:title="NCEP Model documentation" />
+          <creator>
+            <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+            <contact url="http://www.ncep.noaa.gov/" email="http://www.ncep.noaa.gov/mail_liaison.shtml" />
+          </creator>
+          <authority>edu.ucar.rda</authority>
+          <publisher>
+            <name vocabulary="DIF">NCAR/RDA</name>
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />
+          </publisher>
+          <keyword>Numerical Weather Prediction</keyword>
+          <keyword>NCEP</keyword>
+          <keyword>Model data</keyword>
+          <keyword>GFS</keyword>
+          <keyword>NAM</keyword>
+          <keyword>RAP</keyword>
+        </metadata>
+
+      <!--  Files  -->
+
+
+      <datasetScan name="d@0 Files"
+                  path="files/g/d@0"
+                  location="/data/rda/data/d@0">
+         <metadata inherited="true">
+          <serviceName>all</serviceName>
+        </metadata>
+        <filter>
+            <exclude wildcard="*.html"/>
+        </filter>
+        <addDatasetSize/>
+     </datasetScan>
+
+     <!--  Aggregations  -->
+
+     <featureCollection name="d@0 GFS0p5 Degree Global Analysis Aggregation"
+                     featureType="GRIB2"
+                     harvest="true"
+                     path="aggregations/g/d@0/9">
+         <metadata inherited="true">
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name = "d@0 GFS0p5 Degree Global Analysis Aggregation" spec="/data/rda/data/d@0/GFS0p5/**/.*grib2$" 
+         dateFormatMark="yyyy#/GFS_Global_0p5deg_#"
+                           timePartition="directory" />
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+
+  </dataset>
+
+</catalog>

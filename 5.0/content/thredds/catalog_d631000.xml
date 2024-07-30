@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="THREDDS Server Default Catalog : You must change this to fit your server!"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="d@0 NCAR RDA - Arctic System Reanalysis (ASR) Project">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" 
+                         xlink:title="NCAR RDA - Arctic System Reanalysis (ASR) Project (d@0)"/>   
+          <documentation type="summary">   
+The Arctic System Reanalysis (ASR) is produced using a high-resolution version of the Polar Weather Forecast Model (PWRF) and the WRF-VAR and High Resolution Land Data Assimilation (HRLDAS) systems that have been optimized for the Arctic. A low-resolution (30km) data set which spans 2000-2010 was released in May 2012 and is available through the NCAR CISL RDA. There are 17 surface and 7 upper air analysis variables, 69 surface and 13 upper air forecast variables, and 3 soil variables. The final products will span 2000-2011 and will be at 10km resolution.
+          </documentation> 
+          <documentation xlink:href="http://polarmet.osu.edu/ASR/" xlink:title="The Arctic System Reanalysis (ASR)" />   
+          <creator>   
+            <name vocabulary="DIF">OH-STATE/BPRC</name>   
+            <contact url="http://polarmet.osu.edu/ASR/" email="bromwich.1@osu.edu" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>Numerical Weather Prediction</keyword>   
+          <keyword>NCEP</keyword>   
+          <keyword>Model data</keyword>   
+
+
+        </metadata>
+
+
+      <!--  Files -->
+
+     <datasetScan name="d@0 Files" 
+                  path="files/g/d@0" 
+                  location="/data/rda/data/d@0">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+
+     <!-- Aggregations -->
+
+<!-- Remove NCML based aggregations from service
+     <dataset name="d@0 Aggregations">
+
+         <dataset name="ASR 30 km 3d pressure level analysis"
+                  urlPath="aggregations/g/d@0/6/best"
+                  ID="aggregations/g/d@0/6/best"
+                  harvest="true">
+             <metadata inherited="true">
+                 <serviceName>all</serviceName>
+             </metadata>
+            <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+              <aggregation dimName="Time" type="joinExisting">
+                <scan location="/data/rda/data/d@0/asr30fnl.anl.3D/" suffix=".nc" subdirs="false"/>
+              </aggregation>
+              <variable name="PRES" shape="num_metgrid_levels" type="float">
+                <attribute name="units" value="Pa" />
+                <attribute name="long_name" value="Isobaric levels" />
+                <attribute name="positive" value="down" />
+                <attribute name="_CoordinateAxisType" value="Pressure" />
+                <attribute name="_CoordinateAliasForDimension" value="num_metgrid_levels" />
+                <attribute name="_CoordinateZisPositive" value="down" />
+              </variable>
+            </netcdf>
+          </dataset>
+       
+         <dataset name="ASR 30 km 2d surface analysis"
+                  urlPath="aggregations/g/d@0/9/best"
+                  ID="aggregations/g/d@0/9/best"
+                  harvest="true">
+             <metadata inherited="true">
+                 <serviceName>all</serviceName>
+             </metadata>
+            <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+              <aggregation dimName="Time" type="joinExisting">
+                <scan location="/data/rda/data/d@0/asr30fnl.anl.2d/" suffix=".nc" subdirs="false"/>
+              </aggregation>
+              <variable name="ZS" shape="soil_layers_stag" type="float">
+                <attribute name="units" value="m" />
+                <attribute name="long_name" value="DEPTHS OF CENTERS OF SOIL LAYERS" />
+                <attribute name="positive" value="down" />
+                <attribute name="_CoordinateAxisType" value="GeoZ" />
+                <attribute name="_CoordinateAliasForDimension" value="soil_layers_stag" />
+                <attribute name="_CoordinateZisPositive" value="down" />
+              </variable>
+       
+            </netcdf>
+          </dataset>
+       
+       </dataset>
+-->
+   </dataset>
+
+</catalog>

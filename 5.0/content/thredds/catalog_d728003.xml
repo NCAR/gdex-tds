@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="d@3 GPCP Version 1.2 One-Degree Daily Precipitation Data Set"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="d@3 GPCP Version 1.2 One-Degree Daily Precipitation Data Set">
+        <metadata inherited="true">
+          <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/" 
+                         xlink:title="NCAR RDA - GPCP Version 1.2 One-Degree Daily Precipitation Data Set (d@3)"/>   
+          <documentation type="summary">   
+This dataset contains Version 1.2 of the Global Precipitation Climatology Project (GPCP) daily precipitation estimates. The data are daily analyses defined on a global 1.0 degree by 1.0 degree longitude-latitude grid and cover the period October 1996 to (delayed) present.
+
+Please note the original binary data produced at NASA Goddard Space Flight Center were written using the big endian representation of unformatted binary words. Users reading this data on little endian platforms, therefore, are required to byte swap the data.
+
+This data set is a companion to the GPCP Version 2.2 Combined Precipitation Data Set (available in RDA dataset d@2), which contains monthly precipitation estimates at 2.5 degree by 2.5 degree longitude-latitude resolution. The daily, one-degree data provided here meets the needs of users who require precipitation estimates at finer space and time scales.
+
+Request to users from the data authors: The GPCP datasets are developed and maintained with international cooperation and are used by the worldwide scientific community. To better understand the evolving requirements across the GPCP user community and to increase the utility of the GPCP product suite, the dataset producers request that a citation be provided for each publication that uses the GPCP products. Please email the citation to george.j.huffman@nasa.gov or david.t.bolvin@nasa.gov. Your help and cooperation will provide valuable information for making future enhancements to the GPCP product suite.
+          </documentation> 
+          <documentation xlink:href="http://precip.gsfc.nasa.gov/" xlink:title="NASA GSFC MAPB Precipitation Analysis page" />   
+          <creator>   
+            <name vocabulary="DIF">NASA/GSFC/SED/ESD/LA/MAPB</name>   
+            <contact url="http://precip.gsfc.nasa.gov/" email="david.t.bolvin@nasa.gov" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>GPCP</keyword>   
+          <keyword>NASA</keyword>   
+          <keyword>GSFC</keyword>   
+          <keyword>Precipitation</keyword>
+          <keyword>Precipitation Analysis</keyword>
+
+        </metadata>
+
+      <!--  Files -->
+
+     <datasetScan name="d@3 Files" 
+                  path="files/g/d@3" 
+                  location="/data/rda/data/d@3/p1d/netcdf">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+             <exclude wildcard="psg" atomic="false" collection="true"/>
+             <exclude wildcard="esg" atomic="false" collection="true"/>
+             <exclude wildcard="clim" atomic="false" collection="true"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+ </dataset>
+</catalog>

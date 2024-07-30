@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Multi-decadal Convection-permitting Simulation of Current Climate over South America using WRF" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Multi-decadal Convection-permitting Simulation of Current Climate over South America using WRF">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - Multi-decadal Convection-permitting Simulation of Current Climate over South America using WRF(d@0)" />
+      <documentation type="summary">A high resolution convection-permitting climate change simulation was performed at 4 km grid spacing covering the entire continent of South America. The simulation was performed using Weather Research Forecasting (WRF) model. This dataset is from a 22-year simulation
+    representing the current climate between January 2001 and January 2022. ERA5 data was used
+    to initialize the model and force boundary every 3 hours. This high resolution simulation
+    allowed for much improved representation of topography, convection, and orographic
+    precipitation and snowpack, resulting in a unique dataset that can be used to study the hydroclimate processes in South America.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/HAP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="616.0 Files" path="files/g/d@0" location="/data/rda/data/d@0/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

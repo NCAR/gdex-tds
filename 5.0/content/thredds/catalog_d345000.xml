@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CAM6 Data Assimilation Research Testbed (DART) Reanalysis" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CAM6 Data Assimilation Research Testbed (DART) Reanalysis">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - CAM6 Data Assimilation Research Testbed (DART) Reanalysis(d@0)" />
+      <documentation type="summary">These CAM6 Data Assimilation Research Testbed (DART) Reanalysis data products are designed to facilitate a broad variety of research using NCAR's CESM2 models, ranging from model evaluation to (ensemble) hindcasting, data assimilation experiments, and sensitivity studies. They come from an 80 member ensemble reanalysis of the global troposphere and stratosphere using DART and CAM6 from CESM2.1. The data products represent the actual states of the atmosphere during 2 recent decades at a 1 degree horizontal resolution and 6 hourly frequency. Each ensemble member is an equally likely description of the atmosphere, and is also consistent with dynamics and physics of CAM6. Visit DART Reanalysis for details.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/DAReS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d@0/" name="345.0 Files" path="files/g/d@0">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

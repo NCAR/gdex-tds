@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <!--<dataFormat>NetCDF</dataFormat>-->
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d@1/" xlink:title="NCAR RDA - ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)(d@1)" />
+      <documentation type="summary">After many years of research and technical preparation, the production of a new ECMWF climate  reanalysis to replace ERA-Interim is in progress. ERA5 is the fifth generation of ECMWF atmospheric reanalyses of the global climate, which started with the FGGE reanalyses produced in the 1980s, followed by ERA-15, ERA-40 and most recently ERA-Interim. ERA5 will cover the period January 1950 to near real time.
+    
+    ERA5 is produced using high-resolution forecasts (HRES) at 31 kilometer resolution (one fourth the spatial resolution of the operational model) and a 62 kilometer resolution ten member 4D-Var ensemble of data assimilation (EDA) in CY41r2 of ECMWF's Integrated Forecast System (IFS) with 137 hybrid sigma-pressure (model) levels in the vertical, up to a top level of 0.01 hPa. Atmospheric data on these levels are interpolated to 37 pressure levels (the same levels as in ERA-Interim). Surface or single level data are also available, containing 2D parameters such as precipitation, 2 meter temperature, top of atmosphere radiation and vertical integrals over the entire atmosphere. The IFS is coupled to a soil model, the parameters of which are also designated as surface parameters, and an ocean wave model. Generally, the data is available at an hourly frequency and consists of analyses and short (12 hour) forecasts, initialized twice daily from analyses at 06 and 18 UTC. Most analyses parameters are also available from the forecasts. There are a number of forecast parameters, e.g. mean rates and accumulations, that are not available from the analyses.
+    
+    Improvements to ERA5, compared to ERA-Interim, include use of HadISST.2, reprocessed
+    ECMWF climate data records (CDR), and implementation of RTTOV11 radiative transfer. Variational bias corrections have not only been applied to satellite radiances, but also ozone retrievals,  aircraft observations, surface pressure, and radiosonde profiles.</documentation>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+      </publisher>
+      <keyword>ERA5</keyword>
+      <keyword>ECWMF ERA5 Reanalysis</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d@1/" name="633.1 GRIB Files" path="files/g/d@1_grb">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.nc" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+    <datasetScan location="/data/rda/data/d@1/" name="633.1 NetCDF Files" path="files/g/d@1_nc">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.grb" />
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+
+     <!--  Aggregations  -->
+     <dataset name="d@1 Dataset Aggregations">
+     
+     <featureCollection name="d@1 e5.moda.an.pl Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/d@1/1">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="d@1 e5.moda.an.pl Grib1" spec="/data/rda/data/d@1/e5.moda.an.pl/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.an.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+ 
+     <featureCollection name="d@1 e5.moda.an.sfc Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/d@1/2">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="d@1 e5.moda.an.sfc Grib1" spec="/data/rda/data/d@1/e5.moda.an.sfc/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.an.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+   
+     <featureCollection name="d@1 e5.moda.an.vinteg Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/d@1/3">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="d@1 e5.moda.an.vinteg Grib1" spec="/data/rda/data/d@1/e5.moda.an.vinteg/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.an.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+<!--
+     <featureCollection name="d@1 e5.moda.fc.sfc.accumu Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/d@1/4">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="d@1 e5.moda.fc.sfc.accumu Grib1" spec="/data/rda/data/d@1/e5.moda.fc.sfc.accumu/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.fc.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+     <featureCollection name="d@1 e5.moda.fc.sfc.instan Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/d@1/5">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="d@1 e5.moda.fc.sfc.instan Grib1" spec="/data/rda/data/d@1/e5.moda.fc.sfc.instan/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.fc.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+     <featureCollection name="d@1 e5.moda.fc.sfc.meanflux Aggregation"
+                     featureType="GRIB1"
+                     harvest="true"
+                     path="aggregations/g/d@1/6">
+         <metadata inherited="true">
+          <dataFormat>GRIB-1</dataFormat>
+          <serviceName>all</serviceName>
+        </metadata>
+
+         <collection name="d@1 e5.moda.fc.sfc.meanflux Grib1" spec="/data/rda/data/d@1/e5.moda.fc.sfc.meanflux/**/.*.grb$" 
+                           dateFormatMark="yyyy#/e5.moda.fc.#"
+		       	timePartition="directory" />
+    
+         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+         <gribConfig>
+           <option name="runtimeCoordinate" value="union" />
+        </gribConfig>
+     </featureCollection>
+-->
+ </dataset>
+
+</dataset>
+
+</catalog>
+

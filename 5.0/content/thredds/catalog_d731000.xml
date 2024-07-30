@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07(d@0)" />
+      <documentation type="summary">
+    This dataset contains Version 07 of the Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG Level 3 "Final Run" precipitation analysis at 0.1 degree, half-hour resolution.
+    
+    
+    From the official GPM IMERG site at NASA GES DISC: 
+    The Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG is a NASA product estimating global surface precipitation rates at a high resolution of 0.1 degree every half-hour beginning 2000. It is part of the joint NASA-JAXA Global Precipitation Measurement (GPM) mission, using the GPM Core Observatory satellite as the standard to combine precipitation observations from an international constellation of satellites using advanced techniques. IMERG can be used for global-scale applications as well as over regions with sparse or no reliable surface observations. The fine spatial and temporal resolution of IMERG data allows them to be accumulated to the scale of the application for increased skill. IMERG has three Runs with varying latencies in response to a range of application needs: rapid-response applications (Early Run, 4-hour latency), same/next-day applications (Late Run, 14-hour latency), and post-real-time research (Final Run, 3.5-month latency). While IMERG strives for consistency and accuracy, satellite estimates of precipitation are expected to have lower skill over frozen surfaces, complex terrain, and coastal zones. As well, the changing GPM satellite constellation over time may introduce artifacts that affect studies focusing on multi-year changes.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">NASA/GSFC/SED/ESD/ESISL/GESDISC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="731.0 Files" path="files/g/d@0" location="/data/rda/data/d@0/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
