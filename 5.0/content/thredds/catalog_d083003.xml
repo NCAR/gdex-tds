@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="CISL Research Data Archive Dataset d@4"
+<catalog name="CISL Research Data Archive Dataset d084004"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <dataset name="d@3 NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Grids">
+    <dataset name="d083003 NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Grids">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-2</dataFormat>
           <dataType>GRID</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/"
-                         xlink:title="NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Gridss (d@3)"/>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d083003/"
+                         xlink:title="NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Gridss (d083003)"/>
           <documentation type="summary">
 These NCEP FNL (Final) operational global analysis and forecast data are on 0.25-degree by 0.25-degree grids prepared operationally every six hours. This product is from the Global Data Assimilation System (GDAS), which continuously collects observational data from the Global Telecommunications System (GTS), and other sources, for many analyses. The FNLs are made with the same model which NCEP uses in the Global Forecast System (GFS), but the FNLs are prepared about an hour or so after the GFS is initialized. The FNLs are delayed so that more observational data can be used. The GFS is run earlier in support of time critical forecast needs, and uses the FNL from the previous 6 hour cycle as part of its initialization.
           </documentation>
@@ -39,9 +39,9 @@ The archive time series is continuously extended to a near-current date. It is n
       <!--  Files  -->
 
 
-      <datasetScan name="d@3 Files"
-                  path="files/g/d@3"
-                  location="/data/rda/data/d@3">
+      <datasetScan name="d083003 Files"
+                  path="files/g/d083003"
+                  location="/data/rda/data/d083003">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -53,15 +53,15 @@ The archive time series is continuously extended to a near-current date. It is n
 
      <!--  Aggregations  -->
 
-     <featureCollection name="d@3 Aggregation"
+     <featureCollection name="d083003 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d@3/1">
+                     path="aggregations/g/d083003/1">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "d@3" spec="/data/rda/data/d@3/**/gdas1.fnl0p25\.#yyyMMdd#.*grib2$" 
+         <collection name = "d083003" spec="/data/rda/data/d083003/**/gdas1.fnl0p25\.#yyyMMdd#.*grib2$" 
          dateFormatMark="yyyyMM#/gdas1.fnl0p25#"
                            timePartition="1 year" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 NCAR RDA - NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis"
+<catalog name="d604000 NCAR RDA - NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCAR RDA - NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis">
+    <dataset name="d604000 NCAR RDA - NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis">
         <metadata inherited="true">
             <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Notify Grace Peng (grace@ucar.edu, 303-497-1218) of technical reports and submitted publications that use the NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis dataset.</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" 
-                         xlink:title="NCAR RDA - NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis (d@0)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d604000/" 
+                         xlink:title="NCAR RDA - NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis (d604000)"/>   
           <documentation type="summary">   
 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis dataset is a dynamically-downscaled dataset with high temporal and spatial resolution that was created using NCAR's CFDDA system. At the core of the CFDDA system is the 5th generation Pennsylvania State University / NCAR mesoscale model (MM5).
           </documentation>
@@ -50,9 +50,9 @@ The dataset contains three-dimensional hourly analyses in netCDF format for the 
 
       <!--  Files -->
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0">
+     <datasetScan name="d604000 Files" 
+                  path="files/g/d604000" 
+                  location="/data/rda/data/d604000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

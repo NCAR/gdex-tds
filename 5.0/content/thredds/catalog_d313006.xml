@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@6/" xlink:title="NCAR RDA - Whole Atmosphere Community Climate Model (WACCM) Model Output(d@6)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d313006/" xlink:title="NCAR RDA - Whole Atmosphere Community Climate Model (WACCM) Model Output(d313006)" />
       <documentation type="summary">The Whole Atmosphere Community Climate Model (WACCM) is a
     comprehensive numerical model, spanning the range of altitude from the
     Earth's surface to about 500 km to 700 km altitude. These model output files are used by
@@ -23,7 +23,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d@6/" name="313.6 Files" path="files/g/d@6">
+    <datasetScan location="/data/rda/data/d313006/" name="313.6 Files" path="files/g/d313006">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

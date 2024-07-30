@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@3 NCAR RDA - MERRA2 Global Atmosphere Forcing Data"
+<catalog name="d313003 NCAR RDA - MERRA2 Global Atmosphere Forcing Data"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@3 NCAR RDA - MERRA2 Global Atmosphere Forcing Data">
+    <dataset name="d313003 NCAR RDA - MERRA2 Global Atmosphere Forcing Data">
         <metadata inherited="true">
             <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/" 
-                         xlink:title="NCAR RDA - MERRA2 Global Atmosphere Forcing Data (d@3)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d313003/" 
+                         xlink:title="NCAR RDA - MERRA2 Global Atmosphere Forcing Data (d313003)"/>   
           <documentation type="summary">   
 Atmospheric Forcing data, regridded from the Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2) data and prepared as meteorological variables to run CESM and WRF simulations.
           </documentation> 
@@ -40,9 +40,9 @@ Atmospheric Forcing data, regridded from the Modern-Era Retrospective analysis f
 
       <!--  Files -->
 
-     <datasetScan name="d@3 Files" 
-                  path="files/g/d@3" 
-                  location="/data/rda/data/d@3">
+     <datasetScan name="d313003 Files" 
+                  path="files/g/d313003" 
+                  location="/data/rda/data/d313003">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

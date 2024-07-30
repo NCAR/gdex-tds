@@ -6,14 +6,14 @@
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCAR RDA - ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)">
+    <dataset name="d626000 NCAR RDA - ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)">
         <metadata inherited="true">
             <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/"
-                         xlink:title="ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century) (d@0)"/>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d626000/"
+                         xlink:title="ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century) (d626000)"/>
           <documentation type="summary">
           ERA-20C is ECMWF's first atmospheric reanalysis of the 20th century, from 1900-2010. It assimilates observations of surface pressure and surface marine winds only. It is an outcome of the ERA-CLIM project. ERA-20C was produced with IFS version CY38r1 and the same surface and atmospheric forcings as the final version of the atmospheric model integration ERA-20CM. A coupled atmosphere land surface and ocean wave model is used to reanalyze the weather, by assimilating surface observations. The ERA-20C products describe the spatial-temporal evolution of the atmosphere (on 91 vertical levels, between the surface and 0.01 hPa), the land-surface (on 4 soil layers), and the ocean waves (on 25 frequencies and 12 directions).
 
@@ -49,9 +49,9 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <!--  Files  -->
 
 
-      <datasetScan name="d@0 Files"
-                  path="files/g/d@0"
-                  location="/data/rda/data/d@0">
+      <datasetScan name="d626000 Files"
+                  path="files/g/d626000"
+                  location="/data/rda/data/d626000">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -65,17 +65,17 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
 
      <!--  Aggregations  -->
 
-    <dataset name="d@0 Aggregation">
+    <dataset name="d626000 Aggregation">
     
       <featureCollection name="ERA 20th Century 3 hourly atmospheric model analysis"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d@0/5">
+                      path="aggregations/g/d626000/5">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric model analysis" spec="/data/rda/data/d@0/e20c.oper.an.ml.3hr/**/.*grib2$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric model analysis" spec="/data/rda/data/d626000/e20c.oper.an.ml.3hr/**/.*grib2$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -84,12 +84,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isobaric analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/6">
+                      path="aggregations/g/d626000/6">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric analysis" spec="/data/rda/data/d@0/e20c.oper.an.pl.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric analysis" spec="/data/rda/data/d626000/e20c.oper.an.pl.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -98,12 +98,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isentropic analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/7">
+                      path="aggregations/g/d626000/7">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric isentropic analysis" spec="/data/rda/data/d@0/e20c.oper.an.pt.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric isentropic analysis" spec="/data/rda/data/d626000/e20c.oper.an.pt.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -112,12 +112,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric 2 pvu analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/8">
+                      path="aggregations/g/d626000/8">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric 2 pvu analysis" spec="/data/rda/data/d@0/e20c.oper.an.pv.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric 2 pvu analysis" spec="/data/rda/data/d626000/e20c.oper.an.pv.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test" />
@@ -126,12 +126,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric surface analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/9">
+                      path="aggregations/g/d626000/9">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric surface analysis" spec="/data/rda/data/d@0/e20c.oper.an.sfc.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric surface analysis" spec="/data/rda/data/d626000/e20c.oper.an.sfc.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -140,12 +140,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 6 hourly atmospheric surface analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/10">
+                      path="aggregations/g/d626000/10">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 6 hourly atmospheric surface analysis" spec="/data/rda/data/d@0/e20c.oper.an.sfc.6hr/**/.*grb$"
+          <collection name = "ERA 20th Century 6 hourly atmospheric surface analysis" spec="/data/rda/data/d626000/e20c.oper.an.sfc.6hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -154,12 +154,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric model forecast"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d@0/13">
+                      path="aggregations/g/d626000/13">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric model forecast" spec="/data/rda/data/d@0/e20c.oper.fc.ml.3hr/**/.*grib2$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric model forecast" spec="/data/rda/data/d626000/e20c.oper.fc.ml.3hr/**/.*grib2$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -168,12 +168,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isobaric forecast"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/14">
+                      path="aggregations/g/d626000/14">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
            
-          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric forecast" spec="/data/rda/data/d@0/e20c.oper.fc.pl.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric isobaric forecast" spec="/data/rda/data/d626000/e20c.oper.fc.pl.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -182,12 +182,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric surface forecast"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/15">
+                      path="aggregations/g/d626000/15">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly atmospheric surface forecast" spec="/data/rda/data/d@0/e20c.oper.fc.sfc.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly atmospheric surface forecast" spec="/data/rda/data/d626000/e20c.oper.fc.sfc.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -197,12 +197,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century atmospheric invariant fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/16">
+                      path="aggregations/g/d626000/16">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century atmospheric invariant fields" spec="/data/rda/data/d@0/e20c.oper.invariant/1900_2010/.*grb$" timePartition="directory" />
+          <collection name = "ERA 20th Century atmospheric invariant fields" spec="/data/rda/data/d626000/e20c.oper.invariant/1900_2010/.*grb$" timePartition="directory" />
           <tdm rewrite="test"  />
       </featureCollection>
     
@@ -210,12 +210,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly ocean wave analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/17">
+                      path="aggregations/g/d626000/17">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century 3 hourly ocean wave analysis" spec="/data/rda/data/d@0/e20c.owav.an.sfc.3hr/**/.*grb$"
+          <collection name = "ERA 20th Century 3 hourly ocean wave analysis" spec="/data/rda/data/d626000/e20c.owav.an.sfc.3hr/**/.*grb$"
                       dateFormatMark="#regn80#...yyyyMMddHH"
                       timePartition="year" />
           <tdm rewrite="test"  />
@@ -224,12 +224,12 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century ocean wave invariant fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d@0/18">
+                      path="aggregations/g/d626000/18">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
 
-          <collection name = "ERA 20th Century ocean wave invariant fields" spec="/data/rda/data/d@0/e20c.owav.invariant/1900_2010/.*grb$" timePartition="directory" />
+          <collection name = "ERA 20th Century ocean wave invariant fields" spec="/data/rda/data/d626000/e20c.owav.invariant/1900_2010/.*grb$" timePartition="directory" />
           <tdm rewrite="test"  />
       </featureCollection>
 -->

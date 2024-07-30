@@ -17,9 +17,9 @@
       <!--  Files -->
 
 
-      <datasetScan name="d@2" 
-                  path="files/d@2" 
-                  location="/data/data/rda/data/d@2">
+      <datasetScan name="d083002" 
+                  path="files/d083002" 
+                  location="/data/data/rda/data/d083002">
          <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
@@ -32,8 +32,8 @@ The analyses are available on the surface, at 26 mandatory (and other pressure) 
 
 The archive time series is continuously extended to a near-current date. It is not maintained in real-time.
           </documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@2/"
-                         xlink:title="NCAR RDA NCEP FNL Operational Model Global Tropospheric Analyses (d@2)"/>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d083002/"
+                         xlink:title="NCAR RDA NCEP FNL Operational Model Global Tropospheric Analyses (d083002)"/>
           <creator>
             <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
             <contact url="http://www.ncep.noaa.gov/" email="http://www.ncep.noaa.gov/mail_liaison.shtml" />
@@ -56,9 +56,9 @@ The archive time series is continuously extended to a near-current date. It is n
         </filter>
         <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@1" 
-                  path="files/d@1" 
-                  location="/data/data/rda/data/d@1">
+     <datasetScan name="d093001" 
+                  path="files/d093001" 
+                  location="/data/data/rda/data/d093001">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -67,9 +67,9 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@1" 
-                  path="files/d@1" 
-                  location="/data/data/rda/data/d@1">
+     <datasetScan name="d094001" 
+                  path="files/d094001" 
+                  location="/data/data/rda/data/d094001">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -78,14 +78,14 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@1" 
-                  path="files/d@1" 
-                  location="/data/data/rda/data/d@1">
+     <datasetScan name="d131001" 
+                  path="files/d131001" 
+                  location="/data/data/rda/data/d131001">
          <metadata inherited="true">
          <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>
-          <documentation type="Rights">Freely Available</documentation>          <documentation xlink:href="http://rda.ucar.edu/datasets/d@1/" xlink:title="NCAR RDA - NOAA-CIRES Twentieth Century Global Reanalysis Version II (d@1)" />
+          <documentation type="Rights">Freely Available</documentation>          <documentation xlink:href="http://rda.ucar.edu/datasets/d131001/" xlink:title="NCAR RDA - NOAA-CIRES Twentieth Century Global Reanalysis Version II (d131001)" />
           <documentation type="summary">The Twentieth Century Reanalysis Project, supported by the Earth System Research Laboratory Physical Sciences Division from NOAA and the University of Colorado CIRES/Climate Diagnostics Center, is an effort to produce a global reanalysis dataset spanning a portion of the nineteenth century and the entire twentieth century (1871 - near present), assimilating only surface observations of synoptic pressure, monthly sea surface temperature and sea ice distribution. Products include 6-hourly ensemble mean and spread analysis fields on a 2x2 degree global lat/lon grid, and 3 and 6-hourly ensemble mean and spread forecast (first guess) fields on a global Gaussian T-62 grid. Fields are accessible in yearly time series (1 file/parameter) and monthly synoptic time (all parameters/synoptic hour) files. Ensemble grids, spectral coefficients, and other information will available by offline request in the future.
           </documentation>
           <contributor role="computation">National Energy Research Scientific Computing Center managed by Lawrence Berkeley National Laboratory and of the Oak Ridge Leadership Computing Facility at Oak Ridge National Laboratory
@@ -107,9 +107,9 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@6" 
-                  path="files/d@6" 
-                  location="/data/data/rda/data/d@6">
+     <datasetScan name="d277006" 
+                  path="files/d277006" 
+                  location="/data/data/rda/data/d277006">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -118,9 +118,9 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@3" 
-                  path="files/d@3" 
-                  location="/data/data/rda/data/d@3">
+     <datasetScan name="d285003" 
+                  path="files/d285003" 
+                  location="/data/data/rda/data/d285003">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -129,9 +129,9 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@0" 
-                  path="files/d@0" 
-                  location="/data/data/rda/data/d@0">
+     <datasetScan name="d316000" 
+                  path="files/d316000" 
+                  location="/data/data/rda/data/d316000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -140,9 +140,9 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@0" 
-                  path="files/d@0" 
-                  location="/data/data/rda/data/d@0">
+     <datasetScan name="d502000" 
+                  path="files/d502000" 
+                  location="/data/data/rda/data/d502000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -151,15 +151,15 @@ The archive time series is continuously extended to a near-current date. It is n
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@0" 
-                  path="files/d@0" 
-                  location="/data/data/rda/data/d@0">
+     <datasetScan name="d601000" 
+                  path="files/d601000" 
+                  location="/data/data/rda/data/d601000">
          <metadata inherited="true">
          <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>
           <dataType>GRID</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/index.html" xlink:title="NCAR Nested Regional Climate Model (NRCM) (d@0)" />
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d601000/index.html" xlink:title="NCAR Nested Regional Climate Model (NRCM) (d601000)" />
           <documentation type="summary">
 This dataset contains climate model output data from the NCAR's Nested Regional Climate Model (NRCM). The NRCM combines the strengths of NCAR's Weather Research and Forecasting (WRF) model and NCAR's Community Climate System Model (CCSM) into an instrument that will allow for fundamental progress on the understanding and prediction of regional climate variability and change. In particular, embedding WRF within CCSM will allow scientists to resolve processes that occur at the regional scale, as well as the influence of those processes on the large-scale climate, thereby improving the fidelity of climate change simulations and their utility for local and regional planning.
 The output fields in this dataset consist of two- and three-dimensional arrays at three- and six-hourly intervals. A basic set of 3-D parameters is provided on model pressure levels: relative humidity, temperature, wind components, geopotential height, and potential vorticity. Additional 2-D parameters are provided at the model surface or near-surface level, and potential vorticity arrays are also provided on the 320 K and 345 K isentropic surfaces.
@@ -180,9 +180,9 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          <addDatasetSize/>
      </datasetScan>
 
-     <datasetScan name="d@1" 
-                  path="files/d@1" 
-                  location="/data/data/rda/data/d@1">
+     <datasetScan name="d629001" 
+                  path="files/d629001" 
+                  location="/data/data/rda/data/d629001">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -191,9 +191,9 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@2" 
-                  path="files/d@2" 
-                  location="/data/data/rda/data/d@2">
+     <datasetScan name="d629002" 
+                  path="files/d629002" 
+                  location="/data/data/rda/data/d629002">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -202,9 +202,9 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@3" 
-                  path="files/d@3" 
-                  location="/data/data/rda/data/d@3">
+     <datasetScan name="d629003" 
+                  path="files/d629003" 
+                  location="/data/data/rda/data/d629003">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -213,9 +213,9 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@5" 
-                  path="files/d@5" 
-                  location="/data/data/rda/data/d@5">
+     <datasetScan name="d629005" 
+                  path="files/d629005" 
+                  location="/data/data/rda/data/d629005">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -224,9 +224,9 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@6" 
-                  path="files/d@6" 
-                  location="/data/data/rda/data/d@6">
+     <datasetScan name="d629006" 
+                  path="files/d629006" 
+                  location="/data/data/rda/data/d629006">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -235,9 +235,9 @@ Data are available as monthly time series files in NetCDF. The data currently pr
          </filter>
          <addDatasetSize/>
      </datasetScan>
-     <datasetScan name="d@0" 
-                  path="files/d@0" 
-                  location="/data/data/rda/data/d@0">
+     <datasetScan name="d631000" 
+                  path="files/d631000" 
+                  location="/data/data/rda/data/d631000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -278,18 +278,18 @@ Data are available as monthly time series files in NetCDF. The data currently pr
       <featureCollection name="Model Levels"
                          featureType="GRIB"
                          harvest="true"
-                         path="aggregations/d@0/5">
+                         path="aggregations/d629000/5">
     
         <metadata inherited="true">
              <serviceName>all</serviceName>
              <dataFormat>GRIB-1</dataFormat>
                <documentation type="summary">
-               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@0 for original RDA Dataset Page]
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d629000 for original RDA Dataset Page]
               </documentation>
         </metadata>
     
-        <collection name="d@0_an_ml" 
-                    spec="/data/rda/data/d@0/yt.oper.an.ml/**/.*400\.yt\.oper\.an\.ml$"
+        <collection name="d629000_an_ml" 
+                    spec="/data/rda/data/d629000/yt.oper.an.ml/**/.*400\.yt\.oper\.an\.ml$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -304,18 +304,18 @@ Data are available as monthly time series files in NetCDF. The data currently pr
       <featureCollection name="Pressure Levels"
                          featureType="GRIB"
                          harvest="true"
-                         path="aggregations/d@0/6">
+                         path="aggregations/d629000/6">
     
         <metadata inherited="true">
              <serviceName>all</serviceName>
              <dataFormat>GRIB-1</dataFormat>
                <documentation type="summary">
-               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@0 for original RDA Dataset Page]
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d629000 for original RDA Dataset Page]
               </documentation>
         </metadata>
     
-        <collection name="d@0_an_pl" 
-                    spec="/data/rda/data/d@0/yt.oper.an.pl/**/.*400\.yt\.oper\.an\.pl$"
+        <collection name="d629000_an_pl" 
+                    spec="/data/rda/data/d629000/yt.oper.an.pl/**/.*400\.yt\.oper\.an\.pl$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -330,18 +330,18 @@ Data are available as monthly time series files in NetCDF. The data currently pr
       <featureCollection name="Surface"
                          featureType="GRIB"
                          harvest="true"
-                         path="aggregations/d@0/9">
+                         path="aggregations/d629000/9">
     
         <metadata inherited="true">
              <serviceName>all</serviceName>
              <dataFormat>GRIB-1</dataFormat>
                <documentation type="summary">
-               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@0 for original RDA Dataset Page]
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d629000 for original RDA Dataset Page]
               </documentation>
         </metadata>
     
-        <collection name="d@0_an_sfc" 
-                    spec="/data/rda/data/d@0/yt.oper.an.sfc/**/.*\.sfc$"
+        <collection name="d629000_an_sfc" 
+                    spec="/data/rda/data/d629000/yt.oper.an.sfc/**/.*\.sfc$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -360,18 +360,18 @@ Data are available as monthly time series files in NetCDF. The data currently pr
       <featureCollection name="Pressure Levels"
                          featureType="GRIB"
                          harvest="true"
-                         path="aggregations/d@0/14">
+                         path="aggregations/d629000/14">
     
         <metadata inherited="true">
              <serviceName>all</serviceName>
              <dataFormat>GRIB-1</dataFormat>
                <documentation type="summary">
-               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@0 for original RDA Dataset Page]
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d629000 for original RDA Dataset Page]
               </documentation>
         </metadata>
     
-        <collection name="d@0_fc_pl" 
-                    spec="/data/rda/data/d@0/yt.oper.fc.pl/**/.*400\.yt\.oper\.fc\.pl$"
+        <collection name="d629000_fc_pl" 
+                    spec="/data/rda/data/d629000/yt.oper.fc.pl/**/.*400\.yt\.oper\.fc\.pl$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">
@@ -386,18 +386,18 @@ Data are available as monthly time series files in NetCDF. The data currently pr
       <featureCollection name="Surface"
                          featureType="GRIB"
                          harvest="true"
-                         path="aggregations/d@0/15">
+                         path="aggregations/d629000/15">
     
         <metadata inherited="true">
              <serviceName>all</serviceName>
              <dataFormat>GRIB-1</dataFormat>
                <documentation type="summary">
-               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d@0 for original RDA Dataset Page]
+               [EXPERIMENTAL INTERFACE :: Please see http://rda.ucar.edu/datasets/d629000 for original RDA Dataset Page]
               </documentation>
         </metadata>
     
-        <collection name="d@0_fc_sfc" 
-                    spec="/data/rda/data/d@0/yt.oper.fc.sfc/**/.*\.sfc$"
+        <collection name="d629000_fc_sfc" 
+                    spec="/data/rda/data/d629000/yt.oper.fc.sfc/**/.*\.sfc$"
                     olderThan="0 min"/>
     
            <gribConfig datasetTypes="Best">

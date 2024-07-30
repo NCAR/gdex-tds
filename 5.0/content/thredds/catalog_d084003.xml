@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@1 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive"
+<catalog name="d084001 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <dataset name="d@1 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive">
+    <dataset name="d084001 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-2</dataFormat>
           <dataType>GRID</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/"
-                         xlink:title="NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive (d@3)"/>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d084003/"
+                         xlink:title="NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive (d084003)"/>
           <documentation type="summary">
 The NCEP operational Global Forecast System auxiliary analysis and forecast grids are on a 0.25 by 0.25 global latitude longitude grid. Grids include analysis and forecast time steps at a 3 hourly interval from 0 to 240, and a 12 hourly interval from 240 to 384. Model forecast runs occur at 00, 06, 12, and 18 UTC daily. For real-time data access please use the NCEP data server.
           </documentation>
@@ -33,9 +33,9 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
       <!--  Files  -->
 
 
-      <datasetScan name="d@3 Files"
-                  path="files/g/d@3"
-                  location="/data/rda/data/d@3">
+      <datasetScan name="d084003 Files"
+                  path="files/g/d084003"
+                  location="/data/rda/data/d084003">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -47,15 +47,15 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
 
      <!--  Aggregations  -->
 <!--
-     <featureCollection name="d@3 Aggregation"
+     <featureCollection name="d084003 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d@3/1">
+                     path="aggregations/g/d084003/1">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
 
-         <collection name = "d@3" spec="/data/rda/data/d@3/**/.*grib2$" 
+         <collection name = "d084003" spec="/data/rda/data/d084003/**/.*grib2$" 
          dateFormatMark="yyyyMMdd#/gfs.0p25b#"
                            timePartition="directory" />
          <tdm rewrite="test" rescan="0 10 1 * * ? *" />

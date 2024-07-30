@@ -6,14 +6,14 @@
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCAR RDA - NCAR/MOPITT Reanalysis">
+    <dataset name="d342000 NCAR RDA - NCAR/MOPITT Reanalysis">
         <metadata inherited="true">
             <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" 
-                         xlink:title="NCAR RDA - NCAR/MOPITT Reanalysis (d@0)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d342000/" 
+                         xlink:title="NCAR RDA - NCAR/MOPITT Reanalysis (d342000)"/>   
           <documentation type="summary">   
 This product is a reanalysis of MOPITT CO observations within the Community Atmosphere Model with Chemistry of the Community Earth System Model (CESM CAM-chem). The assimilation of MOPITT and meteorological observations was carried out using the ensemble-based Data Assimilation Research Testbed (DART).
           </documentation> 
@@ -38,9 +38,9 @@ This product is a reanalysis of MOPITT CO observations within the Community Atmo
 
       <!--  Files -->
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0">
+     <datasetScan name="d342000 Files" 
+                  path="files/g/d342000" 
+                  location="/data/rda/data/d342000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

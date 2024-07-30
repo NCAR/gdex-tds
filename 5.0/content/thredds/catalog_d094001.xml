@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@1 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products"
+<catalog name="d094001 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products"
          xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
          xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-  <dataset name="d@1 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products">
+  <dataset name="d094001 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products">
     <metadata inherited="true">
       <serviceName>all</serviceName>
       <dataFormat>GRIB-2</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@1/"
-                     xlink:title="NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products (d@1)"/>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d094001/"
+                     xlink:title="NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products (d094001)"/>
       <documentation type="summary">
         The National Centers for Environmental Prediction (NCEP) Climate Forecast System Reanalysis (CFSR) was initially completed over the 31-year period from
         1979 to 2009 and has been extended to March 2011. Selected CFSR time series products are available at 0.3, 0.5, 1.0, and 2.5 degree horizontal
@@ -43,9 +43,9 @@
     <!--  Files -->
 
 
-    <datasetScan name="d@1 Files"
-                 path="files/g/d@1"
-                 location="/data/rda/data/d@1">
+    <datasetScan name="d094001 Files"
+                 path="files/g/d094001"
+                 location="/data/rda/data/d094001">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -57,16 +57,16 @@
 
     <!-- Aggregations -->
 <!--
-    <featureCollection name="d@1 Aggregation"
+    <featureCollection name="d094001 Aggregation"
                        featureType="GRIB2"
                        harvest="true"
-                       path="aggregations/g/d@1">
+                       path="aggregations/g/d094001">
 
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="d@1" spec="/data/rda/data/d@1/**/.*.grb2$"
+      <collection name="d094001" spec="/data/rda/data/d094001/**/.*.grb2$"
                       dateFormatMark="yyyyMM#.grb2#"
                       timePartition="year" />
       <tdm rewrite="test"/>

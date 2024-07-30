@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - Dai Global Palmer Drought Severity Index (PDSI)(d@0)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d299000/" xlink:title="NCAR RDA - Dai Global Palmer Drought Severity Index (PDSI)(d299000)" />
       <documentation type="summary">
     This dataset consists of monthly Palmer Drought Severity Index (PDSI) over global land areas on a 2.5 degree grid computed using observed monthly surface air temperature and precipitation, plus other surface meteorological forcing data for the self calibrating PDSI Penman Monteith (sc_PDSI_pm) case. The PDSI can be used as a measure of surface aridity anomalies and changes on seasonal to longer time scales. It is correlated with observed soil moisture and water storage variations over land. 
     </documentation>
@@ -22,7 +22,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d@0/" name="299.0 Files" path="files/g/d@0">
+    <datasetScan location="/data/rda/data/d299000/" name="299.0 Files" path="files/g/d299000">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

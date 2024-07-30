@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@6 NCAR RDA - NCEP Global Ocean Data Assimilation System (GODAS)"
+<catalog name="d277006 NCAR RDA - NCEP Global Ocean Data Assimilation System (GODAS)"
          xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
          xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
   <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-  <dataset name="d@6 NCAR RDA - NCEP Global Ocean Data Assimilation System (GODAS)">
+  <dataset name="d277006 NCAR RDA - NCEP Global Ocean Data Assimilation System (GODAS)">
     <metadata inherited="true">
       <serviceName>all</serviceName>
       <dataFormat>GRIB-1</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@6/"
-                     xlink:title="NCAR RDA - NCEP Global Ocean Data Assimilation System (GODAS) (d@6)"/>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d277006/"
+                     xlink:title="NCAR RDA - NCEP Global Ocean Data Assimilation System (GODAS) (d277006)"/>
       <documentation type="summary">
         The National Centers for Environmental Prediction (NCEP) uses a Global Ocean Data Assimilation System (GODAS) to routinely produce monthly and pentad
         (5-day) mean global ocean gridded data. The analysis system, that was originally applied only to the tropical pacific, has evolved to use GFDL MOM.v3
@@ -41,9 +41,9 @@
     <!--  Files -->
 
 
-    <datasetScan name="d@6 Files"
-                 path="files/g/d@6"
-                 location="/data/rda/data/d@6">
+    <datasetScan name="d277006 Files"
+                 path="files/g/d277006"
+                 location="/data/rda/data/d277006">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -55,17 +55,17 @@
 
     <!-- Aggregations -->
 
-    <featureCollection name="d@6 Aggregations"
+    <featureCollection name="d277006 Aggregations"
                        featureType="GRIB1"
                        harvest="true"
-                       path="aggregations/g/d@6/1">
+                       path="aggregations/g/d277006/1">
 
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="d@6"
-                  spec="/data/rda/data/d@6/monthly/godas\.M\..*\.grb$"
+      <collection name="d277006"
+                  spec="/data/rda/data/d277006/monthly/godas\.M\..*\.grb$"
                   dateFormatMark="#godas.M.#yyyyMM"
                   timePartition="directory"/>
 

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide"
+<catalog name="d682000 NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide">
+    <dataset name="d682000 NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide">
         <metadata inherited="true">
             <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" 
-                         xlink:title="NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide (d@0)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d682000/" 
+                         xlink:title="NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide (d682000)"/>   
           <documentation type="summary">   
 Interannual variability in atmospheric carbon monoxide (CO) between 2001 and 2016 is determined from total column CO observations from the satellite instrument MOPITT. Climatological seasonal cycles in CO are subtracted from monthly averages in seven regions of the Southern Hemisphere and tropics, to produce records of CO anomalies.
           </documentation> 
@@ -37,9 +37,9 @@ Interannual variability in atmospheric carbon monoxide (CO) between 2001 and 201
 
       <!--  Files -->
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0">
+     <datasetScan name="d682000 Files" 
+                  path="files/g/d682000" 
+                  location="/data/rda/data/d682000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

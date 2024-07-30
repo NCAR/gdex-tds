@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)"
+<catalog name="d463004 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -12,13 +12,13 @@
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@4 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)">
+    <dataset name="d463004 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>
           <dataType>Point</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@4/" xlink:title="U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD) (d@4)" />
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d463004/" xlink:title="U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD) (d463004)" />
           <documentation type="summary">
 The Hadley Centre at the U.K. Met Office has created a global sub-daily dataset of several station-observed climatological variables which is derived from and is a subset of the NCDC's Integrated Surface Database. Stations were selected for inclusion into the dataset based on length of the data reporting period and the frequency with which observations were reported. The data were then passed through a suite of automated quality-control tests to remove bad data. See the HadISD web page for more details and access to previous versions of the dataset.
           </documentation>
@@ -39,9 +39,9 @@ The Hadley Centre at the U.K. Met Office has created a global sub-daily dataset 
       <!--  Files -->
 
 
-     <datasetScan name="d@4 Files" 
-                  path="files/g/d@4" 
-                  location="/data/rda/data/d@4">
+     <datasetScan name="d463004 Files" 
+                  path="files/g/d463004" 
+                  location="/data/rda/data/d463004">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>

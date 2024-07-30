@@ -7,10 +7,10 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@5/" xlink:title="NCAR RDA - ERA5 monthly mean back extension 1950-1978 (Preliminary version)(d@5)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d633005/" xlink:title="NCAR RDA - ERA5 monthly mean back extension 1950-1978 (Preliminary version)(d633005)" />
       <documentation type="summary">ECMWF has announced that the Copernicus Climate Change Service (C3S) has begun the release of the ERA5 back extension data covering the period 1950-1978 on the Climate Data Store (CDS).
     
-    Although in many other respects the quality of this dataset is quite satisfactory, the current back extension appears to suffer from tropical cyclones that are sometimes unrealistically intense. This is in contrast with the ERA5 product from 1979 onwards (also available from the CDS and RDA d@0). For more details see the article,
+    Although in many other respects the quality of this dataset is quite satisfactory, the current back extension appears to suffer from tropical cyclones that are sometimes unrealistically intense. This is in contrast with the ERA5 product from 1979 onwards (also available from the CDS and RDA d633000). For more details see the article,
     ERA5 back extension 1950-1978 (Preliminary version): tropical cyclones are too intense.
     
     For this reason the current release of the back extension is preliminary.
@@ -41,7 +41,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan name="633.5 Files" path="files/g/d@5" location="/data/rda/data/d@5/">
+    <datasetScan name="633.5 Files" path="files/g/d633005" location="/data/rda/data/d633005/">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

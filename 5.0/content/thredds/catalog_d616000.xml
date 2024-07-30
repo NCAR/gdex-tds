@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - Multi-decadal Convection-permitting Simulation of Current Climate over South America using WRF(d@0)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d616000/" xlink:title="NCAR RDA - Multi-decadal Convection-permitting Simulation of Current Climate over South America using WRF(d616000)" />
       <documentation type="summary">A high resolution convection-permitting climate change simulation was performed at 4 km grid spacing covering the entire continent of South America. The simulation was performed using Weather Research Forecasting (WRF) model. This dataset is from a 22-year simulation
     representing the current climate between January 2001 and January 2022. ERA5 data was used
     to initialize the model and force boundary every 3 hours. This high resolution simulation
@@ -24,7 +24,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan name="616.0 Files" path="files/g/d@0" location="/data/rda/data/d@0/">
+    <datasetScan name="616.0 Files" path="files/g/d616000" location="/data/rda/data/d616000/">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

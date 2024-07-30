@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07(d@0)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d731000/" xlink:title="NCAR RDA - GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07(d731000)" />
       <documentation type="summary">
     This dataset contains Version 07 of the Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG Level 3 "Final Run" precipitation analysis at 0.1 degree, half-hour resolution.
     
@@ -26,7 +26,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan name="731.0 Files" path="files/g/d@0" location="/data/rda/data/d@0/">
+    <datasetScan name="731.0 Files" path="files/g/d731000" location="/data/rda/data/d731000/">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

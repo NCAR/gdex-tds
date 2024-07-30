@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 NCAR RDA - GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data"
+<catalog name="d497000 NCAR RDA - GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCAR RDA - GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data">
+    <dataset name="d497000 NCAR RDA - GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" 
-                         xlink:title="NCAR RDA - GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data (d@0)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d497000/" 
+                         xlink:title="NCAR RDA - GPCC Full Data Daily Version 1.0: Daily Land-Surface Precipitation from Rain Gauges built on GTS based and Historic Data (d497000)"/>   
           <documentation type="summary">   
 This dataset contains the Global Precipitation Climatology Centre (GPCC) Full Data Daily Product of daily global land-surface precipitation based on data provided by national meteorological and hydrological services, global and regional data collections as well as WMO GTS data. This product contains the daily totals on a regular grid with a spatial resolution of 1.0 degree by 1.0 degree latitude by longitude. Relative precipitation anomalies at the stations are interpolated by means of ordinary block kriging and then superimposed on the GPCC Full Data Reanalysis Version 7. The temporal coverage of the dataset ranges from January 1988 until December 2013.
 This GPCC product is recommended to be used when the daily precipitation information is of highest importance, e.g. for analyses of extreme events and related statistics at daily resolution.
@@ -38,9 +38,9 @@ This GPCC product is recommended to be used when the daily precipitation informa
 
       <!--  Files -->
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0/full_data_daily_v1/">
+     <datasetScan name="d497000 Files" 
+                  path="files/g/d497000" 
+                  location="/data/rda/data/d497000/full_data_daily_v1/">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

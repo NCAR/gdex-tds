@@ -6,17 +6,17 @@
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@3 NCAR RDA - Subsurface Temperature And Salinity Analyses by Ishii et al.">
+    <dataset name="d285003 NCAR RDA - Subsurface Temperature And Salinity Analyses by Ishii et al.">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/" 
-                         xlink:title="NCAR RDA - Subsurface Temperature And Salinity Analyses by Ishii et al. (d@3)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d285003/" 
+                         xlink:title="NCAR RDA - Subsurface Temperature And Salinity Analyses by Ishii et al. (d285003)"/>   
           <documentation type="summary">  
 Monthly objectively analyzed subsurface temperature and Salinity at 16 levels in the upper 700m started from 1945 and prepared by M. Ishii et al.
-The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d@0), the Global Temperature-Salinitiy in the tropical pacific from IRD (L'institut de recherche pour le developement, France, d@1), and the Centennial in situ Observation Based Estimates (COBE) sea surface temperature. ARGO profiling buoy data have also been used in the final several years. The XBT depth bias correction is applied in the current version. 
+The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285000), the Global Temperature-Salinitiy in the tropical pacific from IRD (L'institut de recherche pour le developement, France, d279001), and the Centennial in situ Observation Based Estimates (COBE) sea surface temperature. ARGO profiling buoy data have also been used in the final several years. The XBT depth bias correction is applied in the current version. 
           </documentation> 
           <documentation xlink:href="http://atm-phys.nies.go.jp/~ism/pub/ProjD/" xlink:title="Ishii Ocean Analyses Project" />   
           <creator>   
@@ -39,9 +39,9 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d@0)
 
       <!--  Files -->
 
-     <datasetScan name="d@3 Files" 
-                  path="files/g/d@3" 
-                  location="/data/rda/data/d@3">
+     <datasetScan name="d285003 Files" 
+                  path="files/g/d285003" 
+                  location="/data/rda/data/d285003">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -53,19 +53,19 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d@0)
 
      <!-- Aggregations -->
 
-     <dataset name="d@3 (v6.9) Aggregations">
+     <dataset name="d285003 (v6.9) Aggregations">
        
          <featureCollection name="SST Analyses for V6.9, 1945-2010"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d@3/7">
+                            path="aggregations/g/d285003/7">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
            </metadata>
        
            <collection name="SST Analyses for V6.9, 1945-2010" 
-                       spec="/data/rda/data/d@3/temp6.9/temp\..*\.grb$" />
+                       spec="/data/rda/data/d285003/temp6.9/temp\..*\.grb$" />
               
               <tdm rewrite="test"/>  
          </featureCollection>
@@ -73,33 +73,33 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d@0)
          <featureCollection name="Salinity Analyses for V6.9, 1945-2010"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d@3/8">
+                            path="aggregations/g/d285003/8">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
            </metadata>
        
            <collection name="Salinity Analyses for V6.9, 1945-2010" 
-                       spec="/data/rda/data/d@3/sal6.9/sal\..*\.grb$" />
+                       spec="/data/rda/data/d285003/sal6.9/sal\..*\.grb$" />
 
               <tdm rewrite="test"/> 
          </featureCollection>
        
      </dataset>
  
-     <dataset name="d@3 (v6.12) Aggregations">
+     <dataset name="d285003 (v6.12) Aggregations">
        
          <featureCollection name="Subsurface Temperature Analyses for V6.12, 1945-2011"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d@3/9">
+                            path="aggregations/g/d285003/9">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
            </metadata>
        
            <collection name="Subsurface Temperature Analyses for V6.12, 1945-2011" 
-                       spec="/data/rda/data/d@3/temp6.12/temp\..*\.grb$" />
+                       spec="/data/rda/data/d285003/temp6.12/temp\..*\.grb$" />
       
               <tdm rewrite="test"/>
          </featureCollection>
@@ -107,33 +107,33 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d@0)
          <featureCollection name="Subsurface Salinity Analyses for V6.12, 1945-2011"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d@3/10">
+                            path="aggregations/g/d285003/10">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
            </metadata>
        
            <collection name="Subsurface Salinity Analyses for V6.12, 1945-2011" 
-                       spec="/data/rda/data/d@3/sal6.12/sal\..*\.grb$" />
+                       spec="/data/rda/data/d285003/sal6.12/sal\..*\.grb$" />
       
               <tdm rewrite="test"/> 
          </featureCollection>
        
      </dataset>
  
-     <dataset name="d@3 (v6.13) Aggregations">
+     <dataset name="d285003 (v6.13) Aggregations">
        
          <featureCollection name="Subsurface Temperature Analyses for V6.13, 1945-2012"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d@3/11">
+                            path="aggregations/g/d285003/11">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
            </metadata>
        
            <collection name="Subsurface Temperature Analyses for V6.13, 1945-2012" 
-                       spec="/data/rda/data/d@3/temp6.13/temp\..*\.grb$" />
+                       spec="/data/rda/data/d285003/temp6.13/temp\..*\.grb$" />
               
               <tdm rewrite="test"/> 
          </featureCollection>
@@ -141,14 +141,14 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d@0)
          <featureCollection name="Subsurface Salinity Analyses for V6.13 1945-2012"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d@3/12">
+                            path="aggregations/g/d285003/12">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
            </metadata>
        
            <collection name="Subsurface Salinity Analyses for V6.13, 1945-2012" 
-                       spec="/data/rda/data/d@3/sal6.13/sal\..*\.grb$" />
+                       spec="/data/rda/data/d285003/sal6.13/sal\..*\.grb$" />
          
               <tdm rewrite="test"/> 
          </featureCollection>

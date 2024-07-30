@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - CESM1 CAM5 BGC Medium Ensemble(d@0)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d651000/" xlink:title="NCAR RDA - CESM1 CAM5 BGC Medium Ensemble(d651000)" />
       <documentation type="summary">There is growing evidence that the role internal variability plays in our confidence in future climate projections has been under-appreciated in past assessments of model projections for the coming decades. In light of this, a 15 member ensemble has been produced to complement the existing 30 member "Large Ensemble" conducted with the Community Earth System Model (CESM). In contrast to the Large Ensemble, which explored the variability in RCP8.5, our new ensemble uses the moderate mitigation scenario represented by RCP4.5. By comparing outputs from these two ensembles, we assess at what point in the future the climates conditioned on the two scenarios will begin to significantly diverge. We find in general that while internal variability is a significant component of uncertainty for periods before 2050, there is evidence of a significantly increased risk of extreme warm events in some regions as early as 2030 in RCP8.5 relative to RCP4.5. Furthermore, the period 2061-2080 sees largely separate joint distributions of annual mean temperature and precipitation in most regions for the two ensembles. Hence, in the CESM's representation of the Earth System for the latter portion of the 21st century, the range of climatic states which might be expected in the RCP8.5 scenario is significantly and detectably further removed from today's climate state than the RCP4.5 scenario even in the presence of internal variability.</documentation>
       <creator>
         <name vocabulary="DIF">UCAR/NCAR/CGD</name>
@@ -20,7 +20,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan name="651.0 Files" path="files/g/d@0" location="/data/rda/data/d@0/">
+    <datasetScan name="651.0 Files" path="files/g/d651000" location="/data/rda/data/d651000/">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

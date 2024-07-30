@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@2 NCAR RDA - ERA-Interim Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series"
+<catalog name="d627002 NCAR RDA - ERA-Interim Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@2 NCAR RDA - ERA-Interim Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series">
+    <dataset name="d627002 NCAR RDA - ERA-Interim Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@2/" 
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d627002/" 
                          xlink:title="ERA-Interim Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series"/>   
           <documentation type="summary">  
 ERA-Interim represents a major undertaking by ECMWF (European Centre for Medium-Range Weather Forecasts) to produce a reanalysis with an improved atmospheric model and assimilation system which replaces those used in ERA-40, particularly for the data-rich 1990s and 2000s, and to be continued as an ECMWF Climate Data Assimilation System (ECDAS) until superseded by a new extended reanalysis. Preliminary runs indicated that several of the inaccuracies exhibited by ERA-40 such as too-strong precipitation over oceans from the early 1990s onwards and a too-strong Brewer-Dobson circulation in the stratosphere, were eliminated or significantly reduced. Production of ERA-Interim, from 1989 onwards, began in summer of 2006. (The period 1979-1988 was prepended in 2011.)
@@ -45,9 +45,9 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
 
 
       <!--  Files -->
-     <datasetScan name="d@2 Files" 
-                  path="files/g/d@2" 
-                  location="/data/rda/data/d@2">
+     <datasetScan name="d627002 Files" 
+                  path="files/g/d627002" 
+                  location="/data/rda/data/d627002">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@9/" xlink:title="NCAR RDA - Fire Inventory from NCAR version 2 Fire Emission(d@9)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d312009/" xlink:title="NCAR RDA - Fire Inventory from NCAR version 2 Fire Emission(d312009)" />
       <documentation type="summary">The Fire INventory from NCAR (FINN) provides daily global fire emissions at high spatial resolution. The FINN model uses satellite detection of active fires (thermal anomalies) and the land cover type to determine the emission estimates. The emission estimates are based on two uses of satellite observations:
     (1) MODIS fire detection,
     (2) Both MODIS and VIIRS (Visible Infrared Imaging Radiometer Suite) active fire detection.
@@ -24,7 +24,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d@9/" name="312.9 Files" path="files/g/d@9">
+    <datasetScan location="/data/rda/data/d312009/" name="312.9 Files" path="files/g/d312009">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

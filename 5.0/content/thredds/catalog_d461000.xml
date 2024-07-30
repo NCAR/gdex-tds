@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0"
+<catalog name="d461000"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0">
+    <dataset name="d461000">
         <metadata inherited="true">
             <serviceName>all</serviceName>
 
@@ -18,10 +18,10 @@
      <!-- Aggregations -->
 
 
-     <featureCollection name="d@0_SYNOP"
+     <featureCollection name="d461000_SYNOP"
                         featureType="Station"
                         harvest="true"
-                        path="aggregations/o/d@0_SYNOP/1">
+                        path="aggregations/o/d461000_SYNOP/1">
        <metadata inherited="true">
          <serviceName>all</serviceName>
          <dataType>Station</dataType>
@@ -30,17 +30,17 @@
            Attempting the netCDF version of BUFR ADPSFC - METAR
            </documentation>
          </metadata>
-       <collection name="d@0_SYNOP" spec="/data/rda/data/d@0/ADPSFC/Category-0.1/2e112ba1\.#yyyy-MM-dd#.nc$"
+       <collection name="d461000_SYNOP" spec="/data/rda/data/d461000/ADPSFC/Category-0.1/2e112ba1\.#yyyy-MM-dd#.nc$"
                    olderThan="0 min"/>
        <pointConfig datasetTypes="cdmrFeature Files"/>
        <update startup="false" trigger="allow"/>
      </featureCollection>
 
 
-     <featureCollection name="d@0_METAR"
+     <featureCollection name="d461000_METAR"
                         featureType="Station"
                         harvest="true"
-                        path="aggregations/o/d@0_METAR/1">
+                        path="aggregations/o/d461000_METAR/1">
        <metadata inherited="true">
          <serviceName>all</serviceName>
          <dataType>Station</dataType>
@@ -49,7 +49,7 @@
            Attempting the netCDF version of BUFR ADPSFC - METAR
            </documentation>
          </metadata>
-       <collection name="d@0_METAR" spec="/data/rda/data/d@0/ADPSFC/Category-0.7/b8ac5837\.#yyyy-MM-dd#.nc$"
+       <collection name="d461000_METAR" spec="/data/rda/data/d461000/ADPSFC/Category-0.7/b8ac5837\.#yyyy-MM-dd#.nc$"
                    olderThan="0 min"/>
        <pointConfig datasetTypes="cdmrFeature Files"/>
        <update startup="false" trigger="allow"/>

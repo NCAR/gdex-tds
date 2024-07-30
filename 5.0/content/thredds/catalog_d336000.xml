@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current"
+<catalog name="d336000 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -12,14 +12,14 @@
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current">
+    <dataset name="d336000 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current">
         <metadata inherited="true">
           
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>
           <dataType>Station</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current (d@0)" />
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d336000/" xlink:title="Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current (d336000)" />
           <documentation type="summary">
 Historical Unidata Internet Data Distribution (IDD) Global Observational Data are derived from real-time Global Telecommunications System (GTS) reports distributed via the Unidata Internet Data Distribution System (IDD). Reports include surface station (SYNOP) reports at 3-hour intervals, upper air (RAOB) reports at 3-hour intervals, surface station (METAR) reports at 1-hour intervals, and marine surface (BUOY) reports at 1-hour intervals. Select variables found in all report types include pressure, temperature, wind speed, and wind direction. Data may be available at mandatory or significant levels from 1000 millibars to 1 millibar, and at surface levels. Online archives are populated daily with reports generated two days prior to the current date.
           </documentation>
@@ -40,9 +40,9 @@ Historical Unidata Internet Data Distribution (IDD) Global Observational Data ar
       <!--  Files -->
 
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0">
+     <datasetScan name="d336000 Files" 
+                  path="files/g/d336000" 
+                  location="/data/rda/data/d336000">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>

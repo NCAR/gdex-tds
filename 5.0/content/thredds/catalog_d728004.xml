@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@4 GPCP Version 2.3 Monthly Analysis Product"
+<catalog name="d728004 GPCP Version 2.3 Monthly Analysis Product"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@4 GPCP Version 2.3 Monthly Analysis Product">
+    <dataset name="d728004 GPCP Version 2.3 Monthly Analysis Product">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@4/" 
-                         xlink:title="NCAR RDA - GPCP Version 2.3 Monthly Analysis Product (d@4)"/>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d728004/" 
+                         xlink:title="NCAR RDA - GPCP Version 2.3 Monthly Analysis Product (d728004)"/>   
           <documentation type="summary">   
 This dataset contains Version 2.3 of the Global Precipitation Climatology Project (GPCP) Monthly Analysis Product. The data are monthly analyses defined on a global 2.5 degree by 2.5 degree longitude/latitude grid and cover the period January 1979 to (delayed) present.
           </documentation> 
@@ -37,9 +37,9 @@ This dataset contains Version 2.3 of the Global Precipitation Climatology Projec
 
       <!--  Files -->
 
-     <datasetScan name="d@4 Files" 
-                  path="files/g/d@4" 
-                  location="/data/rda/data/d@4/netcdf">
+     <datasetScan name="d728004 Files" 
+                  path="files/g/d728004" 
+                  location="/data/rda/data/d728004/netcdf">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

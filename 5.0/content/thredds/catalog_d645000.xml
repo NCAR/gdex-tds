@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCAR RDA - CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry(d@0)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d645000/" xlink:title="NCAR RDA - CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry(d645000)" />
       <documentation type="summary">The yearly mean of 34 CESM large ensemble members on 2 degree longitude-latitude resolution with 33 vertical depth levels are in this dataset. This level of compression is chosen to keep the balance of large-scale model fields and the need to reduce data volume. Historical and RCP8.5 scenario segments are combined to a single time series consisting 1920 to 2100. The pre industry control simulation is also provided using the same data reduction scheme to allow for drift correction. Each ensemble member can fit in a single NetCDF file of 7.3GB containing 15 physical and biogeochemical variables. The reduction in both temporal and spatial resolution causes a loss of information, and its effect is assessed for a subset of model fields including sea surface temperature at 5m, subsurface dissolved oxygen at 200m, and air-sea flux of carbon dioxide . The largest basin-scale biases are found in the Arctic Ocean. For the global means, the biases are about an order of magnitude smaller. The interpolation error is most significant near the coast line. The surface ocean area is reduced by approximately 3% due to the loss of some coastal grid cells. These initial assessment suggest that the errors introduced by this resolution reduction are relatively small, and the reduced data volume generally benefits more than the small increase in uncertainty for global and basin-wide diagnostics. </documentation>
       <creator>
         <name vocabulary="DIF">GIT/EAS</name>
@@ -20,7 +20,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d@0/" name="645.0 Files" path="files/g/d@0">
+    <datasetScan location="/data/rda/data/d645000/" name="645.0 Files" path="files/g/d645000">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

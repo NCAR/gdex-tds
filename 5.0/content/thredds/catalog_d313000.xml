@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 NCAR RDA - GEOS5 Global Atmosphere Forcing Data"
+<catalog name="d313000 NCAR RDA - GEOS5 Global Atmosphere Forcing Data"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCAR RDA - GEOS5 Global Atmosphere Forcing Data">
+    <dataset name="d313000 NCAR RDA - GEOS5 Global Atmosphere Forcing Data">
         <metadata inherited="true">
             <serviceName>all</serviceName>
           <dataFormat>NetCDF</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" 
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d313000/" 
                          xlink:title="NCAR RDA - GEOS5 Global Atmosphere Forcing Data"/>   
           <documentation type="summary">   
 GEOS5 Atmospheric Forcing data, regridded and prepared as meteorological variables to run CESM and WRF simulations.
@@ -41,9 +41,9 @@ GEOS5 Atmospheric Forcing data, regridded and prepared as meteorological variabl
 
       <!--  Files -->
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0">
+     <datasetScan name="d313000 Files" 
+                  path="files/g/d313000" 
+                  location="/data/rda/data/d313000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>

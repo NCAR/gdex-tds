@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 NCEP North American Regional Reanalysis (NARR)"
+<catalog name="d608000 NCEP North American Regional Reanalysis (NARR)"
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@0 NCEP North American Regional Reanalysis (NARR)">
+    <dataset name="d608000 NCEP North American Regional Reanalysis (NARR)">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>
           <dataType>GRID</dataType>
           <documentation type="Rights">Freely Available</documentation>
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/" xlink:title="NCEP North American Regional Reanalysis (NARR) (d@0)" />
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d608000/" xlink:title="NCEP North American Regional Reanalysis (NARR) (d608000)" />
           <documentation type="summary">
 The NCEP North American Regional Reanalysis products are on the Eta 221 grid at 29 pressure levels. They were produced using the Eta 32 km model with 45 vertical layers. The input data includes all observations used in NCEP/NCAR Global Reanalysis project, and additional precipitation data, TOVS 1B radiances, profiler data, land surface and moisture data, etc. The output analyses are 3-hourly with additional 9 variables in the 3-hour forecasts to reflect accumulations or averages.
 NARR reruns from 20090311 to 20091214 are updated on February 4, 2010. In April 2015, NCEP has released rerun 4 from April 1, 2009 to January 31, 2015 to fix codes and Mexico precipitation data preparation.
@@ -38,9 +38,9 @@ NARR reruns from 20090311 to 20091214 are updated on February 4, 2010. In April 
       <!--  Files -->
 
 
-     <datasetScan name="d@0 Files" 
-                  path="files/g/d@0" 
-                  location="/data/rda/data/d@0">
+     <datasetScan name="d608000 Files" 
+                  path="files/g/d608000" 
+                  location="/data/rda/data/d608000">
          <metadata inherited="true">
          <serviceName>all</serviceName>
          </metadata>

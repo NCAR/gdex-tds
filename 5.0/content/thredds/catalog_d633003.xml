@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/" xlink:title="NCAR RDA - ERA5 Modes of Interannual Variability(d@3)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d633003/" xlink:title="NCAR RDA - ERA5 Modes of Interannual Variability(d633003)" />
       <documentation type="summary">This dataset represents a suite of climate diagnostics for 56 variables relating to the interannual variability of ECMWF ERA5 monthly mean data. Basic fields for each of these variables include a monthly mean climatology and standard deviation, corresponding anomalies  spanning 40 or more years of data, empirical orthogonal
     functions (EOFs),  principal component (PC) time series, percent variance
     explained by each EOF, and an estimate of the standard error of the percent
@@ -29,7 +29,7 @@
       <keyword>ECWMF ERA5 Reanalysis</keyword>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d@3/" name="633.3 Files" path="files/g/d@3">
+    <datasetScan location="/data/rda/data/d633003/" name="633.3 Files" path="files/g/d633003">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

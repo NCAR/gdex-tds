@@ -7,7 +7,7 @@
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@3/" xlink:title="NCAR RDA - NOAA-CIRES-DOE Twentieth Century Reanalysis Version 3(d@3)" />
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d131003/" xlink:title="NCAR RDA - NOAA-CIRES-DOE Twentieth Century Reanalysis Version 3(d131003)" />
       <documentation type="summary">
     The Twentieth Century Reanalysis Project, produced by the Earth System Research Laboratory Physical Sciences Division from NOAA and the University of Colorado Cooperative Institute for Research in Environmental Sciences using resources from Department of Energy supercomputers, is an effort to produce a global reanalysis dataset spanning a portion of the nineteenth century and the entire twentieth century (1836 - 2015), assimilating only surface observations of synoptic pressure into an 80-member ensemble of estimates of the Earth system. Boundary conditions of pentad sea surface temperature and monthly sea ice concentration and time-varying solar, volcanic, and carbon dioxide radiative forcings are prescribed. Products include 3 and 6-hourly ensemble mean and spread analysis fields and 6-hourly ensemble mean and spread forecast (first guess) fields on a global Gaussian T254 grid. Fields are accessible in
     yearly time series (1 file per parameter).
@@ -39,7 +39,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d@3/" name="131.3 Files" path="files/g/d@3">
+    <datasetScan location="/data/rda/data/d131003/" name="131.3 Files" path="files/g/d131003">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

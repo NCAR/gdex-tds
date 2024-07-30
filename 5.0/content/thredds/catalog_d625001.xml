@@ -6,13 +6,13 @@
 
     <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-    <dataset name="d@1">
+    <dataset name="d625001">
         <metadata inherited="true">
           <serviceName>all</serviceName>
           <dataFormat>GRIB-1</dataFormat>  
           <dataType>GRID</dataType>   
           <documentation type="Rights">Freely Available</documentation>   
-          <documentation xlink:href="http://rda.ucar.edu/datasets/d@1/" 
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d625001/" 
                          xlink:title="Japanese 25-year Reanalysis Project, Monthly Means"/>   
           <documentation type="summary">  
 The Japanese 25-year Reanalysis (JRA-25) represents the first long-term global atmospheric reanalysis undertaken in Asia. Covering the period 1979-2004, it was completed using the Japan Meteorological Agency (JMA) numerical assimilation and forecast system and specially collected and prepared observational and satellite data from many sources including the European Center for Medium-Range Weather Forecasts (ECMWF), the National Climatic Data Center (NCDC), and the Meteorological Research Institute (MRI) of JMA. A primary goal of JRA-25 is to provide a consistent and high-quality reanalysis dataset for climate research, monitoring, and operational forecasts, especially by improving the coverage and quality of analysis in the Asian region.
@@ -45,9 +45,9 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
 
 
      <!--  Files -->
-     <datasetScan name="d@1 Files" 
-                  path="files/g/d@1" 
-                  location="/data/rda/data/d@1">
+     <datasetScan name="d625001 Files" 
+                  path="files/g/d625001" 
+                  location="/data/rda/data/d625001">
          <metadata inherited="true">
              <serviceName>all</serviceName>
          </metadata>
@@ -61,21 +61,21 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
 
      <!-- Aggregations -->
 
-     <dataset name="d@1 Aggregations">
+     <dataset name="d625001 Aggregations">
 
          <dataset name="Analysis Fields">
               
-             <featureCollection name="d@1_anl_chipsi"
+             <featureCollection name="d625001_anl_chipsi"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/1">
+                                path="aggregations/g/d625001/1">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
            
-               <collection name="d@1_anl_chipsi" 
-                           spec="/data/rda/data/d@1/anl_column_chipsi/**/anl_column_chipsi\..*"
+               <collection name="d625001_anl_chipsi" 
+                           spec="/data/rda/data/d625001/anl_column_chipsi/**/anl_column_chipsi\..*"
                            olderThan="0 min"/>
            
                   <gribConfig datasetTypes="Best">
@@ -84,26 +84,26 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
           
-             <featureCollection name="d@1_anl_chipsi25"
+             <featureCollection name="d625001_anl_chipsi25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/2"/>
+                                path="aggregations/g/d625001/2"/>
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-             <featureCollection name="d@1_anl_chipsi25"
+             <featureCollection name="d625001_anl_chipsi25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/2">
+                                path="aggregations/g/d625001/2">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_chipsi25"
-                           spec="/data/rda/data/d@1/anl_chipsi25/anl_chipsi25\..*.nc"
+               <collection name="d625001_anl_chipsi25"
+                           spec="/data/rda/data/d625001/anl_chipsi25/anl_chipsi25\..*.nc"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -115,17 +115,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_isentrop"
+             <featureCollection name="d625001_anl_isentrop"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/3">
+                                path="aggregations/g/d625001/3">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_isentrop" 
-                           spec="/data/rda/data/d@1/anl_isentrop/anl_isentrop\..*"
+               <collection name="d625001_anl_isentrop" 
+                           spec="/data/rda/data/d625001/anl_isentrop/anl_isentrop\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -137,17 +137,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_column125_var"
+             <featureCollection name="d625001_anl_column125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/4">
+                                path="aggregations/g/d625001/4">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_column125_var"
-                           spec="/data/rda/data/d@1/anl_column125_var/**/anl_column125_var\..*"
+               <collection name="d625001_anl_column125_var"
+                           spec="/data/rda/data/d625001/anl_column125_var/**/anl_column125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -159,17 +159,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
              
-             <featureCollection name="d@1_anl_isentrop"
+             <featureCollection name="d625001_anl_isentrop"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/5">
+                                path="aggregations/g/d625001/5">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_isentrop"
-                           spec="/data/rda/data/d@1/anl_isentrop/**/anl_isentrop\..*"
+               <collection name="d625001_anl_isentrop"
+                           spec="/data/rda/data/d625001/anl_isentrop/**/anl_isentrop\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -182,17 +182,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>  
 
 
-             <featureCollection name="d@1_anl_isentrop_var"
+             <featureCollection name="d625001_anl_isentrop_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/6">
+                                path="aggregations/g/d625001/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_isentrop_var"
-                           spec="/data/rda/data/d@1/anl_isentrop_var/**/anl_isentrop_var\..*"
+               <collection name="d625001_anl_isentrop_var"
+                           spec="/data/rda/data/d625001/anl_isentrop_var/**/anl_isentrop_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -204,17 +204,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_isentrop125"
+             <featureCollection name="d625001_anl_isentrop125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/7">
+                                path="aggregations/g/d625001/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_isentrop125"
-                           spec="/data/rda/data/d@1/anl_isentrop125/**/anl_isentrop125\..*"
+               <collection name="d625001_anl_isentrop125"
+                           spec="/data/rda/data/d625001/anl_isentrop125/**/anl_isentrop125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -226,17 +226,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-            <featureCollection name="d@1_anl_isentrop125_var"
+            <featureCollection name="d625001_anl_isentrop125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/8">
+                                path="aggregations/g/d625001/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_isentrop125_var"
-                           spec="/data/rda/data/d@1/anl_isentrop125_var/**/anl_isentrop125_var\..*"
+               <collection name="d625001_anl_isentrop125_var"
+                           spec="/data/rda/data/d625001/anl_isentrop125_var/**/anl_isentrop125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -249,17 +249,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_anl_land"
+             <featureCollection name="d625001_anl_land"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/9">
+                                path="aggregations/g/d625001/9">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>      
 
-               <collection name="d@1_anl_land"
-                           spec="/data/rda/data/d@1/anl_land/**/anl_land\..*"
+               <collection name="d625001_anl_land"
+                           spec="/data/rda/data/d625001/anl_land/**/anl_land\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -271,17 +271,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_land_var"
+             <featureCollection name="d625001_anl_land_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/10">
+                                path="aggregations/g/d625001/10">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_land_var"
-                           spec="/data/rda/data/d@1/anl_land_var/**/anl_land_var\..*"
+               <collection name="d625001_anl_land_var"
+                           spec="/data/rda/data/d625001/anl_land_var/**/anl_land_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -294,17 +294,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_anl_land125"
+             <featureCollection name="d625001_anl_land125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/11">
+                                path="aggregations/g/d625001/11">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_land125"
-                           spec="/data/rda/data/d@1/anl_land125/**/anl_land125\..*"
+               <collection name="d625001_anl_land125"
+                           spec="/data/rda/data/d625001/anl_land125/**/anl_land125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -316,17 +316,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_land125_var"
+             <featureCollection name="d625001_anl_land125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/12">
+                                path="aggregations/g/d625001/12">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_land125_var"
-                           spec="/data/rda/data/d@1/anl_land125_var/**/anl_land125_var\..*"
+               <collection name="d625001_anl_land125_var"
+                           spec="/data/rda/data/d625001/anl_land125_var/**/anl_land125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -338,17 +338,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_mdl"
+             <featureCollection name="d625001_anl_mdl"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/13">
+                                path="aggregations/g/d625001/13">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_mdl"
-                           spec="/data/rda/data/d@1/anl_mdl/**/anl_mdl\..*"
+               <collection name="d625001_anl_mdl"
+                           spec="/data/rda/data/d625001/anl_mdl/**/anl_mdl\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -360,17 +360,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
  
-             <featureCollection name="d@1_anl_mdl_var"
+             <featureCollection name="d625001_anl_mdl_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/14">
+                                path="aggregations/g/d625001/14">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_mdl_var"
-                           spec="/data/rda/data/d@1/anl_mdl_var/**/anl_mdl_var\..*"
+               <collection name="d625001_anl_mdl_var"
+                           spec="/data/rda/data/d625001/anl_mdl_var/**/anl_mdl_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -382,17 +382,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_p125"
+             <featureCollection name="d625001_anl_p125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/15">
+                                path="aggregations/g/d625001/15">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_p125"
-                           spec="/data/rda/data/d@1/anl_p125/**/anl_p125\..*"
+               <collection name="d625001_anl_p125"
+                           spec="/data/rda/data/d625001/anl_p125/**/anl_p125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -404,17 +404,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-            <featureCollection name="d@1_anl_p125_var"
+            <featureCollection name="d625001_anl_p125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/16">
+                                path="aggregations/g/d625001/16">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_p125_var"
-                           spec="/data/rda/data/d@1/anl_p125_var/**/anl_p125_var\..*"
+               <collection name="d625001_anl_p125_var"
+                           spec="/data/rda/data/d625001/anl_p125_var/**/anl_p125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -427,17 +427,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_anl_p25"
+             <featureCollection name="d625001_anl_p25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/17">
+                                path="aggregations/g/d625001/17">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
              
-               <collection name="d@1_anl_p25"
-                           spec="/data/rda/data/d@1/anl_p25/**/anl_p25\..*"
+               <collection name="d625001_anl_p25"
+                           spec="/data/rda/data/d625001/anl_p25/**/anl_p25\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -449,17 +449,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_p25_var"
+             <featureCollection name="d625001_anl_p25_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/18">
+                                path="aggregations/g/d625001/18">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_p25_var"
-                           spec="/data/rda/data/d@1/anl_p25_var/**/anl_p25_var\..*"
+               <collection name="d625001_anl_p25_var"
+                           spec="/data/rda/data/d625001/anl_p25_var/**/anl_p25_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -471,17 +471,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_snow"
+             <featureCollection name="d625001_anl_snow"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/19">
+                                path="aggregations/g/d625001/19">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_snow"
-                           spec="/data/rda/data/d@1/anl_snow/**/anl_snow\..*"
+               <collection name="d625001_anl_snow"
+                           spec="/data/rda/data/d625001/anl_snow/**/anl_snow\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -493,17 +493,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_snow_var"
+             <featureCollection name="d625001_anl_snow_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/20">
+                                path="aggregations/g/d625001/20">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_snow_var"
-                           spec="/data/rda/data/d@1/anl_snow_var/**/anl_snow_var\..*"
+               <collection name="d625001_anl_snow_var"
+                           spec="/data/rda/data/d625001/anl_snow_var/**/anl_snow_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -516,17 +516,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_anl_snow125"
+             <featureCollection name="d625001_anl_snow125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/21">
+                                path="aggregations/g/d625001/21">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_snow125"
-                           spec="/data/rda/data/d@1/anl_snow125/**/anl_snow125\..*"
+               <collection name="d625001_anl_snow125"
+                           spec="/data/rda/data/d625001/anl_snow125/**/anl_snow125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -538,17 +538,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_snow125_var"
+             <featureCollection name="d625001_anl_snow125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/22">
+                                path="aggregations/g/d625001/22">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_snow125"
-                           spec="/data/rda/data/d@1/anl_snow125_var/**/anl_snow125_var\..*"
+               <collection name="d625001_anl_snow125"
+                           spec="/data/rda/data/d625001/anl_snow125_var/**/anl_snow125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -561,17 +561,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_anl_surf"
+             <featureCollection name="d625001_anl_surf"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/23">
+                                path="aggregations/g/d625001/23">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_surf"
-                           spec="/data/rda/data/d@1/anl_surf/**/anl_surf\..*"
+               <collection name="d625001_anl_surf"
+                           spec="/data/rda/data/d625001/anl_surf/**/anl_surf\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -583,17 +583,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_surf_var"
+             <featureCollection name="d625001_anl_surf_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/24">
+                                path="aggregations/g/d625001/24">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_surf"
-                           spec="/data/rda/data/d@1/anl_surf_var/**/anl_surf_var\..*"
+               <collection name="d625001_anl_surf"
+                           spec="/data/rda/data/d625001/anl_surf_var/**/anl_surf_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -605,17 +605,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_anl_surf125"
+             <featureCollection name="d625001_anl_surf125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/25">
+                                path="aggregations/g/d625001/25">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_surf125"
-                           spec="/data/rda/data/d@1/anl_surf125/**/anl_surf125\..*"
+               <collection name="d625001_anl_surf125"
+                           spec="/data/rda/data/d625001/anl_surf125/**/anl_surf125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -628,17 +628,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_anl_surf125_var"
+             <featureCollection name="d625001_anl_surf125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/26">
+                                path="aggregations/g/d625001/26">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_anl_surf125"
-                           spec="/data/rda/data/d@1/anl_surf125_var/**/anl_surf125_var\..*"
+               <collection name="d625001_anl_surf125"
+                           spec="/data/rda/data/d625001/anl_surf125_var/**/anl_surf125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -655,17 +655,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
 
          <dataset name="Forecast Fields">
       
-             <featureCollection name="d@1_fcst_column"
+             <featureCollection name="d625001_fcst_column"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/27">
+                                path="aggregations/g/d625001/27">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
            
-               <collection name="d@1_fcst_column" 
-                           spec="/data/rda/data/d@1/fcst_column/**/fcst_column\..*"
+               <collection name="d625001_fcst_column" 
+                           spec="/data/rda/data/d625001/fcst_column/**/fcst_column\..*"
                            olderThan="0 min"/>
            
                   <gribConfig datasetTypes="Best">
@@ -677,17 +677,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_column_var"
+             <featureCollection name="d625001_fcst_column_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/28">
+                                path="aggregations/g/d625001/28">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_column"
-                           spec="/data/rda/data/d@1/fcst_column_var/**/fcst_column_var\..*"
+               <collection name="d625001_fcst_column"
+                           spec="/data/rda/data/d625001/fcst_column_var/**/fcst_column_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -699,17 +699,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_column125"
+             <featureCollection name="d625001_fcst_column125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/29">
+                                path="aggregations/g/d625001/29">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_column125"
-                           spec="/data/rda/data/d@1/fcst_column125/**/fcst_column125\..*"
+               <collection name="d625001_fcst_column125"
+                           spec="/data/rda/data/d625001/fcst_column125/**/fcst_column125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -721,17 +721,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_column125_var"
+             <featureCollection name="d625001_fcst_column125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/30">
+                                path="aggregations/g/d625001/30">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_column125_var"
-                           spec="/data/rda/data/d@1/fcst_column125_var/**/fcst_column125_var\..*"
+               <collection name="d625001_fcst_column125_var"
+                           spec="/data/rda/data/d625001/fcst_column125_var/**/fcst_column125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -743,17 +743,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
              
-             <featureCollection name="d@1_fcst_land"
+             <featureCollection name="d625001_fcst_land"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/31">
+                                path="aggregations/g/d625001/31">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_land"
-                           spec="/data/rda/data/d@1/fcst_land/**/fcst_land\..*"
+               <collection name="d625001_fcst_land"
+                           spec="/data/rda/data/d625001/fcst_land/**/fcst_land\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -765,17 +765,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_land_var"
+             <featureCollection name="d625001_fcst_land_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/32">
+                                path="aggregations/g/d625001/32">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_land_var"
-                           spec="/data/rda/data/d@1/fcst_land_var/**/fcst_land_var\..*"
+               <collection name="d625001_fcst_land_var"
+                           spec="/data/rda/data/d625001/fcst_land_var/**/fcst_land_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -787,17 +787,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_land125"
+             <featureCollection name="d625001_fcst_land125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/33">
+                                path="aggregations/g/d625001/33">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_land125"
-                           spec="/data/rda/data/d@1/fcst_land125/**/fcst_land125\..*"
+               <collection name="d625001_fcst_land125"
+                           spec="/data/rda/data/d625001/fcst_land125/**/fcst_land125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -809,17 +809,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_land125_var"
+             <featureCollection name="d625001_fcst_land125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/34">
+                                path="aggregations/g/d625001/34">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_land125_var"
-                           spec="/data/rda/data/d@1/fcst_land125_var/**/fcst_land125_var\..*"
+               <collection name="d625001_fcst_land125_var"
+                           spec="/data/rda/data/d625001/fcst_land125_var/**/fcst_land125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -831,17 +831,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_mdl"
+             <featureCollection name="d625001_fcst_mdl"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/35">
+                                path="aggregations/g/d625001/35">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_mdl"
-                           spec="/data/rda/data/d@1/fcst_mdl/**/fcst_mdl\..*"
+               <collection name="d625001_fcst_mdl"
+                           spec="/data/rda/data/d625001/fcst_mdl/**/fcst_mdl\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -853,17 +853,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_mdl_var"
+             <featureCollection name="d625001_fcst_mdl_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/36">
+                                path="aggregations/g/d625001/36">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
                
-               <collection name="d@1_fcst_mdl_var"
-                           spec="/data/rda/data/d@1/fcst_mdl_var/**/fcst_mdl_var\..*"
+               <collection name="d625001_fcst_mdl_var"
+                           spec="/data/rda/data/d625001/fcst_mdl_var/**/fcst_mdl_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -875,16 +875,16 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_p125"
+             <featureCollection name="d625001_fcst_p125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/37">
+                                path="aggregations/g/d625001/37">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
-               <collection name="d@1_fcst_p125"
-                           spec="/data/rda/data/d@1/fcst_p125/**/fcst_p125\..*"
+               <collection name="d625001_fcst_p125"
+                           spec="/data/rda/data/d625001/fcst_p125/**/fcst_p125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -896,16 +896,16 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_p125_var"
+             <featureCollection name="d625001_fcst_p125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/38">
+                                path="aggregations/g/d625001/38">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
-               <collection name="d@1_fcst_p125_var"
-                           spec="/data/rda/data/d@1/fcst_p125_var/**/fcst_p125_var\..*"
+               <collection name="d625001_fcst_p125_var"
+                           spec="/data/rda/data/d625001/fcst_p125_var/**/fcst_p125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -917,17 +917,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_p25"
+             <featureCollection name="d625001_fcst_p25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/39">
+                                path="aggregations/g/d625001/39">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_p25"
-                           spec="/data/rda/data/d@1/fcst_p25/**/fcst_p25\..*"
+               <collection name="d625001_fcst_p25"
+                           spec="/data/rda/data/d625001/fcst_p25/**/fcst_p25\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -939,17 +939,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_p25_var"
+             <featureCollection name="d625001_fcst_p25_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/40">
+                                path="aggregations/g/d625001/40">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_p25_var"
-                           spec="/data/rda/data/d@1/fcst_p25_var/**/fcst_p25_var\..*"
+               <collection name="d625001_fcst_p25_var"
+                           spec="/data/rda/data/d625001/fcst_p25_var/**/fcst_p25_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -966,17 +966,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
 
          <dataset name="Diagnostic Fields">
 
-             <featureCollection name="d@1_fcst_phy2m"
+             <featureCollection name="d625001_fcst_phy2m"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/41">
+                                path="aggregations/g/d625001/41">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy2m"
-                           spec="/data/rda/data/d@1/fcst_phy2m/**/fcst_phy2m\..*"
+               <collection name="d625001_fcst_phy2m"
+                           spec="/data/rda/data/d625001/fcst_phy2m/**/fcst_phy2m\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -988,17 +988,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phy2m_var"
+             <featureCollection name="d625001_fcst_phy2m_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/42">
+                                path="aggregations/g/d625001/42">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy2m_var"
-                           spec="/data/rda/data/d@1/fcst_phy2m_var/**/fcst_phy2m_var\..*"
+               <collection name="d625001_fcst_phy2m_var"
+                           spec="/data/rda/data/d625001/fcst_phy2m_var/**/fcst_phy2m_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1011,17 +1011,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
              </featureCollection>
 
 
-             <featureCollection name="d@1_fcst_phy2m125"
+             <featureCollection name="d625001_fcst_phy2m125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/43">
+                                path="aggregations/g/d625001/43">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy2m125"
-                           spec="/data/rda/data/d@1/fcst_phy2m125/**/fcst_phy2m125\..*"
+               <collection name="d625001_fcst_phy2m125"
+                           spec="/data/rda/data/d625001/fcst_phy2m125/**/fcst_phy2m125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1033,17 +1033,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phy2m125_var"
+             <featureCollection name="d625001_fcst_phy2m125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/44">
+                                path="aggregations/g/d625001/44">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy2m125_var"
-                           spec="/data/rda/data/d@1/fcst_phy2m125_var/**/fcst_phy2m125_var\..*"
+               <collection name="d625001_fcst_phy2m125_var"
+                           spec="/data/rda/data/d625001/fcst_phy2m125_var/**/fcst_phy2m125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1055,17 +1055,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phy3m"
+             <featureCollection name="d625001_fcst_phy3m"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/45">
+                                path="aggregations/g/d625001/45">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy3m"
-                           spec="/data/rda/data/d@1/fcst_phy3m/**/fcst_phy3m\..*"
+               <collection name="d625001_fcst_phy3m"
+                           spec="/data/rda/data/d625001/fcst_phy3m/**/fcst_phy3m\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1077,17 +1077,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phy3m_var"
+             <featureCollection name="d625001_fcst_phy3m_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/46">
+                                path="aggregations/g/d625001/46">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy3m_var"
-                           spec="/data/rda/data/d@1/fcst_phy3m_var/**/fcst_phy3m_var\..*"
+               <collection name="d625001_fcst_phy3m_var"
+                           spec="/data/rda/data/d625001/fcst_phy3m_var/**/fcst_phy3m_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1099,17 +1099,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phy3m125"
+             <featureCollection name="d625001_fcst_phy3m125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/47">
+                                path="aggregations/g/d625001/47">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy3m125"
-                           spec="/data/rda/data/d@1/fcst_phy3m125/**/fcst_phy3m125\..*"
+               <collection name="d625001_fcst_phy3m125"
+                           spec="/data/rda/data/d625001/fcst_phy3m125/**/fcst_phy3m125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1121,17 +1121,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phy3m125_var"
+             <featureCollection name="d625001_fcst_phy3m125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/48">
+                                path="aggregations/g/d625001/48">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phy3m125_var"
-                           spec="/data/rda/data/d@1/fcst_phy3m125_var/**/fcst_phy3m125_var\..*"
+               <collection name="d625001_fcst_phy3m125_var"
+                           spec="/data/rda/data/d625001/fcst_phy3m125_var/**/fcst_phy3m125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1143,17 +1143,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phyland"
+             <featureCollection name="d625001_fcst_phyland"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/49">
+                                path="aggregations/g/d625001/49">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phyland"
-                           spec="/data/rda/data/d@1/fcst_phyland/**/fcst_phyland\..*"
+               <collection name="d625001_fcst_phyland"
+                           spec="/data/rda/data/d625001/fcst_phyland/**/fcst_phyland\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1165,17 +1165,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phyland_var"
+             <featureCollection name="d625001_fcst_phyland_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/50">
+                                path="aggregations/g/d625001/50">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phyland_var"
-                           spec="/data/rda/data/d@1/fcst_phyland_var/**/fcst_phyland_var\..*"
+               <collection name="d625001_fcst_phyland_var"
+                           spec="/data/rda/data/d625001/fcst_phyland_var/**/fcst_phyland_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1187,17 +1187,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phyland125"
+             <featureCollection name="d625001_fcst_phyland125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/51">
+                                path="aggregations/g/d625001/51">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phyland125"
-                           spec="/data/rda/data/d@1/fcst_phyland125/**/fcst_phyland125\..*"
+               <collection name="d625001_fcst_phyland125"
+                           spec="/data/rda/data/d625001/fcst_phyland125/**/fcst_phyland125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1209,17 +1209,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_phyland125_var"
+             <featureCollection name="d625001_fcst_phyland125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/52">
+                                path="aggregations/g/d625001/52">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_phyland125_var"
-                           spec="/data/rda/data/d@1/fcst_phyland125_var/**/fcst_phyland125_var\..*"
+               <collection name="d625001_fcst_phyland125_var"
+                           spec="/data/rda/data/d625001/fcst_phyland125_var/**/fcst_phyland125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1231,17 +1231,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_surf"
+             <featureCollection name="d625001_fcst_surf"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/53">
+                                path="aggregations/g/d625001/53">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_surf"
-                           spec="/data/rda/data/d@1/fcst_surf/**/fcst_surf\..*"
+               <collection name="d625001_fcst_surf"
+                           spec="/data/rda/data/d625001/fcst_surf/**/fcst_surf\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1253,17 +1253,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_surf_var"
+             <featureCollection name="d625001_fcst_surf_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/54">
+                                path="aggregations/g/d625001/54">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_surf_var"
-                           spec="/data/rda/data/d@1/fcst_surf_var/**/fcst_surf_var\..*"
+               <collection name="d625001_fcst_surf_var"
+                           spec="/data/rda/data/d625001/fcst_surf_var/**/fcst_surf_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1275,17 +1275,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_surf125"
+             <featureCollection name="d625001_fcst_surf125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/55">
+                                path="aggregations/g/d625001/55">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_surf125"
-                           spec="/data/rda/data/d@1/fcst_surf125/**/fcst_surf125\..*"
+               <collection name="d625001_fcst_surf125"
+                           spec="/data/rda/data/d625001/fcst_surf125/**/fcst_surf125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1297,17 +1297,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_fcst_surf125_var"
+             <featureCollection name="d625001_fcst_surf125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/56">
+                                path="aggregations/g/d625001/56">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_fcst_surf125_var"
-                           spec="/data/rda/data/d@1/fcst_surf125_var/**/fcst_surf125_var\..*"
+               <collection name="d625001_fcst_surf125_var"
+                           spec="/data/rda/data/d625001/fcst_surf125_var/**/fcst_surf125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1319,17 +1319,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_ice"
+             <featureCollection name="d625001_ice"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/57">
+                                path="aggregations/g/d625001/57">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_ice"
-                           spec="/data/rda/data/d@1/ice/**/ice\..*"
+               <collection name="d625001_ice"
+                           spec="/data/rda/data/d625001/ice/**/ice\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1341,17 +1341,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_ice_var"
+             <featureCollection name="d625001_ice_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/58">
+                                path="aggregations/g/d625001/58">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_ice_var"
-                           spec="/data/rda/data/d@1/ice_var/**/ice_var\..*"
+               <collection name="d625001_ice_var"
+                           spec="/data/rda/data/d625001/ice_var/**/ice_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1363,17 +1363,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_ice125"
+             <featureCollection name="d625001_ice125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/59">
+                                path="aggregations/g/d625001/59">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_ice125"
-                           spec="/data/rda/data/d@1/ice125/**/ice125\..*"
+               <collection name="d625001_ice125"
+                           spec="/data/rda/data/d625001/ice125/**/ice125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1385,17 +1385,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_ice125_var"
+             <featureCollection name="d625001_ice125_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/60">
+                                path="aggregations/g/d625001/60">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_ice125_var"
-                           spec="/data/rda/data/d@1/ice125_var/**/ice125_var\..*"
+               <collection name="d625001_ice125_var"
+                           spec="/data/rda/data/d625001/ice125_var/**/ice125_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1407,17 +1407,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_minmax_surf"
+             <featureCollection name="d625001_minmax_surf"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/61">
+                                path="aggregations/g/d625001/61">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_minmax_surf"
-                           spec="/data/rda/data/d@1/minmax_surf/**/minmax_surf\..*"
+               <collection name="d625001_minmax_surf"
+                           spec="/data/rda/data/d625001/minmax_surf/**/minmax_surf\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1429,17 +1429,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>     
 
-             <featureCollection name="d@1_minmax_surf_var"
+             <featureCollection name="d625001_minmax_surf_var"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/62">
+                                path="aggregations/g/d625001/62">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_minmax_surf"
-                           spec="/data/rda/data/d@1/minmax_surf_var/**/minmax_surf_var\..*"
+               <collection name="d625001_minmax_surf"
+                           spec="/data/rda/data/d625001/minmax_surf_var/**/minmax_surf_var\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1456,17 +1456,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
          <dataset name="Constant Fields">
 
 
-             <featureCollection name="d@1_ll125"
+             <featureCollection name="d625001_ll125"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/63">
+                                path="aggregations/g/d625001/63">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_ll125"
-                           spec="/data/rda/data/d@1/ll125/**/ll125\..*"
+               <collection name="d625001_ll125"
+                           spec="/data/rda/data/d625001/ll125/**/ll125\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1478,17 +1478,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_ll25"
+             <featureCollection name="d625001_ll25"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/64">
+                                path="aggregations/g/d625001/64">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_ll25"
-                           spec="/data/rda/data/d@1/ll25/**/ll25\..*"
+               <collection name="d625001_ll25"
+                           spec="/data/rda/data/d625001/ll25/**/ll25\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">
@@ -1500,17 +1500,17 @@ In 2006, JMA started real-time operation of the JMA Climate Data Assimilation Sy
                   <update startup="false" trigger="allow"/>
              </featureCollection>
 
-             <featureCollection name="d@1_tl319"
+             <featureCollection name="d625001_tl319"
                                 featureType="GRIB"
                                 harvest="true"
-                                path="aggregations/g/d@1/65">
+                                path="aggregations/g/d625001/65">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
                </metadata>
 
-               <collection name="d@1_tl319"
-                           spec="/data/rda/data/d@1/tl319/**/tl319\..*"
+               <collection name="d625001_tl319"
+                           spec="/data/rda/data/d625001/tl319/**/tl319\..*"
                            olderThan="0 min"/>
 
                   <gribConfig datasetTypes="Best">

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="d@0 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010"
+<catalog name="d093000 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010"
          xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
          xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
   <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
 
-  <dataset name="d@0 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010">
+  <dataset name="d093000 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010">
     <metadata inherited="true">
       <serviceName>all</serviceName>
       <dataFormat>GRIB-2</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://rda.ucar.edu/datasets/d@0/"
-                     xlink:title="NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010 (d@0)"/>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d093000/"
+                     xlink:title="NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010 (d093000)"/>
       <documentation type="summary">
       The National Centers for Environmental Prediction (NCEP) Climate Forecast System Reanalysis (CFSR) was initially completed over the 31-year period from 1979 to 2009 and has been extended to March 2011. CFSR was initialized 4 times per day (0000, 0600, 1200, and 1800 UTC), and the 6-hourly atmospheric, oceanic and land surface analyzed products are available at 0.3, 0.5, 1.0, 1.9, and 2.5 degree horizontal resolutions, along with forecast hours 1 through 6. However, not all parameters are available at all resolutions and some parameters are not analyzed (e.g. 2 meter temperature, 10 meter winds), so please consult the detailed metadata for exact descriptions of what is available.
       </documentation>
@@ -40,9 +40,9 @@
 
 
     <!--  Files -->
-    <datasetScan name="d@0 Files"
-                 path="files/g/d@0"
-                 location="/data/rda/data/d@0">
+    <datasetScan name="d093000 Files"
+                 path="files/g/d093000"
+                 location="/data/rda/data/d093000">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -55,15 +55,15 @@
     <!-- Aggregations -->
 
 <!--
-    <featureCollection name="d@0 Aggregations"
+    <featureCollection name="d093000 Aggregations"
                        featureType="GRIB2"
                        harvest="true"
-                       path="aggregations/g/d@0/">
+                       path="aggregations/g/d093000/">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
 
-      <collection name="d@0" spec="/data/rda/data/d@0/**/.*.tar$"
+      <collection name="d093000" spec="/data/rda/data/d093000/**/.*.tar$"
                       dateFormatMark="yyyyMMdd#.tar#"
                       timePartition="year" />
       <tdm rewrite="test"/>
