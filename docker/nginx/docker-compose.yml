@@ -23,14 +23,7 @@ services:
   thredds-production:
     image: unidata/thredds-docker:5.4
     ports:
-    #  - "8080:80"
-    #  - "80:80"
-    #  - "8080:80"
-    #  - "8443:443"
       - "8443:8443"
-      #- "443:443"
-    #expose:
-    #  - '443'
     container_name: thredds
     hostname: tds-host
     volumes:
