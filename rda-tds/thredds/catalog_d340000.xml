@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d340000/" xlink:title="NCAR RDA - The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS(d340000)" />
+      <documentation type="summary">The Weather Research and Forecasting (WRF) model coupled with Chemistry version 3.9.1 is used to generate a 48-hour air quality forecast daily at 12 km grid spacing over the CONUS.
+    The first 24 forecast files are available here. This WRF-Chem model simulates the emission, transport, mixing, and chemical transformation of trace gases and aerosols simultaneously with the meteorology. These forecasts are used to support air quality decision-making, field campaign planning, early identification of model errors and biases, and support the atmospheric science community in their research. This system aims to complement the operational air quality forecasts produced by the National Oceanic
+    and Atmospheric Administration (NOAA), not to replace them. A publicly available information dissemination system has been established that displays various air quality products, including a near-real-time evaluation of the model forecasts at the 
+    WRF Chemistry Forecast Maps.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d340000/" name="340.0 Files" path="files/g/d340000">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

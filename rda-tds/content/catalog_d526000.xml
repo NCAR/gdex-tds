@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="d526000 NCAR RDA - Daily Gridded North American Snowfall"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="d526000 NCAR RDA - Daily Gridded North American Snowfall">
+        <metadata inherited="true">
+          <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d526000/" 
+                         xlink:title="NCAR RDA - Daily Gridded North American Snowfall (d526000)"/>   
+          <documentation type="summary">   
+A daily gridded North American snowfall data with focus on the quality of the interpolated product is archived in this dataset. Daily snowfall amounts from National Weather Service Cooperative Observer Program stations and Meteorological Service of Canada surface stations are interpolated to 1 degree by 1 degree grids and examined for data record length and quality. The interpolation is validated spatially and temporally through the use of stratified sampling and k-fold cross-validation analyses. Interpolation errors average around 0.5 cm and range from less than 0.01 to greater than 2.5 cm. For most locations, this is within the measurement sensitivity. Grid cells with large variations in elevation experience higher errors and should be used with caution.
+          </documentation> 
+          <creator>   
+            <name vocabulary="DIF">USDA/NRCS/NWCC</name>   
+            <contact url="https://www.wcc.nrcs.usda.gov/" email="michael.strobel@por.usda.gov" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>SNOW</keyword>   
+          <keyword>ANALYSIS</keyword>   
+
+        </metadata>
+
+      <!--  Files -->
+
+     <datasetScan name="d526000 Files" 
+                  path="files/g/d526000" 
+                  location="/data/rda/data/d526000/">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+             <exclude wildcard="big_endian" atomic="false" collection="true"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+ </dataset>
+</catalog>

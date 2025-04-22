@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="d300000 NCAR RDA - NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <dataset name="d300000 NCAR RDA - NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system">
+        <metadata inherited="true">
+          <serviceName>all</serviceName>
+          <dataFormat>GRIB-1</dataFormat>
+          <dataFormat>GRIB-2</dataFormat>
+          <dataFormat>NETCDF</dataFormat>
+          <dataType>GRID</dataType>
+          <documentation type="Rights">Freely Available</documentation>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d300000/"
+                         xlink:title="NCAR RDA - NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system (d300000)"/>
+          <documentation type="summary">
+Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, in collaboration with NCAR's Computational Information Systems Laboratory (CISL), has been producing daily, real-time, 10 member, 48 hour ensemble forecasts with 3 km horizontal grid spacing over the conterminous United States (http://ensemble.ucar.edu). Selected post-processed 2D fields and select soundings are available.
+          </documentation>
+          <documentation xlink:href="http://ensemble.ucar.edu/" xlink:title="NCAR Ensemble Forecasts Homepage -Access realtime forecast products" />
+          <creator>
+            <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+            <contact url="https://www.mmm.ucar.edu/" email="schwartz@ucar.edu" />
+          </creator>
+          <authority>edu.ucar.rda</authority>
+          <publisher>
+            <name vocabulary="DIF">NCAR/RDA</name>
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />
+          </publisher>
+          <keyword>Numerical Weather Prediction</keyword>
+          <keyword>Model data</keyword>
+          <keyword>WRF</keyword>
+          <keyword>ENSEMBLE</keyword>
+          <keyword>NCAR</keyword>
+          <keyword>MMM</keyword>
+        </metadata>
+
+      <!--  Files  -->
+
+
+      <datasetScan name="d300000 Files"
+                  path="files/g/d300000"
+                  location="/data/rda/data/d300000">
+         <metadata inherited="true">
+          <serviceName>all</serviceName>
+        </metadata>
+        <filter>
+            <exclude wildcard="*.html"/>
+        </filter>
+        <addDatasetSize/>
+     </datasetScan>
+
+  </dataset>
+
+</catalog>

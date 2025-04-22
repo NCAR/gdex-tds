@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="d682000 NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="d682000 NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d682000/" 
+                         xlink:title="NCAR RDA - Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide (d682000)"/>   
+          <documentation type="summary">   
+Interannual variability in atmospheric carbon monoxide (CO) between 2001 and 2016 is determined from total column CO observations from the satellite instrument MOPITT. Climatological seasonal cycles in CO are subtracted from monthly averages in seven regions of the Southern Hemisphere and tropics, to produce records of CO anomalies.
+          </documentation> 
+          <documentation xlink:href="https://www2.acom.ucar.edu/mopitt" xlink:title="MEASUREMENTS OF POLLUTION IN THE TROPOSPHERE (MOPITT)" />   
+          <creator>   
+            <name vocabulary="DIF">UCAR/NCAR/ACOM</name>   
+            <contact url="https://www2.acom.ucar.edu/mopitt" email="buchholz@ucar.edu" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>Carbon Monoxide</keyword>   
+          <keyword>Platform Observation</keyword>   
+          <keyword>MOPITT</keyword>
+
+
+        </metadata>
+
+
+      <!--  Files -->
+
+     <datasetScan name="d682000 Files" 
+                  path="files/g/d682000" 
+                  location="/data/rda/data/d682000">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+
+   </dataset>
+
+</catalog>

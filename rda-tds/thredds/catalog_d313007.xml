@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2.1 The Community Atmosphere Model with Chemistry (CAM-chem) Outputs as Boundary Conditions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2.1 The Community Atmosphere Model with Chemistry (CAM-chem) Outputs as Boundary Conditions">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d313007/" xlink:title="NCAR RDA - CESM2.1 The Community Atmosphere Model with Chemistry (CAM-chem) Outputs as Boundary Conditions(d313007)" />
+      <documentation type="summary">CAM-chem simulation outputs are to be used as boundary
+    conditions for regional modeling. Results are from a simulation at
+    0.9 degree by 1.25 degree horizontal resolution simulation with 56 vertical levels and
+    specified dynamics using MERRA2 reanalysis. Data are available every 6
+    hours from January 1, 2001 to June 30, 2019.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d313007/" name="313.7 Files" path="files/g/d313007">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

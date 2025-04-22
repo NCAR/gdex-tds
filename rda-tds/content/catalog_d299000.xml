@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Dai Global Palmer Drought Severity Index (PDSI)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Dai Global Palmer Drought Severity Index (PDSI)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d299000/" xlink:title="NCAR RDA - Dai Global Palmer Drought Severity Index (PDSI)(d299000)" />
+      <documentation type="summary">
+    This dataset consists of monthly Palmer Drought Severity Index (PDSI) over global land areas on a 2.5 degree grid computed using observed monthly surface air temperature and precipitation, plus other surface meteorological forcing data for the self calibrating PDSI Penman Monteith (sc_PDSI_pm) case. The PDSI can be used as a measure of surface aridity anomalies and changes on seasonal to longer time scales. It is correlated with observed soil moisture and water storage variations over land. 
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">SUNY-ALBANY/CAS/ATMOS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d299000/" name="299.0 Files" path="files/g/d299000">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

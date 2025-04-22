@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ds113.1 ECMWF IFS CY41r2 High-Resolution Operational Forecasts"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="ds113.1 ECMWF IFS CY41r2 High-Resolution Operational Forecasts">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+          <dataFormat>NETCDF</dataFormat>
+          <dataType>GRID</dataType>
+          <documentation type="Rights">Freely Available</documentation>
+          <documentation xlink:href="http://rda.ucar.edu/datasets/ds113.1/"
+                         xlink:title="ECMWF IFS CY41r2 High-Resolution Operational Forecasts (ds113.1)"/>
+          <documentation type="summary">
+ECMWF has implemented a significant resolution upgrade and methodology for high-resolution forecasts (HRES) and ensemble forecasts (ENS) beginning January of 2016. HRES is now performed via a transform grid with a nominal grid point spacing of 9 kilometers (0.08 degrees), and is carried out with IFS (Integrated Forecast System) model cycle CY41r2. Improvements in computational efficiency and effective resolution have been brought about by implementing a triangular cubic octahedral reduced Gaussian grid in which the shortest spatial wavelength is represented by at least four grid points anywhere on the globe, as opposed to the former linear arrangement whereby the shortest wavelength was represented by two grid points, while at the same time retaining the same number of spherical harmonics and triangular truncation. (The term "cubic" is due to the ability of the grid to represent cubic products in the dynamical equations.) In addition, the reduction of grid points along latitude circles as one approaches the poles is achieved using a triangular to octahedral mapping which corresponds to a poleward reduction of four points per latitude circle and an optimization of the total number of grid points and their local mesh resolution. Based on IFS CY41r2, ECMWF has documented superior filtering properties at higher resolution, an improved representation of orography, improved global mass conservation properties, substantial efficiency gains, and more scalable locally compact computations of derivatives and other properties that depend on nearest-neighbor information only. More details may be found in the publications cited below and the documentation tab at the top of the dataset home page (to be added).
+NCAR's Data Support Section (DSS) is performing and supplying a grid transformed version of ERA-Interim, in which variables originally represented as spectral coefficients or archived on a reduced Gaussian grid are transformed to a regular 5120 longitude by 2560 latitude N1280 Gaussian grid. In addition, DSS is also computing horizontal winds (u-component, v-component) from spectral vorticity and divergence where these are available.
+          </documentation>
+          <creator>
+            <name vocabulary="DIF">ECMWF</name>   
+            <contact url="http://www.ecmwf.int/" email="http://www.ecmwf.int/en/about/contact-us" />
+          </creator>
+          <authority>edu.ucar.rda</authority>
+          <publisher>
+            <name vocabulary="DIF">NCAR/RDA</name>
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />
+          </publisher>
+          <keyword>Numerical Weather Prediction</keyword>   
+          <keyword>Model data</keyword>   
+        </metadata>
+
+
+      <!--  Files  -->
+
+
+      <datasetScan name="ds113.1 Files"
+                  path="files/g/ds113.1"
+                  location="/data/rda/data/ds113.1">
+         <metadata inherited="true">
+          <serviceName>all</serviceName>
+        </metadata>
+        <filter>
+            <exclude wildcard="*.grb"/>
+            <exclude wildcard="*.html"/>
+            <exclude wildcard="*.htaccess"/>
+        </filter>
+        <addDatasetSize/>
+     </datasetScan>
+
+  </dataset>
+
+</catalog>

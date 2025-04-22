@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<preferences EXTERNAL_XML_VERSION='1.0'>
+  <root type='user'>
+    <map/>
+    <node name='configCatalog' >
+      <map>
+        <entry key='nextCatId' value='749' />
+        <entry key='numberCatalogs' value='44' />
+        <entry key='trackerNumber' value='1' />
+      </map>
+    </node>
+  </root>
+</preferences>

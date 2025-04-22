@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NOAA NCEI Extended Reconstructed Sea Surface Temperature" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NOAA NCEI Extended Reconstructed Sea Surface Temperature">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/ds277.9/" xlink:title="NCAR RDA - NOAA NCEI Extended Reconstructed Sea Surface Temperature(ds277.9)" />
+      <documentation type="summary">
+    The NOAA NCEI (National Center for Environmental Information) Extended Reconstructed Sea Surface Temperature (ERSST) dataset is a global monthly sea surface temperature dataset derived from the International Comprehensive Ocean-Atmosphere Dataset (ICOADS). Production of the ERSST is on a 2 degree grid with spatial completeness enhanced using statistical methods. This monthly analysis begins in January 1854 continuing to the present and includes anomalies computed with respect to a 1971-2000 monthly climatology. The newest version of ERSST, version 5, uses new data sets from ICOADS Release 3.0 (Sea Surface Temperatures) SST; SST comes from Argo floats above 5 meters, Hadley Centre sea ice and SST version 2 (HadISST.2) ice concentration. ERSSTv5 has improved SST spatial and temporal variability by
+    
+    reducing spatial filtering in training the reconstruction functions Empirical Orthogonal Teleconnections (EOTs),
+    removing high-latitude damping in EOTs,
+    adding 10 more EOTs in the Arctic.
+    
+    ERSSTv5 improved absolute SST by switching from using Nighttime Marine Air Temperature (NMAT) as a reference to buoy SST as a reference in correcting ship SST biases. Scientists have further improved ERSSTv5 by using unadjusted First-Guess instead of adjusted First-Guess.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCEI</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/ds277.9/ersst.v5.nc" name="277.9 Files" path="files/g/ds277.9">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

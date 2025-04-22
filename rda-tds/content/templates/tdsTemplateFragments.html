@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TDS custom template fragments</title>
+</head>
+
+
+<body>
+
+<!-- place customized Thymeleaf template fragments here -->
+<div th:fragment='header'>
+    <div class="header-logo">
+        <a href='https://rda.ucar.edu'>
+            <!--img th:src="${logoUrl}" th:alt="${logoAlt}" th:data="${test}"-->
+            <img style='height:90px' src="/thredds/rda-logo-header.png" th:alt="${logoAlt}" th:data="${test}"></img>
+        </a>
+    </div>
+    <div class="header-logo-nsf">
+       	<a href='https://nsf.gov'>
+                <img src="/thredds/NCAR-Sponsored-NSF-White.png" th:alt="${logoAlt}">
+        </a>
+    </div>
+    <div class="header-info">
+        <h2>
+            <a class="static" href="http://rda.ucar.edu/thredds/" th:text="${installName}">
+            </a>
+        </h2>
+    </div>
+</div>
+<div th:fragment="footer">
+<div class="footer-message">
+The Research Data Archive is managed by the Data Engineering and Curation Section of the Computational and Information Systems Laboratory at the National Center for Atmospheric Research in Boulder, Colorado. The National Center for Atmospheric Research is sponsored by the National Science Foundation. Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the National Science Foundation.
+</div>
+       <h4><a class="static" th:href="${installUrl}" th:text="${installName}"></a> at <a class="static" th:href="${hostInstUrl}" th:text="${hostInst}"></a> see <a class="static" th:href="${contextPath} + '/info/serverInfo.html'">    Info </a></h4>
+
+
+       <h4><a class="static" th:href="${webappUrl}" th:text="${webappName}"></a>
+         <th:block th:text="' [Version ' + ${webappVersion} + ' - ' + ${webappBuildTimestamp} + ']'"/>
+         <a class="static" th:href="${webappDocsUrl}"> Documentation</a></h4>
+</div>
+
+  
+
+     <div th:fragment="footer-content">
+       <h4><a class="static" th:href="${installUrl}" th:text="${installName}"></a> at <a class="static" th:                    href="${hostInstUrl}" th:text="${hostInst}"></a> see <a class="static" th:href="${contextPath} + '/info/serverInfo.html'">    Info </a></h4>
+       <h4><a class="static" th:href="${webappUrl}" th:text="${webappName}"></a>
+         <th:block th:text="' [Version ' + ${webappVersion} + ' - ' + ${webappBuildTimestamp} + ']'"/>
+         <a class="static" th:href="${webappDocsUrl}"> Documentation</a></h4>
+     </div>
+
+<!--
+	<div> test </div>
+    <div th:fragment="header">
+    </div>
+
+    <div th:fragment="footer">
+    </div>
+-->
+
+</body>
+
+</html>
+

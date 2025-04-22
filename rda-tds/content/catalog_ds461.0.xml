@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ds461.0"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="ds461.0">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+
+
+        </metadata>
+
+
+      <!--  Files -->
+
+     <!-- Aggregations -->
+
+
+     <featureCollection name="ds461.0_SYNOP"
+                        featureType="Station"
+                        harvest="true"
+                        path="aggregations/o/ds461.0_SYNOP/1">
+       <metadata inherited="true">
+         <serviceName>all</serviceName>
+         <dataType>Station</dataType>
+         <dataFormat>NetCDF</dataFormat>
+           <documentation type="summary">
+           Attempting the netCDF version of BUFR ADPSFC - METAR
+           </documentation>
+         </metadata>
+       <collection name="ds461.0_SYNOP" spec="/data/rda/data/ds461.0/ADPSFC/Category-0.1/2e112ba1\.#yyyy-MM-dd#.nc$"
+                   olderThan="0 min"/>
+       <pointConfig datasetTypes="cdmrFeature Files"/>
+       <update startup="false" trigger="allow"/>
+     </featureCollection>
+
+
+     <featureCollection name="ds461.0_METAR"
+                        featureType="Station"
+                        harvest="true"
+                        path="aggregations/o/ds461.0_METAR/1">
+       <metadata inherited="true">
+         <serviceName>all</serviceName>
+         <dataType>Station</dataType>
+         <dataFormat>NetCDF</dataFormat>
+           <documentation type="summary">
+           Attempting the netCDF version of BUFR ADPSFC - METAR
+           </documentation>
+         </metadata>
+       <collection name="ds461.0_METAR" spec="/data/rda/data/ds461.0/ADPSFC/Category-0.7/b8ac5837\.#yyyy-MM-dd#.nc$"
+                   olderThan="0 min"/>
+       <pointConfig datasetTypes="cdmrFeature Files"/>
+       <update startup="false" trigger="allow"/>
+     </featureCollection>
+
+  </dataset>
+
+
+</catalog>

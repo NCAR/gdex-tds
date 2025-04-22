@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Great Plains Low-Level Jet Occurrence and Upper-Level Coupling in CERA-20C" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Great Plains Low-Level Jet Occurrence and Upper-Level Coupling in CERA-20C">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d197000/" xlink:title="NCAR RDA - Great Plains Low-Level Jet Occurrence and Upper-Level Coupling in CERA-20C(d197000)" />
+      <documentation type="summary">The Great Plains Low-Level Jet Occurrence and Upper-Level Coupling CERA-20C dataset comprises a 3-hourly record of low-level jet activity and degree of upper-atmospheric jet stream coupling over the contiguous United States from 1901-2010 derived from CERA-20C following the objective dynamically-based methodology of Burrows et al. (2019). This dataset extends the work of Uccellini (1980) who first highlighted variations in the degree of coupling between low-level jets and upper-level flow using a visual weather map approach. The presence of an active low-level jet is first assessed according to the conventional Bonner (1968) low-level jet classification. Then, the local finite-amplitude wave activity index of Huang and Nakamura (2015) is applied to assess whether a detected jet is upper-level coupled (or not). This dataset is remarkable because understanding the degree of low-level (terrain) coupling for a particular low-level jet is instrumental in predicting whether regional land-atmosphere interactions may play a role in its evolution, and moreover, whether land data assimilation holds promise for improved predictability in such cases. The dataset includes the coupled/uncoupled classification, as well as u- and v-winds at 700 and 850 hPa from CERA-20C.</documentation>
+      <creator>
+        <name vocabulary="DIF">SUNY-ALBANY/ASRC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d197000/" name="197.0 Files" path="files/g/d197000">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

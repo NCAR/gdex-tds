@@ -1,0 +1,29 @@
+FROM unidata/thredds-docker:5.6
+RUN mkdir -p /etc/letsencrypt/live/rda-tds.ucar.edu/
+COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
+#COPY ./conf/server.xml /usr/local/tomcat/conf/server.xml
+COPY ./content/ /usr/local/tomcat/content/thredds/
+EXPOSE 8443
+EXPOSE 8080
+
+# Need to deal with logs somehow /data/logs/tomcat:/usr/local/tomcat/logs
+      # ./content/thredds/logs/:/usr/local/tomcat/content/thredds/logs/
+
+# Certs taken care of?
+      #- ./conf/cert.pem:/usr/local/tomcat/conf/cert.pem
+      #- ./conf/chain.pem:/usr/local/tomcat/conf/chain.pem
+      #- ./conf/privkey.pem:/usr/local/tomcat/conf/privkey.pem
+      #- /etc/letsencrypt/live/rda-tds.ucar.edu/:/etc/letsencrypt/live/rda-tds.ucar.edu/
+      #- /etc/letsencrypt/archive/rda-tds.ucar.edu/:/etc/letsencrypt/archive/rda-tds.ucar.edu/
+
+# 
+# Need glade mounted
+      #- /gpfs/csfs1/collections/rda/data:/gpfs/csfs1/collections/rda/data
+
+# Persistant volume for cached data (~1TB)
+      #- /data/rda/data/:/data/rda/data
+      #- /data/TDSIndexFiles:/data/TDSIndexFiles
+
+# Source env file in helmchart?
+    #env_file:
+    #- "compose${THREDDS_COMPOSE_ENV_LOCAL}.env"

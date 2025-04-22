@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ds745.1 NCAR RDA - Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="ds745.1 NCAR RDA - Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/ds745.1/" 
+                         xlink:title="NCAR RDA - Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing (ds745.1)"/>   
+          <documentation type="summary">   
+The CCMP data set combines cross-calibrated satellite microwave winds and instrument observations using a Variational Analysis Method (VAM) to produce high-resolution (0.25 degree) gridded analyses. Satellite wind retrievals derived by Remote Sensing Systems from a number of satellite-borne passive and active microwave instruments are used. RSS intercalibrates radiometers at the brightness temperature level to within 0.2 degree Celsius, applying a refined sea-surface emissivity model and radiative transfer function to derive surface winds. The resulting wind retrievals are highly consistent between microwave radiometer instrument platforms, including SSM/I, SSMIS, AMSR, TMI, WindSat, and GMI. RSS has also developed a geophysical model function for deriving wind speeds and directions from microwave scatterometers, including QuikSCAT and ASCAT. Both radiometer and scatterometer data are validated against ocean moored buoys, which confirm the measurements are in agreement (to within 0.8 m/s) despite the difference in wind measurement and retrieval methodologies. The VAM combines RSS instrument data with moored buoy measurements and a starting estimate (first-guess) of the wind field. The European Center for Medium-Range Weather Forecasts (ECMWF) ERA-Interim Reanalysis winds are used in the CCMP V2.0 processing as the first-guess wind field. This 0.25 degree model wind field is consistently processed, as opposed to that of the ECMWF operational model for which the model changes over time. All wind observations (satellite and buoy) and model analysis fields are referenced to a height of 10 meters.
+          </documentation>
+          <documentation xlink:href="http://www.remss.com/measurements/ccmp" xlink:title="Version 2 CCMP Wind Product" />   
+          <creator>   
+            <name vocabulary="DIF">RSS</name>   
+            <contact url="Version 2 CCMP Wind Product" email="support@remss.com" />   
+          </creator>  
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>Remote Sensing</keyword>   
+          <keyword>Observation</keyword>   
+          <keyword>Wind</keyword>   
+
+
+        </metadata>
+
+
+      <!--  Files -->
+
+     <datasetScan name="ds745.1 Files" 
+                  path="files/g/ds745.1" 
+                  location="/data/rda/data/ds745.1">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+
+   </dataset>
+
+</catalog>

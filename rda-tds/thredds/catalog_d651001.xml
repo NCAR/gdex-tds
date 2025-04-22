@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 Perfect Model Predictions for 2010" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 Perfect Model Predictions for 2010">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d651001/" xlink:title="NCAR RDA - CESM2 Perfect Model Predictions for 2010(d651001)" />
+      <documentation type="summary">This dataset includes ensemble prediction experiments using the CESM2 model. These are "perfect model prediction experiments" in which the simulations are initialized with nearly identical conditions from CESM2 historical simulations in the year 2010 and then integrated forward for two years. Ensemble prediction sets are initialized on January 1, March 1, May 1, July 1, September 1, and November 1. Five different initial conditions, taken from five different CESM2 historical simulations, are used are each initialization timing and 15 members are simulated for each of the five initial states. These 15 members differ with a micro-perturbation to the initial atmospheric temperature. Thus, for each initialization timing set (i.e. January 1, 2010) there are 75 total ensemble members (15 members for 5 initial states). These experiments can be used to assess the inherent initial-value predictability characteristics of the earth system as simulated by CESM2. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="651.1 Files" path="files/g/d651001" location="/data/rda/data/d651001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

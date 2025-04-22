@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Fire Inventory from NCAR version 2 Fire Emission" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Fire Inventory from NCAR version 2 Fire Emission">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d312009/" xlink:title="NCAR RDA - Fire Inventory from NCAR version 2 Fire Emission(d312009)" />
+      <documentation type="summary">The Fire INventory from NCAR (FINN) provides daily global fire emissions at high spatial resolution. The FINN model uses satellite detection of active fires (thermal anomalies) and the land cover type to determine the emission estimates. The emission estimates are based on two uses of satellite observations:
+    (1) MODIS fire detection,
+    (2) Both MODIS and VIIRS (Visible Infrared Imaging Radiometer Suite) active fire detection.
+    
+    Global daily emission estimates of key gases and aerosols as well as the speciation of the total VOC emissions for three common chemical mechanisms (MOZART-T1, SAPRC99 and GEOS-Chem) are included. Results are available in yearly files at 0.1 by 0.1 degree resolution, or in yearly text files of fire spots at 1 km resolution.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d312009/" name="312.9 Files" path="files/g/d312009">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

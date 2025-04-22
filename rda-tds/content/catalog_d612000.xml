@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="d612000 NCAR RDA - High Resolution WRF Simulations of the Current and Future Climate of North America"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <!-- Top level dataset: Needed to set metadata for Files & Aggregations -->
+
+    <dataset name="d612000 NCAR RDA - High Resolution WRF Simulations of the Current and Future Climate of North America">
+        <metadata inherited="true">
+            <serviceName>all</serviceName>
+          <dataFormat>NetCDF</dataFormat>  
+          <dataType>GRID</dataType>   
+          <documentation type="Rights">Freely Available</documentation>   
+          <documentation xlink:href="http://rda.ucar.edu/datasets/d612000/" 
+                         xlink:title="NCAR RDA - High Resolution WRF Simulations of the Current and Future Climate of North America (d612000)"/>   
+          <documentation type="summary">   
+The dataset is from a high resolution climate change simulation that permits convection and resolves mesoscale orography at 4 km grid spacing over much of North America using the Weather Research and Forecasting (WRF) model. Two 13 years simulations were performed, consisting of a retrospective simulation (October 2000 to September 2013) with initial and boundary conditions from ERA-Interim and a future climate sensitivity simulation with initial and boundary conditions derived from reanalysis and modified by adding the CMIP5 ensemble mean of the high emission scenario climate change.
+          </documentation> 
+          <creator>   
+            <name vocabulary="DIF">UCAR/NCAR/RAP</name>   
+            <contact url="https://ral.ucar.edu/" email="chliu@ucar.edu" />   
+          </creator>   
+          <authority>edu.ucar.rda</authority>   
+          <publisher>   
+            <name vocabulary="DIF">NCAR/RDA</name>   
+            <contact url="http://rda.ucar.edu/" email="rdahelp@ucar.edu" />   
+          </publisher>   
+          <keyword>Numerical Weather Prediction</keyword>   
+          <keyword>WRF</keyword>
+          <keyword>CMIP5</keyword>
+          <keyword>ERA-Interim</keyword>
+          <keyword>ECMWF</keyword>   
+          <keyword>Model data</keyword>   
+
+
+        </metadata>
+
+
+      <!--  Files -->
+
+     <datasetScan name="d612000 Files" 
+                  path="files/g/d612000" 
+                  location="/data/rda/data/d612000">
+         <metadata inherited="true">
+             <serviceName>all</serviceName>
+         </metadata>
+         <filter>
+             <exclude wildcard="*.html"/>
+         </filter>
+         <addDatasetSize/>
+     </datasetScan>
+
+
+   </dataset>
+
+</catalog>

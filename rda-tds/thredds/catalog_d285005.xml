@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="RSS SMAP Sea Surface Salinity Analysis" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="RSS SMAP Sea Surface Salinity Analysis">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://rda.ucar.edu/datasets/d285005/" xlink:title="NCAR RDA - RSS SMAP Sea Surface Salinity Analysis(d285005)" />
+      <documentation type="summary">
+    The Soil Moisture Active Passive (SMAP) satellite Sea Surface Salinity (SSS) V3.0 validated data are available from Remote Sensing Systems. The near-polar orbit of SMAP allows for complete global coverage of the oceans in 3 days with a repeat cycle of 8 days. Only Level-3 products of the SMAP SSS V3.0 validated release are archived in this dataset:
+    
+      8-day running averages
+      monthly averages
+      monthly (RF) rain-filtered averages
+      
+    All products are provided at two spatial resolutions: 40km and 70km. For most open ocean applications, the 70km products are the best to use as they have significantly lower noise. All files are in NetCDF 4 format and are CF/ACDD compliant.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">RSS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.rda</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/RDA</name>
+        <contact email="rdahelp@ucar.edu" url="http://rda.ucar.edu/" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan location="/data/rda/data/d285005/" name="285.5 Files" path="files/g/d285005">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+
