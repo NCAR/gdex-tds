@@ -1,6 +1,6 @@
 replicaCount: 1
 
-rda-tds:
+webapp:
   name: rda-tds
   group: rda-tds
   path: /
