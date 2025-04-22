@@ -1,0 +1,14 @@
+replicaCount: 1
+
+rda-tds:
+  name: rda-tds
+  group: rda-tds
+  path: /
+  tls:
+    fqdn: tds.k8s.ucar.edu
+    secretName: incommon-cert-#HOST
+  container: 
+    image: #IMAGE_NAME
+    port: #CONTAINER_PORT
+    memory: 1G
+    cpu: 2
