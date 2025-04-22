@@ -16,6 +16,12 @@ spec:
       labels:
         app: {{ .Values.webapp.name }}
     spec:
+      volumes:
+        - name: {{ .Values.webapp.volume1.name }}
+          nfs:
+            server: {{ .Values.webapp.volume1.server }}
+            path: {{ .Values.webapp.volume1.path }}
+            readOnly: {{ .Values.webapp.volume1.readOnly }}
       containers:
       - name: {{ .Values.webapp.name }}
         image: {{ .Values.webapp.container.image }}
@@ -25,3 +31,6 @@ spec:
             cpu: {{ .Values.webapp.container.cpu }}
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
+        volumeMounts:
+        - mountPath: /glade/campaign
+          name: {{ .Values.webapp.volume1.name }}
