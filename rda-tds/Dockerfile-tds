@@ -3,7 +3,6 @@ RUN mkdir -p /etc/letsencrypt/live/rda-tds.ucar.edu/
 COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 #COPY ./conf/server.xml /usr/local/tomcat/conf/server.xml
 COPY ./content/ /usr/local/tomcat/content/thredds/
-EXPOSE 8443
 EXPOSE 8080
 
 # Need to deal with logs somehow /data/logs/tomcat:/usr/local/tomcat/logs
