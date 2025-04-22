@@ -194,6 +194,7 @@ h2 {
    font-size: 17pt;
    font-family: Arial, Helvetica, sans-serif;
    color: #9C9C9C;
+   margin : 0;
 }
 
 small {
@@ -214,19 +215,26 @@ small.imageinc {
 }
 
 div#header, div#footer {
+    height:90px;
     position: absolute;
     left: 0px;
     right: 0px;
-    background: linear-gradient(#656aae,#656baf, #595aa1);
+    /*background: linear-gradient(#656aae,#656baf, #595aa1);*/
+    background: white; 
+    background-color: white;
     /*background-color: #06778F;*/
     /*padding: 3px 20px;*/
+    height:90px;
     border: 1px solid #CFCFCF;
     border-style: outset;
     box-sizing: border-box;
     overflow: hidden;
 }
 
+
+
 div#header {
+    height:90px;
     top: 0px;
     margin-bottom: 8px;
 }
@@ -236,17 +244,23 @@ div#footer {
 }
 
 .header-logo {
+    height:90px;
     float: left;
     /*padding-top: 8px;*/
+}
+.header-logo>img {
+height: 80px;
 }
 .header-logo-nsf > a > img{
     height : 100px;
 }
 .header-logo-nsf {
+    height:90px;
     float : right;
 }
 
 .header-info {
+    height:90px;
     margin-left: 75px;
     padding-top: 3px;
 }
@@ -257,6 +271,7 @@ text-align:center;
 padding : 5px;
 }
 #footer-buffer, #header-buffer {
+    height:90px;
     background-color:  #E3E4E6;
     margin-top: 4px;
 }
@@ -272,11 +287,11 @@ table.property-table > tbody > tr > td {
 }
 
 a.static {
-    color: #FFFFFF;
+    color: #1d70ab;
 }
 
 a.static:visited {
-    color: #FFFFFF;
+    color: #005896;
 }
 
 div.container {
@@ -284,7 +299,7 @@ div.container {
     min-height: 100%;
     width: 100%;
     position: relative;
-    padding: 10px 50px;
+    padding: 30px 50px;
     box-sizing: border-box;
 }
 
@@ -295,6 +310,7 @@ div.content {
 }
 
 div.section-header {
+    height:90px;
     background-color: #81B2C0;
     padding: 5px;
     color: #FFFFFF;
