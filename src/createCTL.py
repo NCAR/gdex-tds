@@ -18,7 +18,7 @@ def get_dsid():
     if len(dsid) < 5 or len(dsid) > 7:
         sys.stderr.write('dsid, "' + dsid + '" is not valid\n')
         exit(1)
-    return  dsid.split('ds')[-1]
+    return  dsid.split('d')[-1]
 
 def write_seperator():
     """Write '<:>' to stdout"""
@@ -66,12 +66,12 @@ if __name__ == "__main__":
     cursor = conn.cursor()
 
     # Get Specialist
-    query = "select specialist from dsowner where dsid='ds"+ dsid + "';"
+    query = "select specialist from dsowner where dsid='d"+ dsid + "';"
     cursor.execute(query)
     specialist, = cursor.fetchall()[0]
 
     # Get Access rights
-    query = "select access_type from dataset where dsid='ds"+ dsid + "';"
+    query = "select access_type from dataset where dsid='d"+ dsid + "';"
     cursor.execute(query)
     rights, = cursor.fetchall()[0]
     if rights is not None:
@@ -79,7 +79,7 @@ if __name__ == "__main__":
     else:
         access_type = 'g'
 
-    query = " select grpid,gindex from dsgroup where dsid='ds"+ dsid + "' and pindex=0;"
+    query = " select grpid,gindex from dsgroup where dsid='d"+ dsid + "' and pindex=0;"
     cursor.execute(query)
     #grpid,gindex = cursor.fetchall()
     all_ents = cursor.fetchall()
