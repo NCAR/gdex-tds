@@ -32,5 +32,5 @@ spec:
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
         volumeMounts:
-        - mountPath: /glade/campaign
+        - mountPath: /gpfs/csfs1/
           name: {{ .Values.webapp.volume1.name }}
