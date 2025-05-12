@@ -17,9 +17,9 @@ webapp:
     server: gladedm1.ucar.edu
     path: /gpfs/csfs1/collections/rda/ #/gpfs/csfs1/
     readOnly: true
-      #volume:
-      #  fs:
-      #    name: tds-persist
-      #    size: 100Gi
-      #    mountPath: /data/TDSIndexFiles
+  volume:
+    fs:
+      name: tds-persist
+      size: 100Gi
+      mountPath: /data/TDSIndexFiles
 
