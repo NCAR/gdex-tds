@@ -13,6 +13,7 @@ on:
   push:
     paths:
       - rda-tds/**
+      - rda-tds-helm/**
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
