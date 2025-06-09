@@ -5,6 +5,10 @@ COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY ./content/ /usr/local/tomcat/content/thredds/
 EXPOSE 8080
 
+# highjack heathcheck to get logs
+HEALTHCHECK --interval=10s --timeout=3s \
+	CMD cat /usr/local/tomcat/logs/* && curl --fail 'http://localhost:8080/thredds/catalog.html' || exit 1
+
 # Need to deal with logs somehow /data/logs/tomcat:/usr/local/tomcat/logs
       # ./content/thredds/logs/:/usr/local/tomcat/content/thredds/logs/
 
