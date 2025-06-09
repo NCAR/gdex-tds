@@ -6,7 +6,7 @@ metadata:
 spec:
     accessModes:
         - ReadWriteMany
-    storageClassName: mlcephfs
+    storageClassName: cephfs
     resources:
         requests:
             storage: {{ .Values.webapp.volume.fs.size | default "1Gi" }} 
