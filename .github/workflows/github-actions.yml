@@ -59,6 +59,7 @@ jobs:
         run: |
           cd ..
           echo "current path is `pwd`"
+          find . 
           echo "${{ steps.meta.outputs.tags }}"
           sed -i "s/rda-tds\:.*/rda-tds`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
 
