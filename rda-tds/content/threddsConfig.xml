@@ -4,7 +4,7 @@
   <!-- all options are commented out in standard install - meaning use default values -->
   <!-- see http://www.unidata.ucar.edu/projects/THREDDS/tech/reference/ThreddsConfigXMLFile.html -->
   <serverInformation>
-    <name>NCAR RDA TDS Installation 8</name>
+    <name>NCAR RDA TDS Installation 9</name>
     <logoUrl>/thredds/rda-logo-header.png</logoUrl>
     <nsfLogo>/thredds/NCAR-Sponsored-NSF-White.png</nsfLogo>
     <installUrl>http://threadds.rda.ucar.edu/thredds/</installUrl>
