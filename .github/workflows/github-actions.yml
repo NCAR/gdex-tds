@@ -13,7 +13,7 @@ on:
   push:
     paths:
       - rda-tds/**
-      - rda-tds-helm/**
+        #- rda-tds-helm/**
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -42,7 +42,7 @@ jobs:
         with:
           images: potatofever/rda-tds
           tags: |
-            type=schedule,pattern={{date 'YYYYMMDD-hhmm'}}
+            type=schedule,pattern={{date 'YYYYMMDD-HHmm'}}
             type=sha
 
       - name: Build and push Docker image
@@ -54,3 +54,11 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Update helm chart
+        run: |
+          echo "current path is `pwd`"
+          echo "${{ steps.meta.outputs.tags }}"
+          sed -i '' "s/rda-tds\:.*/rda-tds:${{steps.meta.outputs.tags }}/" rda-tds-helm/values.yaml
+
+
