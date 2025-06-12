@@ -43,6 +43,7 @@ jobs:
           images: potatofever/rda-tds
           tags: |
             type=schedule,pattern={{date 'YYYYMMDD-hhmm'}}
+            type=sha
 
       - name: Build and push Docker image
         id: push
