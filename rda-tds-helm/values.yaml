@@ -8,7 +8,7 @@ webapp:
     fqdn: tds.k8s.ucar.edu
     secretName: incommon-cert-tds
   container: 
-    image: docker.io/potatofever/rda-tds:main
+    image: docker.io/potatofever/rda-tds:sha-8a07add
     port: 8080
     memory: 12G
     cpu: 5
