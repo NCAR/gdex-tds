@@ -7,7 +7,7 @@
     <name>NCAR RDA TDS Installation 1</name>
     <logoUrl>/thredds/rda-logo-header.png</logoUrl>
     <nsfLogo>/thredds/NCAR-Sponsored-NSF-White.png</nsfLogo>
-    <installUrl>http://threadds.rda.ucar.edu/thredds/</installUrl>
+    <installUrl>http://thredds.rda.ucar.edu/thredds/</installUrl>
     <logoAltText>NCAR RDA TDS Installation</logoAltText>
     <test>a test</test>
 
