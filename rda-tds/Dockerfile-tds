@@ -1,6 +1,7 @@
 FROM unidata/thredds-docker:5.6
 RUN mkdir -p /etc/letsencrypt/live/rda-tds.ucar.edu/
 COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
+COPY ./conf/logging.properties /usr/local/tomcat/conf/tomcat-users.xml
 #COPY ./conf/server.xml /usr/local/tomcat/conf/server.xml
 COPY ./content/ /usr/local/tomcat/content/thredds/
 EXPOSE 8080
