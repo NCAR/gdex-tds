@@ -60,8 +60,8 @@ jobs:
           echo "current path is `pwd`"
           echo "${{ steps.meta.outputs.tags }}"
           sed -i "s/rda-tds\:.*/rda-tds`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
-          git config --global user.email "rpconroy@ucar.edu"
-          git config --global user.name "Riley Conroy"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add -u
           git commit -m "Update tag"
           git push
