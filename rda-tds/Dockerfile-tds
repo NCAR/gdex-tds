@@ -21,9 +21,6 @@ HEALTHCHECK --interval=10s --timeout=3s \
       #- /etc/letsencrypt/archive/rda-tds.ucar.edu/:/etc/letsencrypt/archive/rda-tds.ucar.edu/
 
 # 
-# Need glade mounted
-      #- /gpfs/csfs1/collections/rda/data:/gpfs/csfs1/collections/rda/data
-
 # Persistant volume for cached data (~1TB)
       #- /data/rda/data/:/data/rda/data
       #- /data/TDSIndexFiles:/data/TDSIndexFiles
