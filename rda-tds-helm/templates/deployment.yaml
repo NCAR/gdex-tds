@@ -43,7 +43,7 @@ spec:
         - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
           name: {{ .Values.webapp.volume1.name }}
         - mountPath: /usr/local/tomcat/logs
-          name: {{ .Values.webapp.volume2.name }}
+          name: {{ .Values.webapp.volume2.fs.name }}
         - mountPath: /data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
       # Logs container
@@ -57,4 +57,4 @@ spec:
         - containerPort: {{ .Values.webapp.logs.port }}
         volumeMounts:
         - mountPath: /usr/local/tomcat/logs
-          name: {{ .Values.webapp.volume2.name }}
+          name: {{ .Values.webapp.volume2.fs.name }}
