@@ -12,5 +12,5 @@ USER rdalog
 # Set working directory
 WORKDIR /usr/local/tomcat/logs
 
-# Run tail on all log files in /usr/local/tomcat/logs
+# Run tail on all log files in /usr/local/tomcat/logs/
 CMD ["tail", "-F", "/usr/local/tomcat/*"]

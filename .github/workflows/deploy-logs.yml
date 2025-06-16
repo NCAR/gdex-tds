@@ -7,12 +7,12 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Publish Docker image
+name: Publish logs image
 
 on:
   push:
     paths:
-      - rda-tds/Dockerfile-tds
+      - rda-tds/Dockerfile-logs
 jobs:
   push_to_registry:
     name: Push logs image to Docker Hub
