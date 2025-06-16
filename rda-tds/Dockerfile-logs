@@ -6,7 +6,6 @@ RUN adduser -D -s /bin/bash rdalog
 # Create directory for logs and set ownership
 RUN mkdir -p /usr/local/tomcat/logs && chown rdalog:rdalog /usr/local/tomcat/logs
 
-RUN echo test > /usr/local/tomcat/logs/test
 
 # Switch to non-root user
 USER rdalog
@@ -15,4 +14,4 @@ USER rdalog
 WORKDIR /usr/local/tomcat/logs
 
 # Run tail on all log files in /usr/local/tomcat/logs
-CMD ["tail", "-f", "test"]
+CMD ["/bin/sh", "-c", "tail -f /usr/local/tomcat/logs/*"]
