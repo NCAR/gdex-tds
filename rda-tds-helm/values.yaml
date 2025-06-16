@@ -14,7 +14,7 @@ webapp:
     cpu: 5
   logs: 
     name: rda-logs
-    image: docker.io/potatofever/rda-logs:sha-f5e06c2
+    image: docker.io/potatofever/rda-logs:sha-2848cdb
     port: 8080
     memory: 2G
     cpu: 1
