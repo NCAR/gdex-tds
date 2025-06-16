@@ -14,6 +14,8 @@ on:
     paths:
       - rda-tds/**
         #- rda-tds-helm/**
+    paths-ignore:
+      - rda-tds/Dockerfile-logs
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -59,6 +61,7 @@ jobs:
         run: |
           echo "current path is `pwd`"
           echo "${{ steps.meta.outputs.tags }}"
+          git pull
           sed -i "s/rda-tds\:.*/rda-tds`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
           git config user.name 'Riley Conroy'
           git config user.email 'rpconroy@users.noreply.github.com'
