@@ -14,8 +14,7 @@ on:
     paths:
       - rda-tds/**
         #- rda-tds-helm/**
-    paths-ignore:
-      - rda-tds/Dockerfile-logs
+      - !rda-tds/Dockerfile-logs
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
