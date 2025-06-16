@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: {{ .Values.webapp.volume.rdb.name }}
+    namespace: {{ .Release.Namespace}}
+spec:
+    accessModes:
+        - ReadWriteOnce
+    storageClassName: nwceph-kubepv
+    resources:
+        requests:
+            storage: {{ .Values.webapp.volume.rdb.size | default "1Gi" }} 

@@ -1,0 +1,16 @@
+FROM alpine:latest
+
+# Create a non-root user with default values and bash as the default shell
+RUN adduser -D -s /bin/bash rdalog
+
+# Create directory for logs
+RUN mkdir -p /usr/local/tomcat/logs && chown rdalog:rdalog /usr/local/tomcat/logs
+
+# Switch to non-root user
+USER rdalog
+
+# Set working directory
+WORKDIR /usr/local/tomcat/logs
+
+# Run tail on all log files in /usr/local/tomcat/logs
+CMD ["tail", "-F", "/usr/local/tomcat/*"]

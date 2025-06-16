@@ -22,6 +22,14 @@ spec:
             server: {{ .Values.webapp.volume1.server }}
             path: {{ .Values.webapp.volume1.path }}
             readOnly: {{ .Values.webapp.volume1.readOnly }}
+        # Add the log PVC to the deployment
+        - name: {{ .Values.webapp.volume2.fs.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.webapp.volume2.fs.name }}
+        # Add the TDS index files PVC to the deployment
+        - name: {{ .Values.webapp.volume.fs.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.webapp.volume.fs.name }}
       containers:
       - name: {{ .Values.webapp.name }}
         image: {{ .Values.webapp.container.image }}
@@ -32,5 +40,21 @@ spec:
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
         volumeMounts:
-        - mountPath: /data/rda/ #/gpfs/csfs1/
+        - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
           name: {{ .Values.webapp.volume1.name }}
+        - mountPath: /usr/local/tomcat/logs
+          name: {{ .Values.webapp.volume2.name }}
+        - mountPath: /data/TDSIndexFiles/data/rda/data
+          name: {{ .Values.webapp.volume.fs.name }}
+      # Logs container
+      - name: {{ .Values.webapp.logs.name }}
+        image: {{ .Values.webapp.logs.image }}
+        resources:
+          limits:
+            memory: {{ .Values.webapp.logs.memory }}
+            cpu: {{ .Values.webapp.logs.cpu }}
+        ports:
+        - containerPort: {{ .Values.webapp.logs.port }}
+        volumeMounts:
+        - mountPath: /usr/local/tomcat/logs
+          name: {{ .Values.webapp.volume2.name }}

@@ -12,6 +12,12 @@ webapp:
     port: 8080
     memory: 12G
     cpu: 5
+  logs: 
+    name: rda-logs
+    image: docker.io/potatofever/rda-logs
+    port: 8080
+    memory: 2G
+    cpu: 1
   volume1:
     name: campaign 
     server: gladedm1.ucar.edu
@@ -22,4 +28,9 @@ webapp:
       name: tds-persist
       size: 100Gi
       mountPath: /data/TDSIndexFiles/data/rda/data # /data/TDSIndexFiles
+  volume2:
+    fs:
+      name: logs-persist
+      size: 5Gi
+      mountPath: /usr/local/tomcat/logs
 

@@ -6,6 +6,7 @@ COPY ./conf/logging.properties /usr/local/tomcat/conf/logging.properties
 COPY ./content/ /usr/local/tomcat/content/thredds/
 RUN mkdir -p /data/TDSIndexFiles/data/rda/data
 RUN chmod 777 /data/TDSIndexFiles/data/rda/data
+RUN mkdir -p /usr/local/tomcat/logs
 EXPOSE 8080
 
 # highjack heathcheck to get logs
