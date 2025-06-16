@@ -3,7 +3,7 @@ FROM alpine:latest
 # Create a non-root user with default values and bash as the default shell
 RUN adduser -D -s /bin/bash rdalog
 
-# Create directory for logs
+# Create directory for logs and set ownership
 RUN mkdir -p /usr/local/tomcat/logs && chown rdalog:rdalog /usr/local/tomcat/logs
 
 # Switch to non-root user
