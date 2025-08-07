@@ -4,11 +4,11 @@
   <!-- all options are commented out in standard install - meaning use default values -->
   <!-- see http://www.unidata.ucar.edu/projects/THREDDS/tech/reference/ThreddsConfigXMLFile.html -->
   <serverInformation>
-    <name>NCAR RDA TDS Installation 8</name>
+    <name>NCAR GDEX TDS Installation 8</name>
     <logoUrl>/thredds/rda-logo-header.png</logoUrl>
     <nsfLogo>/thredds/NCAR-Sponsored-NSF-White.png</nsfLogo>
-    <installUrl>http://thredds.rda.ucar.edu/thredds/</installUrl>
-    <logoAltText>NCAR RDA TDS Installation</logoAltText>
+    <installUrl>http://thredds.gdex.ucar.edu/thredds/</installUrl>
+    <logoAltText>NCAR GDEX TDS Installation</logoAltText>
     <test>a test</test>
 
     <abstract>Scientific Data</abstract>
@@ -16,14 +16,14 @@
     
     <contact>
       <name>Support</name>
-      <organization>NCAR RDA</organization>
+      <organization>NCAR GDEX</organization>
       <email>rpconroy@ucar.edu</email>
       <!--phone></phone-->
     </contact>
     <hostInstitution>
       <name>National Center for Atmospheric Research - Research Data Archive</name>
-      <webSite>http://rda.ucar.edu</webSite>
-      <logoUrl>http://rda.ucar.edu/images/newbanner.jpg</logoUrl>
+      <webSite>http://gdex.ucar.edu</webSite>
+      <logoUrl>http://gdex.ucar.edu/images/newbanner.jpg</logoUrl>
       <logoAltText>National Center for Atmospheric Research - Research Data Archive</logoAltText>
     </hostInstitution>
   </serverInformation>
