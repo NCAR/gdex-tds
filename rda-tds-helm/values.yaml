@@ -12,6 +12,8 @@ webapp:
     port: 8080
     memory: 12G
     cpu: 5
+    responseTimeout: 180
+    maxUploadSize: 30m
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
