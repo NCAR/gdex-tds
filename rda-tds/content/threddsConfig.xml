@@ -4,7 +4,7 @@
   <!-- all options are commented out in standard install - meaning use default values -->
   <!-- see http://www.unidata.ucar.edu/projects/THREDDS/tech/reference/ThreddsConfigXMLFile.html -->
   <serverInformation>
-    <name>NCAR GDEX TDS Installation 8</name>
+    <name>NCAR GDEX TDS Installation</name>
     <logoUrl>/thredds/gdex-logo-header.png</logoUrl>
     <nsfLogo>/thredds/NCAR-Sponsored-NSF-White.png</nsfLogo>
     <installUrl>http://thredds.gdex.ucar.edu/thredds/</installUrl>
