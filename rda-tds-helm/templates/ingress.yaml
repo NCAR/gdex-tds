@@ -7,8 +7,10 @@ metadata:
     group: {{ .Values.webapp.group }}
   annotations:
     cert-manager.io/cluster-issuer: "incommon"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "{{ .Values.webapp.container.responseTimeout }}"
+    nginx.ingress.kubernetes.io/proxy-body-size: {{ .Values.webapp.container.maxUploadSize }}
 spec:
-  ingressClassName: nginx-internal
+  ingressClassName: nginx-external
   tls:
     - hosts:
       - {{ .Values.webapp.tls.fqdn }}
