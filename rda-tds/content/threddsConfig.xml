@@ -7,7 +7,7 @@
     <name>NCAR GDEX TDS Installation</name>
     <logoUrl>/thredds/gdex-logo-header.png</logoUrl>
     <nsfLogo>/thredds/NCAR-Sponsored-NSF-White.png</nsfLogo>
-    <installUrl>http://thredds.gdex.ucar.edu/thredds/</installUrl>
+    <installUrl>http://tds.gdex.ucar.edu/thredds/</installUrl>
     <logoAltText>NCAR GDEX TDS Installation</logoAltText>
     <test>a test</test>
 
