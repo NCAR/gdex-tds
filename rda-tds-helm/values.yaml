@@ -6,6 +6,7 @@ webapp:
   path: /
   tls:
     fqdn: tds.k8s.ucar.edu
+    fqdn2: tds.gdex.ucar.edu
     secretName: incommon-cert-tds
   container: 
     image: docker.io/potatofever/rda-tds:sha-1631674
