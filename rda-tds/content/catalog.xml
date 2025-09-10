@@ -64,6 +64,7 @@
     <catalogRef xlink:href="catalog_d314002.xml" xlink:title="d314002 The WFDEI Meteorological Forcing Data" name="" />
     <catalogRef xlink:href="catalog_d314003.xml" xlink:title="d314003 CRUNCEP Version 7 - Atmospheric Forcing Data for the Community Land Model" name="" />
     <catalogRef xlink:href="catalog_d316000.xml" xlink:title="d316000 NCAR Community Earth System Model, EaSM Project Dataset" name=" NCAR Community Earth System Model, EaSM Project Dataset" />
+    <catalogRef xlink:href="catalog_d316009.xml" xlink:title="d316009 NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment" name="NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment" />
     <catalogRef xlink:href="catalog_d335000.xml" xlink:title="d335000 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
     <catalogRef xlink:href="catalog_d336000.xml" xlink:title="d336000 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
     <catalogRef xlink:href="catalog_d340000.xml" xlink:title="d340000 The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS" />

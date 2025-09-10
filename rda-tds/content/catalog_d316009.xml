@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d316009/" xlink:title="NCAR GDEX - NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment(d316009)" />
+      <documentation type="summary">The North America CORDEX (NA-CORDEX) dataset contains regional climate change scenario data and guide for North America, for use in impacts, decision-making, and climate science. This dataset contains output from regional climate models (RCMs) run over a domain covering most of North America using boundary conditions from global climate model (GCM) simulations in the CMIP5 archive. These simulations run from 1950 to 2100 with a spatial resolution of 0.22 degree (25km) or 0.44 degree (50km). This version of the data is the same as the AWS S3 version. It includes selected variables converted to the Zarr format from the original NetCDF. Only daily data are currently available; all daily data were mapped to the standard calendar.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d316009 Files" path="files/d316009" location="/data/rda/data/d316009/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+

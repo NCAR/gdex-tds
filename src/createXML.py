@@ -35,7 +35,7 @@ def get_dsid():
     if len(dsid) < 5 or len(dsid) > 7:
         sys.stderr.write('dsid, "' + dsid + '" is not valid\n')
         exit(1)
-    return  dsid.split('ds')[-1]
+    return  dsid
 
 def strip_html(text):
     parts = []
@@ -63,6 +63,7 @@ def get_format(formt):
 def get_dsOverview_xml(dsid):
     try: # Try using filesystem
         filename = '/data/web/datasets/ds'+dsid+'/metadata/dsOverview.xml'
+        filename = 'https://gdex.k8s.ucar.edu/metadata/'+dsid+'/metadata/dsOverview.xml'
         tree = ET.parse(filename)
         root = tree.getroot()
     except: # Otherwise, get from web
@@ -95,7 +96,7 @@ if __name__ == '__main__':
 
 
     ## New Connection to search db
-    conn = sql.connect(user = 'metadata', password='metadata', host = 'rda-db.ucar.edu', database='rdadb')
+    conn = sql.connect(user = 'metadata', password='PGPassword4metadata!', host = 'rda-db.ucar.edu', database='rdadb')
     cursor = conn.cursor()
 
     # Get title
@@ -137,19 +138,10 @@ if __name__ == '__main__':
     keywords = cursor.fetchall()
 
 
-    # Get Access rights
-    query = "select access_type from dssdb.dataset where dsid='ds"+ dsid + "';"
-    cursor.execute(query)
-    rights, = cursor.fetchall()[0]
-    access_type = 'g'
-    if rights is not None:
-        access_type = rights
-        rights = 'Some Restrictions Apply'
-    else:
-        rights = 'Freely Available'
+    rights = 'Freely Available'
 
     ## Web derived information
-    dsOverview_root = get_dsOverview_xml(dsid)
+    #dsOverview_root = get_dsOverview_xml(dsid)
 
     ## Begin to build xml
     root = ET.Element('catalog')
@@ -181,8 +173,8 @@ if __name__ == '__main__':
     doc_rights.text = rights;
 
     doc_href = ET.SubElement(metadata, 'documentation')
-    doc_href.attrib['xlink:href'] = 'http://rda.ucar.edu/datasets/ds'+dsid+'/'
-    doc_href.attrib['xlink:title'] = 'NCAR RDA - ' + title + '(ds'+dsid+')'
+    doc_href.attrib['xlink:href'] = 'http://gdex.ucar.edu/datasets/'+dsid+'/'
+    doc_href.attrib['xlink:title'] = 'NCAR GDEX - ' + title + '('+dsid+')'
 
     doc_summary = ET.SubElement(metadata, 'documentation')
     doc_summary.attrib['type'] = 'summary'
@@ -210,15 +202,15 @@ if __name__ == '__main__':
         contact.attrib['url'] = 'none'
 
     authority = ET.SubElement(metadata, 'authority')
-    authority.text = 'edu.ucar.rda'
+    authority.text = 'edu.ucar.gdex'
 
     publisher = ET.SubElement(metadata, 'publisher')
     publisher_name = ET.SubElement(publisher, 'name')
     publisher_name.attrib['vocabulary'] = 'DIF'
-    publisher_name.text = 'NCAR/RDA'
+    publisher_name.text = 'NCAR/GDEX'
     publisher_contact = ET.SubElement(publisher, 'contact')
-    publisher_contact.attrib['url'] = 'http://rda.ucar.edu/'
-    publisher_contact.attrib['email'] = 'rdahelp@ucar.edu'
+    publisher_contact.attrib['url'] = 'http://gdex.ucar.edu/'
+    publisher_contact.attrib['email'] = 'datahelp@ucar.edu'
 
     # Get keywords
     for keyword in keywords:
@@ -230,8 +222,8 @@ if __name__ == '__main__':
     dataset.append(ET.Comment('Files'))
     datasetScan = ET.SubElement(dataset, 'datasetScan')
     datasetScan.attrib['name'] = dsid + ' Files'
-    datasetScan.attrib['path'] = 'files/'+access_type+'/ds'+dsid
-    datasetScan.attrib['location'] = '/data/rda/data/ds'+dsid+'/'
+    datasetScan.attrib['path'] = 'files/'+dsid
+    datasetScan.attrib['location'] = '/data/rda/data/'+dsid+'/'
     scan_metadata = ET.SubElement(datasetScan, 'metadata')
     scan_metadata.attrib['inherited'] = 'true'
     service_name = ET.SubElement(scan_metadata, 'serviceName')
