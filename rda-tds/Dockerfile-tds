@@ -9,7 +9,6 @@ RUN chmod 777 /data/TDSIndexFiles/data/rda/data
 RUN mkdir -p /usr/local/tomcat/logs
 EXPOSE 8080
 
-# highjack heathcheck to get logs
 HEALTHCHECK --interval=10s --timeout=3s \
 	CMD curl --fail 'https://tds.gdex.ucar.edu/thredds/catalog.html' || exit 1
 
