@@ -11,7 +11,7 @@ webapp:
   container: 
     image: docker.io/potatofever/rda-tds:sha-09440e5
     port: 8080
-    memory: 12G
+    memory: 16G
     cpu: 5
     responseTimeout: 180
     maxUploadSize: 30m
