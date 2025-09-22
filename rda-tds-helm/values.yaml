@@ -30,7 +30,7 @@ webapp:
     fs:
       name: tds-persist
       size: 100Gi
-      mountPath: /tmp2/TDSIndexFiles # /data/TDSIndexFiles
+      mountPath: /data/TDSIndexFiles/data/rda/data # /tmp2/TDSIndexFiles # /data/TDSIndexFiles
   volume2:
     fs:
       name: logs-persist
