@@ -16,6 +16,10 @@ spec:
       labels:
         app: {{ .Values.webapp.name }}
     spec:
+      securityContext:
+        runAsUser: 1000 # Specify the desired user ID
+        runAsGroup: 1000 # Specify the desired group ID
+        fsGroup: 1000 # Specify the desired group ID for volume ownership
       volumes:
         - name: {{ .Values.webapp.volume1.name }}
           nfs:
