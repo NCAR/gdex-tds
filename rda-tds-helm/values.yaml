@@ -7,6 +7,7 @@ webapp:
   tls:
     fqdn: tds.k8s.ucar.edu
     fqdn2: tds.gdex.ucar.edu
+    fqdn3: thredds.rda.ucar.edu
     secretName: incommon-cert-tds
   container: 
     image: docker.io/potatofever/rda-tds:sha-09440e5
