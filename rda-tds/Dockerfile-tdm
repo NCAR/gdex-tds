@@ -1,0 +1,7 @@
+FROM unidata/tdm-docker:5.6
+COPY ./content/ ~/tdsconfig/
+
+
+# Source env file in helmchart?
+    #env_file:
+    #- "compose${THREDDS_COMPOSE_ENV_LOCAL}.env"

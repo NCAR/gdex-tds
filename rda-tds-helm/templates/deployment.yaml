@@ -62,3 +62,15 @@ spec:
         volumeMounts:
         - mountPath: /usr/local/tomcat/logs
           name: {{ .Values.webapp.volume2.fs.name }}
+      # TDM container
+      - name: {{ .Values.webapp.tdm.name }}
+        image: {{ .Values.webapp.tdm.image }}
+        resources:
+          limits:
+            memory: {{ .Values.webapp.tdm.memory }}
+            cpu: {{ .Values.webapp.tdm.cpu }}
+        ports:
+        - containerPort: {{ .Values.webapp.tdm.port }}
+        volumeMounts:
+        - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
+          name: {{ .Values.webapp.volume.fs.name }}

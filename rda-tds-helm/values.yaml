@@ -22,6 +22,12 @@ webapp:
     port: 8080
     memory: 2G
     cpu: 1
+  tdm:
+    name: gdex-tdm
+    image: docker.io/potatofever/gdex-tdm:v1.0
+    port: 8080
+    memory: 2G
+    cpu: 1
   volume1:
     name: campaign 
     server: gladedm1.ucar.edu
