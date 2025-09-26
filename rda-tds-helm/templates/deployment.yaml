@@ -79,3 +79,5 @@ spec:
         volumeMounts:
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: /data/rda/ # Glade
+          name: {{ .Values.webapp.volume1.name }}
