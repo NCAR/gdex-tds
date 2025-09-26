@@ -28,6 +28,9 @@ webapp:
     port: 8080
     memory: 2G
     cpu: 1
+    env:
+      TDM_XMX_SIZE: "10G"
+      TDM_XMS_SIZE: "5G"
   volume1:
     name: campaign 
     server: gladedm1.ucar.edu

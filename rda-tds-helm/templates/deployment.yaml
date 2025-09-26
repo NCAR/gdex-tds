@@ -71,6 +71,11 @@ spec:
             cpu: {{ .Values.webapp.tdm.cpu }}
         ports:
         - containerPort: {{ .Values.webapp.tdm.port }}
+        env:
+          - name: TDM_XMX_SIZE
+            value: {{ .Values.webapp.tdm.env.TDM_XMX_SIZE }}
+          - name: TDM_XMS_SIZE
+            value: {{ .Values.webapp.tdm.env.TDM_XMS_SIZE }}
         volumeMounts:
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
