@@ -1,4 +1,4 @@
-### To start fresh, delete containers and images;
+### To start fresh, delete containers and images
 `podman image rm nginx_nginx`
 `podman container rm thredds -f`
 `podman container rm nginx -f`
