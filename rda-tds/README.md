@@ -3,6 +3,8 @@
 `podman container rm thredds -f`
 `podman container rm nginx -f`
 
+
+
 You can check to see that there's nothing running using,
 `podman container ps -a`
 
