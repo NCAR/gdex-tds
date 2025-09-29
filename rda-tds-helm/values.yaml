@@ -16,6 +16,9 @@ webapp:
     cpu: 5
     responseTimeout: 180
     maxUploadSize: 30m
+    env:
+      THREDDS_XMX_SIZE: 28G
+      THREDDS_XMS_SIZE: 5G
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca

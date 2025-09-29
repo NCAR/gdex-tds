@@ -43,6 +43,11 @@ spec:
             cpu: {{ .Values.webapp.container.cpu }}
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
+        env:
+          - name: TDS_XMX_SIZE
+            value: {{ .Values.webapp.container.env.THREDDS_XMX_SIZE }}
+          - name: TDS_XMS_SIZE
+            value: {{ .Values.webapp.container.env.THREDDS_XMX_SIZE }}
         volumeMounts:
         - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
           name: {{ .Values.webapp.volume1.name }}
