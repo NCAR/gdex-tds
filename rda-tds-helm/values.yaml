@@ -10,7 +10,7 @@ webapp:
     fqdn3: thredds.rda.ucar.edu
     secretName: incommon-cert-tds
   container: 
-    image: docker.io/potatofever/rda-tds:sha-4e44cd6
+    image: docker.io/potatofever/rda-tds:sha-ac3c57d
     port: 8080
     memory: 32G
     cpu: 5
