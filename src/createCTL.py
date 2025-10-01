@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import psycopg2 as sql
 import pdb
 import sys
+import yaml
 
 
 def usage():
@@ -33,7 +34,7 @@ def create_ctl_entry(dsid, specialist, access_type, dirname="", gindex=None):
 
     sys.stdout.write('0') # Write 0 because index is not yet defined
     write_seperator()
-    sys.stdout.write('ds'+dsid)
+    sys.stdout.write(dsid)
     write_seperator()
     if gindex is None:
         sys.stdout.write('0') # Write 0 when refering to all products
@@ -59,10 +60,11 @@ def create_ctl_entry(dsid, specialist, access_type, dirname="", gindex=None):
 if __name__ == "__main__":
 
     dsid = get_dsid()
+    pw = input("Enter db pw: ")
 
 
     ## New Connection to dssdb
-    conn = sql.connect(user = 'dssdb', password='dssdb', host = 'rda-db.ucar.edu', database='rdadb')
+    conn = sql.connect(user = 'dssdb', password=pw, host = 'rda-db.ucar.edu', database='rdadb')
     cursor = conn.cursor()
 
     # Get Specialist
