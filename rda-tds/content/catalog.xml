@@ -24,6 +24,7 @@
     </service>
      -->
     
+    <catalogRef xlink:href="catalog_d010079.xml" xlink:title="d010079 Ensemble Historical Gridded Daily Temperature and Bias Adjusted Precipitation for Alaska and the Yukon" name="" />
     <catalogRef xlink:href="catalog_d083002.xml" xlink:title="d083002 NCEP FNL Operational Model Global Tropospheric Analyses" name="" />
     <catalogRef xlink:href="catalog_d083003.xml" xlink:title="d083003 NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Grids" name="" />
     <catalogRef xlink:href="catalog_d084001.xml" xlink:title="d084001 NCEP GFS 0.25 Degree Global Forecast Grids" name="" />

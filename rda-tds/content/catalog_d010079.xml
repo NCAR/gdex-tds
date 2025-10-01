@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Ensemble Historical Gridded Daily Temperature and Bias Adjusted Precipitation for Alaska and the Yukon" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Ensemble Historical Gridded Daily Temperature and Bias Adjusted Precipitation for Alaska and the Yukon">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010079/" xlink:title="NCAR GDEX - Ensemble Historical Gridded Daily Temperature and Bias Adjusted Precipitation for Alaska and the Yukon(d010079)" />
+      <documentation type="summary">Recently developed knowledge-based climatological interpolation and ensemble climatologically aided interpolation systems (Newman et al. 2019, 2020a) are used to develop gridded daily, 2 km grid spacing ensemble historical observations across Alaska and the Yukon territory. The ensemble files include daily unadjusted and adjusted precipitation (mm/day), daily mean temperature (degree C), diurnal temperature range (degree C), fraction of precipitation falling as snow, and the wetting loss and wind undercatch correction factors (Newman et al. 2020b). Currently there are only two deterministic daily gridded primarily in situ based observational datasets for this region. This dataset is the novel for the region because it is an ensemble and it contains ensemble estimates of gauge loss corrected precipitation. Additionally, there are limitations with any of the available observation based products, and having another comparison point is useful to the community.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010079 Files" path="files/d010079" location="/data/rda/data/d010079/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
+
