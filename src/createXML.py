@@ -94,9 +94,9 @@ if __name__ == '__main__':
         directory = sys.argv[2]
         output_filename = directory+'catalog_'+dsid+'.xml'
 
-
+    pw = input('metadata pw: ')
     ## New Connection to search db
-    conn = sql.connect(user = 'metadata', password='PGPassword4metadata!', host = 'rda-db.ucar.edu', database='rdadb')
+    conn = sql.connect(user = 'metadata', password=pw, host = 'rda-db.ucar.edu', database='rdadb')
     cursor = conn.cursor()
 
     # Get title
