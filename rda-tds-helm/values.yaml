@@ -12,7 +12,7 @@ webapp:
   container: 
     image: docker.io/potatofever/rda-tds:sha-8f4b4d1
     port: 8080
-    memory: 32G
+    memory: 38G
     cpu: 5
     responseTimeout: 180
     maxUploadSize: 30m
@@ -20,8 +20,8 @@ webapp:
     limit-rps: 10
  
     env:
-      THREDDS_XMX_SIZE: 28G
-      THREDDS_XMS_SIZE: 5G
+      THREDDS_XMX_SIZE: 24G
+      THREDDS_XMS_SIZE: 10G
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
@@ -32,11 +32,11 @@ webapp:
     name: gdex-tdm
     image: docker.io/potatofever/gdex-tdm:v1.2
     port: 8080
-    memory: 10G
+    memory: 6G
     cpu: 2
     env:
-      TDM_XMX_SIZE: "10G"
-      TDM_XMS_SIZE: "5G"
+      TDM_XMX_SIZE: "5G"
+      TDM_XMS_SIZE: "2G"
   volume1:
     name: campaign 
     server: gladedm1.ucar.edu
