@@ -16,10 +16,7 @@ def get_dsid():
     if(len(sys.argv) <= 1):
         usage()
     dsid = sys.argv[1]
-    if len(dsid) < 5 or len(dsid) > 7:
-        sys.stderr.write('dsid, "' + dsid + '" is not valid\n')
-        exit(1)
-    return  dsid.split('d')[-1]
+    return dsid
 
 def write_seperator():
     """Write '<:>' to stdout"""
