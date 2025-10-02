@@ -9,6 +9,10 @@ metadata:
     cert-manager.io/cluster-issuer: "incommon"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "{{ .Values.webapp.container.responseTimeout }}"
     nginx.ingress.kubernetes.io/proxy-body-size: {{ .Values.webapp.container.maxUploadSize }}
+    nginx.ingress.kubernetes.io/limit-rps: {{ .Values.webapp.container.limit-rps }}
+    nginx.ingress.kubernetes.io/limit-connections: {{ .Values.webapp.container.limit-connections }}
+
+
 spec:
   ingressClassName: nginx-external
   tls:
