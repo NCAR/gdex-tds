@@ -10,7 +10,11 @@
 name: Publish Docker image
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
     paths:
       - rda-tds/**
         #- rda-tds-helm/**
