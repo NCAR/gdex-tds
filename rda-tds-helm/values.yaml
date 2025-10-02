@@ -20,7 +20,7 @@ webapp:
     limit-rps: 10
  
     env:
-      THREDDS_XMX_SIZE: 24G
+      THREDDS_XMX_SIZE: 34G
       THREDDS_XMS_SIZE: 10G
   logs: 
     name: rda-logs
