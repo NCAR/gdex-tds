@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 3
 
 webapp:
   name: rda-tds
@@ -10,7 +10,7 @@ webapp:
     fqdn3: thredds.rda.ucar.edu
     secretName: incommon-cert-tds
   container: 
-    image: docker.io/potatofever/rda-tds:sha-b1c92da
+    image: docker.io/potatofever/rda-tds:sha-c8a643e
     port: 8080
     memory: 38G
     cpu: 5
