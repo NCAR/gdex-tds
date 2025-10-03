@@ -10,15 +10,18 @@ webapp:
     fqdn3: thredds.rda.ucar.edu
     secretName: incommon-cert-tds
   container: 
-    image: docker.io/potatofever/rda-tds:sha-d1a4c59
+    image: docker.io/potatofever/rda-tds:sha-b1c92da
     port: 8080
-    memory: 32G
+    memory: 38G
     cpu: 5
     responseTimeout: 180
     maxUploadSize: 30m
+    limit_connections: 5
+    limit_rps: 10
+ 
     env:
-      THREDDS_XMX_SIZE: 28G
-      THREDDS_XMS_SIZE: 5G
+      THREDDS_XMX_SIZE: 34G
+      THREDDS_XMS_SIZE: 10G
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
@@ -29,11 +32,11 @@ webapp:
     name: gdex-tdm
     image: docker.io/potatofever/gdex-tdm:v1.2
     port: 8080
-    memory: 10G
+    memory: 6G
     cpu: 2
     env:
-      TDM_XMX_SIZE: "10G"
-      TDM_XMS_SIZE: "5G"
+      TDM_XMX_SIZE: "5G"
+      TDM_XMS_SIZE: "2G"
   volume1:
     name: campaign 
     server: gladedm1.ucar.edu
