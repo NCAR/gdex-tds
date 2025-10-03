@@ -2,6 +2,10 @@
 """
 Creating the .ctl entries about TDS links for a given dataset
 
+Needed packages:
+    psycopg2 (include in )
+    python-dotenv
+
 Usage:
     createCTL.py [dsid]
 
@@ -12,13 +16,16 @@ Example:
 import sys
 import os
 import psycopg2 as sql
-from dotenv import load_dotenv, find_dotenv
+try:
+    # Load environment variables from .env file (searches up directory tree)
+    from dotenv import load_dotenv, find_dotenv
+    load_dotenv(find_dotenv())
+except ImportError:
+    print("python-dotenv package is not installed. .env variable is not used")
+
 # import xml.etree.ElementTree as ET
 # import pdb
 # import yaml
-
-# Load environment variables from .env file (searches up directory tree)
-load_dotenv(find_dotenv())
 
 
 def usage():
