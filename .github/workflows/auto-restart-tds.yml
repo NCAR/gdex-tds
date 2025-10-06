@@ -1,0 +1,58 @@
+name: Auto Restart TDS
+
+on:
+  schedule:
+    # Run every 15 minutes
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+    - name: Pull latest changes
+      run: git pull origin main
+      
+    - name: Check TDS Health
+      id: health-check
+      run: |
+        echo "Checking TDS health at $(date)"
+        
+        # Test the TDS endpoint with timeout
+        if curl --fail --connect-timeout 6 --max-time 10 -s https://tds.gdex.ucar.edu/thredds > /dev/null; then
+          echo "status=healthy" >> $GITHUB_OUTPUT
+          echo "TDS is healthy at $(date)"
+        else
+          echo "status=unhealthy" >> $GITHUB_OUTPUT
+          echo "TDS is unhealthy at $(date)"
+        fi
+
+    - name: Trigger Pod Restart
+      if: steps.health-check.outputs.status == 'unhealthy'
+      run: |
+        echo "Triggering restart on $(date)"
+        echo "Restart on $(date) by GHA" >> rda-tds/README.md
+        
+        # Commit and push the change to trigger restart
+        git add rda-tds/README.md
+        git commit -m "Pod restart - $(date)"
+        git push origin main
+        
+    - name: Log Healthy Status
+      if: steps.health-check.outputs.status == 'healthy'
+      run: |
+        echo "TDS is healthy - no action needed at $(date)"
