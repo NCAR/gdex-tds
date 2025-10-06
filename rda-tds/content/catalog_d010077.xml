@@ -47,18 +47,18 @@ The repository also includes namelist files for running the model, a README file
                     featureType="netcdf"
                     harvest="true"
                     path="aggregations/g/d010077/1">
-        <!-- <metadata inherited="true">
-        <serviceName>all</serviceName>
-        </metadata> -->
 
         <collection name="d010077" 
                    spec="/data/rda/data/d010077/post_0p25/*.nc$" 
                    dateFormatMark="deg.25_diag.yyyy-MM-dd_HH#.00.00.nc#"
                    timePartition="directory" />
+
         <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+        
         <netcdfConfig>
           <aggregation dimName="xtime" type="joinExisting" />
         </netcdfConfig>
+    
     </featureCollection>
 
   </dataset>
