@@ -4,10 +4,13 @@ webapp:
   name: rda-tds
   group: rda-tds
   path: /
+  # SSL/TLS encryption for the user browser to Ingress connection
   tls:
-    fqdn: tds.k8s.ucar.edu
+    # Fully Qualified Domain Name (e.g.: <app-name>.k8s.ucar.edu)
+    fqdn: tds.k8s.ucar.edu       
     fqdn2: tds.gdex.ucar.edu
     fqdn3: thredds.rda.ucar.edu
+    # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
   container: 
     image: docker.io/potatofever/rda-tds:sha-c8a643e
