@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Regional Multi-Week Convection-Permitting Simulations using the Model for Prediction Across Scales (MPAS-A) for use in the Caribbean, Mexico, and Central America Regions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Regional Multi-Week Convection-Permitting Simulations using the Model for Prediction Across Scales (MPAS-A) for use in the Caribbean, Mexico, and Central America Regions">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010077/" xlink:title="NCAR GDEX - Regional Multi-Week Convection-Permitting Simulations using the Model for Prediction Across Scales (MPAS-A) for use in the Caribbean, Mexico, and Central America Regions(d010077)" />
+      <documentation type="summary">The dataset includes native-grid model outputs and post-processed outputs from the first-ever multi-week regional convection-permitting MPAS simulation during September 2017, a period when the devastating Hurricane Maria was active. This historic simulation provides a valuable dataset for studying weather and climate across Mesoamerica and the Caribbean using a realistic, storm-resolving model setup. The simulation is the first major outcome of the NSF NCAR Mesoamerica Affinity Group (MAAG) in collaboration with Dr. Kelly Nunez Ocasio at Texas A&amp;M.
+MPAS-A version 8.0.1 was used to produce this simulation. The Limited-Area domain extends from 20 degree South to 61 degree North and from 145 degree West to 15 degree West. A variable-resolution mesh with 15 km and 3 km grid spacing was used, where the 3 km refinement region is elliptically shaped and centered at 20 degree North and 80 degree West. The refined region covers Central America and the Caribbean, while the 15 km portion of the domain extends well into South and North America. The combination of a Limited-Area domain and variable-resolution mesh was chosen to be computationally efficient while maintaining sufficient resolution at the domain's boundaries to allow for proper dynamical downscaling of initial and lateral boundary conditions. The model was initialized using ERA5 data to simulate the period during which Hurricane Maria (2017) approached the Caribbean and the eastern U.S.
+This dataset can be used to study Hurricane Maria, other hurricanes that were active during this period, and various weather and climate features of the region, such as low-level jets, coastal diurnal cycles, the ITCZ, extreme rainfall, and mesoscale convective systems, among others. While the model produces outputs at 15 km and 3 km horizontal variable resolutions, the post-processed data have been interpolated to a 0.25 degree by 0.25 degree latitude-longitude grid and 27 isobaric levels in the vertical.
+The repository also includes namelist files for running the model, a README file, and a PDF describing the variables in each file type.</documentation>
+      <creator>
+        <name vocabulary="DIF">TAMU/ATMO</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+
+    <!--Files-->
+    <datasetScan name="d010077 Files" path="files/d010077" location="/data/rda/data/d010077/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+
+  </dataset>
+</catalog>

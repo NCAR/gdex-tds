@@ -1,23 +1,26 @@
-replicaCount: 1
+replicaCount: 3
 
 webapp:
   name: rda-tds
   group: rda-tds
   path: /
+  # SSL/TLS encryption for the user browser to Ingress connection
   tls:
-    fqdn: tds.k8s.ucar.edu
+    # Fully Qualified Domain Name (e.g.: <app-name>.k8s.ucar.edu)
+    fqdn: tds.k8s.ucar.edu       
     fqdn2: tds.gdex.ucar.edu
     fqdn3: thredds.rda.ucar.edu
+    # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
   container: 
-    image: docker.io/potatofever/rda-tds:sha-c307089
+    image: docker.io/potatofever/rda-tds:sha-bb8b85f
     port: 8080
     memory: 38G
     cpu: 5
     responseTimeout: 180
     maxUploadSize: 30m
-    limit-connections: 5
-    limit-rps: 10
+    limit_connections: 8
+    limit_rps: 10
  
     env:
       THREDDS_XMX_SIZE: 34G
