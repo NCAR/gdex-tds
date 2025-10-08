@@ -10,9 +10,14 @@
 name: Publish logs image
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
     paths:
       - rda-tds/Dockerfile-logs
+  workflow_dispatch:
 jobs:
   push_to_registry:
     name: Push logs image to Docker Hub
