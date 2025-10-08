@@ -17,6 +17,8 @@ jobs:
   push_to_registry:
     name: Push logs image to Docker Hub
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Denver  # Mountain Time (MDT/MST)
     permissions:
       packages: write
       contents: write
@@ -57,7 +59,7 @@ jobs:
       - name: Set Timestamp
         id: timestamp
         run: |
-          echo "datetime=$(date)" >> $GITHUB_OUTPUT
+          echo "datetime=$(TZ=America/Denver date)" >> $GITHUB_OUTPUT
 
       - name: Update helm chart
         run: |
