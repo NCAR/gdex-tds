@@ -23,10 +23,6 @@ try:
 except ImportError:
     print("python-dotenv package is not installed. .env variable is not used")
 
-# import xml.etree.ElementTree as ET
-# import pdb
-# import yaml
-
 
 def usage():
     """Print usage information for the script."""
