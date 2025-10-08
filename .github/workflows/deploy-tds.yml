@@ -1,12 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
-
 name: Publish Docker image
 
 on:
@@ -28,6 +19,7 @@ jobs:
       contents: write
       attestations: write
       id-token: write
+      pull-requests: write
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -60,16 +52,71 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      - name: Update helm chart
+      - name: Create Docker Update Branch
+        id: create-branch
         run: |
-          echo "current path is `pwd`"
-          echo "${{ steps.meta.outputs.tags }}"
-          git pull
-          sed -i "s/rda-tds\:.*/rda-tds`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
+          # Generate unique branch name
+          BRANCH_NAME="docker-update/$(date +%Y%m%d-%H%M%S)"
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          
+          # Configure Git
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -u
-          git commit -m "Update docker image tag in the helm chart"
-          git push
+          
+          # Pull latest changes
+          git pull origin main
+          
+          # Create and switch to new branch
+          git checkout -b $BRANCH_NAME
+          
+          # Update helm chart with new image tag
+          echo "current path is `pwd`"
+          echo "${{ steps.meta.outputs.tags }}"
+          sed -i "s/rda-tds\:.*/rda-tds`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
+          
+          # Commit and push to new branch
+          git add rda-tds-helm/values.yaml
+          git commit -m "Update docker image tag in helm chart - ${{ steps.meta.outputs.tags }}"
+          git push origin $BRANCH_NAME
+
+      - name: Create Pull Request
+        id: pr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.create-branch.outputs.branch_name }}
+          base: main
+          title: "🚀 Update TDS Docker Image - ${{ steps.meta.outputs.tags }}"
+          body: |
+            ## Docker Image Update
+            
+            **New Image:** ${{ steps.meta.outputs.tags }}
+            **Build Time:** $(date)
+            **Trigger:** Docker build and push completed
+            
+            ### Changes:
+            - Updated `rda-tds-helm/values.yaml` with new image tag
+            - This will trigger Kubernetes deployment update
+            
+            ### Deployment:
+            This PR will automatically merge to deploy the new image.
+            
+            ---
+            *This PR was created automatically by the Docker build workflow.*
+          draft: false
+
+      - name: Auto-merge Pull Request
+        if: steps.pr.outputs.pull-request-number
+        run: |
+          # Wait a moment for PR to be fully created
+          sleep 1m
+          
+          # Auto-merge the PR
+          gh pr merge ${{ steps.pr.outputs.pull-request-number }} \
+            --auto \
+            --squash \
+            --subject "Update TDS Docker image - ${{ steps.meta.outputs.tags }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
