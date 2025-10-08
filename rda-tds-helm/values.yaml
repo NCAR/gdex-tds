@@ -13,7 +13,7 @@ webapp:
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
   container: 
-    image: docker.io/potatofever/rda-tds:sha-bb8b85f
+    image: docker.io/potatofever/rda-tds:sha-1dd7cbf
     port: 8080
     memory: 38G
     cpu: 5
