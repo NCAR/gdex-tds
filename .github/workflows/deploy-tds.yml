@@ -86,13 +86,13 @@ jobs:
           author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           branch: "docker-update"
           branch-suffix: timestamp
-          delete-branch: false
+          delete-branch: true
           title: "🚀 Update TDS Docker Image - ${{ steps.meta.outputs.tags }}"
           body: |
             ## Docker Image Update
             
             **New Image:** ${{ steps.meta.outputs.tags }}
-            **Build Time:** $(date)
+            **Build Time:** ${{ github.event.head_commit.timestamp || github.event.pull_request.closed_at || github.run_started_at }}
             **Trigger:** Docker build and push completed
             
             ### Changes:
