@@ -36,4 +36,3 @@ Once the unit files have been loaded, one can restart as root:
 systemctl restart container-thredds.service
 systemctl restart container-nginx.service
 ```
-
