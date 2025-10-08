@@ -42,25 +42,18 @@ jobs:
           echo "TDS is unhealthy at $(date)"
         fi
 
-    - name: Create Restart Branch and PR
+    - name: Set Timestamp
       if: steps.health-check.outputs.status == 'unhealthy'
-      id: create-pr
+      id: timestamp
       run: |
-        # Generate unique branch name
-        BRANCH_NAME="auto-restart/$(date +%Y%m%d-%H%M%S)"
-        echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
-        
-        # Create and switch to new branch
-        git checkout -b $BRANCH_NAME
-        
-        # Make the restart change
-        echo "" >> rda-tds/RRESTART_LOG.md
+        echo "datetime=$(date)" >> $GITHUB_OUTPUT
+
+    - name: Add Restart Entry
+      if: steps.health-check.outputs.status == 'unhealthy'
+      run: |
+        # Make the restart change to trigger pod restart
+        echo "" >> rda-tds/RESTART_LOG.md
         echo "Restart on $(date) by GitHub Actions" >> rda-tds/RESTART_LOG.md
-        
-        # Commit and push to new branch
-        git add rda-tds/RESTART_LOG.md
-        git commit -m "Auto restart TDS - $(date)"
-        git push origin $BRANCH_NAME
         
     - name: Create Pull Request
       if: steps.health-check.outputs.status == 'unhealthy'
@@ -68,13 +61,18 @@ jobs:
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ steps.create-pr.outputs.branch_name }}
-        base: main
-        title: "🚨 Auto Restart TDS - $(date)"
+        commit-message: "Auto restart TDS - ${{ steps.timestamp.outputs.datetime }}"
+        committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+        author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+        branch: "auto-restart"
+        branch-suffix: timestamp
+        delete-branch: true
+        title: "🚨 Auto Restart TDS - ${{ steps.timestamp.outputs.datetime }}"
         body: |
           ## TDS Health Check Failed
           
-          **Time:** $(date)
+          **Time:** ${{ steps.timestamp.outputs.datetime }}
+          **Run ID:** ${{ github.run_id }}
           **Status:** TDS is unhealthy and requires restart
           **Action:** Adding restart trigger to RESTART_LOG.md
           
@@ -82,13 +80,14 @@ jobs:
           
           ---
           *This PR was created automatically by the health check workflow.*
+        base: main
         draft: false
         
     - name: Auto-merge Pull Request
       if: steps.health-check.outputs.status == 'unhealthy' && steps.pr.outputs.pull-request-number
       run: |
         # Wait a moment for PR to be fully created
-        sleep 3m
+        sleep 5
         
         # Auto-merge the PR
         gh pr merge ${{ steps.pr.outputs.pull-request-number }} \
