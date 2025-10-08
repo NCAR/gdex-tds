@@ -161,7 +161,7 @@ if __name__ == '__main__':
     check_same(datatypes)
     try:
         datatype, = datatypes[0]
-    except:
+    except Exception as e:
         datatype = 'GRID'
     datatype = datatype.upper()
 
