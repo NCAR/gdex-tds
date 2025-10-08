@@ -13,6 +13,8 @@ permissions:
 jobs:
   health-check:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Denver  # Mountain Time (MDT/MST)
     
     steps:
     - name: Checkout repository
@@ -31,29 +33,29 @@ jobs:
     - name: Check TDS Health
       id: health-check
       run: |
-        echo "Checking TDS health at $(date)"
+        echo "Checking TDS health at $(TZ=America/Denver date)"
         
         # Test the TDS endpoint with timeout
         if curl --fail --connect-timeout 6 --max-time 10 -s https://tds.gdex.ucar.edu/thredds > /dev/null; then
           echo "status=healthy" >> $GITHUB_OUTPUT
-          echo "TDS is healthy at $(date)"
+          echo "TDS is healthy at $(TZ=America/Denver date)"
         else
           echo "status=unhealthy" >> $GITHUB_OUTPUT
-          echo "TDS is unhealthy at $(date)"
+          echo "TDS is unhealthy at $(TZ=America/Denver date)"
         fi
 
     - name: Set Timestamp
       if: steps.health-check.outputs.status == 'unhealthy'
       id: timestamp
       run: |
-        echo "datetime=$(date)" >> $GITHUB_OUTPUT
+        echo "datetime=$(TZ=America/Denver date)" >> $GITHUB_OUTPUT
 
     - name: Add Restart Entry
       if: steps.health-check.outputs.status == 'unhealthy'
       run: |
         # Make the restart change to trigger pod restart
         echo "" >> rda-tds/RESTART_LOG.md
-        echo "Restart on $(date) by GitHub Actions" >> rda-tds/RESTART_LOG.md
+        echo "Restart on $(TZ=America/Denver date) by GitHub Actions" >> rda-tds/RESTART_LOG.md
         
     - name: Create Pull Request
       if: steps.health-check.outputs.status == 'unhealthy'
@@ -93,11 +95,11 @@ jobs:
         gh pr merge ${{ steps.pr.outputs.pull-request-number }} \
           --auto \
           --squash \
-          --subject "Auto restart TDS - $(date)"
+          --subject "Auto restart TDS - $(TZ=America/Denver date)"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Log Healthy Status
       if: steps.health-check.outputs.status == 'healthy'
       run: |
-        echo "TDS is healthy - no action needed at $(date)"
+        echo "TDS is healthy - no action needed at $(TZ=America/Denver date)"
