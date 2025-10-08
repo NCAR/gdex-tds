@@ -19,8 +19,8 @@ webapp:
     cpu: 5
     responseTimeout: 180
     maxUploadSize: 30m
-    limit_connections: 8
-    limit_rps: 10
+    limit_connections: 15  # Simultaneous connections
+    limit_rps: 20          # Requests per second
  
     env:
       THREDDS_XMX_SIZE: 34G
