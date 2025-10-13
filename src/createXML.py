@@ -264,7 +264,7 @@ if __name__ == '__main__':
     scan_filter = ET.SubElement(datasetScan, 'filter')
     
     # List of patterns to exclude
-    exclude_patterns = ['*.html', '*.x', '.*']
+    exclude_patterns = ['*.html', '*.x', '.*', '.*/']
     
     # Create exclude elements for each pattern
     for pattern in exclude_patterns:
