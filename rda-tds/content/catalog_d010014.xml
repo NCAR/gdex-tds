@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010014/" xlink:title="NCAR GDEX - SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments(d010014)" />
+      <documentation type="summary">This dataset provides daily hydrology and meteorological variables for about a collection of CMIP5 and CMIP6 downscaled model simulations over the Columbia river basin. It was designed to use a large number of ensembles from the CMIP5 and CMIP6 archives to sample unobserved decadal variability to improve our understanding of rare but extreme flood events. The CMIP models were downscaled using the Intermediate Complexity Atmospheric Research model (ICAR) to a 6 km grid. This dataset was further bias corrected for use in the SUMMA hydrology model to project variability in runoff, and routed with the mizuRoute streamflow model to project river flow volumes along the channel network.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/HAP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010014 Files" path="files/d010014" location="/data/rda/data/d010014/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
