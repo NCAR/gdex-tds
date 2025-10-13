@@ -16,12 +16,16 @@ Example:
 import sys
 import os
 import psycopg2 as sql
-try:
-    # Load environment variables from .env file (searches up directory tree)
-    from dotenv import load_dotenv, find_dotenv
-    load_dotenv(find_dotenv())
-except ImportError:
-    print("python-dotenv package is not installed. .env variable is not used")
+
+# for reading local .env file
+def load_env():
+    """Load environment variables from .env file if dotenv is available."""
+    try:
+        from dotenv import load_dotenv, find_dotenv
+        load_dotenv(find_dotenv())
+
+    except ImportError:
+        print("python-dotenv package is not installed. .env variable is not used")
 
 
 def usage():
@@ -32,9 +36,6 @@ def usage():
 
 def get_dsid():
     """get dsid arg, check if valid and fix if possible."""
-    # check the arguments are provided
-    if len(sys.argv) <= 1:
-        usage()
 
     # store dsid arg
     ds_id = sys.argv[1]
@@ -118,6 +119,12 @@ def create_ctl_entry(
     sys.stdout.write('\n')
 
 if __name__ == "__main__":
+    # Attempt to load environment variables from .env file
+    load_env()
+
+    # check the arguments are provided
+    if len(sys.argv) <= 1:
+        usage()
 
     # get dataset ID and dssdb password for access rdadb
     dsid = get_dsid()

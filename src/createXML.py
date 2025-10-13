@@ -8,7 +8,7 @@ import os
 import sys
 import xml.etree.ElementTree as ET
 import psycopg2 as sql
-from createCTL import get_dsid
+from createCTL import get_dsid, load_env
 
 # in case of python2 or python3
 try:
@@ -16,13 +16,6 @@ try:
 except ImportError:
     from html.parser import HTMLParser
 
-# for reading local .env file
-try:
-    # Load environment variables from .env file (searches up directory tree)
-    from dotenv import load_dotenv, find_dotenv
-    load_dotenv(find_dotenv())
-except ImportError:
-    print("python-dotenv package is not installed. .env variable is not used")
 
 
 def usage():
@@ -114,6 +107,9 @@ def check_same(arr):
     return True
 
 if __name__ == '__main__':
+    # Load environment variables from .env file
+    load_env()
+
     # check input arguments
     if len(sys.argv) > 3 or len(sys.argv) == 1:
         usage()
