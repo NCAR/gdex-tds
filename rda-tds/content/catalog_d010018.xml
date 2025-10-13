@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010018/" xlink:title="NCAR GDEX - Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP)(d010018)" />
+      <documentation type="summary">The community Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP) generated a suite of forward atmospheric transport model simulations of APO and its components (atmospheric O2, CO2, and N2), using different models and flux fields, to 1) evaluate global atmospheric transport models, 2) evaluate air-sea O2 and APO flux products, 3) support quantification of seasonal air-sea APO fluxes from airborne campaign observations, and 4) evaluate long-term trends in O2:CO2 ratios over the Southern Ocean using shipboard and station measurements. Seven international modeling groups submitted output from a total of eight different transport models for 10 different flux tracers. This repository includes the required and optional model output, the prescribed surface fluxes, and processing code used for preparing the flux fields and post-processing the required model output.</documentation>
+      <creator>
+        <name vocabulary="DIF">SCRIPPS/GEOSCI</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">MPI-BGC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">FR/CNRS/IPSL/LSCE</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CWORTHY</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">EBBCARBON</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">WUR/ESG</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">JP/NIES/ESD</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">JP/HIROSHIMA/S-CNC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">JP/JAMSTEC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010018 Files" path="files/d010018" location="/data/rda/data/d010018/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

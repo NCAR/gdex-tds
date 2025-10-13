@@ -262,8 +262,15 @@ if __name__ == '__main__':
     service_name = ET.SubElement(scan_metadata, 'serviceName')
     service_name.text = 'all'
     scan_filter = ET.SubElement(datasetScan, 'filter')
-    exclude = ET.SubElement(scan_filter, 'exclude')
-    exclude.attrib['wildcard'] = '*.html'
+    
+    # List of patterns to exclude
+    exclude_patterns = ['*.html', '*.x', '.*']
+    
+    # Create exclude elements for each pattern
+    for pattern in exclude_patterns:
+        exclude = ET.SubElement(scan_filter, 'exclude')
+        exclude.attrib['wildcard'] = pattern
+    
     ET.SubElement(datasetScan, 'addDatasetSize')
 
     # Create Feature Collections
