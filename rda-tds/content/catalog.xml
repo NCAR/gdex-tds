@@ -17,6 +17,7 @@
     </service>
 
     <catalogRef xlink:href="catalog_d010014.xml" xlink:title="d010014 SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments" name="" />
+    <catalogRef xlink:href="catalog_d010018.xml" xlink:title="d010018 Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP)" name="" />
     <catalogRef xlink:href="catalog_d010077.xml" xlink:title="d010077 Regional Multi-Week Convection-Permitting Simulations using the Model for Prediction Across Scales (MPAS-A) for use in the Caribbean, Mexico, and Central America Regions" name="" />
     <catalogRef xlink:href="catalog_d010079.xml" xlink:title="d010079 Ensemble Historical Gridded Daily Temperature and Bias Adjusted Precipitation for Alaska and the Yukon" name="" />
     <catalogRef xlink:href="catalog_d083002.xml" xlink:title="d083002 NCEP FNL Operational Model Global Tropospheric Analyses" name="" />
