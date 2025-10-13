@@ -230,24 +230,28 @@ def add_data2tds():
     # Get all dataset IDs in the database
     all_dsids = get_all_db_dsid()
 
-    # Get all dataset IDs in the catalog
+    # Get all dataset IDs in the catalog (tds datasets are based on catalogRef entries)
     tds_dsids = get_all_tds_dsid('rda-tds/content/catalog.xml')
 
     # loop over dataset IDs in the database
     for dsid in all_dsids:
-        if dsid not in tds_dsids:
-            # check if format is supported by TDS
-            tds_compatible = check_format(dsid)
+        if dsid in tds_dsids:
+            print(f"Skipping {dsid}: already in catalog")
+            continue
+        
+        # check if format is supported by TDS
+        tds_compatible = check_format(dsid)
 
-            if not tds_compatible:
-                print(f"Skipping {dsid}: format not supported by TDS")
-                continue
+        if not tds_compatible:
+            print(f"Skipping {dsid}: format not supported by TDS")
+            continue
 
-            # create XML for the dataset
-            create_xml(dsid)
+        print(f"Skipping {dsid}: already in catalog")
+        # create XML for the dataset
+        create_xml(dsid)
 
-            # add to catalog
-            add_to_catalog(dsid)
+        # add to catalog
+        add_to_catalog(dsid)
 
 if __name__ == "__main__":
     add_data2tds()
