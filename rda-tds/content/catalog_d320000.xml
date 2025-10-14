@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ECMWF TOGA COARE Analysis and Forecasts" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ECMWF TOGA COARE Analysis and Forecasts">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d320000/" xlink:title="NCAR GDEX - ECMWF TOGA COARE Analysis and Forecasts(d320000)" />
+      <documentation type="summary">A special set of ECMWF T106L31 model output for the TOGA COARE experiment from
+    15 November 1992 to 15 February 1993. Data include analysis and short range forecasts.</documentation>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>TOGA COARE</keyword>
+      <keyword>TOGA Coupled Ocean Atmosphere Response Experiment</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d320000 Files" path="files/d320000" location="/data/rda/data/d320000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

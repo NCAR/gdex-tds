@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ECMWF TOGA Global Advanced Operational Spectral Analysis, daily 1985-2010" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ECMWF TOGA Global Advanced Operational Spectral Analysis, daily 1985-2010">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d111000/" xlink:title="NCAR GDEX - ECMWF TOGA Global Advanced Operational Spectral Analysis, daily 1985-2010(d111000)" />
+      <documentation type="summary">The RDA maintains a collection of outputs from ECMWF's daily operational global numerical
+    model. Dataset ds111.0 contains geopotential, temperature, wind, and moisture fields on constant pressure levels, starting in
+    1985.  The horizontal resolution of the DSS archive is T106 spectral resolution in spherical harmonics, however,
+    in later years, the model is actually run at a much higher resolution (T511 as of 2001).  All fields are
+    output four times per day at 00Z, 06Z, 12Z and 18Z.  This dataset is updated twice a year.
+    
+    The surface data can be found in ds111.1 and the
+    supplemental fields including radiation, stress and flux terms are in ds111.3.
+    The model precipitation is archived in ds111.6.
+    The ECMWF operational model output on the 2.5 degree latitude-longitude grid can be found in ds111.2.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d111000 Files" path="files/d111000" location="/data/rda/data/d111000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

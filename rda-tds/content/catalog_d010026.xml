@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Long Simulations of the Miocene Climatic Optimum" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Long Simulations of the Miocene Climatic Optimum">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010026/" xlink:title="NCAR GDEX - Long Simulations of the Miocene Climatic Optimum(d010026)" />
+      <documentation type="summary">The global warmth of the Miocene Climatic Optimum (MCO, ~15 Ma) offers valuable insights into warm climate dynamics and future climate change, providing a real-world testbed for validating climate models. However, it remains unclear how warm the MCO was given the scarcity and uncertainties of surface temperature proxy records. Three iCESM1.3 long simulations are constructed to estimate the Miocene global mean surface temperature (GMST). The three simulations included: preindustrial (PI), 1.5x CO2, 3x CO2. Each simulation case includes long time series files with a monthly temporal resolution and a NE16 G16 spatial resolution (~2 degree atmosphere and ~1 degree ocean), covering the last 100 model years of the global climate fields.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010026 Files" path="files/d010026" location="/data/rda/data/d010026/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

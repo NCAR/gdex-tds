@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Monthly Climatological Grid Data for Levels Aloft" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Monthly Climatological Grid Data for Levels Aloft">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d220000/" xlink:title="NCAR GDEX - Monthly Climatological Grid Data for Levels Aloft(d220000)" />
+      <documentation type="summary">The USAF Environmental Technical Applications Center (ETAC) created these monthly climatologies of temperature and winds for the Northern and Southern Hemispheres, and geopotential height for the Northern Hemisphere.  Generally, the data input period from approximately 150 stations was the 5-year period from January 1956 through December 1960, but some data into 1962 were also used. The climatologies are available on 5-degree latitude/longitude grids separately for eight vertical pressure levels between 850 and 50 millibars, inclusive.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOD/USAF/557WW</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d220000 Files" path="files/d220000" location="/data/rda/data/d220000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

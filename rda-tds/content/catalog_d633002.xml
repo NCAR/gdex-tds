@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ERA5.1: Corrections to ERA5 Stratospheric Temperature 2000-2006" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ERA5.1: Corrections to ERA5 Stratospheric Temperature 2000-2006">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d633002/" xlink:title="NCAR GDEX - ERA5.1: Corrections to ERA5 Stratospheric Temperature 2000-2006(d633002)" />
+      <documentation type="summary">In ECMWF Technical Memo 859 released in January 2020, Simmons and his coauthors
+    report that "the ERA5 analyses of lower stratospheric temperature exhibit a
+    pronounced cold bias for the years 2000 to 2006. This is due to specifying
+    background error covariances for the data assimilation that were inappropriate
+    prior to availability during 2006 of GNSS radio occultation data in sufficient
+    numbers to constrain a cold bias of the assimilating ERA5 model. A new set of
+    analyses, termed ERA5.1, has thus been produced for the period from 2000 to
+    2006 using the background error covariances that were used to produce the
+    ERA5 analyses for the years 1979 to 1999. ERA5.1 also includes the more
+    restrictive ensemble assimilation of SBUV ozone data that was used in production
+    of ERA5 for 1979 to 1999."
+    
+    "ERA5.1 provides analyses with better global-mean temperatures in the
+    stratosphere and uppermost troposphere than provided by ERA5. ERA5.1 stands up
+    well in comparison with ERA-Interim and other reanalyses in the lower stratosphere,
+    although there are also lower-stratospheric temperature differences between ERA5
+    and other reanalyses in the 1980s and 1990s. These are due in part to differences
+    in radiosonde temperature bias adjustment. The pronounced near-tropopause cold bias
+    of ERA5 from 2000 to 2006 has implications for the representation of stratospheric
+    humidity, for which ERA5.1 performs better, though by no means perfectly.
+    ERA5.1 does not exhibit the  spuriously high values of ozone that occur close
+    to the South Pole in the polar nights of 2003 and 2004 in the ERA5 analyses.
+    Synoptic evolution in the extratropical stratosphere is seen to be
+    very similar in two cases involving splitting of the stratospheric polar vortex and
+    secondary vortex formation by dynamical instability. The ERA5.1 representation of
+    the QBO agrees slightly better with radiosonde wind data than that of ERA5.
+    The dataset formed by merging ERA5.1 with ERA5 is generally more homogeneous
+    over time than ERA5 alone. It nevertheless is problematic for global-mean upper
+    stratospheric temperature for all but the most recent ten or so years."
+    
+    "ERA5.1 is very close to ERA5 in the lower and middle troposphere."</documentation>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d633002 Files" path="files/d633002" location="/data/rda/data/d633002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

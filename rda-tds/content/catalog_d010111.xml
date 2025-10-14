@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="21st Century Hydrologic Projections for Alaska and Hawaii" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="21st Century Hydrologic Projections for Alaska and Hawaii">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010111/" xlink:title="NCAR GDEX - 21st Century Hydrologic Projections for Alaska and Hawaii(d010111)" />
+      <documentation type="summary">High resolution ensembles of hydroclimate projections are useful for climate and water resources adaptation planning and many of these datasets exist over United States focused domains specifically the Contiguous United States (CONUS). However, very few century-long, high-resolution hydroclimate projections exist over Alaska and Hawaii and no statewide projections including hydrology exist. This motivated us to develop a dataset consisting of multiple statistically downscaled climate model projections and corresponding off-line hydrologic model simulations to obtain hydrologic simulations from 1950 to 2099 over the two domains, which fills a critical gap in hydroclimate projection capabilities for these two under-served regions. We take an approach similar to previous CONUS hydrologic assessments where we: 1) select climate model outputs based on CMIP5 Representative Concentration Pathway 4.5 and 8.5; 2) perform statistical downscaling to generate high-resolution climate input data for hydrologic models (12-km grid-spacing for Alaska and 1-km for Hawaii); and 3) perform off-line hydrologic model simulations, using the Variable Infiltration Capacity (VIC) model. A notable difference in the hydrologic model configuration from CONUS to this case, is the use of full water-energy balance computation with a simple glacier model for Alaska. Overall, the simulations in Hawaii show large uncertainty in total runoff driven by large variability in precipitation among the GCMs used for this study. Robust warming and increases in precipitation produce runoff increases for most of Alaska. However, runoff is likely to decrease in current glacierized areas in southeast Alaska.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010111 Files" path="files/d010111" location="/data/rda/data/d010111/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

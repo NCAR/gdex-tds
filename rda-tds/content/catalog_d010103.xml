@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Result of Assimilating Ground-Based MLT Winds into WACCM" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Result of Assimilating Ground-Based MLT Winds into WACCM">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010103/" xlink:title="NCAR GDEX - Result of Assimilating Ground-Based MLT Winds into WACCM(d010103)" />
+      <documentation type="summary">This dataset contains the outputs from
+assimilating MLT wind observations from ground-based Super Dual Auroral Radar Network (SuperDARN) and meteor radar networks into the Whole Atmosphere Community Climate Model (WACCM) using the Ensemble Adjustment Kalman Filter (EAKF) within the Data Assimilation Research Testbed (DART). Two Observing System Simulation Experiments (OSSEs) were conducted for the 2018/2019 Northern Hemisphere winter. In the first OSSE, Experiment 09, synthetic observations of lower atmospheric state variables and SABER and MLS neutral temperatures are assimilated. In the second OSSE, Experiment 08, additional synthetic ground-based MLT wind measurements were assimilated to assess their added value.
+The data includes the hourly output of the ensemble mean of prior neutral temperature, neutral zonal wind, and neutral meridional wind as well as the synthetic observation files.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010103 Files" path="files/d010103" location="/data/rda/data/d010103/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

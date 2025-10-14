@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Mass-Conserving Downscaling of Climate Model Precipitation over Mountainous Terrain for Water Resource Applications" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Mass-Conserving Downscaling of Climate Model Precipitation over Mountainous Terrain for Water Resource Applications">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583136/" xlink:title="NCAR GDEX - Mass-Conserving Downscaling of Climate Model Precipitation over Mountainous Terrain for Water Resource Applications(d583136)" />
+      <documentation type="summary">A mass-conserving downscaling method has been developed to improve precipitation estimates from climate models over mountainous terrain, which is crucial for water resource management. This method adjusts precipitation based on sub-grid-scale topography and wind direction, then incorporates these adjusted values into a hydrological model to simulate runoff. The goal is to better represent the impact of mountains on precipitation and, consequently, improve water resource predictions in regions like the western US, where snowpack is a key water source. This dataset contains the parameters and set-up for a Variable Infiltration Capacity hydrological (VIC) model run along with the input and post-processed output from the model along with a python notebook to recreate the figures in the GRL paper of the same name.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583136 Files" path="files/d583136" location="/data/rda/data/d583136/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Cloud Properties from ISCCP and PATMOS-x Corrected for Spurious Variability Related to Changes in Satellite Orbits, Instrument Calibrations, and Other Factors" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Cloud Properties from ISCCP and PATMOS-x Corrected for Spurious Variability Related to Changes in Satellite Orbits, Instrument Calibrations, and Other Factors">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d741005/" xlink:title="NCAR GDEX - Cloud Properties from ISCCP and PATMOS-x Corrected for Spurious Variability Related to Changes in Satellite Orbits, Instrument Calibrations, and Other Factors(d741005)" />
+      <documentation type="summary">A post hoc empirical correction procedure has been applied to grid box anomalies in total cloud amount from the International Satellite Cloud Climatology Project (ISCCP) dataset and the Pathfinder Atmospheres - Extended (PATMOS-x) dataset to remove spurious variability related to changes in satellite orbit, instrument calibration, and other factors. The corrected satellite cloud datasets are useful for investigation of regional cloud changes but can not be used for studies of globally averaged cloud change because the methods employed remove any real cloud variability occurring on global scales together with spurious variability. Also note that the correction procedure does not remove spatial biases in climatological mean cloud properties. The available corrected data include monthly anomalies in total cloud amount on a 2.5 degree by 2.5 degree grid for the time period 1983-2009 (the first six months of 1983 are not available for ISCCP). No data are available poleward of 60 degree latitude due to difficulty in accurately retrieving cloud properties over cold, bright surfaces.</documentation>
+      <creator>
+        <name vocabulary="DIF">SCRIPPS/METEORA</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d741005 Files" path="files/d741005" location="/data/rda/data/d741005/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

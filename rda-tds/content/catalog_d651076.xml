@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2.2 CAM6 PPE" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2.2 CAM6 PPE">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651076/" xlink:title="NCAR GDEX - CESM2.2 CAM6 PPE(d651076)" />
+      <documentation type="summary">To evaluate parameterizations in models, simulations have often been performed with only one change to one parameterization at a time. This is not efficient and can be both time-consuming and computationally expensive. This data represents a Perturbed Parameter Ensemble (PPE) technique, where multiple parameters are varied simultaneously and the parameter values are determined with Latin Hypercube sampling. Then an emulator is developed in the multi-dimensional space mapping input parameters to output metrics. We apply the PPE method to CESM2 CAM6 to understand climate sensitivity to atmospheric physics parameters. The initial simulations vary 44 parameters in the microphysics, convective, turbulence and aerosol schemes with 250 ensembles. This will be extended. These atmospheric parameters are typically the most uncertain in many climate models. We analyze control simulations, and targeted simulations to understand climate forcing due to aerosols, and fast climate feedbacks. The PPE is applicable to other configurations to address questions of other model processes in the atmosphere and other model components (e.g. coupling to the land surface).
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651076 Files" path="files/d651076" location="/data/rda/data/d651076/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

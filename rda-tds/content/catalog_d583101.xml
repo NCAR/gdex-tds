@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="MPD OSSE data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="MPD OSSE data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583101/" xlink:title="NCAR GDEX - MPD OSSE data(d583101)" />
+      <documentation type="summary">This numerical simulation data set is prepared for manuscript submission to the the Monthly Weather Review journal of the American Meteorological Society (AMS). 
+The National Center for Atmospheric Research (NCAR) and Montana State University jointly developed water vapor MicroPulse Differential absorption lidars (MPDs) that are a significant advance in eye-safe, unattended, lidar-based water vapor remote sensing. We perform Observation System Simulation Experiments (OSSEs) to investigate MPD observation impact and its scientific significance of MPDs for convective weather analysis and predictions. In this study, the Data Assimilation Research Testbed (DART) and the Advanced Research version of the Weather Research and Forecasting model (WRF-ARW) are used to conduct OSSEs for a case study of a mesoscale convective system (MCS). We will submit OSSE results to the Monthly Weather Review journal of the American Meteorological Society (AMS). As this Journal is committed to the FAIR principles, all data used in the manuscript must be archived and cited/referenced properly. The dataset also have persistent identifiers such as DOIs.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583101 Files" path="files/d583101" location="/data/rda/data/d583101/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

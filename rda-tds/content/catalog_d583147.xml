@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="A Statistical Analysis of Lossily Compressed CESM-LENS Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="A Statistical Analysis of Lossily Compressed CESM-LENS Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583147/" xlink:title="NCAR GDEX - A Statistical Analysis of Lossily Compressed CESM-LENS Data(d583147)" />
+      <documentation type="summary"> The data storage burden resulting from CESM simulations continues to grow, and lossy data compression methods can alleviate this burden, provided that key climate variables are not altered to the point of affecting scientific conclusions. This dataset was generated to evaluate the effects of two leading lossy compression algorithms, SZ and ZFP, on daily output data from the CESM-LENS dataset. In particular, it contains daily data for variables TS (surface temperature) and PRECT (precipitation rate) from the historical forcing period (1920-2005) for CESM-LENS ensemble member 30. The provided data has been compressed and reconstructed via two popular compressors: SZ 1.4.13 and ZFP 0.5.3 with a number of different absolute error tolerances. Errors due to compression can be determined by comparing these reconstructed files to the original CESM-LENS timeseries data, and statistical methods can evaluate the errors at different spatiotemporal scales. While both compression algorithms show promising fidelity with the original output, detectable artifacts are introduced even at relatively tight error tolerances.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583147 Files" path="files/d583147" location="/data/rda/data/d583147/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

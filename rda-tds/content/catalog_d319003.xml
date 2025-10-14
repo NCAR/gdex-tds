@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Climate Model Products from Germany's Deutches Klimarechenzentrum" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Climate Model Products from Germany's Deutches Klimarechenzentrum">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d319003/" xlink:title="NCAR GDEX - Climate Model Products from Germany's Deutches Klimarechenzentrum(d319003)" />
+      <documentation type="summary">This dataset contains climate model output from Deutches
+    Klimarechenzentrum (DKRZ) in Germany.  The model output consists
+    of monthly mean grids for several variables from three runs of
+    the ECHAM4 model.  The three runs are a control (constant
+    atmospheric forcing) run, a greenhouse gas run which
+    assumes a compounded 1% per year increase in CO2, and
+    an aerosol run which combines CO2 and
+    sulphate aerosol concentrations.  The model is run at T42
+    resolution, resulting in a 128 by 64 latitude/longitude gaussian
+    output grid (approximately 2.8-degree by 2.8-degree
+    resolution).  The grids are in GRIB format (Edition 1).
+    DSS has computed decadal means for each decade-month from the
+    monthly mean grids.  The decade means are computed from years 0
+    through 9 of each decade.  We also computed smoothed decadal
+    means by computing 30-year running means of the decadal mean
+    grids.  Because of the large variability in the decadal means of
+    variables such as precipitation, we recommend using the 30-year
+    (smoothed decadal) means and applying them to the year at the
+    middle of the 30-year period (i.e. - the 30-year mean for
+    2070-2099 should be applied at year 2085).</documentation>
+      <creator>
+        <name vocabulary="DIF">DE/MER/DKRZ</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d319003 Files" path="files/d319003" location="/data/rda/data/d319003/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

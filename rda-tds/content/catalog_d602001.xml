@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Line Island Experiment Aircraft Observations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Line Island Experiment Aircraft Observations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d602001/" xlink:title="NCAR GDEX - Line Island Experiment Aircraft Observations(d602001)" />
+      <documentation type="summary">The Line Islands Experiment of 1967 produced extensive data
+    on disturbances in the equatorial trough zone.  DSS has
+    flight-level aircraft data from flights in February, March, and
+    April 1967 that were flown in conjunction with the
+    experiment.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/RDP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>LIE</keyword>
+      <keyword>Line Islands Experiment</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d602001 Files" path="files/d602001" location="/data/rda/data/d602001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Southern Ocean Eddies simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Southern Ocean Eddies simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651049/" xlink:title="NCAR GDEX - Southern Ocean Eddies simulations(d651049)" />
+      <documentation type="summary">This data includes select model output from a global, eddy-resolving, numerical simulation integrated with the ocean (Smith et al. 2010), sea-ice (Hunke and Lipscomb 2008) and marine biogeochemistry (Moore et al. 2013) components of the the Community Earth System Model (CESM1) (Hurrell et al. 2013), forced with atmospheric data from the Coordinated Ocean-ice Reference Experiment (CORE I) "normal year" (Large and Yeager 2004). This simulation was run for 5-years after initialization (see Harrison et al. (2018) for details on initialization), and model output was saved as 5-day means. 
+Selected data streams include simulated physical and biogeochemical oceanographic data used in Rohr et al. (under review, a) and Rohr et al. (under review, b) to study the mechanisms by which Southern Ocean eddies modify the biogeochemistry data. See Rohr et al. (under review, a) for methods, results, and direction publicly available analysis tools.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651049 Files" path="files/d651049" location="/data/rda/data/d651049/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

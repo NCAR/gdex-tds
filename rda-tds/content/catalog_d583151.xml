@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Using Wind Setdown and Storm Surge on Lake Erie to Calibrate the Air-Sea Drag Coefficient" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Using Wind Setdown and Storm Surge on Lake Erie to Calibrate the Air-Sea Drag Coefficient">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583151/" xlink:title="NCAR GDEX - Using Wind Setdown and Storm Surge on Lake Erie to Calibrate the Air-Sea Drag Coefficient(d583151)" />
+      <documentation type="summary">This data set contains the archived model runs from the simulation experiments that were conducted during the published study. The runs show the effects of two historical windstorms on Lake Erie, between the United States and Canada. The files are compressed in NetCDF format. Most of the files are numbered ENN for experiment NN on Lake Erie, and this same numbering is used within the referenced paper. There are also two stationary experiments S1 and S2, and the Tanis experiments T21, T23, T24, and T25.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583151 Files" path="files/d583151" location="/data/rda/data/d583151/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ETOPO1, Global 1 Arc-minute Ocean Depth and Land Elevation from the US National Geophysical Data Center (NGDC)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ETOPO1, Global 1 Arc-minute Ocean Depth and Land Elevation from the US National Geophysical Data Center (NGDC)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d759004/" xlink:title="NCAR GDEX - ETOPO1, Global 1 Arc-minute Ocean Depth and Land Elevation from the US National Geophysical Data Center (NGDC)(d759004)" />
+      <documentation type="summary">ETOPO1 is a 1 arc-minute global relief model of Earth's surface that integrates land topography and ocean bathymetry. It was built from numerous global and regional data sets, and is available in "Ice Surface" (top of Antarctic and Greenland ice sheets) and "Bedrock" (base of the ice sheets) versions. Data are available in two grid registrations. For grid/node-registration, cells are centered on lines of latitude and longitude (21601 by 10801 cells), and for cell/pixel-registration, cell edges are along lines of latitude and longitude (21600 by 10800 cells). The grid-registered is the authoritative registration. The cell-registered is derived from the grid-registered, and the conversion produces slightly flattened relief.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NGDC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d759004 Files" path="files/d759004" location="/data/rda/data/d759004/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

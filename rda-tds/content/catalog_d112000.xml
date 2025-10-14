@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="U.S.S.R. Various Global and Hemispheric Analyses, 1880-1985" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="U.S.S.R. Various Global and Hemispheric Analyses, 1880-1985">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d112000/" xlink:title="NCAR GDEX - U.S.S.R. Various Global and Hemispheric Analyses, 1880-1985(d112000)" />
+      <documentation type="summary">As part of a data exchange involving climate data, DSS
+    received various global and hemispheric gridded analyses from
+    the U.S.S.R.  The analyses include a long time series of
+    Northern Hemisphere surface pressure spanning the period
+    1880-1979, global total cloud amount for 1966-1985, and surface
+    temperature, sea-level pressure, and upper-level geopotential
+    heights for the overarching period of 1948-1984 (actual periods
+    vary by parameter and atmospheric level).</documentation>
+      <creator>
+        <name vocabulary="DIF">RU/ROSHYDROMET/FERHRI</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d112000 Files" path="files/d112000" location="/data/rda/data/d112000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

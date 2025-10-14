@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3, Individual Observations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3, Individual Observations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d548000/" xlink:title="NCAR GDEX - International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3, Individual Observations(d548000)" />
+      <documentation type="summary">The International Comprehensive Ocean-Atmosphere Data Set (ICOADS) is a global ocean marine meteorological and surface ocean dataset. It is formed by merging many national and international data sources that contain measurements and visual observations from ships (merchant, navy, research), moored and drifting buoys, coastal stations, and other marine and near-surface ocean platforms. Each marine report contains individual observations of meteorological and oceanographic variables, such as sea surface and air temperatures, wind, pressure, humidity, and cloudiness. The coverage is global and sampling density varies depending on date and geographic position relative to shipping routes and ocean observing systems.
+    The latest Release 3.0 (R3.0) of ICOADS covers 1662-2014, and is coupled with improved "preliminary" monthly data and product extensions past 2014. R3.0 includes changes designed to enable more effective exchange of information describing data quality between ICOADS, reanalysis centers, data set developers, scientists and the public. These user-driven innovations include the assignment of a unique identifier (UID) to each marine report, to enable tracing of observations, linking with reports and improved data sharing. Other revisions and extensions of the International Maritime Meteorological Archive (IMMA) common data format incorporate new near-surface oceanographic data elements and cloud parameters. Many new input data and metadata sources have been assembled, and updates and improvements to existing data sources, or removal of erroneous data, made. </documentation>
+      <creator>
+        <name vocabulary="DIF">UWA/ATMOS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UK/MOD/MET</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCO/CIRES</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DE/DWD</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">U-SOTON/NOC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">FSU/COAPS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/OAR/ESRL/PSL</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCEI</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>ICOADS</keyword>
+      <keyword>International Comprehensive Ocean Atmosphere Data Set</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d548000 Files" path="files/d548000" location="/data/rda/data/d548000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

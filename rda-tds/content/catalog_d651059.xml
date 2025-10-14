@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ARISE-SAI-1.5" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ARISE-SAI-1.5">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651059/" xlink:title="NCAR GDEX - ARISE-SAI-1.5(d651059)" />
+      <documentation type="summary">The Assessing Responses and Impacts of Solar climate intervention on the Earth system with stratospheric aerosol injection simulations (ARISE-SAI-1.5) utilize a moderate emission scenario, introduce stratospheric aerosol injection at approximately 21 km in year 2035, and keep global mean surface air temperature near 1.5C above the pre-industrial value.
+CESM2 (WACCM6) global output from all model components (atmosphere, ice, land, ocean) on monthly, daily and sub-daily frequencies. All atmospheric data is on the original CESM2 (WACCM6) grid (0.9 by 1.25 degrees). All data is in time-series, NetCDF format.
+More details about this dataset (including information on reference simulations) can be found on the ARISE-SAI-1.5 CESM Community Project page linked below under Related Resources.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651059 Files" path="files/d651059" location="/data/rda/data/d651059/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

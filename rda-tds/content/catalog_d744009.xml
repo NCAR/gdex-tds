@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Cross-Calibrated Multi-Platform Ocean Surface Wind Velocity, 1987 - ongoing" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Cross-Calibrated Multi-Platform Ocean Surface Wind Velocity, 1987 - ongoing">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d744009/" xlink:title="NCAR GDEX - Cross-Calibrated Multi-Platform Ocean Surface Wind Velocity, 1987 - ongoing(d744009)" />
+      <documentation type="summary">
+    The Cross-Calibrated Multi-Platform (CCMP) data product is derived through cross-calibration and assimilation of ocean surface wind data from SSM/I, TMI, AMSR-E, SeaWinds on QuikSCAT, and SeaWinds on ADEOS-II. Cross calibration is performed by Remote Sensing Systems (RSS) under the DISCOVER project. These data sets are combined with conventional observations and a starting estimate of the wind field using a variational analysis method (VAM). The ECMWF Reanalysis (ERA-40) is used as the starting estimate (or background) for July 1987 until December 1998 and the ECMWF Operational Analysis is used from January 1999 onward.
+    
+    CCMP is provided by the NASA PO.DAAC and has been evaluated and utilized extensively by the science community, including some members of NASA's Ocean Vector Winds Science Team (OVWST).
+  </documentation>
+      <creator>
+        <name vocabulary="DIF">NASA/JPL/PODAAC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d744009 Files" path="files/d744009" location="/data/rda/data/d744009/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

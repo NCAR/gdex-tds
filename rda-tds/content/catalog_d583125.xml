@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="LIT Thermosphere Control of Ion Outflow Results" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="LIT Thermosphere Control of Ion Outflow Results">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583125/" xlink:title="NCAR GDEX - LIT Thermosphere Control of Ion Outflow Results(d583125)" />
+      <documentation type="summary">Numerical simulation experiments were conducted for different thermospheric states to study the stream interaction region that swept past Earth on March 27, 2003. Results from two LIT (Low-energy Ion Transport) coupled model runs are archived in 768 netCDF files. They contain the global outputs from the LFM magnetosphere, IPWM (Ionosphere Polar Wind Model) ionosphere, NCAR Thermosphere-Ionosphere Electrodynamics General Circulation Model (TIEGCM)  thermosphere-ionosphere simulations.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583125 Files" path="files/d583125" location="/data/rda/data/d583125/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

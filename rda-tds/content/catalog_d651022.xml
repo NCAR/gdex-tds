@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="iTraCE" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="iTraCE">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651022/" xlink:title="NCAR GDEX - iTraCE(d651022)" />
+      <documentation type="summary">The CESM iTraCE project is a set of published simulations to understand the long-term, millennial-scale, deglacial climate evolution from 20 kyr ago to 11 kyr ago. The core experiment includes the evolving orbital conditions, ice sheets, greenhouse gases, and meltwater. The other experiments adopt a factorized forcing scheme to allow isolating each of these forcings separately. These experiments extend the publicly available TraCE simulations, available on the CDG and downloaded by the research community, using the higher resolution iCESM1.2 model that includes predictive simulation of water isotopes in the atmosphere-ocean-land-runoff-sea ice system. All simulations are performed with the atmosphere-ocean-land-sea ice coupled CESM1.2 at the nominal 2-degree latitude/longitude for the atmosphere and land models, and 1-degree for the ocean and sea ice models. The simulations contain climate stable water isotope output from all model components, plus carbon, neodymium, protactinium, and thorium isotopes in the ocean model output. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651022 Files" path="files/d651022" location="/data/rda/data/d651022/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

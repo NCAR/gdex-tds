@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 Mechanically Decoupled" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 Mechanically Decoupled">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651079/" xlink:title="NCAR GDEX - CESM2 Mechanically Decoupled(d651079)" />
+      <documentation type="summary">The CESM2 Mechanically Decoupled Model (MDM) is designed to simulate buoyancy coupled climate variability. The MDM consists of the same model components, including the dynamic ocean model POP2, as the CESM2 fully coupled model (FCM), but lacks anomalous wind stress driven ocean dynamics. Ocean variability in the MDM is therefore primarily buoyancy driven. Different from a slab ocean model (SOM) with a time invariant mixed layer depth, the MDM includes a freely evolving seasonally varying mixed layer depth, seasonally varying mean ocean circulation, and time varying buoyancy driven ocean circulation variability like the AMOC. Key sources of ocean damping are present in the MDM, including vertical mixing, entrainment, and advection by the mean ocean circulation, whereas many dynamical sources of ocean variability, as facilitated through anomalous wind stress driven ocean dynamics, are absent. Comparing the SOM and MDM can uncover the collective role of mixed layer depth variability, buoyancy coupled ocean circulation variability, and ocean damping on climate variations, whereas comparing the MDM and FCM can uncover the role of anomalous wind driven ocean dynamics on climate variability. 
+The CESM2 MDM is implemented using the CESM2 B1850 configuration (i.e., pre-industrial radiative forcing) with 1 degree horizontal resolution. To mechanically decouple POP2 from the CAM6, the wind stress forcing on the ocean is prescribed as the 6-hourly climatology. The climatology is computed from hourly wind stress CIME output from a 50 year CESM2 FCM pre-industrial control simulation. The 6-hourly climatology is linearly interpolated to the hourly coupling frequency between CAM6 and POP2. Wind variability still is applied to the bulk formula for turbulent heat fluxes, thus the MDM remains thermodynamically coupled.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651079 Files" path="files/d651079" location="/data/rda/data/d651079/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

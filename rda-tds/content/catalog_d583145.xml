@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Stratospheric chlorine processing after the unprecedented Hunga Tonga eruption" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Stratospheric chlorine processing after the unprecedented Hunga Tonga eruption">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583145/" xlink:title="NCAR GDEX - Stratospheric chlorine processing after the unprecedented Hunga Tonga eruption(d583145)" />
+      <documentation type="summary">Following the Hunga Tonga-Hunga Ha'apai (HTHH) eruption in January 2022, a significant reduction in stratospheric hydrochloric acid (HCl) was observed in the Southern Hemisphere mid-latitudes during the latter half of 2022, suggesting potential chlorine activation. The objective of this study is to comprehensively understand the substantial loss of HCl in the aftermath of HTHH. Satellite measurements along with a global chemistry-climate model are employed for the analysis. We find strong agreement of 2022 anomalies between the modeled and the measured data. The observed tracer-tracer relations between N2O and HCl indicate a significant role of chemical processing in the observed HCl reduction, especially during the austral winter of 2022. Further examining the roles of chlorine gas-phase and heterogeneous chemistry, we find that heterogeneous chemistry emerges as the primary driver for the chemical loss of HCl, with the reaction between HOBr and HCl on sulfate aerosols identified as the dominant loss process.
+This datasets provide basis of our analysis in the paper - Chemistry contribution to stratospheric ozone depletion after the unprecedented water-rich Hunga Tonga eruption. The numerical experiments in this study were conducted using CESM2/WACCM6, a state-of-the-art chemistry-climate model that spans from the Earth's surface to approximately 140 km.
+We run two different nudged cases: the volcano case with forcing (SO2 and H2O injection) from the HTHH eruption and the control case with no forcing (no SO2 or H2O injection) from the HTHH eruption. The disparity between these two nudged simulations provides insights into the chemistry-related changes post the HTHH eruption. Only the datasets used in analysis are archived here.
+We also archive our box model used in the analysis here. This is a single layer lower stratospheric chemical equilibrium box model setup for Hunga Tonga experiments.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583145 Files" path="files/d583145" location="/data/rda/data/d583145/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

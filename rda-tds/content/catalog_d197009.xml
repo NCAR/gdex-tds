@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Stomatal Conductance Constant CO2 Land-Historical Experiment" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Stomatal Conductance Constant CO2 Land-Historical Experiment">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d197009/" xlink:title="NCAR GDEX - Stomatal Conductance Constant CO2 Land-Historical Experiment(d197009)" />
+      <documentation type="summary">The Community Land Model version 5 (CLM5) was used to conduct a no-Water Use Efficiency land-historical experiment. This experiment has been used in conjunction with other CLM5 LUMIP land-only (historical) experiments to separate the effect of water use efficiency from that of vegetation growth in the Southeastern United States. </documentation>
+      <creator>
+        <name vocabulary="DIF">AUBURN/FORESTRY</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d197009 Files" path="files/d197009" location="/data/rda/data/d197009/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

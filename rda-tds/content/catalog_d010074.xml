@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Efficient Drift Correction of Initialized Earth System Predictions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Efficient Drift Correction of Initialized Earth System Predictions">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010074/" xlink:title="NCAR GDEX - Efficient Drift Correction of Initialized Earth System Predictions(d010074)" />
+      <documentation type="summary">Ensemble Earth system model predictions initialized from states close to observations generally drift away from observed climatology and towards a biased model climatology over timescales from days to years. Estimation of drift, the change in forecast climatology with lead time, is essential for computing forecast anomalies that can be meaningfully compared with observed anomalies from the past and used with confidence to credibly anticipate weather pattern changes from weeks to decades in advance. Conventional methods for estimating drift rely on the availability of a large sample of reforecasts spanning at least two decades, but generating such comprehensive reforecast sets requires a significant investment of both human and computer resources. We show here that subseasonal to decadal forecast drift can be well estimated using minimal reforecast methods that target a predetermined climatological window, yielding forecast anomaly and skill verification metrics that closely match those obtained using standard (much more expensive) methods. Efficient and accurate forecast drift quantification facilitates prediction system experimentation with greatly reduced overhead. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010074 Files" path="files/d010074" location="/data/rda/data/d010074/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

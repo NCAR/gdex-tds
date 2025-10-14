@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ERA40 T85 Monthly Mean Analysis Fields on Model Levels, created at NCAR" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ERA40 T85 Monthly Mean Analysis Fields on Model Levels, created at NCAR">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d126002/" xlink:title="NCAR GDEX - ERA40 T85 Monthly Mean Analysis Fields on Model Levels, created at NCAR(d126002)" />
+      <documentation type="summary">DS126.2 represents a dataset implemented and computed by NCAR's Data Support Section, and forms an essential
+    part of efforts undertaken in late 2004, early 2005, to produce an archive of selected segments of ERA-40 on a
+    standard transformation grid. In this case, ERA-40 monthly mean upper air variables on 60 model levels were
+    transformed from either spherical harmonics (surface geopotential, temperature, vertical pressure velocity, vorticity,
+    logarithm of surface pressure, divergence), or a reduced N80 Gaussian grid (specific humidity, ozone mass mixing ratio,
+    cloud liquid water content, cloud ice water content, cloud cover),
+    to a 256 by 128 regular Gaussian grid at T85 spectral truncation. In addition, horizontal wind
+    components were derived from spectral vorticity and divergence and also archived on a T85 Gaussian grid. All
+    scalar fields were transformed using routines from the ECMWF EMOS library, whereas the horizontal winds were
+    obtained using NCAR's SPHEREPACK library.
+    All corresponding 00Z, 06Z, 12Z, and 18Z monthly mean upper air variables on 60 model
+    levels were also transformed to a T85 Gaussian grid. The choice of a T85 Gaussian grid was based on considerations of limiting
+    the volume of new data generated to a moderate level, and to match the horizontal resolution of the
+    Community Atmosphere Model (CAM) component of
+    NCAR's Community Climate System Model (CCSM).
+    
+    The ERA-Interim data from ECMWF is an update to the ERA-40 project.  The ERA-Interim data starts in 1989 and has a higher horizontal resolution (T255, N128 nominally 0.703125 degrees) than the ERA-40 data (T159, N80 nominally  1.125 degrees).  ERA-Interim is based on a more current model than ERA-40 and uses 4DVAR (as opposed to 3DVAR in ERA-40).  ECMWF will continue to run the ERA-Interim model in near real time through at least 2010, and possibly longer.  This data is available in ds627.0. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>ERA40</keyword>
+      <keyword>ECMWF ERA40 Reanalysis Project</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d126002 Files" path="files/d126002" location="/data/rda/data/d126002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

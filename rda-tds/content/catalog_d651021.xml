@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM1 Indian Ocean Pacemaker Ensemble" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM1 Indian Ocean Pacemaker Ensemble">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651021/" xlink:title="NCAR GDEX - CESM1 Indian Ocean Pacemaker Ensemble(d651021)" />
+      <documentation type="summary">A 10-member ensemble of CESM1 (1 degree spatial resolution) simulations in which time-evolving SST anomalies in the tropical Indian Ocean (15oS-15oN, the African coast to 180W, with a linearly tapering buffer zone that extends to 20S and 20N, are nudged to observations (NOAA Extended Reconstruction Sea Surface Temperature version 3: ERSSTv3b) during 1920-2013 (extended through September 2017). In this way, the observed evolution of tropical Indian Ocean and western Pacific SST is maintained in each simulation, with the rest of the model's coupled climate system free to evolve. Note that only the SST anomalies, not the total SST, are nudged to observations, maintaining the model's mean state, including any model biases. All external forcings are identical to the LENS, aside from stratospheric ozone. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651021 Files" path="files/d651021" location="/data/rda/data/d651021/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

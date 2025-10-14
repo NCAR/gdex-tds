@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 SMYLE" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 SMYLE">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651065/" xlink:title="NCAR GDEX - CESM2 SMYLE(d651065)" />
+      <documentation type="summary">SMYLE (Seasonal-to-MultiYear Large Ensemble) is an initialized prediction system using CESM2. It consists of fully coupled initialized hindcast simulations using CESM2 component models at nominal 1 degree horizontal resolution. Hindcasts are initialized from historical reconstructions (SMYLE-FOSI for ocean and sea-ice; SMYLE-landonly for land; and JRA55 reanalysis for atmosphere) and then integrated forward 24-months. Initialization occurs quarterly (1st of each month of February, May, August, and November) for each year between 1970-2019. The ensemble size is 20 for each start date, with ensemble spread introduced through a random field perturbation applied to the atmospheric initial conditions. The SMYLE data release also includes the historical reconstructions used to initialize the ocean, sea ice, ocean biogeochemistry, and land components (SMYLE-FOSI and SMYLE-landonly).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651065 Files" path="files/d651065" location="/data/rda/data/d651065/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

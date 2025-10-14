@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="AEW hindcast using the Model for Prediction Across Scales-Atmosphere (MPAS-A) version 7.1" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="AEW hindcast using the Model for Prediction Across Scales-Atmosphere (MPAS-A) version 7.1">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583135/" xlink:title="NCAR GDEX - AEW hindcast using the Model for Prediction Across Scales-Atmosphere (MPAS-A) version 7.1(d583135)" />
+      <documentation type="summary">The dataset includes post-processed model outputs from global simulations using the MPAS-A version 7.1. The model was initialized using both ECMWF Integrated Forecast System (IFS) and NCEP Global Forecast System (GFS) on September 8, 2006 and integrated for 5 days and 6 hours to hindcast the evolution and tropical cyclogenesis of the African easterly wave that became Hurricane Helene in 2006. The dataset can be used to study this specific AEW case and other easterly waves and tropical systems that were active during this time (e.g., Pacific easterly waves active during the same time) as the model was run globally. Although the model produces 15km horizontal grid outputs, the post-processed outputs available here were interpolated to a 0.25 degree by 0.25 degree latitude-by-longitude grid and 27 isobaric levels (in the vertical). More details of the data and analysis&amp;nbsp;are published&amp;nbsp;in the&amp;nbsp;Journal of Advances in Modeling Earth Systems (JAMES):&amp;nbsp;https://doi.org/10.1029/2022MS003181. The namelist files to run the model as well as a README file are also included in this repository.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583135 Files" path="files/d583135" location="/data/rda/data/d583135/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

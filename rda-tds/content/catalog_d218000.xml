@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Climate Analysis Center Base Period Climate Diagnostics Data Base" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Climate Analysis Center Base Period Climate Diagnostics Data Base">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d218000/" xlink:title="NCAR GDEX - Climate Analysis Center Base Period Climate Diagnostics Data Base(d218000)" />
+      <documentation type="summary">This dataset contains monthly long-term climatological means,
+    variances, and covariances of geopotential height, temperature,
+    specific humidity, wind, and vertical motion for the atmosphere
+    from 1000mb up to 50mb.  Long-term means are computed over the
+    period from October 1978 to September 1985.  The data are on a
+    global latitude/longitude grid with a resolution of 2.5 degrees.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP/CPC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d218000 Files" path="files/d218000" location="/data/rda/data/d218000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

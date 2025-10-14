@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM WACCM Runs Under Different Solar Conditions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM WACCM Runs Under Different Solar Conditions">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651051/" xlink:title="NCAR GDEX - CESM WACCM Runs Under Different Solar Conditions(d651051)" />
+      <documentation type="summary">Fundamental understanding of the climate responses to solar variability is obscured by the large and complex climate variability. This long-standing issue is addressed here by examining climate responses under an extreme quiet sun (EQS) scenario, obtained by making the sun void of all magnetic fields. It is used to drive a coupled climate model with whole atmosphere and ocean components. The simulations reveal significant responses, and elucidate aspects of the responses to changes of troposphere/surface forcing and stratospheric forcing that are similar and those that are different. Planetary waves (PWs) play a key role in both regional-scale responses and the mean circulation changes. Intermediate scale stationary waves and regional climate respond to solar forcing changes in the troposphere and stratosphere in a similar way, due to similar subtropical wind changes in the upper troposphere. The patterns of these changes are similar to those found in a warming climate, but with opposite signs. Responses of the largest scale PW during NH and SH winters differ, leading to hemispheric differences in the interplay between dynamical and radiative processes. The analysis exposes remarkable general similarities between climate responses in EQS simulations and those under nominal solar minimum conditions, even though the latter may not always appear to be statistically significant.
+We have made five sets of CESM WACCM climate simulations to study climate responses to extremely quiet solar conditions. The five sets are under nominal solar maximum conditions, nominal solar minimal conditions, extreme quiet solar conditions, and two mixed forcing conditions (extreme low UV, extreme low visible and IR). Each set is 200 years long. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651051 Files" path="files/d651051" location="/data/rda/data/d651051/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

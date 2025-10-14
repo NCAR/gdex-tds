@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Effects of model resolution, physics, and coupling on Southern Hemisphere storm tracks in CESM1.3" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Effects of model resolution, physics, and coupling on Southern Hemisphere storm tracks in CESM1.3">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651044/" xlink:title="NCAR GDEX - Effects of model resolution, physics, and coupling on Southern Hemisphere storm tracks in CESM1.3(d651044)" />
+      <documentation type="summary">Two high-resolution versions of a coupled Earth system model (CESM1.3: 0.25 degree atmosphere, 1 degree ocean; CESM1.1: 0.25 degree atmosphere, 0.1 degree ocean) are compared to the standard resolution CESM1.1 and CESM1.3 (1 degree atmosphere, 1 degree ocean). The CESM1.3 versions are documented, and the consequences of model resolution, air-sea coupling, and physics in the atmospheric models are studied with regards to storm tracks in the Southern Hemisphere as represented by 850 hPa eddy kinetic energy. Increasing the resolution from 1 degree to 0.25 degree in the atmosphere (same physics) coupled to the 1 degree ocean intensifies the strength of the storm tracks closer to observations. The 0.25 degree atmosphere with the older CESM1.1 physics coupled to the 0.1 degree ocean has fewer low clouds, warmer Southern Ocean SSTs, a weaker meridional temperature gradient, and a degraded storm track simulation compared to the 0.25 degree atmosphere with CESM1.3 physics coupled to the 1 degree ocean. Therefore, deficient physics in the atmospheric model can negate the gains attained by higher resolution in atmosphere and ocean. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651044 Files" path="files/d651044" location="/data/rda/data/d651044/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

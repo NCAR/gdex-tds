@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NOAA NCEP Optimum Interpolation Sea Surface Temperature Analysis" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NOAA NCEP Optimum Interpolation Sea Surface Temperature Analysis">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d277000/" xlink:title="NCAR GDEX - NOAA NCEP Optimum Interpolation Sea Surface Temperature Analysis(d277000)" />
+      <documentation type="summary">
+    The NOAA National Center for Environmental Prediction (NCEP) optimum interpolation (OI) sea surface temperature (SST) analysis is produced weekly and monthly on a one-degree grid. The analysis uses in situ and satellite SSTs plus SSTs simulated by sea ice cover. Before the analysis is computed, the satellite data is adjusted for biases using the method of Reynolds (1988) and Reynolds and Marsico (1993). A description of the OI analysis can be found in Reynolds and Smith (1994). The bias correction improves the large scale accuracy of the OI.
+    
+    
+    In November 2001, the OI fields were recomputed for late 1981 onward. The new version will be referred to as OI Version 2, and the most significant change is the improved simulation of SST from sea ice data following a technique developed at the UK Met Office. This change has reduced biases in the OI SST at higher latitudes. Also, the update and extension of COADS has provided us with improved ship data coverage through 1997, reducing the residual satellite biases in otherwise data sparse regions.  For more details, see Reynolds, et al. (2002).
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCDC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d277000 Files" path="files/d277000" location="/data/rda/data/d277000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

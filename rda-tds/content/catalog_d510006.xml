@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Daily Minimum and Maximum Temperature and Precipitation for Long Term Stations from the U.S. COOP Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Daily Minimum and Maximum Temperature and Precipitation for Long Term Stations from the U.S. COOP Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d510006/" xlink:title="NCAR GDEX - Daily Minimum and Maximum Temperature and Precipitation for Long Term Stations from the U.S. COOP Data(d510006)" />
+      <documentation type="summary">
+    Daily minimum and maximum temperature and precipitation have been extracted for long term stations from the U.S. COOP station network.  The data has been extracted for the period 1950 through 2004 for all stations which have a low percentage of missing data (generally less than 5%, analyzed independently by variable for each station).  Data is available for stations from 46 states.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d510006 Files" path="files/d510006" location="/data/rda/data/d510006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

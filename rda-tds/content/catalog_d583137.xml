@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Community MUSICAv0 CONUS Simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Community MUSICAv0 CONUS Simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583137/" xlink:title="NCAR GDEX - Community MUSICAv0 CONUS Simulations(d583137)" />
+      <documentation type="summary">The Community MUSICAv0 CONUS simulations have been produced using the Community Earth System Model Release Version 2.2.0 with comprehensive tropospheric and stratospheric TS1 chemistry, using the spectral element (SE) dynamical core, with regional refinement over the contiguous U.S., having a grid mesh with approximately 1-degree horizontal grid spacing over most of the globe that refines to 1/8 degree (~14 km) over the U.S. We also provide a model simulation without the regional refinement for comparison, link to follow.
+The file names are as follows:
+*.cam.h0*.nc files are monthly mean output fields on the 0.9 x 1.25 degrees regular horizontal grid;
+*.cam.h1*.nc files are monthly mean output fields on the native grid;
+*.cam.h2*.nc files are daily mean output fields on the native grid.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583137 Files" path="files/d583137" location="/data/rda/data/d583137/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM1 Large Ensemble Community Project" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM1 Large Ensemble Community Project">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651027/" xlink:title="NCAR GDEX - CESM1 Large Ensemble Community Project(d651027)" />
+      <documentation type="summary">The CESM Large Ensemble Project is a publicly available set of climate model simulations intended for advancing understanding of internal climate variability and climate change. All simulations are performed with the nominal 1-degree latitude/longitude version of the Community Earth System Model version 1 (CESM1) with CAM5.2 as its atmospheric component. The Large Ensemble Project includes a 40-member ensemble of fully-coupled CESM1 simulations for the period 1920-2100. Each member is subject to the same radiative forcing scenario (historical up to 2005 and RCP8.5 thereafter), but begins from a slightly different initial atmospheric state (created by randomly perturbing temperatures at the level of round-off error). The Large Ensemble Project also includes a set of multi-century control simulations with the atmosphere, slab-ocean, and fully-coupled versions of CESM1 under pre-industrial (1850) radiative forcing conditions (2600 years, 900 years and 1800 years in length, respectively). Details of these model simulations may be found in Kay et al. (2015).
+In addition to the simulations above the CESM1 Single Forcing experiments are also available in this archive. The CESM1 Single Forcing Large Ensemble Project is a set of climate model simulations that are useful for addressing the individual roles of anthropogenic aerosols, greenhouse gases and land-use / land-cover in historical and future climate change. These simulations use the same model, forcing configuration and initialization protocol as the CESM1 Large Ensemble Project, but keep either industrial aerosols (AER), biomass burning aerosols (BMB), greenhouse gases (GHG) or land-use / land-cover (LULC) conditions fixed at 1920 while all other external anthropogenic and natural forcing factors evolve following historical and future (RCP8.5) scenarios. There are 3 sets of ensembles: XGHG (20 members, 1920-2080), XAER (20 members, 1920-2080), and XBMB (15 members, 1920-2029). All members are branched from the first member of the all forcing CESM1 Large Ensemble on January 1, 1920 by applying a small (order of 10-14 K) random noise perturbation to their initial atmospheric temperature fields. The impact of the withheld forcing factor can be deduced by subtracting the ensemble-mean of each X ensemble from the ensemble-mean of the original all forcing CESM1 Large Ensemble. Details of these three ensembles are provided in Deser et al. (2020). A 3 member ensemble (named AAER) that is complementary to the XAER has also been performed as discussed in Simpson et al. (2023).  These simulations begin in 1850 and evolve under ONLY time varying industrial aerosols with the other forcings held fixed at 1850's values.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651027 Files" path="files/d651027" location="/data/rda/data/d651027/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

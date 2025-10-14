@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 83-level simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 83-level simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651002/" xlink:title="NCAR GDEX - CESM2 83-level simulations(d651002)" />
+      <documentation type="summary">In the next generation of the Community Atmosphere Model (CAM7), the model top will be raised and the vertical resolution will be increased. The model top will be approximately 80 km (compared to 40 km in older generations), and the grid spacing in the free troposphere and lower stratosphere will be reduced to about 500 m compared to around 1137m in older generations. In addition to this, extra levels will be added to the boundary layer and the lowest model level will be lowered. Overall, this "mid-top" version of CAM7 will have 93 levels. However, many other changes will also be present in CAM7 such as physics updates and the new spectral element dynamical core, making it challenging to identify the role of this enhanced resolution in changes between CAM7 and CAM6.
+    This dataset consists of a suite of simulations that use CAM6 physics and the finite volume dynamical core, but with CAM7's grid except for the changes to the levels in the boundary layer i.e., an 83 level model. The boundary layer levels are not changed because once those are changed, some additional tuning of the physical parameterizations is needed precluding a clean comparison and identification of the impact of vertical resolution. Only minimal changes to CAM6 physics have been applied to these simulations; the non-orographic gravity wave drag scheme was turned on, the upper boundary condition was changed such that any remaining gravity wave momentum flux is deposited at the model lid, and some minor tuning of the gravity wave drag settings was also performed to optimize the behavior of the QBO. These simulations can, therefore, be compared with existing CAM6 simulations to identify the impacts of this raising of the model lid and change to the resolution of the free troposphere and lower stratosphere. These simulations have an internally generated QBO and a relatively good representation of the stratospheric polar vortices and can be used to explore climate variability and change in the presence of those features.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651002 Files" path="files/d651002" location="/data/rda/data/d651002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

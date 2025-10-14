@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Preindustrial fully coupled CESM2.0.1 (B1850_c201_CTL) for atmospheric river analyses" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Preindustrial fully coupled CESM2.0.1 (B1850_c201_CTL) for atmospheric river analyses">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010073/" xlink:title="NCAR GDEX - Preindustrial fully coupled CESM2.0.1 (B1850_c201_CTL) for atmospheric river analyses(d010073)" />
+      <documentation type="summary">CESM version 2.0.1 (the original public-release version of CESM2, and scientifically identical to public version 2.1.0) was run on a nominal 1-degree finite-volume horizontal grid for 30 years to assess the model's ability to represent atmospheric rivers (extreme precipitation events) and their related weather patterns. The dataset is comprised of global, daily averaged CAM history files for selected single-level and multi-level fields. Data size was minimized by extracting from the native files only fields relevant to extreme precipitation and related weather patterns.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOE/LANL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010073 Files" path="files/d010073" location="/data/rda/data/d010073/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

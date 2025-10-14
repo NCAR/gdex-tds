@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP CPC Upper Stratospheric and Lower Mesospheric Analyses" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP CPC Upper Stratospheric and Lower Mesospheric Analyses">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d067004/" xlink:title="NCAR GDEX - NCEP CPC Upper Stratospheric and Lower Mesospheric Analyses(d067004)" />
+      <documentation type="summary">The Global Upper Stratospheric and Lower Mesospheric Analyses are provided on a pair of 65 by 65 polar grids, daily at 12Z. These were operationally prepared by NCEP/CPC, using Advanced Microwave Sounding Unit (AMSU) satellite data.
+    The analyses are available on four levels: 5, 2, 1 and 0.4 millibars. Parameters include pressure, geopotential height, and temperature.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP/CPC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d067004 Files" path="files/d067004" location="/data/rda/data/d067004/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

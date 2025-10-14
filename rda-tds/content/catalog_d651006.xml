@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="High resolution CESM1.3 ARDT (AR detection tools) catalogues" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="High resolution CESM1.3 ARDT (AR detection tools) catalogues">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651006/" xlink:title="NCAR GDEX - High resolution CESM1.3 ARDT (AR detection tools) catalogues(d651006)" />
+      <documentation type="summary">Atmospheric river detection tool (ARDT) catalogues, source data, and ocean daily used for Shields, Li et al., 2024 Communications Earth and Environment entitled "Response of the upper ocean to northeast Pacific atmospheric rivers under climate change".
+    Datasets include: (1) Three ARDTs (Shields/Kiehl, Mundhenk/Nardi, IPART) catalogues. AR detection data includes timestamps and geographic location for AR landfalls where atmospheric rivers intersect the North American coastline (1960-2100). (2) Source AR tracking data from CESM1.3 High Resolution model (25km atmosphere/land, roughly 0.1 ocean/ice) historical and RCP8.5 simulations 1960-2100, 6 hourly intervals. Note for ARDT catalogues, timestamps and latitude can be matched to the source data for full AR spatial footprints and was originally produced under the iHESP project and now part of MESACLIP. (3) Ocean daily data use for all results in Shields, Hui, et al. 2024. including SST, SSH, HXML, EVAP, SEN, PREC, SSS (1920-2100). Files are NetCDF format. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651006 Files" path="files/d651006" location="/data/rda/data/d651006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

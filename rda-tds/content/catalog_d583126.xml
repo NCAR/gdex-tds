@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Planetary-boundary and urban-canopy layer modeling study of the landfall of Hurricane Irma (2017) in Miami" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Planetary-boundary and urban-canopy layer modeling study of the landfall of Hurricane Irma (2017) in Miami">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583126/" xlink:title="NCAR GDEX - Planetary-boundary and urban-canopy layer modeling study of the landfall of Hurricane Irma (2017) in Miami(d583126)" />
+      <documentation type="summary">This data repository contains the model simulation and observational data used in the manuscript:
+There are four Weather Research and Forecasting (WRF) model simulations consisting of two planetary boundary layer (PBL) parameterizations and two urban canopy models. The PBL schemes are Mellor-Yamada-Janjic (MYJ) and Yonsei University (YSU). The urban canopy models are a simple bulk scheme and the multilayer Building Effects Parameterization (BEP). The observational data consists of Automated Surface Observing Systems (ASOS) stations of Palm Beach International Airport (KPBI), Miami International Airport (KMIA), Pompano Beach Airpark (KPMP), the Fowey Rocks station from the National Oceanic and Atmospheric Administration (NOAA) National Data Buoy Center, the University of Miami Health Center WeatherStem station, and an observational wind swath analysis of Hurricane Irma from the NOAA National Hurricane Center (NHC).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583126 Files" path="files/d583126" location="/data/rda/data/d583126/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

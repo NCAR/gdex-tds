@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Aquaplanet simulations using the Model for Prediction Across Scales (MPAS) version 6.2" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Aquaplanet simulations using the Model for Prediction Across Scales (MPAS) version 6.2">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583134/" xlink:title="NCAR GDEX - Aquaplanet simulations using the Model for Prediction Across Scales (MPAS) version 6.2(d583134)" />
+      <documentation type="summary">This dataset includes model output from aquaplanet simulations using the Model for Prediction Across Scales (MPAS), version 6.2. Aquaplanet simulations are numerical simulations on an Earth-like water-covered surface without land, topography, sea-ice, or seasons. These simulations are useful for studying climate and weather in a simplified yet realistic framework. The specific simulations contained in this dataset were produced using MPAS, which is an NCAR-supported community model. Various simulations were produced with variations to either the horizontal grid spacing, vertical grid spacing, or physics packages used. Model output from each simulation was interpolated to a 1-degree by 1-degree latitude-by-longitude grid and 17 vertical levels of constant pressure (e.g., isobaric levels). Most of the simulations cover a three-year period, and three simulations cover a two-year period. Details of the simulations and their comparison against other datasets will be documented in a manuscript to be submitted to the Journal of Advancements in Modeling Earth Systems Science. As required by the journal, the dataset will be made available to the public without restrictions.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583134 Files" path="files/d583134" location="/data/rda/data/d583134/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

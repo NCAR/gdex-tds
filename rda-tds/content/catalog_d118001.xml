@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ERA-40 2.5 Degree Upper Air Pressure Level Analysis Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ERA-40 2.5 Degree Upper Air Pressure Level Analysis Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d118001/" xlink:title="NCAR GDEX - ERA-40 2.5 Degree Upper Air Pressure Level Analysis Data(d118001)" />
+      <documentation type="summary">The 6-hourly upper air pressure level analysis data on global 2.5 degree grids from ECMWF ERA-40 reanalysis project are available in this dataset.</documentation>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>ERA40</keyword>
+      <keyword>ECMWF ERA40 Reanalysis Project</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d118001 Files" path="files/d118001" location="/data/rda/data/d118001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

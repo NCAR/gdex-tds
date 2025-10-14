@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CMIP 5 dataset and code for R parallelization" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CMIP 5 dataset and code for R parallelization">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d810000/" xlink:title="NCAR GDEX - CMIP 5 dataset and code for R parallelization(d810000)" />
+      <documentation type="summary">
+    The dataset is used as an example of how to parallelize statistical analysis for CMIP data. The code contains all the LSF submission scripts and the R scripts referred to in the NCAR library technical note NCAR/TN-534+STR. The specific analysis conducted is Extreme Value Analysis, but the parallelization framework is generic and can be applied to any grid-point-wise parallelization using the software R.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/DAReS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d810000 Files" path="files/d810000" location="/data/rda/data/d810000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

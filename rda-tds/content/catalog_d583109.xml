@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Whole Atmosphere Climate Change: Dependence on Solar Activity" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Whole Atmosphere Climate Change: Dependence on Solar Activity">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583109/" xlink:title="NCAR GDEX - Whole Atmosphere Climate Change: Dependence on Solar Activity(d583109)" />
+      <documentation type="summary">The netCDF files are global gridded monthly monthly mean "h0" files output by the NCAR WACCM-X model.  The "SMIN" or "SMAX" in the file name designates perpetual solar minimum or perpetual solar maximum conditions, respectively.  The date string at the end file name designates the year and month, e.g., 1972-01 is January 1972.  The metadata in the individual netCDF files describes the individual parameters and locations.  The spatial resolution is 1.9 x 2.5 degrees latitude/longitude.
+Note that these are "free-running" climate simulations, and so are not representative of atmospheric weather on any particular date.  Rather, the nominal date of the simulation indicates that the lower boundary conditions of CO2, CH4, CFC, sea-surface temperatures, etc., for that date, were employed.  Similarly, constant "solar minimum" or constant "solar maximum" upper boundary conditions were used for each five-year run, instead of time-varying conditions.  See publication for further details.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583109 Files" path="files/d583109" location="/data/rda/data/d583109/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NMC Global Tropospheric Analyses, CDROM subset, daily January to June 1991" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NMC Global Tropospheric Analyses, CDROM subset, daily January to June 1991">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d082005/" xlink:title="NCAR GDEX - NMC Global Tropospheric Analyses, CDROM subset, daily January to June 1991(d082005)" />
+      <documentation type="summary">NCEP Global Analyses on 145 by 37 2.5 degree grids, one for each
+    hemisphere.  Has surface, tropospheric, tropopause, and lower
+    stratospheric analyses; at mandatory levels up to 50 millibars.
+    More...
+    This is a subset of the data in DS082.0.and is identical
+    except that it is in GRIB format on CDROM in.  Every CDROM contains six months of data.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d082005 Files" path="files/d082005" location="/data/rda/data/d082005/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

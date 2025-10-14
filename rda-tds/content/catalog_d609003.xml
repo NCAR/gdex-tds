@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GCIP Canadian Meteorological Centre (CMC) GEM model output," xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GCIP Canadian Meteorological Centre (CMC) GEM model output,">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d609003/" xlink:title="NCAR GDEX - GCIP Canadian Meteorological Centre (CMC) GEM model output,(d609003)" />
+      <documentation type="summary">
+    The CMC GEM (replacement of RFE) model outputs for GCIP project.
+  </documentation>
+      <creator>
+        <name vocabulary="DIF">CA/EC/MSC/CMC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>GCIP</keyword>
+      <keyword>GEWEX Continental-Scale International Project</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d609003 Files" path="files/d609003" location="/data/rda/data/d609003/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

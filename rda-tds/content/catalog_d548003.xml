@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3.0.2-Daily" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3.0.2-Daily">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d548003/" xlink:title="NCAR GDEX - International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3.0.2-Daily(d548003)" />
+      <documentation type="summary">
+    The International Comprehensive Ocean-Atmosphere Data Set (ICOADS) is a global ocean marine meteorological and surface ocean dataset. It is formed by merging many national and international data sources that contain measurements and visual observations from ships (merchant, navy, research), moored and drifting buoys, coastal stations, and other marine and near-surface ocean platforms. Each marine report contains individual observations of meteorological and oceanographic variables, such as sea surface and air temperatures, wind, pressure, humidity, and cloudiness. The coverage is global and sampling density varies depending on date and geographic position relative to shipping routes and ocean observing systems.
+    
+    
+    This dataset contains ICOADS Release 3.0.2-Daily, which is a near-real time daily update of ICOADS observations. Data are available from 2023-03-24, and are updated daily with a latency of 19 days.
+    
+    
+    The new release includes changes designed to enable more effective exchange of information describing data quality between ICOADS, reanalysis centers, data set developers, scientists and the public. These user-driven innovations include the assignment of a unique identifier (UID) to each marine report, to enable tracing of observations, linking with reports and improved data sharing. Other revisions and extensions of the International Maritime Meteorological Archive (IMMA) common data format incorporate new near-surface oceanographic data elements and cloud parameters. Many new input data and metadata sources have been assembled, and updates and improvements to existing data sources, or removal of erroneous data, made.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">U-SOTON/NOC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">FSU/COAPS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCEI</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d548003 Files" path="files/d548003" location="/data/rda/data/d548003/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

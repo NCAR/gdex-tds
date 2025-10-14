@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Model code and datasets used in &quot;A potential vorticity diagnostics package for MPAS-Atmosphere&quot;" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Model code and datasets used in &quot;A potential vorticity diagnostics package for MPAS-Atmosphere&quot;">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583130/" xlink:title="NCAR GDEX - Model code and datasets used in &quot;A potential vorticity diagnostics package for MPAS-Atmosphere&quot;(d583130)" />
+      <documentation type="summary">This dataset contains the original and modified versions of MPAS v7.3 code used for the simulations described in a manuscript submitted for publication in the Journal of Advances in Modeling Earth Systems. The input and configuration files needed to reproduce the simulations are also included. Additionally, this dataset includes the relevant potential vorticity (PV) diagnostic fields output from global MPAS simulations and interpolated to a 0.15-degree by 0.15-degree latitude-by-longitude grid that were used in the analyses presented in the paper.
+Three simulations were discussed in the paper: two are run in single-precision, and one is run in double-precision. All model files are global with 55 vertical levels. The initial conditions and restart files are on the native 15-3km refined mesh. These simulations were for a proof-of-concept paper about a model budget, so the output files relevant to the paper are valid at two consecutive time steps and at two additional hours (depending on the specific simulation).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583130 Files" path="files/d583130" location="/data/rda/data/d583130/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

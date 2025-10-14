@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CISM ISMIP6 Antarctic Projection data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CISM ISMIP6 Antarctic Projection data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651036/" xlink:title="NCAR GDEX - CISM ISMIP6 Antarctic Projection data(d651036)" />
+      <documentation type="summary">This work aims at quantifying uncertainties in sea level projections using forcing from the Ice Sheet Model Intercomparison Project for CMIP6 (ISMIP6). The Community Ice Sheet Model (CISM) is used to run ISMIP6 based projections of ocean-forced Antarctic Ice Sheet (AIS) evolution. In these experiments we investigate parameters such as basal friction laws, grid resolutions, melt scheme, stress balance approximation among others. These runs span 550 years starting from a spin-up starting at year 1950. See the README file for references and more information about the different sets of data present in this archive.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651036 Files" path="files/d651036" location="/data/rda/data/d651036/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

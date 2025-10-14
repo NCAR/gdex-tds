@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM-cocco: Sensitivity Experiments of Coccolithophores to Changing Atmospheric CO2 using CESM" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM-cocco: Sensitivity Experiments of Coccolithophores to Changing Atmospheric CO2 using CESM">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583132/" xlink:title="NCAR GDEX - CESM-cocco: Sensitivity Experiments of Coccolithophores to Changing Atmospheric CO2 using CESM(d583132)" />
+      <documentation type="summary">This dataset contains the model output from CESM-cocco, described in Krumhardt et al., 2019 in Journal of Advances in Modeling Earth Systems (JAMES). These are monthly history files from year 250 of the model simulations (the year of output analyzed in Krumhardt et al., 2019). The output was created by model development version of CESM2.0: cesm2_0_alpha10d. CESM-cocco contains an additional phytoplankton functional type (PFT) representative of coccolithophores. Growth and calcification of the coccolithophore PFT are sensitive to aqueous CO2. We performed sensitivity simulations to test the impacts of increasing CO2 on coccolithophores. Source code and instructions for configuring simulations for CESM-cocco can be found at https://github.com/kristenkrumhardt/JAMES-cocco</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583132 Files" path="files/d583132" location="/data/rda/data/d583132/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Improving representation of stratospheric Polar Vortex in Southern Hemisphere with low-frequency frontal waves" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Improving representation of stratospheric Polar Vortex in Southern Hemisphere with low-frequency frontal waves">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d014619/" xlink:title="NCAR GDEX - Improving representation of stratospheric Polar Vortex in Southern Hemisphere with low-frequency frontal waves(d014619)" />
+      <documentation type="summary">Many global models tend to produce a stratospheric polar vortex in the Southern Hemisphere winter that is too strong and too cold - a common issue known as the "cold-pole bias". This bias can affect how models simulate important features like the ozone hole. In this study, we use a development version of the Community Atmosphere Model (CAM) at various horizontal resolutions. We find that higher-resolution simulations reduce the cold-pole bias and better capture the structure of the polar vortex. Motivated by this improvement, we introduce a new scheme to represent a source of frontal gravity waves that so far have been missing in the model. Including this new source representation leads to significant improvements in the model's ability to simulate the Southern Hemisphere stratospheric polar vortex, particularly in wind speeds and the vertical structure of the jet stream. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d014619 Files" path="files/d014619" location="/data/rda/data/d014619/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

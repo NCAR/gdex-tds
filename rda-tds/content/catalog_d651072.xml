@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Neverworld2" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Neverworld2">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651072/" xlink:title="NCAR GDEX - Neverworld2(d651072)" />
+      <documentation type="summary">This dataset includes the output from idealized primitive equation MOM6 simulations, and is useful for studying ocean mesoscale turbulence over a hierarchy of grid resolutions (1/4, 1/8, 1/16, 1/32 degree). The model has intermediate complexity, incorporating basin-scale geometry with idealized Atlantic and Southern oceans, and with non-uniform ocean depth to allow for mesoscale eddy interactions with topography. The model is perfectly adiabatic and spans the equator, and thus fills a gap between quasi-geostrophic models, which cannot span two hemispheres, and idealized general circulation models, which generally have diabatic processes and buoyancy forcing. The dataset includes a total of 8 experiments because the simulations were run with two different depths over which the wind stress was applied (hmix = 5 and 20 m).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651072 Files" path="files/d651072" location="/data/rda/data/d651072/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

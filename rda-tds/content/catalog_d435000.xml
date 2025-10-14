@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Monthly Mean Rawinsondes, from NCEP/NCAR Global Reanalysis, 1948-continuing" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Monthly Mean Rawinsondes, from NCEP/NCAR Global Reanalysis, 1948-continuing">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d435000/" xlink:title="NCAR GDEX - Monthly Mean Rawinsondes, from NCEP/NCAR Global Reanalysis, 1948-continuing(d435000)" />
+      <documentation type="summary">Monthly mean rawinsonde data (and metadata) created by Jack
+    Woollen from the daily soundings input to the NCEP/NCAR Global
+    Reanalysis.
+    Stephen Leroy of the Anderson Research Group at Harvard University has provided a copy of this dataset in netCDF format.</documentation>
+      <creator>
+        <name vocabulary="DIF">HARVARD/ARP</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d435000 Files" path="files/d435000" location="/data/rda/data/d435000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
