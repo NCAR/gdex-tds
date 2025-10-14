@@ -20,7 +20,7 @@
       </creator>
       <creator>
         <name vocabulary="DIF">NASA/GSFC/SED/ESD/LA/MAPB</name>
-        <contact url="none" />
+        <contact url="http://gpcp.umd.edu/" email="jjwang@umd.edu" />
       </creator>
       <authority>edu.ucar.gdex</authority>
       <publisher>
@@ -31,6 +31,10 @@
       <keyword>Global Precipitation Climatology Centre</keyword>
       <keyword>GPCP</keyword>
       <keyword>Global Precipitation Climatology Project</keyword>
+      <keyword>NASA</keyword>   
+      <keyword>GSFC</keyword>   
+      <keyword>Precipitation</keyword>
+      <keyword>Precipitation Analysis</keyword>
     </metadata>
     <!--Files-->
     <datasetScan name="d728004 Files" path="files/d728004" location="/data/rda/data/d728004/">
@@ -42,6 +46,9 @@
         <exclude wildcard="*.x" />
         <exclude wildcard=".*" />
         <exclude wildcard=".*/" />
+        <exclude wildcard="psg" atomic="false" collection="true" />
+        <exclude wildcard="esg" atomic="false" collection="true" />
+        <exclude wildcard="clim" atomic="false" collection="true" />
       </filter>
       <addDatasetSize />
     </datasetScan>

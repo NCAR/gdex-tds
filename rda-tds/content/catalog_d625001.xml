@@ -19,9 +19,13 @@
     JCDAS employs the same system as JRA-25 and the data assimilation cycle is extended to the present time. JRA-25 and JCDAS products will enable users to conduct climate diagnostics with a long-term, and current, homogeneous reanalysis dataset. The JMA has also engaged in ongoing cooperation
     with ECMWF (European Center for Medium-Range Weather Forecasts) on reanalysis, including the
     ECMWF CDAS (ECDAS), more commonly known as ERA-Interim.</documentation>
+
+      <documentation xlink:href="http://www.jma.go.jp/jma/jma-eng/jma-center/nwp/outline-nwp/index.htm" xlink:title="Outline of the Operational Numerical Weather Prediction at the Japan Meteorological Agency" />
+      <documentation xlink:href="http://jra.kishou.go.jp/JRA-25/index_en.html" xlink:title="Japanese 25-year ReAnalysis (JRA-25) and JMA Climate Data Assimilation System (JCDAS)" />
+      <documentation xlink:href="https://climatedataguide.ucar.edu/climate-data/jra-25" xlink:title="Description of the JRA-25 at the NCAR Climate Data Guide" />
       <creator>
         <name vocabulary="DIF">JP/JMA</name>
-        <contact url="none" />
+        <contact url="http://www.jma.go.jp/jma/index.html" email="jra@met.kishou.go.jp" />
       </creator>
       <creator>
         <name vocabulary="DIF">JP/CRIEPI</name>
@@ -34,6 +38,9 @@
       </publisher>
       <keyword>JRA25</keyword>
       <keyword>JMA Japanese 25-year Reanalysis</keyword>
+      <keyword>Numerical Weather Prediction</keyword>
+      <keyword>Model data</keyword>
+      <keyword>Reanalysis</keyword>
     </metadata>
     <!--Files-->
     <datasetScan name="d625001 Files" path="files/d625001" location="/data/rda/data/d625001/">
@@ -45,6 +52,7 @@
         <exclude wildcard="*.x" />
         <exclude wildcard=".*" />
         <exclude wildcard=".*/" />
+        <exclude wildcard="*.htaccess" />
       </filter>
       <addDatasetSize />
     </datasetScan>
