@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="MPAS-A Aquaplanet Simulations with Different Sea-Surface Temperatures" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="MPAS-A Aquaplanet Simulations with Different Sea-Surface Temperatures">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d809019/" xlink:title="NCAR GDEX - MPAS-A Aquaplanet Simulations with Different Sea-Surface Temperatures(d809019)" />
+      <documentation type="summary">Many uncertainties exist regarding potential changes of tropical weather systems due to our evolving climate. This is in part due to existing climate model deficiencies and due to our limited understanding of tropical convection. To alleviate those limitations, this dataset contains post-processed output from aquaplanet experiments using different sea-surface temperatures (SST). The aquaplanet framework is an idealized representation of Earth, enabling fundamental studies on oceanic weather systems and its interactions with the mean climate. Three experiments are included, all of which use the Model for Prediction Across Scales-Atmosphere version 8.0 with 3-km cell spacing between 10S-30N and 15 km cell spacing elsewhere. The experiments are named CTL, minus4K, and plus4K. CTL uses a meridional SST profile mimicking present boreal summer conditions, whereas minus4K and plus4K use meridional profiles mimicking a cooler (CTL - 4K) and warmer (CTL + 4K) climate, respectively. The model output was conservatively interpolated to latitude-longitude grids using the Climate Data Operator software. This dataset contains 6-hourly interpolated output for six months in each experiment. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d809019 Files" path="files/d809019" location="/data/rda/data/d809019/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 WACCM S2S Hindcasts" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 WACCM S2S Hindcasts">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651040/" xlink:title="NCAR GDEX - CESM2 WACCM S2S Hindcasts(d651040)" />
+      <documentation type="summary">This dataset contains subseasonal-to-seasonal (S2S) hindcasts with CESM2 WACCM that were done in support of a NOAA project and also NCAR NSC project on Whole Atmosphere subseasonal predictability. These forecasts consist of 45-day long runs initialized every Monday from 1999 to 2019, 11 ensemble members for start dates between September and March (winter season). Output includes atmospheric, land, ocean and sea-ice variables. The project utilized both NOAA grant and core funding. NOAA did not require us to publish data, but as part of the NCAR mission (and core funded effort) we do need to put things out for the community and also to publish findings.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651040 Files" path="files/d651040" location="/data/rda/data/d651040/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

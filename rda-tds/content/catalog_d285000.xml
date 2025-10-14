@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="World Ocean Database and World Ocean Atlas" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="World Ocean Database and World Ocean Atlas">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d285000/" xlink:title="NCAR GDEX - World Ocean Database and World Ocean Atlas(d285000)" />
+      <documentation type="summary">
+    The World Ocean Database (WOD) has global ocean observed and standard depth data profiles. The World Ocean Atlas (WOA) has objectively analyzed climatological mean fields on both a quarter-degree and on a one-degree longitude by latitude grids. The gridded analyses are for annual, seasonal, and monthly means of six oceanographic variables: temperature, salinity, dissolved oxygen, nitrate, phosphate, and silicate on standard levels (typically at 102 depths, dependent on data availability).   The products were derived at the Ocean Climate Laboratory (OCL) of the National Oceanographic Data Center (NODC). Development of the World Ocean
+    products began in 1982 and they have been updated in 1994, 1998, 2001, 2005, 2009, 2013, 2018 and 2023.  The featured products are now based
+    on the 2023 versions.  Some products from older version are still unique. 
+    
+    The WOD is the world's largest profile collection covering the global ocean and contains measurements from 1800 through 2023.  The WOA are climatological grids at fixed depths derived from quality checked WOD profiles.  This is a recognized world-wide standard and is often referenced in oceanographic research.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NODC/OCL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d285000 Files" path="files/d285000" location="/data/rda/data/d285000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

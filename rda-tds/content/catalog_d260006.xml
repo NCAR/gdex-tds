@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Version 3 Shipboard Automated Meteorological and Oceanographic System (SAMOS) Air-Sea Fluxes" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Version 3 Shipboard Automated Meteorological and Oceanographic System (SAMOS) Air-Sea Fluxes">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d260006/" xlink:title="NCAR GDEX - Version 3 Shipboard Automated Meteorological and Oceanographic System (SAMOS) Air-Sea Fluxes(d260006)" />
+      <documentation type="summary">Along ship track bulk turbulent heat and momentum fluxes derived using one-minute interval data collected by the Shipboard Automated Meteorological and Oceanographic System (SAMOS) initiative. The fluxes are provided as three products derived using three widely accepted air-sea flux algorithms (Smith 1988, COARE 3.6, and a 2023 update of Bourassa 2006). Datasets are organized by ship and flux algorithm. The dataset uses SAMOS data from 47 research vessels with observations spanning 2005-2024. Data include heat and momentum fluxes, state variables adjusted to 10 meters, and multiple inputs and outputs from the flux algorithms. These data have wide use for satellite product and model evaluation; air-sea interaction, marine biology, chemistry and geoscience research activities; climate science, and marine geoinformatics.
+Data coverage is the global oceans, but is concentrated around North America. Fluxes are derived from along cruise track navigational, meteorological, and oceanographic observations from 47 research vessels. Fluxes are derived at one-minute intervals (the same as the source observations) and take advantage of extensive quality control flags on the source SAMOS data. Additional QC flags are applied to the derived fluxes, height adjusted state variables, and other outputs of the flux algorithms. All data are provided in CF/ACDD compliant netCDF files, with extensive metadata. The data volume is 180 GB.</documentation>
+      <creator>
+        <name vocabulary="DIF">FSU/COAPS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d260006 Files" path="files/d260006" location="/data/rda/data/d260006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

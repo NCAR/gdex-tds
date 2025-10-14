@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Archived Data for &quot;Simulating Observations of Southern Ocean Clouds and Implications for Climate&quot;" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Archived Data for &quot;Simulating Observations of Southern Ocean Clouds and Implications for Climate&quot;">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583113/" xlink:title="NCAR GDEX - Archived Data for &quot;Simulating Observations of Southern Ocean Clouds and Implications for Climate&quot;(d583113)" />
+      <documentation type="summary">This is the archive of CAM6 simulation output used in the paper Archived Data for Simulating Observations of Southern Ocean Clouds and Implications for Climate which appeared in AGU J. Advances in Modeling Earth Systems, JGR Atmospheres
+The CAM6 output data is in CAM history format and includes three types of files: monthly, daily and along aircraft flight tracks.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583113 Files" path="files/d583113" location="/data/rda/data/d583113/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

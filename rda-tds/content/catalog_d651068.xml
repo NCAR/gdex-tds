@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 Pacific Pacemaker Ensemble" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 Pacific Pacemaker Ensemble">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651068/" xlink:title="NCAR GDEX - CESM2 Pacific Pacemaker Ensemble(d651068)" />
+      <documentation type="summary">A 10-member ensemble of CESM2 (1 degree spatial resolution) simulations in which time-evolving SST anomalies in the eastern tropical Pacific are nudged to observations (NOAA Extended Reconstruction Sea Surface Temperature version 5: ERSSTv5) during 1880-2019. In this way, the observed evolution of ENSO is maintained in each simulation (i.e. ENSO is the pacemaker), with the rest of the model's coupled climate system free to evolve. Note that only the SST anomalies, not the total SST, are nudged to observations, maintaining the model's mean state, including and model biases. In the East Pacific, the nudging is full strength between 15S and 15N and from the International Date Line to the American coast with a 5 degree latitude buffer region to the south and north where the strength of the relaxation is linearly reduced. West of the Date Line, the nudging mask takes the form of a wedge shape, tapering off in latitude toward the Maritime continent.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651068 Files" path="files/d651068" location="/data/rda/data/d651068/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

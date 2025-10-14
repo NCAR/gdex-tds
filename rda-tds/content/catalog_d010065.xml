@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010065/" xlink:title="NCAR GDEX - Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions(d010065)" />
+      <documentation type="summary">
+While high-resolution future climate data are increasingly available for the contiguous United States, there has been limited focus on Alaska and Hawaii. Our study provides high temporal and spatial resolution climate data (daily precipitation and temperature on spatial grids of 10 km for Alaska and 1 km for Hawaii) based on 23 climate models from the Coupled Model Intercomparison Project Phase 6 and four scenarios (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5). These datasets include different statistical downscaling and bias correction techniques (seven for precipitation, six for temperature). While one method (i.e., empirical quantile mapping) generally outperforms the others, its performance can vary by climate quantity, region, or climate model, motivating our aim to provide an ensemble dataset of bias-corrected outputs. 
+
+
+This community dataset will permit investigations into the sources of climate uncertainty and climate change uncertainty at the local scale. They may also be used for climate risk assessment across a range of societal sectors. A primary reason for their development by the authors is to drive hydrologic models and explore questions of hydrologic change in these underexplored regions. These data are described in a paper under review in the journal Scientific Data. 
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CH/ETHZ/IAC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">PRINCETON/HMEI</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">PRINCETON/CEE</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010065 Files" path="files/d010065" location="/data/rda/data/d010065/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GATE Aircraft Observations for June to September 1974" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GATE Aircraft Observations for June to September 1974">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d875000/" xlink:title="NCAR GDEX - GATE Aircraft Observations for June to September 1974(d875000)" />
+      <documentation type="summary">This dataset contains observations from U.S. and some foreign
+    aircraft during the GARP Atlantic Tropical Experiment (GATE).
+    The GATE period was from June to September 1974.</documentation>
+      <creator>
+        <name vocabulary="DIF">UK/MOD/DSTL</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/RAF</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">FR/CNRM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>GATE</keyword>
+      <keyword>GARP Atlantic Tropical Experiment</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d875000 Files" path="files/d875000" location="/data/rda/data/d875000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

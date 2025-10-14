@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM1 Fixed Ozone Ensemble" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM1 Fixed Ozone Ensemble">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651053/" xlink:title="NCAR GDEX - CESM1 Fixed Ozone Ensemble(d651053)" />
+      <documentation type="summary">The CESM1-CAM5 fixed ozone runs are eight CESM simulations that use the Large Ensemble (LENS) code base and were initialized in 1955 with Large Ensemble members. The runs use the same external forcings as those in the 20th Century CESM LENS except for ozone. Instead of prescribing a time-varying ozone concentration as in LENS, ozone is kept at constant 1955 concentrations. (The ozone file is available under the Data Access tab.) Note that the global ozone concentrations are fixed, including both stratospheric and tropospheric concentrations. The runs go from 1955-2005 and are labeled "b.e11..B20LE_fixedO3_xxx" where "xxx" corresponds to the Large Ensemble member that it branched from (e.g. 001, 010, etc). These runs were supported with resources from NSF FESD (#1338814).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651053 Files" path="files/d651053" location="/data/rda/data/d651053/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

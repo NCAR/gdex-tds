@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 Sea Ice thermodynamics sensitivity experiments" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 Sea Ice thermodynamics sensitivity experiments">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583149/" xlink:title="NCAR GDEX - CESM2 Sea Ice thermodynamics sensitivity experiments(d583149)" />
+      <documentation type="summary"> We analyze two preindustrial experiments from the Community Earth System Model version 2 (CESM2) to characterize the impact of sea ice physics on differences in coastal sea ice production around Antarctica and the resulting impact on the ocean and atmosphere. The only difference between the two experiments is the selection of the thermodynamic formulation, by changing the KTHERM namelist parameter. We find substantial differences in the dominant sea ice physical processes, ocean water mass formation, ocean circulation, and coastal atmosphere.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583149 Files" path="files/d583149" location="/data/rda/data/d583149/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

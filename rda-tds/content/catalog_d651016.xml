@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Atmospheric River Tracking Method Intercomparison Project Tier 2 CMIP5/6 Source Data and Catalogues" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Atmospheric River Tracking Method Intercomparison Project Tier 2 CMIP5/6 Source Data and Catalogues">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651016/" xlink:title="NCAR GDEX - Atmospheric River Tracking Method Intercomparison Project Tier 2 CMIP5/6 Source Data and Catalogues(d651016)" />
+      <documentation type="summary">Atmospheric River Tracking Method Intercomparison Project (ARTMIP) Tier 2 CMIP5/6 developer catalogues and source data. Each ARTMIP method/algorithm (named by developer) submits a catalogue comprised of 0's (no AR exists) or 1's (yes AR exists) for each time slice, for each grid point, using a curated set of output from the Coupled Model Intercomparison Project 5 and 6 multi-model ensembles (see Table 1). Catalogues are created for single ensemble members from historical simulations and for RCP8.5 (CMIP5) and SSP5-8.5 (CMIP6) future simulations, for the 1950-2099 time period. Ensemble member r1i1p1f1 or r1i1p1f1 is used for each input, with the exception of the CMIP5 CCSM4 run, which uses ensemble member r6i1p1. Derived CMIP5/6 quantities required for algorithms, such as IVT or IWV, were computed by the ARTMIP project so that all methods use the exact same data.
+    There are some exceptions to the time period noted above: output from the CMIP6 IPSL-CM6A-LR SSP5-8.5 simulation are only available through 2049, there are data corruption issues for the year 2006 in the CMIP5 CSIRO-Mk3-6-0 simulation, and there are data corruption issues for the year 2095-2099 for the TECA_BARD_v1.0 output applied to the CMIP5 IPSL-CM5B-LR simulation. The Guan_Waliser_v2 algorithm did not supply ARDT catalogues for the NorESM1-M and BCC-CSM2-MR simulations. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651016 Files" path="files/d651016" location="/data/rda/data/d651016/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

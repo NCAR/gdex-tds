@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="QSCAT (Ku-2001) Ocean Winds Derived by Locally Weighted Regression Interpolation (Version 1e)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="QSCAT (Ku-2001) Ocean Winds Derived by Locally Weighted Regression Interpolation (Version 1e)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d744005/" xlink:title="NCAR GDEX - QSCAT (Ku-2001) Ocean Winds Derived by Locally Weighted Regression Interpolation (Version 1e)(d744005)" />
+      <documentation type="summary">
+    This revision is Version 1e for QSCAT Ku-2001 ocean surface winds
+    derived using a locally weighted regression interpolation
+    method.  The region of influence (ROI) varies depending on
+    the quality of the resultant interpolation.  ROI of 3 and
+    5 degrees (latitude by longitude) have been used.  The
+    resultant grids are 0.5 degrees and 3 hour resolution.  The
+    coverage is for 40S to the 70S.
+    
+    
+    The QSCAT (Ku-2001) satellite data were provided by
+    Remote Sensing Systems.
+    
+    
+    Notice 07/28/2006: JPL PO.DAAC has
+    initiated reprocessing of all ADEOS-II and QuikSCAT data with
+    superior algorithms for retrievals in high wind speed and light
+    rain areas.  This reprocessing could effect this dataset. More
+    information is available at
+    JPL PO.DAAC.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">NWRA</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d744005 Files" path="files/d744005" location="/data/rda/data/d744005/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

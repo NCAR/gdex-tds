@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2.2 CAM-chem as Boundary Conditions " xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2.2 CAM-chem as Boundary Conditions ">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651041/" xlink:title="NCAR GDEX - CESM2.2 CAM-chem as Boundary Conditions (d651041)" />
+      <documentation type="summary">We have saved CAM-chem simulation output that is intended to be used as boundary conditions for regional modeling. We used CAM-chem at 0.9 x 1.25 horizontal resolution simulation with 32 vertical levels. Temperatures, and winds are nudged to MERRA2 reanalysis fields with by nudging with 12h relaxation (10 percent) to MERRA2 reanalysis. Data is saved as instantaneous fields every 6 hours. See a list of saved species. Chemistry is the MOZART-T1 mechanism, described in Emmons et al. (2019). You can find a description of all simulated species online. We use the MAM4-VBS scheme to model aerosols. Files are collected as daily information (4 time-slices per file). Anthropogenic emissions are from CAMS V5.1. Biogenic emissions are from online MEGAN2.1, fire emissions are from QFED CO2 x FINN emission ratios. Online ocean DMS emissions are used.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651041 Files" path="files/d651041" location="/data/rda/data/d651041/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Conventional Observation Reanalysis Evaluation (CORe)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Conventional Observation Reanalysis Evaluation (CORe)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-2</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010100/" xlink:title="NCAR GDEX - Conventional Observation Reanalysis Evaluation (CORe)(d010100)" />
+      <documentation type="summary">CORe is an atmospheric reanalysis from the Climate Prediction Center NCEP/NWS/NOAA with collaboration with Environmental Modeling Center NCEP/NWS/NOAA and Physical Sciences Laboratory NOAA. CORe is designed to replace CDAS (real-time extension to NCEP/NCAR Reanalysis). CORe covers a similar period of time (1950 to real time versus 1948 to real time), and was designed for climate monitoring, one of the Climate Prediction Center's major objectives. Different from most modern reanalyses, CORe does not assimilate satellite data except for Atmospheric Motion Vectors (AMV). This was done to eliminate spurious "climate shifts" caused by the ingest of satellite data. This problem affected the earlier NCEP/NCAR and Climate Forecast System Reanalyses. This design emphasizes improving the climate trends and anomalies over getting the best state for a forecast.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP/CPC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/OAR/ESRL/PSL</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010100 Files" path="files/d010100" location="/data/rda/data/d010100/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

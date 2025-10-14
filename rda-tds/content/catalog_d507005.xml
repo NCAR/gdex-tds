@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP/CPC Four Kilometer Precipitation Set, Gauge and Radar" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP/CPC Four Kilometer Precipitation Set, Gauge and Radar">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d507005/" xlink:title="NCAR GDEX - NCEP/CPC Four Kilometer Precipitation Set, Gauge and Radar(d507005)" />
+      <documentation type="summary">A prototype, real-time, hourly, multi-sensor National Precipitation
+    Analysis has been developed at the National Centers for Environmental
+    Prediction (NCEP) in cooperation with the Office of Hydrology (OH). This
+    analysis merges two data sources that are currently being collected in
+    real-time by OH and NCEP.  Approximately 3000 automated, hourly rain gauge
+    observations are available over the contiguous 48 states via the GOES
+    Data Collection Platform, and ASOS.  In addition, hourly digital
+    precipitation (HDP) radar estimates are obtained as compressed digital
+    files via the AWIPS network. The HDP estimates are created by the WSR-88D
+    Radar Product Generator on a 131 by 131 4 km grid centered over each
+    radar site. The data analysis routines, including a bias correction of the
+    radar estimates using the gage data, have been adapted by NCEP on a
+    national 4 km grid from algorithms developed by OH ("Stage II") and
+    executed regionally at NWS River Forecast Centers.Since January 1, 2002, the Stage IV analysis data became available and are added to the archive.
+    This precipitation data are received through UCAR/EOL.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/CODIAC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP/CPC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d507005 Files" path="files/d507005" location="/data/rda/data/d507005/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Data for Exploring the Relative Contribution of the MJO and ENSO to Mid-latitude Subseasonal Predictability" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Data for Exploring the Relative Contribution of the MJO and ENSO to Mid-latitude Subseasonal Predictability">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583124/" xlink:title="NCAR GDEX - Data for Exploring the Relative Contribution of the MJO and ENSO to Mid-latitude Subseasonal Predictability(d583124)" />
+      <documentation type="summary">Here we explore the relative contribution of the Madden-Julian Oscillation (MJO) and El Nino Southern Oscillation (ENSO) to mid-latitude subseasonal predictive skill of upper atmospheric circulation over the North Pacific, using an inherently interpretable neural network applied to pre-industrial control runs of the Community Earth System Model version 2. We find that this interpretable network generally favors the state of ENSO, rather than the MJO, to make correct predictions on a range of subseasonal lead times and predictand averaging windows. Moreover, the predictability of positive circulation anomalies over the North Pacific is comparatively lower than that of their negative counterparts, especially evident when the ENSO state is important. However, when ENSO is in a neutral state, our findings indicate that the MJO provides some predictive information, particularly for positive anomalies. We identify three distinct evolutions of these MJO states, offering fresh insights into opportune forecasting windows for MJO teleconnections.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583124 Files" path="files/d583124" location="/data/rda/data/d583124/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

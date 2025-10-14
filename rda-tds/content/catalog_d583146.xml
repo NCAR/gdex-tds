@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Southern Ocean calcification and alkalinity distribution experimental data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Southern Ocean calcification and alkalinity distribution experimental data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583146/" xlink:title="NCAR GDEX - Southern Ocean calcification and alkalinity distribution experimental data(d583146)" />
+      <documentation type="summary"> This dataset accompanies a manuscript submitted to the journal Global Biogeochemical Cycles that describes the effects of Southern Ocean biological calcification on the global distribution of alkalinity in the ocean. The distribution of alkalinity in the ocean is important because it controls how much CO2 the ocean can absorb from the atmosphere. To test the hypothesis that calcifying organisms in the Southern Ocean are affecting the global distribution of alkalinity, we did several CESM experiments. The dataset contains the CESM simulation experiments and control simulation. It is sufficient to make all the figures contained in the main manuscript, as well as the supplementary section. Making this dataset publicly available is part of the requirements for the journal. The dataset is about 92GB of data.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583146 Files" path="files/d583146" location="/data/rda/data/d583146/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

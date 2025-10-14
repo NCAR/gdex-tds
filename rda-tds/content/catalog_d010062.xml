@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="WRF-Chem simulations with and without the SMAP soil moisture retrievals and different levels of dust emissions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="WRF-Chem simulations with and without the SMAP soil moisture retrievals and different levels of dust emissions">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010062/" xlink:title="NCAR GDEX - WRF-Chem simulations with and without the SMAP soil moisture retrievals and different levels of dust emissions(d010062)" />
+      <documentation type="summary">Hourly WRF-Chem simulations at 9 km grid spacing over the contiguous U.S. (CONUS) of several variables including the aerosol optical depth and the soil moisture using GOCART and GOCART-AFWA dust emission parameterizations. The simulations with GOCART-AFWA have different levels of dust emissions (five). There are two simulations for each case with and without SMAP soil moisture retrievals. There is also a simulation with no dust but including SMAP soil moisture. All the simulations are continuous runs of the WRF-Chem model. The simulations span the one year period from 1 April 2015 to March 31 2016.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010062 Files" path="files/d010062" location="/data/rda/data/d010062/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

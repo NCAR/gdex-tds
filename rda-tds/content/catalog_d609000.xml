@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP North American Mesoscale (NAM) 12 km Analysis" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP North American Mesoscale (NAM) 12 km Analysis">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-2</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d609000/" xlink:title="NCAR GDEX - NCEP North American Mesoscale (NAM) 12 km Analysis(d609000)" />
+      <documentation type="summary">WRF Non Hydrostatic Mesoscale Model is used at NCEP to produce different mesoscale analysis products over North America. The analysis output archived here is over continental United States at 12 km spatial resolution every 6 hours.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d609000 Files" path="files/d609000" location="/data/rda/data/d609000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

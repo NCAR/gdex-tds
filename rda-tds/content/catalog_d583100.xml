@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="POGA and SPCZ experiments using CAM5" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="POGA and SPCZ experiments using CAM5">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583100/" xlink:title="NCAR GDEX - POGA and SPCZ experiments using CAM5(d583100)" />
+      <documentation type="summary">Two atmosphere-only experiments using CAM5,  PAC-A and extSPCZ-A (each with 10 ensemble members), are conducted to compare with the fully coupled CESM1 tropical Pacific pacemaker (PAC-C) experiments. The uncoupled PAC-A experiment matches the coupled PAC-C in every way, apart from the inclusion of coupling outside of the tropical Pacific region. In this way, the PAC-A ensemble mean with external forcing removed (i.e., PAC-A minus LENS) isolates the direct atmospheric influence of tropical Pacific SST. In other words, the uncoupled PAC-A and coupled PAC-C simulations enable an "apple-to-apple " comparison to identify the tropical Pacific SST influence on global SST and atmospheric teleconnections.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583100 Files" path="files/d583100" location="/data/rda/data/d583100/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

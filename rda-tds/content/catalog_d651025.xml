@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM Low Warming runs" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM Low Warming runs">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651025/" xlink:title="NCAR GDEX - CESM Low Warming runs(d651025)" />
+      <documentation type="summary">Community Earth System Model Low Warming runs containing the following frequencies and components
+
+CESM Low Warming Atmosphere Post Processed Monthly Averages
+CESM Low Warming Land Post Processed Monthly Averages
+CESM Low Warming Ice Post Processed Monthly Averages
+CESM Low Warming Ocean Post Processed Monthly Averages
+CESM Low Warming River Post Processed Monthly Averages
+CESM Low Warming Ocean Post Processed Annual Averages
+CESM Low Warming Atmosphere Post Processed Daily Averages
+CESM Low Warming Ice Post Processed Daily Averages
+CESM Low Warming Land Post Processed Daily Averages
+CESM Low Warming Ocean Post Processed Daily Averages
+CESM Low Warming River Post Processed Daily Averages
+CESM Low Warming Atmosphere Post Processed Daily Instantaneous Data
+CESM Low Warming Atmosphere Post Processed 6-Hourly Instantaneous Data
+CESM Low Warming Atmosphere Post Processed 3-Hourly Instantaneous Data
+CESM Low Warming Atmosphere Post Processed 3-Hourly Averages
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651025 Files" path="files/d651025" location="/data/rda/data/d651025/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

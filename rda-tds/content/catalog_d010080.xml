@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="20CRv3-WRF - High-resolution WRF climate simulation for southern Alaska using the 20CRv3" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="20CRv3-WRF - High-resolution WRF climate simulation for southern Alaska using the 20CRv3">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010080/" xlink:title="NCAR GDEX - 20CRv3-WRF - High-resolution WRF climate simulation for southern Alaska using the 20CRv3(d010080)" />
+      <documentation type="summary">Currently, mass loss from Alaskan glaciers contributes to about a third of global mean sea level rise. The 20CRv3-WRF, a high-resolution (4 km) climate dataset, covers southern Alaska and spans from 1837 to 2015, providing extensive temporal coverage for studying long-term climate trends in this highly climate-sensitive region. The dataset was created by downscaling the NOAA-CIRES-DOE 20th Century Reanalysis (20CRv3) using the Weather Research and Forecasting model (WRF). The downscaling dataset was evaluated for the modern-day period (1981-2015) against the GSOD and PRISM observational datasets for Alaska and compared to ERA5 reanalysis output. The 20CRv3-WRF dataset includes surface variables at 3-hourly intervals (e.g., temperature, precipitation, wind) and atmospheric variables at 6-hourly intervals (e.g., pressure, wind). The primary motivation was to investigate the climate control on tidewater glaciers within southern Alaska, where long-term meteorological records are sparse. However, the 20CRv3-WRF dataset's applicability extends to various fields, including glaciology, hydrology, and biology, offering a valuable resource for diverse climate change studies and research applications. With its high resolution, it can be used as input data for various types of glacier modeling.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">AU/UOW/SMH/EALS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">AU/UNSW/BEES/CCRC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">AU/NCI</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOE/NERSC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010080 Files" path="files/d010080" location="/data/rda/data/d010080/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Wave and Anemometer-based Sea Surface Wind (WASWind)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Wave and Anemometer-based Sea Surface Wind (WASWind)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d232003/" xlink:title="NCAR GDEX - Wave and Anemometer-based Sea Surface Wind (WASWind)(d232003)" />
+      <documentation type="summary">Ship-based measurements of sea surface wind speed displays a spurious upward trend due to increases in anemometer height. To correct this bias, we construct a new sea surface wind dataset from ship observations of wind speed and wind wave height archived in the International Comprehensive Ocean-Atmosphere Data Set (ICOADS). The Wave and Anemometer-based Sea-surface Wind (WASWind) dataset is available at monthly resolution on a 4 degrees by 4 degrees. longitude-latitude grid from 1950 to 2011. It substantially reduces the upward trend in wind speed through height-correction for anemometer-measured winds, rejection of spurious Beaufort winds, and use of estimated winds from wind wave height. The reduced upward trend is smallest among the existing global datasets of in situ observations and comparable with those of reanalysis products. Despite the significant reduction of globally-averaged wind speed trend, WASWind features rich spatial structures in trend pattern, making it a valuable dataset for studies of climate changes on regional scales. Not only does the combination of ship winds and wind wave height successfully reproduce major modes of seasonal-to-decadal variability, but its trend patterns are also physically consistent with sea level pressure (SLP) measurements. WASWind is in close agreement with wind changes in satellite measurements by the Special Sensor Microwave Imager (SSM/I) for the recent two decades. The agreement in trend pattern with such independent observations illustrates the utility of WASWind for climate trend analysis.</documentation>
+      <creator>
+        <name vocabulary="DIF">U-KYOTO/DPRI/DPAC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d232003 Files" path="files/d232003" location="/data/rda/data/d232003/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

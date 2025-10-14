@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ROMS simulations of river-sourced coastal ocean tracer pathways following Hurricane Florence and synthetic scenarios" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ROMS simulations of river-sourced coastal ocean tracer pathways following Hurricane Florence and synthetic scenarios">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583114/" xlink:title="NCAR GDEX - ROMS simulations of river-sourced coastal ocean tracer pathways following Hurricane Florence and synthetic scenarios(d583114)" />
+      <documentation type="summary">Three-hourly model output from a 800 m horizontal resolution 50-vertical layer Regional Ocean Modeling System (ROMS) simulation of the coastal region near Cape Fear, North Carolina during Hurricane Florence, which made landfall in North Carolina in September 2018,. This output is being made public in connection with a publication (Moulton et al., 2024). Also included are model setup files and scripts necessary to rerun the model.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583114 Files" path="files/d583114" location="/data/rda/data/d583114/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

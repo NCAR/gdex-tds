@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Simulation of the Transient Climate of the Last 21,000 Years (TraCE-21ka)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Simulation of the Transient Climate of the Last 21,000 Years (TraCE-21ka)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651050/" xlink:title="NCAR GDEX - Simulation of the Transient Climate of the Last 21,000 Years (TraCE-21ka)(d651050)" />
+      <documentation type="summary">This TraCE-21ka dataset contains output from the full TraCE simulation from 22,000 years before present (22ka) to 1990 CE as well as single-forcing sensitivity simulations of varying lengths. These results are from a fully-coupled, non-accelerated atmosphere-ocean-sea ice-land surface CCSM3 simulation at the T31_gx3 resolution. For the full TraCE simulation, the model is forced with transient greenhouse gas concentrations and orbitally-driven insolation changes. Transient boundary conditions include the ICE-5G ice sheets - extent and topography, and changing paleogeography as sea level rises from its Last Glacial Maximum low stand to modern levels. We also prescribe a transient scenario of meltwater forcing to the oceans from the retreating ice sheets. Vegetation is prognostic.
+The following CCSM3 simulations are available:
+[TraCE] full TraCE simulation, with transient forcing changes in greenhouse gases, orbitally-driven insolation variations, ice sheets and meltwater fluxes.
+[TraCE-ORB] with only transient orbital forcing, all other forcings and boundary conditions remain at the full TraCE state of 22ka.
+[TraCE-GHG] with only transient greenhouse gas forcing, all other forcings and boundary conditions remain at the full TraCE state of 22ka.
+[TraCE-ICE] with only changing continental ice sheets, all other forcings and boundary conditions remain at the full TraCE state of 19ka.
+[TraCE-MWF] with only transient Northern Hemisphere meltwater fluxes, all other forcings and boundary conditions remain at the full TraCE state of 19ka.
+[TraCE-ORB-17ka] with only transient orbital forcing, all other forcings and boundary conditions remain at the full TraCE state of 17ka.
+[TraCE-GHG-17ka] with only transient greenhouse gas forcing, all other forcings and boundary conditions remain at the full TraCE state of 17ka. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651050 Files" path="files/d651050" location="/data/rda/data/d651050/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

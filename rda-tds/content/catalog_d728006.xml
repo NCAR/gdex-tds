@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Global Precipitation Climatology Project (GPCP) Climate Data Record (CDR), Version 2.3 (Monthly)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Global Precipitation Climatology Project (GPCP) Climate Data Record (CDR), Version 2.3 (Monthly)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d728006/" xlink:title="NCAR GDEX - Global Precipitation Climatology Project (GPCP) Climate Data Record (CDR), Version 2.3 (Monthly)(d728006)" />
+      <documentation type="summary">
+    This dataset contains the Global Precipitation Climatology Project (GPCP) Monthly Analysis Product, version 2.3, and is a part of the NOAA Climate Data Record (CDR) Program for satellites.
+    
+    
+    This dataset consists of monthly satellite-gauge and associated precipitation error estimates, and covers the period January 1979 to the present. The general approach is to combine the precipitation information available from each of several satellite and in situ sources into a final merged product, taking advantage of the strengths of each data type. Passive Microwave estimates are based on Special Sensor Microwave Imager/Special Sensor Microwave Imager Sounder (SSMI/SSMIS) data; infrared precipitation estimates are included using Geostationary Operational Environmental Satellite (GOES) data and Polar-orbiting Operational Environmental Satellite (POES) data, as well as other low earth orbit data and in situ observations. Data are provided on a 2.5 degree grid.
+    
+    
+    For more information, see the NOAA CDR support site.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">UMD/ESSIC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCEI</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>GPCP</keyword>
+      <keyword>Global Precipitation Climatology Project</keyword>
+      <keyword>NOAA OneStop Project</keyword>
+      <keyword>NOAA CLIMATE DATA RECORD (CDR) PROGRAM</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d728006 Files" path="files/d728006" location="/data/rda/data/d728006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NOAA Profiler Network (NPN) Observations, 1992May-continuing" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NOAA Profiler Network (NPN) Observations, 1992May-continuing">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d359000/" xlink:title="NCAR GDEX - NOAA Profiler Network (NPN) Observations, 1992May-continuing(d359000)" />
+      <documentation type="summary">
+    The NOAA Profiler Network (NPN) has 35 unmanned Doppler Radar
+    sites in 18 central US states and Alaska. They provide hourly
+    vertical profiles of wind data. The hourly netCDF files
+    disseminated from Forecast Systems Laboratory (FSL) of NOAA
+    starting from May 1992 are archived in this dataset. It continues
+    to be updated monthly.
+    
+    
+    U and V wind components from 500 meters above ground level to 16.25 kilometers
+    are recorded at every 250m increment. Several stations may have
+    been moved or added. Problems of bird contamination are also
+    reported. Flags are used to indicate the quality of data.
+    
+    
+    A detailed description of the NOAA Profiler Network is available at NCEP's NPN site.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/OAR/ESRL/GSD/</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d359000 Files" path="files/d359000" location="/data/rda/data/d359000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

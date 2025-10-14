@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Brazilian Air Force Rawinsondes and Pibals, January 1950-November 1986" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Brazilian Air Force Rawinsondes and Pibals, January 1950-November 1986">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d394001/" xlink:title="NCAR GDEX - Brazilian Air Force Rawinsondes and Pibals, January 1950-November 1986(d394001)" />
+      <documentation type="summary">NCDC has provided rawinsonde data for eleven Brazilian
+    stations and pibal data for thirty stations for the general
+    period January 1950 to November 1986.  The actual period,
+    however, varies widely by individual station.  The data were
+    recorded by the Brazilian Air Force.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCDC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d394001 Files" path="files/d394001" location="/data/rda/data/d394001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

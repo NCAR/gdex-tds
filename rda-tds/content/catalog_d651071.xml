@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 and CESM1 data supporting Long et al. (2021): Simulations with the Marine Biogeochemistry Library" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 and CESM1 data supporting Long et al. (2021): Simulations with the Marine Biogeochemistry Library">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651071/" xlink:title="NCAR GDEX - CESM2 and CESM1 data supporting Long et al. (2021): Simulations with the Marine Biogeochemistry Library(d651071)" />
+      <documentation type="summary">The Marine Biogeochemistry Library (MARBL) is a prognostic ocean biogeochemistry model that simulates marine ecosystem dynamics and the coupled cycles of carbon, nitrogen, phosphorus, iron, silicon, and oxygen.
+
+MARBL is a component of the Community Earth System Model (CESM); it supports flexible ecosystem configuration of multiple phytoplankton and zooplankton functional types; it is also portable, designed to interface with multiple ocean circulation models. Here, we present scientific documentation of MARBL, describe its configuration in CESM2 experiments included in the Coupled Model Intercomparison Project version 6 (CMIP6), and evaluate its performance against a number of observational datasets.
+
+The model simulates present-day air-sea CO2 flux and many aspects of the carbon cycle in good agreement with observations. However, the simulated integrated uptake of anthropogenic CO2 is weak, which we link to poor thermocline ventilation, a feature evident in simulated chlorofluorocarbon distributions. This also contributes to larger-than-observed oxygen minimum zones. Moreover, radiocarbon distributions show that the simulated circulation in the deep North Pacific is extremely sluggish, yielding extensive oxygen depletion and nutrient trapping at depth.
+
+Surface macronutrient biases are generally positive at low latitudes and negative at high latitudes. CESM2 simulates globally-integrated net primary production (NPP) of 48 PgC/yr and particulate export flux at 100m of 7.1 PgC/yr. The impacts of climate change include an increase in globally-integrated NPP, but substantial declines in the North Atlantic.
+Particulate export is projected to decline globally, attributable to decreasing export efficiency associated with changes in phytoplankton community composition.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651071 Files" path="files/d651071" location="/data/rda/data/d651071/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

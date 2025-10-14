@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="An Ensemble of Atmospheric Forcing Files from a CAM reanalysis" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="An Ensemble of Atmospheric Forcing Files from a CAM reanalysis">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d199001/" xlink:title="NCAR GDEX - An Ensemble of Atmospheric Forcing Files from a CAM reanalysis(d199001)" />
+      <documentation type="summary">
+    This dataset contains files that are an ensemble of 'coupler history' files from an 80-member reanalysis performed with the Data Assimilation Research Testbed (DART) using the Community Atmosphere Model Version 4 with the finite volume core (CAM4 FV) at 1.9 degree by 2.5 degree resolution. The observations assimilated include all those used in the NCEP/NCAR reanalysis (temperature and wind components from radiosondes, aircraft, and satellite drift winds) plus radio occultation observations from the COSMIC satellites starting in late 2006.  These files are intended to be used as 'DATM stream files' for CESM "I" component sets (land-only) that require a data atmosphere. Some example stream text files are included to illustrate how to use these data.
+    
+    
+    Note:  All data were replaced for this dataset on January 27, 2020. There were some unphysical radiation values in the prior version of the dataset that has been fixed in the replacement file set. The unphysical radiation values caused CLM to error out but were likely not an issue for other applications.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>CESM</keyword>
+      <keyword>NCAR Community Earth System Modeling</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d199001 Files" path="files/d199001" location="/data/rda/data/d199001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

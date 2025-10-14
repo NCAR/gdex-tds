@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="The High-resolution Urban Meteorology for Impacts Dataset - HUMID" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="The High-resolution Urban Meteorology for Impacts Dataset - HUMID">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d314008/" xlink:title="NCAR GDEX - The High-resolution Urban Meteorology for Impacts Dataset - HUMID(d314008)" />
+      <documentation type="summary">The High-resolution Urban Meteorology for Impacts Dataset, HUMID, will be useful for studies examining spatial variability of near surface meteorology and the impacts of urban heat islands across many disciplines including epidemiology, ecology, and climatology. We have explicitly included representation of spatial meteorological variability over urban areas in the contiguous United States (CONUS) as compared to other observation-only gridded meteorology products by employing the High-Resolution Land Data Assimilation System (HRLDAS), which accounts for the fine-scale impacts of spatiotemporally varying land surfaces on weather. Further, we include in situ meteorological observations such as local mesonets to bias correct the HRLDAS output, creating a model-observation fusion product. The data spans 1 January 1981 to 31 December 2018, covering all of CONUS at 1 km grid spacing. The dataset includes daily maximum, minimum, and mean values for a variety of temperature estimates such as 2 m temperature, skin temperature, urban temperatures, as well as specific humidity and surface energy budget terms.
+The full variable list with corresponding file and variable metadata is in 
+this file.</documentation>
+      <creator>
+        <name vocabulary="DIF">EMORY/SPH/BIOS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/HAP</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">YALE/YSPH</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UNV-RENO/PUBLIC-HEALTH</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CU-Boulder/CRDDS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/AAP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d314008 Files" path="files/d314008" location="/data/rda/data/d314008/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

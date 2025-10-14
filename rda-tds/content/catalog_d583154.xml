@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Ensemble gridded (1 km) daily rainfall and temperature for the Hawaiian Islands (1990-2014)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Ensemble gridded (1 km) daily rainfall and temperature for the Hawaiian Islands (1990-2014)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583154/" xlink:title="NCAR GDEX - Ensemble gridded (1 km) daily rainfall and temperature for the Hawaiian Islands (1990-2014)(d583154)" />
+      <documentation type="summary">It is a major challenge to develop gridded precipitation and temperature estimates that adequately
+resolve the extreme spatial gradients present in the Hawaiian Islands. The challenge is
+particularly pronounced because the available station networks are irregularly spaced and sparse,
+creating large uncertainties in gridded spatial meteorological estimates. Here we develop a 100-
+member, daily ensemble of precipitation and temperature estimates over the Hawaiian Islands for
+the period 1990-2014 at 1 km grid resolution. We first develop an intermediary ensemble
+estimate of the monthly climatological precipitation and temperature and use the climatological
+surfaces to inform daily anomaly interpolation. This Climatologically Aided Interpolation (CAI)
+method extends our initial ensemble system developed for the continental United States
+(CONUS).
+
+For Hawaii, we show that daily interpolation using only daily data is inferior to the CAI
+methodology, particularly over longer time periods (years to decades). Daily interpolation has
+more value for short time periods (e.g. 1-month or less) or when the precipitation distribution
+substantially diverges from climatology. The CAI ensemble is able to reproduce observed
+precipitation and temperature patterns, including the probability of precipitation. Leave-one-out
+cross-validation results illustrate that the ensemble has: 1) minimal biases, 2) reasonable mean
+absolute errors, 3) good representation of daily precipitation intensity variability, and 4) good
+reliability and discrimination. Additionally, the ensemble is able to reasonably reproduce the
+tails (e.g. 99.9th percentile) of the daily precipitation and temperature distributions, with
+increasing uncertainty for higher percentiles.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UHI-M/HMRG</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583154 Files" path="files/d583154" location="/data/rda/data/d583154/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ERA40 T106 6-hourly Surface Analysis and Surface Forecast Fields, created at NCAR" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ERA40 T106 6-hourly Surface Analysis and Surface Forecast Fields, created at NCAR">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d127000/" xlink:title="NCAR GDEX - ERA40 T106 6-hourly Surface Analysis and Surface Forecast Fields, created at NCAR(d127000)" />
+      <documentation type="summary">DS127.0 represents a dataset implemented and computed by NCAR's Data Support Section, and forms an essential
+    part of efforts undertaken in late 2004, early 2005, to produce an archive of selected segments of ERA-40 on
+    standard transformation grids.
+    
+    In this case, forty six ERA-40 6-hourly surface and single level analysis
+    variables were transformed from a reduced N80 Gaussian grid to a 320 by 160 regular Gaussian grid. All fields were
+    transformed using routines from the ECMWF EMOS library, including 10 meter winds which were treated as scalars
+    because of a lack of 10 meter spectral vorticity and divergence. A missing value occurs in the sea
+    surface temperature and sea ice fields to mask grid points occurring over land. Fields formerly
+    archived as whole integers, such as vegetation indices and cloud cover, occur as integers plus a fractional part
+    in the T106 version due to interpolation.
+    
+    In addition, twenty seven ERA-40 6-hourly surface and single level 6-hour forecast
+    variables were transformed from a reduced N80 Gaussian grid to a 320 by 160 regular Gaussian grid.
+    (These are designated as OTHER, or other, variables below.)
+    All variables are valid 6 hours after the forecast was initiated. Thus, 00Z 6-hour forecast evaporation
+    is valid at 06Z. Four of the variables are instantaneous variables, and the remaining twenty three variables
+    are accumulated over the 6-hour forecast time. Divide the accumulated variables by 21600 seconds to obtain
+    instantaneous values. (Multiplication by minus one may also be necessary to match the sign convention one is
+    accustomed to.)  All fields were transformed using routines from the ECMWF EMOS library, including three
+    pairs of stresses which were treated as scalars because of a lack of spectral precursors.
+    
+    The ERA-Interim data from ECMWF is an update to the ERA-40 project.  The ERA-Interim data starts in 1989 and has a higher horizontal resolution (T255, N128 nominally 0.703125 degrees) than the ERA-40 data (T159, N80 nominally  1.125 degrees).  ERA-Interim is based on a more current model than ERA-40 and uses 4DVAR (as opposed to 3DVAR in ERA-40).  ECMWF will continue to run the ERA-Interim model in near real time through at least 2010, and possibly longer.  This data is available in ds627.0. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d127000 Files" path="files/d127000" location="/data/rda/data/d127000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

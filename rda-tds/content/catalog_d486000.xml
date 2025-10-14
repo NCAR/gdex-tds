@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Brazilian Hourly Surface Observations, 1951 to 1980" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Brazilian Hourly Surface Observations, 1951 to 1980">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d486000/" xlink:title="NCAR GDEX - Brazilian Hourly Surface Observations, 1951 to 1980(d486000)" />
+      <documentation type="summary">This set contains hourly surface data from several
+    Brazilian stations.  Reported variables include
+    temperature and moisture information, visibility,
+    present weather, cloud and wind information,
+    pressures, and precipitation.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCDC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">BR/BAM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d486000 Files" path="files/d486000" location="/data/rda/data/d486000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

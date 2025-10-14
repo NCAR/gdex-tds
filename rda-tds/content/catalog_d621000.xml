@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ECMWF Joint Observing System Simulation Experiment (OSSE) Nature Run" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ECMWF Joint Observing System Simulation Experiment (OSSE) Nature Run">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d621000/" xlink:title="NCAR GDEX - ECMWF Joint Observing System Simulation Experiment (OSSE) Nature Run(d621000)" />
+      <documentation type="summary">
+    A broad group of US and international partners organized and agreed to have ECMWF compute a high resolution global gridded dataset that serves as a reference dataset for general and collaborative observing system simulation experiments (OSSE).   This model output is termed "Nature Run", because it is intended to be a best representation possible of the true environmental conditions.  The temporal and spatial resolution are sufficient so the data may be used as an experimental samples and validation data for planning future observing systems.  It is especially valuable for assessing future satellite systems.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d621000 Files" path="files/d621000" location="/data/rda/data/d621000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

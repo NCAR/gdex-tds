@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="1/20 degree regional simulation of the Eastern Tropical Pacific Ocean Cold Tongue" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="1/20 degree regional simulation of the Eastern Tropical Pacific Ocean Cold Tongue">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583118/" xlink:title="NCAR GDEX - 1/20 degree regional simulation of the Eastern Tropical Pacific Ocean Cold Tongue(d583118)" />
+      <documentation type="summary">This dataset includes subsets of hourly and daily averaged model output data from a 1/20 degree regional model simulation of the eastern tropical Pacific ocean.  The daily averages cover most of the simulation domain while the hourly file includes the hourly data along 4 longitudinal lines. The archive also includes the model setup files and scripts necessary to rerun the model.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583118 Files" path="files/d583118" location="/data/rda/data/d583118/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

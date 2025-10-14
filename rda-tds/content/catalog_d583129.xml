@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CONUS air quality reanalysis dataset (2005-2018)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CONUS air quality reanalysis dataset (2005-2018)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583129/" xlink:title="NCAR GDEX - CONUS air quality reanalysis dataset (2005-2018)(d583129)" />
+      <documentation type="summary">This 14 year hourly air quality reanalysis dataset is generated through daily assimilation of the Moderate Resolution Imaging Spectroradiometer (MODIS) aerosol optical depth (AOD) and the Measurement of Pollution in the Troposphere (MOPITT) carbon monoxide (CO) retrievals in the Community Multiscale Air Quality Model (CMAQ) from 01 January 2005 to 31 December 2018. The production of this air quality reanalysis is funded by the Atmospheric Composition Modeling and Analysis Program (ACMAP) under the project entitled 'Quantification and attribution of past (2005-2018) air quality trends over the Contiguous United States (CONUS) via assimilation of NASA atmospheric composition'. This data can be used to (1) develop products and metrics for assessing the long-term impact of air pollution on public health, agriculture, and economy as well as for quantifying air quality changes in unmonitored areas and benefits of emission control policies.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583129 Files" path="files/d583129" location="/data/rda/data/d583129/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

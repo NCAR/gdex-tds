@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP Global Forecast System (GFS) Analyses and Forecasts" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP Global Forecast System (GFS) Analyses and Forecasts">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d084006/" xlink:title="NCAR GDEX - NCEP Global Forecast System (GFS) Analyses and Forecasts(d084006)" />
+      <documentation type="summary">This dataset is a collection of various NCEP GFS data used by NCAR's researchers. It consists of periods of GFS spectral coefficients (in binary format) and flux terms (in GRIB format), as well as their transformed, gridded NetCDF files of various spatial resolutions, T382, T254, T170 and T62. All data files are stored on HPSS. There is no attempt to recover, reconstruct missing data. All products are provided as is.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d084006 Files" path="files/d084006" location="/data/rda/data/d084006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

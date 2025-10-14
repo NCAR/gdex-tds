@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Land cover data for MEGAN model" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Land cover data for MEGAN model">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d312006/" xlink:title="NCAR GDEX - Land cover data for MEGAN model(d312006)" />
+      <documentation type="summary">MEGAN is a modeling system for estimating the net emission
+    of gases and aerosols from terrestrial ecosystems into the atmosphere.
+    Emissions are calculated for about 200 chemical species including
+    biogenic volatile organic compounds (BVOCs) such as isoprene,
+    a-pinene, methanol and acetone as well as some inorganic compounds
+    (e.g., NO and CO). The model is driven by land cover, weather, and
+    atmospheric chemical composition and uses simple mechanistic
+    algorithms to account for the major known processes controlling
+    biogenic emissions. MEGAN is a global model with a base resolution of
+    ~ 1 km. It can run as a stand-alone model for generating emission
+    inventories but has also being incorporated as an on-line component of
+    chemistry/transport and earth system models including the CESM
+    Community Land Model and WRF-Chem. The model was originally developed
+    at NCAR and is described by Guenther et al. 2012
+    (https://gmd.copernicus.org/articles/5/1471/2012/). This dataset
+    includes global 30 second (~1 km^2) resolution datasets of the three
+    required MEGAN land cover inputs (ecotypes, Growth forms, Leaf Area
+    Index) and some inputs (soil fertilizer, nitrogen and land type) for
+    the optional soil NOx model.</documentation>
+      <creator>
+        <name vocabulary="DIF">UC-IRVINE/PHYSSCI/ESS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d312006 Files" path="files/d312006" location="/data/rda/data/d312006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

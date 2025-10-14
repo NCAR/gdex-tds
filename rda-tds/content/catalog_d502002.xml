@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High Resolution Global Precipitation Estimates, Version 1" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High Resolution Global Precipitation Estimates, Version 1">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d502002/" xlink:title="NCAR GDEX - NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High Resolution Global Precipitation Estimates, Version 1(d502002)" />
+      <documentation type="summary">
+    This dataset contains the bias-corrected CPC MORPHing technique (CMORPH) global precipitation 
+    analyses, version 1, and is obtained from the 
+    NOAA Climate Data Record. 
+    
+    
+    The following description is from the NOAA Climate Data Record CMORPH dataset page:
+    
+    
+    This data set is for the bias-corrected, reprocessed CPC Morphing technique (CMORPH) 
+    high-resolution global satellite precipitation estimates. The CMORPH satellite precipitation 
+    estimates are created in two steps. First, the purely satellite-based global fields of 
+    precipitation are constructed through integrating Level 2 retrievals of instantaneous 
+    precipitation rates from all available passive microwave measurements aboard low earth 
+    orbiting platforms. Bias in these integrated satellite precipitation estimates is 
+    then removed through comparison against CPC daily gauge analysis over land and adjustment 
+    against the Global Precipitation Climatology Project (GPCP) merged analysis of pentad 
+    precipitation over ocean. The bias corrected CMORPH satellite precipitation estimates are 
+    created on an 8 km by 8 km grid over the global domain from 60 degrees S to 60 degrees N 
+    and in a 30-minute interval from January 1, 1998. Due to the delay of some input data sets, 
+    this formal version (Version 1) bias corrected CMORPH is produced manually once a month at a 
+    latency of 3-4 months.
+    
+    
+    For the CDR production, the bias corrected CMORPH generated at its native resolution of 
+    8 km by 8 km / 30-minute is upscaled to form THREE sets of data files of different 
+    time/space resolution for improved user experience:
+    
+    
+    a) the full-resolution CMORPH data
+    Output variable: precipitation rate in mm/hour
+    spatial resolution: 8 km by 8km (at equator)
+    spatial coverage: global (60S-60N)
+    temporal resolution: 30min
+    data period: January 1, 1998 to the present
+    
+    
+    b) Hourly CMORPH
+    Output variable: precipitation rate in mm/hour
+    spatial resolution: 0.25 degrees latitude/longitude
+    spatial coverage: global (60S-60N)
+    temporal resolution: hourly
+    data period: January 1, 1998 to the present
+    
+    
+    c) Daily CMORPH
+    Output variable: daily precipitation in mm/day
+    spatial resolution: 0.25 degrees latitude/longitude
+    spatial coverage: global (60S-60N)
+    temporal resolution: hourly
+    data period: January 1, 1998 to the present
+    
+    
+    (b) and (c) are derived from and quantitatively consistent with the CMORPH at its 
+    original resolution (a).
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NESDIS/NCEI</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>NOAA CLIMATE DATA RECORD (CDR) PROGRAM</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d502002 Files" path="files/d502002" location="/data/rda/data/d502002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

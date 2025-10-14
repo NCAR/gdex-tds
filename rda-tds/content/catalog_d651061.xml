@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="S2S Hindcast MJO Cases" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="S2S Hindcast MJO Cases">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651061/" xlink:title="NCAR GDEX - S2S Hindcast MJO Cases(d651061)" />
+      <documentation type="summary"> This dataset includes two MJO case S2S hindcasts starting with a QBO neutral state. For each case, the pre-control experiment follows the standard CESM2 S2S hindcast protocol as free runs, while the QBO experiments are conducted with the stratosphere zonal means nudged to the sum of pre-control states and the QBO anomalies for the selected variable such as zonal wind, temperature, or both. The dataset is used to investigate the QBO impacts on MJO case hindcasts.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651061 Files" path="files/d651061" location="/data/rda/data/d651061/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

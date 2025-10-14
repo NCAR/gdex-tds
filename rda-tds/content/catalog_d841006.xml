@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GridRad-Severe - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data for Severe Events" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GridRad-Severe - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data for Severe Events">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d841006/" xlink:title="NCAR GDEX - GridRad-Severe - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data for Severe Events(d841006)" />
+      <documentation type="summary">5-minute event-based volumes of radar reflectivity, differential reflectivity, specific differential phase, correlation coefficient, velocity spectrum width, azimuthal shear, and radial divergence data. This data encompasses ~100 of the most severe events in the US each year based on tornadoes, hail, and wind from 2010 to the Present, with domains that vary to encompass each event. The storm track data are included for each of the events.
+    
+    Data for 2010-2012 do not include differential reflectivity, specific differential phase, and correlation coefficient, which are only observed following the dual-polarization upgrade to the NEXRAD network that was completed in early 2013.</documentation>
+      <creator>
+        <name vocabulary="DIF">OU/METEOROLOGY</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d841006 Files" path="files/d841006" location="/data/rda/data/d841006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

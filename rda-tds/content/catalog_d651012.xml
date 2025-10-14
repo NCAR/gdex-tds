@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Atmospheric River Tracking Method Intercomparison Project Tier 1 Source Data and Catalogues" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Atmospheric River Tracking Method Intercomparison Project Tier 1 Source Data and Catalogues">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651012/" xlink:title="NCAR GDEX - Atmospheric River Tracking Method Intercomparison Project Tier 1 Source Data and Catalogues(d651012)" />
+      <documentation type="summary">Atmospheric River Tracking Method Intercomparison Project (ARTMIP) Tier 1 developer catalogues and source data. Each ARTMIP method/algorithm (named by developer) submits a catalogue comprised of 0's (no AR exists) or 1's (yes AR exists) for each time slice, for each grid point, using MERRA-2 reanalysis data from January 1980 through June 2017. Derived quantities required for algorithms, such as IVT or IWV, were computed by the ARTMIP project so that all methods use the exact same data.
+Errata: Reid ARDTs have a discontinuity bug at the wrapping point between negative 180 and 180 degrees. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651012 Files" path="files/d651012" location="/data/rda/data/d651012/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

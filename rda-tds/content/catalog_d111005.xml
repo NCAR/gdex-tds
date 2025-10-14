@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ECMWF TOGA Global Tropospheric Analyses, monthly from January 1985 to the present (DSS built)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ECMWF TOGA Global Tropospheric Analyses, monthly from January 1985 to the present (DSS built)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d111005/" xlink:title="NCAR GDEX - ECMWF TOGA Global Tropospheric Analyses, monthly from January 1985 to the present (DSS built)(d111005)" />
+      <documentation type="summary">These are year-month means on 2.5 degree grids derived from DS111.2,
+    by DSS.  Both surface and upper air.  Bad grids found by Kevin
+    Trenberth in NCAR Technical Note 373 are excluded.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">ECMWF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d111005 Files" path="files/d111005" location="/data/rda/data/d111005/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

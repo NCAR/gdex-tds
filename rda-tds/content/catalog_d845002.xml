@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GATE Radar Reflectivity Data from the Canadian Ship Quadra" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GATE Radar Reflectivity Data from the Canadian Ship Quadra">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d845002/" xlink:title="NCAR GDEX - GATE Radar Reflectivity Data from the Canadian Ship Quadra(d845002)" />
+      <documentation type="summary">The C-band radar aboard the Canadian ship C.C.G.S. Quadra collected reflectivity data at 1 degree by 1 km resolution at various antenna tilt angles. A single 360-degree scan at a fixed tilt angle took approximately 20 seconds to complete. A Digital Video Integrator and Processor (DVIP) converted the analog reflectivities to 8-bit digital values. The center of the first gate was 10.5 km from the radar, with equivalent reflectivities recorded for 200 gates in the radial direction.
+    NCAR received the binary-format Quadra radar data on half-inch magnetic tapes from the Radar Weather Observatory at McGill University in April 1977. The raw reflectivity data were converted to netCDF format in 2024, and additionally, netCDF files containing full scans (sweeps) at each tilt angle are planned for later 2024, with equivalent reflectivity values converted to dBZ.</documentation>
+      <creator>
+        <name vocabulary="DIF">MCGILL/RADAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>GATE</keyword>
+      <keyword>GARP Atlantic Tropical Experiment</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d845002 Files" path="files/d845002" location="/data/rda/data/d845002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

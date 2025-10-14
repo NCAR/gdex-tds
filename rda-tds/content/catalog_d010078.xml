@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Gridded Ensemble Precipitation and Temperature Estimates over the Contiguous United States Version 2.0" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Gridded Ensemble Precipitation and Temperature Estimates over the Contiguous United States Version 2.0">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010078/" xlink:title="NCAR GDEX - Gridded Ensemble Precipitation and Temperature Estimates over the Contiguous United States Version 2.0(d010078)" />
+      <documentation type="summary">Gridded precipitation and temperature products are inherently uncertain due to myriad factors, including interpolation from a sparse observation network, measurement representativeness, and measurement errors. Generally uncertainty is not explicitly accounted for in gridded products of precipitation or temperature; if it is represented, it is often included in an ad-hoc manner. A lack of quantitative uncertainty estimates for hydrometeorological forcing fields limits the application of advanced data assimilation systems and other analysis tools in land-surface and hydrologic modeling.
+
+This study develops a gridded, observation-based ensemble of precipitation and temperature at a daily increment for the period 1980-2012. This allows for the estimation of precipitation and temperature uncertainty in hydrologic modeling and data assimilation through the use of the ensemble variance. Statistical verification of the ensemble indicates that it has generally good reliability and discrimination of events of various magnitudes, but has a slight wet bias for high threshold events (&gt; 50 mm). The ensemble mean is similar to another widely used hydrometeorological dataset but with some important differences. The ensemble product produces more realistic occurrence of precipitation statistics (wet day fraction), which impacts the empirical derivation of other fields used in land-surface and hydrologic modeling. Elevation lapse rates for temperature are derived directly from the observations, resulting in higher winter temperatures at high elevations in the intermountain western US.</documentation>
+      <creator>
+        <name vocabulary="DIF">UWA/CEE</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010078 Files" path="files/d010078" location="/data/rda/data/d010078/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

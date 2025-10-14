@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="International Space Science Institute Observing System Simulation Experiment" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="International Space Science Institute Observing System Simulation Experiment">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651048/" xlink:title="NCAR GDEX - International Space Science Institute Observing System Simulation Experiment(d651048)" />
+      <documentation type="summary">This dataset is comprised of WRF output, created to study orographically generated gravity waves observed by satellite-borne radiometers in the stratosphere. The intent is for the OGWs in the output to be used to evaluate satellite-methods for computing vertical fluxes of horizontal momentum, to be compared with waves in ECMWF and UKMO UM models, and to be validated against stratospheric satellite observations. This dataset covers the Patagonia and Antarctic Peninsula regions. The overall objective is to provide constraints for OGW drag parameterizations.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651048 Files" path="files/d651048" location="/data/rda/data/d651048/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

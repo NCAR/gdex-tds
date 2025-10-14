@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Hourly WRF-Chem simulation with SMAP soil moisture insertion over the Contiguous U.S. for the period 2015 - 2019" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Hourly WRF-Chem simulation with SMAP soil moisture insertion over the Contiguous U.S. for the period 2015 - 2019">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010047/" xlink:title="NCAR GDEX - Hourly WRF-Chem simulation with SMAP soil moisture insertion over the Contiguous U.S. for the period 2015 - 2019(d010047)" />
+      <documentation type="summary">Continuous multi year WRF-Chem simulation (2015 - 2019) over the contiguous U.S. at 9 km grid spacing. Initial and boundary conditions are from the Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). Aerosol processes are represented with the Goddard Chemistry Aerosol Radiation and Transport (GOCART) model. Atmospheric chemistry is not explicitly resolved. We use gas climatologies to produce sulfate aerosols. Aerosol emissions from fires are represented with the Fire Inventory from NCAR (FINN) version 2.5 whereas anthropogenic emissions are based on the U.S. Environmental Protection Agency National Emissions Inventory (NEI). Sea salt emissions are accounted for by the GOCART emissions. The mineral dust emissions use the GOCART model with the Air Force Weather Agency extensions (GOCART-AFWA). Soil moisture retrievals from the Soil Moisture Active Passive (SMAP) mission were inserted every 12 hours starting on April 1 2015.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010047 Files" path="files/d010047" location="/data/rda/data/d010047/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

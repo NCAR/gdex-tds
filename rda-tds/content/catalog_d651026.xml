@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="SO2 injection matrix simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="SO2 injection matrix simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651026/" xlink:title="NCAR GDEX - SO2 injection matrix simulations(d651026)" />
+      <documentation type="summary">The SO2 injection matrix simulations were performed to perform a system identification of the Whole Atmosphere Community Climate Model (WACCM), to identify the aerosol optical depth and climate response of stratospheric SO2 injections for different locations and amount. The WACCM model is a fully interactive Earth System Model, that includes interactive chemistry, radiation, dynamics and a whole atmosphere modal aerosol microphysical scheme, and is coupled to land, sea-ice and ocean (Mills et al., 2017). One simulations has been performed with prescribed chemistry (as indicated). Most of the matrix simulations were performed for 10 years (between 2040 and 2049), and some have been extended up to 20 year (as indicated). These simulations are described in Tilmes et al. (2017) and Richter et al., (2017).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651026 Files" path="files/d651026" location="/data/rda/data/d651026/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GPM IMERG Final Precipitation L3 1 month 0.1 degree x 0.1 degree V07" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GPM IMERG Final Precipitation L3 1 month 0.1 degree x 0.1 degree V07">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d736000/" xlink:title="NCAR GDEX - GPM IMERG Final Precipitation L3 1 month 0.1 degree x 0.1 degree V07(d736000)" />
+      <documentation type="summary">
+This dataset contains Version 07 of the Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG Level 3 "Final Run" precipitation analysis at 0.1 degree, monthly resolution.
+
+
+From the official GPM IMERG site at NASA GES DISC: The Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG is a NASA product estimating global surface precipitation rates at a high resolution of 0.1 degree every half-hour beginning June 2000. It is part of the joint NASA/JAXA Global Precipitation Measurement (GPM) mission, using the GPM Core Observatory satellite (for June 2014 to present) and the Tropical Rainfall Measuring Mission (TRMM) satellite (for June 2000 to May 2014) as the standard to combine precipitation observations from an international constellation of satellites using advanced techniques. IMERG can be used for global-scale applications, including over regions with sparse or no reliable surface observations. The fine spatial and temporal resolution of IMERG data allows them to be accumulated to the scale of the application for increased skill. IMERG has three Runs with varying latencies in response to a range of application needs: rapid-response applications (Early Run, 4-hour latency), same/next-day applications (Late Run, 14-hour latency), and post-real-time research (Final Run, 4-month latency). While IMERG strives for consistency and accuracy, satellite estimates of precipitation are expected to have lower skill over frozen surfaces, complex terrain, and coastal zones. As well, the changing GPM satellite constellation over time may introduce artifacts that affect studies focusing on multi-year changes.
+
+
+This dataset contains Version 07 of the Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG Level 3 "Final Run" precipitation analysis at 0.1 degree x 0.1 degree, monthly resolution. The dataset represents the Final Run estimate of the monthly mean precipitation rate in mm/day. The dataset is produced by first computing the mean precipitation rate for the month in each grid cell from half-hourly satellite-only IMERG estimates, adjusting the satellite data field to the large-area bias of the Global Precipitation Climatology Project analysis of monthly surface precipitation gauges, then combining the adjusted satellite and the GPCC gauge analysis weighted by estimated inverse random error variance. The IMERG Monthly is considered the most reliable dataset.
+
+
+See the official GPM IMERG site at NASA GES DISC for the complete dataset abstract and more information.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">NASA/GSFC/SED/ESD/TISL/GESDISC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>GPM</keyword>
+      <keyword>Global Precipitation Measurement</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d736000 Files" path="files/d736000" location="/data/rda/data/d736000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

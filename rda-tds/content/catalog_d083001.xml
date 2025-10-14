@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP FNL Operational Model Global Surface Analyses" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP FNL Operational Model Global Surface Analyses">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d083001/" xlink:title="NCAR GDEX - NCEP FNL Operational Model Global Surface Analyses(d083001)" />
+      <documentation type="summary">These NCEP FNL (Final) Operational Global Analysis data are on pairs of 2.5 by 2.5 degree hemispheric grids every twelve hours. This product was from the Global Forecast System (GFS) that was run operationally in near-real time at NCEP. DSS prepared this surface subset from ds082.0.
+    The analyses are available on the surface, at 1000mb and a boundary layer.  Parameters include surface pressure, sea level pressure, geopotential height, temperature, sea surface temperature, soil temperature, water content of soil, ice cover, water equivalent of snow depth, relative
+    humidity, specific humidity, u- and v-wind components, minimum temperature, maximum temperature and land-sea mask.
+    
+    More information is available
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d083001 Files" path="files/d083001" location="/data/rda/data/d083001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

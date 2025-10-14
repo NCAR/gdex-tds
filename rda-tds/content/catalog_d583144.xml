@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="2020 CAM-chem Simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="2020 CAM-chem Simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583144/" xlink:title="NCAR GDEX - 2020 CAM-chem Simulations(d583144)" />
+      <documentation type="summary"> This dataset provides global model simulations made with the Community Atmosphere Model with chemistry (CAM-chem) for the year 2020 with and without lockdowns induced emissions adjustments.
+Simulations are driven by the anthropogenic emissions provided by the Copernicus Atmosphere Monitoring Service (CAMS-GLOB-ANT version 5.1). Emissions are adjusted for lockdowns using the CONFORM v2.1 (COVID19 adjustmeNt Factors for eMissions) dataset.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583144 Files" path="files/d583144" location="/data/rda/data/d583144/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

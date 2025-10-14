@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="MPAS-A aquaplanet simulation with convection-permitting resolution and off-equatorial SST maximum" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="MPAS-A aquaplanet simulation with convection-permitting resolution and off-equatorial SST maximum">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583150/" xlink:title="NCAR GDEX - MPAS-A aquaplanet simulation with convection-permitting resolution and off-equatorial SST maximum(d583150)" />
+      <documentation type="summary">This dataset includes model output from an aquaplanet simulation using the Model for Prediction Across Scales-Atmosphere (MPAS-A). The aquaplanet simulation was produced by prescribing a zonally symmetric sea-surface temperature profile and by removing land, sea-ice, and the seasonal cycle from the model. Unlike previous aquaplanet simulations (https://doi.org/10.5065/cam1-v353), this simulation had an SST profile with an off-equator maximum at 10N to allow for the formation of tropical cyclones. A variable resolution mesh was used with 3 km cell spacing between 10S and 30N, transitioning to 15 km cell spacing elsewhere. The simulation was integrated for 160 days, but the first 30 days were discarded for model spinup. This dataset contains post processed output interpolated to a r1440x720 fixed grid with approximate grid spacing of 0.25 degree.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583150 Files" path="files/d583150" location="/data/rda/data/d583150/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

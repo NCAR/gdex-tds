@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM/CAM-chem-SE (MUSICAv0) Data for 2013 Aircraft Evaluation" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM/CAM-chem-SE (MUSICAv0) Data for 2013 Aircraft Evaluation">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583107/" xlink:title="NCAR GDEX - CESM/CAM-chem-SE (MUSICAv0) Data for 2013 Aircraft Evaluation(d583107)" />
+      <documentation type="summary">A new configuration of the Community Earth System Model (CESM)/Community Atmosphere Model with full chemistry (CAM-chem) supporting the capability of horizontal mesh refinement through the use of the spectral element (SE) dynamical core is developed and called CESM/CAM-chem-SE. CESM/CAM-chem-SE with mesh refinement down to ~14 km over the conterminous US (CONUS) is the beginning of the Multi-Scale Infrastructure for Chemistry and Aerosols (MUSICAv0). CESM/CAM-chem-SE (MUSICAv0) was developed and evaluated against observations from five aircraft campaigns in 2013 as described in Schwantes et al., Evaluating the impact of chemical complexity and horizontal resolution on tropospheric ozone over the conterminous US with a global variable resolution chemistry model, J. Adv. Model. Earth Sys., 2022 [In Review]. 
+Model data used in Schwantes et al., 2022 are provided in this dataset. Files labeled 'h0' and 'h7' are monthly averaged data over the entire Earth and include all model vertical levels. Monthly averaged data for August 2013 are provided for all simulations and January-December 2013 for a subset of simulations. Files labeled 'aircraft' include the closest 9 model grid cells horizontally and all model vertical levels along the 1 minute merge aircraft flight tracks. The model data corresponding to the following aircraft campaigns are included in this dataset: DISCOVER-AQ-TX (Deriving Information on Surface conditions from Column and Vertically Resolved Observations Relevant to Air Quality) over Houston, Texas, in September; DISCOVER-AQ-CA over California in January-February; SENEX (Southeast Nexus) campaign in June-July; the NOMADSS (Nitrogen, Oxidants, Mercury and Aerosol Distributions, Sources, and Sinks) campaign in June-July; and the SEAC4RS (Studies of Emissions, Atmospheric Composition, Clouds, and Climate Coupling by Regional Surveys) campaign in August-September. All model simulations include model data corresponding to SEAC4RS and DISVOVER-AQ-TX and a subset of simulations include model data corresponding to all of the campaigns.
+Please refer to the README.txt file for more details.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCO/CIRES</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583107 Files" path="files/d583107" location="/data/rda/data/d583107/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

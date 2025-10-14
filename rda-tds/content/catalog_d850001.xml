@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Data to support OSDF example workflows" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Data to support OSDF example workflows">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d850001/" xlink:title="NCAR GDEX - Data to support OSDF example workflows(d850001)" />
+      <documentation type="summary"> This dataset contains the data to support Jupyter notebook example workflows that use the PelicanFS package and the Open Science Data Federation to stream data from the RDA into various computational environments. It also contains Intake-ESM catalogs that point to datasets on AWS and other cloud data providers. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UK/MOD/MET/HADLEY</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d850001 Files" path="files/d850001" location="/data/rda/data/d850001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP/NCAR Reanalysis Monthly Mean Subsets (from DS090.0), 1948-continuing" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP/NCAR Reanalysis Monthly Mean Subsets (from DS090.0), 1948-continuing">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d090002/" xlink:title="NCAR GDEX - NCEP/NCAR Reanalysis Monthly Mean Subsets (from DS090.0), 1948-continuing(d090002)" />
+      <documentation type="summary">The monthly means of NCEP/NCAR Reanalysis (R1) products,
+    archived in ds090.0 dataset,
+    are extracted and reorganized into subgroups in this dataset. The groupings try to combine like and/or commonly used parameter-level data together. There are also subgroups for each of the four diurnal monthly means (means of 00Z, 06Z, 12Z, and 18Z separately).
+    
+    The data files are in WMO GRIB format. Both the monthly means
+    and their variances are in the same file but in different GRIB
+    records. Examples of separating monthly means from variances
+    are shown in this guide.
+    
+    All subgroups will be available on line under data.
+    The ones that are not on line yet will be moved over upon
+    request.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>NNRP</keyword>
+      <keyword>NCEP/NCAR Reanalysis Project</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d090002 Files" path="files/d090002" location="/data/rda/data/d090002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

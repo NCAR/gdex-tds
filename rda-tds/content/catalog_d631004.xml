@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Arctic Systems Reanalysis Model Output Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Arctic Systems Reanalysis Model Output Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d631004/" xlink:title="NCAR GDEX - Arctic Systems Reanalysis Model Output Data(d631004)" />
+      <documentation type="summary">The Arctic System Reanalysis (ASR) is produced using a high-resolution version of the Polar Weather Forecast Model (PWRF) and the WRF-Var and High Resolution Land Data Assimilation (HRLDAS) systems that have been optimized for the Arctic. A low-resolution (30 km) data set which spans 2000-2010 was released in May 2012 and the model output files are archived in this dataset.  They contain data on staggered grids and are netCDF files in WRF model output format. The post-processed final products (netCDF files with data on polar stereographic grids) are available in the ds631.0 dataset.
+    Issues found in current ASR data. See Note (08/10/2012) for details. New version of ASR data will be released in late 2012.</documentation>
+      <creator>
+        <name vocabulary="DIF">OH-STATE/POLARMET</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d631004 Files" path="files/d631004" location="/data/rda/data/d631004/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

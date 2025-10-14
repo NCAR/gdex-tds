@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CLM5.0 TRENDY Simulations used for the 2020 Global Carbon Budget" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CLM5.0 TRENDY Simulations used for the 2020 Global Carbon Budget">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583123/" xlink:title="NCAR GDEX - CLM5.0 TRENDY Simulations used for the 2020 Global Carbon Budget(d583123)" />
+      <documentation type="summary">The data included consist of four simulations completed for Trends in land carbon cycle (TRENDY) simulations for the Global Carbon Project, which follow the land modeling protocol used for the 2020 Global Carbon Budget. The simulations include:
+
+- S0, an extension of the spin up with constant forcings and land use
+- S1, including transient CO2, N deposition, and population density
+- S2, including transient CO2, climate, N deposition, population density, urban, and aerosols
+- S3, including all transient forcings from the S2 simulation, as well as transient land use change, which includes shifting cultivation, irrigation, and agricultural N fertilizer
+Simulations are run from 1700 through 2019 using CRU JRA v2 forcing, CO2, land use change, and N deposition data provided by TRENDY.  All files include monthly averaged data for the full time period. The "h0" files are grid cell averages, whereas the "h1" files are 1-dimensional files averaged by plant functional type. A script to grid the "h1" files is available on the CTSM python GitHub website.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583123 Files" path="files/d583123" location="/data/rda/data/d583123/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

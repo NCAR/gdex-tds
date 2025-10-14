@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 SMOOTH experiments" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 SMOOTH experiments">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583139/" xlink:title="NCAR GDEX - CESM2 SMOOTH experiments(d583139)" />
+      <documentation type="summary">The Arctic is undergoing a pronounced and rapid transformation in response to changing greenhouse gasses, including reduction in sea ice extent and thickness. There are also projected increases in near-surface Arctic winds. This study addresses how the winds trends may be driven by changing surface roughness and/or stability in different Arctic regions. These data are from five experiments using CESM2 with an artificially decreased sea ice roughness to match that of the open ocean. The data included include only select variables from the atmospheric and sea ice model components. These variables are included because they were used for figures and analysis in the associated manuscript: DuVivier, A.K. et al. (2023) "Investigating future Arctic sea ice loss and near-surface wind speed changes related to surface roughness using the Community Earth System Model." Journal of Geophysical Research - Atmospheres.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583139 Files" path="files/d583139" location="/data/rda/data/d583139/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

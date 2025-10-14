@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM Large Ensemble with Different Pinatubo Forcings" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM Large Ensemble with Different Pinatubo Forcings">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d316006/" xlink:title="NCAR GDEX - CESM Large Ensemble with Different Pinatubo Forcings(d316006)" />
+      <documentation type="summary">We reran a 36 year (1990 - 2025) segment of the 29 CESM Large Ensemble members with the proper ocean biogeochemistry configuration using two different options for volcanic forcings:
+    1. Control: we use the same forcing as the original Large Ensemble, but these members were run on Cheyenne instead of Yellowstone (this avoids determining what differences in our experiment are due to changes in the forcing vs changes in the compiler and hardware).
+    2. No Pinatubo: The volcanic aerosol mass mixing ratio from 1991 through 1995 is replaced with the five year segment from 1986 to 1990.</documentation>
+      <creator>
+        <name vocabulary="DIF">SCRIPPS/METEORA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CU/INSTAAR</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCO/ATOC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">COLUMBIA/LDEO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d316006 Files" path="files/d316006" location="/data/rda/data/d316006/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

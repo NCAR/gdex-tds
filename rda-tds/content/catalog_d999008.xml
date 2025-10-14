@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GPCP Version 2.3 - Monthly Analysis - Test || GPCP Version 1.3 - Daily Analysis - Test" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GPCP Version 2.3 - Monthly Analysis - Test || GPCP Version 1.3 - Daily Analysis - Test">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d999008/" xlink:title="NCAR GDEX - GPCP Version 2.3 - Monthly Analysis - Test || GPCP Version 1.3 - Daily Analysis - Test(d999008)" />
+      <documentation type="summary">This dataset is for testing purposes only. It does not contain public data and is not to be used for research purposes.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">UMD/ESSIC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">NASA/GSFC/SED/ESD/LA/MAPB</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>SEACOOS</keyword>
+      <keyword>Southeastern Coastal Ocean Observing System</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d999008 Files" path="files/d999008" location="/data/rda/data/d999008/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP 51-year Hydrological Reanalysis" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP 51-year Hydrological Reanalysis">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d607000/" xlink:title="NCAR GDEX - NCEP 51-year Hydrological Reanalysis(d607000)" />
+      <documentation type="summary">
+    A 51-year hydrological reanalysis between 1948 and 1998 over the continental
+    US was recently completed at Climate Prediction Center of NCEP, NOAA.
+    The project used Noah land surface model (LSM) with forcing data regridded
+    from NCEP/NCAR Reanalysis data and the new CPC daily and hourly precipitation
+    data. The best available orography, soil and vegetation types, etc. are used
+    as the boundary conditions of this study.  The output fields include all
+    components of energy, water mass balance, snow cover and depth, and 4 layers
+    of soil temperature, moisture (both liquid and frozen) below the ground.
+    Three types of data files are archived in this dataset. They include the
+    restart files, the forcing fields to run the Noah Land Surface Model, and
+    the output files from the 1948-1998 runs.
+    
+    The daily restarting files and the hourly forcing fields are stored on
+    NCAR's High Performance Storage System (HPSS) only.
+    
+    You can find the Noah LSM used in this study
+    here.
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d607000 Files" path="files/d607000" location="/data/rda/data/d607000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

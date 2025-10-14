@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Fuel Moisture Content (Live and Dead) over the Conterminous United States" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Fuel Moisture Content (Live and Dead) over the Conterminous United States">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583133/" xlink:title="NCAR GDEX - Fuel Moisture Content (Live and Dead) over the Conterminous United States(d583133)" />
+      <documentation type="summary">A dynamic gridded dataset of live and dead fuel moisture content (FMC) over the Conterminous United States (CONUS). The FMC dataset is created by combining satellite observations, reflectances from MODIS Terra and Aqua platforms, with surface, in situ observations of FMC from the National Fuel Moisture Database (NFMD) using a machine learning model as well as environmental data provided by the National Water Model based on the WRF-Hydro model.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583133 Files" path="files/d583133" location="/data/rda/data/d583133/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

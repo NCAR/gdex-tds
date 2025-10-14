@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="AmeriFlux Gap-Filled Data from Selected Sites" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="AmeriFlux Gap-Filled Data from Selected Sites">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d387000/" xlink:title="NCAR GDEX - AmeriFlux Gap-Filled Data from Selected Sites(d387000)" />
+      <documentation type="summary"> AmeriFlux  is part of the larger network  Fluxnet  which endeavors to connect observations from regional micrometeorological tower sites for global analysis.  AmeriFlux towers measure the exchange of energy, water, and carbon through a network of sites with variable vegetation, disturbance records, and climatic conditions. The ecosystems included within the network are temperate and tropical evergreen forests, temperate deciduous forests, woodlands, grasslands, agricultural crops, boreal, and shrublands.  Climates in these biomes vary between tundra, temperate, tropical, and arid.
+    
+    This Level 4 Dataset accumulated from the AmeriFlux Network focuses on hourly, daily, and monthly observations collected at North American tower sites. The selection of AmeriFlux sites were chosen based on the period of available data, the diversity in vegetation types, the past success of testing land surface models, and the availability of atmospheric forcing for Community Land Models. AmeriFlux Level 4 data has been gap-filled, quality-flagged and includes meteorological variables, CO2 exchange rates, heat fluxes, biogeochemical pools, calculated gross productivity, and ecosystem respiration terms.  The period of record varies by individual tower site, but some sites have as much as 15 years of recorded data.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOE/ORNL/ESD/CDIAC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d387000 Files" path="files/d387000" location="/data/rda/data/d387000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

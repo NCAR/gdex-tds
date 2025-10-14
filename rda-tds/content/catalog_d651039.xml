@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Multi-Model Large Ensemble Archive version 2" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Multi-Model Large Ensemble Archive version 2">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651039/" xlink:title="NCAR GDEX - Multi-Model Large Ensemble Archive version 2(d651039)" />
+      <documentation type="summary">The Multi-Model Large Ensemble Archive version 2 (MMLEAv2) was compiled as an extension of the original archive. It includes 18 models (12 CMIP6 and 6 CMIP5) and 16 monthly variables. Three of the variables are categorized as daily but are the monthly maximum of the daily maximum temperature (TXx), the monthly minimum of the daily minimum temperature (TNn) and the monthly maximum of daily precipitation (Rx1day). More information about the complete MMLEAv2 variable list is available in the reference paper.
+ While a consistent RCP8.5 future forcing scenario was available for the CMIP5 class models, the CMIP6 class models use one or both of the historical plus SSP370 or SSP585 scenarios. Observational reference products are also included in this archive. All data is provided remapped to a common 2.5 x 2.5 degree grid.
+NetCDF output from the Climate Variability Diagnostics Package version 6 (CVDP v6) run on the model for the time periods 1950-2022 and 2027-2099 is provided for both detrended and non-detrended MMLEAv2 data. The CVDP output can be found on the MMLEAv2 website.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651039 Files" path="files/d651039" location="/data/rda/data/d651039/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

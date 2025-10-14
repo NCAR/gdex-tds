@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NOCS Surface Flux Dataset v2.0" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NOCS Surface Flux Dataset v2.0">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d260003/" xlink:title="NCAR GDEX - NOCS Surface Flux Dataset v2.0(d260003)" />
+      <documentation type="summary">
+    The National Oceanography Centre Southampton (NOCS) Version 2.0 Surface Flux Dataset is a monthly mean gridded dataset of marine surface measurements and derived fluxes constructed using optimal interpolation. Input for the period 1973 to 2006 are ICOADS Release 2.4 ship data, the update from 2007 to 2014 uses ICOADS Release 2.5 and data after 2007 are preliminary. The dataset is presented as a time series of monthly mean values on a 1 degree area grid. The quality of the gridded data is quantified by estimates of random, bias and total uncertainty. The monthly means were derived from daily estimates of each variable and the standard deviation of these daily values is also available. Click 
+    HERE for detailed variable information. Users are advised to take account of the uncertainty estimates provided, and to note that in very poorly sampled regions, such as the Southern Ocean, the uncertainty estimates themselves may be unreliable.
+    
+    
+    Surface meteorological fields have been adjusted to account for varying measurement heights and for known biases (Berry and Kent 2009, Berry and Kent 2011). Surface fluxes have been calculated from daily fields of the surface meteorological parameters using bulk parameterizations (Reed 1977; Clark et al. 1974; Smith 1980; 1988).
+    </documentation>
+      <creator>
+        <name vocabulary="DIF">U-SOTON/NOC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d260003 Files" path="files/d260003" location="/data/rda/data/d260003/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

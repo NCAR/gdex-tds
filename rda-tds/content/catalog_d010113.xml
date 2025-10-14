@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Runoff Risk V3.0 Hydrometeorological Dataset" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Runoff Risk V3.0 Hydrometeorological Dataset">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010113/" xlink:title="NCAR GDEX - Runoff Risk V3.0 Hydrometeorological Dataset(d010113)" />
+      <documentation type="summary">This dataset provides retrospective runoff risk forecasts and supporting data for the Great Lakes region. 
+It includes retrospective simulations from the NOAA National Water Model (NWM) configuration of WRF-Hydro. These simulations were executed to produce approximately 25 additional land surface grid variables, along with surface and subsurface runoff outputs, identified as crucial for predicting runoff initiation at the edge of field.
+Two distinct processing workflows were used to generate the final forecast products. The first workflow employs a statistical post-processing approach, including quantile mapping bias correction, which adjusts NWM surface runoff predictions based on edge-of-field observations and USGS streamflow data. This workflow also incorporates a regionalization of the statistical model and bias correction using a Hydrologic Unit Code 10 (HUC10) level cluster analysis. The second, more streamlined workflow, consists solely of the bias correction of NWM output.
+This collection contains the raw WRF-Hydro outputs and the outputs from both retrospective forecast workflows. The data can be used to assess the skill of NWM-based runoff risk predictions and to compare the performance of the two different post-processing strategies. The primary goal of this dataset is to support the transition of these improved runoff risk tools into an operational environment at the NOAA Office of Water Prediction, ultimately aiding farmers in optimizing manure application timing to reduce nutrient runoff into the Great Lakes.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/HAP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010113 Files" path="files/d010113" location="/data/rda/data/d010113/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Climate Change in the Thermosphere and Ionosphere from the Early Twentieth Century to Early Twenty-First Century Simulated by the Whole Atmosphere Community Climate Model - eXtended" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Climate Change in the Thermosphere and Ionosphere from the Early Twentieth Century to Early Twenty-First Century Simulated by the Whole Atmosphere Community Climate Model - eXtended">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583122/" xlink:title="NCAR GDEX - Climate Change in the Thermosphere and Ionosphere from the Early Twentieth Century to Early Twenty-First Century Simulated by the Whole Atmosphere Community Climate Model - eXtended(d583122)" />
+      <documentation type="summary">Motivated by numerous lower atmosphere climate model hindcast simulations, we performed simulations of the earth's atmosphere from the surface up through the thermosphere-ionosphere to reveal for the first time the century scale changes in the upper atmosphere from the 1920s through the 2010s using the Whole Atmosphere Community Climate Model - eXtended (WACCM-X v. 2.1). We impose solar minimum conditions to get a clear indication of the effects of the long-term forcing from greenhouse gas increases and changes of the Earth's magnetic field and to avoid the requirement for careful removal of the 11-year solar cycle as in some previous studies using observations and models. These previous studies have shown greenhouse gas effects in the upper atmosphere but what has been missing is the time evolution with actual greenhouse gas increases throughout the last century, including the period of less than 5% increase prior to the space age and the transition to the over 25% increase in the latter half of the 20th century. Neutral temperature, density, and ionosphere changes are close to those reported in previous studies, and we find a high correlation of continuous changes over this past century between carbon dioxide and thermosphere neutral temperature due the shorter adjustment time of the upper atmosphere to greenhouse gas changes relative to the years to decades in the lower atmosphere. Consequently, WACCM-X future projections can provide valuable insight into what is to come in the entire atmosphere under future scenarios of greenhouse gas changes and mitigation efforts.
+The model output covers the first 6 years of each decade from the 1920s to the 2010s. The horizontal resolution is 1.9 x 2.5 latitude x longitude and 1/4 scale height in the vertical.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583122 Files" path="files/d583122" location="/data/rda/data/d583122/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

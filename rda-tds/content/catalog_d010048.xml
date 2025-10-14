@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="High Resolution Historical and Future Simulations Over Hawaii" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="High Resolution Historical and Future Simulations Over Hawaii">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010048/" xlink:title="NCAR GDEX - High Resolution Historical and Future Simulations Over Hawaii(d010048)" />
+      <documentation type="summary">To better understand the rainfall climatology and its impacts on hydrological cycle over the Hawaiian Islands under historical and future climates, regional climate simulations over the main Hawaiian islands have been conducted for two 10-year periods using the Weather Research and Forecasting (WRF) model in a configuration of two nested domains. The historical 10-year simulation was driven by the ERA-Interim global reanalysis data and observed sea surface temperature from October. 2002 to September 2012 (historical simulation). A high-resolution vertical coordinate was employed to better resolve the trade wind inversion (TWI). Results show that the historical simulation reproduces the mean surface temperature, relative humidity and winds with low biases (+/- 1 degree C, +/- 4 % and +/- 1 m/s, respectively) and high spatial correlations (correlation coefficient over 0.80). Additionally, for the historical simulation WRF accurately reproduced aggregated daily and hourly rainfall probability density functions (PDFs) and rainfall spatial-temporal distributions, likely because WRF captured the TWI properties well. The historical simulation outputs are available at hourly resolution for near surface (2-dimensional) fields and for the 3-dimensional atmosphere.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010048 Files" path="files/d010048" location="/data/rda/data/d010048/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

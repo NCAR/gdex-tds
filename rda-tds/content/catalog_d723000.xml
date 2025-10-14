@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Atmospheric Profiles from COSMIC Occultation Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Atmospheric Profiles from COSMIC Occultation Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d723000/" xlink:title="NCAR GDEX - Atmospheric Profiles from COSMIC Occultation Data(d723000)" />
+      <documentation type="summary">Using a radio occultation technique, scientists are able to use signals broadcast from Global Positioning System (GPS) satellites to retrieve profiles of bending angles, refractivity, temperature, pressure, and water vapor in the atmosphere. Also, profiles of electron density in the ionosphere. Such data are gathered and processed at the Constellation Observing System for Meteorology, Ionosphere, Climate (COSMIC) Data Analysis and Archive Center (CDAAC) in Boulder, Colorado. Various products are produced including atmospheric profiles starting from near Earth's surface to the height of the satellites at 800 kilometers (500 miles) above the Earth surface. At this time only atmospheric profiles of bending angle, refractivity, and dry temperature are available. As we receive more data this archive will continue to expand to include more variable profiles.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/COSMIC/CDAAC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>GPS/MET</keyword>
+      <keyword>Global Positioning System Meteorology Experiment</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d723000 Files" path="files/d723000" location="/data/rda/data/d723000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

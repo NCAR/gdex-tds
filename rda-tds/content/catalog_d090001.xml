@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="NCEP/NCAR Global Reanalysis 8-day Forecast Products" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="NCEP/NCAR Global Reanalysis 8-day Forecast Products">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d090001/" xlink:title="NCAR GDEX - NCEP/NCAR Global Reanalysis 8-day Forecast Products(d090001)" />
+      <documentation type="summary">This data set contains forecast products from the
+    NCEP/NCAR Reanalysis Project.  The resolution of the
+    Reanalysis Forecast Model is T62 (209 km) with 28
+    vertical sigma levels.  Every five days, beginning
+    with 00Z 01 January, an 8 day forecast run is made.
+    The initial time and outputs for every 12 hours are
+    saved from this run.
+    Pressure level and special level data are archived on
+    the 2.5 by 2.5 latitude-longitude grid and flux fields
+    are archived on the 192 by 94 Gaussian grid.  Details
+    on variables included are available elsewhere.
+    Some special periods will be analyzed more than once
+    to provide data for special research studies.  For
+    example, a special run of 1979 was made excluding
+    most satellite inputs.  This run could be used for
+    evaluating the impact of satellite data on the
+    forecasts.
+    See DS090.0for analysis and first guess fields.
+    All data files for January 1948 to October 2005 are available as of 2005DEC29.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>NNRP</keyword>
+      <keyword>NCEP/NCAR Reanalysis Project</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d090001 Files" path="files/d090001" location="/data/rda/data/d090001/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GARD-LENS: A downscaled large ensemble dataset for understanding the future climate and its uncertainties" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GARD-LENS: A downscaled large ensemble dataset for understanding the future climate and its uncertainties">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d619000/" xlink:title="NCAR GDEX - GARD-LENS: A downscaled large ensemble dataset for understanding the future climate and its uncertainties(d619000)" />
+      <documentation type="summary">The Generalized Analog Regression Downscaling method Large Ensemble (GARD-LENS) dataset  is comprised of daily precipitation, mean temperature, and temperature range over the Contiguous U.S., Alaska, and Hawaii at 12 km, 4 km, and 1 km resolutions, respectively. GARD-LENS downscales three CMIP6 global climate model large ensembles, CESM2, CanESM5, and EC-Earth3, totaling 200 ensemble members. GARD-LENS is the first downscaled SMILE (single model initial-condition large ensemble), providing information about the role of internal climate variability at high resolutions. GARD LENS uses GMET as a training dataset for the period 1980-2014, although Hawaii GMET data is only available for 1990-2014. The total dataset consists of 200 ensemble member files per region per variable (e.g., 200 files for t_mean for CONUS), for a total of 1800 files and a total dataset size of roughly 12 TB.
+    The 150-year record of this large ensemble dataset provides ample data for assessing trends and extremes and allows users to robustly assess internal variability, forced climate signals, and time of emergence at high resolutions. As the need for high resolution, robust climate datasets continues to grow, GARD-LENS will be a valuable tool for scientists and practitioners who wish to account for internal variability in their future climate analyses and adaptation plans.</documentation>
+      <creator>
+        <name vocabulary="DIF">CORNELL/EAS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d619000 Files" path="files/d619000" location="/data/rda/data/d619000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

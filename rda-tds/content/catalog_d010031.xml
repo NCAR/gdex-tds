@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Atlanta Metro Heat Exposure" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Atlanta Metro Heat Exposure">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010031/" xlink:title="NCAR GDEX - Atlanta Metro Heat Exposure(d010031)" />
+      <documentation type="summary">Increasing extreme heat weather is likely to raise the risk of acute kidney injury, which is characterized by a precipitous decline in kidney function. Kidney diseases in heat exposure have been investigated using ambient temperature data collected from individual monitoring stations or spatially gridded atmospheric reanalysis products. These datasets, however, are insufficient for studying heat exposure studies in urban areas because they do not accurately capture the effects of variations in land surface, particularly the 'urban heat island', which temperatures are significantly warmer than surrounding rural areas and can amplify extreme heat events in cities and disproportionately affect public health. Here, we first develop a 1 km^2 resolution of meteorology dataset for 2010-2023 using a fully coupled atmosphere-land-urban modeling system, WRF-urban, over the Atlanta metropolitan area with comprehensive maps of urban types from the Local Climate Zone (LCZ) classification scheme. We then applied a multivariate bias correction technique to the WRF-urban temperature and moisture variables. WRF-urban is able to reproduce the extreme high and low temperatures near the surface in urban areas by utilizing the LCZ maps that classify different urban types. Furthermore, temperature bias is effectively mitigated while temperature-moisture covariance is preserved by employing the bias correction technique. We also compute many common heat exposure indices such as the heat index, HUMIDEX, globe temperature, normal effective temperature, apparent temperature, wet bulb globe temperature, Universal Thermal Climate Index (UTCI), and wet bulb temperature. The dataset will be useful to quantify relationships between short-term heat exposure and hospitalizations, or other health outcomes, as well as to offer inputs for quantitative risk assessment and economic evaluation of heat-health implications that can improve case management decisions.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL/HAP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010031 Files" path="files/d010031" location="/data/rda/data/d010031/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

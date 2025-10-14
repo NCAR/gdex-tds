@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Monthly Northern Hemisphere 2.5-degree Tropospheric Analyses for 1946-1972" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Monthly Northern Hemisphere 2.5-degree Tropospheric Analyses for 1946-1972">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>GRIB-1</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d085002/" xlink:title="NCAR GDEX - Monthly Northern Hemisphere 2.5-degree Tropospheric Analyses for 1946-1972(d085002)" />
+      <documentation type="summary">This dataset contains a time-series collection of monthly
+    Northern Hemisphere tropospheric data on a 2.5-degree
+    latitude/longitude grid.  These grids were created by DSS
+    from the grids of ds085.0, which
+    have a resolution of five degrees.  The intermediate points of
+    the grids in this set were interpolated from the existing
+    surrounding gridpoints using a 16-point Bessel interpolation
+    scheme.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOD/USNAVY/FNMOC</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL/RDA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">DOC/NOAA/NWS/NCEP</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>ESSPO</keyword>
+      <keyword>433L ESSPO</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d085002 Files" path="files/d085002" location="/data/rda/data/d085002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Data for &quot;Interhemispheric asymmetry of the thermospheric neutral density response to the 7-9 September 2017 geomagnetic storms&quot;" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Data for &quot;Interhemispheric asymmetry of the thermospheric neutral density response to the 7-9 September 2017 geomagnetic storms&quot;">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583141/" xlink:title="NCAR GDEX - Data for &quot;Interhemispheric asymmetry of the thermospheric neutral density response to the 7-9 September 2017 geomagnetic storms&quot;(d583141)" />
+      <documentation type="summary"> This dataset is for the paper titled "Interhemispheric asymmetry of the thermospheric neutral density response to the 7-9 September 2017 geomagnetic storms."
+
+The data set contains the following types of data:
+a) Assimilative Mapping of Ionospheric Electrodynamics (AMIE) outputs: amie_nh.npz and amie_sh.npz.
+b) Neutral density data along the satellite track: Swarm-A: swma_asc_20170905_20170908.txt and swma_des_20170905_20170908.txt; Swarm-B: swmb_asc_20170905_20170908.txt and swmb_des_20170905_20170908.txt; GRACE: grac_asc_20170905_20170908.txt and grac_des_20170905_20170908.txt
+c) IMF and solar wind data: omni_sep17.npz
+d) TIEGCM outputs: sep05_2017_sech.nc, sep06_2017_sech.nc, sep07_2017_sech.nc, sep08_2017_sech.nc
+e) TIEGCM outputs with post-processing: sep05-09.nc</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583141 Files" path="files/d583141" location="/data/rda/data/d583141/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

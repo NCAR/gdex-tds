@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 Large Ensemble" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 Large Ensemble">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651056/" xlink:title="NCAR GDEX - CESM2 Large Ensemble(d651056)" />
+      <documentation type="summary">The CESM2 Large Ensemble consists of 100 members at 1 degree spatial resolution covering the period 1850-2100 under CMIP6 historical and SSP370 future radiative forcing scenarios. Two separate sets of biomass burning emissions forcing files were used within the ensemble. Members 1-50 were forced with CMIP6 protocols identical to those used in Danabasoglu et al. (2020) in the paper for CESM2. For members 51-100, the most relevant species for biomass burning fluxes from the CMIP6 protocols were smoothed with an 11-year running mean filter, impacting the fluxes over the years 1990-2020.
+The CESM2 Large Ensemble uses a combination of different oceanic and atmospheric initial states to create ensemble spread as follows: 
+Members 1-10: These begin from years 1001, 1021, 1041, 1061, 1081, 1101, 1121, 1141, 1161, and 1181 of the 1400-year pre-industrial control simulation. This segment of the control simulation was chosen to minimize drift.
+Members 11-90: These begin from 4 pre-selected years of the pre-industrial control simulation based on the phase of the Atlantic Meridional Overturning Circulation (AMOC). For each of the 4 initial states, there are 20 ensemble members created by randomly perturbing the atmospheric temperature field on the order of -14K. The chosen start dates (model years 1231, 1251, 1281, and 1301) sample AMOC and Sea Surface Height (SSH) in the Labrador Sea at their maximum, minimum and transition states.
+Members 91-100: These begin from years 1011, 1031, 1051, 1071, 1091, 1111, 1131, 1151, 1171, and 1191 of the 1400-year pre-industrial control simulation. This set includes the extensive "MOAR" output, which can be used to drive regional climate models.
+The initialization design allows assessment of oceanic (AMOC) and atmospheric contributions to ensemble spread, and the impact of AMOC initial-condition memory on the global earth system.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651056 Files" path="files/d651056" location="/data/rda/data/d651056/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

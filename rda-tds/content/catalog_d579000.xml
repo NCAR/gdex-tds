@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Jones' Mongolia Summary of Month, 1936-1983" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Jones' Mongolia Summary of Month, 1936-1983">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d579000/" xlink:title="NCAR GDEX - Jones' Mongolia Summary of Month, 1936-1983(d579000)" />
+      <documentation type="summary">This dataset contains summary of month data for 71 Mongolian
+    stations for 1936 to 1983.  Summary information includes monthly
+    mean temperature and total monthly precipitation.  These data
+    were obtained from Phil Jones at the University of East
+    Anglia.</documentation>
+      <creator>
+        <name vocabulary="DIF">UEA/SES/CRU</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d579000 Files" path="files/d579000" location="/data/rda/data/d579000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

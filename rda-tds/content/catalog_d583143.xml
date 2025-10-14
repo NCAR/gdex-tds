@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CAM-chem simulation of the 2020 lockdown" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CAM-chem simulation of the 2020 lockdown">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583143/" xlink:title="NCAR GDEX - CAM-chem simulation of the 2020 lockdown(d583143)" />
+      <documentation type="summary"> With the reduction in economic activities following the COVID19 pandemic outbreak in early 2020, most emissions of air pollutants (i.e., nitrogen oxides (NOx), carbon monoxide (CO), sulfur dioxide (SO2), volatile organic carbon (VOC), black carbon (BC), organic carbon (OC)) have decreased substantially during several months in different regions of the world. This unintended global experiment has given insight on some of the processes that control air quality and offered a glimpse into a potential future in which air quality would be improved. Here, a global atmospheric model is used to assess the changes in the chemical composition of the atmosphere during the pandemic period and in the related chemical processes that lead to the formation of ozone (O3) and secondary organic aerosols (SOA).
+
+The chemical fields made available here are provided by the Community Earth System Model (CESM) version 2.2 that accounts for interactive physical, chemical and dynamical processes. The simulations are performed with a detailed chemical scheme (MOZART TS1 mechanism) driven by emission changes of primary pollutants and forced by realistic weather conditions reproduce reasonably well the changes observed in the chemical composition of the atmosphere, and specifically in the perturbations of surface ozone and other oxidants during the COVID19 pandemic. Two simulations are made available, a reference using daily emissions for 2020 and another one that includes the lockdown induced emission changes.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583143 Files" path="files/d583143" location="/data/rda/data/d583143/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

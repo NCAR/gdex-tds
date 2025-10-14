@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Datasets used in Bacmeister et al,  JAMES (2020). &quot; CO2 increase experiments ...&quot;" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Datasets used in Bacmeister et al,  JAMES (2020). &quot; CO2 increase experiments ...&quot;">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d583117/" xlink:title="NCAR GDEX - Datasets used in Bacmeister et al,  JAMES (2020). &quot; CO2 increase experiments ...&quot;(d583117)" />
+      <documentation type="summary">Datasets used in the creation of original figures of Bacmeister et al. JAMES (2020). CO2 increase experiments using the Community Earth System Model (CESM): Relationship to climate sensitivity and comparison of CESM1 to CESM2.
+We examine the response of the Community Earth System Model versions 1 and 2 (CESM1 and CESM2) to abrupt quadrupling of atmospheric CO2 concentrations (4xCO2) and to 1% annually increasing CO2 concentrations (1% CO2). Different estimates of equilibrium climate sensitivity (ECS) for CESM1 and CESM2 are presented. All estimates show that the sensitivity of CESM2 has increased by 1.5K or more over that of CESM1. At the same time the transient climate response (TCR) of CESM1 and CESM2 derived from 1% CO2 experiments has not changed significantly - 2.1K in CESM1 and 2.0K in CESM2. Increased initial forcing as well as stronger shortwave radiation feedbacks are responsible for the increase in ECS seen in CESM2. A decomposition of regional radiation feedbacks and their contribution to global feedbacks shows that the Southern Ocean plays a key role in the overall behavior of 4xCO2 experiments, accounting for about 50% of the total shortwave feedback in both CESM1 and CESM2. The Southern Ocean is also responsible for around half of the increase in shortwave feedback between CESM1 and CESM2, with a comparable contribution arising over tropical ocean. Experiments using a thermodynamic slab-ocean model (SOM) yield estimates of ECS that are in remarkable agreement with those from fully-coupled earth system model (ESM) experiments for the same level of CO2 increase. Finally, we show that the similarity of TCR in CESM1 and CESM2 masks significant regional differences in warming that occur in the 1% CO2 experiments for each model.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d583117 Files" path="files/d583117" location="/data/rda/data/d583117/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
