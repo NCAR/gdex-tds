@@ -352,6 +352,15 @@ def add_data2tds():
             logger.warning(logger_warning)
             continue
 
+
+        # check if individual dataset XML exist
+        # if exist skip and log error
+        data_xml = os.path.join(PROJECT_ROOT, 'rda-tds/content/', f'catalog_{dsid}.xml')
+        if os.path.exists(data_xml):
+            logger_error = f"Skipping {dsid}: individual XML already exists but not in catalog. Need to do manual check!!!"
+            logger.error(logger_error)
+            continue
+
         logger_info = f"Adding {dsid} to TDS"
         logger.info(logger_info)
         # store data id for data logging
