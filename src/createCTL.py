@@ -130,7 +130,7 @@ if __name__ == "__main__":
     dsid = get_dsid()
 
     # Get password from environment variable or prompt the user
-    pw = os.getenv('DB_PASSWORD')
+    pw = os.getenv('DB')
     if pw is None:
         pw = input("Enter db pw: ")
 

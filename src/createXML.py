@@ -125,7 +125,7 @@ if __name__ == '__main__':
         output_filename = directory+'catalog_'+dsid+'.xml'
 
     # Get password from environment variable or prompt the user
-    pw = os.getenv('META_PASSWORD')
+    pw = os.getenv('META')
     if pw is None:
         pw = input("Enter metadata pw: ")
 
@@ -154,7 +154,10 @@ if __name__ == '__main__':
     query = "select keyword from search.data_types where dsid='"+dsid+"'"
     cursor.execute(query)
     datatypes = cursor.fetchall()
-    check_same(datatypes)
+    try:
+        check_same(datatypes)
+    except SystemExit:
+        sys.exit(250)
     try:
         datatype, = datatypes[0]
     except Exception as e:
