@@ -7,7 +7,7 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Publish Docker image
+name: Publish TDS Docker Image and Update Helm Chart
 
 on:
   pull_request:
@@ -83,29 +83,29 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update docker image tag in helm chart - ${{ steps.meta.outputs.tags }}"
+          commit-message: "Update TDS docker image tag in helm chart - ${{ steps.meta.outputs.tags }}"
           committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-          branch: "docker-update"
+          branch: "docker-update-tds"
           branch-suffix: timestamp
           delete-branch: true
           title: "🚀 Update TDS Docker Image - ${{ steps.meta.outputs.tags }}"
           body: |
-            ## Docker Image Update
+            ## TDS Docker Image Update
             
             **New Image:** ${{ steps.meta.outputs.tags }}
             **Build Time:** ${{ github.event.head_commit.timestamp || github.event.pull_request.closed_at || github.run_started_at }}
-            **Trigger:** Docker build and push completed
+            **Trigger:** TDS Docker build and push completed
             
             ### Changes:
-            - Updated `rda-tds-helm/values.yaml` with new image tag
+            - Updated `rda-tds-helm/values.yaml` with new TDS image tag
             - This will trigger Kubernetes deployment update
             
             ### Deployment:
             This PR will automatically merge to deploy the new image.
             
             ---
-            *This PR was created automatically by the Docker build workflow.*
+            *This PR was created automatically by the "Publish TDS Docker Image and Update Helm Chart" workflow.*
           base: main
           draft: false
 
