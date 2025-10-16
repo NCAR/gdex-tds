@@ -7,7 +7,7 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Publish TDM Log Image and Update Helm Chart
+name: Publish TDM Docker Image and Update Helm Chart
 
 on:
   pull_request:
