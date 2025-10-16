@@ -2,8 +2,14 @@ FROM unidata/tdm-docker:5.6
 COPY ./content/ /usr/local/tomcat/content/tdm/thredds/
 
 # correct permission issue on /data/TDSIndexFiles/data/rda/data
-RUN mkdir -p /data/TDSIndexFiles/data/rda/data
-RUN chmod 777 /data/TDSIndexFiles/data/rda/data
+# Create a non-root user with default values and bash as the default shell
+RUN adduser -D -s /bin/bash gdextdm
+
+# Create directory for logs and set ownership
+RUN mkdir -p /data/TDSIndexFiles/data/rda/data && chown gdextdm:gdextdm /data/TDSIndexFiles/data/rda/data
+
+# Switch to non-root user
+USER gdextdm
 
 # Source env file in helmchart?
     #env_file:
