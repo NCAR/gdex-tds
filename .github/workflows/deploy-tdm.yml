@@ -7,7 +7,7 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Publish TDS Log Image and Update Helm Chart
+name: Publish TDM Log Image and Update Helm Chart
 
 on:
   pull_request:
@@ -16,11 +16,12 @@ on:
     branches:
       - main
     paths:
-      - rda-tds/Dockerfile-logs
+      - rda-tds/**
+      - "!rda-tds/Dockerfile-logs"
   workflow_dispatch:
 jobs:
   push_to_registry:
-    name: Push logs image to Docker Hub
+    name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     env:
       TZ: America/Denver  # Mountain Time (MDT/MST)
@@ -29,6 +30,7 @@ jobs:
       contents: write
       attestations: write
       id-token: write
+      pull-requests: write
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -46,71 +48,77 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: potatofever/rda-logs
+          images: potatofever/gdex-tdm
           tags: |
             type=schedule,pattern={{date 'YYYYMMDD-HHmm'}}
             type=sha
 
-      - name: Build and push Logs Docker image
+      - name: Build and push TDM Docker image
         id: push
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
         with:
           context: "{{defaultContext}}:rda-tds"
-          file: ./Dockerfile-logs
+          file: ./Dockerfile-tdm
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      - name: Set Timestamp
-        id: timestamp
+      - name: Update Helm Values File
         run: |
-          echo "datetime=$(TZ=America/Denver date)" >> $GITHUB_OUTPUT
-
-      - name: Update helm chart
-        run: |
+          # Configure Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Pull latest changes
+          git pull origin main
+          
+          # Update helm chart with new image tag
           echo "current path is `pwd`"
           echo "${{ steps.meta.outputs.tags }}"
-          sed -i "s/rda-logs\:.*/rda-logs`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
-          
+          sed -i "s/gdex-tdm\:.*/gdex-tdm`echo ${{ steps.meta.outputs.tags }}| grep -o ':.*'`/" rda-tds-helm/values.yaml
+
       - name: Create Pull Request
         id: pr
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update logs Docker image tag - ${{ steps.timestamp.outputs.datetime }}"
+          commit-message: "Update TDM docker image tag in helm chart - ${{ steps.meta.outputs.tags }}"
           committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-          branch: "docker-update-logs"
+          branch: "docker-update-tdm"
           branch-suffix: timestamp
           delete-branch: true
-          title: "🐳 Update logs Docker image tag - ${{ steps.timestamp.outputs.datetime }}"
+          title: "🚀 Update TDM Docker Image - ${{ steps.meta.outputs.tags }}"
           body: |
-            ## Logs Docker Image Update
+            ## TDM Docker Image Update
             
-            **Time:** ${{ steps.timestamp.outputs.datetime }}
-            **Run ID:** ${{ github.run_id }}
-            **New Tags:** ${{ steps.meta.outputs.tags }}
-            **Trigger:** Dockerfile-logs was modified
-            **Action:** Updated Helm chart with new image tag
+            **New Image:** ${{ steps.meta.outputs.tags }}
+            **Build Time:** ${{ github.event.head_commit.timestamp || github.event.pull_request.closed_at || github.run_started_at }}
+            **Trigger:** TDM Docker build and push completed
             
-            This PR will automatically merge to deploy the updated logs image.
+            ### Changes:
+            - Updated `rda-tds-helm/values.yaml` with new TDM image tag
+            - This will trigger Kubernetes deployment update
+            
+            ### Deployment:
+            This PR will automatically merge to deploy the new image.
             
             ---
-            *This PR was created automatically by the "Publish TDS Log Image and Update Helm Chart workflow.*
+            *This PR was created automatically by the "Publish TDM Log Image and Update Helm Chart" workflow.*
           base: main
           draft: false
-          
+
       - name: Auto-merge Pull Request
         if: steps.pr.outputs.pull-request-number
         run: |
           # Wait a moment for PR to be fully created
-          sleep 1m
+          sleep 5
           
           # Auto-merge the PR
           gh pr merge ${{ steps.pr.outputs.pull-request-number }} \
             --auto \
             --squash \
-            --subject "Update logs Docker image tag - ${{ steps.timestamp.outputs.datetime }}"
+            --subject "Update TDM Docker Image - ${{ steps.meta.outputs.tags }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
