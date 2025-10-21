@@ -352,7 +352,6 @@ def add_data2tds():
             logger.warning(logger_warning)
             continue
 
-
         # check if individual dataset XML exist
         # if exist skip and log error
         data_xml = os.path.join(PROJECT_ROOT, 'rda-tds/content/', f'catalog_{dsid}.xml')
@@ -361,10 +360,7 @@ def add_data2tds():
             logger.error(logger_error)
             continue
 
-        logger_info = f"Adding {dsid} to TDS"
-        logger.info(logger_info)
-        # store data id for data logging
-        new_datasets_add.append(dsid)
+
 
         # create XML for the dataset
         state, err = create_xml(dsid)
@@ -377,6 +373,12 @@ def add_data2tds():
         # add to catalog.xml
         add2catalog(dsid)
 
+        # add new dataset to logger and data logging list
+        logger_info = f"Adding {dsid} to TDS"
+        logger.info(logger_info)
+        # store data id for data logging
+        new_datasets_add.append(dsid)
+
     # final log of new datasets added to TDS
     if new_datasets_add:
         data_log = os.path.join(PROJECT_ROOT, 'prefect-workflow/new_datasets_added.log')
@@ -386,6 +388,10 @@ def add_data2tds():
                 log_file.write(f"[{date_data_info}] - {new_dsid} added\n")
 
 if __name__ == "__main__":
+
+    # Log TDS auto-add start time
+    start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+    print(f"TDS auto-add started at {start_time}")
 
     # run the main flow
     add_data2tds()

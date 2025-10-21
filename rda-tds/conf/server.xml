@@ -68,9 +68,12 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector port="8080" protocol="HTTP/1.1"
+    <Connector port="8080"
+               protocol="HTTP/1.1" 
+               scheme="https"
+               secure="true"
                connectionTimeout="20000"
-        redirectPort="8443" >
+               redirectPort="8443" >
     <!-- Riley -->
     <!--<Connector port="8443"
            maxThreads="150"
