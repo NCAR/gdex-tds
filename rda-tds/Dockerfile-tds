@@ -2,7 +2,7 @@ FROM unidata/thredds-docker:5.6
 RUN mkdir -p /etc/letsencrypt/live/rda-tds.ucar.edu/
 COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY ./conf/logging.properties /usr/local/tomcat/conf/logging.properties
-#COPY ./conf/server.xml /usr/local/tomcat/conf/server.xml
+COPY ./conf/server.xml /usr/local/tomcat/conf/server.xml
 COPY ./content/ /usr/local/tomcat/content/thredds/
 RUN mkdir -p /data/TDSIndexFiles/data/rda/data
 RUN chmod 777 /data/TDSIndexFiles/data/rda/data
