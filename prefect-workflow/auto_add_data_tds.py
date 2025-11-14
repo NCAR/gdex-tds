@@ -17,6 +17,7 @@ Environment variables loaded from local .env file
 
 import os
 import sys
+import json
 import subprocess
 from datetime import datetime
 import psycopg2 as sql
@@ -27,6 +28,7 @@ import xml.etree.ElementTree as ET
 # Get the directory of this script and the project root
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)  # Project root directory
+GDEX_DATA_ROOT = os.path.normpath('/gdex/data')
 
 # for reading local .env file
 try:
@@ -152,6 +154,54 @@ def check_format(dataset_id: str) -> bool:
             if supported in data_format:
                 return True
     return False
+
+@task
+def check_datafiles(dataset_id: str) -> bool:
+    """Check if dataset has data files.
+    
+    Parameters
+    ----------
+    dataset_id : str
+        The dataset ID to check.
+    
+    Returns
+    -------
+    bool
+        True if dataset has data files, False otherwise.
+    """
+    # doing walk in the data directory to see if any of the format files exist
+    data_dir = os.path.join(GDEX_DATA_ROOT, dataset_id)
+
+    for _, _, files in os.walk(data_dir):
+        for file in files:
+            if file.endswith(('.nc', '.grb', '.grb2','.nc4')):
+                return True
+    return False
+
+@task
+def check_exclude(dataset_id: str) -> bool:
+    """Check if dataset is in the exclude list.
+    
+    Parameters
+    ----------
+    dataset_id : str
+        The dataset ID to check.
+
+    Returns
+    -------
+    bool
+        True if dataset is in the exclude list, False otherwise.
+    """
+        # read the json file for dataset IDs to remove
+    json_file = os.path.join(SCRIPT_DIR, 'exclude_data_tds.json')
+    with open(json_file, 'r', encoding='utf-8') as jf:
+        json_data = json.load(jf)
+    all_exclude_dsids = json_data.get('exclude_data', [])
+
+    if dataset_id in all_exclude_dsids:
+        return True
+    else:
+        return False
 
 @task
 def create_xml(dataset_id: str):
@@ -352,6 +402,24 @@ def add_data2tds():
             logger.warning(logger_warning)
             continue
 
+        # check if there are datafiles in the data directory
+        #  cloud object storage may have dataset folder without data files
+        #  data in cold storage/tape/quasar have dataset folder without data files
+        has_datafiles = check_datafiles(dsid)
+
+        if not has_datafiles:
+            logger_warning = f"Skipping {dsid}: no data files found on GLADE"
+            logger.warning(logger_warning)
+            continue
+
+        # check if dataset is in the exclude list
+        is_excluded = check_exclude(dsid)
+
+        if is_excluded:
+            logger_warning = f"Skipping {dsid}: dataset is in the exclude list"
+            logger.warning(logger_warning)
+            continue
+
         # check if individual dataset XML exist
         # if exist skip and log error
         data_xml = os.path.join(PROJECT_ROOT, 'rda-tds/content/', f'catalog_{dsid}.xml')
@@ -359,8 +427,6 @@ def add_data2tds():
             logger_error = f"Skipping {dsid}: individual XML already exists but not in catalog. Need to do manual check!!!"
             logger.error(logger_error)
             continue
-
-
 
         # create XML for the dataset
         state, err = create_xml(dsid)
@@ -380,11 +446,11 @@ def add_data2tds():
         new_datasets_add.append(dsid)
 
     # final log of new datasets added to TDS
+    date_data_info = datetime.now().strftime("%Y-%m-%d-%H_%M_%S")
     if new_datasets_add:
-        data_log = os.path.join(PROJECT_ROOT, 'prefect-workflow/new_datasets_added.log')
+        data_log = os.path.join(PROJECT_ROOT, f'prefect-workflow/auto_add_data_tds_{date_data_info}.log')
         with open(data_log, 'a', encoding='utf-8') as log_file:
             for new_dsid in new_datasets_add:
-                date_data_info = datetime.now().strftime("%Y-%m-%d-%H%M%S")
                 log_file.write(f"[{date_data_info}] - {new_dsid} added\n")
 
 if __name__ == "__main__":
