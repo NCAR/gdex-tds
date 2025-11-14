@@ -3,7 +3,7 @@ A Prefect flow to remove datasets from the THREDDS Data Server (TDS) catalog.
 
 The flow performs the following steps:
 1. Retrieves all dataset IDs currently listed in the TDS catalog XML file.
-2. For each dataset ID listed in the exclude_data.json file:
+2. For each dataset ID listed in the remove_data_tds.json file:
    a. If it is in the catalog, remove its catalogRef entry.
    b. Delete the corresponding individual dataset XML file if it exists.
    c. Log the removal action with a timestamp.
@@ -14,13 +14,11 @@ Environment variables loaded from local .env file
 
 import os
 import sys
-import subprocess
+import json
 from datetime import datetime
-import psycopg2 as sql
 from prefect import flow, task
 from prefect.logging import get_run_logger
 import xml.etree.ElementTree as ET
-from auto_add_data_tds import get_all_tds_dsid
 
 # Get the directory of this script and the project root
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -38,8 +36,6 @@ except ImportError:
 # Set environment variable to suppress warnings globally
 os.environ['PYTHONWARNINGS'] = 'ignore::UserWarning:pydantic._internal._generate_schema'
 ##########################################
-
-
 
 
 @task
@@ -76,8 +72,8 @@ def remove_catalog_ref_sorted(catalog_file: str, remove_dsids: list[str]):
         'xlink': xmlns_xlink
     }
 
-    # Collect all existing catalogRef elements - default namespace
-    # not showing up in findall without prefix
+    # Collect all existing catalogRef elements - 
+    # default namespace not showing up in findall without prefix
     # using the 'thredds' prefix defined in namespaces
     catalog_refs = list(root.findall('thredds:catalogRef', namespaces))
 
@@ -98,84 +94,46 @@ def remove_catalog_ref_sorted(catalog_file: str, remove_dsids: list[str]):
 
 @flow(timeout_seconds=60*10,log_prints=True)
 def remove_data():
-    """The main prefect flow to add new dataset to TDS.
-    Steps:
-    1. Get all dataset IDs from the database.
-    2. Get all dataset IDs from the catalog.xml file.
-    3. For each dataset ID in the database:
-       a. If it is already in the catalog, skip it.
-       b. Check if its format is supported by TDS.
-       c. If supported
-            - create XML for the dataset
-            - add it to the catalog.
+    """The main prefect flow to remove dataset from TDS.
     """
     # set up logger from prefect
     logger = get_run_logger()
 
-    # Get all dataset IDs in the database
-    all_dsids = get_all_db_dsid()
-    logger_info = f"Total datasets in database: {len(all_dsids)}"
-    logger.info(logger_info)
+    # read the json file for dataset IDs to remove
+    json_file = os.path.join(SCRIPT_DIR, 'remove_data_tds.json')
+    with open(json_file, 'r', encoding='utf-8') as jf:
+        json_data = json.load(jf)
+    all_remove_dsids = json_data.get('remove_data', [])
+    if not all_remove_dsids:
+        logger.info("No dataset IDs to remove. Exiting flow.")
+        return
 
-    # Get all dataset IDs in the catalog (tds datasets are based on catalogRef entries)
-    catalog_file = os.path.join(
+    # Get the catalog (tds datasets are based on catalogRef entries)
+    main_catalog_file = os.path.join(
         PROJECT_ROOT,
         'rda-tds/content/catalog.xml'
     )
-    tds_dsids = get_all_tds_dsid(catalog_file)
-    logger_info = f"Total datasets in TDS: {len(tds_dsids)}"
-    logger.info(logger_info)
 
-    # loop over dataset IDs in the database
-    new_datasets_add = []
-    for dsid in all_dsids:
-        if dsid in tds_dsids:
-            logger_warning = f"Skipping {dsid}: already in catalog"
-            logger.warning(logger_warning)
-            continue
+    # remove data in catalog.xml
+    remove_catalog_ref_sorted(main_catalog_file, all_remove_dsids)
 
-        # check if format is supported by TDS
-        tds_compatible = check_format(dsid)
-
-        if not tds_compatible:
-            logger_warning = f"Skipping {dsid}: format not supported by TDS"
-            logger.warning(logger_warning)
-            continue
-
-
-        # check if individual dataset XML exist
-        # if exist skip and log error
+    # remove individual dataset XML files
+    for dsid in all_remove_dsids:
         data_xml = os.path.join(PROJECT_ROOT, 'rda-tds/content/', f'catalog_{dsid}.xml')
         if os.path.exists(data_xml):
-            logger_error = f"Skipping {dsid}: individual XML already exists but not in catalog. Need to do manual check!!!"
-            logger.error(logger_error)
-            continue
+            os.remove(data_xml)
+            logger.info(f"Removed individual dataset XML file for {dsid}")
 
-        logger_info = f"Adding {dsid} to TDS"
-        logger.info(logger_info)
-        # store data id for data logging
-        new_datasets_add.append(dsid)
-
-        # create XML for the dataset
-        state, err = create_xml(dsid)
-
-        if not state:
-            logger_error = f"Failed to create XML for {dsid}: {err}"
-            logger.error(logger_error)
-            continue
-
-        # add to catalog.xml
-        add2catalog(dsid)
 
     # final log of new datasets added to TDS
-    if new_datasets_add:
-        data_log = os.path.join(PROJECT_ROOT, 'prefect-workflow/new_datasets_added.log')
+    date_data_info = datetime.now().strftime("%Y-%m-%d-%H_%M_%S")
+    if all_remove_dsids:
+        data_log = os.path.join(PROJECT_ROOT, f'prefect-workflow/remove_data_tds_{date_data_info}.log')
         with open(data_log, 'a', encoding='utf-8') as log_file:
-            for new_dsid in new_datasets_add:
-                date_data_info = datetime.now().strftime("%Y-%m-%d-%H%M%S")
-                log_file.write(f"[{date_data_info}] - {new_dsid} added\n")
+            for dsid in all_remove_dsids:
+                log_file.write(f"[{date_data_info}] - {dsid} removed\n")
 
 if __name__ == "__main__":
 
     # run the main flow
-    add_data2tds()
+    remove_data()
