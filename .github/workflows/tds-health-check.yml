@@ -1,9 +1,9 @@
-name: Auto Restart TDS
+name: TDS Health Check
 
 on:
   schedule:
-    # Run every 15 minutes
-    - cron: '*/15 * * * *'
+    # Run every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -35,13 +35,17 @@ jobs:
       run: |
         echo "Checking TDS health at $(TZ=America/Denver date)"
         
-        # Test the TDS endpoint with timeout
-        if curl --fail --connect-timeout 6 --max-time 10 -s https://tds.gdex.ucar.edu/thredds > /dev/null; then
+        # Try curl and capture output and error
+        CURL_OUTPUT=$(mktemp)
+        if curl --fail-with-body --connect-timeout 20 --max-time 60 --retry 5 --retry-delay 60 https://tds.gdex.ucar.edu/thredds > $CURL_OUTPUT 2>&1; then
           echo "status=healthy" >> $GITHUB_OUTPUT
           echo "TDS is healthy at $(TZ=America/Denver date)"
         else
           echo "status=unhealthy" >> $GITHUB_OUTPUT
           echo "TDS is unhealthy at $(TZ=America/Denver date)"
+          echo "---- CURL ERROR OUTPUT ----"
+          cat $CURL_OUTPUT
+          echo "--------------------------"
         fi
 
     - name: Set Timestamp
@@ -103,3 +107,9 @@ jobs:
       if: steps.health-check.outputs.status == 'healthy'
       run: |
         echo "TDS is healthy - no action needed at $(TZ=America/Denver date)"
+
+    - name: Failed the Action If Unhealthy
+      if: steps.health-check.outputs.status == 'unhealthy'
+      run: |
+        echo "Failing the action because TDS is unhealthy."
+        exit 1
