@@ -33,7 +33,7 @@ webapp:
     cpu: 1
   tdm:
     name: gdex-tdm
-    image: docker.io/potatofever/gdex-tdm:sha-ad26873
+    image: docker.io/potatofever/gdex-tdm:sha-463a6d6
     port: 8080
     memory: 6G
     cpu: 2
