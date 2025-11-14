@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog name="Input Data Repository" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+<catalog name="CESM Input Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
   <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
-  <dataset name="Input Data Repository">
+  <dataset name="CESM Input Data">
     <metadata inherited="true">
       <serviceName>all</serviceName>
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
-      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651077/" xlink:title="NCAR GDEX - Input Data Repository(d651077)" />
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651077/" xlink:title="NCAR GDEX - CESM Input Data(d651077)" />
       <documentation type="summary">This is the collection of input data required for CESM and its component models. </documentation>
       <creator>
         <name vocabulary="DIF">UCAR/NCAR/CGD</name>
