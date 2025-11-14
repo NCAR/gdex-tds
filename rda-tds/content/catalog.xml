@@ -24,8 +24,6 @@
     <catalogRef xlink:href="catalog_d010047.xml" xlink:title="d010047 Hourly WRF-Chem simulation with SMAP soil moisture insertion over the Contiguous U.S. for the period 2015 - 2019" name="" />
     <catalogRef xlink:href="catalog_d010048.xml" xlink:title="d010048 High Resolution Historical and Future Simulations Over Hawaii" name="" />
     <catalogRef xlink:href="catalog_d010049.xml" xlink:title="d010049 Global Ocean Physics Reanalysis" name="" />
-    <catalogRef xlink:href="catalog_d010054.xml" xlink:title="d010054 En-GARD Downscaled Climate Data over the Colorado River Basin" name="" />
-    <catalogRef xlink:href="catalog_d010056.xml" xlink:title="d010056 WHATCHEM Version 2.1" name="" />
     <catalogRef xlink:href="catalog_d010062.xml" xlink:title="d010062 WRF-Chem simulations with and without the SMAP soil moisture retrievals and different levels of dust emissions" name="" />
     <catalogRef xlink:href="catalog_d010065.xml" xlink:title="d010065 Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions" name="" />
     <catalogRef xlink:href="catalog_d010073.xml" xlink:title="d010073 Preindustrial fully coupled CESM2.0.1 (B1850_c201_CTL) for atmospheric river analyses" name="" />
@@ -36,100 +34,29 @@
     <catalogRef xlink:href="catalog_d010080.xml" xlink:title="d010080 20CRv3-WRF - High-resolution WRF climate simulation for southern Alaska using the 20CRv3" name="" />
     <catalogRef xlink:href="catalog_d010081.xml" xlink:title="d010081 WACCMX-SD V2" name="" />
     <catalogRef xlink:href="catalog_d010083.xml" xlink:title="d010083 High-Resolution Climate Simulations Over Alaska - A Community Dataset, Version 2" name="" />
-    <catalogRef xlink:href="catalog_d010091.xml" xlink:title="d010091 ICAR Downscaled Climate Data over the Western United States" name="" />
-    <catalogRef xlink:href="catalog_d010093.xml" xlink:title="d010093 " name="" />
     <catalogRef xlink:href="catalog_d010100.xml" xlink:title="d010100 Conventional Observation Reanalysis Evaluation (CORe)" name="" />
     <catalogRef xlink:href="catalog_d010103.xml" xlink:title="d010103 Result of Assimilating Ground-Based MLT Winds into WACCM" name="" />
     <catalogRef xlink:href="catalog_d010111.xml" xlink:title="d010111 21st Century Hydrologic Projections for Alaska and Hawaii" name="" />
     <catalogRef xlink:href="catalog_d010113.xml" xlink:title="d010113 Runoff Risk V3.0 Hydrometeorological Dataset" name="" />
     <catalogRef xlink:href="catalog_d014619.xml" xlink:title="d014619 Improving representation of stratospheric Polar Vortex in Southern Hemisphere with low-frequency frontal waves" name="" />
-    <catalogRef xlink:href="catalog_d038000.xml" xlink:title="d038000 U.S. AFGWC Three-Dimensional Cloud Analyses for the Globe" name="" />
-    <catalogRef xlink:href="catalog_d067003.xml" xlink:title="d067003 NMC Global Daily Stratospheric Analyses from ATOVS" name="" />
-    <catalogRef xlink:href="catalog_d067004.xml" xlink:title="d067004 NCEP CPC Upper Stratospheric and Lower Mesospheric Analyses" name="" />
-    <catalogRef xlink:href="catalog_d068000.xml" xlink:title="d068000 National Meteorological Center 3-Hourly Eta Model Analyses" name="" />
-    <catalogRef xlink:href="catalog_d070000.xml" xlink:title="d070000 FSL MAPS Analysis Products, 40 km, 3-hourly" name="" />
-    <catalogRef xlink:href="catalog_d082000.xml" xlink:title="d082000 NCEP FNL Operational Model Global Tropospheric Analyses, July 1976 to April 1997" name="" />
-    <catalogRef xlink:href="catalog_d082005.xml" xlink:title="d082005 NMC Global Tropospheric Analyses, CDROM subset, daily January to June 1991" name="" />
-    <catalogRef xlink:href="catalog_d083000.xml" xlink:title="d083000 NCEP FNL Operational Model Global Tropospheric Analyses, April 1997 through June 2007" name="" />
-    <catalogRef xlink:href="catalog_d083001.xml" xlink:title="d083001 NCEP FNL Operational Model Global Surface Analyses" name="" />
     <catalogRef xlink:href="catalog_d083002.xml" xlink:title="d083002 NCEP FNL Operational Model Global Tropospheric Analyses" name="" />
     <catalogRef xlink:href="catalog_d083003.xml" xlink:title="d083003 NCEP GDAS/FNL 0.25 Degree Global Tropospheric Analyses and Forecast Grids" name="" />
-    <catalogRef xlink:href="catalog_d084000.xml" xlink:title="d084000 NMC MRF Global 10 Day Forecasts, daily January 1990 to February 1999" name="" />
     <catalogRef xlink:href="catalog_d084001.xml" xlink:title="d084001 NCEP GFS 0.25 Degree Global Forecast Grids" name="" />
     <catalogRef xlink:href="catalog_d084003.xml" xlink:title="d084003 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive" name="" />
     <catalogRef xlink:href="catalog_d084004.xml" xlink:title="d084004 NCEP GDAS/FNL Surface Flux Grids" name="" />
-    <catalogRef xlink:href="catalog_d084005.xml" xlink:title="d084005 NMC MRF Global Flux Fields, daily 1990Mar-1999Feb" name="" />
     <catalogRef xlink:href="catalog_d084006.xml" xlink:title="d084006 NCEP Global Forecast System (GFS) Analyses and Forecasts" name="" />
-    <catalogRef xlink:href="catalog_d085002.xml" xlink:title="d085002 Monthly Northern Hemisphere 2.5-degree Tropospheric Analyses for 1946-1972" name="" />
-    <catalogRef xlink:href="catalog_d090001.xml" xlink:title="d090001 NCEP/NCAR Global Reanalysis 8-day Forecast Products" name="" />
-    <catalogRef xlink:href="catalog_d090002.xml" xlink:title="d090002 NCEP/NCAR Reanalysis Monthly Mean Subsets (from DS090.0), 1948-continuing" name="" />
     <catalogRef xlink:href="catalog_d091000.xml" xlink:title="d091000 NCEP/DOE Reanalysis 2 (R2)" name="" />
-    <catalogRef xlink:href="catalog_d091001.xml" xlink:title="d091001 NCEP/DOE Reanalysis 2 Monthly Means" name="" />
-    <catalogRef xlink:href="catalog_d092000.xml" xlink:title="d092000 Monthly Reanalysis Comparison Grids" name="" />
     <catalogRef xlink:href="catalog_d093000.xml" xlink:title="d093000 NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010" name="" />
     <catalogRef xlink:href="catalog_d093001.xml" xlink:title="d093001 NCEP Climate Forecast System Reanalysis (CFSR) Selected Hourly Time-Series Products, January 1979 to December 2010" name="" />
     <catalogRef xlink:href="catalog_d093002.xml" xlink:title="d093002 NCEP Climate Forecast System Reanalysis (CFSR) Monthly Products, January 1979 to December 2010" name="" />
     <catalogRef xlink:href="catalog_d094000.xml" xlink:title="d094000 NCEP Climate Forecast System Version 2 (CFSv2) 6-hourly Products" name="" />
     <catalogRef xlink:href="catalog_d094001.xml" xlink:title="d094001 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products" name="" />
     <catalogRef xlink:href="catalog_d094002.xml" xlink:title="d094002 NCEP Climate Forecast System Version 2 (CFSv2) Monthly Products" name="" />
-    <catalogRef xlink:href="catalog_d111000.xml" xlink:title="d111000 ECMWF TOGA Global Advanced Operational Spectral Analysis, daily 1985-2010" name="" />
-    <catalogRef xlink:href="catalog_d111001.xml" xlink:title="d111001 ECMWF TOGA Global Advanced Operational Surface Analysis, daily 1985-2010" name="" />
-    <catalogRef xlink:href="catalog_d111002.xml" xlink:title="d111002 ECMWF TOGA 2.5 degree Global Surface and Upper Air Analyses" name="" />
-    <catalogRef xlink:href="catalog_d111003.xml" xlink:title="d111003 ECMWF TOGA Global Supplementary Fields, 1985-2010" name="" />
-    <catalogRef xlink:href="catalog_d111005.xml" xlink:title="d111005 ECMWF TOGA Global Tropospheric Analyses, monthly from January 1985 to the present (DSS built)" name="" />
-    <catalogRef xlink:href="catalog_d111006.xml" xlink:title="d111006 ECMWF TOGA Global Extension Fields, 1991-2010" name="" />
-    <catalogRef xlink:href="catalog_d112000.xml" xlink:title="d112000 U.S.S.R. Various Global and Hemispheric Analyses, 1880-1985" name="" />
     <catalogRef xlink:href="catalog_d113000.xml" xlink:title="d113000 ECMWF's Operational Model Analysis, starting in 2011" name="" />
     <catalogRef xlink:href="catalog_d113001.xml" xlink:title="d113001 ECMWF IFS CY41r2 High-Resolution Operational Forecasts, staring in 2016 " name="" />
-    <catalogRef xlink:href="catalog_d115000.xml" xlink:title="d115000 ERA-15 Global Surface Reanalysis" name="" />
-    <catalogRef xlink:href="catalog_d115001.xml" xlink:title="d115001 ERA-15 Global Upper Air Analyses" name="" />
-    <catalogRef xlink:href="catalog_d115002.xml" xlink:title="d115002 ERA-15 Supplementary Flux Accumulation Fields" name="" />
-    <catalogRef xlink:href="catalog_d115003.xml" xlink:title="d115003 ERA-15 Model Resolution Global Surface Analysis" name="" />
-    <catalogRef xlink:href="catalog_d115004.xml" xlink:title="d115004 ERA-15 Model Resolution Upper Air Analysis" name="" />
-    <catalogRef xlink:href="catalog_d115005.xml" xlink:title="d115005 ERA-15 Model Resolution Supplementary Flux Accumulation Fields" name="" />
-    <catalogRef xlink:href="catalog_d115006.xml" xlink:title="d115006 ERA-15 Model Resolution Upper Air Moisture Analysis" name="" />
-    <catalogRef xlink:href="catalog_d115007.xml" xlink:title="d115007 ERA-15 2.5 degree Monthly Means of Upper Air Data" name="" />
-    <catalogRef xlink:href="catalog_d117000.xml" xlink:title="d117000 ERA-40 Global Surface and Flux Data" name="" />
-    <catalogRef xlink:href="catalog_d117001.xml" xlink:title="d117001 ERA-40 Global Upper Air Pressure Level Analysis" name="" />
-    <catalogRef xlink:href="catalog_d117002.xml" xlink:title="d117002 ERA-40 Global Upper Air Model Level Analysis" name="" />
-    <catalogRef xlink:href="catalog_d117003.xml" xlink:title="d117003 ERA-40 Isentropic Level Analysis" name="" />
-    <catalogRef xlink:href="catalog_d117004.xml" xlink:title="d117004 ERA-40 Upper Air Analysis on Potential Vorticity Surface" name="" />
-    <catalogRef xlink:href="catalog_d117005.xml" xlink:title="d117005 ERA-40 Chemical Transport Model Results" name="" />
-    <catalogRef xlink:href="catalog_d117006.xml" xlink:title="d117006 ERA-40 Radiative Tendency Fields" name="" />
-    <catalogRef xlink:href="catalog_d117007.xml" xlink:title="d117007 ERA-40 Net Tendency Fields" name="" />
-    <catalogRef xlink:href="catalog_d118000.xml" xlink:title="d118000 ERA-40 2.5 Degree Surface and Flux Data" name="" />
-    <catalogRef xlink:href="catalog_d118001.xml" xlink:title="d118001 ERA-40 2.5 Degree Upper Air Pressure Level Analysis Data" name="" />
-    <catalogRef xlink:href="catalog_d119000.xml" xlink:title="d119000 ERA-40 Monthly Means of Surface and Flux Fields" name="" />
-    <catalogRef xlink:href="catalog_d119001.xml" xlink:title="d119001 ERA-40 Monthly Means of Upper Air Pressure Level Analysis" name="" />
-    <catalogRef xlink:href="catalog_d119002.xml" xlink:title="d119002 ERA-40 Monthly Means of Upper Air Model Level Analysis" name="" />
-    <catalogRef xlink:href="catalog_d119003.xml" xlink:title="d119003 ERA-40 Monthly Means of Isentropic Level Analysis Data" name="" />
-    <catalogRef xlink:href="catalog_d119004.xml" xlink:title="d119004 ERA-40 Monthly Means of Upper Air Potential Vorticity Surface Data" name="" />
-    <catalogRef xlink:href="catalog_d119005.xml" xlink:title="d119005 ERA-40 Model Level Variances and Covariances" name="" />
-    <catalogRef xlink:href="catalog_d120000.xml" xlink:title="d120000 ERA-40 Monthly Means of 2.5 Degree Surface and Flux Analysis Data" name="" />
-    <catalogRef xlink:href="catalog_d120001.xml" xlink:title="d120001 ERA-40 Monthly Means of 2.5 Degree Upper Air Pressure Level Analysis" name="" />
-    <catalogRef xlink:href="catalog_d121000.xml" xlink:title="d121000 ERA-40 Surface and Flux Forecast Fields" name="" />
-    <catalogRef xlink:href="catalog_d121001.xml" xlink:title="d121001 ERA-40 Pressure Level Forecasts" name="" />
-    <catalogRef xlink:href="catalog_d121002.xml" xlink:title="d121002 ERA-40 Model Level FOrecasts" name="" />
-    <catalogRef xlink:href="catalog_d122000.xml" xlink:title="d122000 ERA-40 Monthly Means of Surface and Flux Forecast Data" name="" />
-    <catalogRef xlink:href="catalog_d122001.xml" xlink:title="d122001 ERA-40 Monthly Means of Upper Air Pressure Level Forecasts" name="" />
-    <catalogRef xlink:href="catalog_d122002.xml" xlink:title="d122002 ERA-40 Monthly Means of Model Level Forecasts" name="" />
-    <catalogRef xlink:href="catalog_d123000.xml" xlink:title="d123000 ERA-40 1.5 Degree Wave Model Analysis" name="" />
-    <catalogRef xlink:href="catalog_d123001.xml" xlink:title="d123001 ERA-40 1.5 degree Wave Model Forecasts" name="" />
-    <catalogRef xlink:href="catalog_d124000.xml" xlink:title="d124000 ERA40 T85 6-hourly Surface Analysis and Surface Forecast Fields, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d124001.xml" xlink:title="d124001 ERA40 T85 Analysis Fields on Pressure Surfaces, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d124002.xml" xlink:title="d124002 ERA40 T85 Analysis Fields on Model Levels, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d126000.xml" xlink:title="d126000 ERA40 T85 Monthly Mean Surface Analysis and Surface Forecast Fields, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d126001.xml" xlink:title="d126001 ERA40 T85 Monthly Mean Analysis Fields on Pressure Surfaces, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d126002.xml" xlink:title="d126002 ERA40 T85 Monthly Mean Analysis Fields on Model Levels, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d127000.xml" xlink:title="d127000 ERA40 T106 6-hourly Surface Analysis and Surface Forecast Fields, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d127001.xml" xlink:title="d127001 ERA40 T106 Analysis Fields on Pressure Surfaces, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d127002.xml" xlink:title="d127002 ERA40 T106 Analysis Fields on Model Levels, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d129001.xml" xlink:title="d129001 ERA40 T106 Monthly Mean Analysis Fields on Pressure Surfaces, created at NCAR" name="" />
-    <catalogRef xlink:href="catalog_d131001.xml" xlink:title="d131001 NOAA CIRES Twentieth Century Global Reanalysis Version 2" name="" />
     <catalogRef xlink:href="catalog_d131002.xml" xlink:title="d131002 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
     <catalogRef xlink:href="catalog_d131003.xml" xlink:title="d131003 NOAA/CIRES Twentieth Century Global Reanalysis Version 3" name="" />
     <catalogRef xlink:href="catalog_d193000.xml" xlink:title="d193000 Global Hourly 0.5-degree Land Surface Air Temperature Datasets" name="" />
-    <catalogRef xlink:href="catalog_d195002.xml" xlink:title="d195002 Various Daily 2.5-degree Tropospheric Analysis Time Series in GRIB Format, 1946-1999" name="" />
     <catalogRef xlink:href="catalog_d197000.xml" xlink:title="d197000 Great Plains Low-Level Jet Occurrence and Upper-Level Coupling in CERA-20C" name="" />
     <catalogRef xlink:href="catalog_d197009.xml" xlink:title="d197009 Stomatal Conductance Constant CO2 Land-Historical Experiment" name="" />
     <catalogRef xlink:href="catalog_d198000.xml" xlink:title="d198000 The GLACE Hydrology Experiment" name="" />
@@ -138,14 +65,9 @@
     <catalogRef xlink:href="catalog_d218000.xml" xlink:title="d218000 Climate Analysis Center Base Period Climate Diagnostics Data Base" name="" />
     <catalogRef xlink:href="catalog_d218001.xml" xlink:title="d218001 Climate Analysis Center 10-Year Climate Diagnostics Data Base" name="" />
     <catalogRef xlink:href="catalog_d220000.xml" xlink:title="d220000 Monthly Climatological Grid Data for Levels Aloft" name="" />
-    <catalogRef xlink:href="catalog_d230000.xml" xlink:title="d230000 FSU/COAPS Pacific and Indian Ocean Monthly Pseudo-Wind Stress" name="" />
-    <catalogRef xlink:href="catalog_d232002.xml" xlink:title="d232002 Scatterometer Climatology of Ocean Winds (SCOW), by Risien et al." name="" />
     <catalogRef xlink:href="catalog_d232003.xml" xlink:title="d232003 Wave and Anemometer-based Sea Surface Wind (WASWind)" name="" />
     <catalogRef xlink:href="catalog_d235000.xml" xlink:title="d235000 Northern Hemisphere Surface Pressure and Precipitation Grids from the U.S.S.R." name="" />
     <catalogRef xlink:href="catalog_d237000.xml" xlink:title="d237000 Terrestrial Water Budget Data Archive" name="" />
-    <catalogRef xlink:href="catalog_d256004.xml" xlink:title="d256004 WHOI Upper Ocean Observations for Air-Sea Flux Estimates" name="" />
-    <catalogRef xlink:href="catalog_d260001.xml" xlink:title="d260001 Objectively Analyzed Air-Sea Fluxes (OAFlux) For Global Oceans, By Lisan Yu et al." name="" />
-    <catalogRef xlink:href="catalog_d260002.xml" xlink:title="d260002 CORE.2 Global Air-Sea Flux Dataset" name="" />
     <catalogRef xlink:href="catalog_d260003.xml" xlink:title="d260003 NOCS Surface Flux Dataset v2.0" name="" />
     <catalogRef xlink:href="catalog_d260004.xml" xlink:title="d260004 SAMOS Air-Sea Fluxes: 2005-2014" name="" />
     <catalogRef xlink:href="catalog_d260005.xml" xlink:title="d260005 ICOADS MarineFlux Air-sea Fluxes" name="" />
@@ -153,9 +75,7 @@
     <catalogRef xlink:href="catalog_d262000.xml" xlink:title="d262000 Coordinated Ocean-ice Reference Experiments - Phase II" name="" />
     <catalogRef xlink:href="catalog_d267000.xml" xlink:title="d267000 0.1-degree Parallel Ocean Program (POP) output for Eastern Equatorial Indian Ocean and Western Indonesia" name="" />
     <catalogRef xlink:href="catalog_d273000.xml" xlink:title="d273000 Monthly Marine Air Temperature and Barometric Pressure, January 1946 to May 1978" name="" />
-    <catalogRef xlink:href="catalog_d276000.xml" xlink:title="d276000 A Quality-Controlled Sea Surface Temperature Analysis" name="" />
     <catalogRef xlink:href="catalog_d277000.xml" xlink:title="d277000 NOAA NCEP Optimum Interpolation Sea Surface Temperature Analysis" name="" />
-    <catalogRef xlink:href="catalog_d277003.xml" xlink:title="d277003 Hadley Centre Global Sea Ice and Sea Surface Temperature (HadISST)" name="" />
     <catalogRef xlink:href="catalog_d277006.xml" xlink:title="d277006 NCEP Global Ocean Data Assimilation System (GODAS)" name="" />
     <catalogRef xlink:href="catalog_d277007.xml" xlink:title="d277007 NOAA Optimum Interpolation 1/4 Degree Daily Sea Surface Temperature Analysis" name="" />
     <catalogRef xlink:href="catalog_d277008.xml" xlink:title="d277008 RSS Optimally Interpolated Microwave and Infrared Daily Sea Surface Temperature Analysis" name="" />
@@ -166,8 +86,6 @@
     <catalogRef xlink:href="catalog_d298000.xml" xlink:title="d298000 Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" name=" Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" />
     <catalogRef xlink:href="catalog_d299000.xml" xlink:title="d299000 Dai Global Palmer Drought Severity Index (PDSI)" name="Dai Global Palmer Drought Severity Index (PDSI)" />
     <catalogRef xlink:href="catalog_d300000.xml" xlink:title="d300000 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" />
-    <catalogRef xlink:href="catalog_d302002.xml" xlink:title="d302002 Summer MONEX Onset Phase Tropospheric Wind Analyses" name="" />
-    <catalogRef xlink:href="catalog_d302004.xml" xlink:title="d302004 Precipitation Analyses for the MONEX Region" name="" />
     <catalogRef xlink:href="catalog_d312006.xml" xlink:title="d312006 Land cover data for MEGAN model" name="" />
     <catalogRef xlink:href="catalog_d312009.xml" xlink:title="d312009 Fire Inventory from NCAR version 2 Fire Emission" />
     <catalogRef xlink:href="catalog_d313000.xml" xlink:title="d313000 GEOS5 Global Atmosphere Forcing Data" />
@@ -187,22 +105,13 @@
     <catalogRef xlink:href="catalog_d316006.xml" xlink:title="d316006 CESM Large Ensemble with Different Pinatubo Forcings" name="" />
     <catalogRef xlink:href="catalog_d316009.xml" xlink:title="d316009 NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment" name="NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment" />
     <catalogRef xlink:href="catalog_d316015.xml" xlink:title="d316015 North American Regional Climate Change Assessment Program Data" name="" />
-    <catalogRef xlink:href="catalog_d317000.xml" xlink:title="d317000 The North American Regional Climate Change Assessment Program (NARCCAP)" name="" />
     <catalogRef xlink:href="catalog_d317001.xml" xlink:title="d317001 United Kingdom Hadley Centre Climate Model Version 3 Output" name="" />
-    <catalogRef xlink:href="catalog_d319001.xml" xlink:title="d319001 Climate Model Products from the First-generation Global Coupled Model at the Canadian Centre for Climate Modelling and Analysis" name="" />
-    <catalogRef xlink:href="catalog_d319002.xml" xlink:title="d319002 Climate Model Products from the United Kingdom's Hadley Centre for Climate Prediction and Research (HCCPR)" name="" />
-    <catalogRef xlink:href="catalog_d319003.xml" xlink:title="d319003 Climate Model Products from Germany's Deutches Klimarechenzentrum" name="" />
-    <catalogRef xlink:href="catalog_d320000.xml" xlink:title="d320000 ECMWF TOGA COARE Analysis and Forecasts" name="" />
-    <catalogRef xlink:href="catalog_d330000.xml" xlink:title="d330000 Historical THORPEX Interactive Grand Global Ensemble (TIGGE) Data Archive" name="" />
-    <catalogRef xlink:href="catalog_d330002.xml" xlink:title="d330002 Near Real-time Online THORPEX Interactive Grand Global Ensemble (TIGGE) Data" name="" />
     <catalogRef xlink:href="catalog_d335000.xml" xlink:title="d335000 Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" name="Historical Unidata Internet Data Distribution (IDD) Gridded Model Data" />
     <catalogRef xlink:href="catalog_d336000.xml" xlink:title="d336000 Historical Unidata Internet Data Distribution (IDD) Global Observational Data, May 2003 - current" name="" />
     <catalogRef xlink:href="catalog_d340000.xml" xlink:title="d340000 The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS" />
     <catalogRef xlink:href="catalog_d342000.xml" xlink:title="d342000 NCAR/MOPITT Reanalysis" />
     <catalogRef xlink:href="catalog_d345000.xml" xlink:title="d345000 CAM6 Data Assimilation Research Testbed (DART) Reanalysis" />
-    <catalogRef xlink:href="catalog_d359000.xml" xlink:title="d359000 NOAA Profiler Network (NPN) Observations, 1992May-continuing" name="" />
     <catalogRef xlink:href="catalog_d387000.xml" xlink:title="d387000 AmeriFlux Gap-Filled Data from Selected Sites" name="" />
-    <catalogRef xlink:href="catalog_d394001.xml" xlink:title="d394001 Brazilian Air Force Rawinsondes and Pibals, January 1950-November 1986" name="" />
     <catalogRef xlink:href="catalog_d435000.xml" xlink:title="d435000 Monthly Mean Rawinsondes, from NCEP/NCAR Global Reanalysis, 1948-continuing" name="" />
     <catalogRef xlink:href="catalog_d463004.xml" xlink:title="d463004 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
     <catalogRef xlink:href="catalog_d473002.xml" xlink:title="d473002 Antarctic Mesoscale Prediction System (AMPS)" name="" />
@@ -214,32 +123,23 @@
     <catalogRef xlink:href="catalog_d502001.xml" xlink:title="d502001 NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses Version 0.x" name=" NOAA CPC Morphing Technique (CMORPH) Global Precipitation Analyses Version 0.x" />
     <catalogRef xlink:href="catalog_d502002.xml" xlink:title="d502002 NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High Resolution Global Precipitation Estimates, Version 1" name="" />
     <catalogRef xlink:href="catalog_d506000.xml" xlink:title="d506000 U.S. Surface Data Keyed from the Climate Database Modernization Program (CDMP)" name="" />
-    <catalogRef xlink:href="catalog_d507005.xml" xlink:title="d507005 NCEP/CPC Four Kilometer Precipitation Set, Gauge and Radar" name="" />
     <catalogRef xlink:href="catalog_d510004.xml" xlink:title="d510004 NCDC TD9727 U.S. Summary of Day, 1880-1979" name="" />
     <catalogRef xlink:href="catalog_d510006.xml" xlink:title="d510006 Daily Minimum and Maximum Temperature and Precipitation for Long Term Stations from the U.S. COOP Data" name="" />
     <catalogRef xlink:href="catalog_d523000.xml" xlink:title="d523000 Australia Summary of Day and Surface Observations" name="" />
     <catalogRef xlink:href="catalog_d526000.xml" xlink:title="d526000 Daily Gridded North American Snowfall" />
-    <catalogRef xlink:href="catalog_d530001.xml" xlink:title="d530001 FSU COAPS Research Vessel Data" name="" />
-    <catalogRef xlink:href="catalog_d540009.xml" xlink:title="d540009 Ocean-atmosphere heat, momentum and freshwater flux, climatology, by Josey et al." name="" />
     <catalogRef xlink:href="catalog_d541001.xml" xlink:title="d541001 Atlas of Surface Marine Data, climatology and monthly, by Da Silva and Young" name="" />
     <catalogRef xlink:href="catalog_d548000.xml" xlink:title="d548000 International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3, Individual Observations" name="" />
     <catalogRef xlink:href="catalog_d548003.xml" xlink:title="d548003 International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3.0.2-Daily" name="" />
     <catalogRef xlink:href="catalog_d551000.xml" xlink:title="d551000 Dai and Trenberth Global River Flow and Continental Discharge Dataset" name="" />
     <catalogRef xlink:href="catalog_d559000.xml" xlink:title="d559000 Four-kilometer long-term regional hydroclimate reanalysis over the conterminous United States (CONUS)" />
-    <catalogRef xlink:href="catalog_d579000.xml" xlink:title="d579000 Jones' Mongolia Summary of Month, 1936-1983" name="" />
     <catalogRef xlink:href="catalog_d580005.xml" xlink:title="d580005 COLA SP CCSM4 Model Output" name="" />
     <catalogRef xlink:href="catalog_d580007.xml" xlink:title="d580007 DCMIP 2016 Datasets" name="" />
     <catalogRef xlink:href="catalog_d583100.xml" xlink:title="d583100 POGA and SPCZ experiments using CAM5" name="" />
     <catalogRef xlink:href="catalog_d583101.xml" xlink:title="d583101 MPD OSSE data" name="" />
-    <catalogRef xlink:href="catalog_d583102.xml" xlink:title="d583102 CESM2 single forcing large ensemble description paper" name="" />
-    <catalogRef xlink:href="catalog_d583103.xml" xlink:title="d583103 MPAS-A pseudo-global warming (PGW) experiment with convection-permitting resolution and regional configuration using the Model for Prediction Across Scales (MPAS) version 8.0.1" name="" />
-    <catalogRef xlink:href="catalog_d583104.xml" xlink:title="d583104 Middle East AOD550 Forecasts and Observations in 2018 and 2019" name="" />
     <catalogRef xlink:href="catalog_d583105.xml" xlink:title="d583105 Machine learning-based detection of weather fronts and associated extreme precipitation in CESM1.3" name="" />
     <catalogRef xlink:href="catalog_d583106.xml" xlink:title="d583106 WACCM Specified Chemistry simulations with the spectral element NE120 F2000 July" name="" />
     <catalogRef xlink:href="catalog_d583107.xml" xlink:title="d583107 CESM/CAM-chem-SE (MUSICAv0) Data for 2013 Aircraft Evaluation" name="" />
-    <catalogRef xlink:href="catalog_d583108.xml" xlink:title="d583108 WRF Large-Eddy Simulation Data from Realtime Runs Used to Support UAS Operations during LAPSE-RATE" name="" />
     <catalogRef xlink:href="catalog_d583109.xml" xlink:title="d583109 Whole Atmosphere Climate Change: Dependence on Solar Activity" name="" />
-    <catalogRef xlink:href="catalog_d583111.xml" xlink:title="d583111 WRF-Chem Simulations of Dust Storms With and Without Inserting SMAP Soil Moisture Retrievals" name="" />
     <catalogRef xlink:href="catalog_d583112.xml" xlink:title="d583112 Selected Outputs of NCAR Thermosphere-Ionosphere-Electrodynamics General Circulation Model (TIE-GCM) v2.0 Simulation of the 2017 September 7 Event" name="" />
     <catalogRef xlink:href="catalog_d583113.xml" xlink:title="d583113 Archived Data for &quot;Simulating Observations of Southern Ocean Clouds and Implications for Climate&quot;" name="" />
     <catalogRef xlink:href="catalog_d583114.xml" xlink:title="d583114 ROMS simulations of river-sourced coastal ocean tracer pathways following Hurricane Florence and synthetic scenarios" name="" />
@@ -247,17 +147,13 @@
     <catalogRef xlink:href="catalog_d583116.xml" xlink:title="d583116 Simulation data of the DECK, CMIP6 historical, and PMIP4 LGM simulations using the Paleoclimate-Calibrated CESM2" name="" />
     <catalogRef xlink:href="catalog_d583117.xml" xlink:title="d583117 Datasets used in Bacmeister et al,  JAMES (2020). &quot; CO2 increase experiments ...&quot;" name="" />
     <catalogRef xlink:href="catalog_d583118.xml" xlink:title="d583118 1/20 degree regional simulation of the Eastern Tropical Pacific Ocean Cold Tongue" name="" />
-    <catalogRef xlink:href="catalog_d583120.xml" xlink:title="d583120 WHOI WACCM large ensemble" name="" />
     <catalogRef xlink:href="catalog_d583121.xml" xlink:title="d583121 GLENS (CESM) Atmospheric River Catalogues" name="" />
-    <catalogRef xlink:href="catalog_d583122.xml" xlink:title="d583122 Climate Change in the Thermosphere and Ionosphere from the Early Twentieth Century to Early Twenty-First Century Simulated by the Whole Atmosphere Community Climate Model - eXtended" name="" />
     <catalogRef xlink:href="catalog_d583123.xml" xlink:title="d583123 CLM5.0 TRENDY Simulations used for the 2020 Global Carbon Budget" name="" />
     <catalogRef xlink:href="catalog_d583124.xml" xlink:title="d583124 Data for Exploring the Relative Contribution of the MJO and ENSO to Mid-latitude Subseasonal Predictability" name="" />
     <catalogRef xlink:href="catalog_d583125.xml" xlink:title="d583125 LIT Thermosphere Control of Ion Outflow Results" name="" />
     <catalogRef xlink:href="catalog_d583126.xml" xlink:title="d583126 Planetary-boundary and urban-canopy layer modeling study of the landfall of Hurricane Irma (2017) in Miami" name="" />
-    <catalogRef xlink:href="catalog_d583127.xml" xlink:title="d583127 WACCM-X Simulations for November 2020 to December 2021" name="" />
     <catalogRef xlink:href="catalog_d583128.xml" xlink:title="d583128 MPAS-A moisture-sensitivity simulations with convection-permitting resolution and regional configuration using the Model for Prediction Across Scales (MPAS) version 7.3" name="" />
     <catalogRef xlink:href="catalog_d583129.xml" xlink:title="d583129 CONUS air quality reanalysis dataset (2005-2018)" name="" />
-    <catalogRef xlink:href="catalog_d583130.xml" xlink:title="d583130 Model code and datasets used in &quot;A potential vorticity diagnostics package for MPAS-Atmosphere&quot;" name="" />
     <catalogRef xlink:href="catalog_d583131.xml" xlink:title="d583131 CESM ensemble consistency test atmospheric data" name="" />
     <catalogRef xlink:href="catalog_d583132.xml" xlink:title="d583132 CESM-cocco: Sensitivity Experiments of Coccolithophores to Changing Atmospheric CO2 using CESM" name="" />
     <catalogRef xlink:href="catalog_d583133.xml" xlink:title="d583133 Fuel Moisture Content (Live and Dead) over the Conterminous United States" name="" />
@@ -277,29 +173,20 @@
     <catalogRef xlink:href="catalog_d583147.xml" xlink:title="d583147 A Statistical Analysis of Lossily Compressed CESM-LENS Data" name="" />
     <catalogRef xlink:href="catalog_d583149.xml" xlink:title="d583149 CESM2 Sea Ice thermodynamics sensitivity experiments" name="" />
     <catalogRef xlink:href="catalog_d583150.xml" xlink:title="d583150 MPAS-A aquaplanet simulation with convection-permitting resolution and off-equatorial SST maximum" name="" />
-    <catalogRef xlink:href="catalog_d583151.xml" xlink:title="d583151 Using Wind Setdown and Storm Surge on Lake Erie to Calibrate the Air-Sea Drag Coefficient" name="" />
-    <catalogRef xlink:href="catalog_d583152.xml" xlink:title="d583152 Directional Analysis of the Storm Surge from Hurricane Sandy 2012" name="" />
     <catalogRef xlink:href="catalog_d583153.xml" xlink:title="d583153 Deterministic gridded (250 m) daily rainfall and temperature for the Hawaiian Islands (1990-2014)" name="" />
     <catalogRef xlink:href="catalog_d583154.xml" xlink:title="d583154 Ensemble gridded (1 km) daily rainfall and temperature for the Hawaiian Islands (1990-2014)" name="" />
     <catalogRef xlink:href="catalog_d601000.xml" xlink:title="d601000 NCAR Nested Regional Climate Model (NRCM)" name=" NCAR Nested Regional Climate Model (NRCM)" />
     <catalogRef xlink:href="catalog_d602001.xml" xlink:title="d602001 Line Island Experiment Aircraft Observations" name="" />
     <catalogRef xlink:href="catalog_d604000.xml" xlink:title="d604000 NCAR Global Climate Four-Dimensional Data Assimilation (CFDDA) Hourly 40 km Reanalysis" name="" />
     <catalogRef xlink:href="catalog_d606001.xml" xlink:title="d606001 TOGA COARE Air-Sea Fluxes and Sea-Surface Data" name="" />
-    <catalogRef xlink:href="catalog_d607000.xml" xlink:title="d607000 NCEP 51-year Hydrological Reanalysis" name="" />
     <catalogRef xlink:href="catalog_d608000.xml" xlink:title="d608000 NCEP North American Regional Reanalysis (NARR)" name="" />
-    <catalogRef xlink:href="catalog_d609000.xml" xlink:title="d609000 NCEP North American Mesoscale (NAM) 12 km Analysis" name="" />
-    <catalogRef xlink:href="catalog_d609001.xml" xlink:title="d609001 GCIP FSL MAPS MORDS and MOLTS data, hourly." name="" />
     <catalogRef xlink:href="catalog_d609002.xml" xlink:title="d609002 GCIP NCEP Eta model output" name="" />
-    <catalogRef xlink:href="catalog_d609003.xml" xlink:title="d609003 GCIP Canadian Meteorological Centre (CMC) GEM model output," name="" />
     <catalogRef xlink:href="catalog_d612000.xml" xlink:title="d612000 High Resolution WRF Simulations of the Current and Future Climate of North America" name="" />
     <catalogRef xlink:href="catalog_d612005.xml" xlink:title="d612005 CONUS (Continental U.S.) II High Resolution Present and Future Climate Simulation" name="" />
     <catalogRef xlink:href="catalog_d613000.xml" xlink:title="d613000 Ensemble Dressing of North American Land Data Assimilation version 2 (EDN2)" name="" />
     <catalogRef xlink:href="catalog_d614000.xml" xlink:title="d614000 Multi-decadal historical regional hydroclimate simulation with two mid 21st century Pseudo-Global Warming futures over Alaska and the Yukon at 4 km resolution" name="" />
-    <catalogRef xlink:href="catalog_d615000.xml" xlink:title="d615000 TWERLE Southern Hemisphere Drifting Balloon Data" name="" />
     <catalogRef xlink:href="catalog_d616000.xml" xlink:title="d616000 Multi-decadal Convection-permitting Simulation of Current Climate over South America using WRF" name="" />
     <catalogRef xlink:href="catalog_d619000.xml" xlink:title="d619000 GARD-LENS: A downscaled large ensemble dataset for understanding the future climate and its uncertainties" name="" />
-    <catalogRef xlink:href="catalog_d621000.xml" xlink:title="d621000 ECMWF Joint Observing System Simulation Experiment (OSSE) Nature Run" name="" />
-    <catalogRef xlink:href="catalog_d625000.xml" xlink:title="d625000 Japanese 25-year Reanalysis Project" name="" />
     <catalogRef xlink:href="catalog_d625001.xml" xlink:title="d625001 Japanese 25-year Reanalysis Project, Monthly Means" name="" />
     <catalogRef xlink:href="catalog_d626000.xml" xlink:title="d626000 ERA-20C Project (ECMWF Atmospheric Reanalysis of the 20th Century)" name="" />
     <catalogRef xlink:href="catalog_d627000.xml" xlink:title="d627000 ERA-Interim Project" name="" />
@@ -311,21 +198,14 @@
     <catalogRef xlink:href="catalog_d628003.xml" xlink:title="d628003 JRA-55C: Monthly Means and Variances" name="" />
     <catalogRef xlink:href="catalog_d628004.xml" xlink:title="d628004 JRA-55AMIP: The Japanese 55-year Reanalysis AMIP-type Simulation" name="" />
     <catalogRef xlink:href="catalog_d628005.xml" xlink:title="d628005 JRA-55AMIP: Monthly Means and Variances Including Diurnal Statistics" name="" />
-    <catalogRef xlink:href="catalog_d628006.xml" xlink:title="d628006 JRA-55: Japanese 55-year Reanalysis, Daily and Monthly Climatologies, 1991-2020" name="" />
-    <catalogRef xlink:href="catalog_d628008.xml" xlink:title="d628008 JRA-55: Japanese 55-year Reanalysis, Near Real-Time Data" name="" />
-    <catalogRef xlink:href="catalog_d628009.xml" xlink:title="d628009 JRA-55: Japanese 55-year Reanalysis, Near Real-Time Data -- Monthly Means and Variances" name="" />
-    <catalogRef xlink:href="catalog_d629000.xml" xlink:title="d629000 WCRP and WWRP THORPEX YOTC (Year of Tropical Convection) Project" name="" />
     <catalogRef xlink:href="catalog_d629001.xml" xlink:title="d629001 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Surface Analysis and Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_d629002.xml" xlink:title="d629002 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Pressure Level Analysis Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_d629003.xml" xlink:title="d629003 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
-    <catalogRef xlink:href="catalog_d629004.xml" xlink:title="d629004 WCRP and WWRP THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 6-Hourly Model Level Analysis Time Series, Transformed to a Regular 1600 by 800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_d629005.xml" xlink:title="d629005 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Surface Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid" name="" />
     <catalogRef xlink:href="catalog_d629006.xml" xlink:title="d629006 WCRP and WWRP-THORPEX YOTC (Year of Tropical Convection) Project, Single Parameter 3-Hourly Pressure Level Forecast Time Series, Transformed to a Regular 1600x800 (N400) Gaussian Grid, Dynamical Parameters Only" name="" />
-    <catalogRef xlink:href="catalog_d630000.xml" xlink:title="d630000 ERA5 Reanalysis" name="" />
     <catalogRef xlink:href="catalog_d630001.xml" xlink:title="d630001 ERA5 Reanalysis Monthly Means" name="" />
     <catalogRef xlink:href="catalog_d631000.xml" xlink:title="d631000 Arctic System Reanalysis (ASR) Project" name="Arctic System Reanalysis (ASR) Project" />
     <catalogRef xlink:href="catalog_d631001.xml" xlink:title="d631001 Arctic System Reanalysis (ASR) version 2" name="Arctic System Reanalysis (ASR) version 2" />
-    <catalogRef xlink:href="catalog_d631004.xml" xlink:title="d631004 Arctic Systems Reanalysis Model Output Data" name="" />
     <catalogRef xlink:href="catalog_d633000.xml" xlink:title="d633000 ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid)" name="" />
     <catalogRef xlink:href="catalog_d633001.xml" xlink:title="d633001 ERA5 Reanalysis (Monthly Mean 0.25 Degree Latitude-Longitude Grid)" name="" />
     <catalogRef xlink:href="catalog_d633002.xml" xlink:title="d633002 ERA5.1: Corrections to ERA5 Stratospheric Temperature 2000-2006" name="" />
@@ -334,11 +214,8 @@
     <catalogRef xlink:href="catalog_d633005.xml" xlink:title="d633005 ERA5 monthly mean back extension 1950-1978 (Preliminary version)" name="" />
     <catalogRef xlink:href="catalog_d633006.xml" xlink:title="d633006 ERA5 Reanalysis Model Level Data" name="" />
     <catalogRef xlink:href="catalog_d640000.xml" xlink:title="d640000 Japanese Reanalysis for Three Quarters of a Century (JRA-3Q)" name="" />
-    <catalogRef xlink:href="catalog_d640001.xml" xlink:title="d640001 Near Real-Time Japanese Reanalysis for Three Quarters of a Century (JRA-3Q)" name="" />
     <catalogRef xlink:href="catalog_d640002.xml" xlink:title="d640002 Japanese Reanalysis for Three Quarters of a Century (JRA-3Q) Monthly Statistics" name="" />
-    <catalogRef xlink:href="catalog_d640003.xml" xlink:title="d640003 Near real-time monthly mean Japanese Reanalysis for Three Quarters of a Century (JRA-3Q)" name="" />
     <catalogRef xlink:href="catalog_d640004.xml" xlink:title="d640004 Japanese Reanalysis for Three Quarters of a Century (JRA-3Q) Diurnal Statistics" name="" />
-    <catalogRef xlink:href="catalog_d640005.xml" xlink:title="d640005 Near real-time monthly diurnal Japanese Reanalysis for Three Quarters of a Century (JRA-3Q)" name="" />
     <catalogRef xlink:href="catalog_d640006.xml" xlink:title="d640006 Japanese Reanalysis for Three Quarters of a Century - COBE (JRA-3Q-COBE)" name="" />
     <catalogRef xlink:href="catalog_d645000.xml" xlink:title="d645000 CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry" name="" />
     <catalogRef xlink:href="catalog_d650000.xml" xlink:title="d650000 SODA Project: SODA3 Ensemble Means and Standard Deviations" name="SODA Project: SODA3 Ensemble Means and Standard Deviations" />
@@ -391,7 +268,6 @@
     <catalogRef xlink:href="catalog_d651053.xml" xlink:title="d651053 CESM1 Fixed Ozone Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651055.xml" xlink:title="d651055 CESM2 Single Forcing Large Ensemble Project" name="" />
     <catalogRef xlink:href="catalog_d651056.xml" xlink:title="d651056 CESM2 Large Ensemble" name="" />
-    <catalogRef xlink:href="catalog_d651057.xml" xlink:title="d651057 CAM7 Vertical Resolution" name="" />
     <catalogRef xlink:href="catalog_d651059.xml" xlink:title="d651059 ARISE-SAI-1.5" name="" />
     <catalogRef xlink:href="catalog_d651060.xml" xlink:title="d651060 S2S Hindcasts" name="" />
     <catalogRef xlink:href="catalog_d651061.xml" xlink:title="d651061 S2S Hindcast MJO Cases" name="" />
@@ -405,12 +281,10 @@
     <catalogRef xlink:href="catalog_d651072.xml" xlink:title="d651072 Neverworld2" name="" />
     <catalogRef xlink:href="catalog_d651073.xml" xlink:title="d651073 CESM2 SSP2-4.5 Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651076.xml" xlink:title="d651076 CESM2.2 CAM6 PPE" name="" />
-    <catalogRef xlink:href="catalog_d651077.xml" xlink:title="d651077 Input Data Repository" name="" />
+    <catalogRef xlink:href="catalog_d651077.xml" xlink:title="d651077 CESM Input Data" name="" />
     <catalogRef xlink:href="catalog_d651079.xml" xlink:title="d651079 CESM2 Mechanically Decoupled" name="" />
     <catalogRef xlink:href="catalog_d682000.xml" xlink:title="d682000 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
     <catalogRef xlink:href="catalog_d682003.xml" xlink:title="d682003 Hemispheric and regional monthly average carbon monoxide from satellite instruments" name="Hemispheric and regional monthly average carbon monoxide from satellite instruments" />
-    <catalogRef xlink:href="catalog_d723000.xml" xlink:title="d723000 Atmospheric Profiles from COSMIC Occultation Data" name="" />
-    <catalogRef xlink:href="catalog_d728001.xml" xlink:title="d728001 CPC Merged Analysis of Precipitation (CMAP)" name="" />
     <catalogRef xlink:href="catalog_d728002.xml" xlink:title="d728002 GPCP Version 2.2 Combined Precipitation Data Set" name="GPCP Version 2.2 Combined Precipitation Data Set" />
     <catalogRef xlink:href="catalog_d728004.xml" xlink:title="d728004 GPCP Version 2.3 Monthly Analysis Product" name="" />
     <catalogRef xlink:href="catalog_d728005.xml" xlink:title="d728005 GPCP Version 1.3 One-Degree Daily Precipitation Data Set" name="" />
@@ -420,14 +294,8 @@
     <catalogRef xlink:href="catalog_d728009.xml" xlink:title="d728009 GPCP Version 3.2 Daily Satellite-Gauge (SG) Combined Precipitation Data Set" name="" />
     <catalogRef xlink:href="catalog_d731000.xml" xlink:title="d731000 GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07" name="GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07" />
     <catalogRef xlink:href="catalog_d734000.xml" xlink:title="d734000 GPM IMERG Final Precipitation L3 1 day 0.1 degree x 0.1 degree V07" name="" />
-    <catalogRef xlink:href="catalog_d736000.xml" xlink:title="d736000 GPM IMERG Final Precipitation L3 1 month 0.1 degree x 0.1 degree V07" name="" />
     <catalogRef xlink:href="catalog_d741005.xml" xlink:title="d741005 Cloud Properties from ISCCP and PATMOS-x Corrected for Spurious Variability Related to Changes in Satellite Orbits, Instrument Calibrations, and Other Factors" name="" />
-    <catalogRef xlink:href="catalog_d744005.xml" xlink:title="d744005 QSCAT (Ku-2001) Ocean Winds Derived by Locally Weighted Regression Interpolation (Version 1e)" name="" />
-    <catalogRef xlink:href="catalog_d744009.xml" xlink:title="d744009 Cross-Calibrated Multi-Platform Ocean Surface Wind Velocity, 1987 - ongoing" name="" />
     <catalogRef xlink:href="catalog_d745001.xml" xlink:title="d745001 Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing " name="Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analysis Product V2, 1987 - ongoing" />
-    <catalogRef xlink:href="catalog_d759003.xml" xlink:title="d759003 ETOPO2, Global 2 Arc-minute Ocean Depth and Land Elevation from the US National Geophysical Data Center (NGDC)" name="" />
-    <catalogRef xlink:href="catalog_d759004.xml" xlink:title="d759004 ETOPO1, Global 1 Arc-minute Ocean Depth and Land Elevation from the US National Geophysical Data Center (NGDC)" name="" />
-    <catalogRef xlink:href="catalog_d801000.xml" xlink:title="d801000 AMTEX Flight-Level and Supporting Synoptic Observations" name="" />
     <catalogRef xlink:href="catalog_d809019.xml" xlink:title="d809019 MPAS-A Aquaplanet Simulations with Different Sea-Surface Temperatures" name="" />
     <catalogRef xlink:href="catalog_d810000.xml" xlink:title="d810000 CMIP 5 dataset and code for R parallelization" name="" />
     <catalogRef xlink:href="catalog_d841000.xml" xlink:title="d841000 GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" name="GridRad - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data" />
@@ -435,11 +303,7 @@
     <catalogRef xlink:href="catalog_d841006.xml" xlink:title="d841006 GridRad-Severe - Three-Dimensional Gridded NEXRAD WSR-88D Radar Data for Severe Events" name="" />
     <catalogRef xlink:href="catalog_d845002.xml" xlink:title="d845002 GATE Radar Reflectivity Data from the Canadian Ship Quadra" name="" />
     <catalogRef xlink:href="catalog_d850001.xml" xlink:title="d850001 Data to support OSDF example workflows" name="" />
-    <catalogRef xlink:href="catalog_d875000.xml" xlink:title="d875000 GATE Aircraft Observations for June to September 1974" name="" />
-    <catalogRef xlink:href="catalog_d897007.xml" xlink:title="d897007 VAPOR Sample Data" name="" />
     <catalogRef xlink:href="catalog_d898000.xml" xlink:title="d898000 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
 
 
-<catalogRef xlink:href="catalog_d999005.xml" xlink:title="d999005 TEST" name="" />
-    <catalogRef xlink:href="catalog_d999008.xml" xlink:title="d999008 GPCP Version 2.3 - Monthly Analysis - Test || GPCP Version 1.3 - Daily Analysis - Test" name="" />
-    </catalog>
+</catalog>

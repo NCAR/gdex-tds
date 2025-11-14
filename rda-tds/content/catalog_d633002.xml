@@ -4,7 +4,7 @@
   <dataset name="ERA5.1: Corrections to ERA5 Stratospheric Temperature 2000-2006">
     <metadata inherited="true">
       <serviceName>all</serviceName>
-      <dataFormat>NetCDF</dataFormat>
+      <dataFormat>GRIB-1</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
       <documentation xlink:href="http://gdex.ucar.edu/datasets/d633002/" xlink:title="NCAR GDEX - ERA5.1: Corrections to ERA5 Stratospheric Temperature 2000-2006(d633002)" />
