@@ -29,7 +29,7 @@ gdex-tds/
     └── ...
 ```
     
-- **`rda-tds-helm` : the k8s/CIRRUS deployment related (change in here will not trigger deployement)**
+- **`rda-tds-helm` : the k8s/CIRRUS deployment related (change in here will not trigger container image rebuild)**
     - `Chart` : Helm Chart setting (deployment chart viewable in ARGO CD)
     - `values` : define the variable values that is going to be used in the `templates`
     - `templates` : where the actual individual deployment setting in `.yaml`
