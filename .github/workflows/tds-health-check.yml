@@ -2,8 +2,8 @@ name: TDS Health Check
 
 on:
   schedule:
-    # Run every 30 minutes
-    - cron: '*/30 * * * *'
+    # Run every 1 hour
+    - cron: '* */1 * * *'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
         
         # Try curl and capture output and error
         CURL_OUTPUT=$(mktemp)
-        if curl --fail-with-body --connect-timeout 20 --max-time 60 --retry 5 --retry-delay 60 https://tds.gdex.ucar.edu/thredds > $CURL_OUTPUT 2>&1; then
+        if curl -v --fail-with-body --connect-timeout 60 --max-time 120 --retry 5 --retry-delay 600 https://tds.gdex.ucar.edu/thredds > $CURL_OUTPUT 2>&1; then
           echo "status=healthy" >> $GITHUB_OUTPUT
           echo "TDS is healthy at $(TZ=America/Denver date)"
         else
