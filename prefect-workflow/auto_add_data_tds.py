@@ -157,7 +157,7 @@ def check_format(dataset_id: str) -> bool:
 
 @task
 def check_datafiles(dataset_id: str) -> bool:
-    """Check if dataset has data files.
+    """Check if dataset has data files with supported format.
     
     Parameters
     ----------

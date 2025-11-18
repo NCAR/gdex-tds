@@ -163,14 +163,10 @@ if __name__ == "__main__":
 
     # create entries for each group that is under the subdirectory of the dataset
     for grpid1, webpath1, gindex1 in all_ents:
-        
         try:
             # create_ctl_entry(dsid, specialist1, access_type1, grpid, gindex1)  # Create group 0
             create_ctl_entry(dsid, specialist1, webpath1, gindex1)
         except TypeError as e:
-            # use grpid1 if webpath1 causes a TypeError (usually not specified causing NoneType error)
+            # use grpid1 if webpath1 causes a TypeError 
+            # (usually not specified causing NoneType error)
             create_ctl_entry(dsid, specialist1, grpid1, gindex1)
-
-
-
-
