@@ -20,6 +20,9 @@ on:
         #- rda-tds-helm/**
       - "!rda-tds/Dockerfile-logs"
   workflow_dispatch:
+  repository_dispatch:
+    types: [tds-unhealthy]  # Listen for the custom event from tds-health-check.yml
+
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
