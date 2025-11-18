@@ -152,7 +152,7 @@ if __name__ == "__main__":
     # else:
     #     access_type1 = 'g'
 
-    query = f"select grpid,gindex from dsgroup where dsid='{dsid}' and pindex=0;"
+    query = f"select grpid,webpath,gindex from dsgroup where dsid='{dsid}' and pindex=0;"
     cursor.execute(query)
     #grpid,gindex = cursor.fetchall()
     all_ents = cursor.fetchall()
@@ -162,9 +162,15 @@ if __name__ == "__main__":
     create_ctl_entry(dsid, specialist1) # Create group 0
 
     # create entries for each group that is under the subdirectory of the dataset
-    for grpid1,gindex1 in all_ents:
-        # create_ctl_entry(dsid, specialist1, access_type1, grpid, gindex1)  # Create group 0
-        create_ctl_entry(dsid, specialist1, grpid1, gindex1)
+    for grpid1, webpath1, gindex1 in all_ents:
+        
+        try:
+            # create_ctl_entry(dsid, specialist1, access_type1, grpid, gindex1)  # Create group 0
+            create_ctl_entry(dsid, specialist1, webpath1, gindex1)
+        except TypeError as e:
+            # use grpid1 if webpath1 causes a TypeError (usually not specified causing NoneType error)
+            create_ctl_entry(dsid, specialist1, grpid1, gindex1)
+
 
 
 
