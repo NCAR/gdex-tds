@@ -3,7 +3,7 @@ name: TDS Health Check
 on:
   schedule:
     # Run every 1 hour
-    - cron: '* */1 * * *'
+    - cron: '10 */1 * * *'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
