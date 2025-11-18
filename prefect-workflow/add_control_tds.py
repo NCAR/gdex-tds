@@ -26,16 +26,19 @@ dsrqst -sc -ds <dsid> -if <control_file> -md -nc
 import os
 import requests
 import subprocess
+from datetime import datetime
+from prefect import flow, task
+from prefect.logging import get_run_logger
 
 
 # setup log file name to be read
-LOG_FILE_NAME = "auto_add_data_tds_2025-11-14-12_31_54.log"
+LOG_FILE_NAME = "auto_add_data_tds_2025-11-14-12_00_38.log"
 
 # Get the directory of this script and the project root
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)  # Project root directory
 
-
+@task
 def url_is_ok(url):
     """
     Check if a URL is reachable (status code 200-399).
@@ -57,6 +60,7 @@ def url_is_ok(url):
         print(f"Error: {e}")
         return False
 
+@task
 def parse_log_file(log_file: str) -> list[str]:
     """Parse the log file to get the list of dataset IDs to add TDS URL entry.
 
@@ -74,6 +78,7 @@ def parse_log_file(log_file: str) -> list[str]:
             dsids.append(dsid)
     return dsids
 
+@task
 def get_control_file(dsid: str) -> str:
     """Generate the original control file for the given dataset ID.
 
@@ -106,6 +111,7 @@ def get_control_file(dsid: str) -> str:
         print(f"STDERR: {err_result.stderr}")
         return err_result
 
+@task
 def create_ctl(dataset_id: str):
     """Create CTL file for the dataset using the existing script.
     Parameters
@@ -132,6 +138,7 @@ def create_ctl(dataset_id: str):
     except subprocess.CalledProcessError as e:
         raise e
 
+@task
 def create_control_file(dsid: str) -> str:
     """Create the new control file for the given dataset ID.
     this add the new TDS URL entry on the original control file.
@@ -177,6 +184,7 @@ def create_control_file(dsid: str) -> str:
 
     return control_file_path
 
+@task
 def add_tds_url(dsid: str, new_control_file: str):
     """Add the TDS URL entry to the dataset page using the control file.
 
@@ -208,30 +216,40 @@ def add_tds_url(dsid: str, new_control_file: str):
         print(f"STDERR: {err_result.stderr}")
         return err_result
 
+@flow(log_prints=True)
 def main():
     """Main function to add TDS URL entries for datasets listed in the log file."""
 
+    # set up logger from prefect
+    logger = get_run_logger()
+
     data_log_file = os.path.join(PROJECT_ROOT,'prefect-workflow',LOG_FILE_NAME)
     dsids = parse_log_file(data_log_file)
+    logger.info(f"Total dataset IDs to process: {len(dsids)}")
 
     for dsid in dsids:
-        print(f"Processing dataset ID: {dsid}")
+        logger.info(f"Processing dataset ID: {dsid}")
         # create new control file with TDS URL entry
         new_control_file = create_control_file(dsid)
-        print(f"New control file created at: {new_control_file}")
+        logger.info(f"New control file created at: {new_control_file}")
         # add TDS URL entry using the new control file
         dsrqst_result = add_tds_url(dsid, new_control_file)
         if dsrqst_result.returncode == 1:
             # DO NOT remove the new control file if failed (easier to track the issue)
             log_error = f"Failed to add TDS URL for {dsid} for web access."
-            print(log_error)
+            logger.error(log_error)
             continue
         log_info = f"Successfully add TDS URL for {dsid} for web access."
-        print(log_info)
+        logger.info(log_info)
         # remove the new control file after processing
         os.remove(new_control_file)
-        print(f"Removed temporary control file: {new_control_file}")
-        print("--------------------------------------------------")
+        logger.info(f"Removed temporary control file: {new_control_file}")
+        logger.info("--------------------------------------------------")
 
 if __name__ == "__main__":
+    # Log TDS auto-add start time
+    start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+    print(f"TDS auto-add started at {start_time}")
+
+    # run the main flow
     main()
