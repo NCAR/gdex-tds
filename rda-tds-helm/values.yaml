@@ -47,7 +47,7 @@ webapp:
   volume1:
     name: campaign
     server: gladedm1.ucar.edu
-    path: /glade/campaign/collections/gdex/ 
+    path: /glade/campaign/collections/gdex/
     readOnly: true
   volume:
     fs:
