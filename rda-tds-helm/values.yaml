@@ -18,7 +18,7 @@ webapp:
     port: 8080
     memory: 40G
     cpu: 5
-    ephemeralStorage: 20Gi
+    ephemeralStorageLimit: 20Gi
     responseTimeout: 180
     maxUploadSize: 30m
     limit_connections: 100  # Increased for concurrent requests
@@ -33,19 +33,19 @@ webapp:
     port: 8080
     memory: 2G
     cpu: 1
-    ephemeralStorage: 5Gi
+    ephemeralStorageLimit: 5Gi
   tdm:
     name: gdex-tdm
     image: docker.io/potatofever/gdex-tdm:sha-463a6d6
     port: 8080
     memory: 6G
     cpu: 2
-    ephemeralStorage: 10Gi
+    ephemeralStorageLimit: 10Gi
     env:
       TDM_XMX_SIZE: "5G"
       TDM_XMS_SIZE: "2G"
   volume1:
-    name: campaign 
+    name: campaign
     server: gladedm1.ucar.edu
     path: /glade/campaign/collections/gdex/ 
     readOnly: true

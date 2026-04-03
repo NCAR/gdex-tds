@@ -21,14 +21,6 @@ spec:
       #  runAsUser: 1234 # Specify the desired user ID
       #  runAsGroup: 1234 # Specify the desired group ID
       #  fsGroup: 1234 # Specify the desired group ID for volume ownership
-      # --- Cleaning start---
-      initContainers:
-        - name: wipe-hidden-files
-          image: busybox:latest
-          command: ["sh", "-c", "rm -rf /usr/local/tomcat/logs/*"]
-          # IMPORTANT: Do NOT add a volumeMount for the logs here.
-          # We want this container to see the "real" local disk, not the PV.
-      # --- Cleaning end ---
       volumes:
         - name: {{ .Values.webapp.volume1.name }}
           nfs:
@@ -50,7 +42,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.container.memory }}
             cpu: {{ .Values.webapp.container.cpu }}
-            ephemeral-storage: {{ .Values.webapp.container.ephemeralStorage }}
+            ephemeral-storage: {{ .Values.webapp.container.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
         env:
@@ -58,6 +50,10 @@ spec:
             value: {{ .Values.webapp.container.env.THREDDS_XMX_SIZE }}
           - name: THREDDS_XMS_SIZE
             value: {{ .Values.webapp.container.env.THREDDS_XMS_SIZE }}
+          - name: K8S_POD_NAME # Inject the current pod's name into the container environment so that server.xml can use it for access log naming
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
         volumeMounts:
         - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
           name: {{ .Values.webapp.volume1.name }}
@@ -72,7 +68,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.logs.memory }}
             cpu: {{ .Values.webapp.logs.cpu }}
-            ephemeral-storage: {{ .Values.webapp.logs.ephemeralStorage }}
+            ephemeral-storage: {{ .Values.webapp.logs.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.logs.port }}
         volumeMounts:
@@ -85,7 +81,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.tdm.memory }}
             cpu: {{ .Values.webapp.tdm.cpu }}
-            ephemeral-storage: {{ .Values.webapp.tdm.ephemeralStorage }}
+            ephemeral-storage: {{ .Values.webapp.tdm.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.tdm.port }}
         env:
