@@ -7,6 +7,14 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
+# This workflow builds the TDS logs Docker image from the rda-tds directory => only when the Dockerfile-logs changes
+# pushes it to Docker Hub,
+# and then updates the helm chart in rda-tds-helm/values.yaml with the new image tag, 
+# creating a pull request to merge the updated helm chart back into main.
+# ARGO CD will then detect the updated helm chart in the main branch and automatically deploy the 
+# new TDS logs Docker image to the Kubernetes cluster.
+
+
 name: Publish TDS Log Image and Update Helm Chart
 
 on:
