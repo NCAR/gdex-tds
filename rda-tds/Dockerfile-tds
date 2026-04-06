@@ -4,6 +4,8 @@ COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY ./conf/logging.properties /usr/local/tomcat/conf/logging.properties
 COPY ./conf/server.xml /usr/local/tomcat/conf/server.xml
 COPY ./content/ /usr/local/tomcat/content/thredds/
+RUN rm -rf /usr/local/tomcat/content/thredds/logs
+RUN ln -s /data/TDSIndexFiles/data/rda/data/logs/tds /usr/local/tomcat/content/thredds/logs
 RUN mkdir -p /data/TDSIndexFiles/data/rda/data
 RUN chmod 777 /data/TDSIndexFiles/data/rda/data
 RUN mkdir -p /usr/local/tomcat/logs
