@@ -157,7 +157,7 @@
      <RollingFileAppender>
        <MaxFileSize>10 MB</MaxFileSize>
        <MaxBackups>50</MaxBackups>
-       <Level>INFO</Level>
+       <Level>DEBUG</Level>
      </RollingFileAppender>
   </FeatureCollection>
 
