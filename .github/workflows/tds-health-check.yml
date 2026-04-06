@@ -84,7 +84,7 @@ jobs:
         gh issue create \
           --title "🚨 TDS Health Check Failed - ${{ steps.timestamp.outputs.datetime }}" \
           --body "$BODY" \
-          --label "alert"
+          --label "TDS server down"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
