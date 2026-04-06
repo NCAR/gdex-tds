@@ -61,6 +61,9 @@ spec:
           name: {{ .Values.webapp.volume2.fs.name }}
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: /usr/local/tomcat/content/thredds/logs
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: logs/tds
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
         image: {{ .Values.webapp.logs.image }}
@@ -92,5 +95,8 @@ spec:
         volumeMounts:
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: /usr/local/tomcat/content/tdm/thredds/logs
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: logs/tdm
         - mountPath: /data/rda/ # Glade
           name: {{ .Values.webapp.volume1.name }}
