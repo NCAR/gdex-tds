@@ -1,7 +1,7 @@
 FROM unidata/tdm-docker:5.6
 COPY ./content/ /usr/local/tomcat/content/tdm/thredds/
-RUN rm -rf /usr/local/tomcat/content/tdm/thredds/logs \
-    && ln -s /data/TDSIndexFiles/data/rda/data/logs/tdm /usr/local/tomcat/content/tdm/thredds/logs
+RUN rm -rf /usr/local/tomcat/content/tdm/thredds/logs
+RUN ln -s /data/TDSIndexFiles/data/rda/data/logs/tdm /usr/local/tomcat/content/tdm/thredds/logs
 
 # Source env file in helmchart?
     #env_file:
