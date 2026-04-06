@@ -21,11 +21,9 @@ on:
     workflows: ["Publish TDM Docker Image and Update Helm Chart"]
     types:
       - completed
-    branches:
-      - main
-  workflow_dispatch:
-  repository_dispatch:
-    types: [tds-unhealthy]  # Listen for the custom event from tds-health-check.yml
+  # workflow_dispatch:
+  # repository_dispatch:
+  #   types: [tds-unhealthy]  # Listen for the custom event from tds-health-check.yml
 
 jobs:
   push_to_registry:
