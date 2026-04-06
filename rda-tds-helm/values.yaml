@@ -18,7 +18,7 @@ webapp:
     port: 8080
     memory: 40G
     cpu: 5
-    ephemeralStorageLimit: 5Gi
+    # ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
     limit_connections: 100  # Increased for concurrent requests
