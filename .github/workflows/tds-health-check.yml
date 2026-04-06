@@ -80,12 +80,15 @@ jobs:
 
         The automated health check detected that TDS is not responding at https://tds.gdex.ucar.edu/thredds
 
-        [View workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+        [View workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+        CC: @chiaweh2 @rpconroy"
 
         gh issue create \
           --title "🚨 TDS Health Check Failed - ${{ steps.timestamp.outputs.datetime }}" \
           --body "$BODY" \
-          --label "TDS server down"
+          --label "TDS server down" \
+          --assignee "chiaweh2"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
