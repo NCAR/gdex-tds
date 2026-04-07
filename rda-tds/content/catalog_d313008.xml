@@ -21,7 +21,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d313008/" name="313.8 Files" path="files/g/d313008">
+    <datasetScan location="/data/rda/data/d313008/" name="d313008 Files" path="files/g/d313008">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

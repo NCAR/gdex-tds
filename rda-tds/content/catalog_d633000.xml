@@ -30,7 +30,7 @@
       <keyword>ECWMF ERA5 Reanalysis</keyword>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d633000/" name="633.0 Files" path="files/g/d633000">
+    <datasetScan location="/data/rda/data/d633000/" name="d633000 Files" path="files/g/d633000">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
