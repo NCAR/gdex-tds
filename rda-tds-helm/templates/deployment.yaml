@@ -36,6 +36,8 @@ spec:
           persistentVolumeClaim:
             claimName: {{ .Values.webapp.volume.fs.name }}
       containers:
+
+      # tds container
       - name: {{ .Values.webapp.name }}
         image: {{ .Values.webapp.container.image }}
         resources:
@@ -64,6 +66,7 @@ spec:
         - mountPath: /usr/local/tomcat/content/thredds/logs
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: logs/tds
+
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
         image: {{ .Values.webapp.logs.image }}
@@ -77,6 +80,7 @@ spec:
         volumeMounts:
         - mountPath: /usr/local/tomcat/logs
           name: {{ .Values.webapp.volume2.fs.name }}
+
       # TDM container
       - name: {{ .Values.webapp.tdm.name }}
         image: {{ .Values.webapp.tdm.image }}
@@ -95,7 +99,7 @@ spec:
         volumeMounts:
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
-        - mountPath: /usr/local/tomcat/content/tdm/thredds/logs
+        - mountPath: /usr/local/tomcat/content/tdm/logs
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: logs/tdm
         - mountPath: /data/rda/ # Glade
