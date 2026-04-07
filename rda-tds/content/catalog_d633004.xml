@@ -41,7 +41,7 @@
     </publisher>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d633004/" name="633.4 GRIB Files" path="files/g/d633004_grb">
+    <datasetScan location="/data/rda/data/d633004/" name="d633004 GRIB Files" path="files/g/d633004_grb">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
@@ -51,7 +51,7 @@
       </filter>
       <addDatasetSize />
     </datasetScan>
-    <datasetScan location="/data/rda/data/d633004/" name="633.4 NetCDF Files" path="files/g/d633004_nc">
+    <datasetScan location="/data/rda/data/d633004/" name="d633004 NetCDF Files" path="files/g/d633004_nc">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

@@ -42,7 +42,7 @@
       <keyword>Measurements Of Pollution In The Troposphere</keyword>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d682003/Regional" name="682.3 Files" path="files/g/d682003">
+    <datasetScan location="/data/rda/data/d682003/Regional" name="d682003 Files" path="files/g/d682003">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>

@@ -65,10 +65,10 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
         - mountPath: /usr/local/tomcat/content/thredds/logs
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tds-debug-logs # Use a subPath to speperate from root level TDSIndexFiles
+          subPath: tds-debug-logs # Use a subPath to speperate from root level TDSIndexFiles in PVC
         - mountPath: /usr/local/tomcat/content/thredds/cache
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tds-cache # Use a subPath to speperate from root level TDSIndexFiles
+          subPath: tds-cache # Use a subPath to speperate from root level TDSIndexFiles in PVC
 
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
@@ -104,6 +104,6 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
         - mountPath: /usr/local/tomcat/content/tdm/logs
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles
+          subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles in PVC
         - mountPath: /data/rda/ # Glade
           name: {{ .Values.webapp.volume1.name }}
