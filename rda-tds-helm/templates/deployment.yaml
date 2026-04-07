@@ -65,7 +65,6 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
         - mountPath: /usr/local/tomcat/content/thredds/logs
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: logs/tds
 
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
@@ -101,6 +100,5 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
         - mountPath: /usr/local/tomcat/content/tdm/logs
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: logs/tdm
         - mountPath: /data/rda/ # Glade
           name: {{ .Values.webapp.volume1.name }}
