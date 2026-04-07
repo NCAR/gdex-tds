@@ -65,7 +65,10 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
         - mountPath: /usr/local/tomcat/content/thredds/logs
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tds-logs # Use a subPath to avoid conflicts with the TDM logs
+          subPath: tds-debug-logs # Use a subPath to speperate from root level TDSIndexFiles
+        - mountPath: /usr/local/tomcat/content/thredds/cache
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-cache # Use a subPath to speperate from root level TDSIndexFiles
 
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
@@ -101,6 +104,6 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
         - mountPath: /usr/local/tomcat/content/tdm/logs
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tdm-logs # Use a subPath to avoid conflicts with the TDS logs
+          subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles
         - mountPath: /data/rda/ # Glade
           name: {{ .Values.webapp.volume1.name }}

@@ -90,7 +90,6 @@
     <alwaysUse>false</alwaysUse>
     <scour>15 min</scour>
     <maxSize>1 Gb</maxSize>
-    <dir>/data/TDSIndexFiles/data/rda/data/cache/cdm/</dir>
   </DiskCache>
 
   <!--
