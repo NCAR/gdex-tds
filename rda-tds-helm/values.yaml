@@ -19,7 +19,7 @@ webapp:
     port: 8080
     memory: 40G
     cpu: 5
-    # ephemeralStorageLimit: 5Gi
+    ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
     limit_connections: 100  # Increased for concurrent requests
@@ -41,7 +41,7 @@ webapp:
     port: 8080
     memory: 6G
     cpu: 2
-    ephemeralStorageLimit: 1Gi
+    ephemeralStorageLimit: 2Gi
     env:
       TDM_XMX_SIZE: "5G"
       TDM_XMS_SIZE: "2G"
