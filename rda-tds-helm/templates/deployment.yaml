@@ -39,7 +39,7 @@ spec:
       initContainers:
         - name: copy-thredds-content
           image: {{ .Values.webapp.container.image }}
-          command: ["sh", "-c", "cp -rn /usr/local/tomcat/content/thredds/. /mnt/thredds-content/"]
+          command: ["sh", "-c", "cp -rf /usr/local/tomcat/content/thredds/. /mnt/thredds-content/"]
           volumeMounts:
           - mountPath: /mnt/thredds-content
             name: {{ .Values.webapp.volume.fs.name }}
