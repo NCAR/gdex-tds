@@ -35,15 +35,15 @@ spec:
         - name: {{ .Values.webapp.volume.fs.name }}
           persistentVolumeClaim:
             claimName: {{ .Values.webapp.volume.fs.name }}
-      # Use an initContainer to copy the thredds content from the image to the PVC on startup, ensuring it is refreshed on every pod restart      
-      initContainers:
-        - name: copy-thredds-content
-          image: {{ .Values.webapp.container.image }}
-          command: ["sh", "-c", "cp -rf /usr/local/tomcat/content/thredds/. /mnt/thredds-content/"]
-          volumeMounts:
-          - mountPath: /mnt/thredds-content
-            name: {{ .Values.webapp.volume.fs.name }}
-            subPath: thredds-content
+      # # Use an initContainer to copy the thredds content from the image to the PVC on startup, ensuring it is refreshed on every pod restart      
+      # initContainers:
+      #   - name: copy-thredds-content
+      #     image: {{ .Values.webapp.container.image }}
+      #     command: ["sh", "-c", "cp -rf /usr/local/tomcat/content/thredds/. /mnt/thredds-content/"]
+      #     volumeMounts:
+      #     - mountPath: /mnt/thredds-content
+      #       name: {{ .Values.webapp.volume.fs.name }}
+      #       subPath: thredds-content
       containers:
       # tds container
       - name: {{ .Values.webapp.name }}
@@ -52,6 +52,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.container.memory }}
             cpu: {{ .Values.webapp.container.cpu }}
+            ephemeral-storage: {{ .Values.webapp.container.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
         env:
@@ -70,15 +71,21 @@ spec:
           name: {{ .Values.webapp.volume2.fs.name }}
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
-        - mountPath: /usr/local/tomcat/content/thredds
+        - mountPath: /usr/local/tomcat/content/thredds/cache # TDS cache dir
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: thredds-content # Full thredds dir on PVC - refreshed on every restart by initContainer
-        - mountPath: /usr/local/tomcat/work
+          subPath: tds-temp-cache
+        - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tds-overflow/work # Tomcat JSP compile cache
-        - mountPath: /tmp
-          name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tds-overflow/tmp # JVM temp files and heap dumps
+          subPath: tds-temp-logs
+        # - mountPath: /usr/local/tomcat/content/thredds
+        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   subPath: thredds-content # Full thredds dir on PVC - refreshed on every restart by initContainer
+        # - mountPath: /usr/local/tomcat/work
+        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   subPath: tds-overflow/work # Tomcat JSP compile cache
+        # - mountPath: /tmp
+        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   subPath: tds-overflow/tmp # JVM temp files and heap dumps
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
         image: {{ .Values.webapp.logs.image }}
