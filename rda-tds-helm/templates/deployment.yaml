@@ -71,9 +71,9 @@ spec:
           name: {{ .Values.webapp.volume2.fs.name }}
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.volume.fs.name }}
-        - mountPath: /usr/local/tomcat/content/thredds/cache # TDS cache dir
+        - mountPath: /usr/local/tomcat/content/thredds/cache/cdm # TDS cache cdm dir
           name: {{ .Values.webapp.volume.fs.name }}
-          subPath: tds-temp-cache
+          subPath: tds-temp-cache-cdm
         - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: tds-temp-logs
