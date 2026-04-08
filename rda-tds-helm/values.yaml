@@ -14,6 +14,7 @@ webapp:
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
   container: 
+    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
     image: docker.io/potatofever/rda-tds:sha-463a6d6
     port: 8080
     memory: 40G
