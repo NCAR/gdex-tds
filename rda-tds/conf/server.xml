@@ -73,7 +73,8 @@
                scheme="https"
                secure="true"
                connectionTimeout="20000"
-               redirectPort="8443" >
+               redirectPort="8443"
+               maxThreads="100" >
     <!-- Riley -->
     <!--<Connector port="8443"
            maxThreads="150"
