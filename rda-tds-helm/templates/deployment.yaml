@@ -77,6 +77,9 @@ spec:
         - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: tds-temp-logs
+        - mountPath: /usr/local/tomcat/temp # TDS NCSS temp files
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-overflow/tomcat-temp # Tomcat temp files
         # - mountPath: /usr/local/tomcat/content/thredds
         #   name: {{ .Values.webapp.volume.fs.name }}
         #   subPath: thredds-content # Full thredds dir on PVC - refreshed on every restart by initContainer
