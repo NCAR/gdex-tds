@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Development and Evaluation of the Simplified Tropospheric Chemistry Mechanism T4 in the Community Earth System Model (CESM) for Climate Simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Development and Evaluation of the Simplified Tropospheric Chemistry Mechanism T4 in the Community Earth System Model (CESM) for Climate Simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d155028/" xlink:title="NCAR GDEX - Development and Evaluation of the Simplified Tropospheric Chemistry Mechanism T4 in the Community Earth System Model (CESM) for Climate Simulations(d155028)" />
+      <documentation type="summary">The archived dataset includes all model output used to support the analysis in this paper titled "Development and Evaluation of the Simplified Tropospheric Chemistry Mechanism T4 in the Community Earth System Model (CESM) for Climate Simulations". It contains five years of monthly data (2004-2008) from both the T1 and T4 simulations. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d155028 Files" path="files/d155028" location="/data/rda/data/d155028/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

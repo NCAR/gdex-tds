@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Daymet Daily Gridded Surface Weather and Climate Variables" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Daymet Daily Gridded Surface Weather and Climate Variables">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d682806/" xlink:title="NCAR GDEX - Daymet Daily Gridded Surface Weather and Climate Variables(d682806)" />
+      <documentation type="summary">Daymet is a gridded product that provides daily estimates of weather and climate variables. Coverage is on 1 km by 1 km grids separately over North America, Hawaii, and Puerto Rico. Daymet is a product of the Environmental Sciences Division of Oak Ridge National Laboratory, and it is produced by interpolating and extrapolating surface-based observations. A convenience copy of version 4 is hosted in GDEX.</documentation>
+      <creator>
+        <name vocabulary="DIF">DOE/ORNL/ESD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d682806 Files" path="files/d682806" location="/data/rda/data/d682806/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
