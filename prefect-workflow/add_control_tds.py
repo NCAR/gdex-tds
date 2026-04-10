@@ -23,16 +23,13 @@ to add the TDS URL entry through
 dsrqst -sc -ds <dsid> -if <control_file> -md -nc
 ```
 """
+import argparse
 import os
 import requests
 import subprocess
 from datetime import datetime
 from prefect import flow, task
 from prefect.logging import get_run_logger
-
-
-# setup log file name to be read
-LOG_FILE_NAME = "auto_add_data_tds_2025-11-14-12_00_38.log"
 
 # Get the directory of this script and the project root
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -200,6 +197,7 @@ def add_tds_url(dsid: str, new_control_file: str):
 
     # Run the command
     try:
+        print(f"Running command: {' '.join(command)}")
         result = subprocess.run(
             command,
             check=True,
@@ -217,13 +215,13 @@ def add_tds_url(dsid: str, new_control_file: str):
         return err_result
 
 @flow(log_prints=True)
-def main():
+def main(log_file_name: str):
     """Main function to add TDS URL entries for datasets listed in the log file."""
 
     # set up logger from prefect
     logger = get_run_logger()
 
-    data_log_file = os.path.join(PROJECT_ROOT,'prefect-workflow',LOG_FILE_NAME)
+    data_log_file = os.path.join(PROJECT_ROOT,'prefect-workflow', log_file_name)
     dsids = parse_log_file(data_log_file)
     logger.info(f"Total dataset IDs to process: {len(dsids)}")
 
@@ -247,9 +245,13 @@ def main():
         logger.info("--------------------------------------------------")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Add TDS URL entries for datasets listed in a log file.")
+    parser.add_argument("log_file", help="Log file name (e.g. auto_add_data_tds_2025-11-14-12_00_38.log)")
+    args = parser.parse_args()
+
     # Log TDS auto-add start time
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
     print(f"TDS auto-add started at {start_time}")
 
     # run the main flow
-    main()
+    main(args.log_file)
