@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Canadian Surface Reanalysis (CaSR)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Canadian Surface Reanalysis (CaSR)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d066609/" xlink:title="NCAR GDEX - Canadian Surface Reanalysis (CaSR)(d066609)" />
+      <documentation type="summary">Environment and Climate Change Canada (ECCC) has produced a surface and precipitation reanalysis for North and Central America on a 10 km grid. For the current version (version 3.2), the ERA5 reanalysis from ECMWF was used as input to ECCC's global models, and the output was dynamically downscaled over North and Central America. More detailed information can be found on  ECCC's website.</documentation>
+      <creator>
+        <name vocabulary="DIF">CA/EC/CCB</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d066609 Files" path="files/d066609" location="/data/rda/data/d066609/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

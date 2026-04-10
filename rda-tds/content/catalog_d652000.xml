@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="PERSIANN-CCS Hourly Accumulated Precipitation" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="PERSIANN-CCS Hourly Accumulated Precipitation">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d652000/" xlink:title="NCAR GDEX - PERSIANN-CCS Hourly Accumulated Precipitation(d652000)" />
+      <documentation type="summary">The current operational PERSIANN (Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks) system uses neural network function classification/approximation procedures to compute an estimate of rainfall rate at each 0.25 degrees x 0.25 degrees pixel of the infrared brightness temperature image provided by geostationary satellites. An adaptive training feature facilitates updating of the network parameters whenever independent estimates of rainfall are available. The PERSIANN system was based on geostationary infrared imagery and later extended to include the use of both infrared and daytime visible imagery. The PERSIANN algorithm used here is based on the geostationary long wave infrared imagery to generate global rainfall. Rainfall product covers 60 degrees South to 60 degrees North globally.
+The system uses grid infrared images of global geosynchronous satellites (GOES-8, GOES-10, GMS-5, Metsat-6, and Metsat-7) provided by CPC, NOAA to generate 30-minute rain rates are aggregated to 6-hour accumulated rainfall. Model parameters are regularly updated using rainfall estimates from low-orbital satellites, including TRMM, NOAA-15, -16, -17, DMSP F13, F14, F15.
+Spectral Intervals and applicable satellites include the long wave infrared channel (10.2-11.2 micro-meters) from GOES-8, GOES-10, GMS-5, Meteosat-6, and Meteosat-7, and instantaneous rainfall estimates from TRMM, NOAA, and DMSP satellites.
+The PERSIANN Cloud Classification System (PERSIANN-CCS) is a real-time global high resolution (0.04 degrees  x 0.04 degrees or 4km x 4km) satellite precipitation product developed by the Center for Hydrometeorology and Remote Sensing (CHRS) at the University of California, Irvine (UCI). The PERSIANN-CCS system enables the categorization of cloud-patch features based on cloud height, areal extent, and variability of texture estimated from satellite imagery. At the center of PERSIANN-CCS is the variable threshold cloud segmentation algorithm. In contrast with the  traditional constant threshold approach, the variable threshold enables the identification and separation of individual patches of clouds. The individual patches can then be classified based on texture, geometric properties, dynamic evolution, and cloud top height. These classifications help in assigning rainfall values to pixels within each cloud based on a specific curve describing the relationship between rain-rate and brightness temperature.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UC-IRVINE/CHRS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d652000 Files" path="files/d652000" location="/data/rda/data/d652000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

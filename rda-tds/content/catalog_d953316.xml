@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d953316/" xlink:title="NCAR GDEX - GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset(d953316)" />
+      <documentation type="summary"> Precipitation and temperature datasets are essential for diverse applications, yet existing high-resolution products often lack robust uncertainty quantification and transparent, reproducible station processing. This dataset resource contains a daily multi-decadal 0.02 ensemble of gridded surface precipitation and temperature for the Contiguous United States (CONUS). It currently spans 1950-2023 (74 years) and includes 10 ensemble members and statistics based on a larger 30-member ensemble.  Links to software to generate additional ensemble members are provided in the documentation. The dataset was created using a framework combining meteorological station record reconstruction and spatial probabilistic estimation. The resulting serially-complete station record archive merges high-density observing networks (GHCN-D and MADIS) using a comprehensive set of gap-filling and reconstruction techniques -- quantile mapping, interpolation, machine learning, and multi-source merging -- yielding 25,887 precipitation and 20,998 temperature stations. Gridded Ensemble fields for daily precipitation total, mean temperature (Tmean), and daily temperature range (Trange) are generated using a probabilistic geospatial estimation approach that characterizes spatial variable uncertainty via cross-validation. This open-access ensemble -- together with its station archive and gridded deterministic and probabilistic components -- provides a critical resource for high-resolution hydrologic and climate research across CONUS. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CN/WHU</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CO-MINES</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d953316 Files" path="files/d953316" location="/data/rda/data/d953316/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

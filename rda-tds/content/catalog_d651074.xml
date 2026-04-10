@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CMIP7 output" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CMIP7 output">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651074/" xlink:title="NCAR GDEX - CMIP7 output(d651074)" />
+      <documentation type="summary"> NCAR is actively involved in CMIP7, the seventh phase of the Coupled Model Intercomparison Project, which involves coordinated climate modeling efforts to advance scientific understanding. NCAR's role includes contributing to the development of code for processing CMIP7 forcing datasets and participating in the broader scientific community's planning and discussions, as noted in this UCAR document and this GitHub repository. NCAR and the wider community are focused on new science questions, such as climate sensitivity, and sea-level rise.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651074 Files" path="files/d651074" location="/data/rda/data/d651074/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

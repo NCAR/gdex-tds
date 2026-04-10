@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018&#8211;2026)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018&#8211;2026)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d653000/" xlink:title="NCAR GDEX - Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018&#8211;2026)(d653000)" />
+      <documentation type="summary">This  dataset provides a continuous, high-resolution record of lightning activity across the Americas and adjacent oceanic regions, derived from the Geostationary Lightning Mapper (GLM) instruments aboard the GOES-16 and GOES-19 satellites. Lightning flash counts are accumulated hourly onto the NCEP G211 (approximately 40 km) and a nested 20 km half-spacing grid for the period January 2018 through December 2026. The data are provided in netCDF-4, adhering to CF-1.8 metadata conventions. This collection is designed to support the training and validation of machine learning models. By standardizing diverse satellite eras into a uniform spatial and temporal framework, this dataset lowers the barrier for multi-year lightning climatology research.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/MMM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d653000 Files" path="files/d653000" location="/data/rda/data/d653000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
