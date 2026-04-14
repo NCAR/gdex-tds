@@ -52,7 +52,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.container.memory }}
             cpu: {{ .Values.webapp.container.cpu }}
-            ephemeral-storage: {{ .Values.webapp.container.ephemeralStorageLimit }}
+            # ephemeral-storage: {{ .Values.webapp.container.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.container.port }}
         env:
@@ -77,6 +77,12 @@ spec:
         - mountPath: /usr/local/tomcat/content/thredds/cache/ncss # TDS cache ncss dir
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: tds-temp-cache-ncss
+        - mountPath: /usr/local/tomcat/content/thredds/cache/wcs # TDS WCS cache dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-cache-wcs
+        - mountPath: /usr/local/tomcat/content/thredds/cache/edal-java # TDS WMS tile cache dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-cache-edal-java
         - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: tds-temp-logs
@@ -102,7 +108,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.logs.memory }}
             cpu: {{ .Values.webapp.logs.cpu }}
-            ephemeral-storage: {{ .Values.webapp.logs.ephemeralStorageLimit }}
+            # ephemeral-storage: {{ .Values.webapp.logs.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.logs.port }}
         volumeMounts:
@@ -115,7 +121,7 @@ spec:
           limits:
             memory: {{ .Values.webapp.tdm.memory }}
             cpu: {{ .Values.webapp.tdm.cpu }}
-            ephemeral-storage: {{ .Values.webapp.tdm.ephemeralStorageLimit }}
+            # ephemeral-storage: {{ .Values.webapp.tdm.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.tdm.port }}
         env:
