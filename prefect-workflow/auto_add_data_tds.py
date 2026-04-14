@@ -444,7 +444,7 @@ def add_data2tds():
         logger.info(logger_info)
         # store data id for data logging
         new_datasets_add.append(dsid)
-
+    
     # final log of new datasets added to TDS
     date_data_info = datetime.now().strftime("%Y-%m-%d-%H_%M_%S")
     if new_datasets_add:
@@ -452,6 +452,8 @@ def add_data2tds():
         with open(data_log, 'a', encoding='utf-8') as log_file:
             for new_dsid in new_datasets_add:
                 log_file.write(f"[{date_data_info}] - {new_dsid} added\n")
+    else:
+        sys.exit("No new dataset added to TDS.")
 
 if __name__ == "__main__":
 

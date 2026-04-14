@@ -60,6 +60,8 @@ spec:
             value: {{ .Values.webapp.container.env.THREDDS_XMX_SIZE }}
           - name: THREDDS_XMS_SIZE
             value: {{ .Values.webapp.container.env.THREDDS_XMS_SIZE }}
+          - name: JAVA_OPTS # Redirect OOM heap dump off ephemeral storage; exit fast on OOM so pod restarts
+            value: "-XX:HeapDumpPath=/usr/local/tomcat/temp/ -XX:+ExitOnOutOfMemoryError"
           - name: K8S_POD_NAME # Inject the current pod's name into the container environment so that server.xml can use it for access log naming
             valueFrom:
               fieldRef:
@@ -101,6 +103,7 @@ spec:
         - mountPath: /tmp
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: tds-overflow/tmp # JVM temp files and heap dumps
+
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
         image: {{ .Values.webapp.logs.image }}

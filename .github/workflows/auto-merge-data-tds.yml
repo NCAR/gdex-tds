@@ -1,0 +1,64 @@
+name: Auto PR and Merge Data TDS
+
+on:
+  push:
+    branches:
+      - 'auto_add_data_tds_*'
+
+jobs:
+  auto-pr-merge:
+    name: Create and Auto-Merge PR to Main
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Denver
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Create Pull Request
+        id: pr
+        run: |
+          PR_URL=$(gh pr create \
+            --base main \
+            --head "${{ github.ref_name }}" \
+            --title "📦 Auto add data to TDS - ${{ github.ref_name }}" \
+            --body "## Auto Add Data to TDS
+
+            **Branch:** \`${{ github.ref_name }}\`
+            **Triggered by:** PBS cron job on $(date -u '+%Y-%m-%d %H:%M UTC')
+
+            ### Changes:
+            - Updated catalog XML files with new dataset entries
+            - Added prefect-workflow autoscan log
+
+            ---
+            cc @chiaweh2
+            *This PR was created automatically by the cron job autoscan script and will be auto-merged.*" \
+                        2>&1 || echo "PR_ALREADY_EXISTS")
+
+                    if echo "$PR_URL" | grep -q "already exists"; then
+                        echo "PR already exists, fetching existing PR number"
+                        PR_NUMBER=$(gh pr list --head "${{ github.ref_name }}" --base main --json number --jq '.[0].number')
+                    else
+                        PR_NUMBER=$(echo "$PR_URL" | grep -oP '(?<=/pull/)\d+')
+                    fi
+
+                    echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+                    echo "PR number: $PR_NUMBER"
+                    env:
+                    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge Pull Request
+        if: steps.pr.outputs.pr_number
+        run: |
+          sleep 5
+          gh pr merge ${{ steps.pr.outputs.pr_number }} \
+            --auto \
+            --squash \
+            --subject "Auto add data to TDS - ${{ github.ref_name }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
