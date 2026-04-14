@@ -98,9 +98,9 @@ spec:
         # - mountPath: /usr/local/tomcat/work
         #   name: {{ .Values.webapp.volume.fs.name }}
         #   subPath: tds-overflow/work # Tomcat JSP compile cache
-        # - mountPath: /tmp
-        #   name: {{ .Values.webapp.volume.fs.name }}
-        #   subPath: tds-overflow/tmp # JVM temp files and heap dumps
+        - mountPath: /tmp
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-overflow/tmp # JVM temp files and heap dumps
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
         image: {{ .Values.webapp.logs.image }}
