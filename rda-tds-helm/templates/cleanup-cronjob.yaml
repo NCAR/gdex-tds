@@ -7,7 +7,7 @@ metadata:
     app: {{ .Values.webapp.name }}
     group: {{ .Values.webapp.group }}
 spec:
-  schedule: "1 * * * *" # Run at the 1st minute of the every hour
+  schedule: "1 1 * * 1" # Run at the 1st minute 1am on monday of every week
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 3
   jobTemplate:
