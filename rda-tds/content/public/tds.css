@@ -215,8 +215,7 @@ small.imageinc {
 }
 
 div#header, div#footer {
-    height:90px;
-    position: absolute;
+    position: fixed;
     left: 0px;
     right: 0px;
     /*background: linear-gradient(#656aae,#656baf, #595aa1);*/
@@ -224,11 +223,11 @@ div#header, div#footer {
     background-color: white;
     /*background-color: #06778F;*/
     /*padding: 3px 20px;*/
-    height:90px;
     border: 1px solid #CFCFCF;
     border-style: outset;
     box-sizing: border-box;
     overflow: hidden;
+    z-index: 1000;
 }
 
 
@@ -240,6 +239,7 @@ div#header {
 }
 
 div#footer {
+    height:150px;
     bottom: 0px;
 }
 
@@ -300,6 +300,8 @@ div.container {
     width: 100%;
     position: relative;
     padding: 30px 50px;
+    padding-top: 98px;   /* header height (90px) + margin-bottom (8px) */
+    padding-bottom: 150px; /* footer height */
     box-sizing: border-box;
 }
 

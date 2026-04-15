@@ -29,15 +29,25 @@
     </div>
 </div>
 <div th:fragment="footer">
+<h4>
+    <a class="static" th:href="${installUrl}" th:text="${installName}"></a> 
+    at 
+    <a class="static" th:href="${hostInstUrl}" th:text="${hostInst}"></a> 
+    see 
+    <a class="static" th:href="${contextPath} + '/info/serverInfo.html'"> Info </a>
+</h4>
+<h4>
+    <a class="static" th:href="${webappUrl}" th:text="${webappName}"></a>
+    <th:block th:text="' [Version ' + ${webappVersion} + ' - ' + ${webappBuildTimestamp} + ']'"/>
+    <a class="static" th:href="${webappDocsUrl}"> Documentation</a>
+</h4>
 <div class="footer-message" style='color:black'>
 The Geoscience Data Exchange is managed by the Data Engineering and Curation Group of the Computational and Information Systems Laboratory at the National Center for Atmospheric Research in Boulder, Colorado. The National Center for Atmospheric Research is sponsored by the National Science Foundation. Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the National Science Foundation.
 </div>
-       <h4><a class="static" th:href="${installUrl}" th:text="${installName}"></a> at <a class="static" th:href="${hostInstUrl}" th:text="${hostInst}"></a> see <a class="static" th:href="${contextPath} + '/info/serverInfo.html'">    Info </a></h4>
+       
 
 
-       <h4><a class="static" th:href="${webappUrl}" th:text="${webappName}"></a>
-         <th:block th:text="' [Version ' + ${webappVersion} + ' - ' + ${webappBuildTimestamp} + ']'"/>
-         <a class="static" th:href="${webappDocsUrl}"> Documentation</a></h4>
+       
 </div>
 
   

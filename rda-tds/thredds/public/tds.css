@@ -214,7 +214,7 @@ small.imageinc {
 }
 
 div#header, div#footer {
-    position: absolute;
+    position: fixed;
     left: 0px;
     right: 0px;
     background: linear-gradient(#656aae,#656baf, #595aa1);
@@ -224,6 +224,7 @@ div#header, div#footer {
     border-style: outset;
     box-sizing: border-box;
     overflow: hidden;
+    z-index: 1000;
 }
 
 div#header {
@@ -285,6 +286,8 @@ div.container {
     width: 100%;
     position: relative;
     padding: 10px 50px;
+    padding-top: 98px;   /* header height + margin-bottom */
+    padding-bottom: 90px; /* footer height */
     box-sizing: border-box;
 }
 
