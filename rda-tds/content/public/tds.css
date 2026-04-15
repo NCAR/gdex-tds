@@ -233,7 +233,7 @@ div#header, div#footer {
 
 
 div#header {
-    height:90px;
+    height:110px;
     top: 0px;
     margin-bottom: 8px;
 }
@@ -300,7 +300,7 @@ div.container {
     width: 100%;
     position: relative;
     padding: 30px 50px;
-    padding-top: 98px;   /* header height (90px) + margin-bottom (8px) */
+    padding-top: 118px;   /* header height (110px) + margin-bottom (8px) */
     padding-bottom: 150px; /* footer height */
     box-sizing: border-box;
 }
