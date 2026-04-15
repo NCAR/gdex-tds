@@ -15,7 +15,7 @@ webapp:
     secretName: incommon-cert-tds
   container: 
     load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
-    image: docker.io/potatofever/rda-tds:sha-440e16c
+    image: docker.io/potatofever/rda-tds:sha-65e10b4
     port: 8080
     memory: 40G
     cpu: 5
@@ -37,7 +37,7 @@ webapp:
     ephemeralStorageLimit: 1Gi
   tdm:
     name: gdex-tdm
-    image: docker.io/potatofever/gdex-tdm:sha-b4a710a
+    image: docker.io/potatofever/gdex-tdm:sha-eac1110
     port: 8080
     memory: 6G
     cpu: 2
