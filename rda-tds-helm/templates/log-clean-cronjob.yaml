@@ -4,6 +4,8 @@ metadata:
   name: cleanup-access-logs
 spec:
   schedule: "0 3 * * *" # Runs daily at 3 AM
+  successfulJobsHistoryLimit: 2  # Retain only the last 2 successful Jobs
+  failedJobsHistoryLimit: 5      # Retain only the last 5 failed Jobs
   jobTemplate:
     spec:
       template:
