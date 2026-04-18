@@ -27,7 +27,7 @@ webapp:
  
     env:
       THREDDS_XMX_SIZE: 32G
-      THREDDS_XMS_SIZE: 32G
+      THREDDS_XMS_SIZE: 10G
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
