@@ -74,6 +74,15 @@
     <allowRemote>false</allowRemote>
   </CatalogServices>
 
+<catalogRoot>
+  <maxDatasets>5000</maxDatasets> 
+</catalogRoot>
+
+<Caching>
+  <allow>true</allow>
+  <maxBytes>64 Mbytes</maxBytes>
+</Caching>
+
   <!--
   Configuring the CDM (netcdf-java library)
   see http://www.unidata.ucar.edu/software/netcdf-java/reference/RuntimeLoading.html
@@ -92,6 +101,11 @@
     <maxSize>1 Gb</maxSize>
   </DiskCache>
 
+<Opendap>
+  <ascLimit>100</ascLimit>
+  <binLimit>1000</binLimit>
+</Opendap>
+    
   <!--
   Caching open NetcdfFile objects.
   default is to allow 50 - 100 open files, cleanup every 11 minutes
