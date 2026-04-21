@@ -317,7 +317,6 @@
     <catalogRef xlink:href="catalog_d845002.xml" xlink:title="d845002 GATE Radar Reflectivity Data from the Canadian Ship Quadra" name="" />
     <catalogRef xlink:href="catalog_d850001.xml" xlink:title="d850001 Data to support OSDF example workflows" name="" />
     <catalogRef xlink:href="catalog_d898000.xml" xlink:title="d898000 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
+    <catalogRef xlink:href="catalog_d953316.xml" xlink:title="d953316 GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset" name="" />
 
-
-<catalogRef xlink:href="catalog_d953316.xml" xlink:title="d953316 GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset" name="" />
-    </catalog>
+</catalog>
