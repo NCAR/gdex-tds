@@ -17,6 +17,11 @@
 name: Publish TDM Docker Image and Update Helm Chart
 
 on:
+  workflow_dispatch:  # allow manual triggering from GitHub UI
+  workflow_run:       # auto-trigger after Auto PR and Merge Data TDS workflow completes
+    workflows: ["Auto PR and Merge Data TDS"]
+    types:
+      - completed
   pull_request:
     types:
       - closed
@@ -25,10 +30,10 @@ on:
     paths:
       - rda-tds/**
       - "!rda-tds/Dockerfile-logs"
-  workflow_dispatch:
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
     runs-on: ubuntu-latest
     env:
       TZ: America/Denver  # Mountain Time (MDT/MST)
