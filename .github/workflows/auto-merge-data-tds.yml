@@ -21,8 +21,11 @@ jobs:
 
       - name: Create Pull Request
         id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          PR_URL=$(gh pr create \
+          set +e
+          PR_OUTPUT=$(gh pr create \
             --base main \
             --head "${{ github.ref_name }}" \
             --title "📦 Auto add data to TDS - ${{ github.ref_name }}" \
@@ -38,19 +41,24 @@ jobs:
             ---
             cc @chiaweh2
             *This PR was created automatically by the cron job autoscan script and will be auto-merged.*" \
-                        2>&1 || echo "PR_ALREADY_EXISTS")
+            2>&1)
+          PR_EXIT_CODE=$?
+          set -e
 
-                    if echo "$PR_URL" | grep -q "already exists"; then
-                        echo "PR already exists, fetching existing PR number"
-                        PR_NUMBER=$(gh pr list --head "${{ github.ref_name }}" --base main --json number --jq '.[0].number')
-                    else
-                        PR_NUMBER=$(echo "$PR_URL" | grep -oP '(?<=/pull/)\d+')
-                    fi
+          if [ $PR_EXIT_CODE -ne 0 ]; then
+            if echo "$PR_OUTPUT" | grep -q "already exists"; then
+              echo "PR already exists, fetching existing PR number"
+              PR_NUMBER=$(gh pr list --head "${{ github.ref_name }}" --base main --json number --jq '.[0].number')
+            else
+              echo "Failed to create PR: $PR_OUTPUT"
+              exit 1
+            fi
+          else
+            PR_NUMBER=$(echo "$PR_OUTPUT" | grep -oP '(?<=/pull/)\d+')
+          fi
 
-                    echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
-                    echo "PR number: $PR_NUMBER"
-                    env:
-                    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "PR number: $PR_NUMBER"
 
       - name: Auto-merge Pull Request
         if: steps.pr.outputs.pr_number
