@@ -292,6 +292,7 @@
     <catalogRef xlink:href="catalog_d651076.xml" xlink:title="d651076 CESM2.2 CAM6 PPE" name="" />
     <catalogRef xlink:href="catalog_d651077.xml" xlink:title="d651077 CESM Input Data" name="" />
     <catalogRef xlink:href="catalog_d651079.xml" xlink:title="d651079 CESM2 Mechanically Decoupled" name="" />
+    <catalogRef xlink:href="catalog_d651080.xml" xlink:title="d651080 Data for Simpson et al (2026) - The impact of enhanced vertical resolution on seasonal prediction skill of the Quasi-Biennial Oscillation and its teleconnections in CESM2: a new community hindcast dataset" name="" />
     <catalogRef xlink:href="catalog_d652000.xml" xlink:title="d652000 PERSIANN-CCS Hourly Accumulated Precipitation" name="" />
     <catalogRef xlink:href="catalog_d653000.xml" xlink:title="d653000 Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018–2026)" name="" />
     <catalogRef xlink:href="catalog_d682000.xml" xlink:title="d682000 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />

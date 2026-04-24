@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Data for Simpson et al (2026) - The impact of enhanced vertical resolution on seasonal prediction skill of the Quasi-Biennial Oscillation and its teleconnections in CESM2: a new community hindcast dataset" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Data for Simpson et al (2026) - The impact of enhanced vertical resolution on seasonal prediction skill of the Quasi-Biennial Oscillation and its teleconnections in CESM2: a new community hindcast dataset">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651080/" xlink:title="NCAR GDEX - Data for Simpson et al (2026) - The impact of enhanced vertical resolution on seasonal prediction skill of the Quasi-Biennial Oscillation and its teleconnections in CESM2: a new community hindcast dataset(d651080)" />
+      <documentation type="summary">This dataset contains post-processed data from the CESM2 Single-to-multi-year large ensemble initialized hindcasts that can be used to reproduce the figures in Simpson et al (2026) The impact of enhanced vertical resolution on seasonal prediction skill of the Quasi-Biennial Oscillation and its teleconnections in CESM2: a new community hindcast dataset in JGR Atmospheres. These data have been processed from the original CESM2 datasets as well as observation-based data comparison using the scripts provided on GitHub, and can then be used to reproduce the figures of the above paper using scripts that are also in that repository.
+
+Data description: Post-processed fields from CESM2 initialized seasonal hindcasts and observation-based data that span 1970 to 2020, initialized from November 1st, February 1st, and September 1st. This consists of daily and monthly averaged zonal means and 3D variables in netCDF format.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651080 Files" path="files/d651080" location="/data/rda/data/d651080/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
