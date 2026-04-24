@@ -168,6 +168,15 @@
     <maxFileDownloadSize>500 MB</maxFileDownloadSize>
   </NetcdfSubsetService>
 
+  <!--
+  Disable the FileServer service entirely.
+  This removes the HTTP file download link from all TDS catalog pages
+  and returns 403 for any direct /thredds/fileServer/ requests.
+  -->
+  <FileServer>
+    <allow>false</allow>
+  </FileServer>
+
    <FeatureCollection>
      <RollingFileAppender>
        <MaxFileSize>10 MB</MaxFileSize>
