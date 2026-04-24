@@ -12,7 +12,7 @@
         <service name="notebook" serviceType="JupyterNotebook" base="/thredds/notebook/"/>
         <service name="wcs" serviceType="WCS" base="/thredds/wcs/"/>
         <service name="wms" serviceType="WMS" base="/thredds/wms/"/> 
-        <service name="fileServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+        <!-- <service name="fileServer" serviceType="HTTPServer" base="/thredds/fileServer/" /> -->
         <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
         <service name="ncml" serviceType="NCML" base="/thredds/ncml/"/>
         <service name="uddc" serviceType="UDDC" base="/thredds/uddc/"/>
