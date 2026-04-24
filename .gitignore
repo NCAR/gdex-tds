@@ -7,6 +7,9 @@
 # Environment variables
 .env
 
+# gdex ignore
+*.ctl
+
 # Python cache files
 __pycache__
 *.pyc

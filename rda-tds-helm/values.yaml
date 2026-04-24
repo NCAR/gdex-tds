@@ -24,6 +24,11 @@ webapp:
     maxUploadSize: 30m
     limit_connections: 50  # Increased for concurrent requests
     limit_rps: 150          # Increased for page load bursts
+    fileServer:
+      limit_rps: 1          # The Bouncer: max 1 download requests/sec per IP (rejects storms)
+      limit_connections: 2  # The Occupancy Limit: max 2 concurrent downloads per IP
+      limit_rate_after: 500m # Allow first 500MB at full speed before throttling kicks in
+      limit_rate: 5m        # The Slow Drip: throttle each connection to 5MB/s after 500MB
  
     env:
       THREDDS_XMX_SIZE: 48G
