@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog name="Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <service name="all_plus_http" serviceType="Compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="dap4" serviceType="DAP4" base="/thredds/dap4/" />
+    <service name="ncssGrid" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/" />
+    <service name="cdmrFeatureGrid" serviceType="CdmrFeature" base="/thredds/cdmrfeature/grid/" />
+    <service name="notebook" serviceType="JupyterNotebook" base="/thredds/notebook/" />
+    <service name="wcs" serviceType="WCS" base="/thredds/wcs/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+    <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/" />
+    <service name="ncml" serviceType="NCML" base="/thredds/ncml/" />
+    <service name="uddc" serviceType="UDDC" base="/thredds/uddc/" />
+  </service>
   <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
   <dataset name="Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions">
     <metadata inherited="true">
-      <serviceName>all</serviceName>
+      <serviceName>all_plus_http</serviceName>
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
@@ -39,7 +53,7 @@ This community dataset will permit investigations into the sources of climate un
     <!--Files-->
     <datasetScan name="d010065 Files" path="files/d010065" location="/data/rda/data/d010065/">
       <metadata inherited="true">
-        <serviceName>all</serviceName>
+        <serviceName>all_plus_http</serviceName>
       </metadata>
       <filter>
         <exclude wildcard="*.html" />
