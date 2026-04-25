@@ -17,17 +17,17 @@ webapp:
     load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
     image: docker.io/potatofever/rda-tds:sha-78c5b97
     port: 8080
-    memory: 64G
+    memory: 40G
     cpu: 5
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
-    limit_connections: 5  # Increased for concurrent requests
-    limit_rps: 1          # Increased for page load bursts
+    limit_connections: 50  # Increased for concurrent requests
+    limit_rps: 2          # Increased for page load bursts
  
     env:
-      THREDDS_XMX_SIZE: 48G
-      THREDDS_XMS_SIZE: 20G
+      THREDDS_XMX_SIZE: 32G
+      THREDDS_XMS_SIZE: 10G
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
