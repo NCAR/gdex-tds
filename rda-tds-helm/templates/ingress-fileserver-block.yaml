@@ -5,9 +5,6 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels:
     group: {{ .Values.webapp.group }}
-  annotations:
-    # Allow only localhost, effectively blocking external /thredds/fileServer/ access with 403.
-    nginx.ingress.kubernetes.io/whitelist-source-range: "127.0.0.1/32"
 spec:
   ingressClassName: nginx-external
   rules:
@@ -18,9 +15,9 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: {{ .Values.webapp.name }}
+            name: {{ .Values.webapp.name }}-fileserver-deny
             port:
-              number: {{ .Values.webapp.container.port }}
+              number: 80
   - host: {{ .Values.webapp.tls.fqdn2 }}
     http:
       paths:
@@ -28,9 +25,9 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: {{ .Values.webapp.name }}
+            name: {{ .Values.webapp.name }}-fileserver-deny
             port:
-              number: {{ .Values.webapp.container.port }}
+              number: 80
   - host: {{ .Values.webapp.tls.fqdn3 }}
     http:
       paths:
@@ -38,6 +35,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: {{ .Values.webapp.name }}
+            name: {{ .Values.webapp.name }}-fileserver-deny
             port:
-              number: {{ .Values.webapp.container.port }}
+              number: 80
