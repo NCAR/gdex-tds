@@ -1,32 +1,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Values.webapp.name }}
+  name: {{ .Values.webapp.name }}-fileserver-block
   namespace: {{ .Release.Namespace }}
   labels:
     group: {{ .Values.webapp.group }}
   annotations:
-    cert-manager.io/cluster-issuer: "incommon"
-    nginx.ingress.kubernetes.io/proxy-read-timeout: "{{ .Values.webapp.container.responseTimeout }}"
-    nginx.ingress.kubernetes.io/proxy-body-size: {{ .Values.webapp.container.maxUploadSize }}
-    nginx.ingress.kubernetes.io/limit-rps: "{{ .Values.webapp.container.limit_rps }}"
-    nginx.ingress.kubernetes.io/limit-connections: "{{ .Values.webapp.container.limit_connections }}"
-    nginx.ingress.kubernetes.io/load-balance: "{{ .Values.webapp.container.load_balance }}"
-
-
+    # Allow only localhost, effectively blocking external /thredds/fileServer/ access with 403.
+    nginx.ingress.kubernetes.io/whitelist-source-range: "127.0.0.1/32"
 spec:
   ingressClassName: nginx-external
-  tls:
-    - hosts:
-      - {{ .Values.webapp.tls.fqdn }}
-      - {{ .Values.webapp.tls.fqdn2 }}
-      - {{ .Values.webapp.tls.fqdn3 }}
-      secretName: {{ .Values.webapp.tls.secretName }}
   rules:
   - host: {{ .Values.webapp.tls.fqdn }}
     http:
       paths:
-      - path: {{ .Values.webapp.path }}
+      - path: /thredds/fileServer
         pathType: Prefix
         backend:
           service:
@@ -36,7 +24,7 @@ spec:
   - host: {{ .Values.webapp.tls.fqdn2 }}
     http:
       paths:
-      - path: {{ .Values.webapp.path }}
+      - path: /thredds/fileServer
         pathType: Prefix
         backend:
           service:
@@ -46,7 +34,7 @@ spec:
   - host: {{ .Values.webapp.tls.fqdn3 }}
     http:
       paths:
-      - path: {{ .Values.webapp.path }}
+      - path: /thredds/fileServer
         pathType: Prefix
         backend:
           service:
