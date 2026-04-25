@@ -96,7 +96,7 @@
   -->
 
   <DiskCache>
-    <alwaysUse>false</alwaysUse>
+    <alwaysUse>true</alwaysUse>
     <scour>15 min</scour>
     <maxSize>1 Gb</maxSize>
   </DiskCache>
@@ -111,8 +111,8 @@
   default is to allow 50 - 100 open files, cleanup every 11 minutes
   -->
   <NetcdfFileCache>
-    <minFiles>50</minFiles>
-    <maxFiles>100</maxFiles>
+    <minFiles>5</minFiles>
+    <maxFiles>20</maxFiles>
     <scour>11 min</scour>
   </NetcdfFileCache>
 
@@ -123,8 +123,8 @@
   </RandomAccessFile>
 
   <GribCollection>
-    <minFiles>100</minFiles>
-    <maxFiles>200</maxFiles>
+    <minFiles>10</minFiles>
+    <maxFiles>20</maxFiles>
     <scour>5 min</scour>
   </GribCollection>
   <TimePartition>
@@ -163,9 +163,9 @@
   -->
   <NetcdfSubsetService>
     <allow>true</allow>
-    <scour>15 min</scour>
-    <maxAge>5 min</maxAge>
-    <maxFileDownloadSize>500 MB</maxFileDownloadSize>
+    <scour>5 min</scour>
+    <maxAge>2 min</maxAge>
+    <maxFileDownloadSize>100 MB</maxFileDownloadSize>
   </NetcdfSubsetService>
 
   <!--
