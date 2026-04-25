@@ -4,7 +4,6 @@
   <dataset name="SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments">
     <metadata inherited="true">
       <serviceName>all</serviceName>
-      <service name="HTTPServer" serviceType="HTTPServer" base="/thredds/fileServer/"/>
       <dataFormat>NetCDF</dataFormat>
       <dataType>GRID</dataType>
       <documentation type="Rights">Freely Available</documentation>
