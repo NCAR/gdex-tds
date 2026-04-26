@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Values.webapp.name }}-fileserver-block
+  name: {{ .Values.webapp.name }}-dap4-block
   namespace: {{ .Release.Namespace }}
   labels:
     group: {{ .Values.webapp.group }}
@@ -11,7 +11,7 @@ spec:
   - host: {{ .Values.webapp.tls.fqdn }}
     http:
       paths:
-      - path: /thredds/fileServer
+      - path: /thredds/dap4
         pathType: Prefix
         backend:
           service:
@@ -21,7 +21,7 @@ spec:
   - host: {{ .Values.webapp.tls.fqdn2 }}
     http:
       paths:
-      - path: /thredds/fileServer
+      - path: /thredds/dap4
         pathType: Prefix
         backend:
           service:
@@ -31,7 +31,7 @@ spec:
   - host: {{ .Values.webapp.tls.fqdn3 }}
     http:
       paths:
-      - path: /thredds/fileServer
+      - path: /thredds/dap4
         pathType: Prefix
         backend:
           service:
