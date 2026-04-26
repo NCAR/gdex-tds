@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.webapp.name }}-fileserver-deny
+  name: {{ .Values.webapp.name }}-deny-backend
   namespace: {{ .Release.Namespace }}
   labels:
-    app: {{ .Values.webapp.name }}-fileserver-deny
+    app: {{ .Values.webapp.name }}-deny-backend
     group: {{ .Values.webapp.group }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ .Values.webapp.name }}-fileserver-deny
+      app: {{ .Values.webapp.name }}-deny-backend
   template:
     metadata:
       labels:
-        app: {{ .Values.webapp.name }}-fileserver-deny
+        app: {{ .Values.webapp.name }}-deny-backend
     spec:
       containers:
       - name: deny
@@ -37,14 +37,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.webapp.name }}-fileserver-deny
+  name: {{ .Values.webapp.name }}-deny-backend
   namespace: {{ .Release.Namespace }}
   labels:
-    app: {{ .Values.webapp.name }}-fileserver-deny
+    app: {{ .Values.webapp.name }}-deny-backend
     group: {{ .Values.webapp.group }}
 spec:
   selector:
-    app: {{ .Values.webapp.name }}-fileserver-deny
+    app: {{ .Values.webapp.name }}-deny-backend
   ports:
   - name: http
     port: 80
