@@ -15,7 +15,7 @@ metadata:
 
 
 spec:
-  ingressClassName: nginx-external
+  ingressClassName: "{{ .Values.webapp.ingressClassName }}"
   tls:
     - hosts:
       - {{ .Values.webapp.tls.fqdn }}
