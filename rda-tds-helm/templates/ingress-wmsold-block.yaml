@@ -6,7 +6,7 @@ metadata:
   labels:
     group: {{ .Values.webapp.group }}
 spec:
-  ingressClassName: "{{ .Values.webapp.ingressClassName }}"
+  ingressClassName: {{ .Values.webapp.ingressClassName }}
   rules:
   - host: {{ .Values.webapp.tls.fqdn }}
     http:

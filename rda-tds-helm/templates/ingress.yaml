@@ -15,7 +15,7 @@ metadata:
 
 
 spec:
-  ingressClassName: "{{ .Values.webapp.ingressClassName }}"
+  ingressClassName: {{ .Values.webapp.ingressClassName }}
   tls:
     - hosts:
       - {{ .Values.webapp.tls.fqdn }}
