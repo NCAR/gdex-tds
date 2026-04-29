@@ -453,7 +453,7 @@ def add_data2tds():
             for new_dsid in new_datasets_add:
                 log_file.write(f"[{date_data_info}] - {new_dsid} added\n")
     else:
-        sys.exit("No new dataset added to TDS.")
+        logger.info("No new dataset added to TDS.")
 
 if __name__ == "__main__":
 
