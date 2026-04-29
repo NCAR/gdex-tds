@@ -9,7 +9,6 @@ metadata:
     cert-manager.io/cluster-issuer: "incommon"
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.middlewares: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-ratelimit@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-inflightreq@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-buffering@kubernetescrd"
-    traefik.ingress.kubernetes.io/service.serversTransport: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-transport@kubernetescrd"
 
 spec:
   ingressClassName: {{ .Values.webapp.ingress.className }}

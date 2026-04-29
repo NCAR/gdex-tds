@@ -5,6 +5,8 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels:
     group: {{ .Values.webapp.group }}
+  annotations:
+    traefik.ingress.kubernetes.io/service.serverstransport: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-transport@kubernetescrd"
 spec:
   ports:
   - port: {{ .Values.webapp.container.port }}
