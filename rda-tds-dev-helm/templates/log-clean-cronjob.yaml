@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cleanup-dev-access-logs
+spec:
+  schedule: "0 3 * * *" # Runs daily at 3 AM
+  successfulJobsHistoryLimit: 2  # Retain only the last 2 successful Jobs
+  failedJobsHistoryLimit: 5      # Retain only the last 5 failed Jobs
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: log-cleanup
+            image: alpine:latest
+            command:
+            - /bin/sh
+            - -c
+            - |
+              echo "Listing logs before cleanup:";
+              find /usr/local/tomcat/logs/localhost_access_log.* -mtime +300 -exec echo {} \;;
+              echo "Removing logs:";
+              find /usr/local/tomcat/logs/localhost_access_log.* -mtime +300 -exec rm {} \;;
+            volumeMounts:
+            - name: logs-volume
+              mountPath: /usr/local/tomcat/logs
+          restartPolicy: OnFailure
+          volumes:
+          - name: logs-volume
+            persistentVolumeClaim:
+              claimName: logs-persist

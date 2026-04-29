@@ -2,18 +2,18 @@ replicaCount: 3
 revisionHistoryCount: 9
 
 webapp:
-  name: rda-tds
-  group: rda-tds
+  name: rda-tds-dev
+  group: rda-tds-dev
   path: /
   # SSL/TLS encryption for the user browser to Ingress connection
   tls:
     # Fully Qualified Domain Name (e.g.: <app-name>.k8s.ucar.edu)
-    fqdn: tds.k8s.ucar.edu       
-    fqdn2: tds.gdex.ucar.edu
-    fqdn3: thredds.rda.ucar.edu
+    fqdn: tds-dev.k8s.ucar.edu       
     # Kubernetes Secret that contains the TLS certificate
-    secretName: incommon-cert-tds
-  ingressClassName: nginx-external
+    secretName: incommon-cert-tds-dev
+  ingress:
+    # Ingress class to use (e.g., nginx, traefik, etc.)
+    className: traefik-external
   container: 
     load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
     image: docker.io/potatofever/rda-tds:sha-739e830
@@ -23,23 +23,21 @@ webapp:
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
-    maxUploadBytes: 31457280  # 30m in bytes for Traefik buffering middleware
-    limit_connections: 50
-    limit_rps: 10
-    limit_rps_burst: 20
+    limit_connections: 50  # Increased for concurrent requests
+    limit_rps: 10          # Increased for page load bursts
  
     env:
       THREDDS_XMX_SIZE: 32G
       THREDDS_XMS_SIZE: 10G
   logs: 
-    name: rda-logs
+    name: rda-dev-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
     port: 8080
     memory: 2G
     cpu: 1
     ephemeralStorageLimit: 1Gi
   tdm:
-    name: gdex-tdm
+    name: gdex-dev-tdm
     image: docker.io/potatofever/gdex-tdm:sha-4f85cd4
     port: 8080
     memory: 6G
@@ -55,12 +53,12 @@ webapp:
     readOnly: true
   volume:
     fs:
-      name: tds-persist
+      name: tds-dev-persist
       size: 1Ti
       mountPath: /data/TDSIndexFiles/data/rda/data # /tmp2/TDSIndexFiles # /data/TDSIndexFiles
   volume2:
     fs:
-      name: logs-persist
+      name: logs-dev-persist
       size: 50Gi
       mountPath: /usr/local/tomcat/logs
 

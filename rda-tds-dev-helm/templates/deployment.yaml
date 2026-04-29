@@ -1,0 +1,142 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.webapp.name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.webapp.name }}
+    group: {{ .Values.webapp.group }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  revisionHistoryLimit: {{ .Values.revisionHistoryCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.webapp.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.webapp.name }}
+    spec:
+      #securityContext:
+      #  runAsUser: 1234 # Specify the desired user ID
+      #  runAsGroup: 1234 # Specify the desired group ID
+      #  fsGroup: 1234 # Specify the desired group ID for volume ownership
+      volumes:
+        - name: {{ .Values.webapp.volume1.name }}
+          nfs:
+            server: {{ .Values.webapp.volume1.server }}
+            path: {{ .Values.webapp.volume1.path }}
+            readOnly: {{ .Values.webapp.volume1.readOnly }}
+        # Add the log PVC to the deployment
+        - name: {{ .Values.webapp.volume2.fs.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.webapp.volume2.fs.name }}
+        # Add the TDS index files PVC to the deployment
+        - name: {{ .Values.webapp.volume.fs.name }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.webapp.volume.fs.name }}
+      # # Use an initContainer to copy the thredds content from the image to the PVC on startup, ensuring it is refreshed on every pod restart      
+      # initContainers:
+      #   - name: copy-thredds-content
+      #     image: {{ .Values.webapp.container.image }}
+      #     command: ["sh", "-c", "cp -rf /usr/local/tomcat/content/thredds/. /mnt/thredds-content/"]
+      #     volumeMounts:
+      #     - mountPath: /mnt/thredds-content
+      #       name: {{ .Values.webapp.volume.fs.name }}
+      #       subPath: thredds-content
+      containers:
+      # tds container
+      - name: {{ .Values.webapp.name }}
+        image: {{ .Values.webapp.container.image }}
+        resources:
+          limits:
+            memory: {{ .Values.webapp.container.memory }}
+            cpu: {{ .Values.webapp.container.cpu }}
+            # ephemeral-storage: {{ .Values.webapp.container.ephemeralStorageLimit }}
+        ports:
+        - containerPort: {{ .Values.webapp.container.port }}
+        env:
+          - name: THREDDS_XMX_SIZE
+            value: {{ .Values.webapp.container.env.THREDDS_XMX_SIZE }}
+          - name: THREDDS_XMS_SIZE
+            value: {{ .Values.webapp.container.env.THREDDS_XMS_SIZE }}
+          - name: JAVA_OPTS # Redirect OOM heap dump off ephemeral storage; exit fast on OOM so pod restarts
+            value: "-XX:HeapDumpPath=/usr/local/tomcat/temp/ -XX:+ExitOnOutOfMemoryError -Ddap4.maxDataLimit=500 -Ddap4.maxRequestSize=1000"
+          - name: K8S_POD_NAME # Inject the current pod's name into the container environment so that server.xml can use it for access log naming
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+        volumeMounts:
+        - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
+          name: {{ .Values.webapp.volume1.name }}
+        - mountPath: /usr/local/tomcat/logs
+          name: {{ .Values.webapp.volume2.fs.name }}
+        - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
+          name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: /usr/local/tomcat/content/thredds/cache/cdm # TDS cache cdm dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-cache-cdm
+        - mountPath: /usr/local/tomcat/content/thredds/cache/ncss # TDS cache ncss dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-cache-ncss
+        - mountPath: /usr/local/tomcat/content/thredds/cache/wcs # TDS WCS cache dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-cache-wcs
+        - mountPath: /usr/local/tomcat/content/thredds/cache/edal-java # TDS WMS tile cache dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-cache-edal-java
+        - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-temp-logs
+        - mountPath: /usr/local/tomcat/temp # TDS NCSS temp files
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-overflow/tomcat-temp # Tomcat temp files
+        - mountPath: /usr/local/tomcat/work # TDS NCSS temp files
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-overflow/tomcat-work # Tomcat temp files
+        # - mountPath: /usr/local/tomcat/content/thredds
+        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   subPath: thredds-content # Full thredds dir on PVC - refreshed on every restart by initContainer
+        # - mountPath: /usr/local/tomcat/work
+        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   subPath: tds-overflow/work # Tomcat JSP compile cache
+        - mountPath: /tmp
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tds-overflow/tmp # JVM temp files and heap dumps
+
+      # Logs container
+      - name: {{ .Values.webapp.logs.name }}
+        image: {{ .Values.webapp.logs.image }}
+        resources:
+          limits:
+            memory: {{ .Values.webapp.logs.memory }}
+            cpu: {{ .Values.webapp.logs.cpu }}
+            # ephemeral-storage: {{ .Values.webapp.logs.ephemeralStorageLimit }}
+        ports:
+        - containerPort: {{ .Values.webapp.logs.port }}
+        volumeMounts:
+        - mountPath: /usr/local/tomcat/logs
+          name: {{ .Values.webapp.volume2.fs.name }}
+      # TDM container
+      - name: {{ .Values.webapp.tdm.name }}
+        image: {{ .Values.webapp.tdm.image }}
+        resources:
+          limits:
+            memory: {{ .Values.webapp.tdm.memory }}
+            cpu: {{ .Values.webapp.tdm.cpu }}
+            # ephemeral-storage: {{ .Values.webapp.tdm.ephemeralStorageLimit }}
+        ports:
+        - containerPort: {{ .Values.webapp.tdm.port }}
+        env:
+          - name: TDM_XMX_SIZE
+            value: {{ .Values.webapp.tdm.env.TDM_XMX_SIZE }}
+          - name: TDM_XMS_SIZE
+            value: {{ .Values.webapp.tdm.env.TDM_XMS_SIZE }}
+        volumeMounts:
+        - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
+          name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: /usr/local/tomcat/content/tdm/logs
+          name: {{ .Values.webapp.volume.fs.name }}
+          subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles in PVC
+        - mountPath: /data/rda/ # Glade
+          name: {{ .Values.webapp.volume1.name }}
