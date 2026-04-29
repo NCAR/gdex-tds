@@ -22,9 +22,10 @@ webapp:
     cpu: 5
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
-    maxUploadSize: 30m
-    limit_connections: 50  # Increased for concurrent requests
-    limit_rps: 10          # Increased for page load bursts
+    maxUploadBytes: 31457280  # 30m in bytes for Traefik buffering middleware
+    limit_connections: 10
+    limit_rps: 5
+    limit_rps_burst: 10
  
     env:
       THREDDS_XMX_SIZE: 32G
