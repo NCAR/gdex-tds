@@ -1,6 +1,6 @@
 apiVersion: v2
 name: rda-tds
-description: A Helm chart for RDAs TDS implementation
+description: A Helm chart for GDEX TDS implementation - Development environment
 
 # A chart can be either an 'application' or a 'library' chart.
 #
