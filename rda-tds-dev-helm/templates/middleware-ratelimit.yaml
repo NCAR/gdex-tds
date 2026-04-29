@@ -8,7 +8,8 @@ metadata:
 spec:
   rateLimit:
     average: {{ .Values.webapp.container.limit_rps }}
-    burst: {{ .Values.webapp.container.limit_rps_burst }}
+    burst: {{ .Values.webapp.container.limit_rps_burst }} #Period of time used to define the rate.
+    period: 1s
     sourceCriterion:
       ipStrategy:
         depth: 1

@@ -15,7 +15,7 @@ webapp:
     # Ingress class to use (e.g., nginx, traefik, etc.)
     className: traefik-external
   container: 
-    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
+    # load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
     image: docker.io/potatofever/rda-tds:sha-739e830
     port: 8080
     memory: 40G
