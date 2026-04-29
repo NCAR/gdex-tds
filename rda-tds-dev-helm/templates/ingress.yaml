@@ -7,12 +7,8 @@ metadata:
     group: {{ .Values.webapp.group }}
   annotations:
     cert-manager.io/cluster-issuer: "incommon"
-    nginx.ingress.kubernetes.io/proxy-read-timeout: "{{ .Values.webapp.container.responseTimeout }}"
-    nginx.ingress.kubernetes.io/proxy-body-size: {{ .Values.webapp.container.maxUploadSize }}
-    nginx.ingress.kubernetes.io/limit-rps: "{{ .Values.webapp.container.limit_rps }}"
-    nginx.ingress.kubernetes.io/limit-connections: "{{ .Values.webapp.container.limit_connections }}"
-    nginx.ingress.kubernetes.io/load-balance: "{{ .Values.webapp.container.load_balance }}"
-
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.middlewares: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-ratelimit@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-inflightreq@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-buffering@kubernetescrd"
 
 spec:
   ingressClassName: {{ .Values.webapp.ingress.className }}

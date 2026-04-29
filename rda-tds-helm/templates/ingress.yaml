@@ -12,8 +12,6 @@ metadata:
     nginx.ingress.kubernetes.io/limit-rps: "{{ .Values.webapp.container.limit_rps }}"
     nginx.ingress.kubernetes.io/limit-connections: "{{ .Values.webapp.container.limit_connections }}"
     nginx.ingress.kubernetes.io/load-balance: "{{ .Values.webapp.container.load_balance }}"
-
-
 spec:
   ingressClassName: {{ .Values.webapp.ingressClassName }}
   tls:

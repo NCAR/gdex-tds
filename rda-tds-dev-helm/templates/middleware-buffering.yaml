@@ -1,0 +1,10 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: {{ .Values.webapp.name }}-buffering
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+spec:
+  buffering:
+    maxRequestBodyBytes: {{ .Values.webapp.container.maxUploadBytes }}
