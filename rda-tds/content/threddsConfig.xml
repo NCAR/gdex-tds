@@ -102,7 +102,7 @@
   </DiskCache>
 
 <Opendap>
-  <ascLimit>100</ascLimit>
+  <ascLimit>500</ascLimit>
   <binLimit>1000</binLimit>
 </Opendap>
     
