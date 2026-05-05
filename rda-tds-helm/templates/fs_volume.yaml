@@ -3,6 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
     name: {{ .Values.webapp.volume.fs.name }}
     namespace: {{ .Release.Namespace}}
+    annotations:
+        argocd.argoproj.io/sync-options: Prune=false
 spec:
     accessModes:
         - ReadWriteMany
