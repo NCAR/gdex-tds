@@ -44,6 +44,17 @@ spec:
       #     - mountPath: /mnt/thredds-content
       #       name: {{ .Values.webapp.volume.fs.name }}
       #       subPath: thredds-content
+      # Changing the owner of PVC root dir to the same user as the container to allow TDS to write cache and log files to the PVC. 
+      # This is required because the PVC is mounted with root ownership by default, and TDS needs write permissions to the 
+      # mounted PVC for TDM to create index file. 
+      # The initContainer runs a chown command to change the ownership of the mounted PVC directory 
+      initContainers:
+        - name: fix-pvc-permissions
+          image: busybox
+          command: ["sh", "-c", "chown ubuntu:ubuntu /data/TDSIndexFiles/data/rda/data"]
+          volumeMounts:
+          - mountPath: /data/TDSIndexFiles/data/rda/data
+            name: {{ .Values.webapp.volume.fs.name }}
       containers:
       # tds container
       - name: {{ .Values.webapp.name }}
