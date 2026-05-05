@@ -174,7 +174,7 @@
   and returns 403 for any direct /thredds/fileServer/ requests.
   -->
   <FileServer>
-    <allow>false</allow>
+    <allow>true</allow>
   </FileServer>
 
    <FeatureCollection>
