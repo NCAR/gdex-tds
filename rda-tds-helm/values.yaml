@@ -22,8 +22,8 @@ webapp:
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
-    limit_connections: 100  # Increased for concurrent requests
-    limit_rps: 10          # Increased for page load bursts
+    limit_connections: 100  # Increased for concurrent requests - global limit
+    limit_rps: 10          # Increased for page load bursts - global limit
  
     env:
       THREDDS_XMX_SIZE: 32G
