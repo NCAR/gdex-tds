@@ -3,7 +3,7 @@
 
     <service name="all" serviceType="Compound" base="">
         <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
-        <!-- <service name="dap4" serviceType="DAP4" base="/thredds/dap4/" /> -->
+        
         <service name="ncssGrid" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
         <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/" />
         <service name="cdmrFeatureGrid" serviceType="CdmrFeature" base="/thredds/cdmrfeature/grid/" />
@@ -138,6 +138,7 @@
     <catalogRef xlink:href="catalog_d551000.xml" xlink:title="d551000 Dai and Trenberth Global River Flow and Continental Discharge Dataset" name="" />
     <catalogRef xlink:href="catalog_d559000.xml" xlink:title="d559000 Four-kilometer long-term regional hydroclimate reanalysis over the conterminous United States (CONUS)" />
     <catalogRef xlink:href="catalog_d559001.xml" xlink:title="d559001 Four-kilometer long-term regional hydroclimate WRF simulation data perturbed with pseudo-global warming (PGW) conditions over the conterminous United States (CONUS404 PGW)" name="" />
+    <catalogRef xlink:href="catalog_d569728.xml" xlink:title="d569728 Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)" name="" />
     <catalogRef xlink:href="catalog_d580005.xml" xlink:title="d580005 COLA SP CCSM4 Model Output" name="" />
     <catalogRef xlink:href="catalog_d580007.xml" xlink:title="d580007 DCMIP 2016 Datasets" name="" />
     <catalogRef xlink:href="catalog_d583100.xml" xlink:title="d583100 POGA and SPCZ experiments using CAM5" name="" />

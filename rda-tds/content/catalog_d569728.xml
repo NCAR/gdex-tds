@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d569728/" xlink:title="NCAR GDEX - Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)(d569728)" />
+      <documentation type="summary">The Global Observationally-Based Land-Atmosphere Coupling Metrics dataset (GOLAM; version v1.0) provides a comprehensive framework for assessing land-atmosphere (L-A) interactions, serving as benchmarks for diagnosing errors in Earth system models and for model validation purposes. Generally, this dataset is derived from observational products, primarily from satellite-based gridded data, and is classified into three archives: coupling, SMM, and regime.
+The archive "coupling" includes Pearson correlation coefficients and terrestrial coupling index between daily soil moisture (SM) and surface heat fluxes (HF), such as sensible heat flux (H), evaporation (E), and evaporative fraction (EF). The second archive is "SMM", which includes SM memory. These two archives are designed to address random observational errors in satellite SM measurements by using a Markovian framework. Therefore, this framework enables us to quantify the observational random error variance, thereby deriving mathematical formulations for the random-error-adjusted SMM, the adjusted Pearson correlation coefficient (R_Adjusted), and the adjusted terrestrial coupling index (I_Adjusted) from R_Adjusted.
+The third archive is "regime", which contains SM-EF regime identification. This archive provides global patterns of surface and sub-surface SM regimes and SM-EF indicators, such as wilting point, critical SM, saturated EF, and SM-EF slope, which are also quantified using segmented regression analysis.</documentation>
+      <creator>
+        <name vocabulary="DIF">GMU/AOES</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d569728 Files" path="files/d569728" location="/data/rda/data/d569728/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
