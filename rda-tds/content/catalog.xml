@@ -55,6 +55,7 @@
     <catalogRef xlink:href="catalog_d094000.xml" xlink:title="d094000 NCEP Climate Forecast System Version 2 (CFSv2) 6-hourly Products" name="" />
     <catalogRef xlink:href="catalog_d094001.xml" xlink:title="d094001 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products" name="" />
     <catalogRef xlink:href="catalog_d094002.xml" xlink:title="d094002 NCEP Climate Forecast System Version 2 (CFSv2) Monthly Products" name="" />
+    <catalogRef xlink:href="catalog_d100100.xml" xlink:title="d100100 MPAS Mesoamerica Affinity Group Simulations" name="" />
     <catalogRef xlink:href="catalog_d113000.xml" xlink:title="d113000 ECMWF's Operational Model Analysis, starting in 2011" name="" />
     <catalogRef xlink:href="catalog_d113001.xml" xlink:title="d113001 ECMWF IFS CY41r2 High-Resolution Operational Forecasts, staring in 2016 " name="" />
     <catalogRef xlink:href="catalog_d131002.xml" xlink:title="d131002 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
