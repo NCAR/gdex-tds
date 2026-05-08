@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Mechanisms for long-duration extreme winds in a WRF simulation of the 10 August 2020 derecho" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Mechanisms for long-duration extreme winds in a WRF simulation of the 10 August 2020 derecho">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d054121/" xlink:title="NCAR GDEX - Mechanisms for long-duration extreme winds in a WRF simulation of the 10 August 2020 derecho(d054121)" />
+      <documentation type="summary">The 10 August 2020 Midwestern derecho had winds exceeding 55 m/s with severe intensity winds persisting up to an hour. The Weather Research and Forecast Model (WRF) was run using a 3-km horizontal grid with a 1-km inner nest to better understand mechanisms that might explain the extreme wind behavior. Simulations were sensitive to the microphysics used, with many schemes failing to produce a long-lived system in the area of the observed derecho. However, an unusually realistic simulation was obtained using the Thompson scheme but only when the Kain-Fritsch convective scheme was used. That scheme prevented spurious nocturnal storms that dried the lower troposphere prior to derecho development, causing the derecho to dissipate in western Iowa.</documentation>
+      <creator>
+        <name vocabulary="DIF">IA-STATE/CLAS/EAC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d054121 Files" path="files/d054121" location="/data/rda/data/d054121/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
