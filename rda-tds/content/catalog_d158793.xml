@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CAM6 Aerosol and Microphysics PPE" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CAM6 Aerosol and Microphysics PPE">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d158793/" xlink:title="NCAR GDEX - CAM6 Aerosol and Microphysics PPE(d158793)" />
+      <documentation type="summary">This data represents a Perturbed Parameter Ensemble (PPE), where multiple aerosol and microphysics parameters are varied simultaneously and the parameter values are determined with Latin Hypercube sampling. Simulations with preindustrial (PI) and present day (PD) aerosol emissions are run for 2 years to analyze the parametric uncertainty associated with the radiative forcing from aerosol cloud interactions (ACI). New MODIS cloud fraction joint histograms are output to efficiently decompose the radiative forcing from ACI into forcing from liquid and ice-phase clouds, as well as into microphysical and macrophysical cloud responses. 162 ensemble members are generated to explore variability in the cloud response to aerosol perturbations.</documentation>
+      <creator>
+        <name vocabulary="DIF">SCRIPPS/METEORA</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">SU/MISU</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d158793 Files" path="files/d158793" location="/data/rda/data/d158793/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
