@@ -62,6 +62,7 @@
     <catalogRef xlink:href="catalog_d131002.xml" xlink:title="d131002 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
     <catalogRef xlink:href="catalog_d131003.xml" xlink:title="d131003 NOAA/CIRES Twentieth Century Global Reanalysis Version 3" name="" />
     <catalogRef xlink:href="catalog_d155028.xml" xlink:title="d155028 Development and Evaluation of the Simplified Tropospheric Chemistry Mechanism T4 in the Community Earth System Model (CESM) for Climate Simulations" name="" />
+    <catalogRef xlink:href="catalog_d158793.xml" xlink:title="d158793 CAM6 Aerosol and Microphysics PPE" name="" />
     <catalogRef xlink:href="catalog_d193000.xml" xlink:title="d193000 Global Hourly 0.5-degree Land Surface Air Temperature Datasets" name="" />
     <catalogRef xlink:href="catalog_d197000.xml" xlink:title="d197000 Great Plains Low-Level Jet Occurrence and Upper-Level Coupling in CERA-20C" name="" />
     <catalogRef xlink:href="catalog_d197009.xml" xlink:title="d197009 Stomatal Conductance Constant CO2 Land-Historical Experiment" name="" />
