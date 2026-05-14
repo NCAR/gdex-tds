@@ -1,5 +1,6 @@
 replicaCount: 3
 revisionHistoryCount: 9
+restartedAt: "never"
 
 webapp:
   name: rda-tds

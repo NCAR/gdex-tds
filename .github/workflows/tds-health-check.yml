@@ -63,12 +63,15 @@ jobs:
       run: |
         echo "datetime=$(TZ=America/Denver date)" >> $GITHUB_OUTPUT
 
-    - name: Add Restart Entry
+    - name: Trigger ArgoCD Restart via values.yaml
       if: steps.health-check.outputs.status == 'unhealthy'
       run: |
-        # Make the restart change to trigger pod restart
-        echo "" >> rda-tds/RESTART_LOG.md
-        echo "Restart on $(TZ=America/Denver date) by GitHub Actions" >> rda-tds/RESTART_LOG.md
+        # Update restartedAt in helm values — ArgoCD detects the change and rolls out new pods
+        RESTART_TIME=$(TZ=America/Denver date -u +%Y-%m-%dT%H:%M:%SZ)
+        sed -i "s/^restartedAt: .*/restartedAt: \"${RESTART_TIME}\"/" rda-tds-helm/values.yaml
+        git add rda-tds-helm/values.yaml
+        git commit -m "GHA: trigger pod restart on health check failure at ${RESTART_TIME}"
+        git push origin main
         
     - name: Create GitHub Issue Notification
       if: steps.health-check.outputs.status == 'unhealthy'

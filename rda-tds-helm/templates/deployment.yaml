@@ -16,6 +16,8 @@ spec:
     metadata:
       labels:
         app: {{ .Values.webapp.name }}
+      annotations:
+        restartedAt: {{ .Values.restartedAt | default "never" | quote }}
     spec:
       #securityContext:
       #  runAsUser: 1234 # Specify the desired user ID
