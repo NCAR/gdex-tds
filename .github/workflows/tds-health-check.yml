@@ -69,31 +69,70 @@ jobs:
         # Update restartedAt in helm values — ArgoCD detects the change and rolls out new pods
         RESTART_TIME=$(TZ=America/Denver date -u +%Y-%m-%dT%H:%M:%SZ)
         sed -i "s/^restartedAt: .*/restartedAt: \"${RESTART_TIME}\"/" rda-tds-helm/values.yaml
-        git add rda-tds-helm/values.yaml
-        git commit -m "GHA: trigger pod restart on health check failure at ${RESTART_TIME}"
-        git push origin main
-        
-    - name: Create GitHub Issue Notification
+
+    - name: Create Pull Request
       if: steps.health-check.outputs.status == 'unhealthy'
+      id: pr
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Auto restart TDS - ${{ steps.timestamp.outputs.datetime }}"
+        committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+        author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+        branch: "auto-restart"
+        branch-suffix: timestamp
+        delete-branch: true
+        title: "🚨 Auto Restart TDS - ${{ steps.timestamp.outputs.datetime }}"
+        body: |
+          ## TDS Health Check Failed
+          
+          **Time:** ${{ steps.timestamp.outputs.datetime }}
+          **Run ID:** ${{ github.run_id }}
+          **Status:** TDS is unhealthy and requires restart
+          **Action:** Adding restart timestamp to the helm values.yaml to trigger ArgoCD rollout
+          
+          This PR will automatically merge to trigger pod restart.
+          
+          ---
+          *This PR was created automatically by the health check workflow.*
+        base: main
+        draft: false
+        
+    - name: Auto-merge Pull Request
+      if: steps.health-check.outputs.status == 'unhealthy' && steps.pr.outputs.pull-request-number
       run: |
-        BODY="## TDS is Unhealthy
-
-        **Time:** ${{ steps.timestamp.outputs.datetime }}
-        **Run ID:** ${{ github.run_id }}
-
-        The automated health check detected that TDS is not responding at https://tds.gdex.ucar.edu/thredds
-
-        [View workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-
-        CC: @chiaweh2 @rpconroy"
-
-        gh issue create \
-          --title "🚨 TDS Health Check Failed - ${{ steps.timestamp.outputs.datetime }}" \
-          --body "$BODY" \
-          --label "TDS server down" \
-          --assignee "chiaweh2"
+        # Wait a moment for PR to be fully created
+        sleep 5
+        
+        # Auto-merge the PR
+        gh pr merge ${{ steps.pr.outputs.pull-request-number }} \
+          --auto \
+          --squash \
+          --subject "Auto restart TDS - $(TZ=America/Denver date)"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    # - name: Create GitHub Issue Notification
+    #   if: steps.health-check.outputs.status == 'unhealthy'
+    #   run: |
+    #     BODY="## TDS is Unhealthy
+
+    #     **Time:** ${{ steps.timestamp.outputs.datetime }}
+    #     **Run ID:** ${{ github.run_id }}
+
+    #     The automated health check detected that TDS is not responding at https://tds.gdex.ucar.edu/thredds
+
+    #     [View workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+    #     CC: @chiaweh2 @rpconroy"
+
+    #     gh issue create \
+    #       --title "🚨 TDS Health Check Failed - ${{ steps.timestamp.outputs.datetime }}" \
+    #       --body "$BODY" \
+    #       --label "TDS server down" \
+    #       --assignee "chiaweh2"
+    #   env:
+    #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     # - name: Create Pull Request
     #   if: steps.health-check.outputs.status == 'unhealthy'
