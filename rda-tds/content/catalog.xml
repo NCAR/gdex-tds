@@ -119,6 +119,7 @@
     <catalogRef xlink:href="catalog_d340000.xml" xlink:title="d340000 The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS" />
     <catalogRef xlink:href="catalog_d342000.xml" xlink:title="d342000 NCAR/MOPITT Reanalysis" />
     <catalogRef xlink:href="catalog_d345000.xml" xlink:title="d345000 CAM6 Data Assimilation Research Testbed (DART) Reanalysis" />
+    <catalogRef xlink:href="catalog_d382413.xml" xlink:title="d382413 Parameter-elevation Regressions on Independent Slopes Model (PRISM) Grids" name="" />
     <catalogRef xlink:href="catalog_d387000.xml" xlink:title="d387000 AmeriFlux Gap-Filled Data from Selected Sites" name="" />
     <catalogRef xlink:href="catalog_d435000.xml" xlink:title="d435000 Monthly Mean Rawinsondes, from NCEP/NCAR Global Reanalysis, 1948-continuing" name="" />
     <catalogRef xlink:href="catalog_d463004.xml" xlink:title="d463004 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
