@@ -20,7 +20,7 @@ webapp:
     secretName: incommon-cert-tds
   container: 
     load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
-    image: docker.io/potatofever/rda-tds:sha-1a9cc5b
+    image: docker.io/potatofever/rda-tds:sha-26d6904
     port: 8080
     memory: 64G
     cpu: 5
