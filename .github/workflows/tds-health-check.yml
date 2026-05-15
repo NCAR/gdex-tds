@@ -46,7 +46,7 @@ jobs:
         if [[ "${{ github.event.inputs.force_unhealthy }}" == "true" ]]; then
           echo "status=unhealthy" >> $GITHUB_OUTPUT
           echo "Force unhealthy mode enabled - skipping curl check"
-        elif curl -v --fail-with-body --connect-timeout 60 --max-time 120 --retry 5 --retry-delay 600 https://tds.gdex.ucar.edu/thredds > $CURL_OUTPUT 2>&1; then
+        elif curl -v --fail-with-body --connect-timeout 30 --max-time 60 --retry 3 --retry-delay 60 https://tds.gdex.ucar.edu/thredds > $CURL_OUTPUT 2>&1; then
           echo "status=healthy" >> $GITHUB_OUTPUT
           echo "TDS is healthy at $(TZ=America/Denver date)"
         else
