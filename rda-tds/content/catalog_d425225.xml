@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Fire simulations of the early phase of the Cameron Peak Fire with UFS-CFBM, WRF-Fire, and offline CFBM" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Fire simulations of the early phase of the Cameron Peak Fire with UFS-CFBM, WRF-Fire, and offline CFBM">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d425225/" xlink:title="NCAR GDEX - Fire simulations of the early phase of the Cameron Peak Fire with UFS-CFBM, WRF-Fire, and offline CFBM(d425225)" />
+      <documentation type="summary">In this work we simulated the initial fire progression of the Cameron Peak Fire with the Unified Forecast System (UFS) coupled to the Community Fire Behavior model (CFBM), the Weather Research and Forecasting (WRF) model with its fire component (WRF-Fire), and CFBM driven by offline WRF inputs. The dataset included two sets of simulations comparing uncoupled (one-way) and coupled (two-way) fire-atmosphere feedback. Each set includes simulations for three initialization times, the first starting from an ignition point and the subsequent ones starting from observed fire perimeters. Two-way UFS-CFBM and WRF-Fire simulations account for fire-atmosphere interactions, whereas the CFBM standalone simulations are driven by offline inputs. The observed fire perimeters used in the simulations initialization and evaluations are included. We also provide idealized simulations showing the propagation of fire line with homogeneous conditions and different methods to resolve the fire location.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d425225 Files" path="files/d425225" location="/data/rda/data/d425225/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
