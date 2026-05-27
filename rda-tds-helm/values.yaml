@@ -1,6 +1,10 @@
 replicaCount: 3
 revisionHistoryCount: 9
 
+backup:
+  enabled: true
+  prefix: tds-data
+  
 webapp:
   name: rda-tds
   group: rda-tds
