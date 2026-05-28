@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="MPAS Global Storm-Resolving Model Simulations for the DYAMOND Intercomparison (Phase 1)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="MPAS Global Storm-Resolving Model Simulations for the DYAMOND Intercomparison (Phase 1)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010129/" xlink:title="NCAR GDEX - MPAS Global Storm-Resolving Model Simulations for the DYAMOND Intercomparison (Phase 1)(d010129)" />
+      <documentation type="summary"> This dataset comprises output from global atmospheric simulations performed with the Model for Prediction Across Scales - Atmosphere (MPAS-A) as part of the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains as part of the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains (DYAMOND) intercomparison project (Phase 1).  Simulations were conducted over the 40-day period 1st of August to 10th of September 2016, at horizontal mesh spacings ranging from 480 km to 3.75 km. The dataset includes a suite of sensitivity experiments designed to isolate the effects of convective parameterization and changes to the microphysics. Output consists of two-dimensional diagnostic fields (15 minutes frequency) and three-dimensional history files (3-hourly frequency) on MPAS unstructured Voronoi meshes. For comparison purposes, some output fields (mostly post-processed precipitation) from several other DYAMOND participant models (ARPEGE, FV3, GEOS, ICON, IFS, NICAM, SAM, UM, and CAM - MPAS variants) is also included. The data support research into global convective organization, tropical cyclone activity, precipitation, and the sensitivity of numerical models to physical parameterization choices. 
+
+Background and Objectives:
+DYAMOND (Stevens et al. 2019, PGMFD) is a community intercomparison framework for global storm-resolving models (GSRMs) that explicitly represent deep convection without convective parameterization at kilometer-scale grid spacings. This dataset supports analysis of MPAS-A across a broad range of resolutions and physics configurations, enabling study of resolution dependence and parameterization sensitivity in a global convection-permitting context.
+Model and Simulations:
+MPAS-A was configured with the "convection_permitting" physics suite: Thompson microphysics, MYNN boundary layer and surface layer, Noah land surface model, RRTMG radiation, and scale-aware version of the Tiedtke cumulus parameterization. Simulations were initialized on 1 August 2016 from ECMWF analyses with observed SSTs updated throughout the integration.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010129 Files" path="files/d010129" location="/data/rda/data/d010129/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
