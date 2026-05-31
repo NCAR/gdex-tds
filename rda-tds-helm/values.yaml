@@ -1,6 +1,6 @@
 replicaCount: 3
 revisionHistoryCount: 9
-restartedAt: "2026-05-30T23:34:22Z"
+restartedAt: "2026-05-31T18:39:11Z"
 
 webapp:
   name: rda-tds
