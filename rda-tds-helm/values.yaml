@@ -28,7 +28,7 @@ webapp:
     responseTimeout: 180
     maxUploadSize: 30m
     limit_connections: 150  # Increased for concurrent requests - global limit
-    limit_rps: 30           # Increased for page load bursts - global limit
+    limit_rps: 150           # Increased for page load bursts - global limit
  
     env:
       THREDDS_XMX_SIZE: 48G
