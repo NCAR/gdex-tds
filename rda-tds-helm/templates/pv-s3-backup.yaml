@@ -85,6 +85,40 @@ spec:
                     "dest:${DEST_BUCKET}/${DEST_PREFIX}"
                   RC=$?
 
+                  # Tomcat access logs (separate CephFS PVC, RWX).
+                  # Only runs when backup.logs.enabled sets the env vars.
+                  RC_LOGS=0
+                  LOGS_SRC_COUNT=0
+                  LOGS_DEST_COUNT=0
+                  if [ -n "${LOGS_SOURCE_DIR:-}" ]; then
+                    echo "Backing up Tomcat access logs"
+                    rclone copy \
+                      --include '*.txt' \
+                      --log-level "${RCLONE_LOG_LEVEL}" \
+                      --log-file "${LOG}" \
+                      --transfers "${RCLONE_TRANSFERS}" \
+                      --checkers "${RCLONE_CHECKERS}" \
+                      --stats 1m \
+                      --stats-one-line \
+                      --metadata \
+                      "${LOGS_SOURCE_DIR}" \
+                      "dest:${DEST_BUCKET}/${LOGS_DEST_PREFIX}"
+                    RC_LOGS=$?
+
+                    # Guard against silent total failure (e.g. all files
+                    # unreadable by the backup UID): if the source has
+                    # .txt files but the destination has none, something
+                    # is wrong and the permission-denied tolerance below
+                    # must not mask it.
+                    LOGS_SRC_COUNT=$(find "${LOGS_SOURCE_DIR}" -type f -name '*.txt' 2>/dev/null | wc -l)
+                    LOGS_DEST_COUNT=$(rclone lsf -R --files-only --include '*.txt' \
+                      "dest:${DEST_BUCKET}/${LOGS_DEST_PREFIX}" 2>/dev/null | wc -l)
+                    if [ "${LOGS_SRC_COUNT}" -gt 0 ] && [ "${LOGS_DEST_COUNT}" -eq 0 ]; then
+                      echo "ERROR: ${LOGS_SRC_COUNT} source log files but destination is empty"
+                      RC_LOGS=1
+                    fi
+                  fi
+
                   # Permission-denied paths
                   grep 'ERROR : ' "${LOG}" 2>/dev/null \
                     | grep 'permission denied' \
@@ -129,6 +163,12 @@ spec:
                     echo "Source:            ${SOURCE_DIR}"
                     echo "Destination:       dest:${DEST_BUCKET}/${DEST_PREFIX}"
                     echo "rclone exit code:  ${RC}"
+                    if [ -n "${LOGS_SOURCE_DIR:-}" ]; then
+                      echo "Logs source:       ${LOGS_SOURCE_DIR}"
+                      echo "Logs destination:  dest:${DEST_BUCKET}/${LOGS_DEST_PREFIX}"
+                      echo "logs exit code:    ${RC_LOGS}"
+                      echo "logs src/dest:     ${LOGS_SRC_COUNT}/${LOGS_DEST_COUNT}"
+                    fi
                     echo "Permission denied: ${PERMS_COUNT}"
                     echo "Broken symlinks:   ${SYMLINK_COUNT}"
                     echo "Race conditions:   ${RACE_COUNT}"
@@ -151,18 +191,25 @@ spec:
                   echo
                   echo "Backup run ${RUN_ID} finished"
                   echo "  rclone exit:       ${RC}"
+                  if [ -n "${LOGS_SOURCE_DIR:-}" ]; then
+                    echo "  logs exit:         ${RC_LOGS}"
+                    echo "  logs src/dest:     ${LOGS_SRC_COUNT}/${LOGS_DEST_COUNT}"
+                  fi
                   echo "  permission denied: ${PERMS_COUNT}"
                   echo "  broken symlinks:   ${SYMLINK_COUNT}"
                   echo "  race conditions:   ${RACE_COUNT}"
                   echo "  other errors:      ${OTHER_ERRORS}"
 
-                  if [ "${RC}" = "0" ]; then
-                    exit 0
-                  elif [ "${RC}" = "6" ] && [ "${OTHER_ERRORS}" = "0" ]; then
-                    echo "Tolerating ${SKIPPED_COUNT} expected errors; see report."
+                  # A pass is OK if it exited 0, or exited 6 (partial)
+                  # with no errors outside the tolerated categories.
+                  ok() { [ "$1" = "0" ] || { [ "$1" = "6" ] && [ "${OTHER_ERRORS}" = "0" ]; }; }
+                  if ok "${RC}" && ok "${RC_LOGS}"; then
+                    if [ "${RC}" != "0" ] || [ "${RC_LOGS}" != "0" ]; then
+                      echo "Tolerating ${SKIPPED_COUNT} expected errors; see report."
+                    fi
                     exit 0
                   else
-                    echo "Failing job: rclone=${RC} other_errors=${OTHER_ERRORS}"
+                    echo "Failing job: rclone=${RC} rclone_logs=${RC_LOGS} other_errors=${OTHER_ERRORS}"
                     exit 1
                   fi
               env:
@@ -172,6 +219,12 @@ spec:
                   value: {{ .Values.backup.bucket | default "gdex" | quote }}
                 - name: DEST_PREFIX
                   value: {{ .Values.backup.prefix | quote }}
+                {{- if .Values.backup.logs.enabled }}
+                - name: LOGS_SOURCE_DIR
+                  value: "/backup-src/tomcat-logs"
+                - name: LOGS_DEST_PREFIX
+                  value: {{ .Values.backup.logs.prefix | quote }}
+                {{- end }}
                 - name: S3_ENDPOINT
                   value: {{ .Values.backup.endpoint | default "https://boreas.hpc.ucar.edu:6443" | quote }}
                 - name: RCLONE_LOG_LEVEL
@@ -209,9 +262,20 @@ spec:
                 - name: {{ .Values.webapp.volume.fs.name }}
                   mountPath: {{ .Values.webapp.volume.fs.mountPath }}
                   readOnly: true
+                {{- if .Values.backup.logs.enabled }}
+                - name: tomcat-logs
+                  mountPath: /backup-src/tomcat-logs
+                  readOnly: true
+                {{- end }}
           volumes:
             - name: {{ .Values.webapp.volume.fs.name }}
               persistentVolumeClaim:
                 claimName: {{ .Values.webapp.volume.fs.name }}
                 readOnly: true
+            {{- if .Values.backup.logs.enabled }}
+            - name: tomcat-logs
+              persistentVolumeClaim:
+                claimName: {{ .Values.webapp.volume2.fs.name }}
+                readOnly: true
+            {{- end }}
 {{- end }}
