@@ -5,6 +5,9 @@ restartedAt: "2026-06-09T01:20:23Z"
 backup:
   enabled: true
   prefix: tds-data
+  logs:
+    enabled: true
+    prefix: tds-tomcat-logs
   
 webapp:
   name: rda-tds
