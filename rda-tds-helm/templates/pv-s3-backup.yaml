@@ -94,6 +94,7 @@ spec:
                     echo "Backing up Tomcat access logs"
                     rclone copy \
                       --include '*.txt' \
+                      --min-age 15m \
                       --log-level "${RCLONE_LOG_LEVEL}" \
                       --log-file "${LOG}" \
                       --transfers "${RCLONE_TRANSFERS}" \
