@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: log-stats-report
+spec:
+  schedule: "0 4 * * *" # Runs daily at 4 AM (after log cleanup at 3 AM)
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: log-stats
+            image: python:3.11-slim
+            command:
+            - /bin/sh
+            - -c
+            - python /scripts/log_stats.py
+            volumeMounts:
+            - name: logs-volume
+              mountPath: /usr/local/tomcat/logs
+            - name: script-volume
+              mountPath: /scripts
+          restartPolicy: OnFailure
+          volumes:
+          - name: logs-volume
+            persistentVolumeClaim:
+              claimName: logs-persist
+          - name: script-volume
+            configMap:
+              name: log-stats-script
