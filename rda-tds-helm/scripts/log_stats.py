@@ -42,7 +42,7 @@ for log_file in log_files:
             if status != "200":
                 failed_requests += 1
             else:
-                bytes_success += int(bytes_raw)
+                bytes_success += int(bytes_raw) if bytes_raw != "-" else 0
             bytes_sent += int(bytes_raw) if bytes_raw != "-" else 0
 
             # check access patterns
