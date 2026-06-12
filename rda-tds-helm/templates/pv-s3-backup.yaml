@@ -8,7 +8,8 @@ metadata:
     app: {{ .Values.webapp.name }}
     group: {{ .Values.webapp.group }}
 spec:
-  schedule: {{ .Values.backup.schedule | default "17 4 * * *" | quote }}
+  schedule: "30 0 * * *"
+  timeZone: "America/Denver"
   concurrencyPolicy: Forbid
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 5
@@ -94,6 +95,7 @@ spec:
                     echo "Backing up Tomcat access logs"
                     rclone copy \
                       --include '*.txt' \
+                      --min-age 15m \
                       --log-level "${RCLONE_LOG_LEVEL}" \
                       --log-file "${LOG}" \
                       --transfers "${RCLONE_TRANSFERS}" \
@@ -110,7 +112,7 @@ spec:
                     # .txt files but the destination has none, something
                     # is wrong and the permission-denied tolerance below
                     # must not mask it.
-                    LOGS_SRC_COUNT=$(find "${LOGS_SOURCE_DIR}" -type f -name '*.txt' 2>/dev/null | wc -l)
+                    LOGS_SRC_COUNT=$(find "${LOGS_SOURCE_DIR}" -type f -name '*.txt' -mmin +15 2>/dev/null | wc -l)
                     LOGS_DEST_COUNT=$(rclone lsf -R --files-only --include '*.txt' \
                       "dest:${DEST_BUCKET}/${LOGS_DEST_PREFIX}" 2>/dev/null | wc -l)
                     if [ "${LOGS_SRC_COUNT}" -gt 0 ] && [ "${LOGS_DEST_COUNT}" -eq 0 ]; then
