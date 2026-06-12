@@ -1,7 +1,7 @@
 import re, os, glob, sys
 
 
-# define global constants 
+# define global constants
 LOG_DIR = "/usr/local/tomcat/logs"
 OUTPUT_FILE = os.path.join(LOG_DIR, "access_log_stats.txt")
 HEADER = "date,total_requests,failed_requests,bytes_sent,bytes_success,subset_requests,opendap_requests,fileserver_requests,other_requests\n"
@@ -29,8 +29,11 @@ def process_log_file(log_file):
         A dictionary containing statistics about the log file, including total requests,
         failed requests, bytes sent, bytes successfully sent, and counts of different request types.
     """
-    stats = dict(total=0, failed=0, bytes_sent=0, bytes_success=0,
-                 subset=0, opendap=0, fileserver=0, other=0)
+    # initialize total stats for the date (same structure as the total dict in the main loop, but scoped to this log file)
+    stats = dict(
+        total=0, failed=0, bytes_sent=0, bytes_success=0,
+        subset=0, opendap=0, fileserver=0, other=0
+    )
     with open(log_file, "r", errors="replace", encoding="utf-8") as f:
         for line in f:
             m = log_pattern.search(line)
@@ -79,13 +82,17 @@ if __name__ == "__main__":
     log_files = sorted(glob.glob(os.path.join(LOG_DIR, "localhost_access_log.*")))
     print(f"Found {len(log_files)} log files")
 
+    # track all available log files by date
     logs_by_date = {}
     for log_file in log_files:
         m = date_from_filename.search(os.path.basename(log_file))
         if m:
             logs_by_date.setdefault(m.group(1), []).append(log_file)
 
+    # find exising date in the output
     existing_dates = get_existing_dates()
+
+    # find missing date in the output
     missing_dates = sorted(set(logs_by_date.keys()) - existing_dates)
 
     if not missing_dates:
@@ -94,19 +101,34 @@ if __name__ == "__main__":
 
     print(f"Processing {len(missing_dates)} missing date(s): {missing_dates}")
 
+    # create rows of stats for missing dates
     rows = []
     for date in missing_dates:
-        total = dict(total=0, failed=0, bytes_sent=0, bytes_success=0,
-                    subset=0, opendap=0, fileserver=0, other=0)
+        print(f"Processing logs for date {date}...")
+
+        # initialize total stats for the date
+        # same structure as the stats dict in process_log_file, but scoped to the entire date
+        # (accumulating across all log files for that date)
+        total = dict(
+            total=0, failed=0, bytes_sent=0, bytes_success=0,
+            subset=0, opendap=0, fileserver=0, other=0
+        )
+
+        # process each log file for the date and accumulate stats 
+        # (theoretically there should only be one log file per date, but we handle multiple just in case)
         for log_file in logs_by_date[date]:
             s = process_log_file(log_file)
             for k in total:
                 total[k] += s[k]
         rows.append((date, total))
 
+    # test is the output file already exists
+    # if not we need to write the header
     first_run = not os.path.exists(OUTPUT_FILE)
+    # if the file already exists, we append to it; otherwise we create a new file
     mode = "w" if first_run else "a"
 
+    # write the stats to the output file
     with open(OUTPUT_FILE, mode, encoding="utf-8") as f:
         if first_run:
             f.write(HEADER)
