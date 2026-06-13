@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 DP" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 DP">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651082/" xlink:title="NCAR GDEX - CESM2 DP(d651082)" />
+      <documentation type="summary">
+The CESM2 DP (Decadal Prediction) dataset is an initialized prediction system using CESM2. It consists of fully coupled initialized hindcast simulations using CESM2 component models at nominal 1 degree horizontal resolution. Hindcasts are initialized on November 1st from historical reconstructions (SMYLE-FOSI for ocean and sea-ice; Forced-land only for land; and JRA55 reanalysis for atmosphere) and then integrated forward 122-months. Initialization occurs each year between 1958-2023. The ensemble size is 20 for each start date, with ensemble spread introduced through a random field perturbation applied to the atmospheric initial conditions. The CESM2 DP dataset is the decadal extension of November initializations of CESM2 SMYLE (DOI: 10.26024/PWMA-RE41).
+The data are in netCDF format as separate timeseries files for each variable, with fields from each of the components of the CESM model. Spatial coverage is global, at nominal 1degree resolution in all components. Temporal frequency ranges from 6-hourly, daily, or monthly averages. Two versions of the dataset will be included: 1) CESM timeseries output, 2) CESM CMORized output. These two data versions cater to different communities/needs. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651082 Files" path="files/d651082" location="/data/rda/data/d651082/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
