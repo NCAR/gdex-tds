@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 SMYLE MCB" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 SMYLE MCB">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651084/" xlink:title="NCAR GDEX - CESM2 SMYLE MCB(d651084)" />
+      <documentation type="summary">
+Seasonal-to-MultiYear Large Ensemble-Marine Cloud Brightening (SMYLE MCB) is an ensemble of MCB perturbed initialized prediction experiments using CESM2. SMYLE MCB consists of fully coupled simulations preceding three historical ENSO events: (1) 2020-2021 La Nina to approximate the forcing and responses from the 2019-2020 Australian wildfires presented in Fasullo et al. (2023) (20 members) and the (2) 2015-2016 (10 members) and (3) 1997-1998 El Nino events (10 members) to test MCB's efficacy in weakening some of the most extreme El Nino events of the 21st century. Simulations are initialized on the first of November for (1) and May for (2-3) and run forward for two-years on a 1-degree horizontal resolution. MCB is represented by nudging the cloud droplet number concentration within the target region for each experiment. These simulations are set up following the CESM2 SMYLE experiments (Yeager et al., 2022), which are the reference simulations to SMYLE MCB to compute the climate responses of MCB.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651084 Files" path="files/d651084" location="/data/rda/data/d651084/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
