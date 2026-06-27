@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GDEX Exchange Space" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GDEX Exchange Space">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010129/" xlink:title="NCAR GDEX - GDEX Exchange Space" />
+      <documentation type="summary">The GDEX Exchange Space is a collaborative data-sharing platform maintained by NCAR/UCAR, designed to facilitate the sharing of research data among NCAR and UCAR scientists both internally and with external collaborators. Unlike formally published datasets, data hosted in the Exchange Space does not carry a DOI and is not intended for archival publication. This space provides a flexible environment for researchers to make in-progress, experimental, or project-specific data accessible to collaborators during the course of their scientific work.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+    </metadata>
+    <!--Different Exchange Spaces-->
+    <datasetScan name="GDEX Exchange Files" path="files/exchange" location="/data/rda/data/exchange/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+    <!--RAF-Socrates-2018-->
+    <datasetScan name="RAF-Socrates-2018" path="files/exchange/RAF-Socrates-2018" location="/data/rda/data/exchange/RAF-Socrates-2018/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+        <dataFormat>NetCDF</dataFormat>
+        <dataType>GRID</dataType>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+
+  </dataset>
+</catalog>
