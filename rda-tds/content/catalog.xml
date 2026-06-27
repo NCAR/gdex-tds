@@ -39,7 +39,6 @@
     <catalogRef xlink:href="catalog_d010103.xml" xlink:title="d010103 Result of Assimilating Ground-Based MLT Winds into WACCM" name="" />
     <catalogRef xlink:href="catalog_d010111.xml" xlink:title="d010111 21st Century Hydrologic Projections for Alaska and Hawaii" name="" />
     <catalogRef xlink:href="catalog_d010113.xml" xlink:title="d010113 Runoff Risk V3.0 Hydrometeorological Dataset" name="" />
-    <catalogRef xlink:href="catalog_d010129.xml" xlink:title="d010129 MPAS Global Storm-Resolving Model Simulations for the DYAMOND Intercomparison (Phase 1)" name="" />
     <catalogRef xlink:href="catalog_d014619.xml" xlink:title="d014619 Improving representation of stratospheric Polar Vortex in Southern Hemisphere with low-frequency frontal waves" name="" />
     <catalogRef xlink:href="catalog_d054121.xml" xlink:title="d054121 Mechanisms for long-duration extreme winds in a WRF simulation of the 10 August 2020 derecho" name="" />
     <catalogRef xlink:href="catalog_d066609.xml" xlink:title="d066609 Canadian Surface Reanalysis (CaSR)" name="" />
