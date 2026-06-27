@@ -156,6 +156,44 @@ def check_format(dataset_id: str) -> bool:
     return False
 
 @task
+def check_cdf5(dataset_id: str, sample_size: int = 10) -> bool:
+    """Check if dataset has CDF5 data files by sampling a subset of files.
+
+    Parameters
+    ----------
+    dataset_id : str
+        The dataset ID to check.
+    sample_size : int
+        Number of files to randomly sample (default 10).
+
+    Returns
+    -------
+    bool
+        True if any sampled file is CDF5, False otherwise.
+    """
+    import random
+
+    data_dir = os.path.join(GDEX_DATA_ROOT, dataset_id)
+
+    nc_files = [
+        os.path.join(dirpath, file)
+        for dirpath, _, files in os.walk(data_dir)
+        for file in files
+        if file.endswith(('.nc', '.nc4'))
+    ]
+
+    for filepath in random.sample(nc_files, min(sample_size, len(nc_files))):
+        nctype = subprocess.run(
+            ['ncdump', '-k', filepath],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        if 'cdf5' in nctype.stdout.lower():
+            return True
+    return False
+
+@task
 def check_datafiles(dataset_id: str) -> bool:
     """Check if dataset has data files with supported format.
     
@@ -177,6 +215,7 @@ def check_datafiles(dataset_id: str) -> bool:
             if file.endswith(('.nc', '.grb', '.grb2','.nc4')):
                 return True
     return False
+
 
 @task
 def check_exclude(dataset_id: str) -> bool:
@@ -399,6 +438,13 @@ def add_data2tds():
 
         if not tds_compatible:
             logger_warning = f"Skipping {dsid}: format not supported by TDS"
+            logger.warning(logger_warning)
+            continue
+
+        # check if dataset has CDF5 data files
+        has_cdf5 = check_cdf5(dsid)
+        if has_cdf5:
+            logger_warning = f"Skipping {dsid}: too many CDF5 data files (random sample 10 files)"
             logger.warning(logger_warning)
             continue
 
