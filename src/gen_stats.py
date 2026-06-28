@@ -18,7 +18,9 @@ def load_tds_usage_data() -> pd.DataFrame:
     Load the TDS usage data from the txt file stored in the Boreas backup.
     The data is in the CSV format.
 
-    date,total_requests,failed_requests,bytes_sent,bytes_success,subset_requests,opendap_requests,fileserver_requests,other_requests
+    Column names:
+    date,total_requests,failed_requests,bytes_sent,bytes_success,
+    subset_requests,opendap_requests,fileserver_requests,other_requests
 
     Returns
     -------
@@ -40,18 +42,25 @@ def load_tds_usage_data() -> pd.DataFrame:
     return df
 
 
-if __name__ == "__main__":
-    # get the directory path of the current script
-    dir_path = os.path.dirname(os.path.realpath(__file__))
+def create_stats_figure(df: pd.DataFrame):
+    """
+    Create the interactive Plotly figure from TDS usage data.
 
-    # load the csv file from the Boreas backup
-    df = load_tds_usage_data()
+    Parameters
+    ----------
+    df : pd.DataFrame
+        TDS usage data with columns: date, total_requests, failed_requests,
+        bytes_sent, bytes_success.
 
-    # create the plotly interactive plot
-    # request number plot
-    fig = make_subplots(rows=2, cols=1, subplot_titles=("Requests", "Bytes"))
+    Returns
+    -------
+    plotly.graph_objects.Figure
+    """
     LINE_WIDTH = 4
-    MARKER_SIZE = 6
+    MARKER_SIZE = 10
+    fig = make_subplots(rows=3, cols=1, shared_xaxes=True, subplot_titles=("Requests", "Bytes", "Request Types"))
+
+    # number of requests
     fig.add_trace(
         go.Scatter(
             x=df["date"],
@@ -77,42 +86,99 @@ if __name__ == "__main__":
         ),
         row=1, col=1
     )
-    fig.update_xaxes(title_text="Date", row=1, col=1)
     fig.update_yaxes(title_text="Number of Requests", row=1, col=1)
 
-    # request byte plot
+    # Bytes request
     fig.add_trace(
         go.Scatter(
-            x=df["date"], 
-            y=df["bytes_sent"], 
-            name="Bytes Sent", 
+            x=df["date"],
+            y=df["bytes_sent"],
+            name="Bytes Sent",
             mode="lines+markers",
-            line=dict(color="#FF9E20", width=LINE_WIDTH), 
+            line=dict(color="#FF9E20", width=LINE_WIDTH),
             marker=dict(size=MARKER_SIZE),
-            legendgroup="bytes", 
+            legendgroup="bytes",
             legendgrouptitle_text="Bytes"
         ),
         row=2, col=1
     )
     fig.add_trace(
         go.Scatter(
-            x=df["date"], 
-            y=df["bytes_success"], 
-            name="Bytes Success", 
+            x=df["date"],
+            y=df["bytes_success"],
+            name="Bytes Success",
             mode="lines+markers",
-            line=dict(color="#215E61", width=LINE_WIDTH), 
+            line=dict(color="#215E61", width=LINE_WIDTH),
             marker=dict(size=MARKER_SIZE),
             legendgroup="bytes"
         ),
         row=2, col=1
     )
-    fig.update_xaxes(title_text="Date", row=2, col=1)
     fig.update_yaxes(title_text="Bytes", row=2, col=1)
-    fig.update_layout(plot_bgcolor="white", paper_bgcolor="white")
+
+    # service usage breakdown
+    fig.add_trace(
+        go.Bar(
+            x=df["date"],
+            y=df["opendap_requests"],
+            name="OPeNDAP",
+            marker_color="#000000",
+            legendgroup="request_types"
+        ),
+        row=3, col=1
+    )
+    fig.add_trace(
+        go.Bar(
+            x=df["date"],
+            y=df["fileserver_requests"],
+            name="File Server",
+            marker_color="#233D4D",
+            legendgroup="request_types"
+        ),
+        row=3, col=1
+    )
+    fig.add_trace(
+        go.Bar(
+            x=df["date"],
+            y=df["other_requests"],
+            name="Other",
+            marker_color="#FE7F2D",
+            legendgroup="request_types"
+        ),
+        row=3, col=1
+    )
+    fig.add_trace(
+        go.Bar(
+            x=df["date"],
+            y=df["subset_requests"],
+            name="Subset (NCSS)",
+            marker_color="#EAECF0",
+            legendgroup="request_types",
+            legendgrouptitle_text="Request Types"
+        ),
+        row=3, col=1
+    )
+    fig.update_xaxes(title_text="Date", row=3, col=1)
+    fig.update_yaxes(title_text="Number of Requests", row=3, col=1)
+
+    # general layout settings
+    fig.update_layout(plot_bgcolor="white", paper_bgcolor="white", barmode="stack")
     fig.update_xaxes(showgrid=False)
     fig.update_yaxes(showgrid=True, gridcolor="lightgrey", griddash="dot")
+    return fig
 
-    # save the plot as an interactive HTML file
+
+if __name__ == "__main__":
+    # get the directory path of the current script
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+
+    # extract the TDS usage data from the Boreas backup
+    df = load_tds_usage_data()
+
+    # create the interactive Plotly figure
+    fig = create_stats_figure(df)
+
+    # save the interactive Plotly figure as an HTML file
     fig.write_html(f"{dir_path}/../tds_usage_stats.html")
     
 
