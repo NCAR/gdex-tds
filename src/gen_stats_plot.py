@@ -4,6 +4,8 @@ the TDS usage.
 
 Steps:
 1. Load the TDS usage data from the txt file from the Boreas backuop
+    - the python script generating the statistics and backed up 
+      are located inside the rda-tds-helm/scripts/log_stats.py file.
 2. Plot the data using plotly and save it as an interactive HTML file.
 """
 import os
