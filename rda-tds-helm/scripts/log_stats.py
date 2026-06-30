@@ -1,4 +1,26 @@
+"""
+This is the script will 
+1. summarized the daily TDS usage statistics from the Tomcat access logs.
+2. check the existing CSV file and only process the missing dates.
+3. append the new statistics to the existing CSV file.
+4. The script will read the Tomcat access logs from the /usr/local/tomcat/logs.
+5. The script will be run as a cron job to update the statistics daily.
+
+Cronjob:
+- Use the configmap ``rda-tds-helm/log_stats_cronjob.yaml`` to store the python script as data and run it as a cronjob.
+- Use the log-stats-cronjob.yaml to create the cronjob in the rda-tds namespace.
+- the python script generating the statistics are located inside the rda-tds-helm/scripts/log_stats.py file.
+
+It will generate a CSV file with the following columns:
+
+date,total_requests,failed_requests,bytes_sent,bytes_success,subset_requests,opendap_requests,fileserver_requests,other_requests
+
+
+"""
+
 import re, os, glob, sys
+
+
 
 
 # define global constants
