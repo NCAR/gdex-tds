@@ -16,7 +16,6 @@
         <service name="uddc" serviceType="UDDC" base="/thredds/uddc/" />
     </service>
 
-    <catalogRef xlink:href="catalog_exchange.xml" xlink:title="GDEX Exchange Space" name="" />
     <catalogRef xlink:href="catalog_d010014.xml" xlink:title="d010014 SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments" name="" />
     <catalogRef xlink:href="catalog_d010018.xml" xlink:title="d010018 Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP)" name="" />
     <catalogRef xlink:href="catalog_d010026.xml" xlink:title="d010026 Long Simulations of the Miocene Climatic Optimum" name="" />
@@ -330,6 +329,8 @@
     <catalogRef xlink:href="catalog_d845002.xml" xlink:title="d845002 GATE Radar Reflectivity Data from the Canadian Ship Quadra" name="" />
     <catalogRef xlink:href="catalog_d850001.xml" xlink:title="d850001 Data to support OSDF example workflows" name="" />
     <catalogRef xlink:href="catalog_d898000.xml" xlink:title="d898000 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
+    <catalogRef xlink:href="catalog_d927358.xml" xlink:title="d927358 MERRA2 Monthly Mean Single-Level Diagnostics" name="" />
     <catalogRef xlink:href="catalog_d953316.xml" xlink:title="d953316 GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset" name="" />
 
-</catalog>
+<catalogRef xlink:href="catalog_exchange.xml" xlink:title="GDEX Exchange Space" name="" />
+    </catalog>
