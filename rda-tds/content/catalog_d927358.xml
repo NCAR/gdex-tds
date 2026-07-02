@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="MERRA2 Monthly Mean Single-Level Diagnostics" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="MERRA2 Monthly Mean Single-Level Diagnostics">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d927358/" xlink:title="NCAR GDEX - MERRA2 Monthly Mean Single-Level Diagnostics(d927358)" />
+      <documentation type="summary">The Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2), is a global atmospheric reanalysis produced by NASA's Global Modeling and Assimilation Office (GMAO) using the Goddard Earth Observing System (GEOS) model and data assimilation system. The M2TMNXSLV (tavgM_2d_slv_Nx) collection provides monthly mean single-level meteorological diagnostics for the satellite era. This convenience-copy dataset contains M2TMNXSLV data for 1980-present that have been reorganized into variable-specific NetCDF files to facilitate access, analysis, and distribution while preserving the original spatial and temporal characteristics of the source dataset.</documentation>
+      <creator>
+        <name vocabulary="DIF">NASA/GSFC/SED/ESD/GMAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d927358 Files" path="files/d927358" location="/data/rda/data/d927358/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
