@@ -1,5 +1,7 @@
 # GDEX TDS — Deployment & Operations Guide
 
+[![TDS Health Check](https://github.com/NCAR/gdex-tds/actions/workflows/tds-health-check.yml/badge.svg)](https://github.com/NCAR/gdex-tds/actions/workflows/tds-health-check.yml)
+
 ## Overview
 
 GDEX TDS (THREDDS Data Server) is deployed on NCAR's CIRRUS Kubernetes cluster. This repo contains:
