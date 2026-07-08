@@ -10,6 +10,7 @@ Steps:
 """
 import os
 import fsspec
+import subprocess
 import pandas as pd
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
@@ -182,6 +183,14 @@ if __name__ == "__main__":
 
     # save the interactive Plotly figure as an HTML file
     fig.write_html(f"{dir_path}/../tds_usage_stats.html")
+
+    # use cp to copy html to special_projects/tds/tds_usage_stats.html
+    subprocess.run([
+        "sudo", "-u", "gdexdata",
+        "cp", f"{dir_path}/../tds_usage_stats.html",
+        "/gdex/data/special_projects/tds/tds_usage_stats.html"
+    ])
+    
     
 
 
