@@ -9,6 +9,7 @@ Steps:
 2. Plot the data using plotly and save it as an interactive HTML file.
 """
 import os
+import sys
 import fsspec
 import subprocess
 import pandas as pd
@@ -185,12 +186,12 @@ if __name__ == "__main__":
     fig.write_html(f"{dir_path}/../tds_usage_stats.html")
 
     # use cp to copy html to special_projects/tds/tds_usage_stats.html
-    subprocess.run([
-        "sudo", "-u", "gdexdata",
+    result = subprocess.run(
+        ["sudo", "-u", "gdexdata",
         "cp", f"{dir_path}/../tds_usage_stats.html",
-        "/gdex/data/special_projects/tds/tds_usage_stats.html"
-    ])
-    
-    
-
-
+        "/gdex/data/special_projects/tds/tds_usage_stats.html"],
+        check=True
+    )
+    if result.returncode != 0:
+        print(f"Error: cp command failed with exit code {result.returncode}")
+        sys.exit(result.returncode)
