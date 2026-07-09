@@ -40,19 +40,19 @@ spec:
       containers:
       # tds container
       - name: {{ .Values.webapp.name }}
-        image: {{ .Values.webapp.container.image }}
+        image: {{ .Values.webapp.tds.image }}
         resources:
           limits:
-            memory: {{ .Values.webapp.container.memory }}
-            cpu: {{ .Values.webapp.container.cpu }}
-            ephemeral-storage: {{ .Values.webapp.container.ephemeralStorageLimit }}
+            memory: {{ .Values.webapp.tds.memory }}
+            cpu: {{ .Values.webapp.tds.cpu }}
+            ephemeral-storage: {{ .Values.webapp.tds.ephemeralStorageLimit }}
         ports:
-        - containerPort: {{ .Values.webapp.container.port }}
+        - containerPort: {{ .Values.webapp.tds.port }}
         env:
           - name: THREDDS_XMX_SIZE
-            value: {{ .Values.webapp.container.env.THREDDS_XMX_SIZE }}
+            value: {{ .Values.webapp.tds.env.THREDDS_XMX_SIZE }}
           - name: THREDDS_XMS_SIZE
-            value: {{ .Values.webapp.container.env.THREDDS_XMS_SIZE }}
+            value: {{ .Values.webapp.tds.env.THREDDS_XMS_SIZE }}
           - name: JAVA_OPTS # Redirect OOM heap dump off ephemeral storage; exit fast on OOM so pod restarts : temp remove (causing crash looping). -XX:+ExitOnOutOfMemoryError
             value: "-XX:HeapDumpPath=/usr/local/tomcat/temp/"
           - name: K8S_POD_NAME # Inject the current pod's name into the container environment so that server.xml can use it for access log naming

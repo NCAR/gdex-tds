@@ -66,7 +66,7 @@ Central configuration file. Key sections:
 | Key | Description |
 |-----|-------------|
 | `replicaCount` | Number of TDS pod replicas |
-| `webapp.container.image` | TDS Docker image |
+| `webapp.tds.image` | TDS Docker image |
 | `webapp.logs.image` | Log sidecar image |
 | `webapp.tdm.image` | TDM (Thredds Data Manager) image |
 | `webapp.volume.fs` | PVC for TDS index files / cache (1 Ti CephFS) |
@@ -225,7 +225,7 @@ Manual workflows for removing or modifying control entries on existing datasets.
 ## Deployment Workflow (code change)
 
 1. Merge changes to `rda-tds/` → GitHub Action builds and pushes Docker image to registry
-2. Update the image digest in `rda-tds-helm/values.yaml` (`webapp.container.image`)
+2. Update the image digest in `rda-tds-helm/values.yaml` (`webapp.tds.image`)
 3. Argo CD detects the Helm chart change and redeploys the pod
 
 Changes to `rda-tds-helm/` only (e.g., resource limits, CronJob schedules) redeploy without rebuilding the image.
