@@ -277,7 +277,7 @@ spec:
             {{- if .Values.backup.logs.enabled }}
             - name: tomcat-logs
               persistentVolumeClaim:
-                claimName: {{ .Values.webapp.volume2.fs.name }}
+                claimName: {{ .Values.webapp.logPersist.fs.name }}
                 readOnly: true
             {{- end }}
 {{- end }}
