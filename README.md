@@ -37,7 +37,7 @@ gdex-tds/
 │       ├── ingress-dap4-block.yaml
 │       ├── ingress-wmsold-block.yaml
 │       ├── pvc-tds.yaml
-│       ├── fs_volume2.yaml
+│       ├── pvc-log.yaml
 │       ├── heapdump-clean-cronjob.yaml
 │       ├── log-clean-cronjob.yaml
 │       ├── log-stats-configmap.yaml
@@ -120,7 +120,7 @@ Routes `/thredds/wms/files/g/ds` to the deny-backend (403). This old-style WMS p
 #### `pvc-tds.yaml`
 PersistentVolumeClaim (`tds-persist`, 1 Ti, CephFS RWX) for TDS index files, caches, and overflow temp dirs. Annotated with `argocd.argoproj.io/sync-options: Prune=false` so Argo CD never deletes it on sync.
 
-#### `fs_volume2.yaml`
+#### `pvc-log.yaml`
 PersistentVolumeClaim (`logs-persist`, 100 Gi, CephFS RWX) shared between the TDS container (write) and the log sidecar and log-stats CronJob (read).
 
 #### `heapdump-clean-cronjob.yaml`
