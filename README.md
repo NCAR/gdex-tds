@@ -36,7 +36,7 @@ gdex-tds/
 │       ├── deny-backend.yaml
 │       ├── ingress-dap4-block.yaml
 │       ├── ingress-wmsold-block.yaml
-│       ├── fs_volume.yaml
+│       ├── pvc_tds.yaml
 │       ├── fs_volume2.yaml
 │       ├── heapdump-clean-cronjob.yaml
 │       ├── log-clean-cronjob.yaml
@@ -117,7 +117,7 @@ Routes all `/thredds/dap4` traffic to the deny-backend (403). DAP4 is disabled b
 #### `ingress-wmsold-block.yaml`
 Routes `/thredds/wms/files/g/ds` to the deny-backend (403). This old-style WMS path generates excessive error traffic and is not used by current clients.
 
-#### `fs_volume.yaml`
+#### `pvc_tds.yaml`
 PersistentVolumeClaim (`tds-persist`, 1 Ti, CephFS RWX) for TDS index files, caches, and overflow temp dirs. Annotated with `argocd.argoproj.io/sync-options: Prune=false` so Argo CD never deletes it on sync.
 
 #### `fs_volume2.yaml`
