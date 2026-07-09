@@ -216,7 +216,7 @@ spec:
                   fi
               env:
                 - name: SOURCE_DIR
-                  value: {{ .Values.webapp.volume.fs.mountPath | quote }}
+                  value: {{ .Values.webapp.tdsPersist.fs.mountPath | quote }}
                 - name: DEST_BUCKET
                   value: {{ .Values.backup.bucket | default "gdex" | quote }}
                 - name: DEST_PREFIX
@@ -261,8 +261,8 @@ spec:
                   memory: "6Gi"
                 {{- end }}
               volumeMounts:
-                - name: {{ .Values.webapp.volume.fs.name }}
-                  mountPath: {{ .Values.webapp.volume.fs.mountPath }}
+                - name: {{ .Values.webapp.tdsPersist.fs.name }}
+                  mountPath: {{ .Values.webapp.tdsPersist.fs.mountPath }}
                   readOnly: true
                 {{- if .Values.backup.logs.enabled }}
                 - name: tomcat-logs
@@ -270,14 +270,14 @@ spec:
                   readOnly: true
                 {{- end }}
           volumes:
-            - name: {{ .Values.webapp.volume.fs.name }}
+            - name: {{ .Values.webapp.tdsPersist.fs.name }}
               persistentVolumeClaim:
-                claimName: {{ .Values.webapp.volume.fs.name }}
+                claimName: {{ .Values.webapp.tdsPersist.fs.name }}
                 readOnly: true
             {{- if .Values.backup.logs.enabled }}
             - name: tomcat-logs
               persistentVolumeClaim:
-                claimName: {{ .Values.webapp.volume2.fs.name }}
+                claimName: {{ .Values.webapp.logPersist.fs.name }}
                 readOnly: true
             {{- end }}
 {{- end }}

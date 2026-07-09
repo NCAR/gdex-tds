@@ -21,8 +21,8 @@ webapp:
     fqdn3: thredds.rda.ucar.edu
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
-  container: 
-    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
+  tds:
+    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods
     image: docker.io/potatofever/rda-tds:sha-e8375c0
     port: 8080
     memory: 64G
@@ -32,7 +32,6 @@ webapp:
     maxUploadSize: 30m
     limit_connections: 150  # Increased for concurrent requests - global limit
     limit_rps: 150           # Increased for page load bursts - global limit
- 
     env:
       THREDDS_XMX_SIZE: 48G
       THREDDS_XMS_SIZE: 16G
@@ -53,17 +52,17 @@ webapp:
     env:
       TDM_XMX_SIZE: "5G"
       TDM_XMS_SIZE: "2G"
-  volume1:
+  campaignMount:
     name: campaign
     server: gladedm1.ucar.edu
     path: /glade/campaign/collections/gdex/
     readOnly: true
-  volume:
+  tdsPersist:
     fs:
       name: tds-persist
       size: 1Ti
       mountPath: /data/TDSIndexFiles/data/rda/data # /tmp2/TDSIndexFiles # /data/TDSIndexFiles
-  volume2:
+  logPersist:
     fs:
       name: logs-persist
       size: 100Gi

@@ -36,8 +36,8 @@ gdex-tds/
 │       ├── deny-backend.yaml
 │       ├── ingress-dap4-block.yaml
 │       ├── ingress-wmsold-block.yaml
-│       ├── fs_volume.yaml
-│       ├── fs_volume2.yaml
+│       ├── pvc-tds.yaml
+│       ├── pvc-log.yaml
 │       ├── heapdump-clean-cronjob.yaml
 │       ├── log-clean-cronjob.yaml
 │       ├── log-stats-configmap.yaml
@@ -66,11 +66,11 @@ Central configuration file. Key sections:
 | Key | Description |
 |-----|-------------|
 | `replicaCount` | Number of TDS pod replicas |
-| `webapp.container.image` | TDS Docker image |
+| `webapp.tds.image` | TDS Docker image |
 | `webapp.logs.image` | Log sidecar image |
 | `webapp.tdm.image` | TDM (Thredds Data Manager) image |
-| `webapp.volume.fs` | PVC for TDS index files / cache (1 Ti CephFS) |
-| `webapp.volume2.fs` | PVC for Tomcat access logs (100 Gi CephFS) |
+| `webapp.tdsPersist.fs` | PVC for TDS index files / cache (1 Ti CephFS) |
+| `webapp.logPersist.fs` | PVC for Tomcat access logs (100 Gi CephFS) |
 | `backup.enabled` | Toggle the Boreas S3 backup CronJob |
 | `backup.logs.enabled` | Include Tomcat log volume in backup |
 
@@ -117,10 +117,10 @@ Routes all `/thredds/dap4` traffic to the deny-backend (403). DAP4 is disabled b
 #### `ingress-wmsold-block.yaml`
 Routes `/thredds/wms/files/g/ds` to the deny-backend (403). This old-style WMS path generates excessive error traffic and is not used by current clients.
 
-#### `fs_volume.yaml`
+#### `pvc-tds.yaml`
 PersistentVolumeClaim (`tds-persist`, 1 Ti, CephFS RWX) for TDS index files, caches, and overflow temp dirs. Annotated with `argocd.argoproj.io/sync-options: Prune=false` so Argo CD never deletes it on sync.
 
-#### `fs_volume2.yaml`
+#### `pvc-log.yaml`
 PersistentVolumeClaim (`logs-persist`, 100 Gi, CephFS RWX) shared between the TDS container (write) and the log sidecar and log-stats CronJob (read).
 
 #### `heapdump-clean-cronjob.yaml`
@@ -225,7 +225,7 @@ Manual workflows for removing or modifying control entries on existing datasets.
 ## Deployment Workflow (code change)
 
 1. Merge changes to `rda-tds/` → GitHub Action builds and pushes Docker image to registry
-2. Update the image digest in `rda-tds-helm/values.yaml` (`webapp.container.image`)
+2. Update the image digest in `rda-tds-helm/values.yaml` (`webapp.tds.image`)
 3. Argo CD detects the Helm chart change and redeploys the pod
 
 Changes to `rda-tds-helm/` only (e.g., resource limits, CronJob schedules) redeploy without rebuilding the image.
