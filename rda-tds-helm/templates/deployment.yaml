@@ -34,9 +34,9 @@ spec:
           persistentVolumeClaim:
             claimName: {{ .Values.webapp.volume2.fs.name }}
         # Add the TDS index files PVC to the deployment
-        - name: {{ .Values.webapp.volume.fs.name }}
+        - name: {{ .Values.webapp.tdsPersist.fs.name }}
           persistentVolumeClaim:
-            claimName: {{ .Values.webapp.volume.fs.name }}
+            claimName: {{ .Values.webapp.tdsPersist.fs.name }}
       containers:
       # tds container
       - name: {{ .Values.webapp.name }}
@@ -64,37 +64,37 @@ spec:
           name: {{ .Values.webapp.campaignMount.name }}
         - mountPath: /usr/local/tomcat/logs
           name: {{ .Values.webapp.volume2.fs.name }}
-        - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
-          name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: {{ .Values.webapp.tdsPersist.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
         - mountPath: /usr/local/tomcat/content/thredds/cache/cdm # TDS cache cdm dir
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-temp-cache-cdm
         - mountPath: /usr/local/tomcat/content/thredds/cache/ncss # TDS cache ncss dir
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-temp-cache-ncss
         - mountPath: /usr/local/tomcat/content/thredds/cache/wcs # TDS WCS cache dir
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-temp-cache-wcs
         - mountPath: /usr/local/tomcat/content/thredds/cache/edal-java # TDS WMS tile cache dir
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-temp-cache-edal-java
         - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-temp-logs
         - mountPath: /usr/local/tomcat/temp # TDS NCSS temp files
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-overflow/tomcat-temp # Tomcat temp files
         - mountPath: /usr/local/tomcat/work # TDS NCSS temp files
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-overflow/tomcat-work # Tomcat temp files
         # - mountPath: /usr/local/tomcat/content/thredds
-        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   name: {{ .Values.webapp.tdsPersist.fs.name }}
         #   subPath: thredds-content # Full thredds dir on PVC - refreshed on every restart by initContainer
         # - mountPath: /usr/local/tomcat/work
-        #   name: {{ .Values.webapp.volume.fs.name }}
+        #   name: {{ .Values.webapp.tdsPersist.fs.name }}
         #   subPath: tds-overflow/work # Tomcat JSP compile cache
         - mountPath: /tmp
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-overflow/tmp # JVM temp files and heap dumps
 
       # Logs container
@@ -126,10 +126,10 @@ spec:
           - name: TDM_XMS_SIZE
             value: {{ .Values.webapp.tdm.env.TDM_XMS_SIZE }}
         volumeMounts:
-        - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
-          name: {{ .Values.webapp.volume.fs.name }}
+        - mountPath: {{ .Values.webapp.tdsPersist.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
         - mountPath: /usr/local/tomcat/content/tdm/logs
-          name: {{ .Values.webapp.volume.fs.name }}
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles in PVC
         - mountPath: /data/rda/ # Glade
           name: {{ .Values.webapp.campaignMount.name }}

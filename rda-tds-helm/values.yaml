@@ -57,7 +57,7 @@ webapp:
     server: gladedm1.ucar.edu
     path: /glade/campaign/collections/gdex/
     readOnly: true
-  volume:
+  tdsPersist:
     fs:
       name: tds-persist
       size: 1Ti

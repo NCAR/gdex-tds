@@ -27,9 +27,9 @@ spec:
               echo "Done."
             volumeMounts:
             - mountPath: /tomcat-temp
-              name: {{ .Values.webapp.volume.fs.name }}
+              name: {{ .Values.webapp.tdsPersist.fs.name }}
               subPath: tds-overflow/tomcat-temp
           volumes:
-          - name: {{ .Values.webapp.volume.fs.name }}
+          - name: {{ .Values.webapp.tdsPersist.fs.name }}
             persistentVolumeClaim:
-              claimName: {{ .Values.webapp.volume.fs.name }}
+              claimName: {{ .Values.webapp.tdsPersist.fs.name }}
