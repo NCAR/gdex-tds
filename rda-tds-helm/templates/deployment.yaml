@@ -24,11 +24,11 @@ spec:
       #  runAsGroup: 1234 # Specify the desired group ID
       #  fsGroup: 1234 # Specify the desired group ID for volume ownership
       volumes:
-        - name: {{ .Values.webapp.volume1.name }}
+        - name: {{ .Values.webapp.campaignMount.name }}
           nfs:
-            server: {{ .Values.webapp.volume1.server }}
-            path: {{ .Values.webapp.volume1.path }}
-            readOnly: {{ .Values.webapp.volume1.readOnly }}
+            server: {{ .Values.webapp.campaignMount.server }}
+            path: {{ .Values.webapp.campaignMount.path }}
+            readOnly: {{ .Values.webapp.campaignMount.readOnly }}
         # Add the log PVC to the deployment
         - name: {{ .Values.webapp.volume2.fs.name }}
           persistentVolumeClaim:
@@ -61,7 +61,7 @@ spec:
                 fieldPath: metadata.name
         volumeMounts:
         - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
-          name: {{ .Values.webapp.volume1.name }}
+          name: {{ .Values.webapp.campaignMount.name }}
         - mountPath: /usr/local/tomcat/logs
           name: {{ .Values.webapp.volume2.fs.name }}
         - mountPath: {{ .Values.webapp.volume.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
@@ -132,4 +132,4 @@ spec:
           name: {{ .Values.webapp.volume.fs.name }}
           subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles in PVC
         - mountPath: /data/rda/ # Glade
-          name: {{ .Values.webapp.volume1.name }}
+          name: {{ .Values.webapp.campaignMount.name }}

@@ -52,7 +52,7 @@ webapp:
     env:
       TDM_XMX_SIZE: "5G"
       TDM_XMS_SIZE: "2G"
-  volume1:
+  campaignMount:
     name: campaign
     server: gladedm1.ucar.edu
     path: /glade/campaign/collections/gdex/
