@@ -69,8 +69,8 @@ Central configuration file. Key sections:
 | `webapp.tds.image` | TDS Docker image |
 | `webapp.logs.image` | Log sidecar image |
 | `webapp.tdm.image` | TDM (Thredds Data Manager) image |
-| `webapp.volume.fs` | PVC for TDS index files / cache (1 Ti CephFS) |
-| `webapp.volume2.fs` | PVC for Tomcat access logs (100 Gi CephFS) |
+| `webapp.tdsPersist.fs` | PVC for TDS index files / cache (1 Ti CephFS) |
+| `webapp.logPersist.fs` | PVC for Tomcat access logs (100 Gi CephFS) |
 | `backup.enabled` | Toggle the Boreas S3 backup CronJob |
 | `backup.logs.enabled` | Include Tomcat log volume in backup |
 
