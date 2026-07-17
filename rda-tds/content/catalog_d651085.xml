@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 2 degree SSP2-4.5 and SSP5-8.5 Experiments" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 2 degree SSP2-4.5 and SSP5-8.5 Experiments">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651085/" xlink:title="NCAR GDEX - CESM2 2 degree SSP2-4.5 and SSP5-8.5 Experiments(d651085)" />
+      <documentation type="summary">This dataset runs the 2 degree CESM2 SSP2-4.5 and SSP5-8.5 experiments following the protocol described in:
+Meinshausen, M., Nicholls, Z. R., Lewis, J., Gidden, M. J., Vogel, E., Freund, M., ... &amp; Wang, R. H. (2020). The shared socioeconomic pathway (SSP) greenhouse gas concentrations and their extensions to 2500. Geoscientific Model Development, 13 (8), 3571-3605, https://doi.org/10.5194/gmd-13-3571-2020, 2020.
+Each SSP scenario runs is comprised of 4 experiments:
+One simulation spanning 2015-2100 using the SSP protocol which restarted using data from the historical run b.e21.BHIST.f19_g17.CMIP6-historical-2deg.001 at year 2015.
+One simulation spanning 2100-2130 which cycles through the forcing of the year 2100 for 30 years. This experiment is meant to create a short climate variability dataset.
+One simulation spanning 2100-2300 extending the SSP simulation from the end of 2100.
+One simulation spanning 2250-2280 which cycles through the forcing from year 2250.
+
+These simulations can be directly compared to their 1 degree CESM2 counterparts.
+See the Documentation tab for a complete list of available variables.
+These runs were supported with resources from NSF OPP (#2045075 and #2044965).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651085 Files" path="files/d651085" location="/data/rda/data/d651085/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
