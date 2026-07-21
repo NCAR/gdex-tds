@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="GMCP: A fully Global Multi-Source Merging-and-Calibration Precipitation Dataset" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="GMCP: A fully Global Multi-Source Merging-and-Calibration Precipitation Dataset">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d633009/" xlink:title="NCAR GDEX - GMCP: A fully Global Multi-Source Merging-and-Calibration Precipitation Dataset(d633009)" />
+      <documentation type="summary">Current global multi-source merged precipitation datasets can facilitate better utilization of the complementary nature of gauge-, satellite-, and reanalysis-based precipitation estimates, particularly for capturing precipitation variability. However, merging these datasets at high resolutions of 1-hourly and 0.1 degree on a full global scale remains a substantial challenge for the scientific community due to high spatiotemporal heterogeneities. This study proposed a merging-and-calibration framework to optimally integrate the advantages of gauge-, satellite-, and model-based precipitation estimates, focusing on precipitation occurrences and providing a new fully Global multi-source Merging-and-Calibration Precipitation dataset (GMCP: 1-hourly, 0.1 degree, global, 2000-Present).
+The main conclusions included: (1) GMCP generally outperformed the input datasets, ERA5-Land, GSMaP-MVK, and IMERG-Late, across various spatiotemporal scales, both in regional statistics and extreme precipitation systems; (2) GMCP significantly outperformed IMERG-Final, calibrated by gauge analysis at the monthly scale, with the improvements in correlation coefficient (CC), root mean square error (RMSE), and Heidke skill score (HSS) by approximately 66.67%, 39.25%, and 26.83%, respectively, from 2016 to 2020 over the Continental United States (CONUS); (3) compared to the state-of-the-art multi-source merged product with a daily gauge correction scheme, MSWEP V2 (3-hourly and 0.1 degree), GMCP demonstrated the notable  improvements with an approximately 20% enhancement in accurately capturing the precipitation occurrences against approximately 67,000 rain gauges over Mainland China in 2016; (4) in comparison to another well-known multi-source merged quasi-global daily and 0.05 degree precipitation product, CHIPRS integrating the gauge-, satellite-, and reanalysis-based precipitation estimates, GMCP also demonstrated the notable improvements at the daily scale, achieving the increases in CC, RMSE, and HSS by around 57.45%, 38.18%, and 75.76%, respectively, against approximately 67,000 rain gauges over Mainland China in 2016; and (5) this framework was suitable for generating the fully global precipitation datasets at 1-hourly and 0.1 degree scales, significantly mitigating the inherent drawbacks of each input dataset, with GMCP demonstrating the great potential as a valuable resource for worldwide scientific research and societal applications.</documentation>
+      <creator>
+        <name vocabulary="DIF">CN/CAS/TPDC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d633009 Files" path="files/d633009" location="/data/rda/data/d633009/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
