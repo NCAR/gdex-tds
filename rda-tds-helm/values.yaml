@@ -1,6 +1,6 @@
 replicaCount: 3
 revisionHistoryCount: 9
-restartedAt: "2026-07-24T09:05:05Z"
+restartedAt: "2026-07-26T03:18:07Z"
 
 backup:
   enabled: true
