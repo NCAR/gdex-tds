@@ -65,6 +65,6 @@ webapp:
   logPersist:
     fs:
       name: logs-persist
-      size: 100Gi
+      size: 200Gi
       mountPath: /usr/local/tomcat/logs
 
