@@ -305,6 +305,7 @@
     <catalogRef xlink:href="catalog_d651083.xml" xlink:title="d651083 NCAR/CW3E CESM2 L32 and L83 SMYLE" name="" />
     <catalogRef xlink:href="catalog_d651084.xml" xlink:title="d651084 CESM2 SMYLE MCB" name="" />
     <catalogRef xlink:href="catalog_d651085.xml" xlink:title="d651085 CESM2 2 degree SSP2-4.5 and SSP5-8.5 Experiments" name="" />
+    <catalogRef xlink:href="catalog_d651086.xml" xlink:title="d651086 CESM1.3 High Resolution for Atmospheric Rivers" name="" />
     <catalogRef xlink:href="catalog_d652000.xml" xlink:title="d652000 PERSIANN-CCS Hourly Accumulated Precipitation" name="" />
     <catalogRef xlink:href="catalog_d653000.xml" xlink:title="d653000 Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018–2026)" name="" />
     <catalogRef xlink:href="catalog_d682000.xml" xlink:title="d682000 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
