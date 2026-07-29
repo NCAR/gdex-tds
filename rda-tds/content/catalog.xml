@@ -308,6 +308,7 @@
     <catalogRef xlink:href="catalog_d651086.xml" xlink:title="d651086 CESM1.3 High Resolution for Atmospheric Rivers" name="" />
     <catalogRef xlink:href="catalog_d652000.xml" xlink:title="d652000 PERSIANN-CCS Hourly Accumulated Precipitation" name="" />
     <catalogRef xlink:href="catalog_d653000.xml" xlink:title="d653000 Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018–2026)" name="" />
+    <catalogRef xlink:href="catalog_d654000.xml" xlink:title="d654000 WACCM-X 1 Degree Output 2000-Present" name="" />
     <catalogRef xlink:href="catalog_d682000.xml" xlink:title="d682000 Regional Anomalies of MOPITT Satellite-measured Carbon Monoxide" />
     <catalogRef xlink:href="catalog_d682003.xml" xlink:title="d682003 Hemispheric and regional monthly average carbon monoxide from satellite instruments" name="Hemispheric and regional monthly average carbon monoxide from satellite instruments" />
     <catalogRef xlink:href="catalog_d682806.xml" xlink:title="d682806 Daymet Daily Gridded Surface Weather and Climate Variables" name="" />
