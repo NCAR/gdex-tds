@@ -50,6 +50,387 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
         <addDatasetSize/>
      </datasetScan>
 
+      <!--  Aggregations  -->
+
+      <!--
+      GRIB feature collections for the ncar_3km_* series (CAPE, storm-relative helicity,
+      etc). Without these, a request against a single file's dodsC/ncss endpoint makes
+      TDS build an ephemeral single-file GRIB collection at request time where the 
+      caches location does not allow enough space for it; for the
+      gzipped era that path mishandles the .gz suffix: it looks for the decompressed
+      "*.grb" name instead of the actual "*.grb.gz" file on disk, and fails with:
+        IOException: java.lang.IllegalStateException: No files in this collection ...
+      A managed featureCollection routes indexing through the TDM/GribIndex pipeline
+      (same one used successfully by d113000, d626000, d335000, etc. above), which
+      gives OPeNDAP/NCSS the same server-side per-variable subsetting already working
+      for the diags_d02 netCDF files.
+
+      Verified directly against /gdex/data/d300000 (2015-2017) on 2026-08-17:
+        - Archive has two naming/format eras, split by SUFFIX not by a clean date
+          cutoff:
+            * "ncar_3km_<yyyyMMddHH>_mem<N>_f<NNN>.grb.gz" is GRIB EDITION 1
+              (confirmed: wgrib2 reports "grib1 message ignored ... use wgrib" on a
+              decompressed sample). Used 2015-04-07 (archive start) through
+              2015-08-31, i.e. 2015-09-01 is the effective cutover to GRIB2.
+            * "ncar_3km_<yyyyMMddHH>_mem<N>_f<NNN>.grb2" is GRIB EDITION 2 (confirmed
+              via wgrib2). Exclusive format from 2015-09-01 onward (2015 rest of
+              year, all of 2016, all of 2017 checked; no other extensions found).
+            * Two anomalous transition-testing days, 2015-08-12 and 2015-08-29, each
+              have a full normal .grb.gz set PLUS a partial duplicate .grb2 set for
+              f000-f003 (all valid data, not corrupt); harmless overlap, no special
+              casing needed since the suffix-based spec naturally separates them.
+        - No ensemble/perturbation metadata in the GRIB PDS (wgrib2 -ens on a sample
+          CAPE record returns nothing); member number exists ONLY in the filename.
+          A single featureCollection spanning all 10 "mem*" files per era would give
+          GRIB indistinguishable messages for the same parameter/level/valid-time and
+          risk coordinate collisions, so each member gets its own featureCollection
+          below (20 total: 10 members x 2 formats), mirroring how d113000/d626000
+          split their series into several featureCollections.
+        - CAPE and HLCY (1000-0m and 3000-0m layers) are both present in the GRIB2
+          era sample; no field literally named "shear" was found in that file's
+          inventory (may need a different field name/derivation; flag to Tom).
+
+      -->
+      <featureCollection name="d300000 ncar_3km mem1 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/1">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem1" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem1_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem2 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/2">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem2" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem2_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem3 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/3">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem3" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem3_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem4 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/4">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem4" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem4_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem5 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/5">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem5" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem5_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem6 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/6">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem6" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem6_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem7 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/7">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem7" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem7_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem8 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/8">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem8" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem8_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem9 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/9">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem9" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem9_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem10 (GRIB1, gz era)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/10">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km gz mem10" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem10_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem1 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/11">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem1" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem1_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem2 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/12">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem2" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem2_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem3 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/13">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem3" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem3_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem4 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/14">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem4" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem4_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem5 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/15">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem5" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem5_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem6 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/16">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem6" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem6_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem7 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/17">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem7" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem7_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem8 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/18">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem8" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem8_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem9 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/19">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem9" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem9_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 ncar_3km mem10 (GRIB2, grb2 era)"
+                      featureType="GRIB2"
+                      harvest="true"
+                      path="aggregations/g/d300000/20">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 ncar_3km grb2 mem10" spec="/data/rda/data/d300000/**/ncar_3km_.*_mem10_f.*\.grb2$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH"
+                      timePartition="directory" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
   </dataset>
 
 </catalog>
