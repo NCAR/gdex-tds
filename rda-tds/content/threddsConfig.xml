@@ -95,10 +95,13 @@
   </nj22Config>
   -->
 
+  <!-- set the disk cache directory using the PVC location of TDSIndexFiles saved for TDM indexing -->
+  <!-- current 100 Gb max size is aiming to make the d300000indexing feature collect to work -->
   <DiskCache>
+    <dir>/data/TDSIndexFiles/data/rda/data/.unidata-cache/</dir>
     <alwaysUse>true</alwaysUse>
     <scour>15 min</scour>
-    <maxSize>1 Gb</maxSize>
+    <maxSize>100 Gb</maxSize>
   </DiskCache>
 
 <Opendap>
