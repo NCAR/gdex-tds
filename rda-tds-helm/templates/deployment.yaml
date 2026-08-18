@@ -131,5 +131,8 @@ spec:
         - mountPath: /usr/local/tomcat/content/tdm/logs
           name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tdm-logs # Use a subPath to speperate from root level TDSIndexFiles in PVC
+        - mountPath: /usr/local/tomcat/.unidata/cache
+          name: {{ .Values.webapp.tdsPersist.fs.name }}
+          subPath: tdm-unidata-cache # netCDF-Java's default gzip/bzip2 decompression scratch dir; TDM runs non-root and can't create this under root-owned /usr/local/tomcat otherwise
         - mountPath: /data/rda/ # Glade
           name: {{ .Values.webapp.campaignMount.name }}
