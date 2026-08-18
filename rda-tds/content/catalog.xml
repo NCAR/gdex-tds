@@ -57,6 +57,7 @@
     <catalogRef xlink:href="catalog_d094001.xml" xlink:title="d094001 NCEP Climate Forecast System Version 2 (CFSv2) Selected Hourly Time-Series Products" name="" />
     <catalogRef xlink:href="catalog_d094002.xml" xlink:title="d094002 NCEP Climate Forecast System Version 2 (CFSv2) Monthly Products" name="" />
     <catalogRef xlink:href="catalog_d100100.xml" xlink:title="d100100 MPAS Mesoamerica Affinity Group Simulations" name="" />
+    <catalogRef xlink:href="catalog_d103294.xml" xlink:title="d103294 NA-CORDEX-CMIP6" name="" />
     <catalogRef xlink:href="catalog_d113000.xml" xlink:title="d113000 ECMWF's Operational Model Analysis, starting in 2011" name="" />
     <catalogRef xlink:href="catalog_d113001.xml" xlink:title="d113001 ECMWF IFS CY41r2 High-Resolution Operational Forecasts, staring in 2016 " name="" />
     <catalogRef xlink:href="catalog_d131002.xml" xlink:title="d131002 NOAA/CIRES Twentieth Century Global Reanalysis Version 2c" name="" />
@@ -306,6 +307,7 @@
     <catalogRef xlink:href="catalog_d651084.xml" xlink:title="d651084 CESM2 SMYLE MCB" name="" />
     <catalogRef xlink:href="catalog_d651085.xml" xlink:title="d651085 CESM2 2 degree SSP2-4.5 and SSP5-8.5 Experiments" name="" />
     <catalogRef xlink:href="catalog_d651086.xml" xlink:title="d651086 CESM1.3 High Resolution for Atmospheric Rivers" name="" />
+    <catalogRef xlink:href="catalog_d651087.xml" xlink:title="d651087 CESM2 with advanced biogeochemistry and tuned polar sea ice" name="" />
     <catalogRef xlink:href="catalog_d652000.xml" xlink:title="d652000 PERSIANN-CCS Hourly Accumulated Precipitation" name="" />
     <catalogRef xlink:href="catalog_d653000.xml" xlink:title="d653000 Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018–2026)" name="" />
     <catalogRef xlink:href="catalog_d654000.xml" xlink:title="d654000 WACCM-X 1 Degree Output 2000-Present" name="" />

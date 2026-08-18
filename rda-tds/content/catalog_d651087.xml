@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 with advanced biogeochemistry and tuned polar sea ice" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 with advanced biogeochemistry and tuned polar sea ice">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651087/" xlink:title="NCAR GDEX - CESM2 with advanced biogeochemistry and tuned polar sea ice(d651087)" />
+      <documentation type="summary">CESM2 with advanced biogeochemistry and tuned polar sea ice
+
+These are fully coupled CESM2 simulations done by Kristen Krumhardt and Alice DuVivier in 2023 and 2024. The two major changes from standard CESM2 are critical for these simulations:
+1) They use the 4 phytoplankton, 2 zooplankton marine biogeochemistry configuration
+2) They use a tuned albedo configuration for the sea ice to create a more realistic polar sea ice climatology.
+These were performed for assessment and understanding of more complex polar biogeochemistry changes in the context of a changing polar climate. Additionally, we use the tuned albedo configuration to improve the sea ice mean state in the Arctic in particular.
+The simulations that use CESM2.1.4 were completed by K. Krumhardt in Fall 2023 on Cheyenne. The simulations that use CESM2.1.5 were completed by A. DuVivier in Fall 2024 on Derecho. The change in the model prefix from b.e21p4. to b.e21p5. was related to the machine change from Cheyenne to Derecho; the model code itself has not changed but the CESM version did with the machine change.
+
+Information about each of the simulations available:
+PI CONTROL RUN:
+b.e21p4.B1850.TL319_g17.4p2z.002
+
+- This is a fully coupled simulation with standard preindustrial forcing.
+- Data are available for years 121 to 500
+- Limited monthly and yearly data are available for this simulation for the atmosphere, ocean, sea ice, and land.
+Other information about the simulation:
+- The PI control run is not named exactly correctly - the atmosphere resolution is f09 rather than TL319 (mistakenly carried over from JRA forced runs in a shell script)
+- Case b.e21p4.B1850.TL319_g17.4p2z.002 is the PI spin up with the black carbon bug fixed, starts at year 121. The original PI control (not available for download) had a black carbon Fe (iron) bug, so we needed to start a new PI control by branching off  that case at year 121.
+
+HISTORICAL and FUTURE RUNS:
+b.e21p4.BHIST.f09_g17.4p2z.002, b.e21p5.BHIST.f09_g17.4p2z.003, b.e21p5.BHIST.f09_g17.4p2z.004, b.e21p5.BHIST.f09_g17.4p2z.005, b.e21p5.BHIST.f09_g17.4p2z.007
+b.e21p4.BSSP126.f09_g17.4p2z.002, b.e21p4.BSSP245.f09_g17.4p2z.002, b.e21p4.BSSP370.f09_g17.4p2z.002, b.e21p4.BSSP370.f09_g17.4p2z.003, b.e21p4.BSSP370.f09_g17.4p2z.004, b.e21p4.BSSP370.f09_g17.4p2z.005, b.e21p4.BSSP370.f09_g17.4p2z.007
+- These are fully coupled simulations with standard CMIP6 historical and future scenario forcing.
+- There are 6 ensemble members that use historical forcing and then SSP370 future forcing. They have suffixes 002, 003, 004, 005, and 007.
+- There is one ensemble member with SSP245 forcing (b.e21p4.BSSP245.f09_g17.4p2z.002) and one with SSP126 forcing (b.e21p4.BSSP126.f09_g17.4p2z.002)
+- Data are available 1850-2100 for ensemble member 002. All other ensembles have data available 1916-2100 and were branched from the 002 historical ensemble with a pertlim in the atmosphere (roundoff level difference in atmospheric temperature).
+- Yearly, monthly, and daily data are available for this simulation for the atmosphere, ocean, sea ice, and land.
+Other information about the simulations:
+- Ensemble number 007 has additional output at higher frequency for process level analysis.
+- Initially an ensemble 006 was run, but it was identical to 007 and is not provided here</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651087 Files" path="files/d651087" location="/data/rda/data/d651087/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
