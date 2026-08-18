@@ -55,7 +55,8 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <!--
       GRIB feature collections for the ncar_3km_* series (CAPE, storm-relative helicity,
       etc). Without these, a request against a single file's dodsC/ncss endpoint makes
-      TDS build an ephemeral single-file GRIB collection at request time where the caches location does not allow enough space for it; for the
+      TDS build an ephemeral single-file GRIB collection at request time where the 
+      caches location does not allow enough space for it; for the
       gzipped era that path mishandles the .gz suffix: it looks for the decompressed
       "*.grb" name instead of the actual "*.grb.gz" file on disk, and fails with:
         IOException: java.lang.IllegalStateException: No files in this collection ...
