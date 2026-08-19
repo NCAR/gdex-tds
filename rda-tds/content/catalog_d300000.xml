@@ -109,7 +109,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem1" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem1_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -125,7 +125,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem2" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem2_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -141,7 +141,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem3" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem3_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -157,7 +157,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem4" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem4_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -173,7 +173,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem5" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem5_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -189,7 +189,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem6" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem6_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -205,7 +205,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem7" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem7_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -221,7 +221,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem8" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem8_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -237,7 +237,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem9" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem9_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
@@ -253,7 +253,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
           <collection name="d300000 TEST ncar_3km gz mem10" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem10_f.*\.grb\.gz$"
                       dateFormatMark="#ncar_3km_#yyyyMMddHH" />
-          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <tdm rewrite="test" rescan="0 10 1 * * ? *" />
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
