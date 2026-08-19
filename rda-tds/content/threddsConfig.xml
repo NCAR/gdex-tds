@@ -98,7 +98,6 @@
   <!-- set the disk cache directory using the PVC location of TDSIndexFiles saved for TDM indexing -->
   <!-- current 100 Gb max size is aiming to make the d300000indexing feature collect to work -->
   <DiskCache>
-    <dir>/usr/local/tomcat/content/thredds/cache/cdm/</dir>
     <alwaysUse>true</alwaysUse>
     <scour>15 min</scour>
     <maxSize>100 Gb</maxSize>
