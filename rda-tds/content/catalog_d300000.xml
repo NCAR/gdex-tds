@@ -91,7 +91,175 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
           inventory (may need a different field name/derivation; flag to Tom).
 
       -->
-      <featureCollection name="d300000 ncar_3km mem1 (GRIB1, gz era)"
+
+      <!--
+      TEST ONLY: single day (2015-04-07, init 2015040700), all 10 members, GRIB1
+      .grb.gz era. This is the exact day/file from the reported
+      "No files in this collection" error, kept small (490 files) so TDM
+      indexing is fast for validating the featureCollection/TDM fix before
+      committing to the full-archive blocks below. Remove once validated.
+      -->
+      <featureCollection name="d300000 TEST ncar_3km mem1 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem1">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem1" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem1_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem2 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem2">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem2" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem2_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem3 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem3">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem3" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem3_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem4 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem4">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem4" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem4_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem5 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem5">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem5" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem5_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem6 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem6">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem6" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem6_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem7 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem7">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem7" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem7_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem8 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem8">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem8" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem8_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem9 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem9">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem9" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem9_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <featureCollection name="d300000 TEST ncar_3km mem10 (GRIB1, gz era, 2015-04-07)"
+                      featureType="GRIB1"
+                      harvest="true"
+                      path="aggregations/g/d300000/test-mem10">
+          <metadata inherited="true">
+           <serviceName>all</serviceName>
+         </metadata>
+
+          <collection name="d300000 TEST ncar_3km gz mem10" spec="/data/rda/data/d300000/2015/20150407/ncar_3km_.*_mem10_f.*\.grb\.gz$"
+                      dateFormatMark="#ncar_3km_#yyyyMMddHH" />
+          <tdm rewrite="always" rescan="0 10 1 * * ? *" />
+          <gribConfig>
+            <option name="runtimeCoordinate" value="union" />
+          </gribConfig>
+      </featureCollection>
+
+      <!-- <featureCollection name="d300000 ncar_3km mem1 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
                       path="aggregations/g/d300000/1">
@@ -429,7 +597,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
-      </featureCollection>
+      </featureCollection> -->
 
   </dataset>
 

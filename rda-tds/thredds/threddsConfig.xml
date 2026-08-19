@@ -87,7 +87,6 @@
   -->
 
   <DiskCache>
-    <dir>/data/TDSIndexFiles/data/rda/data/.unidata-cache/</dir>
     <alwaysUse>false</alwaysUse>
     <scour>1 hour</scour>
     <maxSize>100 Gb</maxSize>
