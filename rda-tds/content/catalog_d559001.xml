@@ -31,7 +31,6 @@
       <filter>
         <exclude wildcard="*.html" />
         <exclude wildcard="*.x" />
-        <exclude wildcard=".*" />
         <exclude wildcard=".*/" />
       </filter>
       <addDatasetSize />
