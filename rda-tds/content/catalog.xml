@@ -16,6 +16,8 @@
         <service name="uddc" serviceType="UDDC" base="/thredds/uddc/" />
     </service>
 
+    <documentation xlink:href="https://data.gdex.ucar.edu/special_projects/tds/tds_usage_dashboard.html" xlink:title="View TDS Usage Statistics Dashboard" />
+
     <catalogRef xlink:href="catalog_d010014.xml" xlink:title="d010014 SUMMA Hydrology in the Pacific Northwest for Hydrologic System Vulnerability Assessments" name="" />
     <catalogRef xlink:href="catalog_d010018.xml" xlink:title="d010018 Atmospheric Potential Oxygen forward Model Intercomparison Project (APO-MIP)" name="" />
     <catalogRef xlink:href="catalog_d010026.xml" xlink:title="d010026 Long Simulations of the Miocene Climatic Optimum" name="" />
