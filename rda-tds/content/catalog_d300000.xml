@@ -99,7 +99,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       indexing is fast for validating the featureCollection/TDM fix before
       committing to the full-archive blocks below. Remove once validated.
       -->
-      <featureCollection name="d300000 TEST ncar_3km mem1 (GRIB1, gz era, 2015-04-07)"
+      <!-- <featureCollection name="d300000 TEST ncar_3km mem1 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
                       path="aggregations/g/d300000/test-mem1">
@@ -257,7 +257,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
           <gribConfig>
             <option name="runtimeCoordinate" value="union" />
           </gribConfig>
-      </featureCollection>
+      </featureCollection> -->
 
       <!-- <featureCollection name="d300000 ncar_3km mem1 (GRIB1, gz era)"
                       featureType="GRIB1"
