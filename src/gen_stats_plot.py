@@ -183,12 +183,12 @@ if __name__ == "__main__":
     fig = create_stats_figure(df)
 
     # save the interactive Plotly figure as an HTML file
-    fig.write_html(f"{dir_path}/../tds_usage_stats.html")
+    fig.write_html(f"{dir_path}/../templates/tds_usage_stats.html")
 
     # use cp to copy html to special_projects/tds/tds_usage_stats.html
     result = subprocess.run(
         ["sudo", "-u", "gdexdata",
-        "cp", f"{dir_path}/../tds_usage_stats.html",
+        "cp", f"{dir_path}/../templates/tds_usage_stats.html",
         "/gdex/data/special_projects/tds/tds_usage_stats.html"],
         check=True
     )
