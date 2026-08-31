@@ -60,7 +60,7 @@ webapp:
   tdsPersist:
     fs:
       name: tds-persist
-      size: 1Ti
+      size: 1.5Ti
       mountPath: /data/TDSIndexFiles/data/rda/data # /tmp2/TDSIndexFiles # /data/TDSIndexFiles
   logPersist:
     fs:
