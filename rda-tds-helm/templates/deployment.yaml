@@ -54,14 +54,15 @@ spec:
           httpGet:
             path: /thredds/catalog/catalog.html
             port: {{ .Values.webapp.tds.port }}
-          failureThreshold: 30
-          periodSeconds: 10 # up to 5 min to come up before readiness probing begins
+          timeoutSeconds: 10 # was defaulting to 1s, too tight for a cold JVM
+          failureThreshold: 60
+          periodSeconds: 10 # up to 10 min to come up before readiness probing begins
         readinessProbe: # Pulls pod out of Service/ingress rotation fast when it can't serve, e.g. OOM/zombie state
           httpGet:
             path: /thredds/catalog/catalog.html
             port: {{ .Values.webapp.tds.port }}
           periodSeconds: 10
-          timeoutSeconds: 5
+          timeoutSeconds: 10
           failureThreshold: 3 # ~30s of failures before pod is marked NotReady
           successThreshold: 1
 
