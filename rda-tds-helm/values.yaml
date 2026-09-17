@@ -33,7 +33,7 @@ webapp:
     limit_connections: 150  # Increased for concurrent requests - global limit
     limit_rps: 150           # Increased for page load bursts - global limit
     env:
-      THREDDS_XMX_SIZE: 48G
+      THREDDS_XMX_SIZE: 56G
       THREDDS_XMS_SIZE: 16G
   logs: 
     name: rda-logs
