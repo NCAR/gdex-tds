@@ -113,25 +113,25 @@
   default is to allow 50 - 100 open files, cleanup every 11 minutes
   -->
   <NetcdfFileCache>
-    <minFiles>5</minFiles>
-    <maxFiles>20</maxFiles>
-    <scour>11 min</scour>
+    <minFiles>2</minFiles>
+    <maxFiles>5</maxFiles>
+    <scour>5 min</scour>
   </NetcdfFileCache>
 
   <RandomAccessFile>
-    <minFiles>50</minFiles>
-    <maxFiles>100</maxFiles>
-    <scour>11 min</scour>
+    <minFiles>2</minFiles>
+    <maxFiles>5</maxFiles>
+    <scour>5 min</scour>
   </RandomAccessFile>
 
   <GribCollection>
-    <minFiles>10</minFiles>
-    <maxFiles>20</maxFiles>
+    <minFiles>2</minFiles>
+    <maxFiles>5</maxFiles>
     <scour>5 min</scour>
   </GribCollection>
   <TimePartition>
-    <minFiles>100</minFiles>
-    <maxFiles>200</maxFiles>
+    <minFiles>2</minFiles>
+    <maxFiles>5</maxFiles>
     <scour>5 min</scour>
   </TimePartition>
   
@@ -143,8 +143,8 @@
   used by HTTP Range requests.
   -->
   <HTTPFileCache>
-    <minFiles>5</minFiles>
-    <maxFiles>10</maxFiles>
+    <minFiles>2</minFiles>
+    <maxFiles>5</maxFiles>
     <scour>5 min</scour>
   </HTTPFileCache>
  
