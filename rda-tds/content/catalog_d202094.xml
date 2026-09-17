@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="WACCM-X SD 1 Degree V2.2.2 Weimer for ICON" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="WACCM-X SD 1 Degree V2.2.2 Weimer for ICON">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d202094/" xlink:title="NCAR GDEX - WACCM-X SD 1 Degree V2.2.2 Weimer for ICON(d202094)" />
+      <documentation type="summary">These model simulation results archived here are for comparison with observations from a satellite mission. The National Aeronautics and Space Administration (NASA) launched the Ionospheric Connection Explorer (ICON) on October 10, 2019 for upper atmosphere ionospheric and thermospheric observations. This mission was operating until December of 2022. We used the Whole Atmosphere Community Climate Model with thermosphere and ionosphere eXtension (WACCM-X) to run simulations for this period from January 2020 to December 2022 for comparison with these observations. The model was run in Specified Dynamics (SD) mode nudged with Goddard Earth Observing System Model, Version 5 (GEOS-5) assimilation data below 50 km. The model high latitude ion convection pattern is from the Weimer empirical model which uses the Interplanetary Magnetic Field (IMF) solar wind observations as input. Realistic f10.7 solar flux and Kp index are solar forcings for this model run. These WACCM-X simulations are what are archived here. Output is hourly from January 1, 2020 to December 1, 2022. The model resolution is 1.25 degree x 0.9 degree in geographic longitude and latitude with a vertical resolution of 1/4 scale height. The output includes the neutral composition, temperature, and winds, plasma composition, electron and ion temperature, electric field, and ExB drift velocities. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d202094 Files" path="files/d202094" location="/data/rda/data/d202094/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

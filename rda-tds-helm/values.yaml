@@ -1,6 +1,6 @@
 replicaCount: 3
 revisionHistoryCount: 9
-restartedAt: "2026-08-23T06:20:54Z"
+restartedAt: "2026-09-17T18:34:02Z"
 
 backup:
   enabled: true
@@ -23,7 +23,7 @@ webapp:
     secretName: incommon-cert-tds
   tds:
     load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods
-    image: docker.io/potatofever/rda-tds:sha-b50f9c2
+    image: docker.io/potatofever/rda-tds:sha-420dcb9
     port: 8080
     memory: 64G
     cpu: 5
@@ -44,7 +44,7 @@ webapp:
     ephemeralStorageLimit: 1Gi
   tdm:
     name: gdex-tdm
-    image: docker.io/potatofever/gdex-tdm:sha-aa39197
+    image: docker.io/potatofever/gdex-tdm:sha-196dc56
     port: 8080
     memory: 6G
     cpu: 2
