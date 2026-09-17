@@ -48,13 +48,30 @@ spec:
             ephemeral-storage: {{ .Values.webapp.tds.ephemeralStorageLimit }}
         ports:
         - containerPort: {{ .Values.webapp.tds.port }}
+
+        # apply tds health probe internally within the cluster
+        startupProbe: # Allows slow JVM/catalog startup (48G heap) without liveness killing it prematurely
+          httpGet:
+            path: /thredds/catalog/catalog.html
+            port: {{ .Values.webapp.tds.port }}
+          failureThreshold: 30
+          periodSeconds: 10 # up to 5 min to come up before readiness probing begins
+        readinessProbe: # Pulls pod out of Service/ingress rotation fast when it can't serve, e.g. OOM/zombie state
+          httpGet:
+            path: /thredds/catalog/catalog.html
+            port: {{ .Values.webapp.tds.port }}
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3 # ~30s of failures before pod is marked NotReady
+          successThreshold: 1
+
         env:
           - name: THREDDS_XMX_SIZE
             value: {{ .Values.webapp.tds.env.THREDDS_XMX_SIZE }}
           - name: THREDDS_XMS_SIZE
             value: {{ .Values.webapp.tds.env.THREDDS_XMS_SIZE }}
-          - name: JAVA_OPTS # Redirect OOM heap dump off ephemeral storage; exit fast on OOM so pod restarts : temp remove (causing crash looping). -XX:+ExitOnOutOfMemoryError
-            value: "-XX:HeapDumpPath=/usr/local/tomcat/temp/"
+          - name: JAVA_OPTS # Redirect OOM heap dump off ephemeral storage; exit fast on OOM so pod restarts
+            value: "-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/usr/local/tomcat/temp/ -XX:+ExitOnOutOfMemoryError"
           - name: K8S_POD_NAME # Inject the current pod's name into the container environment so that server.xml can use it for access log naming
             valueFrom:
               fieldRef:
