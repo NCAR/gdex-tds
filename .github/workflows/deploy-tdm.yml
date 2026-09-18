@@ -59,8 +59,22 @@ jobs:
       - name: Extract TDM version from Dockerfile
         id: tdm_version
         run: |
-          version=$(grep -oP '(?<=unidata/tdm-docker:)\S+' rda-tds/Dockerfile-tdm)
+          version=$(grep '^FROM' rda-tds/Dockerfile-tdm | sed 's/.*://')
           echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Mirror upstream base image
+        # Unidata prunes old tdm-docker tags from Docker Hub (5.6 is already gone),
+        # so we keep our own permanent copy of whatever version we currently build from.
+        continue-on-error: true
+        run: |
+          version="${{ steps.tdm_version.outputs.version }}"
+          if curl -sf "https://hub.docker.com/v2/repositories/potatofever/tdm-docker-mirror/tags/${version}/" > /dev/null; then
+            echo "potatofever/tdm-docker-mirror:${version} already exists, skipping"
+          else
+            docker pull "unidata/tdm-docker:${version}"
+            docker tag "unidata/tdm-docker:${version}" "potatofever/tdm-docker-mirror:${version}"
+            docker push "potatofever/tdm-docker-mirror:${version}"
+          fi
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
