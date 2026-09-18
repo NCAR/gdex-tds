@@ -56,14 +56,19 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Extract TDM version from Dockerfile
+        id: tdm_version
+        run: |
+          version=$(grep -oP '(?<=unidata/tdm-docker:)\S+' rda-tds/Dockerfile-tdm)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: potatofever/gdex-tdm
           tags: |
-            type=schedule,pattern={{date 'YYYYMMDD-HHmm'}}
-            type=sha
+            type=raw,value=v${{ steps.tdm_version.outputs.version }}-sha-{{sha}}
 
       - name: Build and push TDM Docker image
         id: push
