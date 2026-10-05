@@ -246,3 +246,15 @@ if __name__ == "__main__":
     if result.returncode != 0:
         print(f"Error: cp command failed with exit code {result.returncode}")
         sys.exit(result.returncode)
+
+    # use cp to copy html to special_projects/tds/tds_usage_dashboard.html 
+    #  in case the dashboard HTML needs to be updated
+    result = subprocess.run(
+        ["sudo", "-u", "gdexdata",
+        "cp", f"{dir_path}/../templates/tds_usage_dashboard.html",
+        "/gdex/data/special_projects/tds/tds_usage_dashboard.html"],
+        check=True
+    )
+    if result.returncode != 0:
+        print(f"Error: cp command failed with exit code {result.returncode}")
+        sys.exit(result.returncode)
