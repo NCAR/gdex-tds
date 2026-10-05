@@ -156,7 +156,7 @@ def create_stats_figure(df: pd.DataFrame):
             x=df["date"],
             y=df["subset_requests"],
             name="Subset (NCSS)",
-            marker_color="#EAECF0",
+            marker_color="#60605E",
             legendgroup="request_types",
             legendgrouptitle_text="Request Types"
         ),
@@ -172,6 +172,56 @@ def create_stats_figure(df: pd.DataFrame):
     return fig
 
 
+def build_combined_html(df: pd.DataFrame, recent_days: int = 10) -> str:
+    """
+    Build a single HTML page with two sections: the most recent `recent_days`
+    of usage, and the full history below it, each as the same 3-subplot figure.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        TDS usage data, one row per day.
+    recent_days : int
+        Number of most recent days to show in the top section.
+
+    Returns
+    -------
+    str
+    """
+    df = df.copy()
+    df["date"] = pd.to_datetime(df["date"])
+    df = df.sort_values("date")
+
+    recent_df = df.tail(recent_days)
+
+    recent_fig = create_stats_figure(recent_df)
+    history_fig = create_stats_figure(df)
+
+    recent_div = recent_fig.to_html(full_html=False, include_plotlyjs="cdn")
+    history_div = history_fig.to_html(full_html=False, include_plotlyjs=False)
+
+    return f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>TDS Usage Statistics</title>
+<style>
+  body {{ font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 16px; }}
+  h2 {{ margin: 8px 0; }}
+  hr {{ border: none; border-top: 2px solid #dde3ea; margin: 32px 0; }}
+</style>
+</head>
+<body>
+  <h2>Last {recent_days} Days</h2>
+  {recent_div}
+  <hr>
+  <h2>Full History</h2>
+  {history_div}
+</body>
+</html>
+"""
+
+
 if __name__ == "__main__":
     # get the directory path of the current script
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -179,11 +229,12 @@ if __name__ == "__main__":
     # extract the TDS usage data from the Boreas backup
     df = load_tds_usage_data()
 
-    # create the interactive Plotly figure
-    fig = create_stats_figure(df)
+    # build the combined (recent + full history) HTML page
+    html = build_combined_html(df, recent_days=10)
 
     # save the interactive Plotly figure as an HTML file
-    fig.write_html(f"{dir_path}/../templates/tds_usage_stats.html")
+    with open(f"{dir_path}/../templates/tds_usage_stats.html", "w") as f:
+        f.write(html)
 
     # use cp to copy html to special_projects/tds/tds_usage_stats.html
     result = subprocess.run(
