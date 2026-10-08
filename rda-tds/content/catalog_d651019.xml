@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Atmospheric River Tracking Method Intercomparison Project Tier 2 Paleo Source Data and Catalogues" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Atmospheric River Tracking Method Intercomparison Project Tier 2 Paleo Source Data and Catalogues">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651019/" xlink:title="NCAR GDEX - Atmospheric River Tracking Method Intercomparison Project Tier 2 Paleo Source Data and Catalogues(d651019)" />
+      <documentation type="summary">Atmospheric River Tracking Method Intercomparison Project (ARTMIP) Tier 2 Paleoclimate source data and developer catalogues. Each ARTMIP method/algorithm (named by the developer) submits a catalogue comprised of 0's (no AR exists) or 1's (yes AR exists) for each time slice, for each grid point, using output from CESM2 paleoclimate simulations for PreIndustrial, orbital forcing comparable to the Holocene at 10ka, and greenhouse forcing comparable to 21ka.  LGM (Last Glacial Maximum). Each simulation has 30 years of data. Derived quantities required for algorithms, such as IVT or IWV, were computed by the ARTMIP project so that all methods use the same data.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651019 Files" path="files/d651019" location="/data/rda/data/d651019/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

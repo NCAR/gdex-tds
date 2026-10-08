@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 Tuned Sea Ice Albedo Experiments" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 Tuned Sea Ice Albedo Experiments">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651070/" xlink:title="NCAR GDEX - CESM2 Tuned Sea Ice Albedo Experiments(d651070)" />
+      <documentation type="summary">The original "CESM2 Tuned Sea Ice Albedo" experiments were run to investigate the impact of sea ice snow albedo tuning on Arctic mean state and global responses. These simulations were run by David Bailey, and the results were written up in Kay et al. 2022. These were configured the same as the standard CMIP6 runs, but with adjusted r_snw=1.5 and dt_mlt=1.0 in the sea ice model (cice) namelist. (For local disk access, these data are all in the main directory and are not separated by case name.)
+Original experiments
+Control run: b.e21.B1850.f09_g17.CMIP6-piControl.001_branch2
+Data are generally available years 811-1350
+These runs are fully coupled
+Monthly Ocean, Sea Ice, and Atmosphere variables are available
+
+Historical runs: b.e21.BHIST.f09_g17.CMIP6-historical.01?
+There are four ensemble members
+Ensemble number 012 started in 1850 and ran to 2015
+Ensemble numbers 013, 014, 015 start in 1920, branched from ensemble 012 with a pertlim, and go to 2015
+These runs are fully coupled
+Monthly Ocean, Sea Ice, and Atmosphere variables are available
+Future runs: b.e21.BSSP370cmip6.f09_g17.CMIP6-SSP3-7.0.?
+The first three SSP runs (012,013,014) were configured the same as the CMIP6 scenario runs, but there was a bug in the future forcing
+New runs were then done with the updated forcing (112, 113, 114, 115, 116)
+The runs use standard CMIP6 SSP370 standard forcing, start in 2015 and go through 2100
+These runs are fully coupled
+Monthly Ocean, Sea Ice, and Atmosphere variables are available
+There are also some experiments that are not fully coupled experiments:
+e.e21.E1850.f09_g17.CMIP6-piControl.*
+d.e21.f09_g17.{001,002,003,004,005}
+Additional Experiments
+The additional CESM2 Tuned Sea Ice Albedo experiments were run to extend the dataset and include more frequent (daily) output as well as some modifications to the external forcing. This was done as part of a NSF Navigating the New Arctic (NNA) project (NSF #1928119): NNA Track 1: Collaborative Research: Maritime transportation in a changing Arctic: Navigating climate and sea ice uncertainties. These simulations were run by Alice DuVivier, and the data will be used in various studies. (For local disk access, these data are all in the main directory and are separated by case name.)
+Historical runs: b.e21.BHISTsmbb.f09_g17.CMIP6-historical.1?
+There are five ensemble members: 118, 119, 120, 121, 122
+These ensembles start in 1990 and run through 2015
+These use smoothed biomass burning forcing (smbb), which uses the smoothed biomass burning forcing starting the 1990s. Information about the smoothed biomass burning impacts can be found in DeRepentigny  et al. 2022
+These runs are fully coupled
+Daily and Monthly Ocean, Sea Ice, and Atmosphere variables are available
+Restart files are also available upon request to co-authors
+Future runs: b.e21.BSSP370cmip6.f09_g17.CMIP6-SSP3-7.0.2?
+There are five ensemble members: 218, 219, 220, 221, 222
+The runs use standard CMIP6 SSP370 standard forcing, start in 2015 and go through 2100. They are continued from the SMBB historical runs (above)
+These runs are fully coupled
+Daily and Monthly Ocean, Sea Ice, and Atmosphere variables are available
+Restart files are also available upon request to co-authors
+These runs were done on the Derecho supercomputer (instead of Cheyenne, which was used for all the above experiments)</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651070 Files" path="files/d651070" location="/data/rda/data/d651070/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="M2HATS: ISS Radar 915 MHz Wind Profiler Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="M2HATS: ISS Radar 915 MHz Wind Profiler Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d361535/" xlink:title="NCAR GDEX - M2HATS: ISS Radar 915 MHz Wind Profiler Data(d361535)" />
+      <documentation type="summary"> 915 MHz Profiler winds and moments collected by the EOL/Integrated Sounding System team during the M2HATS (Multi-point Monin-Obukhov similarity horizontal array turbulence study) field campaign in Tonopah, Nevada. Daily NetCDF-3 files of 915 MHz radar wind profiles are available as 30 minute averages in both standard and NIMA (NCAR Improved Moments Algorithm) processing. Daily NetCDF-3 files of 30 minute averaged moments are provided by NIMA processing. Winds and moments are also available in Zarr store format preserving all three data products (NIMA moments, NIMA winds, standard winds) as separate groups within a single daily store.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/RTF/ISFF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>M2HATS</keyword>
+      <keyword>Multi-point Monin-Obukhov similarity Horizontal Array Turbulence Study</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d361535 Files" path="files/d361535" location="/data/rda/data/d361535/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

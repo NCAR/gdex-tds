@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="OMI/MLS Tropospheric Ozone 2005-2024 Climatology" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="OMI/MLS Tropospheric Ozone 2005-2024 Climatology">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>SATELLITE</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010046/" xlink:title="NCAR GDEX - OMI/MLS Tropospheric Ozone 2005-2024 Climatology(d010046)" />
+      <documentation type="summary">This global dataset contains a climatology of 12 monthly averages and standard deviations of tropospheric column ozone from the Ozone Monitoring Instrument/Microwave Limb Sounder (OMI/MLS) on NASA's Aura satellite. We provide data for definitions of the troposphere truncated at 300 hPa and 100 hPa pressure levels. Data are sampled from January 2005-December 2024. These data are compiled for usage on the NSF NCAR ADF model evaluation and diagnostics package (https://github.com/NCAR/ADF). 
+The dataset is truncated to 75.5S to 75.5N because of some ozone misrepresentation and retrieval difficulty near the poles. Spatial resolution: 1 longitude x 1 latitude global, truncated to 75.5S to 75.5N </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/ACOM</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010046 Files" path="files/d010046" location="/data/rda/data/d010046/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

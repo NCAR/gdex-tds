@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="AGS-FIRP Track 1: Enhancing Undergraduate Education of the Planetary Boundary Layer during the 2024 Solar Eclipse" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="AGS-FIRP Track 1: Enhancing Undergraduate Education of the Planetary Boundary Layer during the 2024 Solar Eclipse">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010116/" xlink:title="NCAR GDEX - AGS-FIRP Track 1: Enhancing Undergraduate Education of the Planetary Boundary Layer during the 2024 Solar Eclipse(d010116)" />
+      <documentation type="summary"> The objective of this field campaign was to study the atmospheric structure during the total solar eclipse on April 8, 2024.  Measurements of profiles of temperature, humidity, and winds were made by the SPARC facility from the University of Wisconsin-Madison.  These activities were part of an atmospheric science measurements course taught by Prof. Kevin Goebbert at Valparaiso University.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UWI-MAD/SSEC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010116 Files" path="files/d010116" location="/data/rda/data/d010116/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

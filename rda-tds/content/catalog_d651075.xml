@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2 CMIP5 Ensemble" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2 CMIP5 Ensemble">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651075/" xlink:title="NCAR GDEX - CESM2 CMIP5 Ensemble(d651075)" />
+      <documentation type="summary">The CESM2 with CMIP5 forcing is a set of climate model simulations intended to disentangle the role of forcing versus model structure between CESM2 and CESM1 for pre-industrial, 20th and 21st centuries simulations.
+The CESM2 has considerable changes relative to the CESM1 both in the model structure and in the forcing. In order to understand these changes and their impact on climate variability and change, simulations with CESM2 but with a forcing similar to CESM1 were performed.
+Simulations include a 500-year pre-industrial run and two 15-member ensembles forced by historical/RCP8.5 datasets.
+Due to computational constraints, only a single historical ensemble member runs from 1850-1920. The remaining members were branched in 1920 from the first member.
+The forcing in these simulations is comparable to forcing used in the CESM1 Large Ensemble Simulations.
+The model code and case setups for the CESM2 CMIP5 Forcing Experiments can be found on github.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651075 Files" path="files/d651075" location="/data/rda/data/d651075/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

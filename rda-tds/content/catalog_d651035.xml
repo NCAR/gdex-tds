@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM1 AMV idealized experiments" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM1 AMV idealized experiments">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651035/" xlink:title="NCAR GDEX - CESM1 AMV idealized experiments(d651035)" />
+      <documentation type="summary"> To gain insight into the atmospheric teleconnections associated with the AMV, we perform idealized experiments using Community Earth System Model version 1 (CESM1) in which North Atlantic SSTs are restored to a time-independent spatial pattern corresponding to an estimate of the internal component of the observed AMV anomaly (see Ruprich-Robert et al. (2017) for more details). CESM1 uses nominal 1deg horizontal resolution in all its components. Because we aim to assess the effects of internal variability, all experiments use pre-industrial conditions where external forcings are kept fixed at levels corresponding to either calendar year 1850. The restoring is fully applied between 8-65N in the North Atlantic, linearly diminishing to zero within the 8deg buffer zones at the northern and southern boundaries, so that the constrained region is confined between the Equator and 73N. Outside of this region, the models evolve freely, allowing a full response of the climate system to the AMV-related SST anomalies. To obtain reliable estimates of the AMV impacts, we perform large ensemble simulations with 30 members. SST anomalies corresponding to one standard deviation of the AMV index are added to or subtracted from the models daily climatological SST over the North Atlantic region for the positive (AMV+) or negative (AMV-) AMV experiments, respectively. The restoring time scale is 5 days over 10 m.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651035 Files" path="files/d651035" location="/data/rda/data/d651035/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

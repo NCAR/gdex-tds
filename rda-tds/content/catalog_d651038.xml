@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="A Suite of Perturbed Parameter Ensembles using CESM2.2 CAM6 under a Wide Range of Temperatures" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="A Suite of Perturbed Parameter Ensembles using CESM2.2 CAM6 under a Wide Range of Temperatures">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651038/" xlink:title="NCAR GDEX - A Suite of Perturbed Parameter Ensembles using CESM2.2 CAM6 under a Wide Range of Temperatures(d651038)" />
+      <documentation type="summary">This dataset originates from a new CESM2 CAM6 perturbed parameter ensemble (PPE) designed to explore climate and hydroclimate dynamics under a wide range of sea surface temperature (SST) conditions. The SST varies from 4 degrees Celsius colder to 16 degrees Celsius warmer than preindustrial levels, encompassing a broad spectrum of mean temperatures spanning the past 65 million years. This dataset offers valuable insights into climate and hydroclimate responses, as well as weather and climate extremes under diverse conditions. 
+The dataset includes results from nine PPE simulations with different SST scenarios: preindustrial (PREI), 4K cooler (M04K), and 4K, 8K, 12K, and 16K warmer (P04K to P16K). For SSTs exceeding 8K warming, sea ice was removed to improve numerical stability. Each PPE set consists of 250 ensemble members, with 45 parameters related to microphysics, convection, turbulence, and aerosols perturbed using Latin Hypercube Sampling. An additional simulation with default parameter settings brings the total to 251 simulations, each running for five years using CAM6.3 (https://github.com/ESCOMP/CAM/tree/cam6_3_026; with additional paleo modifications).
+Post-processing converted the data into compressed NetCDF-4 format. All 251 runs were concatenated using ncecat to minimize the number of files. For example, the following file contains monthly surface temperature data from the preindustrial PPE:
+f.c6.F1850.f19_f19.paleo_ppe.sst_prei.ens251/atm/proc/tseries/month_1/f.c6.F1850.f19_f19.paleo_ppe.sst_prei.ens251.cam.h0.TS.000101-000512.nc
+A detailed variable list can be found in the Documentation Tab.
+Parameter values are provided in the PPE Parameter File. More details can be found in the paper: Zhu et al. (2025). Investigating the State Dependence of Cloud Feedback Using a Suite of Perturbed Parameter Ensembles, Journal of Climate.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651038 Files" path="files/d651038" location="/data/rda/data/d651038/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
