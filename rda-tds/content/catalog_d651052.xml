@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM1 Paleo Idealized Forcing" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM1 Paleo Idealized Forcing">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651052/" xlink:title="NCAR GDEX - CESM1 Paleo Idealized Forcing(d651052)" />
+      <documentation type="summary">Among other forcings, past climate variations have been driven by changes in the orbit of earth and greenhouse gas concentrations. These forcings often change concurrently, making it difficult to isolate specific climate responses from the paleoclimate record alone. Here, simulations are run with the NCAR CESM1.2 to isolate the climate responses to different past forcings. In each simulation, only one boundary condition is changed while others remain fixed at preindustrial levels, with the goal of isolating the climate response to individual forcings. The experiments are described below. In each simulation, parameters not mentioned are the same as the preindustrial simulation.
+Simulations:
+0ka_0urb: A preindustrial simulation, with the following parameters: Obliquity: 23.44107 degrees; Longitude of perihelion: 102.7242 degrees; eccentricity: 0.01670772; CO2: 284.7 ppm; Ice sheets: 0 ka.
+lo_obliq and hi_obliq: Obliquity is set to 22.079 or 24.480 degrees, respectively.
+0_AEQ, 90_WSOL, 180_VEQ, and 270_SSOL: Longitude of the perihelion is set to 0, 90, 180, or 270 degrees. This corresponds to perihelion at the Northern Hemisphere autumnal equinox, winter solstice, vernal equinox, or summer solstice, respectively. Eccentricity is set to 0.0493.
+ECC_0: Eccentricity is set to 0, resulting in a perfectly circular orbit.
+half_CO2: CO2 is set to 142.35 ppm, half of its preindustrial level.
+If you are planning on using these simulations please contact the lead authors of the two reference papers shown below.
+Computing resources (ark:/85065/d7wd3xhc) were provided by the Climate Simulation Laboratory at NCAR's Computational and Information Systems Laboratory, sponsored by the National Science Foundation and other agencies.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651052 Files" path="files/d651052" location="/data/rda/data/d651052/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

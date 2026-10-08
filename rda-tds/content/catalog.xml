@@ -21,6 +21,7 @@
     <catalogRef xlink:href="catalog_d010026.xml" xlink:title="d010026 Long Simulations of the Miocene Climatic Optimum" name="" />
     <catalogRef xlink:href="catalog_d010031.xml" xlink:title="d010031 Atlanta Metro Heat Exposure" name="" />
     <catalogRef xlink:href="catalog_d010043.xml" xlink:title="d010043 East African Great Lake Environments (EAGLE) Climate Downscaling Output" name="" />
+    <catalogRef xlink:href="catalog_d010046.xml" xlink:title="d010046 OMI/MLS Tropospheric Ozone 2005-2024 Climatology" name="" />
     <catalogRef xlink:href="catalog_d010047.xml" xlink:title="d010047 Hourly WRF-Chem simulation with SMAP soil moisture insertion over the Contiguous U.S. for the period 2015 - 2019" name="" />
     <catalogRef xlink:href="catalog_d010048.xml" xlink:title="d010048 High Resolution Historical and Future Simulations Over Hawaii" name="" />
     <catalogRef xlink:href="catalog_d010049.xml" xlink:title="d010049 Global Ocean Physics Reanalysis" name="" />
@@ -28,16 +29,20 @@
     <catalogRef xlink:href="catalog_d010065.xml" xlink:title="d010065 Ensemble Downscaled Climate Dataset for Alaska and Hawaii Under Historical and Future Conditions" name="" />
     <catalogRef xlink:href="catalog_d010073.xml" xlink:title="d010073 Preindustrial fully coupled CESM2.0.1 (B1850_c201_CTL) for atmospheric river analyses" name="" />
     <catalogRef xlink:href="catalog_d010074.xml" xlink:title="d010074 Efficient Drift Correction of Initialized Earth System Predictions" name="" />
+    <catalogRef xlink:href="catalog_d010075.xml" xlink:title="d010075 Quantifying the Impact of Solar Irradiance Uncertainty on Thermosphere-Ionosphere Variability Using Ensemble Forecasts" name="" />
     <catalogRef xlink:href="catalog_d010077.xml" xlink:title="d010077 Regional Multi-Week Convection-Permitting Simulations using the Model for Prediction Across Scales (MPAS-A) for use in the Caribbean, Mexico, and Central America Regions" name="" />
     <catalogRef xlink:href="catalog_d010078.xml" xlink:title="d010078 Gridded Ensemble Precipitation and Temperature Estimates over the Contiguous United States Version 2.0" name="" />
     <catalogRef xlink:href="catalog_d010079.xml" xlink:title="d010079 Ensemble Historical Gridded Daily Temperature and Bias Adjusted Precipitation for Alaska and the Yukon" name="" />
     <catalogRef xlink:href="catalog_d010080.xml" xlink:title="d010080 20CRv3-WRF - High-resolution WRF climate simulation for southern Alaska using the 20CRv3" name="" />
     <catalogRef xlink:href="catalog_d010081.xml" xlink:title="d010081 WACCMX-SD V2" name="" />
     <catalogRef xlink:href="catalog_d010083.xml" xlink:title="d010083 High-Resolution Climate Simulations Over Alaska - A Community Dataset, Version 2" name="" />
+    <catalogRef xlink:href="catalog_d010090.xml" xlink:title="d010090 AGS-FIRP Track 1: Learning by Doing: Observing the Lake Michigan Lake-Breeze Circulation" name="" />
     <catalogRef xlink:href="catalog_d010100.xml" xlink:title="d010100 Conventional Observation Reanalysis Evaluation (CORe)" name="" />
     <catalogRef xlink:href="catalog_d010103.xml" xlink:title="d010103 Result of Assimilating Ground-Based MLT Winds into WACCM" name="" />
+    <catalogRef xlink:href="catalog_d010104.xml" xlink:title="d010104 AGS-FIRP Track 1: Lake-induced Inversion Trapping of Emissions on the Superior Coast (LITESC)" name="" />
     <catalogRef xlink:href="catalog_d010111.xml" xlink:title="d010111 21st Century Hydrologic Projections for Alaska and Hawaii" name="" />
     <catalogRef xlink:href="catalog_d010113.xml" xlink:title="d010113 Runoff Risk V3.0 Hydrometeorological Dataset" name="" />
+    <catalogRef xlink:href="catalog_d010116.xml" xlink:title="d010116 AGS-FIRP Track 1: Enhancing Undergraduate Education of the Planetary Boundary Layer during the 2024 Solar Eclipse" name="" />
     <catalogRef xlink:href="catalog_d014619.xml" xlink:title="d014619 Improving representation of stratospheric Polar Vortex in Southern Hemisphere with low-frequency frontal waves" name="" />
     <catalogRef xlink:href="catalog_d054121.xml" xlink:title="d054121 Mechanisms for long-duration extreme winds in a WRF simulation of the 10 August 2020 derecho" name="" />
     <catalogRef xlink:href="catalog_d066609.xml" xlink:title="d066609 Canadian Surface Reanalysis (CaSR)" name="" />
@@ -47,6 +52,7 @@
     <catalogRef xlink:href="catalog_d084003.xml" xlink:title="d084003 NCEP GFS 0.25 Degree Global Forecast Auxiliary Grids Historical Archive" name="" />
     <catalogRef xlink:href="catalog_d084004.xml" xlink:title="d084004 NCEP GDAS/FNL Surface Flux Grids" name="" />
     <catalogRef xlink:href="catalog_d084006.xml" xlink:title="d084006 NCEP Global Forecast System (GFS) Analyses and Forecasts" name="" />
+    <catalogRef xlink:href="catalog_d090000.xml" xlink:title="d090000 NCEP/NCAR Global Reanalysis Products, 1948-continuing" name="" />
     <catalogRef xlink:href="catalog_d090004.xml" xlink:title="d090004 NOAA - Conventional Observation Reanalysis (CORe)" name="" />
     <catalogRef xlink:href="catalog_d091000.xml" xlink:title="d091000 NCEP/DOE Reanalysis 2 (R2)" name="" />
     <catalogRef xlink:href="catalog_d092493.xml" xlink:title="d092493 Large Ensemble of Global Hydroclimatic Stress and Extreme Indices" name="" />
@@ -122,6 +128,8 @@
     <catalogRef xlink:href="catalog_d340000.xml" xlink:title="d340000 The WRF Model coupled with Chemistry (WRF-Chem) Forecast Output over CONUS" />
     <catalogRef xlink:href="catalog_d342000.xml" xlink:title="d342000 NCAR/MOPITT Reanalysis" />
     <catalogRef xlink:href="catalog_d345000.xml" xlink:title="d345000 CAM6 Data Assimilation Research Testbed (DART) Reanalysis" />
+    <catalogRef xlink:href="catalog_d361534.xml" xlink:title="d361534 M2HATS: ISS Radar 449 MHz Wind Profiler Data" name="" />
+    <catalogRef xlink:href="catalog_d361535.xml" xlink:title="d361535 M2HATS: ISS Radar 915 MHz Wind Profiler Data" name="" />
     <catalogRef xlink:href="catalog_d382413.xml" xlink:title="d382413 Parameter-elevation Regressions on Independent Slopes Model (PRISM) Grids" name="" />
     <catalogRef xlink:href="catalog_d387000.xml" xlink:title="d387000 AmeriFlux Gap-Filled Data from Selected Sites" name="" />
     <catalogRef xlink:href="catalog_d425225.xml" xlink:title="d425225 Fire simulations of the early phase of the Cameron Peak Fire with UFS-CFBM, WRF-Fire, and offline CFBM" name="" />
@@ -140,6 +148,7 @@
     <catalogRef xlink:href="catalog_d510006.xml" xlink:title="d510006 Daily Minimum and Maximum Temperature and Precipitation for Long Term Stations from the U.S. COOP Data" name="" />
     <catalogRef xlink:href="catalog_d523000.xml" xlink:title="d523000 Australia Summary of Day and Surface Observations" name="" />
     <catalogRef xlink:href="catalog_d526000.xml" xlink:title="d526000 Daily Gridded North American Snowfall" />
+    <catalogRef xlink:href="catalog_d539393.xml" xlink:title="d539393 Urban Heat MiniCubes" name="" />
     <catalogRef xlink:href="catalog_d541001.xml" xlink:title="d541001 Atlas of Surface Marine Data, climatology and monthly, by Da Silva and Young" name="" />
     <catalogRef xlink:href="catalog_d548000.xml" xlink:title="d548000 International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3, Individual Observations" name="" />
     <catalogRef xlink:href="catalog_d548003.xml" xlink:title="d548003 International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3.0.2-Daily" name="" />
@@ -149,6 +158,7 @@
     <catalogRef xlink:href="catalog_d569728.xml" xlink:title="d569728 Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)" name="" />
     <catalogRef xlink:href="catalog_d580005.xml" xlink:title="d580005 COLA SP CCSM4 Model Output" name="" />
     <catalogRef xlink:href="catalog_d580007.xml" xlink:title="d580007 DCMIP 2016 Datasets" name="" />
+    <catalogRef xlink:href="catalog_d581585.xml" xlink:title="d581585 CFBM simulations and verification dataset for sheltered and unsheltered wildland fires" name="" />
     <catalogRef xlink:href="catalog_d583100.xml" xlink:title="d583100 POGA and SPCZ experiments using CAM5" name="" />
     <catalogRef xlink:href="catalog_d583101.xml" xlink:title="d583101 MPD OSSE data" name="" />
     <catalogRef xlink:href="catalog_d583105.xml" xlink:title="d583105 Machine learning-based detection of weather fronts and associated extreme precipitation in CESM1.3" name="" />
@@ -252,9 +262,11 @@
     <catalogRef xlink:href="catalog_d651012.xml" xlink:title="d651012 Atmospheric River Tracking Method Intercomparison Project Tier 1 Source Data and Catalogues" name="" />
     <catalogRef xlink:href="catalog_d651013.xml" xlink:title="d651013 TAMIP" name="" />
     <catalogRef xlink:href="catalog_d651014.xml" xlink:title="d651014 CLIVAR LE project" name="" />
+    <catalogRef xlink:href="catalog_d651015.xml" xlink:title="d651015 Gettelman ECS data" name="" />
     <catalogRef xlink:href="catalog_d651016.xml" xlink:title="d651016 Atmospheric River Tracking Method Intercomparison Project Tier 2 CMIP5/6 Source Data and Catalogues" name="" />
     <catalogRef xlink:href="catalog_d651017.xml" xlink:title="d651017 Atmospheric River Tracking Method Intercomparison Project Tier 2 High Resolution Source Data and Catalogues" name="" />
     <catalogRef xlink:href="catalog_d651018.xml" xlink:title="d651018 Atmospheric River Tracking Method Intercomparison Project Tier 2 Reanalysis Source Data and Catalogues" name="" />
+    <catalogRef xlink:href="catalog_d651019.xml" xlink:title="d651019 Atmospheric River Tracking Method Intercomparison Project Tier 2 Paleo Source Data and Catalogues" name="" />
     <catalogRef xlink:href="catalog_d651020.xml" xlink:title="d651020 CESM1 CAM5 All But" name="" />
     <catalogRef xlink:href="catalog_d651021.xml" xlink:title="d651021 CESM1 Indian Ocean Pacemaker Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651022.xml" xlink:title="d651022 iTraCE" name="" />
@@ -270,10 +282,14 @@
     <catalogRef xlink:href="catalog_d651032.xml" xlink:title="d651032 Atlantic Pacemaker Simulations" name="" />
     <catalogRef xlink:href="catalog_d651033.xml" xlink:title="d651033 CESM Pacific Pacemaker Data" name="" />
     <catalogRef xlink:href="catalog_d651034.xml" xlink:title="d651034 SD WACCM-X v2.1" name="" />
+    <catalogRef xlink:href="catalog_d651035.xml" xlink:title="d651035 CESM1 AMV idealized experiments" name="" />
     <catalogRef xlink:href="catalog_d651036.xml" xlink:title="d651036 CISM ISMIP6 Antarctic Projection data" name="" />
+    <catalogRef xlink:href="catalog_d651037.xml" xlink:title="d651037 CESM PlioMIP2 Project" name="" />
+    <catalogRef xlink:href="catalog_d651038.xml" xlink:title="d651038 A Suite of Perturbed Parameter Ensembles using CESM2.2 CAM6 under a Wide Range of Temperatures" name="" />
     <catalogRef xlink:href="catalog_d651039.xml" xlink:title="d651039 Multi-Model Large Ensemble Archive version 2" name="" />
     <catalogRef xlink:href="catalog_d651040.xml" xlink:title="d651040 CESM2 WACCM S2S Hindcasts" name="" />
     <catalogRef xlink:href="catalog_d651041.xml" xlink:title="d651041 CESM2.2 CAM-chem as Boundary Conditions " name="" />
+    <catalogRef xlink:href="catalog_d651042.xml" xlink:title="d651042 PlioMIP1 simulations with CESM1 (CAM4) and CESM1 (CAM5)" name="" />
     <catalogRef xlink:href="catalog_d651043.xml" xlink:title="d651043 iPOGS: CESM HR simulations under the RCP 2.6 and RCP 4.5 (2006-2100) scenario" name="" />
     <catalogRef xlink:href="catalog_d651044.xml" xlink:title="d651044 Effects of model resolution, physics, and coupling on Southern Hemisphere storm tracks in CESM1.3" name="" />
     <catalogRef xlink:href="catalog_d651045.xml" xlink:title="d651045 CESM2 WACCM6 SSP245" name="" />
@@ -283,24 +299,32 @@
     <catalogRef xlink:href="catalog_d651049.xml" xlink:title="d651049 Southern Ocean Eddies simulations" name="" />
     <catalogRef xlink:href="catalog_d651050.xml" xlink:title="d651050 Simulation of the Transient Climate of the Last 21,000 Years (TraCE-21ka)" name="" />
     <catalogRef xlink:href="catalog_d651051.xml" xlink:title="d651051 CESM WACCM Runs Under Different Solar Conditions" name="" />
+    <catalogRef xlink:href="catalog_d651052.xml" xlink:title="d651052 CESM1 Paleo Idealized Forcing" name="" />
     <catalogRef xlink:href="catalog_d651053.xml" xlink:title="d651053 CESM1 Fixed Ozone Ensemble" name="" />
+    <catalogRef xlink:href="catalog_d651054.xml" xlink:title="d651054 CCSM4 T31 Preindustrial Control" name="" />
     <catalogRef xlink:href="catalog_d651055.xml" xlink:title="d651055 CESM2 Single Forcing Large Ensemble Project" name="" />
     <catalogRef xlink:href="catalog_d651056.xml" xlink:title="d651056 CESM2 Large Ensemble" name="" />
+    <catalogRef xlink:href="catalog_d651058.xml" xlink:title="d651058 CESM1 Last Millennium Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651059.xml" xlink:title="d651059 ARISE-SAI-1.5" name="" />
     <catalogRef xlink:href="catalog_d651060.xml" xlink:title="d651060 S2S Hindcasts" name="" />
     <catalogRef xlink:href="catalog_d651061.xml" xlink:title="d651061 S2S Hindcast MJO Cases" name="" />
     <catalogRef xlink:href="catalog_d651062.xml" xlink:title="d651062 S2S Hindcast TC Tracks" name="" />
     <catalogRef xlink:href="catalog_d651063.xml" xlink:title="d651063 S2S Hindcasts Climatology Studies" name="" />
+    <catalogRef xlink:href="catalog_d651064.xml" xlink:title="d651064 CESM1 Stratospheric Aerosol Geoengineering Large Ensemble project (GLENS)" name="" />
     <catalogRef xlink:href="catalog_d651065.xml" xlink:title="d651065 CESM2 SMYLE" name="" />
+    <catalogRef xlink:href="catalog_d651066.xml" xlink:title="d651066 CESM2-CISM2 Transient Last Interglacial Simulations" name="" />
     <catalogRef xlink:href="catalog_d651067.xml" xlink:title="d651067 CESM2 SSP5-8.5 Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651068.xml" xlink:title="d651068 CESM2 Pacific Pacemaker Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651069.xml" xlink:title="d651069 Cloud-Modified CESM1 Historical and RCP8.5 5-Member Ensemble" name="" />
+    <catalogRef xlink:href="catalog_d651070.xml" xlink:title="d651070 CESM2 Tuned Sea Ice Albedo Experiments" name="" />
     <catalogRef xlink:href="catalog_d651071.xml" xlink:title="d651071 CESM2 and CESM1 data supporting Long et al. (2021): Simulations with the Marine Biogeochemistry Library" name="" />
     <catalogRef xlink:href="catalog_d651072.xml" xlink:title="d651072 Neverworld2" name="" />
     <catalogRef xlink:href="catalog_d651073.xml" xlink:title="d651073 CESM2 SSP2-4.5 Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651074.xml" xlink:title="d651074 CMIP7 output" name="" />
+    <catalogRef xlink:href="catalog_d651075.xml" xlink:title="d651075 CESM2 CMIP5 Ensemble" name="" />
     <catalogRef xlink:href="catalog_d651076.xml" xlink:title="d651076 CESM2.2 CAM6 PPE" name="" />
     <catalogRef xlink:href="catalog_d651077.xml" xlink:title="d651077 CESM Input Data" name="" />
+    <catalogRef xlink:href="catalog_d651078.xml" xlink:title="d651078 CESM2(WACCM6ma) PMIP4 Last Millennium Simulation" name="" />
     <catalogRef xlink:href="catalog_d651079.xml" xlink:title="d651079 CESM2 Mechanically Decoupled" name="" />
     <catalogRef xlink:href="catalog_d651080.xml" xlink:title="d651080 Data for Simpson et al (2026) - The impact of enhanced vertical resolution on seasonal prediction skill of the Quasi-Biennial Oscillation and its teleconnections in CESM2: a new community hindcast dataset" name="" />
     <catalogRef xlink:href="catalog_d651081.xml" xlink:title="d651081 CESM2 SMYLE Multi-decadal Prediction Project" name="" />
@@ -310,6 +334,11 @@
     <catalogRef xlink:href="catalog_d651085.xml" xlink:title="d651085 CESM2 2 degree SSP2-4.5 and SSP5-8.5 Experiments" name="" />
     <catalogRef xlink:href="catalog_d651086.xml" xlink:title="d651086 CESM1.3 High Resolution for Atmospheric Rivers" name="" />
     <catalogRef xlink:href="catalog_d651087.xml" xlink:title="d651087 CESM2 with advanced biogeochemistry and tuned polar sea ice" name="" />
+    <catalogRef xlink:href="catalog_d651088.xml" xlink:title="d651088 paleoWeather: CESM-HR simulations with water isotopes for the Preindustrial" name="" />
+    <catalogRef xlink:href="catalog_d651089.xml" xlink:title="d651089 paleoWeather: CESM-HR simulations with water isotopes for the Early Eocene Climatic Optimum" name="" />
+    <catalogRef xlink:href="catalog_d651090.xml" xlink:title="d651090 paleoWeather: CESM-HR simulations with water isotopes for the mid-Piazencian Warm Period" name="" />
+    <catalogRef xlink:href="catalog_d651091.xml" xlink:title="d651091 paleoWeather: CESM-HR simulations with water isotopes for the Last Glacial Maximum" name="" />
+    <catalogRef xlink:href="catalog_d651092.xml" xlink:title="d651092 iCESM1.3-HR Resolution Hierarchy for Preindustrial, Eocene, and 4xCO2 Climates" name="" />
     <catalogRef xlink:href="catalog_d652000.xml" xlink:title="d652000 PERSIANN-CCS Hourly Accumulated Precipitation" name="" />
     <catalogRef xlink:href="catalog_d653000.xml" xlink:title="d653000 Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018–2026)" name="" />
     <catalogRef xlink:href="catalog_d654000.xml" xlink:title="d654000 WACCM-X 1 Degree Output 2000-Present" name="" />

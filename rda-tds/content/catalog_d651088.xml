@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="paleoWeather: CESM-HR simulations with water isotopes for the Preindustrial" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="paleoWeather: CESM-HR simulations with water isotopes for the Preindustrial">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651088/" xlink:title="NCAR GDEX - paleoWeather: CESM-HR simulations with water isotopes for the Preindustrial(d651088)" />
+      <documentation type="summary">Supported by an Accelerated Scientific Discovery (ASD) Derecho computing grant (ACGD0008 to Otto-Bliesner; PaleoWeather), high-resolution Community Earth System Model (CESM-HR) simulation of the Preindustrial (PI, 1850 CE) has been completed. The high-resolution simulation also includes water isotope capability, enabling direct comparisons with isotope records of past and present climate change from a range of archives. The simulation followed the protocols of the Coupled Model Intercomparison Project phase 5 (CMIP5) and was run with atmospheric CO2 concentrations of 284.7 ppmv. The simulation was branched from year 646 of the long preindustrial simulation from the iHESP project and integrated for 60 years with water isotopes added. Only the final 38 years of the simulation (years 23-60) were run on Derecho and are shared here. Further details of the experimental design and simulation results can be found in Zhu et al. (2026; DOI: 10.21203/rs.3.rs-9097760/v1).
+
+The PI dataset is one of four high-resolution simulation datasets produced through the ASD PaleoWeather project. The other datasets represent the Last Glacial Maximum (29 TB), mid-Piacenzian Warm Period (28TB) and two Early Eocene Climatic Optimum (56 TB). Establishing separate GDEX dataset records for each period will allow the respective leads who set up and ran the simulation to serve as leads for the corresponding DOI. Each GDEX landing page will include links to the other PaleoWeather simulations, enabling discovery and comparison across climate periods.
+
+To our knowledge, the ASD PaleoWeather collection represents the first high-resolution paleoclimate simulation suite of this kind made available to the community. Its horizontal grid spacing is approximately ten times finer than traditional climate-model configurations, which typically use resolutions of 1-2 degrees. The CESM-HR resolution more realistically represents synoptic- and mesoscale atmospheric and oceanic phenomena, together with their interactions with large-scale circulation.
+
+The PI dataset will serve as a baseline climate state and support research on weather-climate interactions in a warm-climate state, including studies of extreme events such as heat waves, atmospheric rivers, and tropical cyclones. More broadly, the PaleoWeather simulations complement the MESACLIP historical and future simulations, providing opportunities to investigate links between climate and weather extremes across Earth's past, present, and future climate states.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651088 Files" path="files/d651088" location="/data/rda/data/d651088/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

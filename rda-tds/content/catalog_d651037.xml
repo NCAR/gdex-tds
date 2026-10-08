@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM PlioMIP2 Project" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM PlioMIP2 Project">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651037/" xlink:title="NCAR GDEX - CESM PlioMIP2 Project(d651037)" />
+      <documentation type="summary">The CESM PlioMIP2 project, completed by Bette Otto-Bliesner, Ran Feng, and Esther Brady, is a set of published simulations contributing to Pliocene Model Intercomparison Project Phase 2 (PlioMIP2) and Climate Model Intercomparison Project 6 (CMIP6). These simulations are carried out with three consecutive, standard versions of NCAR family models: CCSM4, CESM1.2 and CESM2, and feature the same boundary conditions derived from reconstructions by Pliocene Research, Interpretation and Synoptic Mapping project phase 4 (PRISM4), following the PlioMIP2 protocol. In addition, preindustrial runs with the same models, branched from the published preindustrial simulations, are also included for comparison purpose. 
+All simulations are performed with the atmosphere-ocean-land-sea ice coupled model configuration at the nominal 1-degree latitude/longitude for all components. Terrestrial biogeochemical carbon-nitrogen (CN) cycling is active in all simulations. Precursor land only spin-up simulations were carried out to derive initial conditions for the terrestrial biogeochemical components. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651037 Files" path="files/d651037" location="/data/rda/data/d651037/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

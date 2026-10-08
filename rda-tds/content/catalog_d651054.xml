@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CCSM4 T31 Preindustrial Control" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CCSM4 T31 Preindustrial Control">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>MODEL_SIMULATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651054/" xlink:title="NCAR GDEX - CCSM4 T31 Preindustrial Control(d651054)" />
+      <documentation type="summary">The low-resolution version of the Community Climate System Model, version 4 (CCSM4) is a computationally efficient alternative to the intermediate and standard resolution versions of this fully coupled climate system model. It employs an atmospheric horizontal grid of 3.75 x 3.75 degrees and 26 levels in the vertical with a spectral dynamical core (T31) and an oceanic horizontal grid that consists of a nominal 3 degree resolution with 60 levels in the vertical. This low-resolution version (T31 x 3) can be used for a variety of applications including long equilibrium simulations, development work, and sensitivity studies. 1
+The simulation available here is the CCSM4 T31 preindustrial control simulation, and is documented in the reference publication cited below.
+1This paragraph is taken with the lead author's permission from Shields et al. (2012).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651054 Files" path="files/d651054" location="/data/rda/data/d651054/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Urban Heat MiniCubes" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Urban Heat MiniCubes">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d539393/" xlink:title="NCAR GDEX - Urban Heat MiniCubes(d539393)" />
+      <documentation type="summary">With over 80% of the United States' population living in urban areas, it is critical to advance our understanding and real-time / near-real-time observational capabilities of the environments where most humans live. Recent advances in artificial intelligence present new opportunities to leverage the extensive and disparate amounts of data available to model urban heat. Our dataset leverages remotely sensed images, which provide the benefit of extensive spatial coverage. There are two modalities in the dataset, of varying resolution. The first modality contains observations at an 8-day temporal resolution and at a 30 m spatial resolution, as modulated by the Landsat 8 and 9 satellites. Landsat data included in these files consist of land surface temperature, visible and near-infrared surface reflectances for land surface characterization, and the pixel quality mask for cloud detection. Also included in these files are Sentinel-1 SAR backscatter values to quantify surface roughness. Sentinel-1 observations are resampled to Landsat resolution for inclusion in the dataset. The second modality contains observations at a 10-minute temporal resolution and at a 2 km spatial resolution, as modulated by the GOES-16, 17, and 18 satellites. GOES longwave infrared brightness temperatures are provided to measure the thermal environment of the surface over time. Also included in these files is a microwave land surface temperature product to provide temperature observations amidst cloudy weather.</documentation>
+      <creator>
+        <name vocabulary="DIF">UMD/ATMOS</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">NASA/GSFC/SED/ESD/HBSL/HSB</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">NASA/MSFC/GHRC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d539393 Files" path="files/d539393" location="/data/rda/data/d539393/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

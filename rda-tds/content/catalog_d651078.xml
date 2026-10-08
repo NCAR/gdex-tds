@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2(WACCM6ma) PMIP4 Last Millennium Simulation" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2(WACCM6ma) PMIP4 Last Millennium Simulation">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651078/" xlink:title="NCAR GDEX - CESM2(WACCM6ma) PMIP4 Last Millennium Simulation(d651078)" />
+      <documentation type="summary">The CESM Paleoclimate Working Group (PWG) and Whole Atmosphere Working Group (WAWG) conducted a Last Millennium (LM) community experiment with the high-top WACCM6ma version of CESM2.1. A corresponding 850CE Control simulation was also run. The LM simulation extends from years 850 through 1849CE forced by reconstructions for the transient evolution of solar intensity, volcanic emissions, greenhouse gases, aerosols, land use conditions, and orbital parameters. The control simulation has forcings fixed at 850CE conditions. 
+The LM and Control simulations both used WACCM6-FV2 (1.9 by 2.5 degree) with middle atmosphere chemistry, interactive land (CLM5, 1.9 by 2.5 degree), coupled ocean (POP2) with biogeochemistry (MARBL), interactive sea ice (CICE5.1), and non-evolving land ice (CISM2.1).</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651078 Files" path="files/d651078" location="/data/rda/data/d651078/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
