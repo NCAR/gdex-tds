@@ -1,4 +1,5 @@
-FROM unidata/thredds-docker:5.7
+#FROM unidata/thredds-docker:5.7
+FROM potatofever/thredds-docker-mirror:5.7
 RUN mkdir -p /etc/letsencrypt/live/rda-tds.ucar.edu/
 COPY ./conf/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY ./conf/logging.properties /usr/local/tomcat/conf/logging.properties
