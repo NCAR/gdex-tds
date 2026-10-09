@@ -1,0 +1,26 @@
+{{- if .Values.webapp.blockDataset.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.webapp.name }}-data-block
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+spec:
+  ingressClassName: nginx-external
+  rules:
+  {{- range $fqdn := list .Values.webapp.tls.fqdn .Values.webapp.tls.fqdn2 .Values.webapp.tls.fqdn3 }}
+  - host: {{ $fqdn }}
+    http:
+      paths:
+      {{- range list "ncss/grid" "dodsC" "wcs" "wms" "fileServer" }}
+      - path: /thredds/{{ . }}/files/g/{{ $.Values.webapp.blockDataset.dsid }}
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ $.Values.webapp.name }}-deny-backend
+            port:
+              number: 80
+      {{- end }}
+  {{- end }}
+{{- end }}

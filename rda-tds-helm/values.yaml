@@ -57,6 +57,9 @@ webapp:
     server: gladedm1.ucar.edu
     path: /glade/campaign/collections/gdex/
     readOnly: true
+  blockDataset:
+    enabled: true
+    dsid: d633000
   tdsPersist:
     fs:
       name: tds-persist
