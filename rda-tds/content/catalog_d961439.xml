@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ISFS High-rate Surface Meteorology &amp;amp; Fluxes: 3D anemometers (geographic coordinates)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ISFS High-rate Surface Meteorology &amp;amp; Fluxes: 3D anemometers (geographic coordinates)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d961439/" xlink:title="NCAR GDEX - ISFS High-rate Surface Meteorology &amp;amp; Fluxes: 3D anemometers (geographic coordinates)(d961439)" />
+      <documentation type="summary"> Preliminary high-rate (&gt; 0.5 Hz) surface meteorology and flux data collected by the NCAR/EOL Integrated Surface Flux System (ISFS) during the INFUSSE campaign. The winds reported by the 3D sonic anemometers have been rotated to geographic coordinates. Please check the ISARRA project website for more information. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/RTF/ISFF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d961439 Files" path="files/d961439" location="/data/rda/data/d961439/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
