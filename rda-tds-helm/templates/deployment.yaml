@@ -99,12 +99,12 @@ spec:
         - mountPath: /usr/local/tomcat/content/thredds/logs # TDS logs dir
           name: {{ .Values.webapp.tdsPersist.fs.name }}
           subPath: tds-temp-logs
-        - mountPath: /usr/local/tomcat/temp # TDS NCSS temp files
+        - mountPath: /usr/local/tomcat/temp # TDS temp files (heapdump location)
           name: {{ .Values.webapp.tdsPersist.fs.name }}
-          subPath: tds-overflow/tomcat-temp # Tomcat temp files
-        - mountPath: /usr/local/tomcat/work # TDS NCSS temp files
+          subPath: tds-overflow/tomcat-temp
+        - mountPath: /usr/local/tomcat/work # TDS work files
           name: {{ .Values.webapp.tdsPersist.fs.name }}
-          subPath: tds-overflow/tomcat-work # Tomcat temp files
+          subPath: tds-overflow/tomcat-work
         # - mountPath: /usr/local/tomcat/content/thredds
         #   name: {{ .Values.webapp.tdsPersist.fs.name }}
         #   subPath: thredds-content # Full thredds dir on PVC - refreshed on every restart by initContainer
@@ -113,7 +113,7 @@ spec:
         #   subPath: tds-overflow/work # Tomcat JSP compile cache
         - mountPath: /tmp
           name: {{ .Values.webapp.tdsPersist.fs.name }}
-          subPath: tds-overflow/tmp # JVM temp files and heap dumps
+          subPath: tds-overflow/tmp # JVM temp files
 
       # Logs container
       - name: {{ .Values.webapp.logs.name }}
