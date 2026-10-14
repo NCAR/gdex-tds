@@ -1,10 +1,12 @@
 """
-This is the script will 
+This is the script will
 1. summarized the daily TDS usage statistics from the Tomcat access logs.
 2. check the existing CSV file and only process the missing dates.
 3. append the new statistics to the existing CSV file.
 4. The script will read the Tomcat access logs from the /usr/local/tomcat/logs.
 5. The script will be run as a cron job to update the statistics daily.
+6. In addition to the overall stats, it also generates the same stats scoped to
+   each dataset id listed in DATASET_IDS, one output file per dataset id.
 
 Cronjob:
 - Use the configmap ``rda-tds-helm/log_stats_cronjob.yaml`` to store the python script as data and run it as a cronjob.
@@ -15,6 +17,9 @@ It will generate a CSV file with the following columns:
 
 date,total_requests,failed_requests,bytes_sent,bytes_success,subset_requests,opendap_requests,fileserver_requests,other_requests
 
+The same columns are written per dataset id to access_log_stats_<dsid>.txt, scoped
+to only the requests whose path contains that dataset id as a path segment
+(e.g. .../d633000/...).
 
 """
 
@@ -28,6 +33,9 @@ LOG_DIR = "/usr/local/tomcat/logs"
 OUTPUT_FILE = os.path.join(LOG_DIR, "access_log_stats.txt")
 HEADER = "date,total_requests,failed_requests,bytes_sent,bytes_success,subset_requests,opendap_requests,fileserver_requests,other_requests\n"
 
+# dataset ids to additionally generate per-dataset stats for
+DATASET_IDS = ["d633000", "d559000"]
+
 # regex pattern to extract date, path, status code, and bytes sent from log lines
 log_pattern = re.compile(
     r'\[(\d{2}/\w{3}/\d{4}):\d{2}:\d{2}:\d{2}[^\]]*\] "\w+ ([^ ]+) [^"]*" (\d{3}) (\d+|-)'
@@ -37,14 +45,17 @@ date_from_filename = re.compile(
 )
 
 
-def process_log_file(log_file):
+def process_log_file(log_file, dsid=None):
     """Process a single log file and return statistics as a dictionary.
-    
+
     Parameters
     ----------
     log_file : str
         Path to the log file to process.
-    
+    dsid : str, optional
+        If given, only count requests whose path contains this dataset id
+        as a path segment (e.g. .../d633000/...). If None, count all requests.
+
     Returns
     -------
     dict
@@ -56,12 +67,15 @@ def process_log_file(log_file):
         total=0, failed=0, bytes_sent=0, bytes_success=0,
         subset=0, opendap=0, fileserver=0, other=0
     )
+    dsid_segment = f"/{dsid}/" if dsid else None
     with open(log_file, "r", errors="replace", encoding="utf-8") as f:
         for line in f:
             m = log_pattern.search(line)
             if not m:
                 continue
             _, path, status, bytes_raw = m.group(1), m.group(2), m.group(3), m.group(4)
+            if dsid_segment and dsid_segment not in path:
+                continue
             bval = int(bytes_raw) if bytes_raw != "-" else 0
             stats['total'] += 1
             stats['bytes_sent'] += bval
@@ -80,23 +94,48 @@ def process_log_file(log_file):
     return stats
 
 
-def get_existing_dates():
+def get_existing_dates(output_file):
     """Read the existing date in the stats file
+
+    Parameters
+    ----------
+    output_file : str
+        Path to the stats file to read.
 
     Returns
     -------
     set
         A set of date strings (YYYY-MM-DD) that are already present in the output file.
     """
-    if not os.path.exists(OUTPUT_FILE):
+    if not os.path.exists(output_file):
         return set()
     dates = set()
-    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+    with open(output_file, "r", encoding="utf-8") as f:
         for line in f:
             parts = line.strip().split(',')
             if parts and re.match(r'\d{4}-\d{2}-\d{2}', parts[0]):
                 dates.add(parts[0])
     return dates
+
+
+def write_stats(output_file, rows):
+    """Write stat rows to a stats file, creating the header if the file is new.
+
+    Parameters
+    ----------
+    output_file : str
+        Path to the stats file to write to.
+    rows : list of (str, dict)
+        List of (date, stats) tuples to append.
+    """
+    first_run = not os.path.exists(output_file)
+    mode = "w" if first_run else "a"
+    with open(output_file, mode, encoding="utf-8") as f:
+        if first_run:
+            f.write(HEADER)
+        for date, s in rows:
+            f.write(f"{date},{s['total']},{s['failed']},{s['bytes_sent']},{s['bytes_success']},{s['subset']},{s['opendap']},{s['fileserver']},{s['other']}\n")
+    print(f"Wrote {len(rows)} row(s) to {output_file}")
 
 if __name__ == "__main__":
 
@@ -111,50 +150,49 @@ if __name__ == "__main__":
         if m:
             logs_by_date.setdefault(m.group(1), []).append(log_file)
 
-    # find exising date in the output
-    existing_dates = get_existing_dates()
+    # output file to generate -> dataset id to filter by (None means overall, no filter)
+    outputs = {OUTPUT_FILE: None}
+    for dsid in DATASET_IDS:
+        outputs[os.path.join(LOG_DIR, f"access_log_stats_{dsid}.txt")] = dsid
 
-    # find missing date in the output
-    missing_dates = sorted(set(logs_by_date.keys()) - existing_dates)
+    # find missing dates per output file (a dsid added later may need to backfill
+    # dates that already exist in the overall OUTPUT_FILE)
+    missing_dates_by_output = {
+        output_file: sorted(set(logs_by_date.keys()) - get_existing_dates(output_file))
+        for output_file in outputs
+    }
+    dates_to_process = sorted(set().union(*missing_dates_by_output.values()))
 
-    if not missing_dates:
+    if not dates_to_process:
         print("No missing dates to process.")
         sys.exit(0)
 
-    print(f"Processing {len(missing_dates)} missing date(s): {missing_dates}")
+    print(f"Processing {len(dates_to_process)} date(s): {dates_to_process}")
 
-    # create rows of stats for missing dates
-    rows = []
-    for date in missing_dates:
+    # create rows of stats for each output file, for its own missing dates
+    rows_by_output = {output_file: [] for output_file in outputs}
+    for date in dates_to_process:
         print(f"Processing logs for date {date}...")
+        for output_file, dsid in outputs.items():
+            if date not in missing_dates_by_output[output_file]:
+                continue
 
-        # initialize total stats for the date
-        # same structure as the stats dict in process_log_file, but scoped to the entire date
-        # (accumulating across all log files for that date)
-        total = dict(
-            total=0, failed=0, bytes_sent=0, bytes_success=0,
-            subset=0, opendap=0, fileserver=0, other=0
-        )
+            # initialize total stats for the date
+            # same structure as the stats dict in process_log_file, but scoped to the entire date
+            # (accumulating across all log files for that date)
+            total = dict(
+                total=0, failed=0, bytes_sent=0, bytes_success=0,
+                subset=0, opendap=0, fileserver=0, other=0
+            )
 
-        # process each log file for the date and accumulate stats 
-        # (theoretically there should only be one log file per date, but we handle multiple just in case)
-        for log_file in logs_by_date[date]:
-            s = process_log_file(log_file)
-            for k in total:
-                total[k] += s[k]
-        rows.append((date, total))
+            # process each log file for the date and accumulate stats
+            # (theoretically there should only be one log file per date, but we handle multiple just in case)
+            for log_file in logs_by_date[date]:
+                s = process_log_file(log_file, dsid=dsid)
+                for k in total:
+                    total[k] += s[k]
+            rows_by_output[output_file].append((date, total))
 
-    # test is the output file already exists
-    # if not we need to write the header
-    first_run = not os.path.exists(OUTPUT_FILE)
-    # if the file already exists, we append to it; otherwise we create a new file
-    mode = "w" if first_run else "a"
-
-    # write the stats to the output file
-    with open(OUTPUT_FILE, mode, encoding="utf-8") as f:
-        if first_run:
-            f.write(HEADER)
-        for date, s in rows:
-            f.write(f"{date},{s['total']},{s['failed']},{s['bytes_sent']},{s['bytes_success']},{s['subset']},{s['opendap']},{s['fileserver']},{s['other']}\n")
-
-    print(f"Wrote {len(rows)} row(s) to {OUTPUT_FILE}")
+    for output_file, rows in rows_by_output.items():
+        if rows:
+            write_stats(output_file, rows)

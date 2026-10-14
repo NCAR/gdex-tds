@@ -71,12 +71,16 @@ spec:
             value: {{ .Values.webapp.tds.env.THREDDS_XMX_SIZE }}
           - name: THREDDS_XMS_SIZE
             value: {{ .Values.webapp.tds.env.THREDDS_XMS_SIZE }}
-          - name: JAVA_OPTS # Redirect OOM heap dump off ephemeral storage; exit fast on OOM so pod restarts
-            value: "-XX:+ExitOnOutOfMemoryError" # turn off -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/usr/local/tomcat/temp/ 
           - name: K8S_POD_NAME # Inject the current pod's name into the container environment so that server.xml can use it for access log naming
             valueFrom:
               fieldRef:
                 fieldPath: metadata.name
+          - name: JAVA_OPTS # Heap dump to PVC (not ephemeral) with a fixed per-pod filename; exit fast on OOM so container restarts
+            value: "-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/usr/local/tomcat/temp/$(K8S_POD_NAME).hprof"
+        lifecycle:
+          postStart: # JVM refuses to overwrite an existing dump file, so remove this pod's previous dump on (re)start
+            exec:
+              command: ["/bin/sh", "-c", "rm -f /usr/local/tomcat/temp/${K8S_POD_NAME}.hprof"]
         volumeMounts:
         - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
           name: {{ .Values.webapp.campaignMount.name }}
