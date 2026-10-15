@@ -43,7 +43,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
 
 
      <datasetScan name="d131002 Files" 
-                  path="files/g/d131002" 
+                  path="files/d131002" 
                   location="/data/rda/data/d131002">
          <metadata inherited="true">
          <serviceName>all</serviceName>
@@ -66,7 +66,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
              <featureCollection name="d131002_pgrbanl_ensemble_mean"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d131002/1/mean">
+                                path="aggregations/d131002/1/mean">
                <metadata inherited="true">
                  <serviceName>all</serviceName>
                </metadata>
@@ -81,7 +81,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
              <featureCollection name="d131002_pgrbanl_ensemble_sprd"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d131002/1/spread">
+                                path="aggregations/d131002/1/spread">
                <metadata inherited="true">
                  <serviceName>all</serviceName>
                </metadata>
@@ -104,7 +104,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
              <featureCollection name="d131002_sflxgrbfg_ensemble_mean"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d131002/2/mean">
+                                path="aggregations/d131002/2/mean">
                <metadata inherited="true">
                  <serviceName>all</serviceName>
                </metadata>
@@ -124,7 +124,7 @@ The Twentieth Century Reanalysis Project version 2c used resources of the Nation
              <featureCollection name="d131002_sflxgrbfg_ensemble_sprd"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d131002/2/spread">
+                                path="aggregations/d131002/2/spread">
                <metadata inherited="true">
                  <serviceName>all</serviceName>
                </metadata>

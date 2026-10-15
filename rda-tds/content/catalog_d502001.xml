@@ -38,7 +38,7 @@ CMORPH produces global precipitation analyses at very high spatial and temporal 
       <!--  Files -->
 
      <datasetScan name="d502001 Files" 
-                  path="files/g/d502001" 
+                  path="files/d502001" 
                   location="/data/rda/data/d502001/netcdf/">
          <metadata inherited="true">
              <serviceName>all</serviceName>

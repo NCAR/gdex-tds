@@ -39,7 +39,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
 
      <!--  Files -->
      <datasetScan name="d628003 Files" 
-                  path="files/g/d628003" 
+                  path="files/d628003" 
                   location="/data/rda/data/d628003">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -61,7 +61,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/1">
+                                path="aggregations/d628003/1">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -75,7 +75,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/2">
+                                path="aggregations/d628003/2">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -90,7 +90,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/3">
+                                path="aggregations/d628003/3">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -104,7 +104,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/4">
+                                path="aggregations/d628003/4">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -119,7 +119,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/5">
+                                path="aggregations/d628003/5">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -133,7 +133,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/6">
+                                path="aggregations/d628003/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -148,7 +148,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/7">
+                                path="aggregations/d628003/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -162,7 +162,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
             <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/8">
+                                path="aggregations/d628003/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -177,7 +177,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/9">
+                                path="aggregations/d628003/9">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -191,7 +191,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/10">
+                                path="aggregations/d628003/10">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -206,7 +206,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/11">
+                                path="aggregations/d628003/11">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -220,7 +220,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/12">
+                                path="aggregations/d628003/12">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -235,7 +235,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Model Level Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/13">
+                                path="aggregations/d628003/13">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -249,7 +249,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Model Level Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/14">
+                                path="aggregations/d628003/14">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -264,7 +264,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/15">
+                                path="aggregations/d628003/15">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -278,7 +278,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
             <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/16">
+                                path="aggregations/d628003/16">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -293,7 +293,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 2.5 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/17">
+                                path="aggregations/d628003/17">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -307,7 +307,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 2.5 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/18">
+                                path="aggregations/d628003/18">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -322,7 +322,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/19">
+                                path="aggregations/d628003/19">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -336,7 +336,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/20">
+                                path="aggregations/d628003/20">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -350,7 +350,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/21">
+                                path="aggregations/d628003/21">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -364,7 +364,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/22">
+                                path="aggregations/d628003/22">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -379,7 +379,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/23">
+                                path="aggregations/d628003/23">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -393,7 +393,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/24">
+                                path="aggregations/d628003/24">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -408,7 +408,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/25">
+                                path="aggregations/d628003/25">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -422,7 +422,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/26">
+                                path="aggregations/d628003/26">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -441,7 +441,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/27">
+                                path="aggregations/d628003/27">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -455,7 +455,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/28">
+                                path="aggregations/d628003/28">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -470,7 +470,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/29">
+                                path="aggregations/d628003/29">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -484,7 +484,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/30">
+                                path="aggregations/d628003/30">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -499,7 +499,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/31">
+                                path="aggregations/d628003/31">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -513,7 +513,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/32">
+                                path="aggregations/d628003/32">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -528,7 +528,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/33">
+                                path="aggregations/d628003/33">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -542,7 +542,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/34">
+                                path="aggregations/d628003/34">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -557,7 +557,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Model Level Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/35">
+                                path="aggregations/d628003/35">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -571,7 +571,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Model Level Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/36">
+                                path="aggregations/d628003/36">
                                 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -586,7 +586,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/37">
+                                path="aggregations/d628003/37">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -599,7 +599,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/38">
+                                path="aggregations/d628003/38">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -613,7 +613,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/39">
+                                path="aggregations/d628003/39">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -627,7 +627,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/40">
+                                path="aggregations/d628003/40">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -649,7 +649,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/41">
+                                path="aggregations/d628003/41">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -665,7 +665,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/42">
+                                path="aggregations/d628003/42">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -682,7 +682,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/43">
+                                path="aggregations/d628003/43">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -699,7 +699,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/44">
+                                path="aggregations/d628003/44">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -717,7 +717,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Model Level Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/45">
+                                path="aggregations/d628003/45">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -736,7 +736,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Model Level Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/46">
+                                path="aggregations/d628003/46">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -753,7 +753,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Isobaric Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/47">
+                                path="aggregations/d628003/47">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -769,7 +769,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Isobaric Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/48">
+                                path="aggregations/d628003/48">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -786,7 +786,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/49">
+                                path="aggregations/d628003/49">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -804,7 +804,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/50">
+                                path="aggregations/d628003/50">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -822,7 +822,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/51">
+                                path="aggregations/d628003/51">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -838,7 +838,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/52">
+                                path="aggregations/d628003/52">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -854,7 +854,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/53">
+                                path="aggregations/d628003/53">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -869,7 +869,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/54">
+                                path="aggregations/d628003/54">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -884,7 +884,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/55">
+                                path="aggregations/d628003/55">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -898,7 +898,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/56">
+                                path="aggregations/d628003/56">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -913,7 +913,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/57">
+                                path="aggregations/d628003/57">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -927,7 +927,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/58">
+                                path="aggregations/d628003/58">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -942,7 +942,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean 1.25 Degree Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/59">
+                                path="aggregations/d628003/59">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -956,7 +956,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of 1.25 Degree Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/60">
+                                path="aggregations/d628003/60">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -972,7 +972,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Mean Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/61">
+                                path="aggregations/d628003/61">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -987,7 +987,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C Monthly Variance of Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628003/62">
+                                path="aggregations/d628003/62">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>

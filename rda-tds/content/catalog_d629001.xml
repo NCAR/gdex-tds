@@ -42,7 +42,7 @@ d629001 represents a transformed version of the raw ECMWF YOTC archive (d629000)
       <!--  Files -->
 
      <datasetScan name="d629001 Files" 
-                  path="files/g/d629001" 
+                  path="files/d629001" 
                   location="/data/rda/data/d629001">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -63,7 +63,7 @@ d629001 represents a transformed version of the raw ECMWF YOTC archive (d629000)
              <featureCollection name="YOTC atmospheric model analysis for surface, single parameter 6-hourly time series"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d629001/9">
+                                path="aggregations/d629001/9">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -83,7 +83,7 @@ d629001 represents a transformed version of the raw ECMWF YOTC archive (d629000)
              <featureCollection name="YOTC atmospheric model forecast for surface, single parameter 6-hourly time series"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d629001/15">
+                                path="aggregations/d629001/15">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>

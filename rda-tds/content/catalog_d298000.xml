@@ -35,7 +35,7 @@ The Standardized Precipitation Index (SPI) is commonly used to monitor drought a
      <!--  Files -->
 
      <datasetScan name="d298000 Files" 
-                  path="files/g/d298000" 
+                  path="files/d298000" 
                   location="/data/rda/data/d298000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

@@ -39,7 +39,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
 
      <!--  Files -->
      <datasetScan name="d628002 Files" 
-                  path="files/g/d628002" 
+                  path="files/d628002" 
                   location="/data/rda/data/d628002">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -61,7 +61,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/1">
+                                path="aggregations/d628002/1">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -75,7 +75,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Total Column Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/2">
+                                path="aggregations/d628002/2">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -90,7 +90,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/3">
+                                path="aggregations/d628002/3">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -105,7 +105,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Isentropic Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/4">
+                                path="aggregations/d628002/4">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -120,7 +120,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/5">
+                                path="aggregations/d628002/5">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -135,7 +135,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Land Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/6">
+                                path="aggregations/d628002/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -151,7 +151,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Model Level Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/7">
+                                path="aggregations/d628002/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -166,7 +166,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/8">
+                                path="aggregations/d628002/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -181,7 +181,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 2.5 Degree Isobaric Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/9">
+                                path="aggregations/d628002/9">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -196,7 +196,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/10">
+                                path="aggregations/d628002/10">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -211,7 +211,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Snow Depth Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/11">
+                                path="aggregations/d628002/11">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -225,7 +225,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/12">
+                                path="aggregations/d628002/12">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -240,7 +240,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Surface Analysis Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/13">
+                                path="aggregations/d628002/13">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -258,7 +258,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/14">
+                                path="aggregations/d628002/14">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -273,7 +273,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly 1.25 Degree Total Column Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/15">
+                                path="aggregations/d628002/15">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -287,7 +287,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/16">
+                                path="aggregations/d628002/16">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -302,7 +302,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly 1.25 Degree Land Surface Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/17">
+                                path="aggregations/d628002/17">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -316,7 +316,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Model Level Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/18">
+                                path="aggregations/d628002/18">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -331,7 +331,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/19">
+                                path="aggregations/d628002/19">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -346,7 +346,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 2.5 Degree Isobaric Forecast Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/20">
+                                path="aggregations/d628002/20">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -365,7 +365,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/21">
+                                path="aggregations/d628002/21">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -379,7 +379,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly 1.25 Degree 2-Dimensional Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/22">
+                                path="aggregations/d628002/22">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -393,7 +393,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly Model Resolution Model Level Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/23">
+                                path="aggregations/d628002/23">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -408,7 +408,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 6-Hourly 1.25 Degree Isobaric Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/24">
+                                path="aggregations/d628002/24">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -423,7 +423,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/25">
+                                path="aggregations/d628002/25">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -437,7 +437,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly 1.25 Degree Land Surface Average Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/26">
+                                path="aggregations/d628002/26">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -451,7 +451,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/27">
+                                path="aggregations/d628002/27">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -465,7 +465,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly 1.25 Degree 2-Dimensional Instantaneous Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/28">
+                                path="aggregations/d628002/28">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -479,7 +479,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/29">
+                                path="aggregations/d628002/29">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -493,7 +493,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly 1.25 Degree Sea Ice Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/30">
+                                path="aggregations/d628002/30">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -507,7 +507,7 @@ The Data Support Section at NCAR has downloaded all JRA-55C data. The entire arc
              <featureCollection name="JRA-55C 3-Hourly Model Resolution 2-Dimensional Minimum-Maximum Diagnostic Fields"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d628002/31">
+                                path="aggregations/d628002/31">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>

@@ -41,7 +41,7 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
 
 
      <datasetScan name="d193000 Files" 
-                  path="files/g/d193000" 
+                  path="files/d193000" 
                   location="/data/rda/data/d193000">
          <metadata inherited="true">
          <serviceName>all</serviceName>
@@ -56,8 +56,8 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
 
      <dataset name="d193000 Aggregations">
           <dataset name="2-meter temperature derived from MERRA reanalysis products (1979-2009)"
-                 urlPath="aggregations/g/d193000/1/best"
-                 ID="aggregations/g/d193000/1/best"
+                 urlPath="aggregations/d193000/1/best"
+                 ID="aggregations/d193000/1/best"
                  harvest="true">
              <metadata inherited="true">
                  <serviceName>all</serviceName>
@@ -74,8 +74,8 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
          </dataset>
 
           <dataset name="2-meter temperature derived from ERA-Interim reanalysis products (1979-2009)"
-                 urlPath="aggregations/g/d193000/2/best"
-                 ID="aggregations/g/d193000/2/best"
+                 urlPath="aggregations/d193000/2/best"
+                 ID="aggregations/d193000/2/best"
                  harvest="true">
              <metadata inherited="true">
                  <serviceName>all</serviceName>
@@ -92,8 +92,8 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
          </dataset>
 
           <dataset name="2-meter temperature derived from ERA-40 reanalysis products (1985-2001)"
-                 urlPath="aggregations/g/d193000/3/best"
-                 ID="aggregations/g/d193000/3/best"
+                 urlPath="aggregations/d193000/3/best"
+                 ID="aggregations/d193000/3/best"
                  harvest="true">
              <metadata inherited="true">
                  <serviceName>all</serviceName>
@@ -110,8 +110,8 @@ The final products have exactly the same monthly Tmax and Tmin as the CRU data, 
          </dataset>
 
           <dataset name="2-meter temperature derived from NCEP/NCAR reanalysis products (1948-2009)"
-                 urlPath="aggregations/g/d193000/4/best"
-                 ID="aggregations/g/d193000/4/best"
+                 urlPath="aggregations/d193000/4/best"
+                 ID="aggregations/d193000/4/best"
                  harvest="true">
              <metadata inherited="true">
                  <serviceName>all</serviceName>

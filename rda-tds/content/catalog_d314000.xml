@@ -36,7 +36,7 @@ A global, 50-year, dataset of meteorological forcings has been developed that ca
       <!--  Files -->
 
      <datasetScan name="d314000 Files" 
-                  path="files/g/d314000" 
+                  path="files/d314000" 
                   location="/data/rda/data/d314000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

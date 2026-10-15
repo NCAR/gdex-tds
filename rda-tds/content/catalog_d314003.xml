@@ -35,7 +35,7 @@ The CRUNCEP is an atmospheric forcing dataset used forcing the land surface mode
       <!--  Files -->
 
      <datasetScan name="d314003 Files" 
-                  path="files/g/d314003" 
+                  path="files/d314003" 
                   location="/data/rda/data/d314003">
          <metadata inherited="true">
              <serviceName>all</serviceName>

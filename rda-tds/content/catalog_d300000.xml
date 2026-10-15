@@ -39,7 +39,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
 
 
       <datasetScan name="d300000 Files"
-                  path="files/g/d300000"
+                  path="files/d300000"
                   location="/data/rda/data/d300000">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -102,7 +102,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <!-- <featureCollection name="d300000 TEST ncar_3km mem1 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem1">
+                      path="aggregations/d300000/test-mem1">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -118,7 +118,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem2 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem2">
+                      path="aggregations/d300000/test-mem2">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -134,7 +134,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem3 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem3">
+                      path="aggregations/d300000/test-mem3">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -150,7 +150,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem4 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem4">
+                      path="aggregations/d300000/test-mem4">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -166,7 +166,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem5 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem5">
+                      path="aggregations/d300000/test-mem5">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -182,7 +182,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem6 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem6">
+                      path="aggregations/d300000/test-mem6">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -198,7 +198,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem7 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem7">
+                      path="aggregations/d300000/test-mem7">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -214,7 +214,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem8 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem8">
+                      path="aggregations/d300000/test-mem8">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -230,7 +230,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem9 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem9">
+                      path="aggregations/d300000/test-mem9">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -246,7 +246,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 TEST ncar_3km mem10 (GRIB1, gz era, 2015-04-07)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/test-mem10">
+                      path="aggregations/d300000/test-mem10">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -262,7 +262,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <!-- <featureCollection name="d300000 ncar_3km mem1 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/1">
+                      path="aggregations/d300000/1">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -279,7 +279,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem2 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/2">
+                      path="aggregations/d300000/2">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -296,7 +296,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem3 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/3">
+                      path="aggregations/d300000/3">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -313,7 +313,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem4 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/4">
+                      path="aggregations/d300000/4">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -330,7 +330,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem5 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/5">
+                      path="aggregations/d300000/5">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -347,7 +347,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem6 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/6">
+                      path="aggregations/d300000/6">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -364,7 +364,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem7 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/7">
+                      path="aggregations/d300000/7">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -381,7 +381,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem8 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/8">
+                      path="aggregations/d300000/8">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -398,7 +398,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem9 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/9">
+                      path="aggregations/d300000/9">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -415,7 +415,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem10 (GRIB1, gz era)"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d300000/10">
+                      path="aggregations/d300000/10">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -432,7 +432,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem1 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/11">
+                      path="aggregations/d300000/11">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -449,7 +449,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem2 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/12">
+                      path="aggregations/d300000/12">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -466,7 +466,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem3 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/13">
+                      path="aggregations/d300000/13">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -483,7 +483,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem4 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/14">
+                      path="aggregations/d300000/14">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -500,7 +500,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem5 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/15">
+                      path="aggregations/d300000/15">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -517,7 +517,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem6 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/16">
+                      path="aggregations/d300000/16">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -534,7 +534,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem7 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/17">
+                      path="aggregations/d300000/17">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -551,7 +551,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem8 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/18">
+                      path="aggregations/d300000/18">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -568,7 +568,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem9 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/19">
+                      path="aggregations/d300000/19">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -585,7 +585,7 @@ Since April 2015, NCAR's Mesoscale and Microscale Meteorology (MMM) Laboratory, 
       <featureCollection name="d300000 ncar_3km mem10 (GRIB2, grb2 era)"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d300000/20">
+                      path="aggregations/d300000/20">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>

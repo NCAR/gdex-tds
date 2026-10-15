@@ -40,7 +40,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
       <!--  Files -->
 
      <datasetScan name="d285003 Files" 
-                  path="files/g/d285003" 
+                  path="files/d285003" 
                   location="/data/rda/data/d285003">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -58,7 +58,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
          <featureCollection name="SST Analyses for V6.9, 1945-2010"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d285003/7">
+                            path="aggregations/d285003/7">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
@@ -73,7 +73,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
          <featureCollection name="Salinity Analyses for V6.9, 1945-2010"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d285003/8">
+                            path="aggregations/d285003/8">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
@@ -92,7 +92,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
          <featureCollection name="Subsurface Temperature Analyses for V6.12, 1945-2011"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d285003/9">
+                            path="aggregations/d285003/9">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
@@ -107,7 +107,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
          <featureCollection name="Subsurface Salinity Analyses for V6.12, 1945-2011"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d285003/10">
+                            path="aggregations/d285003/10">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
@@ -126,7 +126,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
          <featureCollection name="Subsurface Temperature Analyses for V6.13, 1945-2012"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d285003/11">
+                            path="aggregations/d285003/11">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>
@@ -141,7 +141,7 @@ The analysis is based on the World Ocean Database/Atlas 2005 WOD05/WOA05, ( d285
          <featureCollection name="Subsurface Salinity Analyses for V6.13 1945-2012"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d285003/12">
+                            path="aggregations/d285003/12">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>

@@ -34,7 +34,7 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
 
 
       <datasetScan name="d084003 Files"
-                  path="files/g/d084003"
+                  path="files/d084003"
                   location="/data/rda/data/d084003">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -50,7 +50,7 @@ The NCEP operational Global Forecast System auxiliary analysis and forecast grid
      <featureCollection name="d084003 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d084003/1">
+                     path="aggregations/d084003/1">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>

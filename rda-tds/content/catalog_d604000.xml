@@ -51,7 +51,7 @@ The dataset contains three-dimensional hourly analyses in netCDF format for the 
       <!--  Files -->
 
      <datasetScan name="d604000 Files" 
-                  path="files/g/d604000" 
+                  path="files/d604000" 
                   location="/data/rda/data/d604000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

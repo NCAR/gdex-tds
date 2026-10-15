@@ -42,7 +42,7 @@ The archive time series is continuously extended to a near-current date. It is n
 
 
       <datasetScan name="d083002 Files" 
-                  path="files/g/d083002" 
+                  path="files/d083002" 
                   location="/data/rda/data/d083002">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -59,7 +59,7 @@ The archive time series is continuously extended to a near-current date. It is n
      <featureCollection name="d083002 Aggregation Oct 1999 to Dec 2007"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d083002/1">
+                     path="aggregations/d083002/1">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>
@@ -78,7 +78,7 @@ The archive time series is continuously extended to a near-current date. It is n
      <featureCollection name="d083002 Aggregation Dec 2007 to Current"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d083002/2">
+                     path="aggregations/d083002/2">
          <metadata inherited="true">
           <dataFormat>GRIB-2</dataFormat>
           <serviceName>all</serviceName>

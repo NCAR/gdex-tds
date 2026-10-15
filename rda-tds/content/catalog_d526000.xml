@@ -34,7 +34,7 @@ A daily gridded North American snowfall data with focus on the quality of the in
       <!--  Files -->
 
      <datasetScan name="d526000 Files" 
-                  path="files/g/d526000" 
+                  path="files/d526000" 
                   location="/data/rda/data/d526000/">
          <metadata inherited="true">
              <serviceName>all</serviceName>

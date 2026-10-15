@@ -37,7 +37,7 @@
 
 
       <datasetScan name="d084001 Files"
-                  path="files/g/d084001"
+                  path="files/d084001"
                   location="/data/rda/data/d084001">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -53,7 +53,7 @@
      <featureCollection name="d084001 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d084001/1">
+                     path="aggregations/d084001/1">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>

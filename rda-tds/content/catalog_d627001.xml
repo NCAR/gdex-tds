@@ -46,7 +46,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
       <!--  Files -->
 
      <datasetScan name="d627001 Files" 
-                  path="files/g/d627001" 
+                  path="files/d627001" 
                   location="/data/rda/data/d627001">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -67,7 +67,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
              <featureCollection name="Monthly Mean ERA Interim atmospheric model analysis on model levels"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d627001/5">
+                                path="aggregations/d627001/5">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -82,7 +82,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
              <featureCollection name="Monthly Mean ERA Interim atmospheric model analysis interpolated to pressure levels"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d627001/6">
+                                path="aggregations/d627001/6">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -97,7 +97,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
              <featureCollection name="Monthly Mean ERA Interim atmospheric model analysis interpolated to isentropic levels"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d627001/7">
+                                path="aggregations/d627001/7">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -113,7 +113,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
              <featureCollection name="Monthly Mean ERA Interim atmospheric model analysis interpolated to 2 pvu level"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d627001/8">
+                                path="aggregations/d627001/8">
 
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -129,7 +129,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
              <featureCollection name="Monthly Mean ERA Interim atmospheric model analysis for surface"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d627001/9">
+                                path="aggregations/d627001/9">
          
                <metadata inherited="true">
                     <serviceName>all</serviceName>
@@ -148,7 +148,7 @@ NCAR's Data Support Section (DSS) is performing and supplying a grid transformed
              <featureCollection name="Monthly Mean ERA Interim atmospheric model forecast for surface (at 12 hours)"
                                 featureType="GRIB1"
                                 harvest="true"
-                                path="aggregations/g/d627001/15">
+                                path="aggregations/d627001/15">
            
                <metadata inherited="true">
                     <serviceName>all</serviceName>

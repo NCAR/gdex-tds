@@ -38,7 +38,7 @@ The through-cloud capabilities of satellite microwave radiometers provides a val
 
 
     <datasetScan name="d277008 Files"
-                 path="files/g/d277008"
+                 path="files/d277008"
                  location="/data/rda/data/d277008">
       <metadata inherited="true">
         <serviceName>all</serviceName>
