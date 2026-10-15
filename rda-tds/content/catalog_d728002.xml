@@ -38,7 +38,7 @@
       <!--  Files -->
 
      <datasetScan name="d728002 Files" 
-                  path="files/g/d728002" 
+                  path="files/d728002" 
                   location="/data/rda/data/d728002">
          <metadata inherited="true">
              <serviceName>all</serviceName>

@@ -43,7 +43,7 @@ CMORPH Version 0.x data may be accessed from RDA datasets d502000 (data prior to
       <!--  Files -->
 
      <datasetScan name="d502003 Files" 
-                  path="files/g/d502003" 
+                  path="files/d502003" 
                   location="/data/rda/data/d502003/netcdf/">
          <metadata inherited="true">
              <serviceName>all</serviceName>

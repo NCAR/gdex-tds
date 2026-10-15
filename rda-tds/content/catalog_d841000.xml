@@ -39,7 +39,7 @@ Following conventional nomenclature, the NEXRAD volume scan files are referred t
       <!--  Files -->
 
      <datasetScan name="d841000 Files" 
-                  path="files/g/d841000" 
+                  path="files/d841000" 
                   location="/data/rda/data/d841000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

@@ -34,7 +34,7 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
      <!--  Files -->
 
      <datasetScan name="d316000 Files" 
-                  path="files/g/d316000" 
+                  path="files/d316000" 
                   location="/data/rda/data/d316000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -52,8 +52,8 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
          <dataset name="20th Century Simulation">
        
            <dataset name="20th Century Simulation Yearly Timeseries-Parameter Aggregations"
-                    urlPath="aggregations/g/d316000/10/best"
-                    ID="aggregations/g/d316000/10/best"
+                    urlPath="aggregations/d316000/10/best"
+                    ID="aggregations/d316000/10/best"
                     harvest="true">
               <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                 <attribute name="title" type="string" value="20th Century Simulation Timeseries-Parameter Aggregations"/>
@@ -189,7 +189,7 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
            </dataset>
        
            <dataset name="20th Century Simulation Monthly Synoptic Sort Aggregations"
-                    urlPath="aggregations/g/d316000/11/best"
+                    urlPath="aggregations/d316000/11/best"
                     harvest="true">
                <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                  <attribute name="title" type="string" value="20th Century Simulation Monthly Synoptic Sort Aggregations"/>
@@ -222,8 +222,8 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
        
          <dataset name="RCP 4.5">
            <dataset name="rcp4.5 Yearly Timeseries-Parameter Aggregations"
-                    urlPath="aggregations/g/d316000/16/best"
-                    ID="aggregations/g/d316000/16/best"
+                    urlPath="aggregations/d316000/16/best"
+                    ID="aggregations/d316000/16/best"
                     harvest="true">
               <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                 <attribute name="title" type="string" value="RCP 4.5 Yearly Timeseries-Parameter Aggregations"/>
@@ -359,7 +359,7 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
            </dataset>
        
            <dataset name="rcp4.5 Monthly Synoptic Sort Aggregations"
-                    urlPath="aggregations/g/d316000/17/best"
+                    urlPath="aggregations/d316000/17/best"
                     harvest="true">
                <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                  <attribute name="title" type="string" value="RCP 4.5 Monthly Synoptic Sort Aggregations"/>
@@ -392,8 +392,8 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
        
          <dataset name="RCP 6.0">
            <dataset name="rcp6.0 Yearly Timeseries-Parameter Aggregations"
-                    urlPath="aggregations/g/d316000/19/best"
-                    ID="aggregations/g/d316000/19/best"
+                    urlPath="aggregations/d316000/19/best"
+                    ID="aggregations/d316000/19/best"
                     harvest="true">
               <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                 <attribute name="title" type="string" value="RCP 6.0 Yearly Timeseries-Parameter Aggregations"/>
@@ -529,7 +529,7 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
            </dataset>
        
            <dataset name="rcp6.0 Monthly Synoptic Sort Aggregations"
-                    urlPath="aggregations/g/d316000/20/best"
+                    urlPath="aggregations/d316000/20/best"
                     harvest="true">
                <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                  <attribute name="title" type="string" value="RCP 6.0 Monthly Synoptic Sort Aggregations"/>
@@ -562,8 +562,8 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
        
          <dataset name="RCP 8.5">
            <dataset name="rcp8.5 Yearly Timeseries-Parameter Aggregations"
-                    urlPath="aggregations/g/d316000/22/best"
-                    ID="aggregations/g/d316000/22/best"
+                    urlPath="aggregations/d316000/22/best"
+                    ID="aggregations/d316000/22/best"
                     harvest="true">
               <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                 <attribute name="title" type="string" value="RCP 8.5 Yearly Timeseries-Parameter Aggregations"/>
@@ -699,7 +699,7 @@ This dataset includes climate model output data from NCAR's Community Earth Syst
            </dataset>
        
            <dataset name="rcp8.5 Monthly Synoptic Sort Aggregations"
-                    urlPath="aggregations/g/d316000/23/best"
+                    urlPath="aggregations/d316000/23/best"
                     harvest="true">
                <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
                  <attribute name="title" type="string" value="RCP 8.5 Monthly Synoptic Sort Aggregations"/>

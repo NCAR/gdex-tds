@@ -14,6 +14,13 @@ spec:
     http:
       paths:
       {{- range list "ncss/grid" "dodsC" "wcs" "wms" "fileServer" }}
+      - path: /thredds/{{ . }}/files/{{ $.Values.webapp.blockDataset.dsid }}
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ $.Values.webapp.name }}-deny-backend
+            port:
+              number: 80
       - path: /thredds/{{ . }}/files/g/{{ $.Values.webapp.blockDataset.dsid }}
         pathType: Prefix
         backend:

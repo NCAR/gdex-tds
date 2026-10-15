@@ -42,7 +42,7 @@ GEOS5 Atmospheric Forcing data, regridded and prepared as meteorological variabl
       <!--  Files -->
 
      <datasetScan name="d313000 Files" 
-                  path="files/g/d313000" 
+                  path="files/d313000" 
                   location="/data/rda/data/d313000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

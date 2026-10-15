@@ -35,7 +35,7 @@ The NCEP operational Global Data Assimilation System surface flux grids are on a
 
 
       <datasetScan name="d084004 Files"
-                  path="files/g/d084004"
+                  path="files/d084004"
                   location="/data/rda/data/d084004">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -52,7 +52,7 @@ The NCEP operational Global Data Assimilation System surface flux grids are on a
      <featureCollection name="d084004 Aggregation"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d084004/1">
+                     path="aggregations/d084004/1">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>

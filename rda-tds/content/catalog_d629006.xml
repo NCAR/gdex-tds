@@ -44,7 +44,7 @@ d629006 represents a transformed version of the raw ECMWF YOTC archive (d629000)
       <!--  Files -->
 
      <datasetScan name="d629006 Files" 
-                  path="files/g/d629006" 
+                  path="files/d629006" 
                   location="/data/rda/data/d629006">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -64,7 +64,7 @@ d629006 represents a transformed version of the raw ECMWF YOTC archive (d629000)
          <featureCollection name="YOTC atmospheric model forecast interpolated to pressure levels, single parameter 3-hourly time series, dynamical variables only"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d629006/0">
+                            path="aggregations/d629006/0">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>

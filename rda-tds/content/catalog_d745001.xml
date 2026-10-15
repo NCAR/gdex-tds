@@ -37,7 +37,7 @@ The CCMP data set combines cross-calibrated satellite microwave winds and instru
       <!--  Files -->
 
      <datasetScan name="d745001 Files" 
-                  path="files/g/d745001" 
+                  path="files/d745001" 
                   location="/data/rda/data/d745001">
          <metadata inherited="true">
              <serviceName>all</serviceName>

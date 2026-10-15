@@ -39,7 +39,7 @@ Data are available as monthly time series files in NetCDF. The data currently pr
       <!--  Files -->
 
      <datasetScan name="d601000 Files" 
-                  path="files/g/d601000" 
+                  path="files/d601000" 
                   location="/data/rda/data/d601000">
          <metadata inherited="true">
          <serviceName>all</serviceName>
@@ -57,8 +57,8 @@ Data are available as monthly time series files in NetCDF. The data currently pr
 
      <dataset name="NRCM 1995-2005 Simulation">
        <dataset name="NRCM 1995-2005 Aggregation"
-         urlPath="aggregations/g/d601000/10/best"
-         ID="aggregations/g/d601000/10/best"
+         urlPath="aggregations/d601000/10/best"
+         ID="aggregations/d601000/10/best"
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation type="Union">
@@ -402,8 +402,8 @@ Data are available as monthly time series files in NetCDF. The data currently pr
 
      <dataset name="NRCM 2020-2030 Simulation">
        <dataset name="NRCM 2020-2030 Aggregation"
-         urlPath="aggregations/g/d601000/20/best"
-         ID="aggregations/g/d601000/20/best"
+         urlPath="aggregations/d601000/20/best"
+         ID="aggregations/d601000/20/best"
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation type="Union">
@@ -765,8 +765,8 @@ Data are available as monthly time series files in NetCDF. The data currently pr
 
      <dataset name="NRCM 2045-2055 Simulation">
        <dataset name="NRCM 2045-2055 Aggregation"
-         urlPath="aggregations/g/d601000/30/best"
-         ID="aggregations/g/d601000/30/best"
+         urlPath="aggregations/d601000/30/best"
+         ID="aggregations/d601000/30/best"
          harvest="true">
          <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
            <aggregation type="Union">

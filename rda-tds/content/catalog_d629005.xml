@@ -42,7 +42,7 @@ d629005 represents a transformed version of the raw ECMWF YOTC archive (d629000)
       <!--  Files -->
 
      <datasetScan name="d629005 Files" 
-                  path="files/g/d629005" 
+                  path="files/d629005" 
                   location="/data/rda/data/d629005">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -62,7 +62,7 @@ d629005 represents a transformed version of the raw ECMWF YOTC archive (d629000)
          <featureCollection name="YOTC atmospheric model forecast for surface, single parameter 3-hourly time series"
                             featureType="GRIB1"
                             harvest="true"
-                            path="aggregations/g/d629005/0">
+                            path="aggregations/d629005/0">
        
            <metadata inherited="true">
                 <serviceName>all</serviceName>

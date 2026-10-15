@@ -41,7 +41,7 @@ Online archives include 1 year of data, and are populated daily with model outpu
 
 
       <datasetScan name="d335000 Files"
-                  path="files/g/d335000"
+                  path="files/d335000"
                   location="/data/rda/data/d335000">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -57,7 +57,7 @@ Online archives include 1 year of data, and are populated daily with model outpu
      <featureCollection name="d335000 GFS0p5 Degree Global Analysis Aggregation"
                      featureType="GRIB2"
                      harvest="true"
-                     path="aggregations/g/d335000/9">
+                     path="aggregations/d335000/9">
          <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>

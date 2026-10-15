@@ -38,7 +38,7 @@ The main R2 products archived at NCAR consitute of 6 subgroups: pressure level a
       <!--  Files -->
 
      <datasetScan name="d091000 Files" 
-                  path="files/g/d091000" 
+                  path="files/d091000" 
                   location="/data/rda/data/d091000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

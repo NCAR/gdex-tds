@@ -41,7 +41,7 @@ Atmospheric Forcing data, regridded from the Modern-Era Retrospective analysis f
       <!--  Files -->
 
      <datasetScan name="d313003 Files" 
-                  path="files/g/d313003" 
+                  path="files/d313003" 
                   location="/data/rda/data/d313003">
          <metadata inherited="true">
              <serviceName>all</serviceName>

@@ -124,6 +124,9 @@ Routes all `/thredds/dap4` traffic to the deny-backend (403). DAP4 is disabled b
 #### `ingress-wmsold-block.yaml`
 Routes `/thredds/wms/files/g/ds` to the deny-backend (403). This old-style WMS path generates excessive error traffic and is not used by current clients.
 
+#### `ingress-g-redirect.yaml`
+Maps legacy `/thredds/<service>/files/g/<dsid>/...` and `/thredds/<service>/aggregations/g/<dsid>/...` URLs to `/thredds/<service>/files|aggregations/<dsid>/...` (dsid = `d` + 6 digits). Uses `use-regex` + `rewrite-target`, an internal rewrite rather than a 301, because `configuration-snippet` is disabled on the controller. It is a separate Ingress, so it repeats the rate-limit annotations (`limit-rps`, `limit-connections`) from `values.yaml`. Old `ds083.2`-style paths are not matched, so `ingress-wmsold-block.yaml` still applies. Note: `use-regex` is host-wide in ingress-nginx, so it also makes the other ingresses' paths on these hosts regex-matched.
+
 #### `pvc-tds.yaml`
 PersistentVolumeClaim (`tds-persist`, 1 Ti, CephFS RWX) for TDS index files, caches, and overflow temp dirs. Annotated with `argocd.argoproj.io/sync-options: Prune=false` so Argo CD never deletes it on sync.
 

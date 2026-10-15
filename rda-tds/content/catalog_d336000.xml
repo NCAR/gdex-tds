@@ -41,7 +41,7 @@ Historical Unidata Internet Data Distribution (IDD) Global Observational Data ar
 
 
      <datasetScan name="d336000 Files" 
-                  path="files/g/d336000" 
+                  path="files/d336000" 
                   location="/data/rda/data/d336000">
          <metadata inherited="true">
          <serviceName>all</serviceName>

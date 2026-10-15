@@ -40,7 +40,7 @@ The Hadley Centre at the U.K. Met Office has created a global sub-daily dataset 
 
 
      <datasetScan name="d463004 Files" 
-                  path="files/g/d463004" 
+                  path="files/d463004" 
                   location="/data/rda/data/d463004">
          <metadata inherited="true">
          <serviceName>all</serviceName>
