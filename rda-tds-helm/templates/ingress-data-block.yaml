@@ -21,6 +21,13 @@ spec:
             name: {{ $.Values.webapp.name }}-deny-backend
             port:
               number: 80
+      - path: /thredds/{{ . }}/files/g/{{ $.Values.webapp.blockDataset.dsid }}
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ $.Values.webapp.name }}-deny-backend
+            port:
+              number: 80
       {{- end }}
   {{- end }}
 {{- end }}

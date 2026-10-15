@@ -58,8 +58,8 @@ webapp:
     path: /glade/campaign/collections/gdex/
     readOnly: true
   blockDataset:
-    enabled: false
-    dsid: d633000
+    enabled: true
+    dsid: d313006
   tdsPersist:
     fs:
       name: tds-persist
