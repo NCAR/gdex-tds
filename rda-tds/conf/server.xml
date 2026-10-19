@@ -197,12 +197,16 @@
         <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
         -->
 
+        <!-- Legacy /g/ query rewrite rules: conf/Catalina/localhost/rewrite.config -->
+        <Valve className="org.apache.catalina.valves.rewrite.RewriteValve" />
+        
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <!-- <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="${env.K8S_POD_NAME}_localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" /> -->
+
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
