@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Benchmark Z-VAD 2026 radar data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Benchmark Z-VAD 2026 radar data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>RADAR</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d285630/" xlink:title="NCAR GDEX - Benchmark Z-VAD 2026 radar data(d285630)" />
+      <documentation type="summary">
+Dataset contains idealized radar velocity data in NetCDF format that were developed for the Zebulon Leffler Velocity Azimuth Display (Z-VAD) project in the summer of 2026.
+
+Detail: 
+Each data file contains azimuth (degrees) and range (meters) dimensions. These data files were constructed to mimic a NEXRAD Level-II data file converted and output by the LROSE RadxConvert package. Each file contains typical elevation angles or sweeps included in a NEXRAD RadxConvert data file. The only difference is that the original velocity field data (Edc_VEL) has been replaced with an idealized radar velocity field for a variety of Doppler velocity scenarios highlighted in Browning and Wexler (1968).  
+
+The Edc_VEL field in each idealized radar velocity file is the field users should use to run the RadxEvad or Z-VAD retrieval codes. A variety of background wind fields, Doppler velocity patterns, and magnitudes of atmospheric divergence or deformation are contained to provide users with a variety of idealized fields to test. 
+
+
+Data processing: 
+The data files were constructed using a Python script that users can use to create a background wind profile, add divergence/deformation, or specify what kind of wind field (diverging, deforming, translation) they want to build. 
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UAL-H/ATMOS</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d285630 Files" path="files/d285630" location="/data/rda/data/d285630/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

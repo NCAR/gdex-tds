@@ -100,6 +100,7 @@
     <catalogRef xlink:href="catalog_d285000.xml" xlink:title="d285000 World Ocean Database and World Ocean Atlas" name="" />
     <catalogRef xlink:href="catalog_d285003.xml" xlink:title="d285003 Subsurface Temperature And Salinity Analyses by Ishii et al." name="" />
     <catalogRef xlink:href="catalog_d285005.xml" xlink:title="d285005 RSS SMAP Sea Surface Salinity Analysis" name="" />
+    <catalogRef xlink:href="catalog_d285630.xml" xlink:title="d285630 Benchmark Z-VAD 2026 radar data" name="" />
     <catalogRef xlink:href="catalog_d298000.xml" xlink:title="d298000 Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" name=" Standardized Precipitation Index (SPI) for Global Land Surface (1949-2012)" />
     <catalogRef xlink:href="catalog_d299000.xml" xlink:title="d299000 Dai Global Palmer Drought Severity Index (PDSI)" name="Dai Global Palmer Drought Severity Index (PDSI)" />
     <catalogRef xlink:href="catalog_d300000.xml" xlink:title="d300000 NCAR MMM 10-member, 3 km, experimental real-time ensemble prediction system" />
