@@ -59,11 +59,11 @@ spec:
           periodSeconds: 10 # up to 10 min to come up before readiness probing begins
         readinessProbe: # Pulls pod out of Service/ingress rotation fast when it can't serve, e.g. OOM/zombie state
           httpGet:
-            path: /thredds/catalog/catalog.html
+            path: /thredds/folder.png # cheap way to check if the service is up
             port: {{ .Values.webapp.tds.port }}
           periodSeconds: 10
-          timeoutSeconds: 10
-          failureThreshold: 3 # ~30s of failures before pod is marked NotReady
+          timeoutSeconds: 15
+          failureThreshold: 6 # ~60s of failures before pod is marked NotReady; tolerates brief saturation without pods dropping out in a cascade
           successThreshold: 1
 
         env:
