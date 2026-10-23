@@ -23,7 +23,7 @@ webapp:
     secretName: incommon-cert-tds
   tds:
     load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods
-    image: docker.io/potatofever/rda-tds:v5.7-sha-30245de
+    image: docker.io/potatofever/rda-tds:v5.7-sha-29e7d4a
     port: 8080
     memory: 96G
     cpu: 8
@@ -34,7 +34,7 @@ webapp:
     limit_rps: 150           # Increased for page load bursts - global limit
     env:
       THREDDS_XMX_SIZE: 64G
-      THREDDS_XMS_SIZE: 64G  # Same as Xmx to avoid heap-resize GC pauses
+      THREDDS_XMS_SIZE: 16G
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
@@ -44,7 +44,7 @@ webapp:
     ephemeralStorageLimit: 1Gi
   tdm:
     name: gdex-tdm
-    image: docker.io/potatofever/gdex-tdm:v5.7-sha-d4f24b3
+    image: docker.io/potatofever/gdex-tdm:v5.7-sha-c77a810
     port: 8080
     memory: 6G
     cpu: 2
