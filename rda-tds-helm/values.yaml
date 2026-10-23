@@ -26,7 +26,7 @@ webapp:
     image: docker.io/potatofever/rda-tds:v5.7-sha-a097857
     port: 8080
     memory: 96G
-    cpu: 5
+    cpu: 8
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
@@ -34,7 +34,7 @@ webapp:
     limit_rps: 150           # Increased for page load bursts - global limit
     env:
       THREDDS_XMX_SIZE: 64G
-      THREDDS_XMS_SIZE: 16G
+      THREDDS_XMS_SIZE: 64G  # Same as Xmx to avoid heap-resize GC pauses
   logs: 
     name: rda-logs
     image: docker.io/potatofever/rda-logs:sha-3f40dca
