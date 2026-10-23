@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-    name: {{ .Values.webapp.volume.fs.name }}
+    name: {{ .Values.webapp.tdsPersist.fs.name }}
     namespace: {{ .Release.Namespace}}
     annotations:
         argocd.argoproj.io/sync-options: Prune=false
@@ -11,4 +11,4 @@ spec:
     storageClassName: cephfs
     resources:
         requests:
-            storage: {{ .Values.webapp.volume.fs.size | default "1Gi" }} 
+            storage: {{ .Values.webapp.tdsPersist.fs.size | default "1Gi" }}

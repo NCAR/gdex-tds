@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CFBM simulations and verification dataset for sheltered and unsheltered wildland fires" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CFBM simulations and verification dataset for sheltered and unsheltered wildland fires">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d581585/" xlink:title="NCAR GDEX - CFBM simulations and verification dataset for sheltered and unsheltered wildland fires(d581585)" />
+      <documentation type="summary">In this study we simulated the fire evolution of four wildland fires with the Community Fire Behavior Model (CFBM). There are two unsheltered ground fires (no canopy: Boone Draw, BD, and Murphy, MY, fires) and two sheltered fires (spreading under the canopy; Hayden Pass, HP, and Indian Valley, IV, fires). For the unsheltered fires we use two options to calculate the location of the mid-flame height. Option 1 uses the fuel bed depth (opt1) whereas option 2 uses Byram's equation (opt2). For the sheltered fires we also use two values for the wind adjustment factor: 0.1 and 0.2 (opt3_0p1 and opt3_0p2, respectively). Simulations are compared against observed fire perimeters and active-fire detections from the Visible Infrared Imaging Radiometer Suite (VIIRS) instrument.
+
+For all the simulations this dataset includes: 1) the WRF simulations (1 km grid spacing, output every 15 minutes) used to drive the CFBM; 2) the GEOGRID files used to define the CFBM domains (100 m), 3) the CFBM simulations (e.g., fire perimeter, 100 m fuel types, elevation) collocated with observed perimeters, and 4) the observed perimeters and the VIIRS retrievals used for evaluation.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d581585 Files" path="files/d581585" location="/data/rda/data/d581585/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

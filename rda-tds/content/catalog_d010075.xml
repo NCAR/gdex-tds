@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Quantifying the Impact of Solar Irradiance Uncertainty on Thermosphere-Ionosphere Variability Using Ensemble Forecasts" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Quantifying the Impact of Solar Irradiance Uncertainty on Thermosphere-Ionosphere Variability Using Ensemble Forecasts">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>MODEL_SIMULATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010075/" xlink:title="NCAR GDEX - Quantifying the Impact of Solar Irradiance Uncertainty on Thermosphere-Ionosphere Variability Using Ensemble Forecasts(d010075)" />
+      <documentation type="summary">This dataset accompanies the paper titled "Quantifying the Impact of Solar Irradiance Uncertainty on Thermosphere-Ionosphere Variability Using Ensemble Forecasts."
+The study examines the sensitivity of the thermosphere and ionosphere to variations in solar spectral irradiance. Ensemble simulation experiments were conducted for the 2021/2022 winter period, using both data-driven and parameterized solar irradiance perturbations to assess their impact.
+The ensemble spread in electron density and neutral temperature is used as a measure of the system's sensitivity to changes in solar irradiance. Simulation results are also compared with satellite observations from Swarm, ICON, and COSMIC-2. 
+files with string "euvac05" are result from EXP1 on table 1 in the paper.
+files with string "euvac15" are result from EXP2 on table 1 in the paper.
+files with string "data" are result from EXP3 on table 1 in the paper.
+files with string "data_doubled" are result from EXP4 on table 1 in the paper.
+Files beginning with "cosmic_doy" contain the results of comparisons between the ensemble simulation experiments and COSMIC-2 electron density observations. The "doy" portion represents the three-digit day-of-year (DOY) identifier.
+Files beginning with "icon_might_x" contain the results of comparisons between the ensemble simulation experiments and ICON neutral temperature observations. The "x" indicates the instrument identifier, either MIGHTI-A or MIGHTI-B.
+Files beginning with "swarm_x" contain the results of comparisons between the ensemble simulation experiments and SWARM neutral density observations. The "x" indicates the instrument identifier, either SWARM-A or SWARM-C. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010075 Files" path="files/d010075" location="/data/rda/data/d010075/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

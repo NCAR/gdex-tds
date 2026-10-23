@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="WACCM-X 1 Degree Output 2000-Present" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="WACCM-X 1 Degree Output 2000-Present">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d654000/" xlink:title="NCAR GDEX - WACCM-X 1 Degree Output 2000-Present(d654000)" />
+      <documentation type="summary">This dataset is output from simulations using the Whole Atmosphere Community Climate Model with Thermosphere and Ionosphere eXtension (WACCM-X) for years from 2000 to near present day. The horizontal resolution is 0.9 degrees in latitude by 1.25 degrees in longitude. The model vertical extent is from the surface to the upper thermosphere, approximately 600 kilometers depending on solar cycle. The model is free running when producing these simulation results. This WACCM-X dataset can be used to study individual events since year 2000 and decadal changes throughout the atmosphere. Is can also be useful in Artificial Intelligence training and related studies.
+This dataset is made up of files containing WACCM-X simulation output in the netCDF format. The files with "h0" in the name are monthly mean data containing neutral, ionosphere, and electron temperatures, ionosphere and thermosphere constituents, electric field related quantities, and diagnostic variables, and lower and middle atmosphere chemical constituents on vertical pressure levels. The files with "h1-h3" contain subset of the fields in the "h0" files but with an output frequency of 3 hours instantaneous, daily instantaneous, and daily average. The "h4" files also contain tidal coefficients used to derive solar induced tides. The "h6" and "h7" files contain model diagnostic fields.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d654000 Files" path="files/d654000" location="/data/rda/data/d654000/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -37,7 +37,7 @@ The Arctic System Reanalysis (ASR) is produced using a high-resolution version o
       <!--  Files -->
 
      <datasetScan name="d631000 Files" 
-                  path="files/g/d631000" 
+                  path="files/d631000" 
                   location="/data/rda/data/d631000">
          <metadata inherited="true">
              <serviceName>all</serviceName>
@@ -55,8 +55,8 @@ The Arctic System Reanalysis (ASR) is produced using a high-resolution version o
      <dataset name="d631000 Aggregations">
 
          <dataset name="ASR 30 km 3d pressure level analysis"
-                  urlPath="aggregations/g/d631000/6/best"
-                  ID="aggregations/g/d631000/6/best"
+                  urlPath="aggregations/d631000/6/best"
+                  ID="aggregations/d631000/6/best"
                   harvest="true">
              <metadata inherited="true">
                  <serviceName>all</serviceName>
@@ -77,8 +77,8 @@ The Arctic System Reanalysis (ASR) is produced using a high-resolution version o
           </dataset>
        
          <dataset name="ASR 30 km 2d surface analysis"
-                  urlPath="aggregations/g/d631000/9/best"
-                  ID="aggregations/g/d631000/9/best"
+                  urlPath="aggregations/d631000/9/best"
+                  ID="aggregations/d631000/9/best"
                   harvest="true">
              <metadata inherited="true">
                  <serviceName>all</serviceName>

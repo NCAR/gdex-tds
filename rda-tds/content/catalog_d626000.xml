@@ -50,7 +50,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
 
 
       <datasetScan name="d626000 Files"
-                  path="files/g/d626000"
+                  path="files/d626000"
                   location="/data/rda/data/d626000">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -70,7 +70,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric model analysis"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d626000/5">
+                      path="aggregations/d626000/5">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -84,7 +84,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isobaric analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/6">
+                      path="aggregations/d626000/6">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -98,7 +98,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isentropic analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/7">
+                      path="aggregations/d626000/7">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -112,7 +112,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric 2 pvu analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/8">
+                      path="aggregations/d626000/8">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -126,7 +126,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric surface analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/9">
+                      path="aggregations/d626000/9">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -140,7 +140,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 6 hourly atmospheric surface analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/10">
+                      path="aggregations/d626000/10">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -154,7 +154,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric model forecast"
                       featureType="GRIB2"
                       harvest="true"
-                      path="aggregations/g/d626000/13">
+                      path="aggregations/d626000/13">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -168,7 +168,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric isobaric forecast"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/14">
+                      path="aggregations/d626000/14">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -182,7 +182,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly atmospheric surface forecast"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/15">
+                      path="aggregations/d626000/15">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -197,7 +197,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century atmospheric invariant fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/16">
+                      path="aggregations/d626000/16">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -210,7 +210,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century 3 hourly ocean wave analysis"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/17">
+                      path="aggregations/d626000/17">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -224,7 +224,7 @@ The temporal resolution of the daily products is usually 3-hourly. Exceptions ar
       <featureCollection name="ERA 20th Century ocean wave invariant fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d626000/18">
+                      path="aggregations/d626000/18">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>

@@ -27,23 +27,15 @@
       <keyword>ECWMF ERA5 Reanalysis</keyword>
     </metadata>
     <!--Files-->
-    <datasetScan location="/data/rda/data/d633001/" name="d633001 GRIB Files" path="files/g/d633001_grb">
+    <datasetScan name="d633001 Files" path="files/d633001" location="/data/rda/data/d633001/">
       <metadata inherited="true">
         <serviceName>all</serviceName>
       </metadata>
       <filter>
         <exclude wildcard="*.html" />
-        <exclude wildcard="*.nc" />
-      </filter>
-      <addDatasetSize />
-    </datasetScan>
-    <datasetScan location="/data/rda/data/d633001/" name="d633001 NetCDF Files" path="files/g/d633001_nc">
-      <metadata inherited="true">
-        <serviceName>all</serviceName>
-      </metadata>
-      <filter>
-        <exclude wildcard="*.grb" />
-        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
       </filter>
       <addDatasetSize />
     </datasetScan>
@@ -54,7 +46,7 @@
      <featureCollection name="d633001 e5.moda.an.pl Aggregation"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d633001/1">
+                     path="aggregations/d633001/1">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>
@@ -73,7 +65,7 @@
      <featureCollection name="d633001 e5.moda.an.sfc Aggregation"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d633001/2">
+                     path="aggregations/d633001/2">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>
@@ -92,7 +84,7 @@
      <featureCollection name="d633001 e5.moda.an.vinteg Aggregation"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d633001/3">
+                     path="aggregations/d633001/3">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>
@@ -111,7 +103,7 @@
      <featureCollection name="d633001 e5.moda.fc.sfc.accumu Aggregation"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d633001/4">
+                     path="aggregations/d633001/4">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>
@@ -129,7 +121,7 @@
      <featureCollection name="d633001 e5.moda.fc.sfc.instan Aggregation"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d633001/5">
+                     path="aggregations/d633001/5">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>
@@ -147,7 +139,7 @@
      <featureCollection name="d633001 e5.moda.fc.sfc.meanflux Aggregation"
                      featureType="GRIB1"
                      harvest="true"
-                     path="aggregations/g/d633001/6">
+                     path="aggregations/d633001/6">
          <metadata inherited="true">
           <dataFormat>GRIB-1</dataFormat>
           <serviceName>all</serviceName>

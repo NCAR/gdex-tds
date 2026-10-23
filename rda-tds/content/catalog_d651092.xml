@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="iCESM1.3-HR Resolution Hierarchy for Preindustrial, Eocene, and 4xCO2 Climates" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="iCESM1.3-HR Resolution Hierarchy for Preindustrial, Eocene, and 4xCO2 Climates">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>MODEL_SIMULATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651092/" xlink:title="NCAR GDEX - iCESM1.3-HR Resolution Hierarchy for Preindustrial, Eocene, and 4xCO2 Climates(d651092)" />
+      <documentation type="summary">This dataset comprises a suite of resolution-hierarchy simulations developed with the water isotope-enabled Community Earth System Model version 1.3 at high resolution (iCESM1.3-HR). The simulations are designed to investigate the responses of climate states and weather extremes to external forcings in past and future warm climates, as well as the dependence of these responses on model resolution. A resolution-hierarchy framework is particularly valuable for disentangling the roles of individual high-resolution model components and for providing process-level and mechanistic insight.
+The hierarchy includes three coupled model configurations: high resolution (HR), with approximately 0.25 degrees resolution in the atmosphere and land components and approximately 0.1 degrees resolution in the ocean and sea-ice components; low resolution (LR), with approximately 1 degrees resolution in all components; and mixed resolution (HaLo), with high-resolution atmosphere and land components coupled to low-resolution ocean and sea-ice components. The HR, LR, and HaLo configurations include simulations of the preindustrial climate and the early Eocene warm climate, approximately 50 million years ago. Quasi-equilibrated 4xCO2 simulations are available for the HR and LR configurations only. The early Eocene was characterized by sustained global warmth, atmospheric CO2 concentrations of approximately 1400ppmv, and global warming of approximately 14C. 
+These simulations complement the ASD PaleoWeather collection and the MESACLIP historical and future simulation datasets. Together, these datasets support research on weather-climate interactions in warm-climate states, including investigations of heat waves, atmospheric rivers, and tropical cyclones. The resolution hierarchy provides a framework for attribution studies and for process-level, mechanistic investigation of links between climate change and weather extremes across Earth's past, present, and future climate states.
+
+Please cite both this dataset and the primary paper describing these simulations. Zhu et al. (2026), Nature Communications.
+
+List of simulations:
+LR PI: b.e13.B1850C5.ne30_g16.icesm13_ihesp.PI.002
+HaLo PI: b.e13.B1850C5.ne120_g16.icesm13_ihesp.PI.003
+LR 4xCO2: b.e13.B1850C5.ne30_g16.icesm13_ihesp.PI_4xCO2.001
+HR 4xCO2: b.e13.B1850C5.ne120_t12.icesm13_ihesp.PI_4xCO2.004
+LR Eocene 3xCO2: b.e13.B1850C5.ne30_g16.icesm13_ihesp.eocene_03x.006
+HaLo Eocene 3xCO2: b.e13.B1850C5.ne120_g16.icesm13_ihesp.eocene_03x.001
+LR Eocene 6xCO2: b.e13.B1850C5.ne30_g16.icesm13_ihesp.eocene_06x.003</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651092 Files" path="files/d651092" location="/data/rda/data/d651092/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

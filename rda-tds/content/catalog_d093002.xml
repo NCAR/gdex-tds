@@ -42,7 +42,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
 
 
     <datasetScan name="d093002 Files"
-                 path="files/g/d093002"
+                 path="files/d093002"
                  location="/data/rda/data/d093002">
       <metadata inherited="true">
         <serviceName>all</serviceName>
@@ -58,7 +58,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
     <featureCollection name="d093002 diurnal_timeseries Aggregation"
                        featureType="GRIB2"
                        harvest="true"
-                       path="aggregations/g/d093002_dt">
+                       path="aggregations/d093002_dt">
 
       <metadata inherited="true">
         <serviceName>all</serviceName>
@@ -73,7 +73,7 @@ The National Centers for Environmental Prediction (NCEP) Climate Forecast System
     <featureCollection name="d093002 Regular Timeseries Aggregation"
                        featureType="GRIB2"
                        harvest="true"
-                       path="aggregations/g/d093002_t">
+                       path="aggregations/d093002_t">
 
       <metadata inherited="true">
         <serviceName>all</serviceName>

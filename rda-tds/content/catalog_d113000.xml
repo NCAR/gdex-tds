@@ -38,7 +38,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
 
 
       <datasetScan name="d113000 Files"
-                  path="files/g/d113000"
+                  path="files/d113000"
                   location="/data/rda/data/d113000">
          <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -58,7 +58,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="d113000 Surface"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d113000/1">
+                      path="aggregations/d113000/1">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -72,7 +72,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="d113000 Pressure Level"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d113000/2">
+                      path="aggregations/d113000/2">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -86,7 +86,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="d113000 Supplementary Fields"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d113000/3">
+                      path="aggregations/d113000/3">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>
@@ -100,7 +100,7 @@ This dataset is an extension of the older and lower resolution ECMWF operational
       <featureCollection name="d113000 Extension"
                       featureType="GRIB1"
                       harvest="true"
-                      path="aggregations/g/d113000/4">
+                      path="aggregations/d113000/4">
           <metadata inherited="true">
            <serviceName>all</serviceName>
          </metadata>

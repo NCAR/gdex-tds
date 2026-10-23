@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="AGS-FIRP Track 1: Learning by Doing: Observing the Lake Michigan Lake-Breeze Circulation" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="AGS-FIRP Track 1: Learning by Doing: Observing the Lake Michigan Lake-Breeze Circulation">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d010090/" xlink:title="NCAR GDEX - AGS-FIRP Track 1: Learning by Doing: Observing the Lake Michigan Lake-Breeze Circulation(d010090)" />
+      <documentation type="summary">The objective of this field campaign was to study the Lake Michigan springtime lake-breeze circulation in Milwaukee.  Measurements of profiles of temperature, humidity, winds, clouds and aerosols were made by the SPARC facility from the University of Wisconsin-Madison.  These activities were part of an atmospheric science measurements course taught by Prof. Clark Evans at the University of Wisconsin-Milwaukee.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UWI-MAD/SSEC</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d010090 Files" path="files/d010090" location="/data/rda/data/d010090/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

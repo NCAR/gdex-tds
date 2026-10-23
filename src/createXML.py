@@ -154,11 +154,17 @@ if __name__ == '__main__':
     query = "select keyword from search.data_types where dsid='"+dsid+"'"
     cursor.execute(query)
     datatypes = cursor.fetchall()
+
+    # Stop datatype checking as <dataType> tag is purely descriptive metadata
+    # it doesn't drive any indexing or aggregation behavior
+    # try:
+    #     check_same(datatypes)
+    # except SystemExit:
+    #     sys.exit(250)
+
+
     try:
-        check_same(datatypes)
-    except SystemExit:
-        sys.exit(250)
-    try:
+        # TDS only honor one datatype per dataset so even we include multiple, only the first one is considered
         datatype, = datatypes[0]
     except Exception as e:
         datatype = 'GRID'

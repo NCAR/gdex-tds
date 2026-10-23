@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="WRF Input and Output Data for Simulating Derechos with Long-Duration Winds" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="WRF Input and Output Data for Simulating Derechos with Long-Duration Winds">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d189951/" xlink:title="NCAR GDEX - WRF Input and Output Data for Simulating Derechos with Long-Duration Winds(d189951)" />
+      <documentation type="summary">Derechos are long-lived mesoscale convective systems (MCSs) that are known for producing extreme and extensive wind damage. They have impact over a large area (usually multiple states), with individual locations sustaining severe intensity winds for as long as 20 minutes or more in the most extreme cases. The data presented here were used to analyze derecho cases that had long-duration winds by simulating each one using the Weather Research and Forecast (WRF) model and examining how the dominant wind-producing mechanisms for both the strongest and longest-duration winds vary across each simulation. The observed derechos occurred on 21-22 June 2015, 10 August 2020, 29 June 2023, and 20-21 June 2025.</documentation>
+      <creator>
+        <name vocabulary="DIF">IA-STATE/CA/AGRON</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d189951 Files" path="files/d189951" location="/data/rda/data/d189951/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -37,7 +37,7 @@ The CORE-II simulations provide a framework to evaluate ocean model performance,
       <!--  Files -->
 
      <datasetScan name="d262000 Files" 
-                  path="files/g/d262000" 
+                  path="files/d262000" 
                   location="/data/rda/data/d262000/">
          <metadata inherited="true">
              <serviceName>all</serviceName>

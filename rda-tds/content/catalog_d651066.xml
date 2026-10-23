@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM2-CISM2 Transient Last Interglacial Simulations" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM2-CISM2 Transient Last Interglacial Simulations">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651066/" xlink:title="NCAR GDEX - CESM2-CISM2 Transient Last Interglacial Simulations(d651066)" />
+      <documentation type="summary">The Transient Last Interglacial dataset contains output from the TransientLIG simulation from 127,000 to 119,000 years before present (127 - 119 ka). This simulation is with the CESM2.1 at the FV1_gx1v6 resolution coupled to CISM2 at 4 km resolution for Greenland. The ice sheet model and the orbital parameters over time (eccentricity, obliquity, and precession) are accelerated - advancing 5 years for each CESM2 year. In CAM6, the surface elevation over Greenland is updated every 10 atmosphere years. Offline coupling of BIOME4 distributions every 500 ice-sheet years allows for incorporation of quasi-dynamic vegetation changes [U.S. Geological Survey data release, https://doi.org/10.5066/P9RPB5KD]. All other forcings (GHGs, aerosols, land-ocean configuration) are kept constant during the TransientLIG simulation.
+The dataset also includes a sensitivity simulation (NoBiome) from 127 - 121 ka illustrating the effects of vegetation. This simulation retains the preindustrial no-Anthro vegetation distribution adopted in the CMIP6-PMIP4 127 ka and 6ka equilibrium simulations with CESM2.1 at the FV1_gx1v6 resolution.
+The TransientLIG and NoBiome simulations are initialized from the CMIP6-PMIP4 lig127ka simulation with CESM2 [http://doi.org/10.22033/ESGF/CMIP6.7673]. The simulations adopted the initial state of the GrIS from the CESM2-CISM2 JG/BG spinup under pre-industrial climate forcing [https://doi.org/10.26024/4gt3-9r10].</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651066 Files" path="files/d651066" location="/data/rda/data/d651066/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

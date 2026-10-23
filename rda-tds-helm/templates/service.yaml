@@ -7,6 +7,6 @@ metadata:
     group: {{ .Values.webapp.group }}
 spec:
   ports:
-  - port: {{ .Values.webapp.container.port }}
+  - port: {{ .Values.webapp.tds.port }}
   selector:
     app: {{ .Values.webapp.name }}

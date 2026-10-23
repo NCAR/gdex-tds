@@ -1,6 +1,6 @@
 replicaCount: 3
 revisionHistoryCount: 9
-restartedAt: "2026-06-27T21:39:17Z"
+restartedAt: "2026-10-09T16:28:32Z"
 
 backup:
   enabled: true
@@ -21,20 +21,19 @@ webapp:
     fqdn3: thredds.rda.ucar.edu
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
-  container: 
-    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods 
-    image: docker.io/potatofever/rda-tds:sha-6c9dd92
+  tds:
+    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods
+    image: docker.io/potatofever/rda-tds:v5.7-sha-a097857
     port: 8080
-    memory: 64G
+    memory: 96G
     cpu: 5
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadSize: 30m
     limit_connections: 150  # Increased for concurrent requests - global limit
     limit_rps: 150           # Increased for page load bursts - global limit
- 
     env:
-      THREDDS_XMX_SIZE: 48G
+      THREDDS_XMX_SIZE: 64G
       THREDDS_XMS_SIZE: 16G
   logs: 
     name: rda-logs
@@ -45,7 +44,7 @@ webapp:
     ephemeralStorageLimit: 1Gi
   tdm:
     name: gdex-tdm
-    image: docker.io/potatofever/gdex-tdm:sha-bc7a78d
+    image: docker.io/potatofever/gdex-tdm:v5.7-sha-5b739d7
     port: 8080
     memory: 6G
     cpu: 2
@@ -53,19 +52,22 @@ webapp:
     env:
       TDM_XMX_SIZE: "5G"
       TDM_XMS_SIZE: "2G"
-  volume1:
+  campaignMount:
     name: campaign
     server: gladedm1.ucar.edu
     path: /glade/campaign/collections/gdex/
     readOnly: true
-  volume:
+  blockDataset:
+    enabled: false
+    dsid: d313006
+  tdsPersist:
     fs:
       name: tds-persist
-      size: 1Ti
+      size: 1.5Ti
       mountPath: /data/TDSIndexFiles/data/rda/data # /tmp2/TDSIndexFiles # /data/TDSIndexFiles
-  volume2:
+  logPersist:
     fs:
       name: logs-persist
-      size: 100Gi
+      size: 200Gi
       mountPath: /usr/local/tomcat/logs
 

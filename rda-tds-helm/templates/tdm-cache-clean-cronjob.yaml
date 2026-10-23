@@ -1,0 +1,35 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Values.webapp.name }}-tdm-cache-cleanup
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.webapp.name }}
+    group: {{ .Values.webapp.group }}
+spec:
+  schedule: "1 2 * * 2" # Run at the 1st minute 2am on tuesday of every week
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: cleanup
+            image: busybox
+            command:
+            - sh
+            - -c
+            - |
+              echo "Cleaning up files older than 7 days from tdm-unidata-cache..."
+              find /tdm-unidata-cache -type f -mtime +7 -delete -print
+              echo "Done."
+            volumeMounts:
+            - mountPath: /tdm-unidata-cache
+              name: {{ .Values.webapp.tdsPersist.fs.name }}
+              subPath: tdm-unidata-cache
+          volumes:
+          - name: {{ .Values.webapp.tdsPersist.fs.name }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.webapp.tdsPersist.fs.name }}

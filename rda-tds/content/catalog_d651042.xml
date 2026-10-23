@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="PlioMIP1 simulations with CESM1 (CAM4) and CESM1 (CAM5)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="PlioMIP1 simulations with CESM1 (CAM4) and CESM1 (CAM5)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651042/" xlink:title="NCAR GDEX - PlioMIP1 simulations with CESM1 (CAM4) and CESM1 (CAM5)(d651042)" />
+      <documentation type="summary">The CESM mid-Pliocene project, completed by Bette Otto-Bliesner, Ran Feng, Esther Brady, and Nan Rosenbloom, is a set of published simulations to understand mid-Pliocene climate variability, similarities and dissimilarities with pre-Industrial, and model skills in simulating this period. One experiment contributes to the Pliocene Model Intercomparison Project phase 1 (PlioMIP1). The rest are sensitivity experiments branched from the PlioMIP1 experiment. These sensitivity experiments quantify mid-Pliocene climate responses to closure of the Bering Strait, closure of the Canadian Arctic Archipelago Straits, variations of CO2, variations of orbital forcings, absence of the western Antarctic Ice Sheet, and changes in tropospheric aerosol conditions.
+All simulations are performed with the atmosphere-ocean-land-sea ice coupled CESM1 at the nominal 1-degree latitude/longitude. Except for experiments designed to understand responses to aerosol changes (used CAM5.3), the rest of experiments use the CAM4 version of the atmospheric model. Descriptions of experiments featuring PlioMIP1 protocol, Strait Closure, CO2 and orbital forcing variations, or different tropospheric aerosol conditions can be separately found in Rosenbloom (2013), Otto-Bliesner et al., (2017), Feng et al., (2017), Feng et al., (2019).
+Diagnostics for these runs are available at http://www.cesm.ucar.edu/experiments/cesm1.1/PlioMIP/ .</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651042 Files" path="files/d651042" location="/data/rda/data/d651042/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

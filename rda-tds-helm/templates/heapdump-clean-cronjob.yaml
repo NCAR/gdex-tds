@@ -1,13 +1,13 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: {{ .Values.webapp.name }}-cleanup
+  name: {{ .Values.webapp.name }}-heapdump-cleanup
   namespace: {{ .Release.Namespace }}
   labels:
     app: {{ .Values.webapp.name }}
     group: {{ .Values.webapp.group }}
 spec:
-  schedule: "1 1 * * 1" # Run at the 1st minute 1am on monday of every week
+  schedule: "10 10 * * *" # Run at 10:10am every day
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 3
   jobTemplate:
@@ -22,14 +22,14 @@ spec:
             - sh
             - -c
             - |
-              echo "Cleaning up heap dumps older than 7 days from tomcat-temp..."
-              find /tomcat-temp -name "*.hprof" -mtime +7 -delete -print
+              echo "Cleaning up heap dumps older than 2 days from tomcat-temp..."
+              find /tomcat-temp -name "*.hprof" -mtime +2 -delete -print
               echo "Done."
             volumeMounts:
             - mountPath: /tomcat-temp
-              name: {{ .Values.webapp.volume.fs.name }}
+              name: {{ .Values.webapp.tdsPersist.fs.name }}
               subPath: tds-overflow/tomcat-temp
           volumes:
-          - name: {{ .Values.webapp.volume.fs.name }}
+          - name: {{ .Values.webapp.tdsPersist.fs.name }}
             persistentVolumeClaim:
-              claimName: {{ .Values.webapp.volume.fs.name }}
+              claimName: {{ .Values.webapp.tdsPersist.fs.name }}

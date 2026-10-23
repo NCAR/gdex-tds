@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="ISFS 5-minute Surface Meteorology &amp;amp; Fluxes: 3D anemometers (instrument coordinates)" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="ISFS 5-minute Surface Meteorology &amp;amp; Fluxes: 3D anemometers (instrument coordinates)">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d961437/" xlink:title="NCAR GDEX - ISFS 5-minute Surface Meteorology &amp;amp; Fluxes: 3D anemometers (instrument coordinates)(d961437)" />
+      <documentation type="summary"> Preliminary 5 minute averaged surface meteorology and flux data collected by the NCAR/EOL Integrated Surface Flux System (ISFS) during the INFUSSE campaign. The winds reported by the 3D sonic anemometers are in instrument coordinates. For more information please check the ISARRA website. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/RTF/ISFF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>ISARRA</keyword>
+      <keyword>International Society for Atmospheric Research using Remotely piloted Aircraft</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d961437 Files" path="files/d961437" location="/data/rda/data/d961437/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

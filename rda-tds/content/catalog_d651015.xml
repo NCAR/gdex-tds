@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Gettelman ECS data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Gettelman ECS data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651015/" xlink:title="NCAR GDEX - Gettelman ECS data(d651015)" />
+      <documentation type="summary">The Community Earth System Model Version 2 (CESM2) has a Equilibrium Climate Sensitivity (ECS) of 5.3K. ECS is an emergent property of both climate feedbacks and aerosol forcing. The increase in ECS over the previous version (CESM1) is the result of cloud feedbacks. Interim versions of CESM2 had a land model which damped ECS. Part of the ECS change results from evolving the model configuration to reproduce the long term trend of global and regional surface temperature over the 20th century in response to climate forcings. Changes made to reduce sensitivity to aerosols also impacted cloud feedbacks, which significantly influence ECS. CESM2 simulations compare very well to observations of present climate. It is critical to understand whether the high ECS, outside the best estimate range of 1.5 to 4.5K, is plausible.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651015 Files" path="files/d651015" location="/data/rda/data/d651015/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

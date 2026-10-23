@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="CESM1.3 High Resolution for Atmospheric Rivers" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="CESM1.3 High Resolution for Atmospheric Rivers">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651086/" xlink:title="NCAR GDEX - CESM1.3 High Resolution for Atmospheric Rivers(d651086)" />
+      <documentation type="summary">These data are the results of high resolution simulations with the Community Earth System Model, version 1.3 (CESM1.3). These data form the basis of a publication analyzing machine learning based-detection of atmospheric rivers and associated precipitation. The CESM1.3 data include simulations with historical (years 2000-2005), RCP2.6 (years 2006-2015), and RCP8.5 (years 2086-2100) climate forcing. The temporal resolution is 3-hourly, the horizontal resolution is 0.25 degree, and the spatial domain is global.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651086 Files" path="files/d651086" location="/data/rda/data/d651086/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

@@ -37,7 +37,7 @@ The goal of SODA is to reconstruct the historical physical (and eventually bioge
       <!--  Files -->
 
      <datasetScan name="d650000 Files" 
-                  path="files/g/d650000" 
+                  path="files/d650000" 
                   location="/data/rda/data/d650000">
          <metadata inherited="true">
              <serviceName>all</serviceName>

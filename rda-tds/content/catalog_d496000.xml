@@ -40,7 +40,7 @@ The GPCC Full Data Reanalysis is the most accurate in situ precipitation reanaly
       <!--  Files -->
 
      <datasetScan name="d496000 Files" 
-                  path="files/g/d496000" 
+                  path="files/d496000" 
                   location="/data/rda/data/d496000/full_data_monthly_v7/">
          <metadata inherited="true">
              <serviceName>all</serviceName>
