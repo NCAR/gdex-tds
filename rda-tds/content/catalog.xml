@@ -135,6 +135,7 @@
     <catalogRef xlink:href="catalog_d387000.xml" xlink:title="d387000 AmeriFlux Gap-Filled Data from Selected Sites" name="" />
     <catalogRef xlink:href="catalog_d425225.xml" xlink:title="d425225 Fire simulations of the early phase of the Cameron Peak Fire with UFS-CFBM, WRF-Fire, and offline CFBM" name="" />
     <catalogRef xlink:href="catalog_d435000.xml" xlink:title="d435000 Monthly Mean Rawinsondes, from NCEP/NCAR Global Reanalysis, 1948-continuing" name="" />
+    <catalogRef xlink:href="catalog_d436263.xml" xlink:title="d436263 CAM6 SST patch ensemble" name="" />
     <catalogRef xlink:href="catalog_d463004.xml" xlink:title="d463004 U.K. Met Office Hadley Centre Global Sub-Daily Station Observations (HadISD)" name="" />
     <catalogRef xlink:href="catalog_d473002.xml" xlink:title="d473002 Antarctic Mesoscale Prediction System (AMPS)" name="" />
     <catalogRef xlink:href="catalog_d473003.xml" xlink:title="d473003 Antarctic Mesoscale Prediction System (AMPS) WRF Outputs" name="" />
