@@ -74,9 +74,7 @@
                secure="true"
                connectionTimeout="20000"
                redirectPort="8443"
-               maxThreads="64"
-               acceptCount="50"
-               maxConnections="200" >
+               maxThreads="100" >
     <!-- Riley -->
     <!--<Connector port="8443"
            maxThreads="150"
@@ -203,7 +201,7 @@
         <Valve className="org.apache.catalina.valves.rewrite.RewriteValve" />
         
         <!-- Access log processes all example.
-             Documentation at: /docs/config/valve.html
+             Documentation at /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <!-- <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="${env.K8S_POD_NAME}_localhost_access_log" suffix=".txt"
