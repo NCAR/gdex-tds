@@ -44,7 +44,7 @@ webapp:
     ephemeralStorageLimit: 1Gi
   tdm:
     name: gdex-tdm
-    image: docker.io/potatofever/gdex-tdm:v5.7-sha-9174967
+    image: docker.io/potatofever/gdex-tdm:v5.7-sha-bccf40e
     port: 8080
     memory: 6G
     cpu: 2
