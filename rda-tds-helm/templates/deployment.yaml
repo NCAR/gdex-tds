@@ -147,6 +147,12 @@ spec:
             value: {{ .Values.webapp.tdm.env.TDM_XMX_SIZE }}
           - name: TDM_XMS_SIZE
             value: {{ .Values.webapp.tdm.env.TDM_XMS_SIZE }}
+          # Read by the unidata/tdm-docker entrypoint to build "-tds <url>" and contentDir;
+          # empty => "Expected a value after parameter -tds" and the TDM exits.
+          - name: TDS_HOST
+            value: {{ .Values.webapp.tdm.env.TDS_HOST | quote }}
+          - name: TDS_CONTENT_ROOT_PATH
+            value: {{ .Values.webapp.tdm.env.TDS_CONTENT_ROOT_PATH | quote }}
         volumeMounts:
         - mountPath: {{ .Values.webapp.tdsPersist.fs.mountPath }} #/data/TDSIndexFiles/data/rda/data
           name: {{ .Values.webapp.tdsPersist.fs.name }}
