@@ -52,6 +52,8 @@ webapp:
     env:
       TDM_XMX_SIZE: "5G"
       TDM_XMS_SIZE: "2G"
+      TDS_HOST: "http://localhost:8080/" # TDS container in the same pod
+      TDS_CONTENT_ROOT_PATH: "/usr/local/tomcat/content/tdm" # TDM catalogs live in <this>/thredds (see Dockerfile-tdm)
   campaignMount:
     name: campaign
     server: gladedm1.ucar.edu

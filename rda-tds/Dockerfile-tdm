@@ -4,6 +4,13 @@
 FROM potatofever/tdm-docker-mirror:5.7
 COPY ./content/ /usr/local/tomcat/content/tdm/thredds/
 
+# TDM writes its localapi key to <tds.content.root.path>/tdm/localapi.key
+# (root is /usr/local/tomcat/content/tdm), so the folder must exist and be writable
+USER root
+RUN mkdir -p /usr/local/tomcat/content/tdm/tdm \
+    && chown -R ubuntu:ubuntu /usr/local/tomcat/content/tdm/tdm
+USER ubuntu
+
 
 # Source env file in helmchart?
     #env_file:
