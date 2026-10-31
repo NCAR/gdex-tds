@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="M2HATS: ISS RASS virtual temperature Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="M2HATS: ISS RASS virtual temperature Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>PLATFORM_OBSERVATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d361537/" xlink:title="NCAR GDEX - M2HATS: ISS RASS virtual temperature Data(d361537)" />
+      <documentation type="summary"> The 449 MHz Modular Wind Profiler was equipped with RASS (Radio Acoustic Sounding System) for virtual temperature measurements. The Profiler operated in RASS mode for 5 minutes every half hour for most of the campaign. Two RASS datasets are provided: (1) daily 5-minute averages every 30 minutes and (2) moments with a 20-second average dwell. Refer to the data report for details on the quality and QC processing methods. </documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/EOL/RTF/ISFF</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+      </publisher>
+      <keyword>M2HATS</keyword>
+      <keyword>Multi-point Monin-Obukhov similarity Horizontal Array Turbulence Study</keyword>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d361537 Files" path="files/d361537" location="/data/rda/data/d361537/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
