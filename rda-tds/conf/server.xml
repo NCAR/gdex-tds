@@ -74,9 +74,7 @@
                secure="true"
                connectionTimeout="20000"
                redirectPort="8443"
-               maxThreads="64"
-               acceptCount="50"
-               maxConnections="200" >
+               maxThreads="100" >
     <!-- Riley -->
     <!--<Connector port="8443"
            maxThreads="150"
