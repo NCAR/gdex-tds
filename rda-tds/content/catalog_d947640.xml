@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Long-Term Validation of NSF NCAR TIEGCM 3.0 Over a Full Solar Cycle" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Long-Term Validation of NSF NCAR TIEGCM 3.0 Over a Full Solar Cycle">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d947640/" xlink:title="NCAR GDEX - Long-Term Validation of NSF NCAR TIEGCM 3.0 Over a Full Solar Cycle(d947640)" />
+      <documentation type="summary">
+This dataset contains global simulations of the coupled thermosphere-ionosphere system produced with version 3.0 of the NSF NCAR Thermosphere-Ionosphere-Electrodynamics General Circulation Model (TIEGCM), covering January 2014 through December 2024. The 11-year period spans a broad range of solar and geomagnetic conditions, including the May and October 2024 geomagnetic superstorms.
+Simulations are provided at 2.5 degree horizontal resolution, with global fields archived every 15 minutes. Three configurations of the eddy diffusion parameterization are included for each year, enabling the investigation of its influence on thermospheric and ionospheric variability. The output includes neutral and plasma temperatures, winds, neutral composition, and ionospheric plasma densities.
+The dataset supports companion studies evaluating the long-term performance of TIEGCM 3.0 against neutral density and ionospheric observations. It also provides a resource for investigating thermosphere-ionosphere coupling, solar-cycle variability, geomagnetic disturbances, satellite drag, model intercomparison and the development of reduced-order and data-driven models.
+
+
+
+Detail Description :
+
+
+This dataset provides a continuous, long-term simulation of the coupled thermosphere-ionosphere system using version 3.0 of the NSF NCAR Thermosphere-Ionosphere-Electrodynamics General Circulation Model (TIEGCM). The simulations cover the declining phase of solar cycle 24, the deep solar minimum of 2018 - 2020, and the rising phase and maximum of solar cycle 25. This extensive period provides a consistent representation of the thermosphere-ionosphere system across different levels of solar and geomagnetic activity, allowing the investigation of long-term behavior, seasonal variations and the response to individual geomagnetic disturbances.
+
+
+TIEGCM is a first-principles, global model that solves the coupled conservation equations for neutral and ionized atmospheric constituents, including their dynamics, composition, temperature, and electrodynamics. The simulations employ a horizontal resolution of 2.5 degree in latitude and longitude and a vertical resolution of one quarter of a pressure scale height. The lower boundary is located near 97 km, while the upper boundary is defined above 1000km.
+
+
+The model employs empirical and climatological specifications of external forcing. Solar EUV and soft X-ray irradiance are prescribed through the EUVAC model using the F10.7 solar flux index, while high-latitude electrodynamics follow the empirical Heelis model driven by the 3-hourly Kp index. Auroral particle precipitation is specified through the Roble and Ridley parameterization, and migrating diurnal and semidiurnal tides are prescribed at the lower boundary using the Global Scale Wave Model. These specifications provide consistent forcing throughout the study period, although their empirical and climatological nature limits the representation of certain short-term variations.
+
+
+The dataset contains three simulation configurations that differ in their parameterization of eddy diffusion, which represents unresolved turbulent mixing near the mesopause and influences thermospheric composition and density through the transport of neutral species. The first configuration employs a seasonally constant eddy diffusion coefficient, while the second uses the seasonally varying expression introduced by Qian et al. (2009). The third employs a new empirical seasonal expression developed from model-observation discrepancies during 2021 to reduce systematic seasonal biases in neutral density. All three configurations are provided over the complete 11-year period, enabling their effects to be evaluated under different solar and geomagnetic conditions and across both neutral and ionized components of the model.
+
+
+The simulations were produced as part of a long-term validation effort examining the climatological performance of TIEGCM 3.0. Two companion studies evaluate the simulated neutral density against accelerometer-derived observations from the GRACE and Swarm missions and the ionospheric electron content against satellite and ground-based measurements. The complete simulation archive is provided to facilitate further scientific investigations, independent model evaluations, and the development of improved representations of thermospheric and ionospheric processes.
+</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d947640 Files" path="files/d947640" location="/data/rda/data/d947640/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

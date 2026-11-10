@@ -159,6 +159,7 @@
     <catalogRef xlink:href="catalog_d559000.xml" xlink:title="d559000 Four-kilometer long-term regional hydroclimate reanalysis over the conterminous United States (CONUS)" />
     <catalogRef xlink:href="catalog_d559001.xml" xlink:title="d559001 Four-kilometer long-term regional hydroclimate WRF simulation data perturbed with pseudo-global warming (PGW) conditions over the conterminous United States (CONUS404 PGW)" name="" />
     <catalogRef xlink:href="catalog_d569728.xml" xlink:title="d569728 Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)" name="" />
+    <catalogRef xlink:href="catalog_d573432.xml" xlink:title="d573432 Towards predicting optimal compression settings for spatiotemporal earth system datasets" name="" />
     <catalogRef xlink:href="catalog_d580005.xml" xlink:title="d580005 COLA SP CCSM4 Model Output" name="" />
     <catalogRef xlink:href="catalog_d580007.xml" xlink:title="d580007 DCMIP 2016 Datasets" name="" />
     <catalogRef xlink:href="catalog_d581585.xml" xlink:title="d581585 CFBM simulations and verification dataset for sheltered and unsheltered wildland fires" name="" />
@@ -370,6 +371,7 @@
     <catalogRef xlink:href="catalog_d850001.xml" xlink:title="d850001 Data to support OSDF example workflows" name="" />
     <catalogRef xlink:href="catalog_d898000.xml" xlink:title="d898000 Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms: Storm and Analysis Data" name="" />
     <catalogRef xlink:href="catalog_d927358.xml" xlink:title="d927358 MERRA2 Monthly Mean Single-Level Diagnostics" name="" />
+    <catalogRef xlink:href="catalog_d947640.xml" xlink:title="d947640 Long-Term Validation of NSF NCAR TIEGCM 3.0 Over a Full Solar Cycle" name="" />
     <catalogRef xlink:href="catalog_d953316.xml" xlink:title="d953316 GPEP CONUS 0.02 degree multi-decadal ensemble daily precipitation and temperature dataset" name="" />
 
 <catalogRef xlink:href="catalog_d961437.xml" xlink:title="d961437 ISFS 5-minute Surface Meteorology &amp;amp; Fluxes: 3D anemometers (instrument coordinates)" name="" />
