@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Towards predicting optimal compression settings for spatiotemporal earth system datasets" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Towards predicting optimal compression settings for spatiotemporal earth system datasets">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d573432/" xlink:title="NCAR GDEX - Towards predicting optimal compression settings for spatiotemporal earth system datasets(d573432)" />
+      <documentation type="summary">The data storage burden resulting from CESM simulations continues to grow, and lossy data compression methods can alleviate this burden, provided that key climate variables are not altered to the point of affecting scientific conclusions. We aim to facilitate the adoption of lossy compression in the geoscience community by making it easier to identify optimal compression parameter settings, and this dataset was generated to support that effort.  In particular, this data was used to develop and evaluate an approach for creating models to predict optimal compression parameter settings and identify features that are useful for determining the compressibility of a particular output variable. We provide a subset of daily 2D atmospheric variables from the CESM1 LENS data compressed with the popular ZFP compressor.  We also provide compression metrics for all of the compressed datasets and feature values for the original data (that can be used for model training, for example).</documentation>
+      <creator>
+        <name vocabulary="DIF">CU-Boulder/AMATH</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CISL</name>
+        <contact url="none" />
+      </creator>
+      <creator>
+        <name vocabulary="DIF">CO-MINES/HRG</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d573432 Files" path="files/d573432" location="/data/rda/data/d573432/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
