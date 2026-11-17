@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Stomatal Slope Perturbation Simulations in CESM2" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="Stomatal Slope Perturbation Simulations in CESM2">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d651093/" xlink:title="NCAR GDEX - Stomatal Slope Perturbation Simulations in CESM2(d651093)" />
+      <documentation type="summary">An ensemble of single parameter (g1M) perturbation CESM2 simulations. The stomatal slope parameter for each plant functional type was perturbed to the observational range under different model configurations. The ensemble has a factorial design using the following conditions: either (a) minimum or maximum slope parameter (b) preindustrial atmospheric CO2 levels or two times preindustrial atmospheric CO2 levels, (c) dynamic or prescribed atmosphere, and (d) with dynamic or fixed leaf area. This gives 24 simulations to analyze and compare, isolating the effects of major competing factors which could dictate the full climate response to stomatal behavior.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/CGD</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d651093 Files" path="files/d651093" location="/data/rda/data/d651093/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>

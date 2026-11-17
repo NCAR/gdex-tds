@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="LIFT_2024: TTU Ka-band Mobile Radar Data" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="LIFT_2024: TTU Ka-band Mobile Radar Data">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>RADAR</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d650002/" xlink:title="NCAR GDEX - LIFT_2024: TTU Ka-band Mobile Radar Data(d650002)" />
+      <documentation type="summary">Doppler radar observations from the two Texas Tech University Ka-band mobile radars that were deployed at locations around the central and southern High Plains of the United States for the Low-level Internal Flow of Tornadoes 2024 (LIFT_2024) campaign.</documentation>
+      <creator>
+        <name vocabulary="DIF">TTU/GEO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d650002 Files" path="files/d650002" location="/data/rda/data/d650002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
