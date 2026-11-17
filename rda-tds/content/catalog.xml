@@ -156,6 +156,7 @@
     <catalogRef xlink:href="catalog_d548000.xml" xlink:title="d548000 International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3, Individual Observations" name="" />
     <catalogRef xlink:href="catalog_d548003.xml" xlink:title="d548003 International Comprehensive Ocean-Atmosphere Data Set (ICOADS) Release 3.0.2-Daily" name="" />
     <catalogRef xlink:href="catalog_d551000.xml" xlink:title="d551000 Dai and Trenberth Global River Flow and Continental Discharge Dataset" name="" />
+    <catalogRef xlink:href="catalog_d555100.xml" xlink:title="d555100 SUMMA-LENS: Large ensemble 21st century hydrology across the Western United States" name="" />
     <catalogRef xlink:href="catalog_d559000.xml" xlink:title="d559000 Four-kilometer long-term regional hydroclimate reanalysis over the conterminous United States (CONUS)" />
     <catalogRef xlink:href="catalog_d559001.xml" xlink:title="d559001 Four-kilometer long-term regional hydroclimate WRF simulation data perturbed with pseudo-global warming (PGW) conditions over the conterminous United States (CONUS404 PGW)" name="" />
     <catalogRef xlink:href="catalog_d569728.xml" xlink:title="d569728 Global Observationally-Based Land-Atmosphere Coupling Metrics (GOLAM)" name="" />
@@ -251,6 +252,7 @@
     <catalogRef xlink:href="catalog_d640006.xml" xlink:title="d640006 Japanese Reanalysis for Three Quarters of a Century - COBE (JRA-3Q-COBE)" name="" />
     <catalogRef xlink:href="catalog_d645000.xml" xlink:title="d645000 CESM Large Ensemble with Increased Access (LEIA) for Ocean Biogeochemistry" name="" />
     <catalogRef xlink:href="catalog_d650000.xml" xlink:title="d650000 SODA Project: SODA3 Ensemble Means and Standard Deviations" name="SODA Project: SODA3 Ensemble Means and Standard Deviations" />
+    <catalogRef xlink:href="catalog_d650002.xml" xlink:title="d650002 LIFT_2024: TTU Ka-band Mobile Radar Data" name="" />
     <catalogRef xlink:href="catalog_d651000.xml" xlink:title="d651000 CESM1 CAM5 BGC Medium Ensemble" name="CESM1 CAM5 BGC Medium Ensemble" />
     <catalogRef xlink:href="catalog_d651001.xml" xlink:title="d651001 CESM2 Perfect Model Predictions for 2010" name="CESM2 Perfect Model Predictions for 2010" />
     <catalogRef xlink:href="catalog_d651002.xml" xlink:title="d651002 CESM2 83-level simulations" name="" />
@@ -343,6 +345,7 @@
     <catalogRef xlink:href="catalog_d651090.xml" xlink:title="d651090 paleoWeather: CESM-HR simulations with water isotopes for the mid-Piazencian Warm Period" name="" />
     <catalogRef xlink:href="catalog_d651091.xml" xlink:title="d651091 paleoWeather: CESM-HR simulations with water isotopes for the Last Glacial Maximum" name="" />
     <catalogRef xlink:href="catalog_d651092.xml" xlink:title="d651092 iCESM1.3-HR Resolution Hierarchy for Preindustrial, Eocene, and 4xCO2 Climates" name="" />
+    <catalogRef xlink:href="catalog_d651093.xml" xlink:title="d651093 Stomatal Slope Perturbation Simulations in CESM2" name="" />
     <catalogRef xlink:href="catalog_d652000.xml" xlink:title="d652000 PERSIANN-CCS Hourly Accumulated Precipitation" name="" />
     <catalogRef xlink:href="catalog_d653000.xml" xlink:title="d653000 Hourly Gridded Accumulations of Geostationary Lightning Mapper (GLM) Flash Counts on the NCEP G211 Grid (2018–2026)" name="" />
     <catalogRef xlink:href="catalog_d654000.xml" xlink:title="d654000 WACCM-X 1 Degree Output 2000-Present" name="" />

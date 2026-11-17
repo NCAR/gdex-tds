@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="SUMMA-LENS: Large ensemble 21st century hydrology across the Western United States" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="SUMMA-LENS: Large ensemble 21st century hydrology across the Western United States">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>MODEL_SIMULATION</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d555100/" xlink:title="NCAR GDEX - SUMMA-LENS: Large ensemble 21st century hydrology across the Western United States(d555100)" />
+      <documentation type="summary">Understanding hydrologic variability and non-stationarity across the western United States requires spatially distributed, long-term simulations that adequately sample internal climate variability and a range of plausible hydrologic conditions. Here, we introduce SUMMA-LENS, a large ensemble hydrologic dataset spanning historical and future climate conditions across the western United States using the Structure for Unifying Multiple Modeling Alternatives (SUMMA) hydrologic model and the mizuRoute routing model. The dataset extends the GARD-LENS statistically downscaled climate dataset into hydrologic states, fluxes, runoff, and routed streamflow, providing a resource for investigating hydrologic extremes, variability, and changing flood-generating processes.
+SUMMA-LENS comprises 200 ensemble members from three CMIP6 Earth system models: CESM2 (100 members), CanESM5 (50 members), and EC-Earth3 (50 members), spanning 1970-2100 under the SSP3-7.0 scenario. Daily precipitation and temperature from GARD-LENS at approximately 12-km resolution are spatially mapped to HUC12 watersheds and temporally disaggregated into three-hourly meteorological forcing using MetSim. These forcings drive the same domain-wide uncalibrated implementation of SUMMA, with simulated runoff routed through approximately 120,000 river segments using the diffusive wave routing scheme within mizuRoute.
+The resulting dataset provides spatially distributed simulations of snow water equivalent, soil moisture, evapotranspiration, runoff, and streamflow, supporting analyses of water balance, snow hydrology, flood magnitude, frequency, duration, and seasonality. Its extensive ensemble sampling enables characterization of internal variability and inter ESM differences across historical and future periods, including rare hydrologic extremes that are difficult to assess using conventional climate simulation ensembles. SUMMA-LENS provides a foundation for regional hydrologic research, uncertainty assessment, and screening-level water infrastructure and flood hazard applications.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/RAL</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d555100 Files" path="files/d555100" location="/data/rda/data/d555100/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
