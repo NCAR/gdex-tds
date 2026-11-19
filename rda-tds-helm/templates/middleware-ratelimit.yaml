@@ -12,4 +12,4 @@ spec:
     period: 1s
     sourceCriterion:
       ipStrategy:
-        depth: 1
+        depth: 0  # 0 = key on connection source address (real client IP; incoming X-Forwarded-For is empty at middleware time)
