@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.webapp.name }}-ncss-d084001-block
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+spec:
+  ingressClassName: {{ .Values.webapp.ingress.className }}
+  rules:
+  - host: {{ .Values.webapp.tls.fqdn }}
+    http:
+      paths:
+      - path: /thredds/ncss/grid/files/g/d084001
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Values.webapp.name }}-deny-backend
+            port:
+              number: 80
+  - host: {{ .Values.webapp.tls.fqdn2 }}
+    http:
+      paths:
+      - path: /thredds/ncss/grid/files/g/d084001
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Values.webapp.name }}-deny-backend
+            port:
+              number: 80
+  - host: {{ .Values.webapp.tls.fqdn3 }}
+    http:
+      paths:
+      - path: /thredds/ncss/grid/files/g/d084001
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Values.webapp.name }}-deny-backend
+            port:
+              number: 80

@@ -1,0 +1,35 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Values.webapp.name }}-cleanup
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.webapp.name }}
+    group: {{ .Values.webapp.group }}
+spec:
+  schedule: "1 1 * * 1" # Run at the 1st minute 1am on monday of every week
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: cleanup
+            image: busybox
+            command:
+            - sh
+            - -c
+            - |
+              echo "Cleaning up heap dumps older than 7 days from tomcat-temp..."
+              find /tomcat-temp -name "*.hprof" -mtime +7 -delete -print
+              echo "Done."
+            volumeMounts:
+            - mountPath: /tomcat-temp
+              name: {{ .Values.webapp.volume.fs.name }}
+              subPath: tds-overflow/tomcat-temp
+          volumes:
+          - name: {{ .Values.webapp.volume.fs.name }}
+            persistentVolumeClaim:
+              claimName: {{ .Values.webapp.volume.fs.name }}
