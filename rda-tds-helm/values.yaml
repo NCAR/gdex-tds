@@ -32,9 +32,9 @@ webapp:
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
     maxUploadBytes: 31457280  # 30m in bytes for Traefik buffering middleware
-    limit_connections: 10   # Traefik inFlightReq: max concurrent requests per client IP (browser ~6 parallel + headroom for scripted/dask clients)
-    limit_rps: 20           # Traefik rateLimit: average requests/second per client IP
-    limit_rps_burst: 100    # Traefik rateLimit burst per client IP (5x limit_rps, absorbs catalog page-load spikes)
+    limit_connections: 150  # Traefik inFlightReq: max concurrent requests per client IP (raised back to old nginx level; lower once real per-IP keying is confirmed)
+    limit_rps: 150          # Traefik rateLimit: average requests/second per client IP (raised back to old nginx level)
+    limit_rps_burst: 300    # Traefik rateLimit burst per client IP (2x limit_rps)
     env:
       THREDDS_XMX_SIZE: 64G
       THREDDS_XMS_SIZE: 64G  # Same as Xmx to avoid heap-resize GC pauses
