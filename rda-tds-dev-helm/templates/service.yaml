@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.webapp.name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+  annotations:
+    traefik.ingress.kubernetes.io/service.serverstransport: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-transport@kubernetescrd"
+spec:
+  ports:
+  - port: {{ .Values.webapp.container.port }}
+  selector:
+    app: {{ .Values.webapp.name }}

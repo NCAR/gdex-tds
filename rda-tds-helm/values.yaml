@@ -21,17 +21,20 @@ webapp:
     fqdn3: thredds.rda.ucar.edu
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
+  ingress:
+    # Ingress class to use (e.g., nginx-external, traefik-external)
+    className: traefik-external
   tds:
-    load_balance: ewma  # Enable weighted load balancing to avoid traffic concentrate on a subset of pods
     image: docker.io/potatofever/rda-tds:v5.7-sha-28db173
     port: 8080
     memory: 96G
     cpu: 8
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
-    maxUploadSize: 30m
-    limit_connections: 150  # Increased for concurrent requests - global limit
-    limit_rps: 150           # Increased for page load bursts - global limit
+    maxUploadBytes: 31457280  # 30m in bytes for Traefik buffering middleware
+    limit_connections: 10   # Traefik inFlightReq: max concurrent requests per client IP (browser ~6 parallel + headroom for scripted/dask clients)
+    limit_rps: 20           # Traefik rateLimit: average requests/second per client IP
+    limit_rps_burst: 100    # Traefik rateLimit burst per client IP (5x limit_rps, absorbs catalog page-load spikes)
     env:
       THREDDS_XMX_SIZE: 64G
       THREDDS_XMS_SIZE: 64G  # Same as Xmx to avoid heap-resize GC pauses

@@ -1,0 +1,10 @@
+apiVersion: traefik.io/v1alpha1
+kind: ServersTransport
+metadata:
+  name: {{ .Values.webapp.name }}-transport
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+spec:
+  forwardingTimeouts:
+    responseHeaderTimeout: {{ .Values.webapp.container.responseTimeout }}s

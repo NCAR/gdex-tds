@@ -7,7 +7,7 @@ metadata:
   labels:
     group: {{ .Values.webapp.group }}
 spec:
-  ingressClassName: nginx-external
+  ingressClassName: {{ .Values.webapp.ingress.className }}
   rules:
   {{- range $fqdn := list .Values.webapp.tls.fqdn .Values.webapp.tls.fqdn2 .Values.webapp.tls.fqdn3 }}
   - host: {{ $fqdn }}
