@@ -23,7 +23,7 @@ webapp:
     secretName: incommon-cert-tds
   ingress:
     # Ingress class to use (e.g., nginx-external, traefik-external)
-    className: traefik-external
+    className: nginx-external
   tds:
     image: docker.io/potatofever/rda-tds:v5.7-sha-db8eea9
     port: 8080
