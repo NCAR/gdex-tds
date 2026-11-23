@@ -1,3 +1,4 @@
+{{- if eq .Values.webapp.ingress.controller "traefik" }}
 # Legacy URL compatibility: /thredds/<service>/(files|aggregations)/g/<dsid>/... -> /thredds/<service>/(files|aggregations)/<dsid>/...
 # Internal rewrite (no client redirect). Attached to the main ingress router; requests that
 # don't match the regex pass through unchanged. Replaces the nginx rewrite-target ingress-g-redirect.yaml.
@@ -12,3 +13,5 @@ spec:
   replacePathRegex:
     regex: ^/thredds/(.+)/(files|aggregations)/g/(d[0-9]{6}.*)
     replacement: /thredds/${1}/${2}/${3}
+
+{{- end }}
