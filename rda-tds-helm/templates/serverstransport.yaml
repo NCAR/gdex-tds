@@ -1,3 +1,4 @@
+{{- if eq .Values.webapp.ingress.controller "traefik" }}
 apiVersion: traefik.io/v1alpha1
 kind: ServersTransport
 metadata:
@@ -8,3 +9,5 @@ metadata:
 spec:
   forwardingTimeouts:
     responseHeaderTimeout: {{ .Values.webapp.tds.responseTimeout }}s
+
+{{- end }}

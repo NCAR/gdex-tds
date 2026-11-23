@@ -22,7 +22,9 @@ webapp:
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
   ingress:
-    # Ingress class to use (e.g., nginx-external, traefik-external)
+    # Which controller implements rate limiting etc.: "traefik" (Middleware CRDs) or "nginx-external" (nginx.ingress annotations)
+    controller: nginx-external
+    # Ingress class to use (e.g., nginx-external, traefik-external); keep consistent with controller
     className: nginx-external
   tds:
     image: docker.io/potatofever/rda-tds:v5.7-sha-db8eea9
@@ -31,7 +33,14 @@ webapp:
     cpu: 8
     ephemeralStorageLimit: 5Gi
     responseTimeout: 180
+    maxUploadSize: 30m  # nginx proxy-body-size
     maxUploadBytes: 31457280  # 30m in bytes for Traefik buffering middleware
+    # nginx-external only (ignored for traefik). Treated as one global bucket, so limits are much higher than the per-IP Traefik ones below
+    nginx:
+      load_balance: ewma  # weighted load balancing to avoid traffic concentrating on a subset of pods
+      limit_connections: 150  # nginx limit-connections
+      limit_rps: 150          # nginx limit-rps
+      limit_burst_multiplier: 5  # nginx limit-burst-multiplier (nginx default)
     limit_connections: 15   # Traefik inFlightReq: max concurrent requests per client IP (assumes keying is truly per IP)
     limit_rps: 30          # Traefik rateLimit: average requests/second per client IP
     limit_rps_burst: 60    # Traefik rateLimit burst per client IP (2x limit_rps)

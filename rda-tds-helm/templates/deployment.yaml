@@ -75,8 +75,8 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: metadata.name
-          - name: JAVA_OPTS # Heap dump to PVC (not ephemeral) with a fixed per-pod filename; exit fast on OOM so container restarts. CPU count pinned to the CPU limit so GC/thread pools are sized for it
-            value: "-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/usr/local/tomcat/temp/$(K8S_POD_NAME).hprof  -XX:ActiveProcessorCount={{ .Values.webapp.tds.cpu }}"
+          - name: JAVA_OPTS # Heap dump to PVC (not ephemeral) with a fixed per-pod filename; exit fast on OOM so container restarts. CPU count pinned to the CPU limit so GC/thread pools are sized for it. GC log (rotating 5x20M) written to the same PVC for live-set analysis
+            value: "-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/usr/local/tomcat/temp/$(K8S_POD_NAME).hprof  -XX:ActiveProcessorCount={{ .Values.webapp.tds.cpu }} -Xlog:gc*:file=/usr/local/tomcat/temp/gc-$(K8S_POD_NAME).log:time,uptime:filecount=5,filesize=20M"
         lifecycle:
           postStart: # JVM refuses to overwrite an existing dump file, so remove this pod's previous dump on (re)start
             exec:

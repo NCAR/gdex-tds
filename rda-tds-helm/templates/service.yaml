@@ -5,8 +5,10 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels:
     group: {{ .Values.webapp.group }}
+  {{- if eq .Values.webapp.ingress.controller "traefik" }}
   annotations:
     traefik.ingress.kubernetes.io/service.serverstransport: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-transport@kubernetescrd"
+  {{- end }}
 spec:
   ports:
   - port: {{ .Values.webapp.tds.port }}

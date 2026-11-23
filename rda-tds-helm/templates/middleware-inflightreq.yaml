@@ -1,3 +1,4 @@
+{{- if eq .Values.webapp.ingress.controller "traefik" }}
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:
@@ -11,3 +12,5 @@ spec:
     sourceCriterion:
       ipStrategy:
         depth: 0  # 0 = key on connection source address (real client IP; incoming X-Forwarded-For is empty at middleware time)
+
+{{- end }}
