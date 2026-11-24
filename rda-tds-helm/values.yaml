@@ -22,7 +22,7 @@ webapp:
     # Kubernetes Secret that contains the TLS certificate
     secretName: incommon-cert-tds
   ingress:
-    # Which controller implements rate limiting etc.: "traefik" (Middleware CRDs) or "nginx-external" (nginx.ingress annotations)
+    # Which controller implements rate limiting etc.: any value starting with "traefik" (Middleware CRDs, e.g. traefik-external) or "nginx" (nginx.ingress annotations, e.g. nginx-external)
     controller: traefik-external
     # Ingress class to use (e.g., nginx-external, traefik-external); keep consistent with controller
     className: traefik-external

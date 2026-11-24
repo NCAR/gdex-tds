@@ -7,7 +7,7 @@ metadata:
     group: {{ .Values.webapp.group }}
   annotations:
     cert-manager.io/cluster-issuer: "incommon"
-    {{- if eq .Values.webapp.ingress.controller "traefik" }}
+    {{- if hasPrefix "traefik" .Values.webapp.ingress.controller }}
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.middlewares: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-g-rewrite@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-ratelimit@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-inflightreq@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-buffering@kubernetescrd"
     {{- else }}

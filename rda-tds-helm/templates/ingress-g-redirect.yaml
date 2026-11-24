@@ -1,4 +1,4 @@
-{{- if eq .Values.webapp.ingress.controller "nginx-external" }}
+{{- if hasPrefix "nginx" .Values.webapp.ingress.controller }}
 # Legacy URL compatibility: /thredds/<service>/(files|aggregations)/g/<dsid>/... -> /thredds/<service>/(files|aggregations)/<dsid>/...
 # Implemented as an internal rewrite (rewrite-target) because configuration-snippet is disabled on the controller.
 # Only rendered when webapp.ingress.controller is nginx-external (Traefik uses middleware-g-rewrite.yaml).

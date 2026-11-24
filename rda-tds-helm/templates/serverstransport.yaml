@@ -1,4 +1,4 @@
-{{- if eq .Values.webapp.ingress.controller "traefik" }}
+{{- if hasPrefix "traefik" .Values.webapp.ingress.controller }}
 apiVersion: traefik.io/v1alpha1
 kind: ServersTransport
 metadata:
