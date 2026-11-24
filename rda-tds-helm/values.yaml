@@ -23,9 +23,9 @@ webapp:
     secretName: incommon-cert-tds
   ingress:
     # Which controller implements rate limiting etc.: "traefik" (Middleware CRDs) or "nginx-external" (nginx.ingress annotations)
-    controller: nginx-external
+    controller: traefik-external
     # Ingress class to use (e.g., nginx-external, traefik-external); keep consistent with controller
-    className: nginx-external
+    className: traefik-external
   tds:
     image: docker.io/potatofever/rda-tds:v5.7-sha-db8eea9
     port: 8080
