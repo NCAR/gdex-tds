@@ -1,0 +1,17 @@
+{{- if and (hasPrefix "traefik" .Values.webapp.ingress.controller) .Values.webapp.tds.heavyPaths.enabled }}
+# Total concurrency cap for CPU-heavy paths (see ingress-heavy.yaml), regardless of client IP. Protects against many-IP
+# crawlers and against all clients looking like one IP. requestHost keys the counter on the Host header (one bucket per
+# hostname). The count is per Traefik instance, so the effective cap is this value x number of Traefik replicas.
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: {{ .Values.webapp.name }}-heavy-inflight-global
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+spec:
+  inFlightReq:
+    amount: {{ .Values.webapp.tds.heavyPaths.limitGlobal }}
+    sourceCriterion:
+      requestHost: true
+{{- end }}
