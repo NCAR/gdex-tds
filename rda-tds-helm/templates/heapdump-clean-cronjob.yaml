@@ -23,7 +23,7 @@ spec:
             - -c
             - |
               echo "Cleaning up heap dumps older than 2 days from tomcat-temp..."
-              find /tomcat-temp -name "*.hprof" -mtime +2 -delete -print
+              find /tomcat-temp -name "*.hprof*" -mtime +2 -delete -print
               echo "Done."
             volumeMounts:
             - mountPath: /tomcat-temp

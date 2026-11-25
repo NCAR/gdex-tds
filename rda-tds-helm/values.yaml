@@ -48,7 +48,8 @@ webapp:
     heavyPaths:
       enabled: true
       paths:
-        - /thredds/ncss   # add e.g. /thredds/dodsC if OPeNDAP is also a CPU hotspot
+        - /thredds/ncss
+        - /thredds/dodsC
       limitPerIp: 4       # max concurrent heavy requests per client IP
       limitGlobal: 24     # max concurrent heavy requests per hostname per Traefik instance (~3 pods x 8 CPU)
     env:
