@@ -1,0 +1,16 @@
+{{- if and (hasPrefix "traefik" .Values.webapp.ingress.controller) .Values.webapp.tds.heavyPaths.enabled }}
+# Per-client-IP concurrency cap for CPU-heavy paths (see ingress-heavy.yaml). Stacks on top of the general inflightreq.
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: {{ .Values.webapp.name }}-heavy-inflight-ip
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+spec:
+  inFlightReq:
+    amount: {{ .Values.webapp.tds.heavyPaths.limitPerIp }}
+    sourceCriterion:
+      ipStrategy:
+        depth: 0
+{{- end }}

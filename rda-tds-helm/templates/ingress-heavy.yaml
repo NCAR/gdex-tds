@@ -1,0 +1,39 @@
+{{- if and (hasPrefix "traefik" .Values.webapp.ingress.controller) .Values.webapp.tds.heavyPaths.enabled }}
+# Separate router for CPU-heavy paths (e.g. NCSS subsetting). Traefik picks the longest matching prefix, so these
+# paths use this Ingress instead of the main one. It repeats the main middlewares and adds the heavy-path concurrency caps.
+# The /g/ legacy URLs still match because the path prefix is checked before g-rewrite runs.
+# Exceeding a cap returns 429 to the client.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.webapp.name }}-heavy
+  namespace: {{ .Release.Namespace }}
+  labels:
+    group: {{ .Values.webapp.group }}
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.middlewares: "{{ .Release.Namespace }}-{{ .Values.webapp.name }}-g-rewrite@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-ratelimit@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-inflightreq@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-heavy-inflight-ip@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-heavy-inflight-global@kubernetescrd,{{ .Release.Namespace }}-{{ .Values.webapp.name }}-buffering@kubernetescrd"
+spec:
+  ingressClassName: {{ .Values.webapp.ingress.className }}
+  tls:
+    - hosts:
+      - {{ .Values.webapp.tls.fqdn }}
+      - {{ .Values.webapp.tls.fqdn2 }}
+      - {{ .Values.webapp.tls.fqdn3 }}
+      secretName: {{ .Values.webapp.tls.secretName }}
+  rules:
+  {{- range $fqdn := list .Values.webapp.tls.fqdn .Values.webapp.tls.fqdn2 .Values.webapp.tls.fqdn3 }}
+  - host: {{ $fqdn }}
+    http:
+      paths:
+      {{- range $.Values.webapp.tds.heavyPaths.paths }}
+      - path: {{ . }}
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ $.Values.webapp.name }}
+            port:
+              number: {{ $.Values.webapp.tds.port }}
+      {{- end }}
+  {{- end }}
+{{- end }}

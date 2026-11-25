@@ -44,6 +44,13 @@ webapp:
     limit_connections: 15   # Traefik inFlightReq: max concurrent requests per client IP (assumes keying is truly per IP)
     limit_rps: 30          # Traefik rateLimit: average requests/second per client IP
     limit_rps_burst: 60    # Traefik rateLimit burst per client IP (2x limit_rps)
+    # Traefik only: extra concurrency caps on CPU-heavy paths, on top of limit_connections (separate router, see ingress-heavy.yaml)
+    heavyPaths:
+      enabled: true
+      paths:
+        - /thredds/ncss   # add e.g. /thredds/dodsC if OPeNDAP is also a CPU hotspot
+      limitPerIp: 4       # max concurrent heavy requests per client IP
+      limitGlobal: 24     # max concurrent heavy requests per hostname per Traefik instance (~3 pods x 8 CPU)
     env:
       THREDDS_XMX_SIZE: 64G
       THREDDS_XMS_SIZE: 64G  # Same as Xmx to avoid heap-resize GC pauses
