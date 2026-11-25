@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="WACCM-X SD 1 Degree Output 2000-Present" xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--Top level dataset: Needed to set metadata for Files & Aggregations-->
+  <dataset name="WACCM-X SD 1 Degree Output 2000-Present">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+      <dataType>GRID</dataType>
+      <documentation type="Rights">Freely Available</documentation>
+      <documentation xlink:href="http://gdex.ucar.edu/datasets/d654002/" xlink:title="NCAR GDEX - WACCM-X SD 1 Degree Output 2000-Present(d654002)" />
+      <documentation type="summary">This dataset is output from simulations using the Whole Atmosphere Community Climate Model with Thermosphere and Ionosphere eXtension (WACCM-X) for years from 2000 to near present day. The horizontal resolution is 0.9 degrees in latitude by 1.25 degrees in longitude. The model vertical extent is from the surface to the upper thermosphere, approximately 600 kilometers depending on solar cycle. The model is free running when producing these simulation results. This WACCM-X dataset can be used to study individual events since year 2000 and decadal changes throughout the atmosphere. It can also be useful in Artificial Intelligence training and related studies.</documentation>
+      <creator>
+        <name vocabulary="DIF">UCAR/NCAR/HAO</name>
+        <contact url="none" />
+      </creator>
+      <authority>edu.ucar.gdex</authority>
+      <publisher>
+        <name vocabulary="DIF">NCAR/GDEX</name>
+        <contact url="http://gdex.ucar.edu/" email="datahelp@ucar.edu" />
+    </publisher>
+    </metadata>
+    <!--Files-->
+    <datasetScan name="d654002 Files" path="files/d654002" location="/data/rda/data/d654002/">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <exclude wildcard="*.html" />
+        <exclude wildcard="*.x" />
+        <exclude wildcard=".*" />
+        <exclude wildcard=".*/" />
+      </filter>
+      <addDatasetSize />
+    </datasetScan>
+  </dataset>
+</catalog>
