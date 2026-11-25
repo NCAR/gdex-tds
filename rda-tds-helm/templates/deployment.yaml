@@ -78,9 +78,9 @@ spec:
           - name: JAVA_OPTS # Heap dump to PVC (not ephemeral) with a fixed per-pod filename; exit fast on OOM so container restarts. CPU count pinned to the CPU limit so GC/thread pools are sized for it. GC log (rotating 5x20M) written to the same PVC for live-set analysis
             value: "-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/usr/local/tomcat/temp/$(K8S_POD_NAME).hprof  -XX:ActiveProcessorCount={{ .Values.webapp.tds.cpu }} -Xlog:gc*:file=/usr/local/tomcat/temp/gc-$(K8S_POD_NAME).log:time,uptime:filecount=5,filesize=20M"
         lifecycle:
-          postStart: # JVM refuses to overwrite an existing dump file, so remove this pod's previous dump on (re)start
+          postStart: # JVM refuses to overwrite an existing dump file, so on (re)start move this pod's previous dump to <pod>.hprof.prev (replacing any older .prev). Keeps only the latest dump per pod so the PVC doesn't fill up
             exec:
-              command: ["/bin/sh", "-c", "rm -f /usr/local/tomcat/temp/${K8S_POD_NAME}.hprof"]
+              command: ["/bin/sh", "-c", "f=/usr/local/tomcat/temp/${K8S_POD_NAME}.hprof; [ -f \"$f\" ] && mv -f \"$f\" \"$f.prev\"; exit 0"]
         volumeMounts:
         - mountPath: /data/rda/ # Was /gpfs/csfs1/. Required due to TDS
           name: {{ .Values.webapp.campaignMount.name }}
