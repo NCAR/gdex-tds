@@ -27,7 +27,7 @@ webapp:
     # Ingress class to use (e.g., nginx-external, traefik-external); keep consistent with controller
     className: traefik-external
   tds:
-    image: docker.io/potatofever/rda-tds:v5.7-sha-db8eea9
+    image: docker.io/potatofever/rda-tds:v5.7-sha-4886cd5
     port: 8080
     memory: 96G
     cpu: 8
